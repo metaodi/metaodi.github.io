@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <rss version="2.0">
   <channel>
-    <title>Site Title</title>
-    <description>Site Title</description>
+    <title>Metaodi</title>
+    <description>Metaodi</description>
     <link/>
     <pubDate>2014-01-21</pubDate>
     <item>
@@ -21,7 +21,7 @@
 </description>
     </item>
     <item>
-      <title>Home</title>
+      <title>Metaodi</title>
       <link>/</link>
       <description>## Hello World
 
@@ -44,7 +44,7 @@
     &lt;li&gt;&lt;a href="/categories"&gt;Categories&lt;/a&gt;&lt;/li&gt;
   
   
-    &lt;li&gt;&lt;a href="/"&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/"&gt;Metaodi&lt;/a&gt;&lt;/li&gt;
   
     &lt;li class="active"&gt;&lt;a href="/pages" class="active"&gt;Pages&lt;/a&gt;&lt;/li&gt;
   
