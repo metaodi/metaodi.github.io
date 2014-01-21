@@ -1,2 +1,5 @@
-"theme-metaodi" :
-      "use" : "theme"
+"theme-metaodi":
+    "use": "theme"
+
+"bower_components":
+    "use": "static"

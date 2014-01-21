@@ -1,0 +1,20 @@
+{
+  "name": "metaodi.github.io",
+  "version": "0.0.1",
+  "homepage": "http://metaodi.github.io",
+  "authors": [
+    "Stefan Oderbolz"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "3.0.3"
+  }
+}
