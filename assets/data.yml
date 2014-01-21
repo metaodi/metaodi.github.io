@@ -1,10 +1,10 @@
-title : Metaodi
+title : Site Title
 tagline: Site Tagline
 author :
-  name : Stefan Oderbolz ("Odi")
-  email : odi@readmore.ch
-  github : metaodi
-  twitter : odi
+  name : First-name Last-name
+  email : blah@email.test
+  github : username
+  twitter : username
   feedburner : feedname
 
 navigation :
