@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <rss version="2.0">
   <channel>
-    <title>Site Title</title>
-    <description>Site Title</description>
+    <title>Metaodi</title>
+    <description>Metaodi</description>
     <link/>
-    <pubDate>2014-01-21</pubDate>
+    <pubDate>2014-01-22</pubDate>
     <item>
       <title>Archive</title>
       <link>/archive</link>
