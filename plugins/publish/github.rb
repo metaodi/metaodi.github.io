@@ -41,6 +41,8 @@ class Ruhoh
       system("git", "commit", "-m", "#{ source_branch }: #{ last_commit_message(source_branch) }")
       system("git", "push", "origin", deploy_branch)
       system('git', 'checkout', source_branch)
+      system('bower', 'install')
+      system('lessc', 'theme-metaodi/stylesheets/style.less', 'theme-metaodi/stylesheets/style.css')
     end
 
     def compile
