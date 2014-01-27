@@ -3,3 +3,5 @@
 
 "bower_components":
     "use": "static"
+
+date_format: '%d.%m.%Y %H:%M'
