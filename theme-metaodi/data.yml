@@ -8,8 +8,6 @@ author :
   feedburner : feedname
 
 navigation :
-  - archive
   - tags
-  - categories
-  - pages
+  - archive
   - about
