@@ -2,7 +2,6 @@
 title: About me
 layout: about
 ---
-![Stefan Oderbolz ("Odi")]({{urls.media}}/odi.jpg)
 
 My name is Stefan Oderbolz ("Odi") and I live in Zurich.
 
