@@ -4,4 +4,7 @@
 "bower_components":
     "use": "static"
 
-date_format: '%d.%m.%Y %H:%M'
+"date_format": '%d.%m.%Y'
+
+"posts":
+    "sort": ["date", "desc"]
