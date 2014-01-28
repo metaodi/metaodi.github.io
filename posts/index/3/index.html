@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Rosarivo' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Stefan Oderbolz (&quot;Odi&quot;)">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- load static files from bower -->
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <script src="/bower_components/jquery/jquery.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Le styles -->
+<link href='/assets/stylesheets/style-6f857850c832817175fdbb4d71c6ee0d.css' type='text/css' rel='stylesheet' media='all'>
+<link href='/assets/stylesheets/google_prettify/sons-of-obsidian-afb0925bfa2d994f17dab93e13fbf999.css' type='text/css' rel='stylesheet' media='all'>    
+    <!-- Le scripts -->
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+  -->
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">metaodi</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            
+              <li><a href="/tags">Tags</a></li>
+            
+            
+              <li><a href="/archive">Archive</a></li>
+            
+            
+              <li><a href="/about">About me</a></li>
+            
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="content">
+        <div class="row-fluid">
+  <div class="span12">
+      <div class="posts">
+        <h3 class="title"><a href="/posts/2011/05/steganografie-in-der-schweiz-verboten">Steganografie in der Schweiz verboten?</a> <span class="date">25.05.2011</span></h3>
+
+        <p>In einer Informations- und Codierungstheorie Vorlesung im letzten
+Semester haben wir kurz das Thema
+<a href="http://www.steganografie.com/">Steganografie</a> behandelt - also das
+Verstecken von Informationen in Bildern. Dabei soll möglichst nicht
+ersichtlich sein, dass ein Bild als Informationsträger dient. Die
+Information wird beispielsweise über veränderte Helligkeitswerte in das
+Bild eingefügt.</p>
+
+<p>Der Dozent meinte damals dieses Verfahren sei in der Schweiz verboten.
+Ich habe nach einer ausgiebigen Google-Suche jedoch keine Hinweise
+darauf gefunden, weder
+<a href="http://de.wikipedia.org/wiki/Steganographie">Wikipedia</a> noch sonst eine
+Seite konnte mir die Frage abschliessend beantworten. Weiss jemand mehr
+dazu?</p>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><a href="/posts/2011/05/tweet-button-auf-tumblr-integrieren">Tweet Button auf Tumblr integrieren</a> <span class="date">18.05.2011</span></h3>
+
+        <p>Ich habe vor einiger Zeit in der Sidebar den Tweet Button eingefügt (da
+wo er so richtig neu war) und habe bemerkt, dass dort schlicht die
+aktuelle URL mitgegeben wird und diese dann im Tweet erscheint.</p>
+
+<p>Als ich mich heute nochmals kurz damit beschäftigt und die <a href="https://twitter.com/about/resources/tweetbutton">offizielle
+“Tweet Button” Seite</a>
+besucht habe, habe dort gesehen, dass man durchaus dem Ding eine URL und
+einen Text mitgeben kann. Dank den <a href="http://www.tumblr.com/docs/en/custom_themes">Theme-Platzhaltern von
+Tumblr</a> lässt sich somit
+der Button sehr leicht zu jedem Beitrag hinzufügen (in diesem Fall
+<strong><code>{Permalink}</code>** für die aktuelle Seite und **<code>{Title}</code></strong> für den
+Beitragstitel) .</p>
+
+<p>Ich habe folgendes in mein Theme eingefügt:</p>
+
+<pre><code>&lt;div id=&quot;tweetbutton&quot;&gt;
+--- Start Tweet Button ---
+&lt;a href=&quot;http://twitter.com/share&quot; class=&quot;twitter-share-button&quot; 
+data-count=&quot;horizontal&quot; data-url=&quot;{Permalink}&quot; data-text=&quot;{Title} (ReadMore.ch)&quot;
+data-via=&quot;odi&quot;&gt;Tweet&lt;/a&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://platform.twitter.com/widgets.js&quot;&gt;&lt;/script&gt;
+--- END Tweet Button ---
+&lt;/div&gt;
+</code></pre>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><a href="/posts/2010/11/developers-shame-day-2010">Developers Shame Day: BB-Code selbstgemacht</a> <span class="date">03.11.2010</span></h3>
+
+        <p><img src="http://media.tumblr.com/tumblr_lb5krblZFn1qa2z4q.png" alt="Developers Shame
+Day"></p>
+
+<p>Via Twitter (weiss leider nicht mehr wer das geschrieben hat) bin ich
+<a href="http://phphacker.net/2010/10/26/der-developers-shame-day/">auf einen Artikel vom php
+hacker</a>
+gestossen, wo er dazu aufruft heute am “Developers Shame Day”
+mitzumachen und alte Codeschnippsel von sich zu posten: Beispiele von
+schlechtem Code für die man sich heute schämen sollte.</p>
+
+<p>Einserseits um zu zeigen, dass jeder mal angefangen hat schlechten Code
+zu schreiben und allgemein sich einzugestehen, dass Fehler nun mal
+passieren und man selbst und vielleicht sogar andere davon profititieren
+können. Da mach ich gerne mit.</p>
+
+<p>Das Stück Code das ich vorstellen möchte ist PHP-Code, welcher auf einer
+meiner alten Pages gelaufen ist. Jeder kennt ja die BB-Codes um Artikel
+oder Kommentare mit Formattierungsinformationen anzureichern. Ich habe
+meinen eigenen “Parser” dafür geschrieben, welcher die Codes in
+entsprechendes HTML umgewandelt hat.\
+ Hier ein Auszug:\
+<a href="http://pastie.org/1261848">[Pastie-Link]</a></p>
+
+<p>Die Idee dahinter war einfach, es gibt 2 Arten von Codes:</p>
+
+<ul>
+<li>  ohne Parameter wie z.B. Bold, also [b]fetter Text[/b]</li>
+<li>  mit Parametern wie z.B. URL, also [url=<a href="http://www.readmore.ch%5DMeine">http://www.readmore.ch]Meine</a>
+Webpage[/url]</li>
+</ul>
+
+<p>Die parametrierbaren Codes erhielten im Anfangsarray den Text
+“!!REPLACER!!” welche dann anschliessend ersetzt wurde. Das mag ja alles
+noch gehen, wenn auch sich solche ein Parser mit Regular Expression um
+einiges schöner schreiben liess.</p>
+
+<p>Wirklich <em>stolz</em> bin ich auf Zuweisungen à la “s” =&gt; “&lt;s&gt;”, “h1” =&gt;
+“&lt;h1&gt;”, wo sich mir heute die Nackenhaare aufstellen. Typisch war auch
+die schlechte Namensgebung der Variablen (anz oder sub/newsub) sowie die
+auskommentierten Stellen (“man weiss nie für was das mal noch gut sein
+kann”).</p>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><a href="/posts/2010/11/kino-langer-leben">Kino: Länger Leben</a> <span class="date">03.11.2010</span></h3>
+
+        <p><a href="http://www.laengerleben.ch/"><img src="http://media.tumblr.com/tumblr_lba6wtX7QI1qa2z4q.jpg" alt="Länger
+Leben" title="Länger Leben"></a></p>
+
+<p>Gestern war der grosse Premierenabend im corso des Schweizer Films
+<a href="http://www.laengerleben.ch/">Länger Leben</a> von und mit Lorenz Keiser.
+Dabei geht es um Max Wanner (gespielt von <em>Matthias Gnädinger</em>) und
+Fritz Pollatschek (<em>Nikolaus Paryla</em>), welche beide krank sind und
+jeweils ein Organ brauchen. Da leider derzeit keine passenden Organe
+vorhanden sind, schlägt der ballettverliebte Dr. Schöllkopf (<em>Lorenz
+Keiser</em>) einen Deal vor: die beiden Herren versprechen sich gegenseitig
+ihr Herz bzw. ihre Leber, wer länger lebt, bekommt das Organ des
+anderen.</p>
+
+<p>Das ganze wird sehr ulkig und leicht präsentiert, die zwei “Alten” sind
+eine Glanzbesetzung. Neben der Hauptgeschichte ergibt sich noch eine
+Verstrickung mit der Mafia (welche natürlich mit Organen handelt) und
+etwas Liebe muss auch noch sein, dafür sorgen <em>Leonardo Nigro</em> als
+depressiver Luigi, <em>Thomas Müller</em> als Sohn von Wanner und Assistenzarzt
+von Dr. Schöllkopf und natürlich die schöne Schwester Jasmin (<em>Yangzom
+Brauen</em>).\
+ Das ganze Setting stimmt einfach: sei es der spezielle Catering-Service
+Methusalem, die bösen Mafiosi (<em>Zdenko Jelcic</em>, <em>Jarreth J. Merz</em> und
+<em>Shpend Salihu</em>) oder die Psychologin Sabine (<em>Laura de Weck</em>).
+Langweilig wird der Film nie, und das bei doch stolzen 104min Laufzeit.</p>
+
+<p>Der Film hat wohl eine etwas wirre Vorgeschichte, da komplett auf
+Fördergelder verzichtet werden musste. Das Budget von ca. 700’000 CHF
+ist dementsprechend nicht sehr hoch. Der Film ist durch private
+Investoren und einige Sponsoren zustande gekommen (welche z.T. durch
+lustige Produktplatzierungen im Film auffallen).</p>
+
+<p>Fazit: Wieder einmal eine sehr zu empfehlende Schweizer Komödie. Trotz
+Low-Budget wurde ein qualitativ hochstehender Film gedreht. Anschauen!</p>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><a href="/posts/2010/10/linux-install-event-vom-alt-comp-hsr">Linux Install-Event vom alt.comp.hsr</a> <span class="date">05.10.2010</span></h3>
+
+        <p><img src="http://media.tumblr.com/tumblr_l9t4re8ZS01qa2z4q.png" alt="Linux
+Install-Event"></p>
+
+<p>Gestern war wieder einmal der alljährlich stattfindende Linux
+Install-Event, bei welchem wir vom
+<a href="http://altcomphsr.vshsr.ch">alt.comp.hsr</a> die neuen Studenten der
+<a href="http://www.hsr.ch">HSR</a> in die wunderbare Linux-Welt einführen. Bislang
+hielt sich der Ansturm bei solchen Veranstaltungen arg in Grenzen, nicht
+so gestern.</p>
+
+<p>Schon als wir um 15.00 Uhr das Zimmer öffneten waren dort die ersten
+drei Studenten, welche einige Linux-Fragen an uns hatten. Wir hatten
+schlussendlich ca. 15 Studenten zu Gast welche uns mit
+unterschiedlichsten Fragen auf Trab hielten. Die meisten waren dank
+<a href="http://altcomphsr.vshsr.ch">unserem Wiki</a> schnell und einfach zu
+beantworten für andere wurden man-Pages und das gute alte Internetz zu
+Hilfe genommen.</p>
+
+<p>Alles in allem ein gelungener Anlass, der gezeigt hat, dass das
+Interesse an Linux vorhanden ist und vor allem auch das Bedürfnis nach
+einem Ort, an dem man einfach Fragen stellen kann.</p>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><a href="/posts/2010/10/fazit-des-zurich-film-festivals-2010">Fazit des Zurich Film Festivals 2010</a> <span class="date">04.10.2010</span></h3>
+
+        <p><a href="http://www.zurichfilmfestival.org/de/programm-2010/alle-filme-a-bis-z/"><img src="http://media.tumblr.com/tumblr_l9oojkOByQ1qa2z4q.jpg" alt="Zurich Film
+Festival" title="Zurich Film Festival"></a></p>
+
+<p>Jetzt ist es schon wieder vorbei, das <a href="http://www.zurichfilmfestival.org">Zurich Film
+Festival</a>. Die Limmatstadt hat über
+70 Filme gezeigt, <a href="http://www.readmore.ch/tagged/Zurich%20Film%20Festival">zwölf davon habe ich
+gesehen</a>. Dabei
+gab es einen bunten Strauss von Filmen, die meisten sind nicht
+miteinander zu vergleichen.</p>
+
+<p>Folgende Filme habe ich besucht (Links zu meinen Blogposts):</p>
+
+<ol>
+<li> <a href="http://www.readmore.ch/post/1177562795/zff-2010-pieds-nus-sur-les-limaces">Pieds nus sur les
+limaces</a></li>
+<li> <a href="http://www.readmore.ch/post/1183539433/zff-2010-the-joneses">The
+Joneses</a></li>
+<li> <a href="http://www.readmore.ch/post/1185573484/zff-2010-der-letzte-schone-herbsttag">Der letzte schöne
+Herbsstag</a></li>
+<li> <a href="http://www.readmore.ch/post/1197294888/zff-2010-hugh-hefner-playboy-activist-and-rebel">Hugh Hefner: Playboy, Activist and
+Rebel</a></li>
+<li> <a href="http://www.readmore.ch/post/1199353050/zff-2010-shorts-from-down-under">Shorts from Down
+Under</a>
+(Kurzfilme)</li>
+<li> <a href="http://www.readmore.ch/post/1203568068/zff-2010-tamara-drewe">Tamara
+Drewe</a></li>
+<li> <a href="http://www.readmore.ch/post/1209180613/zff2010-r">R</a></li>
+<li> <a href="http://www.readmore.ch/post/1209214519/zff2010-van-diemens-land">Van Diemen’s
+Land</a></li>
+<li> <a href="http://www.readmore.ch/post/1228233517/zff-2010-catfish">Catfish</a></li>
+<li><a href="http://www.readmore.ch/post/1228326248/zff-2010-machete">Machete</a></li>
+<li><a href="http://www.readmore.ch/post/1233842645/zff-2010-monogamy">Monogamy</a></li>
+<li><a href="http://www.readmore.ch/post/1241368433/zff-2010-blue-valentine">Blue
+Valentine</a></li>
+</ol>
+
+<p>Zu meinen Favoriten gehören sicherlich
+<a href="http://www.readmore.ch/post/1228326248/zff-2010-machete">Machete</a>,
+<a href="http://www.readmore.ch/post/1209180613/zff2010-r">R</a> und
+<a href="http://www.readmore.ch/post/1228233517/zff-2010-catfish">Catfish</a>.
+Speziell zu erwähnen ist noch die <a href="http://www.readmore.ch/post/1199353050/zff-2010-shorts-from-down-under">Auswahl der
+Kurzfilme</a>
+aus Australien, welche echt phänomenal waren. Ich habe das Gefühl ich
+sollte dieses Jahr auch noch an die <a href="http://www.kurzfilmtage.ch/">Winterthurer
+Kurzfilmtage</a> gehen.</p>
+
+<p>Ich freue mich bereits auf das nächste Festival, auf die Atmosphäre und
+die Q&amp;A’s mit den Schauspielern und den Regisseuren. Speziell fand ich
+dieses Jahr auch die Begleitung des Festivals durch den <a href="http://twitter.com/zurichfilmfest">offiziellen
+Twitter-Account</a>, sowie die vielen
+Leute die mit dem <a href="http://search.twitter.com/search?q=%23zff2010">Hashtag
+#ZFF2010</a> getwittert
+haben. Ich habe noch eine
+<a href="http://twitter.com/odi/zurichfilmfestival2010">Twitter-Liste</a> erstellt
+mit allen die irgendwie mit dem Festival zu tun haben (Besucher,
+Filmschaffende etc.).</p>
+
+<p>Bis nächstes Jahr!</p>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><a href="/posts/2010/10/blue-valentine">ZFF 2010: Blue Valentine</a> <span class="date">04.10.2010</span></h3>
+
+        <p><a href="http://www.zurichfilmfestival.org/de/programm-2010/Filme/531/blue-valentine/"><img src="http://media.tumblr.com/tumblr_l9ooggc9Vo1qa2z4q.jpg" alt="Blue Valentine" title="Blue Valentine"></a></p>
+
+<p><a href="http://www.zurichfilmfestival.org/de/programm-2010/Filme/531/blue-valentine/">Blue Valentine</a>
+hat meinen persönlichen Abschluss des <a href="http://www.zurichfilmfestival.org">Zurich Film Festivals</a> besiegelt. Der Film
+erzählt zwei parallel erzählte Geschichten eines jungen Paares - Dean
+und Cindy - wie sie sich kennen gelernt und geheiratet haben und 5 Jahre
+später als ihre Ehe bereits tief in der Krise steckt.</p>
+
+<p>Die Krise wird sehr real dargestellt, unterschwellige Konflikte brechen
+immer wieder auf, auf Ablehnung folgt Anziehung. Es ist nicht einfach
+ein plumper Streit, es wird eine grosse Bandbreite gezeigt, mit der
+ganzen Komplexität einer Beziehung. Es gibt eben noch sehr viel zwischen
+erkalteter und aufflammender Liebe.</p>
+
+<p>Trotzdem werden teilweise arge Klischees bedient, Dean wird vom
+Ex-Freund von Cindy verprügelt, jedoch kommt dies nachher nicht mehr zu
+Sprache. Natürlich kommt dann auch noch der Alkohol dazu. Schade
+eigentlich, der Film hätte auch so genug zu bieten gehabt.</p>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><a href="/posts/2010/10/monogamy">ZFF 2010: Monogamy</a> <span class="date">03.10.2010</span></h3>
+
+        <p><a href="http://www.zurichfilmfestival.org/de/programm-2010/Filme/243/monogamy/"><img src="http://media.tumblr.com/tumblr_l9oo4mUOb11qa2z4q.jpg" alt="Monogamy" title="Monogamy"></a></p>
+
+<p><a href="http://www.zurichfilmfestival.org/de/programm-2010/Filme/243/monogamy/">Monogamy</a>
+handelt von Theo, einem Fotografen, mit einer verrückten Idee: Er
+entwickelt ein Konzept namens <em>Gumshot</em>. Dabei wird ein Kunde zu einer
+ausgemachten Zeit “heimlich” fotografiert, so dass Bilder entstehen,
+welche nicht gestellt sind oder eine Person spezielle Posen einnimmt.
+Der Fotograf gibt sich dabei explizit nicht zu erkennen, sondern verhält
+sich eher wie ein “Stalker”.</p>
+
+<p>Theo ist mit Nat verlobt, die beiden wollen in Kürze heiraten, alles
+scheint perfekt. Als Theo aber einen <em>Gumshot-Auftrag</em> von einer Kundin
+namens Subgirl (<em><a href="http://www.meitaldohan.com/">Meital Dohan</a></em>) bekommt,
+wird das zu seiner Obsession. Er fotografiert sie heimlich beim Sex in
+der Öffentlichkeit, was ihn offensichtlich anregt. Er kann fast nicht
+mehr davon lassen, ist das ganze noch Arbeit?</p>
+
+<p>Die Beziehung wird durch seine Besessenheit stark belastet, was von den
+zwei Hauptdarstellern <a href="http://www.imdb.com/name/nm0582149/">Chris
+Messina</a> und <a href="http://www.imdb.com/name/nm0429069/">Rashida
+Jones</a> sehr eindrücklich vermittelt
+wird. Dieses Beziehsdrama ist sehr spannend und lässt einem so schnell
+nicht los.</p>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><a href="/posts/2010/10/machete">ZFF 2010: Machete</a> <span class="date">02.10.2010</span></h3>
+
+        <p><a href="http://www.zurichfilmfestival.org/de/programm-2010/Filme/1194/machete/"><img src="http://media.tumblr.com/tumblr_l9novndScU1qa2z4q.jpg" alt="Machete" title="Machete"></a></p>
+
+<p>Ach was habe ich mich auf diesen Film gefreut: Zum einen natürlich weil
+ich für diesen Film vom <a href="http://www.zurichfilmfestival.org">Zurich Film
+Festival</a> eingeladen wurde, als
+Dankeschön für meine <a href="http://search.twitter.com/search?q=%23zff2010">Tweets über das
+Festival</a>. Dafür nochmals
+herzlichen Dank, fand ich eine super Geste! Zum anderen natürlich weil
+ich
+<a href="http://de.wikipedia.org/wiki/Robert_Rodriguez#Filmografie">Rodriguez-Filme</a>
+einfach liebe. Einfach herrlich trashig, mit viel Blut und Gewalt,
+witzigen Anspielungen und coolen Sprüchen (<em>&quot;Machete don’t text&quot;</em>).</p>
+
+<p>Ich wurde denn auch nicht enttäuscht: Es gab jede Menge Blut, skurrile
+Aktionen und herrliche Sprüche. Natürlich dürften auch die Frauen nicht
+fehlen (welche entweder als Krankenschwestern, in Lack und Leder oder
+ganz nackt zu sehen waren).\
+ Der Film wartet mit vielen Stars auf in nicht immer typischen Rollen
+(z.B. Robert De Niro als texanischer Senator). Machete (gespielt von
+<a href="http://www.imdb.com/name/nm0001803/">Danny Trejo</a>) ist ein wortkarger,
+macheten-schwingender Übermensch, der immer weiss was zu tun ist. Ideal
+für diesen Streifen.</p>
+
+<p>Daneben lehrt der Film wie man mit einer Machete Auto fährt, wie man
+sich schnell und einfach aus einem Gebäude abseilt oder wie man von
+einem “Ave Maria” begleitet eine Kirche zerstört.</p>
+
+<p>Genial!</p>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><a href="/posts/2010/10/catfish">ZFF 2010: Catfish</a> <span class="date">02.10.2010</span></h3>
+
+        <p><a href="http://www.zurichfilmfestival.org/de/programm-2010/Filme/525/catfish/"><img src="http://media.tumblr.com/tumblr_l9not5VLJR1qa2z4q.jpg" alt="Catfish" title="Catfish"></a></p>
+
+<p>Der Dokumentarfilm
+<a href="http://www.zurichfilmfestival.org/de/programm-2010/Filme/525/catfish/">Catfish</a>
+ist in vielerlei Hinsicht bemerkenswert: Er erzählt eine sehr
+persönliche Geschichte und das gleich von zwei Seiten. Es geht um die
+virtuelle Identität in Zeiten von Facebook, Youtube &amp; Co. und trifft
+damit genau den Nerv der Zeit. So fällt es natürlich auch nicht schwer
+sich mit den Protagonisten zu identifizieren.</p>
+
+<p>Der Film zieht einem von Anfang an in seinen Bann. Die Geschichte
+beginnt damit, dass die 8-jährige Abby ein Foto von Nev abzeichnet und
+ihm davon auf Facebook berichtet. Nev schickt von da an regelmässig
+Bilder zu Abby, welche diese dann zeichnet. Daneben freundet sich Nev
+mit Abbys Schwester Megan an - natürlich virtuell via Facebook - und
+beginnt mit ihr zu flirten. Als sich gerade eine Gelegenheit ergibt,
+beschliesst Nev die ganze Familie, allen voran natürlich Megan, zu
+besuchen. Dabei ändert sich die Geschichte völlig und alles bisherige
+erscheint in einem neuen Licht.</p>
+
+<p>Das spezielle daran ist, dass der Filmemache Ariel Schulman (zusammen
+mit Henry Joost) seinen Bruder Nev begleitet und damit eine sehr
+vertraute Stimmung herrscht. Ein eindrückliches Stück Film, welches
+genau die Richtige Mischung aus Nähe und Distanz findet und mit sehr
+charismatischen Personen aufwartet. Sehr zu empfehlen!</p>
+
+
+      </div>
+    
+   <ul class="pagination">
+       <li><a href="/posts/index/1">1</a></li>
+       <li><a href="/posts/index/2">2</a></li>
+       <li class="active"><a href="/posts/index/3">3</a></li>
+       <li><a href="/posts/index/4">4</a></li>
+       <li><a href="/posts/index/5">5</a></li>
+       <li><a href="/posts/index/6">6</a></li>
+       <li><a href="/posts/index/7">7</a></li>
+       <li><a href="/posts/index/8">8</a></li>
+       <li><a href="/posts/index/9">9</a></li>
+   </ul>
+  </div>
+</div>
+
+      </div>
+
+      <hr>
+      <div class="footer">
+        <p>&copy; Stefan Oderbolz (&quot;Odi&quot;) 2014
+          with <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a>
+          and <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>
+        </p>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- Google Prettify -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.js"></script>
+<script>
+  var pres = document.getElementsByTagName("pre");
+  for (var i=0; i < pres.length; ++i) {
+    pres[i].className = "prettyprint linenums";
+  }
+  prettyPrint();
+</script>
+<!-- end Google Prettify -->
+    
+    
+  </body>
+</html>

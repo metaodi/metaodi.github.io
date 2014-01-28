@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Rosarivo' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Stefan Oderbolz (&quot;Odi&quot;)">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- load static files from bower -->
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <script src="/bower_components/jquery/jquery.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Le styles -->
+<link href='/assets/stylesheets/style-6f857850c832817175fdbb4d71c6ee0d.css' type='text/css' rel='stylesheet' media='all'>
+<link href='/assets/stylesheets/google_prettify/sons-of-obsidian-afb0925bfa2d994f17dab93e13fbf999.css' type='text/css' rel='stylesheet' media='all'>    
+    <!-- Le scripts -->
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+  -->
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">metaodi</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            
+              <li><a href="/tags">Tags</a></li>
+            
+            
+              <li><a href="/archive">Archive</a></li>
+            
+            
+              <li><a href="/about">About me</a></li>
+            
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="content">
+        <div class="row-fluid">
+  <div class="span12">
+      <div class="posts">
+        <h3 class="title"><a href="/posts/2010/08/neuer-tweet-button-in-der-sidebar">Neuer Tweet-Button in der Sidebar</a> <span class="date">13.08.2010</span></h3>
+
+        <p><a href="http://twitter.com/tweetbutton"><img src="http://media.tumblr.com/tumblr_l741gd411O1qa2z4q.png" alt="Tweetbutton auf
+Readmore.ch"></a></p>
+
+<p>…und zwar <a href="http://twitter.com/tweetbutton">DEN Tweet-Button</a>, eine
+Erklärung dazu gibts <a href="http://www.youtube.com/watch?v=LB0hrJ_ZZzc">per
+Video</a>.</p>
+
+<p>Der Button verweist jeweils auf die aktuelle URL, d.h. auf der
+Hauptseite auf “www.readmore.ch” und auf den Beitragsseiten jeweils auf
+die spezifische Beitrags-URL.</p>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><a href="/posts/2010/07/using-utplsql-with-multiple-schemas">Using utPLSQL with multiple schemas</a> <span class="date">12.07.2010</span></h3>
+
+        <p>I really like unit testing, and nowadays there is an helping framework
+for almost every environment and/or programming language. For PL/SQL
+this is <a href="http://utplsql.sourceforge.net/">utPLSQL</a>, which consists of a
+bunch of packages that you need to put on your database and then you
+should be good to test your could. You <em>should</em>.</p>
+
+<p>I just spent some hours debugging my test code, so I want to share this
+with you, maybe I can save someone out there some time.</p>
+
+<h3 id="toc_0">My setting</h3>
+
+<ul>
+<li>  <strong>Schema A:</strong> utPLSQL package</li>
+<li>  <strong>Schema B:</strong> package XY (code to test), package UT_XY (test code)</li>
+</ul>
+
+<p>I have two schemas A and B. In schema A utPLSQL is installed, and in B
+is the code to test. It is recommended to have your code to test and
+your test code in the same schema.</p>
+
+<p>The following script is used to run the tests:</p>
+
+<pre><code> begin
+   for c in (select object_name,owner
+               from all_objects
+              where object_name like &#39;UT\_%&#39; escape &#39;\&#39;
+                and object_type =&#39;PACKAGE&#39;)
+   loop
+     begin
+     utPLSQL.test(
+       package_in =&gt; substr(c.object_name,4),
+       prefix_in =&gt; &#39;UT_&#39;,
+       owner_in =&gt; c.owner
+     );
+   exception
+     -- in case of a faulty unittest continue with the others.
+     when others then
+       null;
+   end;
+   end loop;
+ end;
+ /
+</code></pre>
+
+<p>But I kept getting the error:</p>
+
+<pre><code> Program named &quot;XY&quot; does not exist.
+</code></pre>
+
+<p>So I thought that somehow the schema A does not “see” the packages in
+the schema B and created public synonyms. Unfortunately this didn’t
+help. Then I tried to move the “UT_” package to schema A, which worked,
+but now I got an error that the code to test and the test code are in
+different schemas.</p>
+
+<p>There must be something obvious I’m missing!</p>
+
+<p>And there it was: A had not “execute” grant on the packages in B.</p>
+
+<pre><code>  grant execute on b.xy to A;
+</code></pre>
+
+<p>Now everything just worked fine.</p>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><a href="/posts/2010/05/erroneous-copyfrom-method-in-jcifs-vfs">Erroneous copyFrom() method in JCIFS/VFS</a> <span class="date">30.05.2010</span></h3>
+
+        <p>At the <a href="http://www.hsr.ch">HSR (University of Applied Science
+Rapperswil)</a> we are currently developing a software
+to synchronize files from the central fileserver to the students
+computers. This should help the students to get the latest slides for
+their lectures.</p>
+
+<p>The software is based on <a href="http://commons.apache.org/vfs/">VFS (Virtual
+Filesystem)</a> from the <a href="http://commons.apache.org/">Apache Commons
+project</a>. The file server is a classic Samba
+server that uses the CIFS protocol, and with the use of VFS we ensured a
+common access the the filesystem, no matter if it’s the remote
+filesystem of the file server or the local filesystem on the student’s
+computers.</p>
+
+<p>At a point we got a very strange error: we could copy files from the
+remote system, but when we delete the files while the application is
+running, and try to copy the files again, the copy fails:</p>
+
+<pre><code>FileSystemException &quot;could not copy [source-path] to [target-path]&quot;.
+</code></pre>
+
+<p>We figured out, that the problem were the folders that don’t exist yet.
+But according the the <a href="http://commons.apache.org/vfs/apidocs/org/apache/commons/vfs/FileObject.html#copyFrom%28org.apache.commons.vfs.FileObject,%20org.apache.commons.vfs.FileSelector%29">documentation of the the copyFrom
+method</a>
+the parent folder should be created if it does not exist. This is also
+the case when we do the first-time-copy, which works like a charm.</p>
+
+<p>After serveral tries with refresh() etc. to bring the FileObjects and
+the actual filesystem to sync, we finally implemented this workaround,
+maybe somebody else can use it:</p>
+
+<pre><code>protected void copyFile(FileObject targetFile, FileObject sourceFile) {
+    try {
+        FileObject parentFile = targetFile.getParent();
+        parentFile.refresh();
+        log.debug(&quot;Parent exists?: &quot; + parentFile.exists());
+
+        if (!parentFile.exists()) {
+            parentFile.createFolder();
+            log.debug(&quot; =&gt; Folder created&quot;);
+        }
+        targetFile.copyFrom(sourceFile),new AllFileSelector());
+    } catch (FileSystemException e) {
+        log.warn(&quot;Could not copy file, FileSystemException: &quot;
+                + e.getMessage());
+    }
+}
+</code></pre>
+
+<p>(the above code is a little bit simplified, and the use of an extra
+FileObject for the parent is not absolutely necessary, but it clarifies
+the code)</p>
+
+<p>In my opinion the copyFrom implementation of
+<a href="http://jcifs.samba.org/">JCFIS</a> (which is the Samba part of VFS) does
+not work, i.e. this is a bug. But I’m not sure, maybe we overlook an
+obvious thing on our side. Fact is, the above solution works for us. The
+JCIFS is part of the VFS sandbox, this means the library is still in
+development. Maybe I’ll file a bug, if I can clearly reproduce this
+behavior.</p>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><a href="/posts/2009/12/guardian-how-do-i-know-china-wrecked-the-copenhagen">Guardian: How do I know China wrecked the Copenhagen deal? I was in the room</a> <span class="date">23.12.2009</span></h3>
+
+        <p><a href="http://www.guardian.co.uk/environment/2009/dec/22/copenhagen-climate-change-mark-lynas">http://www.guardian.co.uk/environment/2009/dec/22/copenhagen-climate-change-mark-lynas</a></p>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><a href="/posts/2009/12/how-to-make-your-eye-feel-like-its-closed-when-its">How to make your eye feel like it's closed, when it's actually open</a> <span class="date">22.12.2009</span></h3>
+
+        <p><a href="http://scienceblogs.com/cognitivedaily/2008/05/how_to_make_your_eye_feel_like.php">http://scienceblogs.com/cognitivedaily/2008/05/how_to_make_your_eye_feel_like.php</a></p>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><a href="/posts/2009/12/mnmal-i-think-this-summarizes-everything">mnmal</a> <span class="date">03.12.2009</span></h3>
+
+        <p>I think this summarizes everything.</p>
+
+<p><img src="http://24.media.tumblr.com/tumblr_kt78unDCi71qa3qedo1_500.jpg" alt=""></p>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><a href="/posts/2009/12/charles-lewinsky-ussert-sich-in-einem-essay-ber-das">Charles Lewinsky äussert sich in einem Essay über das Minarettverbot, den ewigen Populismus und Roger Köppel</a> <span class="date">03.12.2009</span></h3>
+
+        <p><a href="http://www.tagesanzeiger.ch/kultur/buecher/Jetzt-muessen-wir-sogar-Koeppels-triumphierende-Ironie-schlucken/story/10202730">http://www.tagesanzeiger.ch/kultur/buecher/Jetzt-muessen-wir-sogar-Koeppels-triumphierende-Ironie-schlucken/story/10202730</a></p>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><a href="/posts/2009/11/wwfm-vi-in-z-rich-das-video-zum-event">WWFM VI in Zürich, das Video zum Event</a> <span class="date">17.11.2009</span></h3>
+
+        
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><a href="/posts/2009/11/the-go-programming-language">The Go Programming Language</a> <span class="date">11.11.2009</span></h3>
+
+        <p>Today I came across <a href="http://golang.org/">a new programming language called
+Go</a>, developed by Google</p>
+
+<p>It is meant to be fast, but still garbage collected and type safe. They
+use pointers, but no pointer arithmetic.\
+ The questions remains: Do we really need another C++-like language?</p>
+
+<p>See Yourself:</p>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><a href="/posts/2009/11/extract-tar-gz-to-specific-directory">Extract .tar.gz to specific directory</a> <span class="date">09.11.2009</span></h3>
+
+        <p>I want to extract all files form a “.tar.gz” file to a specific
+directory (not the current).</p>
+
+<p>When you ask Google you quickly come up with the elegant solution:</p>
+
+<pre><code>$ gzip -cd /some/dir/something.tar.gz | tar -xvf - -C /specific/directory
+</code></pre>
+
+<p>Somehow my development machine doesn’t accept this, as I keep getting
+the error:</p>
+
+<pre><code>File -C not present in the archive.
+File /specific/directory not present in the archive.
+</code></pre>
+
+<p>I couldn’t find the answer, but as usual many ways lead to Rome. I’m
+able to extract the files to the current directory using</p>
+
+<pre><code>$ gzip -cd /some/dir/something.tar.gz | tar -xvf -
+</code></pre>
+
+<p>Therefore I can simply change the current directory to my specific
+directory and after the extraction return to the prior directory (I need
+to unzip the file in a script, therefore I need a generic approach).
+When we put all that together the following finally works:</p>
+
+<pre><code>$ cd /specific/directory &amp;&amp; gzip -cd /some/dir/something.tar.gz | tar -xvf - &amp;&amp; cd -
+</code></pre>
+
+
+      </div>
+    
+   <ul class="pagination">
+       <li><a href="/posts/index/1">1</a></li>
+       <li><a href="/posts/index/2">2</a></li>
+       <li><a href="/posts/index/3">3</a></li>
+       <li><a href="/posts/index/4">4</a></li>
+       <li class="active"><a href="/posts/index/5">5</a></li>
+       <li><a href="/posts/index/6">6</a></li>
+       <li><a href="/posts/index/7">7</a></li>
+       <li><a href="/posts/index/8">8</a></li>
+       <li><a href="/posts/index/9">9</a></li>
+   </ul>
+  </div>
+</div>
+
+      </div>
+
+      <hr>
+      <div class="footer">
+        <p>&copy; Stefan Oderbolz (&quot;Odi&quot;) 2014
+          with <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a>
+          and <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>
+        </p>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- Google Prettify -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.js"></script>
+<script>
+  var pres = document.getElementsByTagName("pre");
+  for (var i=0; i < pres.length; ++i) {
+    pres[i].className = "prettyprint linenums";
+  }
+  prettyPrint();
+</script>
+<!-- end Google Prettify -->
+    
+    
+  </body>
+</html>

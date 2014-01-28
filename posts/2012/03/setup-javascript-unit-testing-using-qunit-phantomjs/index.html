@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Rosarivo' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <title>Setup JavaScript unit testing using QUnit, PhantomJS and Jenkins on Amazon EC2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Stefan Oderbolz (&quot;Odi&quot;)">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- load static files from bower -->
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <script src="/bower_components/jquery/jquery.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Le styles -->
+<link href='/assets/stylesheets/style-6f857850c832817175fdbb4d71c6ee0d.css' type='text/css' rel='stylesheet' media='all'>
+<link href='/assets/stylesheets/google_prettify/sons-of-obsidian-afb0925bfa2d994f17dab93e13fbf999.css' type='text/css' rel='stylesheet' media='all'>    
+    <!-- Le scripts -->
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+  -->
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">metaodi</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            
+              <li><a href="/tags">Tags</a></li>
+            
+            
+              <li><a href="/archive">Archive</a></li>
+            
+            
+              <li><a href="/about">About me</a></li>
+            
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>Setup JavaScript unit testing using QUnit, PhantomJS and Jenkins on Amazon EC2 </h1>
+</div>
+
+<div class="row-fluid post-full">
+  <div class="span12">
+    <div class="date">
+      <span>08.03.2012</strong>
+    </div>
+    <div class="content">
+      <p>Me and my friend are currently working on a term paper about <a href="https://developers.google.com/fusiontables/">Google
+Fusion Tables</a>. It’s about
+it’s possibilities and potential. Our goal is to create a cross-platform
+mobile application using <a href="http://www.sencha.com/products/touch">Sencha
+Touch</a>, therefore we need to write
+a lot of JavaScript code for the UI and to access the Google Fusion
+Tables. Fortunately Google provides an <a href="https://groups.google.com/forum/#!topic/fusion-tables-users-group/TGDzExKymoI/discussion">inofficial JSONP
+API</a>,
+so we get native JavaScript access without another server roundtrip
+(there is <a href="http://www.reddmetrics.com/2011/08/10/fusion-tables-javascript-query-maps.html">a good blog
+post</a>
+explaining the usage with jQuery).</p>
+
+<p>The next question is: if we write tons of code in JavaScript, how are we
+going to unit test this code. We already used
+<a href="http://docs.jquery.com/QUnit">QUnit</a> in a former project and it’s
+fairly easy to use, so we decided to use that. This all works very well,
+you get a <a href="http://gft.rdmr.ch/test/js">nice web page where all your tests
+run</a> in the browser and you get nice output,
+everything’s fine.</p>
+
+<p><img src="http://media.tumblr.com/tumblr_m0ivihw8Rb1qa2z4q.png" alt="Browser output of
+QUnit" title="Browser output of QUnit"></p>
+
+<p>But, wait! What about our build? We use <a href="http://jenkins-ci.org/">Jenkins
+CI</a>, which is configured to <a href="https://wiki.jenkins-ci.org/display/JENKINS/Github+Plugin">build our project
+every time we push new code to
+GitHub</a>.
+Wouldn’t it be nice if our tests run when we build, so we get immediate
+feedback and never ever forget to run them and fix our code?</p>
+
+<p>Yes, it definitely would be!</p>
+
+<p>Now we have several problems</p>
+
+<ul>
+<li>  How do I run JavaScript without a browser?</li>
+<li>  Does Jenkins “speak” JavaScript?</li>
+<li>  Is there a solution for ant? Do I need another tool? Another server?</li>
+<li>  How do I get my test results as XML, so Jenkins can handle them?</li>
+</ul>
+
+<p>I checked serveral solutions to my this problems: From
+<a href="http://nodejs.org/">node.js</a> to <a href="http://www.mozilla.org/rhino/">Rhino</a>
+(there is even an <a href="http://code.google.com/p/rhinounit/">ant based unit testing
+framework</a> using Rhino) to
+<a href="http://swarm.jquery.org/">TestSwarm</a>. They were all too limited or too
+bloated. I couldn’t believe this is such a big deal to run QUnit
+JavaScript code, get the results and publish them in Jenkins.</p>
+
+<p>This is when I found out about <a href="http://www.phantomjs.org/">PhantomJS</a>, a
+nice and handy headless WebKit browser, that runs JavaScript code.
+Exactly what I need. As we are using <a href="http://aws.amazon.com/ec2/">Amazon
+EC2</a> for this project, I tried to install
+PhantomJS on a basic Amazon AMI. I just couldn’t get it to work, when I
+asked in Twitter if someone succeeded to setup PhantomJS. <a href="https://twitter.com/#!/philippkueng/status/176606716492914688">Philipp Küng
+pointed
+out</a>
+(thanks again!) that it is much easier to setup with Ubuntu. Well then,
+launch a new Instance on EC2, choose the <a href="http://cloud.ubuntu.com/ami/">latest Ubuntu
+AMI</a>, and after some simple commands
+you’re good to go:</p>
+
+<pre><code>sudo add-apt-repository ppa:jerome-etienne/neoip
+sudo apt-get update
+sudo apt-get install phantomjs
+</code></pre>
+
+<p>After that I had to <a href="http://code.google.com/p/phantomjs/wiki/XvfbSetup">setup Xvfb (virutal
+framebuffer)</a>,
+because EC2 instances are headless. Generally see the <a href="http://code.google.com/p/phantomjs/wiki/PhantomJS">PhantomJS
+Wiki</a> for further
+information.</p>
+
+<p>Now I have a PhantomJS instance, the published QUnit tests and Jenkins.
+To be able to retrieve the data from PhantomJS I created a simple PHP
+script, which runs on the new instance and just executes a shell command
+(idea from <a href="http://cisight.com/run-latest-phantomjs-with-shell_exec-php-on-ubuntu-11-10-oneiric/">this blog
+post</a>).</p>
+
+<pre><code>&lt;?php
+/* Display 99 is configured on the server using Xvfb */
+$value = shell_exec(&quot;DISPLAY=:99 phantomjs run_qunit.js http://gft.rdmr.ch/test/js/index.html junit-xml&quot;);
+echo $value;
+?&gt;
+</code></pre>
+
+<p>With this URL I was able to create a simple ant target, which fetches
+the latest results from the tests:</p>
+
+<pre><code>&lt;target name=&quot;test-js&quot; depends=&quot;deploy&quot;&gt;
+    &lt;get src=&quot;${test.url}&quot; dest=&quot;${result.dir}/${result.js.file}&quot;/&gt;
+&lt;/target&gt;
+</code></pre>
+
+<p>Where <code>${test.url}</code> referes to my PHP script, and <code>${result.dir}</code> is
+configured as the location of JUnit reports in Jenkins (see screenshot):</p>
+
+<p><img src="http://media.tumblr.com/tumblr_m0jhgm87wz1qa2z4q.png" alt="Jenkins job configuration for JUnit XML
+reports" title="Jenkins job configuration for JUnit XML reports"></p>
+
+<p>Now the last missing piece is to get proper output for Jenkins. I
+adapted the <a href="https://github.com/ariya/phantomjs/blob/1.2/examples/run-qunit.js">QUnit test
+runner</a>
+from the PhantomJS examples accordingly (called <code>run_qunit.js</code>, see
+above, here is <a href="https://github.com/odi86/GFTPrototype/blob/master/test/js/run_qunit.js">my
+version</a>).
+I added a new command line parameter <code>type</code>, which determines the type
+of output the runner generates. With the value <code>junit-xml</code>, the output
+can directly be used by Jenkins, this is the reason for the junit-xml
+parameter in the PHP script above.</p>
+
+<p>The generated XML looks like that:</p>
+
+<pre><code>&lt;?xml version=&quot;1.0&quot;?&gt;
+---
+ Tests completed in 2294 milliseconds.
+36 tests of 36 passed, 0 failed. 
+---
+&lt;testsuite name=&quot;QUnit - JavaScript Tests&quot; timestamp=&quot;2012-03-08T00:11:27Z&quot; tests=&quot;36&quot; failures=&quot;0&quot; time=&quot;2.294&quot;&gt;
+&lt;testcase name=&quot;PaintSwitzerland&quot; classname=&quot;GoogleFusionTable&quot;&gt;
+&lt;/testcase&gt;
+&lt;testcase name=&quot;Construtor&quot; classname=&quot;GftLib&quot;&gt;
+&lt;/testcase&gt;
+&lt;testcase name=&quot;Constants&quot; classname=&quot;GftLib&quot;&gt;
+&lt;/testcase&gt;
+&lt;testcase name=&quot;doGet&quot; classname=&quot;GftLib&quot;&gt;
+&lt;/testcase&gt;
+&lt;testcase name=&quot;doPost&quot; classname=&quot;GftLib&quot;&gt;
+&lt;/testcase&gt;
+&lt;testcase name=&quot;doGetJSONP&quot; classname=&quot;GftLib&quot;&gt;
+&lt;/testcase&gt;
+&lt;testcase name=&quot;doPostJSONP&quot; classname=&quot;GftLib&quot;&gt;
+&lt;/testcase&gt;
+&lt;testcase name=&quot;ExecSelect&quot; classname=&quot;GftLib&quot;&gt;
+&lt;/testcase&gt;
+&lt;/testsuite&gt;
+</code></pre>
+
+<p>And in Jenkins like that: <img src="http://media.tumblr.com/tumblr_m0ji3zihxl1qa2z4q.png" alt="Test trend with failed/successful tests over
+time" title="Test trend with failed/successful tests over time"></p>
+
+<p>Overview of tests: <img src="http://media.tumblr.com/tumblr_m0ji5dTeGL1qa2z4q.png" alt="Overview of all performed
+tests" title="Overview of all performed tests"></p>
+
+<p>Failed test: <img src="http://media.tumblr.com/tumblr_m0jie0S4WY1qa2z4q.png" alt="Detail of a failed test incl.
+&#39;stacktrace&#39;" title="Detail of a failed test incl. &#39;stacktrace&#39;"></p>
+
+    </div>
+    <ul class="tag_box inline">
+      <li><i class="icon-folder-open"></i></li>
+    </ul>
+    <ul class="tag_box inline">
+      <li><i class="icon-tags"></i></li>
+      <li>
+        <a href="/tags#JavaScript, Unit Testing, Programming, QUnit, Jenkins, PhantomJS, Amazon EC2-ref">JavaScript, Unit Testing, Programming, QUnit, Jenkins, PhantomJS, Amazon EC2 <span>1</span></a>
+      </li>
+    </ul>
+    <hr>
+    <ul class="pagination">
+        <li class="prev"><a href="/posts/2011/10/zff-2011-turn-me-on-goddammit" title="ZFF 2011: Turn Me On, Goddammit">&larr; Previous</a></li>
+
+        <li><a href="/archive">Archive</a></li>
+
+        <li class="next"><a href="/posts/2012/05/fiddle-around-code" title="Fiddle around (code)">Next &rarr;</a></li>
+    </ul>
+    <hr>
+    
+  </div>
+</div>
+
+
+      </div>
+
+      <hr>
+      <div class="footer">
+        <p>&copy; Stefan Oderbolz (&quot;Odi&quot;) 2014
+          with <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a>
+          and <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>
+        </p>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- Google Prettify -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.js"></script>
+<script>
+  var pres = document.getElementsByTagName("pre");
+  for (var i=0; i < pres.length; ++i) {
+    pres[i].className = "prettyprint linenums";
+  }
+  prettyPrint();
+</script>
+<!-- end Google Prettify -->
+    
+    
+  </body>
+</html>

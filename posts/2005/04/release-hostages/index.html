@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Rosarivo' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <title>Release Hostages</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Stefan Oderbolz (&quot;Odi&quot;)">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- load static files from bower -->
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <script src="/bower_components/jquery/jquery.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Le styles -->
+<link href='/assets/stylesheets/style-6f857850c832817175fdbb4d71c6ee0d.css' type='text/css' rel='stylesheet' media='all'>
+<link href='/assets/stylesheets/google_prettify/sons-of-obsidian-afb0925bfa2d994f17dab93e13fbf999.css' type='text/css' rel='stylesheet' media='all'>    
+    <!-- Le scripts -->
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+  -->
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">metaodi</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            
+              <li><a href="/tags">Tags</a></li>
+            
+            
+              <li><a href="/archive">Archive</a></li>
+            
+            
+              <li><a href="/about">About me</a></li>
+            
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>Release Hostages </h1>
+</div>
+
+<div class="row-fluid post-full">
+  <div class="span12">
+    <div class="date">
+      <span>11.04.2005</strong>
+    </div>
+    <div class="content">
+      <h1 id="toc_0">Problem</h1>
+
+<p>There are 7 (this could be optional maybe) hostages. They will be jailed
+into 7 rooms and they cannot communicate during this time. They can
+discuss 1 hour before they get jailed. They know that the will be
+choosen randomly every day to go into an 8th room, where the can turn on
+and off a light.</p>
+
+<p>When someone can say surly that every hostage was a least once in this
+room, they are all released.</p>
+
+<p>At the beginning the light is turned off.</p>
+
+<h1 id="toc_1">Idea</h1>
+
+<p>Every hostage has a week, so there are anz_host weeks as a minimum to
+free the hostages. If a hostages get’s into the anz_host++ room, he/she
+turn’s on the light.</p>
+
+<p>Everybody who comes in this week after the turn up of the light happens
+in the room, knows that the hostage week_num has been in the room.
+Maybe it get’s more evective if I use a larger window than a week,
+because then, the chance that more other hostages sees who’s got in the
+room is larger, but the time will grew up a lot.</p>
+
+<p>Well let’s give it a try.</p>
+
+<p>btw: You have to watch carfully which hostage knows what…</p>
+
+<h1 id="toc_2">Code</h1>
+
+<p><a href="http://pastie.org/663166">See pastie</a> for the complete code</p>
+
+<h1 id="toc_3">Result</h1>
+
+<p>I tried my program on Windows and Linux (just to get better results,
+because of the random number implemention and the time function, be
+careful if you want to port the code, the obove should work well with
+windows)</p>
+
+<p>My solution seems to be ok, an average of 90 days with the basic set.
+But as you can see there are a lot of option to change the basic set and
+then my solution still works well.</p>
+
+<p>Use the option -H or /? to get help with the options.</p>
+
+<p>PS: I’m not yet good at the effective programming and I’m sure there is
+an easier way to do things I did in my code. Feel free to tell me what
+you think (via mail until my comment system works)</p>
+
+<p>PPS: Special thanks to my brother Dani
+(<a href="http://www.swissbytes.de"></a><a href="http://www.swissbytes.de">www.swissbytes.de</a>),
+who gave me the idea to this problem and wrote a perl script to simulate
+his solution (well he wasn’t that successful, because his average is
+about 500 days I think and surly his script ran much slower than my fast
+C application ;) )</p>
+
+<p><img src="http://creativecommons.org/images/public/somerights20.gif" alt="Creative
+Commons"></p>
+
+<p>This work is licensed under a <a href="http://creativecommons.org/licenses/by-sa/2.0/">Creative Commons
+License.</a></p>
+
+    </div>
+    <ul class="tag_box inline">
+      <li><i class="icon-folder-open"></i></li>
+      <li>
+        <a href="/categories#Tech-ref">Tech <span>11</span></a>
+      </li>
+    </ul>
+    <ul class="tag_box inline">
+      <li><i class="icon-tags"></i></li>
+      <li>
+        <a href="/tags#Programming-ref">Programming <span>11</span></a>
+      </li>
+      <li>
+        <a href="/tags#C-ref">C <span>1</span></a>
+      </li>
+    </ul>
+    <hr>
+    <ul class="pagination">
+        <li class="prev"><a href="/posts/2005/03/nie-mehr-st-moritz" title="Nie mehr St. Moritz">&larr; Previous</a></li>
+
+        <li><a href="/archive">Archive</a></li>
+
+        <li class="next"><a href="/posts/2005/04/schengen-propaganda" title="Schengen Propaganda">Next &rarr;</a></li>
+    </ul>
+    <hr>
+    
+  </div>
+</div>
+
+
+      </div>
+
+      <hr>
+      <div class="footer">
+        <p>&copy; Stefan Oderbolz (&quot;Odi&quot;) 2014
+          with <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a>
+          and <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>
+        </p>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- Google Prettify -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.js"></script>
+<script>
+  var pres = document.getElementsByTagName("pre");
+  for (var i=0; i < pres.length; ++i) {
+    pres[i].className = "prettyprint linenums";
+  }
+  prettyPrint();
+</script>
+<!-- end Google Prettify -->
+    
+    
+  </body>
+</html>

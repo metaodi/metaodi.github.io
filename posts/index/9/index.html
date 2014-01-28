@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Rosarivo' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Stefan Oderbolz (&quot;Odi&quot;)">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- load static files from bower -->
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <script src="/bower_components/jquery/jquery.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Le styles -->
+<link href='/assets/stylesheets/style-6f857850c832817175fdbb4d71c6ee0d.css' type='text/css' rel='stylesheet' media='all'>
+<link href='/assets/stylesheets/google_prettify/sons-of-obsidian-afb0925bfa2d994f17dab93e13fbf999.css' type='text/css' rel='stylesheet' media='all'>    
+    <!-- Le scripts -->
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+  -->
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">metaodi</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            
+              <li><a href="/tags">Tags</a></li>
+            
+            
+              <li><a href="/archive">Archive</a></li>
+            
+            
+              <li><a href="/about">About me</a></li>
+            
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="content">
+        <div class="row-fluid">
+  <div class="span12">
+      <div class="posts">
+        <h3 class="title"><a href="/posts/2006/01/psychologie-vs-psychiatrie">Psychologie vs. Psychiatrie</a> <span class="date">24.01.2006</span></h3>
+
+        <p>Wie das so ist, wenn man gemütlich zusammen sitzt, vorzugsweise mit
+gutem Essen, spricht man über Gott und die Welt und plötzlich:</p>
+
+<p><strong>Was ist eigentlich der Unterschied zwischen einem Psychologen und
+einem Psychiater?</strong></p>
+
+<p>Solche Dinge brennen auf der Zunge, man gibt sich der Unwissenheit zu
+erkennen, hat aber gute Aussichten nach dem Gespräch mehr Wissen zu
+haben, denn schon das Fernsehen hat uns gelehrt: “Wer, wie was; wieso,
+weshalb, warum? Wer nicht fragr bleibt dumm!”</p>
+
+<p>Nun frei nach Kopf, die Definition die ich aus dem Abend mitgenommen
+habe:</p>
+
+<h1 id="toc_0">Psychologe</h1>
+
+<p>befasst sich mit dem menschlichen Verhalten, wie wir reagieren, wie wir
+ticken.</p>
+
+<h2 id="toc_1">Wann gehe ich dahin?</h2>
+
+<p>Einen Psychologen besuche ich, wenn ich mich beispielsweise in einer
+Lebenskrise befinde und dafür Hilfe will.</p>
+
+<h1 id="toc_2">Psychiater</h1>
+
+<p>befasst sich mit psychischen Krankheiten wie Psychosen, Sucht usw.</p>
+
+<h2 id="toc_3">Wann gehe ich dahin?</h2>
+
+<p>Meist werde ich von einem Psychologen oder dem Hausarzt an einen
+Psychiater verwiesen. Es handelt sich dabei ebenfalls um einen Dr.med.,
+der sich spezialisiert hat.</p>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><a href="/posts/2005/10/csv-seperator-character">CSV seperator character</a> <span class="date">25.10.2005</span></h3>
+
+        <p>In my particular case I got an excel sheet from the customer to import
+in a DB. The idea is to use a CSV as the base for an Oracle external
+table and then import the data in the real table with a “insert into
+select”.</p>
+
+<p>When I loaded the excel sheet and saved it as a CSV, the semicolon (“;”)
+was used as a seperator. I therefore created my external table and
+worked with the data. Then i realized that the order of the fields get
+messed up, because there were free text fields that contained “;” as
+data.</p>
+
+<p>I didn’t find an option in excel to change the seperator character, but
+as usually <a href="http://www.google.com/search?q=excel+csv+separator+character">Google is your
+friend</a>.</p>
+
+<p>This character is saved directly in your system in the “Region and
+Language Options” in the “Control Panel” (yes, I’m talking about MS
+Windows). You can selected there the “Customize” button and change the
+“List separator” to the value you want.</p>
+
+<p>First I tried to set this to “###”, but this didn’t work, excel then
+used a single space as separator. It seems it’s not allowed to use
+multiple characters. Now, I use “#” and everything works fine.</p>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><a href="/posts/2005/04/schengen-propaganda">Schengen Propaganda</a> <span class="date">19.04.2005</span></h3>
+
+        <p>Tatsächlich, wir sind an einem Punkt angekommen, der beweist, dass
+Menschen schnell vergessen, der beweist, das alte Methoden trotz
+Intelligenz Wirkung zeigen.</p>
+
+<p>Ich spreche hier von Propaganda. Als Einstieg lohnt es sich folgendes zu
+lesen: <a href="http://www.rhetorik.ch/Beeinflussen/Beeinflussen.html"></a></p>
+
+<p>Auf dieser Seite wird das Prinzip der Propaganda erläutert. Wie sie
+funktioniert, warum sie funktioniert, was genau dahinter steckt.</p>
+
+<p>Ich habe ein wenig recherchiert (Google weiss fast alles, wenn man nett
+fragt) und will hier Parallelen ziehen. Eines vorweg: ich will weder das
+tun der Nazis verharmlosen noch die Propaganda der Schengen-Gegner mit
+den Nazis gleichsetzten. Ich will nur zeigen, dass mit den gleichen
+Mitteln gearbeitet wird. Man setzt auf Angst, verunsichert den
+Betrachter und versucht ihn schliesslich zu überrennen.</p>
+
+<p>Als ich zum ersten mal die Schengen-Nein Plakate gesehen habe, haben sie
+mich unweigerlich an die Nazi-Propaganda Plakate aus dem
+Geschichtsunterricht erinnert.</p>
+
+<h2 id="toc_0">Schengen Plakate</h2>
+
+<p><img src="http://media.tumblr.com/tumblr_kruxilJKJp1qa2z4q.jpg" alt="Schengen Nein Plakat"><img src="http://media.tumblr.com/tumblr_kruxixc8uJ1qa2z4q.jpg" alt="Schengen
+Nein Plakat"></p>
+
+<h2 id="toc_1">Nazi Propaganda Plakate</h2>
+
+<p><img src="http://media.tumblr.com/tumblr_kruxjvTdI31qa2z4q.jpg" alt="Nazi-Plakat &quot;Mütter kämpft für eure Kinder&quot;">
+<img src="http://media.tumblr.com/tumblr_kruxk3f3dl1qa2z4q.jpg" alt="Nazi-Plakat: &quot;Unsere letzte Hoffnung Hitler&quot;"></p>
+
+<p>Bitte denkt erst nach bevor ihr mich verurteilt. Kommentare wie immer
+erwünscht.</p>
+
+<p>Links zum Thema:
+<a href="http://www.calvin.edu/academic/cas/gpa/index.htm">German Propaganda Archive @calvin.edu</a>
+<a href="http://www.schengen-nein.ch/startd.html">Schengen-Nein Komitee</a></p>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><a href="/posts/2005/04/release-hostages">Release Hostages</a> <span class="date">11.04.2005</span></h3>
+
+        <h1 id="toc_0">Problem</h1>
+
+<p>There are 7 (this could be optional maybe) hostages. They will be jailed
+into 7 rooms and they cannot communicate during this time. They can
+discuss 1 hour before they get jailed. They know that the will be
+choosen randomly every day to go into an 8th room, where the can turn on
+and off a light.</p>
+
+<p>When someone can say surly that every hostage was a least once in this
+room, they are all released.</p>
+
+<p>At the beginning the light is turned off.</p>
+
+<h1 id="toc_1">Idea</h1>
+
+<p>Every hostage has a week, so there are anz_host weeks as a minimum to
+free the hostages. If a hostages get’s into the anz_host++ room, he/she
+turn’s on the light.</p>
+
+<p>Everybody who comes in this week after the turn up of the light happens
+in the room, knows that the hostage week_num has been in the room.
+Maybe it get’s more evective if I use a larger window than a week,
+because then, the chance that more other hostages sees who’s got in the
+room is larger, but the time will grew up a lot.</p>
+
+<p>Well let’s give it a try.</p>
+
+<p>btw: You have to watch carfully which hostage knows what…</p>
+
+<h1 id="toc_2">Code</h1>
+
+<p><a href="http://pastie.org/663166">See pastie</a> for the complete code</p>
+
+<h1 id="toc_3">Result</h1>
+
+<p>I tried my program on Windows and Linux (just to get better results,
+because of the random number implemention and the time function, be
+careful if you want to port the code, the obove should work well with
+windows)</p>
+
+<p>My solution seems to be ok, an average of 90 days with the basic set.
+But as you can see there are a lot of option to change the basic set and
+then my solution still works well.</p>
+
+<p>Use the option -H or /? to get help with the options.</p>
+
+<p>PS: I’m not yet good at the effective programming and I’m sure there is
+an easier way to do things I did in my code. Feel free to tell me what
+you think (via mail until my comment system works)</p>
+
+<p>PPS: Special thanks to my brother Dani
+(<a href="http://www.swissbytes.de"></a><a href="http://www.swissbytes.de">www.swissbytes.de</a>),
+who gave me the idea to this problem and wrote a perl script to simulate
+his solution (well he wasn’t that successful, because his average is
+about 500 days I think and surly his script ran much slower than my fast
+C application ;) )</p>
+
+<p><img src="http://creativecommons.org/images/public/somerights20.gif" alt="Creative
+Commons"></p>
+
+<p>This work is licensed under a <a href="http://creativecommons.org/licenses/by-sa/2.0/">Creative Commons
+License.</a></p>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><a href="/posts/2005/03/nie-mehr-st-moritz">Nie mehr St. Moritz</a> <span class="date">26.03.2005</span></h3>
+
+        <p>Ich gebe zu, ich schreibe das hier aus einer gewissen Laune heraus,
+einige würden das als “Wut”, “Zorn” oder “Ärger” umschreiben, ich selbst
+sehe das nicht so eng, find ich doch bloss das St. Moritz von Ärschen
+besetzt ist.</p>
+
+<p>Ihr habt ganz richtig gelesen - ÄRSCHE - damit meine ich nicht
+bestaunenswerte weibliche Rundungen sondern abscheulich-eklige hässlich
+ignorante unzufriedene unbefriedigte Menschen aus aller Herren Länder.
+Ich war heute - wie anzunehmen ist - da. Eines vorweg: Leute die im
+“Coop” einkaufen gehen und/oder mit der Bahn reisen sind von folgendem
+ausgenommen, der ganze Rest ist hiermit angesprochen!</p>
+
+<p>Ich habe mit meiner Freundin Steffi zwei schöne Tage im Engadin
+verbracht, genauer gesagt in Pontresina. Dort wimmelt es von
+freundlichen Leuten, wie man das klischeehaft von den Bündnern erwartet,
+kurzum es war super (bei dieser Gelegenheit möchte ich die Jugi in
+Pontresina speziell grüssen, da man uns als nicht ganz einfache Gäste
+ausgehalten hat und uns immer freundlich bedient hat!!).</p>
+
+<p>Wir haben uns überlegt auf der Nach-Hause-Fahrt noch schnell nach St.
+Moritz zu fahren, etwas zu bummeln, und dort Mittag zu essen. Mit dem
+Zug sind wir um ca. Viertel nach Zehn angekommen und wurden direkt mit
+überdimensionierten Luxus-Taxen begrüsst (Mercedes Limousine [ca. 6m
+lang] oder Rolls Royce). Wir wollten ins Dorf also hiess es erstmal
+etwas hochlaufen. Dabei mussten wir uns schon arg über die Strasse
+retten, da der Gehweg zu Ende war.</p>
+
+<p>Im Dorfkern war noch alles in Ordnung, klar waren da die versnobten
+Leute die wir erwartet hatten, die von “Dolce &amp; Gabana” zu “Prada”
+eilten, wieder heraus zu “Cartier” und schnell wieder zurück in die
+Hotel-Lobby. Wir haben uns riesig gefreut als wir am Dorfrand einen
+Laden für Normalsterbliche sahen: einen normalen Batta (Schuhgeschäft).
+Gleich daneben hatte es eine Statue eines Rodlers (oder meinetwegen
+eines Sceletonfahrers), die ich mir anschauen wollte. Just dann kam von
+hinten ein Wagen der wild auf der Strasse wendete und ca. 5cm neben mir
+fuhr und mich fast umwarf, zum Glück hat Steffi mir noch gerufen, denn
+ich habe ihn gar nicht kommen gesehen. Anstatt einer Entschuldigung oder
+dergleichen bekam ich böse Blicke zugeworfen. Ich blickte mindestens
+doppelt so böse zurück und schimpfte vor mich hin.</p>
+
+<p>Kurz darauf kam uns eine Familie entgegen, wobei die beiden Mädchen neue
+Jacken zu haben schienen. Diese hatten natürlich eine wunderschöne
+(<em>kotz</em>) Pelz-Bordüre, und ich war drauf und dran zu ihnen zu gehen und
+sie zu fragen ob sie wüssten, dass dafür ein Fuchs sterben musste. Ich
+liess es dann doch bleiben des Friedens willen. Wir gingen wieder zurück
+etwas mehr ins Zentrum und sahen prompt den Wagen, der mich vorhin noch
+umfahren wollte, parkiert in einer Parklücke etwa 40m weg vom vorherigen
+Standort. Ich warf nochmals brav allen einen bösen Blick zu und liess es
+dann dabei belassen.</p>
+
+<p>Langsam aber sicher, gingen mir die Leute da auf den Wecker, und zwar
+tierisch. Was hetzten die denn so? Meinen sie ein Bonzen-Schnäppchen zu
+verpassen? Alle mit ihren Luxus-Schlitten vor Ort und müssen sich
+gegenseitig etwas beweisen, diese Einfallspinsel. Der nächste
+Zwischenfall liess nicht lange auf sich warten. Wir wollten gerade eine
+Nebenstrasse überqueren, da war auch schon eine Mercedes-Fahrerin die
+Rückwärts aus dieser Nebenstrasse auf die “Hauptstrasse” wollte, und das
+in einem nicht unbeachtlichen Tempo, zumal auf der Strasse nicht gerade
+wenig Verkehr herrschte. Für mehr als ein Kopfschütteln meinerseits
+reichte es nicht. Ich war so angespannt und wütend auf all das.</p>
+
+<p>Wir beschlossen ganz schnell wieder zu gehen, da wir weder Lust hatten
+zu shoppen, noch die Nerven uns mit solchen Rüpeln auseinander zu
+setzen. Als wir schon wieder auf der anderen Dorfseite angekommen waren
+(von dort waren es vielleicht noch 200m bis zum Bahnhof) liefen wir
+gerade an einem Hotel vorbei (ich weiss leider nicht mehr welches), von
+wo auch schon ein Gruppen-Transporter rückwärts aus der Ausfahrt fuhr,
+wir zwei direkt dahinter. Der hat nicht geschaut, definitiv nicht. Wir
+hatten echt schon Panik und sind dann einfach gerannt. Der hat nicht mal
+kurz angehalten, einfach los raus auf die Strasse fertig.</p>
+
+<p>Auf dem kurzen Stück zwischen Dorfkern und Bahnhof (alles innerorts),
+meinen viele sie könnten Gas geben, und das tun sie auch. Auf der
+Strasse waren wir (bedingt durch ihre Kürze) 1min und siehe da: schon
+ca. 5 Autos mit mindestens 80km/h runterbrettern, so dass sie vor der
+nächsten (scharfen) Kurve wieder voll bremsen durften. Gut gemacht!</p>
+
+<p>Ich muss sagen ich habe noch nie einen solch unsympathischen Ort gesehen
+wie dieses St. Moritz. Ich hoffe Normalsterbliche bleiben dem Ort fern,
+so dass sich die oberen 10’000 selber abmurksen können.</p>
+
+<p>Um 11.02 fuhren wir richtig um Chur. Dort gingen wir ins Coop-Restaurant
+assen beide Schnitzel-Pommes-Frites und die Welt war wieder in Ordnung.</p>
+
+<p>In dem Sinne und schöne Ostern -Odi</p>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><a href="/posts/2005/03/kelloggs-musste-selbst-noch-nachschauen-wie-das">Kelloggs musste selbst noch nachschauen wie das denn nun heisst, und hat prompt einen Kompromiss gefunden.</a> <span class="date">24.03.2005</span></h3>
+
+        <p>Mich wundert der Re-Launch nicht&#8230;</p>
+
+<p><img src="/assets/media/kellogs.jpg" alt=""></p>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><a href="/posts/2005/03/das-frauen-mineralwasser-mysterium">Das Frauen-Mineralwasser Mysterium</a> <span class="date">11.03.2005</span></h3>
+
+        <p>Da gab es ein Mädchen, das sich Lisa nannte. Ihr richtiger Name war
+Sandra, was aber für diese Geschichte völlig uninteressant ist. Genauso
+uninteressant gestalten sich gewisse Gespräche.</p>
+
+<p>So kam es, dass Lisa eines Tages in einem Café sass, und der Kellner
+kam. Er fragte, was er der Frau bringen solle. Sie wollte ein
+Mineralwasser.</p>
+
+<p>Welch Mysterium. Warum bestellen Frauen in Cafés nur Mineralwasser?
+Wenn es früh morgens ist, kann es vielleicht mal ein Kaffee sein. Doch
+da ist keine Abwechslung. Warum tun sie das? Eine Cola oder ein
+Orangensaft würden ihnen bestimmt auch schmecken.</p>
+
+<p>“Wegen meiner Figur”, werden einige Frauen antworten auf Anfrage. Wegen
+der Figur?? Macht das einen gravierenden Unterschied? Na ich weiss
+nicht. Meine Theorie ist, sie tun das, weil eine Cola in einem 0.33l
+Fläschchen kommt. Ein Mineralwasser aber meistens in der 0,5l Flasche.</p>
+
+<p>Doch das ist noch nicht das mysteriöseste Mysterium an der Bestellung.
+Die vier magischen Worte läuten das Drama ein:</p>
+
+<p>“Mit oder ohne Kohlensäure?”. “Ja”, antwortet sie.
+<strong>JA?</strong> Was soll er denn nun bringen? Auf eine “oder”-Frage kann man
+nicht mit Ja/Nein antworten. Das ist unmöglich. Der Kellner ist
+verzweifelt. Was soll er tun?
+Wenn er eines mit Kohlensäure serviert, sie aber eines ohne wollte,
+hätte er ein Problem, genau so im umgekehrten Fall. Doch die
+Mineralwasser-Industrie hat vorgesorgt. Es gibt Mineralwasser ohne, mit
+oder mit wenig Kohlensäure.</p>
+
+<p>Wie schön, dass die Mineralwasser-Industrie auf die akuten Probleme der
+Kellner eingeht.</p>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><a href="/posts/2005/03/an-manchen-tagen">An manchen Tagen</a> <span class="date">10.03.2005</span></h3>
+
+        <p>Das Herz springt, es schreit es weint es kreischt es singt es krächz, es
+ist übel. Alles ist so erbärmlich. Das Herz will nicht mehr, es kann
+nicht mehr, es weiss nicht mehr weiter. Der Fluss ist gestört, die
+Nervosität vorhanden, die Abscheu auch. Das Wohlwollen ist vorbei, den
+bitteren Nachgeschmack einer nicht vollendeten Aktion, einer
+Ausrutschers, eines Fehlers eines Missstands wird einem bewusst.</p>
+
+<p>Man braucht auch keine Bewusstseinserweiternde Drogen zu schlucken, es
+ist einem alles schlagartig klar, es geschieht mit dir, nichts liegt
+mehr in deiner Macht. Auch wenn du noch so versucht etwas zu
+unternehmen, alles bleibt zwecklos, alles schwindet im nichts. Es ist
+unmöglich diesem Sog zu entrinnen. Binnen wenigen Augenblicken wirst du
+aufhören Widerstand zu leisten, weil du einfach einsehen muss, dass es
+zwecklos ist, kein Ziel vor Augen, den Willen gebrochen.</p>
+
+<p>Man wird wohl versuchen dich zu beeinflussen, beiderseits, jedoch auch
+dies wird nicht bringen, deine völlige Unbeweglichkeit wird dich hindern
+irgendwelche Dinge zu unternehmen. Eine Sackgasse ist da, ein Zurück
+gibt es aber auch nicht. Du steckst fest, gelähmt von all den Gedanken,
+wie wohl im Endeffekt zu nicht anderem geführt haben, als zur Erkenntnis
+der Unkenntnis.</p>
+
+<p>Je mehr du dich bemühst, desto mehr wirst du enttäuscht, dies wird wohl
+nicht an jedem spurlos abgehen. Man sei auf der Hut…</p>
+
+<p>Es gibt einfach Tage, da läuft alles schief.</p>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><a href="/posts/2002/12/liebe-welt">Liebe Welt,</a> <span class="date">01.12.2002</span></h3>
+
+        <p>Wie geht es dir? Ich lebe hier auf dir, gehe täglich arbeiten und
+entspanne mich am Wochenende. Mir geht es gut. Was machst du so? Ist es
+nicht ziemlich langweilig ständig durchs All zu rasen, sich dabei zur
+kosmischen Musik in physikalischer Weise dem Tanz hinzugeben, der
+momentan wohl nur aus der Drehung um die eigene Achse besteht?\
+ Ach ja, was ich dich schon immer mal fragen wollte, besteht dein Sinn
+für Humor in der Ungewissheit in der du deine Bewohner hältst? Ich
+meine, lachst du dich von Zeit zu Zeit kaputt über uns, wir die an einen
+Gott glauben? Hast du das erfunden um uns abzuspeisen? Oder gibt es ihn
+wirklich neben dir, oder bist du sogar ein Teil von ihm? Du wirst es
+wohl auch nicht wissen ob es etwas Grösseres über dir gibt. Tja Pech!</p>
+
+<p>Ah ja genau, liebe Welt, war es auch so ein Scherz von dir mit dem
+Schicksal? Mein Gott, wirklich lustig. Und dadurch hast du viele
+Menschen, ja gar ganze Völker verwirrt.</p>
+
+<p>Vielleicht ist das alles nur von Menschen verfasst, erfunden. Trotzdem,
+du hast es zugelassen und nun ist dir sowieso alles entglitten. Wir
+können wohl machen was wir wollen. Klar du hast noch deine
+Naturkatastrophen, das wars dann. Wir haben Waffen, Bomben, um uns
+auszulöschen...</p>
+
+<p>Da kann man noch lange “Schicksal” sagen. Nun ist es zu spät. An die
+Vernunft musst du appellieren. Leider verhindert unser Menschsein einen
+Schritt zurück. Sowieso, warum hast du uns Menschen zu dem geformt was
+wir sind? Ganz unschuldig bist du daran wohl nicht. Wolltest du sehen
+was passiert? Dein Experiment ist wohl ausser Kontrolle geraten. Du hast
+etwas zu lange zugeschaut ohne die Aktionen und Reaktionen zu stoppen.
+Oder ist das dein Ziel? Schauen bis zum Ende? Sind wir etwa dein
+Forschungsprojekt? Tauscht du dich gerade mit deinen Kollegen über die
+neuesten Ergebnisse aus? Doch was sollte das bewecken? Ein
+Psychologie-Projekt mit etwas über sechs Milliarden Testpersonen? Welch
+Idee. Doch sicher nicht so abwegig, ich bin fast überzeugt es gäbe
+menschliche Psychologen, die es gerne tun würden, und irgendwann auch
+tun werden.</p>
+
+<p>Noch eine Frage zu einer von mir schon oft gemachten Beobachtung: Warum
+macht es Menschen nur so viel Spass, einfach ohne wirklichen Grund
+(Notwehr) andere anzugreifen, zu verletzten (physisch sowie auch
+psychisch). Schmerz macht Freude? Ich persönlich glaube ja, dass es eine
+gewisse Schutz- und Angstreaktion ist, das Aggressionspotenzial ist aber
+doch ziemlich hoch. Was in die gleiche Sparte fällt, ist die Verachtung
+gewisser Gruppen, Völker und Minderheiten; es ist schon fast zum
+Volkssport geworden, sich über diese lustig zu machen.</p>
+
+<p>Liebe Welt, fandest du es einen lustigen Scherz, die Menschen sich
+gegenseitig hassend zu machen?</p>
+
+<p>Warum erschufst du die Tränen, den Schmerz, die Sehnsucht, die Liebe?
+Das war wohl eine deine besseren Momente als du diesen Dingen
+bedachtest. So soll das sein.</p>
+
+<p>Warum muss es bei dir immer noch zusätzlich eine Extreme geben? Krieg,
+Tod, Liebeswahn, Terror, Leid? Es hätte gereicht. Ja, es hätte
+gereicht.</p>
+
+<p>Liebe Welt, warum liessest du die Menschen zu dem werden, was sie nun
+sind? Was hat das für einen Zweck? Warum braucht es immer auch böse
+Eigenschaften, wenn man gute Eigenschaften will? Hass, Neid, Eifersucht,
+Unsinn. Ich will nun aber nicht mit einer billigen Antwort (“Weil es so
+ist”) abgespeist werden. Das wäre nicht fair. Ich habe es verdient, wir
+haben es verdient.</p>
+
+<p>Die Welt hat - wir haben - eine Entwicklung gemacht. Gut, dies ist
+relativ wie jede Zeit, trotzdem könntest du langsam Antworten liefern.
+Es wäre fair. Zumindest einige Hinweise, jedoch keine solch zweideutigen
+wie UFOs und dergleichen (die, wie ich glaube sowieso nicht von dir
+sind), wir wollen klare, eindeutige, von einer Mehrheit anerkennbare
+Hinweise. Aber vielleicht denke ich (wir) in völlig falschen Dimensionen
+für dich.</p>
+
+<p>Hilf uns. Wir zählen auf dich. Viele Fragen, solche die nie geklärt
+werden. Unser Pech. Es kann aber natürlich auch sein, dass dein
+Zeitgefühl so anders ist, dass du uns ständig Hinweise gibst, die wir
+übersehen, nicht beachten weil wir nur knapp 80-100 Jahre leben. Zeig es
+uns. Von mir aus schicken jemanden der uns alles erklärt. Ich bin mir
+sicher du kannst das. DU hattest lange Zeit dir etwas einfallen zu
+lassen, also COME ON! Du magst meinen die Zeit ist nicht reif genug für
+das. Für uns hier schon. Wir sind hier und jetzt. Wir sind, jung und
+alt. Wir sind wissensdurstig. Wir sind alle Adjektive, da wir die
+Sprache formten. Wir sind.</p>
+
+<p>Liebe Welt, ich bitte dich, nimm es in die Hand und mach dich bereit
+deinen grossen Schritt zu tun. Offenbare deine Geheimnisse. Ich glaube
+an dich. Mach dich aber gefasst, so bald du deine Geheimnisse verrätst,
+werden neue Fragen kommen. Wir sind Menschen, wenn man uns den kleinen
+Finger gibt, nehmen wir die ganze Hand. Aber die Hand die einen füttert,
+beisst man nicht...</p>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><a href="/posts/2002/11/inspiration">Inspiration</a> <span class="date">02.11.2002</span></h3>
+
+        <p>Woher kommt sie, die Unbeschreibliche, die grossartige und
+allumfliessende Inspiration? Wer hat sie erfunden? Oder wurde sie gar
+geschaffen? Natürlich kann man sagen Gott sei der Schöpfer aller und von
+allem, also auch der Inspiration</p>
+
+<p>Doch ist die Inspiration ein grosses Ding, von dem sich alle unter
+Umständen ein Stückchen nehmen können. Von Gott gespendete Gedanken, ein
+Geschenk an die Denkenden?</p>
+
+<p>Hat Gott überall in der Welt und Zeit Punkte versteckt? Gerüche, Farbe,
+Menschen, Gefühle, einfach Dinge, die uns an seinem Gedankengut
+teilhaben lassen, um danach Neues zu schaffen? Wer braucht denn
+Inspiration? Künstler mag man sagen. Doch wer sind sie, diese Künstler?
+Sind wir denn nicht alle Künstler? Und sei es nur, wenn wir die Kunst
+des Lebens beherrschen. Gibt es bevorzugte, bessere Künstler?</p>
+
+<p>Man kann behaupten, dass Künstler, deren Werke wir sehen, deren Werke
+aussergewöhnlich sind, das diese Künstler “wahre Künstler sind. Ab wann
+man sich wohl “wahrer Künstler” nennen darf? Vielleicht ab dem Zeitpunkt
+ab dem man von seiner Kunst leben kann? Das aber dünkt mich unfair. Wie
+viele begabte, talentierte Künstler es in der Welt gibt, die einfach
+nicht die Chance bekommen, gesehen zu werden.</p>
+
+<p>Das Leben ist unfair, doch die Inspiration gehört allen und jedem. Man
+muss sie sich einfach nehmen, sich inspirieren lassen. Und die Werke,
+welche durch die Inspiration geschehen sind, wenn sie nur einem Freude
+bringen, schöne Gefühle verbreiten, zum Nachdenken anregen und sei
+dieser eine auch nur der Künstler selbst, diese Werke sind die besten,
+die allerbesten, egal wer sie gemacht hat.</p>
+
+
+      </div>
+    
+   <ul class="pagination">
+       <li><a href="/posts/index/1">1</a></li>
+       <li><a href="/posts/index/2">2</a></li>
+       <li><a href="/posts/index/3">3</a></li>
+       <li><a href="/posts/index/4">4</a></li>
+       <li><a href="/posts/index/5">5</a></li>
+       <li><a href="/posts/index/6">6</a></li>
+       <li><a href="/posts/index/7">7</a></li>
+       <li><a href="/posts/index/8">8</a></li>
+       <li class="active"><a href="/posts/index/9">9</a></li>
+   </ul>
+  </div>
+</div>
+
+      </div>
+
+      <hr>
+      <div class="footer">
+        <p>&copy; Stefan Oderbolz (&quot;Odi&quot;) 2014
+          with <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a>
+          and <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>
+        </p>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- Google Prettify -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.js"></script>
+<script>
+  var pres = document.getElementsByTagName("pre");
+  for (var i=0; i < pres.length; ++i) {
+    pres[i].className = "prettyprint linenums";
+  }
+  prettyPrint();
+</script>
+<!-- end Google Prettify -->
+    
+    
+  </body>
+</html>

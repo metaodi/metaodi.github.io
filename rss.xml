@@ -4,11 +4,213 @@
     <title>metaodi</title>
     <description>metaodi</description>
     <link/>
-    <pubDate>2014-01-24</pubDate>
+    <pubDate>28.01.2014</pubDate>
+    <item>
+      <title>About me</title>
+      <link>/about</link>
+      <description>&lt;p&gt;&lt;img src="/assets/media/odi.jpg" alt="Stefan Oderbolz (&amp;quot;Odi&amp;quot;)"&gt;&lt;/p&gt;
+
+&lt;p&gt;My name is Stefan Oderbolz (&amp;quot;Odi&amp;quot;) and I live in Zurich.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;m currently working for &lt;a href="http://www.liip.ch/"&gt;Liip&lt;/a&gt; as a web developer. I am one of the creators of &lt;a href="http://www.kort.ch/"&gt;Kort&lt;/a&gt;, an OpenStreetMap game.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;m interested in &lt;a href="http://github.com/metaodi"&gt;Open Source software&lt;/a&gt; and the &lt;a href="http://www.opendata.ch/"&gt;Open Data movement&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In my spare time, I play &lt;a href="http://www.bcrf.ch/"&gt;badminton&lt;/a&gt; and all kinds of tabletop games. I&amp;#39;m a film and TV series junkie, but I&amp;#39;m a keen reader, too.&lt;/p&gt;
+
+&lt;p&gt;Follow me on &lt;a href="http://twitter.com/odi"&gt;Twitter&lt;/a&gt; if you like.&lt;/p&gt;
+</description>
+    </item>
     <item>
       <title>Archive</title>
       <link>/archive</link>
       <description>
+  &lt;h2&gt;2013&lt;/h2&gt;
+    &lt;h3&gt;May&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;23.05.2013&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2013/05/on-citizenship-in-open-source-software-development"&gt;On Citizenship in Open-source software development &#x2014; Products I Wish Existed&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;h2&gt;2012&lt;/h2&gt;
+    &lt;h3&gt;October&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;22.10.2012&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2012/10/remember-without-unit-tests-youre-not"&gt;Remember: Without unit tests, you're not refactoring. You're just changing shit&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;11.10.2012&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2012/10/insert-coin-to-play-can-gaming-concepts-help"&gt;Insert Coin To Play&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h3&gt;May&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;29.05.2012&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2012/05/fiddle-around-code"&gt;Fiddle around (code)&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h3&gt;March&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;08.03.2012&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2012/03/setup-javascript-unit-testing-using-qunit-phantomjs"&gt;Setup JavaScript unit testing using QUnit, PhantomJS and Jenkins on Amazon EC2&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;h2&gt;2011&lt;/h2&gt;
+    &lt;h3&gt;October&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;06.10.2011&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2011/10/zff-2011-turn-me-on-goddammit"&gt;ZFF 2011: Turn Me On, Goddammit&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;04.10.2011&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2011/10/zff-2011-kurzes-aus-der-t-rkei"&gt;ZFF 2011: Kurzes aus der T&#xFC;rkei&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h3&gt;September&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;30.09.2011&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2011/09/zff-2011-kriegerin"&gt;ZFF 2011: Kriegerin&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;30.09.2011&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2011/09/zff-2011-majority-ogunluk"&gt;ZFF 2011: Majority (&#xC7;ogunluk)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;27.09.2011&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2011/09/zff-2011-happy-happy-sykt-lykkelig"&gt;ZFF 2011: Happy, Happy (Sykt Lykkelig)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;25.09.2011&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2011/09/zff-2011-jonas"&gt;ZFF 2011: Jonas&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;25.09.2011&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2011/09/zff-2011-circumstance"&gt;ZFF 2011: Circumstance&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;24.09.2011&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2011/09/zff-2011-restless"&gt;ZFF 2011: Restless&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;24.09.2011&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2011/09/zff-2011-fenster-zum-sommer"&gt;ZFF 2011: Fenster zum Sommer&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;23.09.2011&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2011/09/zff-2011-take-shelter"&gt;ZFF 2011: Take Shelter&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;19.09.2011&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2011/09/es-ist-wieder-so-weit-zurich-film-festival-2011"&gt;Es ist wieder so weit: Zurich Film Festival 2011&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;14.09.2011&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2011/09/team-filter-f-r-hockeytoto-ch"&gt;Team-Filter f&#xFC;r hockeytoto.ch&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h3&gt;June&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;25.06.2011&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2011/06/zum-selektierten-wert-springen"&gt;Zum selektierten Wert springen (IE Bug)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;21.06.2011&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2011/06/php-unit-testing-mit-simpletest"&gt;PHP Unit Testing mit SimpleTest&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;06.06.2011&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2011/06/rdmr-ch"&gt;Eigener URL shortener (rdmr.ch)&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h3&gt;May&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;25.05.2011&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2011/05/steganografie-in-der-schweiz-verboten"&gt;Steganografie in der Schweiz verboten?&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;18.05.2011&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2011/05/tweet-button-auf-tumblr-integrieren"&gt;Tweet Button auf Tumblr integrieren&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;h2&gt;2010&lt;/h2&gt;
+    &lt;h3&gt;November&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;03.11.2010&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2010/11/developers-shame-day-2010"&gt;Developers Shame Day: BB-Code selbstgemacht&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;03.11.2010&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2010/11/kino-langer-leben"&gt;Kino: L&#xE4;nger Leben&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h3&gt;October&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;05.10.2010&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2010/10/linux-install-event-vom-alt-comp-hsr"&gt;Linux Install-Event vom alt.comp.hsr&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;04.10.2010&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2010/10/fazit-des-zurich-film-festivals-2010"&gt;Fazit des Zurich Film Festivals 2010&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;04.10.2010&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2010/10/blue-valentine"&gt;ZFF 2010: Blue Valentine&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;03.10.2010&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2010/10/monogamy"&gt;ZFF 2010: Monogamy&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;02.10.2010&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2010/10/machete"&gt;ZFF 2010: Machete&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;02.10.2010&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2010/10/catfish"&gt;ZFF 2010: Catfish&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h3&gt;September&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;29.09.2010&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2010/09/van-diemens-land"&gt;ZFF 2010: Van Diemen's Land&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;29.09.2010&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2010/09/r"&gt;ZFF 2010: R&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;28.09.2010&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2010/09/tamara-drewe"&gt;ZFF 2010: Tamara Drewe&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;27.09.2010&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2010/09/shorts-from-down-under"&gt;ZFF 2010: Shorts from Down Under&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;27.09.2010&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2010/09/hugh-hefner-playboy-activist-and-rebel"&gt;ZFF 2010: Hugh Hefner: Playboy, Activist and Rebel&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;25.09.2010&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2010/09/der-letzte-schoene-herbsttag"&gt;ZFF 2010: Der letzte sch&#xF6;ne Herbsttag&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;25.09.2010&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2010/09/the-joneses"&gt;ZFF 2010: The Joneses&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;24.09.2010&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2010/09/pieds-nus-sur-les-limaces"&gt;ZFF 2010: Pieds nus sur les limaces&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;23.09.2010&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2010/09/zurich-film-festival-2010-beginnt"&gt;Zurich Film Festival 2010 beginnt&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h3&gt;August&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;17.08.2010&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2010/08/ciao-odi86-hello-odi"&gt;Ciao @odi86, Hello @odi&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;13.08.2010&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2010/08/neuer-tweet-button-in-der-sidebar"&gt;Neuer Tweet-Button in der Sidebar&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h3&gt;July&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;12.07.2010&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2010/07/using-utplsql-with-multiple-schemas"&gt;Using utPLSQL with multiple schemas&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h3&gt;May&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;30.05.2010&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2010/05/erroneous-copyfrom-method-in-jcifs-vfs"&gt;Erroneous copyFrom() method in JCIFS/VFS&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;h2&gt;2009&lt;/h2&gt;
+    &lt;h3&gt;December&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;23.12.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/12/guardian-how-do-i-know-china-wrecked-the-copenhagen"&gt;Guardian: How do I know China wrecked the Copenhagen deal? I was in the room&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;22.12.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/12/how-to-make-your-eye-feel-like-its-closed-when-its"&gt;How to make your eye feel like it's closed, when it's actually open&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;03.12.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/12/mnmal-i-think-this-summarizes-everything"&gt;mnmal&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;03.12.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/12/charles-lewinsky-ussert-sich-in-einem-essay-ber-das"&gt;Charles Lewinsky &#xE4;ussert sich in einem Essay &#xFC;ber das Minarettverbot, den ewigen Populismus und Roger K&#xF6;ppel&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h3&gt;November&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;17.11.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/11/wwfm-vi-in-z-rich-das-video-zum-event"&gt;WWFM VI in Z&#xFC;rich, das Video zum Event&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;11.11.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/11/the-go-programming-language"&gt;The Go Programming Language&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;09.11.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/11/extract-tar-gz-to-specific-directory"&gt;Extract .tar.gz to specific directory&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;09.11.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/11/wwfm-iv-in-z-rich"&gt;WWFM IV in Z&#xFC;rich&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h3&gt;October&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;25.10.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/10/barcamp-rapperswil"&gt;BarCamp Rapperswil&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;23.10.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/10/postfinance-sms-service"&gt;PostFinance SMS Service&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;23.10.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/10/insert-text-at-top-of-a-file"&gt;Insert text at top of a file&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;23.10.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/10/delete-all-symlink-of-a-directory"&gt;Delete all symlink of a directory&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;23.10.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/10/sie-haben-post-ihre-admin"&gt;Sie haben Post: Ihre Admin.&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;23.10.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/10/ausreden-fuers-nicht-trinken"&gt;Ausreden f&#xFC;rs Nicht-Trinken&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;23.10.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/10/zusammengesetzte-w-rter"&gt;Zusammengesetzte W&#xF6;rter&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;23.10.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/10/snowboard-garage-vs-fischer-bettwaren"&gt;Snowboard Garage vs. Fischer Bettwaren&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;23.10.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/10/generate-n-rows-from-dual"&gt;Generate n rows from dual&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;23.10.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/10/dvd-rip-and-gentoo"&gt;dvd::rip and gentoo&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;23.10.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/10/using-pidgin-with-msn-pecan"&gt;Using Pidgin with msn-pecan&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;23.10.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/10/wie-schreibt-man-eine-rede"&gt;Wie schreibt man eine Rede&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;23.10.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/10/ipa-client-backup-services"&gt;IPA - Client Backup Services&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;23.10.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/10/im-bus"&gt;Im Bus&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;23.10.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/10/doom-for-sysadmins"&gt;Doom for Sysadmins&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;23.10.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/10/find-old-files-and-their-size"&gt;Find old Files and their size&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;21.10.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/10/odbc-hell"&gt;ODBC Hell&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;21.10.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/10/brainfucked-logo"&gt;Brainfucked Logo&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;08.10.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/10/ein-tisch-ist-ein-tisch"&gt;Ein Tisch ist ein Tisch&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;08.10.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/10/papier-zum-tragen-kein-problem"&gt;Papier - Zum Tragen kein Problem&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;h2&gt;2007&lt;/h2&gt;
+    &lt;h3&gt;August&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;24.08.2007&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2007/08/ms-access-let-lines-in-reports-grow-with-its-content"&gt;MS Access: Let lines in Reports grow with it's content&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h3&gt;June&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;30.06.2007&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2007/06/ms-access-and-not-updatable-recordsets"&gt;MS Access and not updatable Recordsets&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h3&gt;May&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;14.05.2007&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2007/05/convert-fixed-length-column-to-excel"&gt;Convert fixed length column to Excel&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;h2&gt;2006&lt;/h2&gt;
+    &lt;h3&gt;December&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;27.12.2006&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2006/12/information-about-oracle-directories"&gt;Information about Oracle Directories&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;27.12.2006&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2006/12/excel-to-csv-with-python"&gt;Excel to CSV with Python&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;12.12.2006&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2006/12/sql-start-script-generator"&gt;SQL Start-Script generator&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h3&gt;November&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;07.11.2006&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2006/11/delete-duplicate-records-with-orcle"&gt;Delete duplicate records with Orcle&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;02.11.2006&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2006/11/pisa-test"&gt;PISA-Test&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h3&gt;October&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;18.10.2006&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2006/10/need-to-generate-a-guid-with-oracle"&gt;Need to generate a GUID with Oracle?&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h3&gt;January&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;24.01.2006&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2006/01/psychologie-vs-psychiatrie"&gt;Psychologie vs. Psychiatrie&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;h2&gt;2005&lt;/h2&gt;
+    &lt;h3&gt;October&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;25.10.2005&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2005/10/csv-seperator-character"&gt;CSV seperator character&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h3&gt;April&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;19.04.2005&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2005/04/schengen-propaganda"&gt;Schengen Propaganda&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;11.04.2005&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2005/04/release-hostages"&gt;Release Hostages&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h3&gt;March&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;26.03.2005&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2005/03/nie-mehr-st-moritz"&gt;Nie mehr St. Moritz&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;24.03.2005&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2005/03/kelloggs-musste-selbst-noch-nachschauen-wie-das"&gt;Kelloggs musste selbst noch nachschauen wie das denn nun heisst, und hat prompt einen Kompromiss gefunden.&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;11.03.2005&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2005/03/das-frauen-mineralwasser-mysterium"&gt;Das Frauen-Mineralwasser Mysterium&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;10.03.2005&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2005/03/an-manchen-tagen"&gt;An manchen Tagen&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;h2&gt;2002&lt;/h2&gt;
+    &lt;h3&gt;December&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;01.12.2002&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2002/12/liebe-welt"&gt;Liebe Welt,&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h3&gt;November&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;02.11.2002&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2002/11/inspiration"&gt;Inspiration&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
 </description>
     </item>
     <item>
@@ -16,20 +218,678 @@
       <link>/categories</link>
       <description>
 &lt;ul class="tag_box inline"&gt;
+  &lt;li&gt;
+    &lt;a href="/categories#link-ref"&gt;link &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/categories#Tech-ref"&gt;Tech &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/categories#Text-ref"&gt;Text &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/categories#text-ref"&gt;text &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/categories#image-ref"&gt;image &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
+  &lt;h3&gt;link (1)&lt;/h3&gt;
+  &lt;ul&gt;
+      &lt;li&gt;&lt;a href="/posts/2013/05/on-citizenship-in-open-source-software-development"&gt;On Citizenship in Open-source software development &#x2014; Products I Wish Existed&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;h3&gt;Tech (11)&lt;/h3&gt;
+  &lt;ul&gt;
+      &lt;li&gt;&lt;a href="/posts/2006/12/sql-start-script-generator"&gt;SQL Start-Script generator&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="/posts/2006/12/excel-to-csv-with-python"&gt;Excel to CSV with Python&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="/posts/2006/12/information-about-oracle-directories"&gt;Information about Oracle Directories&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="/posts/2007/08/ms-access-let-lines-in-reports-grow-with-its-content"&gt;MS Access: Let lines in Reports grow with it's content&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="/posts/2007/05/convert-fixed-length-column-to-excel"&gt;Convert fixed length column to Excel&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="/posts/2007/06/ms-access-and-not-updatable-recordsets"&gt;MS Access and not updatable Recordsets&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="/posts/2011/06/php-unit-testing-mit-simpletest"&gt;PHP Unit Testing mit SimpleTest&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="/posts/2005/10/csv-seperator-character"&gt;CSV seperator character&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="/posts/2005/04/release-hostages"&gt;Release Hostages&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="/posts/2009/10/delete-all-symlink-of-a-directory"&gt;Delete all symlink of a directory&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="/posts/2010/11/developers-shame-day-2010"&gt;Developers Shame Day: BB-Code selbstgemacht&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;h3&gt;Text (2)&lt;/h3&gt;
+  &lt;ul&gt;
+      &lt;li&gt;&lt;a href="/posts/2006/01/psychologie-vs-psychiatrie"&gt;Psychologie vs. Psychiatrie&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="/posts/2009/10/ausreden-fuers-nicht-trinken"&gt;Ausreden f&#xFC;rs Nicht-Trinken&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;h3&gt;text (5)&lt;/h3&gt;
+  &lt;ul&gt;
+      &lt;li&gt;&lt;a href="/posts/2002/11/inspiration"&gt;Inspiration&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="/posts/2002/12/liebe-welt"&gt;Liebe Welt,&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="/posts/2005/03/an-manchen-tagen"&gt;An manchen Tagen&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="/posts/2005/03/nie-mehr-st-moritz"&gt;Nie mehr St. Moritz&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="/posts/2005/03/das-frauen-mineralwasser-mysterium"&gt;Das Frauen-Mineralwasser Mysterium&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;h3&gt;image (1)&lt;/h3&gt;
+  &lt;ul&gt;
+      &lt;li&gt;&lt;a href="/posts/2005/03/kelloggs-musste-selbst-noch-nachschauen-wie-das"&gt;Kelloggs musste selbst noch nachschauen wie das denn nun heisst, und hat prompt einen Kompromiss gefunden.&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
 </description>
     </item>
     <item>
       <title>Home</title>
       <link>/</link>
-      <description>## Hello World
+      <description>&lt;div class="posts"&gt;
+  &lt;h3 class="title"&gt;&lt;a href="/posts/2013/05/on-citizenship-in-open-source-software-development"&gt;On Citizenship in Open-source software development &#x2014; Products I Wish Existed&lt;/a&gt; &lt;span class="date"&gt;23.05.2013&lt;/span&gt;&lt;/h3&gt;
+
+  &lt;p&gt;&lt;a href="https://medium.com/products-i-wish-existed/ddd1f7be1415"&gt;https://medium.com/products-i-wish-existed/ddd1f7be1415&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;TL;DR: By giving an actual social status to the people contributing to
+a repository, GitHub would solve the problem of zombie-projects with &#x2026;&lt;/p&gt;
+&lt;/blockquote&gt;
 
 
-&lt;div class="pagination"&gt;
-  &lt;ul&gt;
+  &lt;ul class="tag_box inline"&gt;
   &lt;/ul&gt;
+
 &lt;/div&gt;
+&lt;div class="posts"&gt;
+  &lt;h3 class="title"&gt;&lt;a href="/posts/2012/10/remember-without-unit-tests-youre-not"&gt;Remember: Without unit tests, you're not refactoring. You're just changing shit&lt;/a&gt; &lt;span class="date"&gt;22.10.2012&lt;/span&gt;&lt;/h3&gt;
+
+  &lt;iframe width="560" height="315" src="//www.youtube.com/embed/JWm68Ghc1vA" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+
+  &lt;ul class="tag_box inline"&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Sencha Touch-ref"&gt;Sencha Touch&lt;/a&gt;
+    &lt;/li&gt;
+    
+    &lt;li&gt;
+      &lt;a href="/tags#Siesta-ref"&gt;Siesta&lt;/a&gt;
+    &lt;/li&gt;
+    
+    &lt;li&gt;
+      &lt;a href="/tags#Unit Testing-ref"&gt;Unit Testing&lt;/a&gt;
+    &lt;/li&gt;
+    
+  &lt;/ul&gt;
+
+&lt;/div&gt;
+&lt;div class="posts"&gt;
+  &lt;h3 class="title"&gt;&lt;a href="/posts/2012/10/insert-coin-to-play-can-gaming-concepts-help"&gt;Insert Coin To Play&lt;/a&gt; &lt;span class="date"&gt;11.10.2012&lt;/span&gt;&lt;/h3&gt;
+
+  &lt;p&gt;Can gaming concepts help make OpenStreetMap better?&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe src="http://blip.tv/play/hdlkgtK6EAI.html?p=1" width="550" height="443" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;embed type="application/x-shockwave-flash" src="http://a.blip.tv/api.swf#hdlkgtK6EAI" style="display:none"&gt;&lt;/embed&gt;&lt;/p&gt;
+
+
+  &lt;ul class="tag_box inline"&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#OpenStreetMap-ref"&gt;OpenStreetMap&lt;/a&gt;
+    &lt;/li&gt;
+    
+    &lt;li&gt;
+      &lt;a href="/tags#Gamification-ref"&gt;Gamification&lt;/a&gt;
+    &lt;/li&gt;
+    
+  &lt;/ul&gt;
+
+&lt;/div&gt;
+&lt;div class="posts"&gt;
+  &lt;h3 class="title"&gt;&lt;a href="/posts/2012/05/fiddle-around-code"&gt;Fiddle around (code)&lt;/a&gt; &lt;span class="date"&gt;29.05.2012&lt;/span&gt;&lt;/h3&gt;
+
+  &lt;p&gt;Since I&#x2019;m using JavaScript more heavily, and beeing active on
+&lt;a href="http://stackoverflow.com/users/549755/odi"&gt;StackOverflow&lt;/a&gt;, I&#x2019;m using a
+service called &lt;a href="http://jsfiddle.net/"&gt;jsFiddle&lt;/a&gt;. It&#x2019;s a great tool with
+a simple idea (I can see a pattern here: great tools are always based on
+simple ideas): Make it easy to write demo code. Either to help someone
+or to point out a problem.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="http://media.tumblr.com/tumblr_m4si0oEqzG1qa2z4q.png" alt="jsFiddle UI"&gt;&lt;/p&gt;
+
+&lt;p&gt;jsFiddle comes with a very basic user interface that is divided in 4
+parts:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;  Basic HTML (omitting &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; and everything you don&#x2019;t need)&lt;/li&gt;
+&lt;li&gt;  CSS for styling&lt;/li&gt;
+&lt;li&gt;  JavaScript (the heart of the page)&lt;/li&gt;
+&lt;li&gt;  and finally the resulting page&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;No login required, just write your code and share the unique link. You
+can even include JavaScript frameworks or other external resources, it&#x2019;s
+really easy!&lt;/p&gt;
+
+&lt;p&gt;Then last week I stumpled upon a website called
+&lt;a href="http://sqlfiddle.com/"&gt;sqlFiddle&lt;/a&gt;, which uses the basic idea of
+jsFiddle, but this time for databases and queries. There you can select
+different database systems and start writing your SQL code.&lt;/p&gt;
+
+&lt;p&gt;Now today I learned about a site called &lt;a href="http://www.senchafiddle.com/"&gt;Sencha
+Fiddle&lt;/a&gt;, that let&#x2019;s you actually develop
+&lt;a href="http://www.sencha.com/products/touch"&gt;Sencha Touch&lt;/a&gt; mobile application.
+You can even download the whole thing when your done. Wow!&lt;/p&gt;
+
+&lt;p&gt;There are several more xFiddle services that I can think of being
+valuable:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;  LaTeX&lt;/li&gt;
+&lt;li&gt;  Shell scripting (allowing me to choose which shell I want: csh, ksh,
+bash, ..)&lt;/li&gt;
+&lt;li&gt;  Python&lt;/li&gt;
+&lt;li&gt;  Sass/SCSS&lt;/li&gt;
+&lt;li&gt;  Less&lt;/li&gt;
+&lt;li&gt;  ..&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I don&#x2019;t know if there is a directory of these services (leave me a
+message if you know it), but anyway I hope to see more websites like
+that in the future.&lt;/p&gt;
+
+&lt;p&gt;Spread the word. Start to code.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;UPDATE I:&lt;/strong&gt; There is a &lt;a href="http://pythonfiddle.com/"&gt;Python Fiddle&lt;/a&gt; :-)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;UPDATE II:&lt;/strong&gt; &#x2026;and &lt;a href="http://rubyfiddle.com/"&gt;Ruby Fiddle&lt;/a&gt; (thanks J&#xFC;rg)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;UPDATE III:&lt;/strong&gt; &lt;a href="http://refiddle.com/"&gt;reFiddle&lt;/a&gt; for regular expressions
+(thanks &lt;a href="https://twitter.com/tonisuter/status/215759431483396096"&gt;Toni
+Suter&lt;/a&gt;)&lt;/p&gt;
+
+
+  &lt;ul class="tag_box inline"&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Programming, JavaScript, SQL, Sencha Touch-ref"&gt;Programming, JavaScript, SQL, Sencha Touch&lt;/a&gt;
+    &lt;/li&gt;
+    
+  &lt;/ul&gt;
+
+&lt;/div&gt;
+&lt;div class="posts"&gt;
+  &lt;h3 class="title"&gt;&lt;a href="/posts/2012/03/setup-javascript-unit-testing-using-qunit-phantomjs"&gt;Setup JavaScript unit testing using QUnit, PhantomJS and Jenkins on Amazon EC2&lt;/a&gt; &lt;span class="date"&gt;08.03.2012&lt;/span&gt;&lt;/h3&gt;
+
+  &lt;p&gt;Me and my friend are currently working on a term paper about &lt;a href="https://developers.google.com/fusiontables/"&gt;Google
+Fusion Tables&lt;/a&gt;. It&#x2019;s about
+it&#x2019;s possibilities and potential. Our goal is to create a cross-platform
+mobile application using &lt;a href="http://www.sencha.com/products/touch"&gt;Sencha
+Touch&lt;/a&gt;, therefore we need to write
+a lot of JavaScript code for the UI and to access the Google Fusion
+Tables. Fortunately Google provides an &lt;a href="https://groups.google.com/forum/#!topic/fusion-tables-users-group/TGDzExKymoI/discussion"&gt;inofficial JSONP
+API&lt;/a&gt;,
+so we get native JavaScript access without another server roundtrip
+(there is &lt;a href="http://www.reddmetrics.com/2011/08/10/fusion-tables-javascript-query-maps.html"&gt;a good blog
+post&lt;/a&gt;
+explaining the usage with jQuery).&lt;/p&gt;
+
+&lt;p&gt;The next question is: if we write tons of code in JavaScript, how are we
+going to unit test this code. We already used
+&lt;a href="http://docs.jquery.com/QUnit"&gt;QUnit&lt;/a&gt; in a former project and it&#x2019;s
+fairly easy to use, so we decided to use that. This all works very well,
+you get a &lt;a href="http://gft.rdmr.ch/test/js"&gt;nice web page where all your tests
+run&lt;/a&gt; in the browser and you get nice output,
+everything&#x2019;s fine.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="http://media.tumblr.com/tumblr_m0ivihw8Rb1qa2z4q.png" alt="Browser output of
+QUnit" title="Browser output of QUnit"&gt;&lt;/p&gt;
+
+&lt;p&gt;But, wait! What about our build? We use &lt;a href="http://jenkins-ci.org/"&gt;Jenkins
+CI&lt;/a&gt;, which is configured to &lt;a href="https://wiki.jenkins-ci.org/display/JENKINS/Github+Plugin"&gt;build our project
+every time we push new code to
+GitHub&lt;/a&gt;.
+Wouldn&#x2019;t it be nice if our tests run when we build, so we get immediate
+feedback and never ever forget to run them and fix our code?&lt;/p&gt;
+
+&lt;p&gt;Yes, it definitely would be!&lt;/p&gt;
+
+&lt;p&gt;Now we have several problems&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;  How do I run JavaScript without a browser?&lt;/li&gt;
+&lt;li&gt;  Does Jenkins &#x201C;speak&#x201D; JavaScript?&lt;/li&gt;
+&lt;li&gt;  Is there a solution for ant? Do I need another tool? Another server?&lt;/li&gt;
+&lt;li&gt;  How do I get my test results as XML, so Jenkins can handle them?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I checked serveral solutions to my this problems: From
+&lt;a href="http://nodejs.org/"&gt;node.js&lt;/a&gt; to &lt;a href="http://www.mozilla.org/rhino/"&gt;Rhino&lt;/a&gt;
+(there is even an &lt;a href="http://code.google.com/p/rhinounit/"&gt;ant based unit testing
+framework&lt;/a&gt; using Rhino) to
+&lt;a href="http://swarm.jquery.org/"&gt;TestSwarm&lt;/a&gt;. They were all too limited or too
+bloated. I couldn&#x2019;t believe this is such a big deal to run QUnit
+JavaScript code, get the results and publish them in Jenkins.&lt;/p&gt;
+
+&lt;p&gt;This is when I found out about &lt;a href="http://www.phantomjs.org/"&gt;PhantomJS&lt;/a&gt;, a
+nice and handy headless WebKit browser, that runs JavaScript code.
+Exactly what I need. As we are using &lt;a href="http://aws.amazon.com/ec2/"&gt;Amazon
+EC2&lt;/a&gt; for this project, I tried to install
+PhantomJS on a basic Amazon AMI. I just couldn&#x2019;t get it to work, when I
+asked in Twitter if someone succeeded to setup PhantomJS. &lt;a href="https://twitter.com/#!/philippkueng/status/176606716492914688"&gt;Philipp K&#xFC;ng
+pointed
+out&lt;/a&gt;
+(thanks again!) that it is much easier to setup with Ubuntu. Well then,
+launch a new Instance on EC2, choose the &lt;a href="http://cloud.ubuntu.com/ami/"&gt;latest Ubuntu
+AMI&lt;/a&gt;, and after some simple commands
+you&#x2019;re good to go:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo add-apt-repository ppa:jerome-etienne/neoip
+sudo apt-get update
+sudo apt-get install phantomjs
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;After that I had to &lt;a href="http://code.google.com/p/phantomjs/wiki/XvfbSetup"&gt;setup Xvfb (virutal
+framebuffer)&lt;/a&gt;,
+because EC2 instances are headless. Generally see the &lt;a href="http://code.google.com/p/phantomjs/wiki/PhantomJS"&gt;PhantomJS
+Wiki&lt;/a&gt; for further
+information.&lt;/p&gt;
+
+&lt;p&gt;Now I have a PhantomJS instance, the published QUnit tests and Jenkins.
+To be able to retrieve the data from PhantomJS I created a simple PHP
+script, which runs on the new instance and just executes a shell command
+(idea from &lt;a href="http://cisight.com/run-latest-phantomjs-with-shell_exec-php-on-ubuntu-11-10-oneiric/"&gt;this blog
+post&lt;/a&gt;).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;?php
+/* Display 99 is configured on the server using Xvfb */
+$value = shell_exec(&amp;quot;DISPLAY=:99 phantomjs run_qunit.js http://gft.rdmr.ch/test/js/index.html junit-xml&amp;quot;);
+echo $value;
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;With this URL I was able to create a simple ant target, which fetches
+the latest results from the tests:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;target name=&amp;quot;test-js&amp;quot; depends=&amp;quot;deploy&amp;quot;&amp;gt;
+    &amp;lt;get src=&amp;quot;${test.url}&amp;quot; dest=&amp;quot;${result.dir}/${result.js.file}&amp;quot;/&amp;gt;
+&amp;lt;/target&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Where &lt;code&gt;${test.url}&lt;/code&gt; referes to my PHP script, and &lt;code&gt;${result.dir}&lt;/code&gt; is
+configured as the location of JUnit reports in Jenkins (see screenshot):&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="http://media.tumblr.com/tumblr_m0jhgm87wz1qa2z4q.png" alt="Jenkins job configuration for JUnit XML
+reports" title="Jenkins job configuration for JUnit XML reports"&gt;&lt;/p&gt;
+
+&lt;p&gt;Now the last missing piece is to get proper output for Jenkins. I
+adapted the &lt;a href="https://github.com/ariya/phantomjs/blob/1.2/examples/run-qunit.js"&gt;QUnit test
+runner&lt;/a&gt;
+from the PhantomJS examples accordingly (called &lt;code&gt;run_qunit.js&lt;/code&gt;, see
+above, here is &lt;a href="https://github.com/odi86/GFTPrototype/blob/master/test/js/run_qunit.js"&gt;my
+version&lt;/a&gt;).
+I added a new command line parameter &lt;code&gt;type&lt;/code&gt;, which determines the type
+of output the runner generates. With the value &lt;code&gt;junit-xml&lt;/code&gt;, the output
+can directly be used by Jenkins, this is the reason for the junit-xml
+parameter in the PHP script above.&lt;/p&gt;
+
+&lt;p&gt;The generated XML looks like that:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot;?&amp;gt;
+---
+ Tests completed in 2294 milliseconds.
+36 tests of 36 passed, 0 failed. 
+---
+&amp;lt;testsuite name=&amp;quot;QUnit - JavaScript Tests&amp;quot; timestamp=&amp;quot;2012-03-08T00:11:27Z&amp;quot; tests=&amp;quot;36&amp;quot; failures=&amp;quot;0&amp;quot; time=&amp;quot;2.294&amp;quot;&amp;gt;
+&amp;lt;testcase name=&amp;quot;PaintSwitzerland&amp;quot; classname=&amp;quot;GoogleFusionTable&amp;quot;&amp;gt;
+&amp;lt;/testcase&amp;gt;
+&amp;lt;testcase name=&amp;quot;Construtor&amp;quot; classname=&amp;quot;GftLib&amp;quot;&amp;gt;
+&amp;lt;/testcase&amp;gt;
+&amp;lt;testcase name=&amp;quot;Constants&amp;quot; classname=&amp;quot;GftLib&amp;quot;&amp;gt;
+&amp;lt;/testcase&amp;gt;
+&amp;lt;testcase name=&amp;quot;doGet&amp;quot; classname=&amp;quot;GftLib&amp;quot;&amp;gt;
+&amp;lt;/testcase&amp;gt;
+&amp;lt;testcase name=&amp;quot;doPost&amp;quot; classname=&amp;quot;GftLib&amp;quot;&amp;gt;
+&amp;lt;/testcase&amp;gt;
+&amp;lt;testcase name=&amp;quot;doGetJSONP&amp;quot; classname=&amp;quot;GftLib&amp;quot;&amp;gt;
+&amp;lt;/testcase&amp;gt;
+&amp;lt;testcase name=&amp;quot;doPostJSONP&amp;quot; classname=&amp;quot;GftLib&amp;quot;&amp;gt;
+&amp;lt;/testcase&amp;gt;
+&amp;lt;testcase name=&amp;quot;ExecSelect&amp;quot; classname=&amp;quot;GftLib&amp;quot;&amp;gt;
+&amp;lt;/testcase&amp;gt;
+&amp;lt;/testsuite&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And in Jenkins like that: &lt;img src="http://media.tumblr.com/tumblr_m0ji3zihxl1qa2z4q.png" alt="Test trend with failed/successful tests over
+time" title="Test trend with failed/successful tests over time"&gt;&lt;/p&gt;
+
+&lt;p&gt;Overview of tests: &lt;img src="http://media.tumblr.com/tumblr_m0ji5dTeGL1qa2z4q.png" alt="Overview of all performed
+tests" title="Overview of all performed tests"&gt;&lt;/p&gt;
+
+&lt;p&gt;Failed test: &lt;img src="http://media.tumblr.com/tumblr_m0jie0S4WY1qa2z4q.png" alt="Detail of a failed test incl.
+&amp;#39;stacktrace&amp;#39;" title="Detail of a failed test incl. &amp;#39;stacktrace&amp;#39;"&gt;&lt;/p&gt;
+
+
+  &lt;ul class="tag_box inline"&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#JavaScript, Unit Testing, Programming, QUnit, Jenkins, PhantomJS, Amazon EC2-ref"&gt;JavaScript, Unit Testing, Programming, QUnit, Jenkins, PhantomJS, Amazon EC2&lt;/a&gt;
+    &lt;/li&gt;
+    
+  &lt;/ul&gt;
+
+&lt;/div&gt;
+&lt;div class="posts"&gt;
+  &lt;h3 class="title"&gt;&lt;a href="/posts/2011/10/zff-2011-turn-me-on-goddammit"&gt;ZFF 2011: Turn Me On, Goddammit&lt;/a&gt; &lt;span class="date"&gt;06.10.2011&lt;/span&gt;&lt;/h3&gt;
+
+  &lt;p&gt;&lt;a href="http://www.zurichfilmfestival.org/de/programm/Filme/1896/turn-me-on-goddammit/"&gt;&lt;img src="http://media.tumblr.com/tumblr_lsdq0air4I1qa2z4q.jpg" alt="Turn Me On,
+Goddammit" title="Turn Me On, Goddammit"&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In &lt;strong&gt;&amp;quot;Turn Me On, Goddammit&amp;quot;&lt;/strong&gt; von Jannicke Systad Jacobsen spielt die
+bemerkenswerte Helene Bergsholm die 15j&#xE4;hrige Alma, welche gerade dabei
+ist ihre Sexualit&#xE4;t zu entdecken. Sie wohnt mit ihrer Mutter in einem
+Provinznest in Norwegen. An einer Party ereignet sich ein peinlich
+Vorfall mit ihrem Schwarm Artur, welchen sie br&#xFC;hwarm ihren Freundinnen
+erz&#xE4;hlt (&#x201C;He poked me with his penis!&#x201D;). Niemand will ihr diese
+Geschichte glauben, fortan wird sie zur Aussenseiterin, die
+L&#xFC;gengeschichten verbreitet.&lt;/p&gt;
+
+&lt;p&gt;Auch der Zuschauer des Film wird geschickt dar&#xFC;ber im Unklaren gelassen,
+ob dieses Ereignis tats&#xE4;chlich stattgefunden hat oder nicht. Die Kamera
+schweift manchmal ins tr&#xE4;umerische ab, indem der Fokus auf dem
+Vordergrund liegt und der Hintergrund stark verschwommen wird oder die
+Farbgebung ganz stark ist. Dieses Stilmittel setzt die Regisseur immer
+dann ein, wenn die Hauptdarstellerin in ihrer Fantasie ist, jedoch
+manchmal auch bei Ereignissen die tats&#xE4;chlich stattfinden. Dadurch
+erscheint auch die ganze Welt des Dorfes mal romantisch, mal langweilig.&lt;/p&gt;
+
+&lt;p&gt;Die Hauptdarstellerin ist eine Wucht, diese junge Frau weiss genau was
+sie will und bewegt sich sehr nat&#xFC;rlich vor der Kamera, das Thema
+Sexualit&#xE4;t ist einfach eine Facette ihres (pubert&#xE4;ren) Charakters, der
+weder &#xFC;bertrieben wirkt noch ins L&#xE4;cherliche gezogen wird.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Leichte Erz&#xE4;hlweise, kurzweilige, gute Unterhaltung.&lt;/em&gt;&lt;/p&gt;
+
+
+  &lt;ul class="tag_box inline"&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Kino, Zurich Film Festival-ref"&gt;Kino, Zurich Film Festival&lt;/a&gt;
+    &lt;/li&gt;
+    
+  &lt;/ul&gt;
+
+&lt;/div&gt;
+&lt;div class="posts"&gt;
+  &lt;h3 class="title"&gt;&lt;a href="/posts/2011/10/zff-2011-kurzes-aus-der-t-rkei"&gt;ZFF 2011: Kurzes aus der T&#xFC;rkei&lt;/a&gt; &lt;span class="date"&gt;04.10.2011&lt;/span&gt;&lt;/h3&gt;
+
+  &lt;p&gt;Die &lt;a href="http://www.kurzfilmtage.ch/"&gt;Internationlen Kurzfilmtage
+Winterthur&lt;/a&gt; zeigten &lt;a href="http://www.zurichfilmfestival.org/de/programm/Filme/3025/kurzes-aus-der-turkei/"&gt;Kurzfilme aus der
+T&#xFC;rkei&lt;/a&gt;,
+dem diesj&#xE4;hrigen Gastland des Zurich Film Festival. Die beiden Festivals
+haben schon die letzten Jahre eine Zusammenarbeit gepflegt.&lt;/p&gt;
+
+&lt;p&gt;__&lt;/p&gt;
+
+&lt;h2 id="toc_0"&gt;&lt;a href="http://www.imdb.com/title/tt0984004/"&gt;My Mother Learns Cinema&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href="http://www.imdb.com/title/tt0984004/"&gt;&lt;img src="http://media.tumblr.com/tumblr_lsjev5EprV1qa2z4q.jpg" alt="My Mother Learns
+Cinema" title="My Mother Learns Cinema"&gt;&lt;/a&gt;
+(Nesimi Yetik, 2007)&lt;/p&gt;
+
+&lt;p&gt;Eine kleine Ode ans Kino, als ersten Schritt um das Kino kennen zu
+lernen, lehrt ein Sohn seiner Mutter die korrekte Aussprache einiger
+Regisseur.&lt;/p&gt;
+
+&lt;p&gt;__&lt;/p&gt;
+
+&lt;h2 id="toc_1"&gt;&lt;a href="http://vimeo.com/24874194"&gt;Biskilet/Bicycle&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href="http://vimeo.com/24874194"&gt;&lt;img src="http://media.tumblr.com/tumblr_lsjgmehJbe1qa2z4q.jpg" alt="Biskilet/Bicycle" title="Biskilet/Bicycle"&gt;&lt;/a&gt;
+(Serhat Karaaslan, 2010)&lt;/p&gt;
+
+&lt;p&gt;Dieser Film, der ganz ohne gesprochene Sprache auskommt, erz&#xE4;hlt von
+einem Jungen, der gerne ein Fahrrad h&#xE4;tte. Alles was ihm noch fehlt ist
+ein Hinterrad&#x2026;&lt;/p&gt;
+
+&lt;p&gt;__&lt;/p&gt;
+
+&lt;h2 id="toc_2"&gt;&lt;a href="http://i-soldier-the-flag.blogspot.com/"&gt;I, Soldier&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href="http://i-soldier-the-flag.blogspot.com/"&gt;&lt;img src="http://media.tumblr.com/tumblr_lsjg6dBuRs1qa2z4q.png" alt="I,
+Soldier" title="I, Soldier"&gt;&lt;/a&gt;
+(Ergun K&#xF6;ken, 2007)&lt;/p&gt;
+
+&lt;p&gt;Ein ganz spezieller Film, der zum Teil aus 2 Perspektiven gefilmt wurde,
+wobei beide nebeneinander gezeigt werden. Die Aufnahmen sind w&#xE4;hrend den
+Feierlichkeiten zum Unabh&#xE4;ngigkeitstag der T&#xFC;rkei entstanden.&lt;/p&gt;
+
+&lt;p&gt;__&lt;/p&gt;
+
+&lt;h2 id="toc_3"&gt;&lt;a href="https://www.facebook.com/pages/DEM-MOMENT/139449276104220?sk=info"&gt;Dem (Moment)&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href="https://www.facebook.com/pages/DEM-MOMENT/139449276104220?sk=info"&gt;&lt;img src="http://media.tumblr.com/tumblr_lsjh5zqJdl1qa2z4q.png" alt="Dem
+(Moment)" title="Dem (Moment)"&gt;&lt;/a&gt;
+(Ayseg&#xFC;l Okul, 2010)&lt;/p&gt;
+
+&lt;p&gt;Ein Mann ist auf dem Weg zu einem Bewerbungsgespr&#xE4;ch, unterwegs holt er
+sich noch einen Kaffee und trifft dabei eine Frau, welche Minuten sp&#xE4;ter
+von einem Auto &#xFC;berfahren wird, Kurz darauf durchlebt der Mann die Szene
+nochmals, wird er diesmal das Schlimmste verhindern k&#xF6;nnen?&lt;/p&gt;
+
+&lt;p&gt;__&lt;/p&gt;
+
+&lt;h2 id="toc_4"&gt;&lt;a href="http://www.madebyozlemakin.com/2009/05/gemeinschaft.html"&gt;Gemeinschaft&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href="http://www.madebyozlemakin.com/2009/05/gemeinschaft.html"&gt;&lt;img src="http://media.tumblr.com/tumblr_lsjig5oDS01qa2z4q.jpg" alt="Gemeinschaft" title="Gemeinschaft"&gt;&lt;/a&gt;
+(&#xD6;zlem Akin, 2008)&lt;/p&gt;
+
+&lt;p&gt;In diesem kurzen Animationsfilm geht es darum als Gruppe eine unliebsame
+Person loszuwerden. Doch wie stellt man das an? Ein witziger
+Erkl&#xE4;rungsversuch.&lt;/p&gt;
+
+&lt;p&gt;__&lt;/p&gt;
+
+&lt;h2 id="toc_5"&gt;&lt;a href="http://www.feritkarahan.com/en/#/filmography/movies"&gt;Xewna Yusiv / Yusiv&#x2019;s Dream&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href="http://www.feritkarahan.com/en/#/filmography/movies"&gt;&lt;img src="http://media.tumblr.com/tumblr_lsjjulojfy1qa2z4q.png" alt="Xewna Yusiv / Yusiv&amp;#39;s
+Dream" title="Xewna Yusiv  / Yusiv&amp;#39;s Dream"&gt;&lt;/a&gt;
+(Ferit Karahan, 2011)&lt;/p&gt;
+
+&lt;p&gt;Yusiv f&#xFC;hrt ein normales Leben bis seine Idylle gest&#xF6;rt wird: er wird
+heimlicher Zeuge eines Mordes.&lt;/p&gt;
+
+&lt;p&gt;__&lt;/p&gt;
+
+&lt;h2 id="toc_6"&gt;&lt;a href="http://www.imdb.com/title/tt1515847/"&gt;K&#xF6;Y (Das Dorf)&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href="http://www.imdb.com/title/tt1515847/"&gt;&lt;img src="http://media.tumblr.com/tumblr_lsjiaxZetH1qa2z4q.jpg" alt="K&#xF6;Y (Das
+Dorf)" title="K&#xF6;Y (Das Dorf)"&gt;&lt;/a&gt;
+(Mustafa Dok, 2009)&lt;/p&gt;
+
+&lt;p&gt;Der zu Beginn sehr lustig-fr&#xF6;hliche Film zeigt einen Mann, der es sich
+zur Aufgabe gemacht hat, auf einem Schild jeweils die genau Anzahl
+Personen die sich im Dorf befinden zu notieren. Dieser Spass wird aber
+j&#xE4;h durchbrochen als das Milit&#xE4;r auftaucht.&lt;/p&gt;
+
+&lt;p&gt;__&lt;/p&gt;
+
+&lt;h2 id="toc_7"&gt;&lt;a href="http://www.distantdreams.de/filme/bende-sira-ich-bin-dran"&gt;Bende Sira (Ich bin dran)&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href="http://www.distantdreams.de/filme/bende-sira-ich-bin-dran"&gt;&lt;img src="http://media.tumblr.com/tumblr_lsjhzyzddN1qa2z4q.jpg" alt="Bende Sira (Ich bin
+dran)" title="Bende Sira (Ich bin dran)"&gt;&lt;/a&gt;
+(Ismet Erg&#xFC;n, 2007)&lt;/p&gt;
+
+&lt;p&gt;Zum Abschluss gab es noch ein wahres Highlight: eine Gruppe von Jungs
+liebt es ins Kino zu gehen. Da sie nicht gen&#xFC;gend Geld haben, gemeinsam
+zu gehen, legen sie jeweils zusammen und bestimmen wer gehen darf. Nach
+dem Filmbesuch, muss derjenige dann nat&#xFC;rlich ganz genau erz&#xE4;hlen was
+passiert ist. Der Film kommt ganz ohne Untertitel aus, die Bilder
+sprechen f&#xFC;r sich. Die Jungs k&#xF6;nnen sehr bildgewaltig von ihren
+Kinoerlebnissen berichten. Ein Schmaus!&lt;/p&gt;
+
+
+  &lt;ul class="tag_box inline"&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Kino-ref"&gt;Kino&lt;/a&gt;
+    &lt;/li&gt;
+    
+    &lt;li&gt;
+      &lt;a href="/tags#Zurich Film Festival-ref"&gt;Zurich Film Festival&lt;/a&gt;
+    &lt;/li&gt;
+    
+  &lt;/ul&gt;
+
+&lt;/div&gt;
+&lt;div class="posts"&gt;
+  &lt;h3 class="title"&gt;&lt;a href="/posts/2011/09/zff-2011-kriegerin"&gt;ZFF 2011: Kriegerin&lt;/a&gt; &lt;span class="date"&gt;30.09.2011&lt;/span&gt;&lt;/h3&gt;
+
+  &lt;p&gt;&lt;a href="http://www.zurichfilmfestival.org/de/programm/Filme/2059/kriegerin/"&gt;&lt;img src="http://media.tumblr.com/tumblr_lscbfabgq11qa2z4q.jpg" alt="Kriegerin" title="Kriegerin"&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&amp;quot;Kriegerin&amp;quot;&lt;/strong&gt; von David Wnendt ist eine Geschichte einer jungen,
+rechtsextremen Frau irgendwo in einer tristen Kleinstadt in
+Ostdeutschland. Der Film bewegt sich auch erstaunlich neutralem Boden,
+auf eine Moralpredigt und billige Erkl&#xE4;rungsversuche wird verzichtet.
+Gezeigt wird vielmehr wie sich diese Frau in ihrer Nazi-Clique
+durchschl&#xE4;gt, wie die Leute miteinander umgehen und wie gross ihr Hass
+auf alles Fremde ist. Sobald ein Ausl&#xE4;nder aufkreuzt, gibt es Radau,
+F&#xE4;uste fliegen. Dabei hauen die Frauen ebenso drauf wie die M&#xE4;nner.&lt;/p&gt;
+
+&lt;p&gt;Marisa (Alina Levshin) sp&#xFC;rt jedoch, dass etwas nicht stimmt in ihrem
+Weltbild. Nach einem von ihr provozierten Unfall, macht sie eine
+Wandlung durch, davon darf aber nat&#xFC;rlich niemand etwas mitbekommen.
+Diese innere Zerrissenheit sieht man Alina Levshin f&#xF6;rmlich an,
+wunderbar gespielt, sehr beeindruckend. Einzig die Nebengeschichte von
+Svenja, einer 15j&#xE4;hrigen, die neu zur Clique st&#xF6;sst, ist etwas gar
+&#xFC;berzeichnet. Die Verwandlung vom apolitischen M&#xE4;dchen, zur &#x201C;Heil
+Hitler&#x201D; schreienden jungen Frau, geht mir etwas zu schnell.&lt;/p&gt;
+
+&lt;p&gt;Ich bin sehr gespannt wie dieser Film in Deutschland aufgenommen wird,
+zum Teil sind die gezeigten Szenen sehr hart, die Sprache ebenso.
+Dadurch entsteht der Eindruck, einen wirklichen Einblick in diese Szene
+zu erhalten. Beim Interview mit dem Regisseur und der Hauptdarstellerin
+nach dem Film wird auch schnell klar warum: die Recherche f&#xFC;r den Film
+war sehr intensiv, so hat sich David Wnendt mit mehreren Frauen aus der
+rechtsextremen Szene getroffen und sich deren Lebensgeschichte angeh&#xF6;rt.
+Diese vielen verschiedenen Geschichten sind in den Film eingeflossen.
+Speziell ist auch noch, dass f&#xFC;r den Film alles neue Musik komponiert
+wurde, im Stile der &#x201C;bekannten&#x201D; Nazi-Lieder.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Ein beeindruckendes Portrait einer Frau und deren Umgebung, die
+pl&#xF6;tzlich beginnt ihre Gesinnung zu hinterfragen, ohne dies laut
+auszusprechen.&lt;/em&gt;&lt;/p&gt;
+
+
+  &lt;ul class="tag_box inline"&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Kino-ref"&gt;Kino&lt;/a&gt;
+    &lt;/li&gt;
+    
+    &lt;li&gt;
+      &lt;a href="/tags#Zurich Film Festival-ref"&gt;Zurich Film Festival&lt;/a&gt;
+    &lt;/li&gt;
+    
+  &lt;/ul&gt;
+
+&lt;/div&gt;
+&lt;div class="posts"&gt;
+  &lt;h3 class="title"&gt;&lt;a href="/posts/2011/09/zff-2011-majority-ogunluk"&gt;ZFF 2011: Majority (&#xC7;ogunluk)&lt;/a&gt; &lt;span class="date"&gt;30.09.2011&lt;/span&gt;&lt;/h3&gt;
+
+  &lt;p&gt;&lt;a href="http://www.zurichfilmfestival.org/de/programm/Filme/2704/majority/"&gt;&lt;img src="http://media.tumblr.com/tumblr_lsca0llnJ51qa2z4q.jpg" alt="Majority
+(&#xC7;ogunluk)" title="Majority (&#xC7;ogunluk)"&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Der Deb&#xFC;tfilm &lt;strong&gt;&amp;quot;Majority&amp;quot;&lt;/strong&gt; von Seren Y&#xFC;ce war f&#xFC;r mich eine grosse
+&#xDC;berraschung. Ich bin gar nicht vertraut mit dem t&#xFC;rkischen
+Filmschaffen, dieser Film hat mich auf alle F&#xE4;lle schwer beeindruckt.
+Die Machart unterscheidet sich grunds&#xE4;tzlich von den anderen Filmen die
+ich am Festival gesehen habe. Erz&#xE4;hlt wird eine Geschichte mitten aus
+dem Alltag. Somit hat die Geschichte auch keinen klaren Anfang und kein
+Ende.&lt;/p&gt;
+
+&lt;p&gt;Der Film handelt von Mertkan (Bartu K&#xFC;&#xE7;&#xFC;k&#xE7;aglayan), der noch zu Hause
+bei seinen Eltern wohnt und bei seinem Vater in einer Baufirma einen
+B&#xFC;rojob hat. In seiner Freizeit trifft er sich mit seinen Freunden um
+Tee zu trinken oder mit dem dicken Auto seinen Vaters durch Istanbul zu
+fahren. Eines Tages trifft er auf G&#xFC;l (Esme Madra) und verliebt sich in
+sie. Das Problem an der Sache ist nur, dass G&#xFC;l eine Kurdin ist und
+Mertkans Vater auf keinen Fall will, dass sich sein Sohn mit &#x201C;solchen
+Leuten&#x201D; trifft.&lt;/p&gt;
+
+&lt;p&gt;Der Film k&#xF6;nnte ebenso gut ein Theaterst&#xFC;ck sein: Ziemliche wenige
+Schaupl&#xE4;tze, geballte Emotionen ohne viele Worte. Der Film schafft es
+stets, die gerade herrschende Stimmung einzufangen, gepr&#xE4;gt von einer
+gewissen Schwere und der Autorit&#xE4;t des Vaters. Das Ende ist brillant
+gemacht, die vermeintlich im Mittelpunkt stehende Liebesgeschichte
+verkommt zur Nebenhandlung. Ein Film bei dem man auch nach dem Abspann
+noch einige Minuten auf dem Sitz verharrt.&lt;/p&gt;
+
+&lt;p&gt;Sehr auffallend ist auch die Kameraf&#xFC;hrung. Bei den zum Teil sehr langen
+Szenen wird die Kamera bewusst an einem Ort belassen, obwohl sich die
+Protagonisten aus dem Bild bewegen. Dann kommen auch immer wieder
+gleiche Motive vor wie das Ausziehen der Schuhe und Jacke beim betreten
+der Wohnung: diese Handlung wird ca. zehnmal gezeigt, immer von einer
+Perspektive.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Ein stimmungsvolles Kammerspiel, welches eine eindr&#xFC;ckliche Geschichte
+erz&#xE4;hlt, die einem nicht einfach so losl&#xE4;sst.&lt;/em&gt;&lt;/p&gt;
+
+
+  &lt;ul class="tag_box inline"&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Kino-ref"&gt;Kino&lt;/a&gt;
+    &lt;/li&gt;
+    
+    &lt;li&gt;
+      &lt;a href="/tags#Zurich Film Festival-ref"&gt;Zurich Film Festival&lt;/a&gt;
+    &lt;/li&gt;
+    
+  &lt;/ul&gt;
+
+&lt;/div&gt;
+&lt;div class="posts"&gt;
+  &lt;h3 class="title"&gt;&lt;a href="/posts/2011/09/zff-2011-happy-happy-sykt-lykkelig"&gt;ZFF 2011: Happy, Happy (Sykt Lykkelig)&lt;/a&gt; &lt;span class="date"&gt;27.09.2011&lt;/span&gt;&lt;/h3&gt;
+
+  &lt;p&gt;&lt;a href="http://www.zurichfilmfestival.org/de/programm/Filme/1491/happy-happy/"&gt;&lt;img src="http://media.tumblr.com/tumblr_ls6a10DuOD1qa2z4q.jpg" alt="Happy, Happy (Sykt
+Lykkelig)" title="Happy, Happy (Sykt Lykkelig)"&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Die norwegische Kom&#xF6;die &lt;strong&gt;&amp;quot;Happy, Happy&amp;quot;&lt;/strong&gt; bietet ein kurzweiliges
+Filmerlebnis. Die zugrunde liegende Geschichte ich zwar eigentlich
+tieftraurig, wird aber sehr leichtf&#xFC;ssig erz&#xE4;hlt so dass nie Herzschmerz
+aufkommt oder man Mitleid mit einem der Protagonisten haben muss.&lt;/p&gt;
+
+&lt;p&gt;Kaja (Agnes Kittelsen) und Eirik (Joachim Rafaelsen) leben sehr
+abgelegen irgendwo in Norwegen. Um jede Abwechslung froh, freuen sie
+sich auf ihre neuen Nachbarn Sigve (Henrik Rafaelsen) und Elisabeth
+(Maibritt Saerens), die hierher umziehen. Bei einem Spielabend kommt ans
+Licht, dass es um die beiden Ehen nicht sonderlich gut steht. Der ruhige
+Eirik und die gar lebendige Kaja haben sich nicht mehr viel zu sagen.
+Sigve wiederum wollte aufs Land ziehen um mit Elisabeth neu anzufangen,
+nachdem diese eine Aff&#xE4;re hatte.&lt;/p&gt;
+
+&lt;p&gt;Dies bietet nat&#xFC;rlich den idealen Stoff f&#xFC;r weitere Aff&#xE4;ren, Romanzen
+und Liebeleien. Zur Auflockerung spielt jeweils eine Acapella-Band ein
+kurzes St&#xFC;ck bevor ein neues Kapitel der Geschichte aufgeschlagen wird.
+Diese Sequenzen sind urkomisch und die Lieder passen nat&#xFC;rlich immer
+peinlich-perfekt zur Situation.&lt;/p&gt;
+
+&lt;p&gt;Der Schluss ist ziemlich gut gemacht, kommt doch alles anders als man
+denkt: die typischen Klischees werden links liegen gelassen und mal
+etwas Neues probiert. Etwas merkw&#xFC;rdig ist die Nebengeschichte der
+beiden S&#xF6;hne der beiden Familien, diese wirkt wie ein Fremdk&#xF6;rper, nicht
+richtig verbunden mit dem Rest, schlicht unpassend.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Leichtf&#xFC;ssig erz&#xE4;hlt, viel Situationskomik, muss man nicht gesehen
+haben, bietet aber 90min Unterhaltung&lt;/em&gt;&lt;/p&gt;
+
+
+  &lt;ul class="tag_box inline"&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Kino-ref"&gt;Kino&lt;/a&gt;
+    &lt;/li&gt;
+    
+    &lt;li&gt;
+      &lt;a href="/tags#Zurich Film Festival-ref"&gt;Zurich Film Festival&lt;/a&gt;
+    &lt;/li&gt;
+    
+  &lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;ul class="pagination"&gt;
+    &lt;li class="active"&gt;&lt;a href="/posts/index/1"&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/index/2"&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/index/3"&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/index/4"&gt;4&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/index/5"&gt;5&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/index/6"&gt;6&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/index/7"&gt;7&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/index/8"&gt;8&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/index/9"&gt;9&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     <item>
@@ -37,6 +897,9 @@
       <link>/pages</link>
       <description>
 &lt;ul&gt;
+  
+    &lt;li&gt;&lt;a href="/about"&gt;About me&lt;/a&gt;&lt;/li&gt;
+  
   
     &lt;li&gt;&lt;a href="/archive"&gt;Archive&lt;/a&gt;&lt;/li&gt;
   
@@ -52,9 +915,6 @@
   
     &lt;li&gt;&lt;a href="/tags"&gt;Tags&lt;/a&gt;&lt;/li&gt;
   
-  
-    &lt;li&gt;&lt;a href="/test"&gt;Test&lt;/a&gt;&lt;/li&gt;
-  
 &lt;/ul&gt;
 </description>
     </item>
@@ -63,29 +923,331 @@
       <link>/tags</link>
       <description>
 &lt;ul class="tag_box inline"&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#Oracle-ref"&gt;Oracle &lt;span&gt;3&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#SQL-ref"&gt;SQL &lt;span&gt;3&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#Fun-ref"&gt;Fun &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#Python-ref"&gt;Python &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#Programming-ref"&gt;Programming &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#Excel-ref"&gt;Excel &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#CSV-ref"&gt;CSV &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#German-ref"&gt;German &lt;span&gt;3&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#german-ref"&gt;german &lt;span&gt;6&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#OpenStreetMap-ref"&gt;OpenStreetMap &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#Gamification-ref"&gt;Gamification &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#Sencha Touch-ref"&gt;Sencha Touch &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#Siesta-ref"&gt;Siesta &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#Unit Testing-ref"&gt;Unit Testing &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#Programming, JavaScript, SQL, Sencha Touch-ref"&gt;Programming, JavaScript, SQL, Sencha Touch &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#JavaScript, Unit Testing, Programming, QUnit, Jenkins, PhantomJS, Amazon EC2-ref"&gt;JavaScript, Unit Testing, Programming, QUnit, Jenkins, PhantomJS, Amazon EC2 &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#MS Access-ref"&gt;MS Access &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#VBA-ref"&gt;VBA &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#Kino-ref"&gt;Kino &lt;span&gt;23&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#Zurich Film Festival-ref"&gt;Zurich Film Festival &lt;span&gt;22&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#Kino, Zurich Film Festival-ref"&gt;Kino, Zurich Film Festival &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#Twitter, Tumblr-ref"&gt;Twitter, Tumblr &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#HSR, Security-ref"&gt;HSR, Security &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#URL shortener-ref"&gt;URL shortener &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#YOURLS-ref"&gt;YOURLS &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#HTML-ref"&gt;HTML &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#JavaScript-ref"&gt;JavaScript &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#PHP-ref"&gt;PHP &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#Userscript, Programming, JavaScript-ref"&gt;Userscript, Programming, JavaScript &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#csv-ref"&gt;csv &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#Politics-ref"&gt;Politics &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#C-ref"&gt;C &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#Geocaching-ref"&gt;Geocaching &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#Linux-ref"&gt;Linux &lt;span&gt;6&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#Barcamp-ref"&gt;Barcamp &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#HSR-ref"&gt;HSR &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#bcrappi-ref"&gt;bcrappi &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#Brainfuck-ref"&gt;Brainfuck &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#Games-ref"&gt;Games &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#Oracle, PHP, PL/SQL, SQL, Programming-ref"&gt;Oracle, PHP, PL/SQL, SQL, Programming &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#SQL, Oracle-ref"&gt;SQL, Oracle &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#MSN, Linux-ref"&gt;MSN, Linux &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#Twitter-ref"&gt;Twitter &lt;span&gt;3&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#Developers Shame Day-ref"&gt;Developers Shame Day &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#HSR, Linux-ref"&gt;HSR, Linux &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#Kino, Zurich Film Festival, Twitter-ref"&gt;Kino, Zurich Film Festival, Twitter &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#utPLSQL, Oracle, Unit Testing, PL/SQL-ref"&gt;utPLSQL, Oracle, Unit Testing, PL/SQL &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#Java, JCIFS, VFS-ref"&gt;Java, JCIFS, VFS &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#Zurich Film Festival, Kino-ref"&gt;Zurich Film Festival, Kino &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
+  &lt;h3 id="Oracle-ref"&gt;Oracle&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2006/11/delete-duplicate-records-with-orcle"&gt;Delete duplicate records with Orcle&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2006/10/need-to-generate-a-guid-with-oracle"&gt;Need to generate a GUID with Oracle?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2006/12/information-about-oracle-directories"&gt;Information about Oracle Directories&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="SQL-ref"&gt;SQL&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2006/11/delete-duplicate-records-with-orcle"&gt;Delete duplicate records with Orcle&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2006/10/need-to-generate-a-guid-with-oracle"&gt;Need to generate a GUID with Oracle?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2006/12/sql-start-script-generator"&gt;SQL Start-Script generator&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="Fun-ref"&gt;Fun&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2006/11/pisa-test"&gt;PISA-Test&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="Python-ref"&gt;Python&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2006/12/sql-start-script-generator"&gt;SQL Start-Script generator&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2006/12/excel-to-csv-with-python"&gt;Excel to CSV with Python&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="Programming-ref"&gt;Programming&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2006/12/sql-start-script-generator"&gt;SQL Start-Script generator&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2006/12/excel-to-csv-with-python"&gt;Excel to CSV with Python&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2007/08/ms-access-let-lines-in-reports-grow-with-its-content"&gt;MS Access: Let lines in Reports grow with it's content&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2007/05/convert-fixed-length-column-to-excel"&gt;Convert fixed length column to Excel&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2007/06/ms-access-and-not-updatable-recordsets"&gt;MS Access and not updatable Recordsets&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2011/06/zum-selektierten-wert-springen"&gt;Zum selektierten Wert springen (IE Bug)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2011/06/php-unit-testing-mit-simpletest"&gt;PHP Unit Testing mit SimpleTest&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2005/04/release-hostages"&gt;Release Hostages&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2009/11/the-go-programming-language"&gt;The Go Programming Language&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2009/10/brainfucked-logo"&gt;Brainfucked Logo&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2010/11/developers-shame-day-2010"&gt;Developers Shame Day: BB-Code selbstgemacht&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="Excel-ref"&gt;Excel&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2006/12/excel-to-csv-with-python"&gt;Excel to CSV with Python&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2007/05/convert-fixed-length-column-to-excel"&gt;Convert fixed length column to Excel&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="CSV-ref"&gt;CSV&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2006/12/excel-to-csv-with-python"&gt;Excel to CSV with Python&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="German-ref"&gt;German&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2006/01/psychologie-vs-psychiatrie"&gt;Psychologie vs. Psychiatrie&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2005/04/schengen-propaganda"&gt;Schengen Propaganda&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2009/10/ausreden-fuers-nicht-trinken"&gt;Ausreden f&#xFC;rs Nicht-Trinken&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="german-ref"&gt;german&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2002/11/inspiration"&gt;Inspiration&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2002/12/liebe-welt"&gt;Liebe Welt,&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2005/03/an-manchen-tagen"&gt;An manchen Tagen&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2005/03/nie-mehr-st-moritz"&gt;Nie mehr St. Moritz&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2005/03/das-frauen-mineralwasser-mysterium"&gt;Das Frauen-Mineralwasser Mysterium&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2005/03/kelloggs-musste-selbst-noch-nachschauen-wie-das"&gt;Kelloggs musste selbst noch nachschauen wie das denn nun heisst, und hat prompt einen Kompromiss gefunden.&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="OpenStreetMap-ref"&gt;OpenStreetMap&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2012/10/insert-coin-to-play-can-gaming-concepts-help"&gt;Insert Coin To Play&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="Gamification-ref"&gt;Gamification&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2012/10/insert-coin-to-play-can-gaming-concepts-help"&gt;Insert Coin To Play&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="Sencha Touch-ref"&gt;Sencha Touch&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2012/10/remember-without-unit-tests-youre-not"&gt;Remember: Without unit tests, you're not refactoring. You're just changing shit&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="Siesta-ref"&gt;Siesta&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2012/10/remember-without-unit-tests-youre-not"&gt;Remember: Without unit tests, you're not refactoring. You're just changing shit&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="Unit Testing-ref"&gt;Unit Testing&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2012/10/remember-without-unit-tests-youre-not"&gt;Remember: Without unit tests, you're not refactoring. You're just changing shit&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2011/06/php-unit-testing-mit-simpletest"&gt;PHP Unit Testing mit SimpleTest&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="Programming, JavaScript, SQL, Sencha Touch-ref"&gt;Programming, JavaScript, SQL, Sencha Touch&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2012/05/fiddle-around-code"&gt;Fiddle around (code)&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="JavaScript, Unit Testing, Programming, QUnit, Jenkins, PhantomJS, Amazon EC2-ref"&gt;JavaScript, Unit Testing, Programming, QUnit, Jenkins, PhantomJS, Amazon EC2&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2012/03/setup-javascript-unit-testing-using-qunit-phantomjs"&gt;Setup JavaScript unit testing using QUnit, PhantomJS and Jenkins on Amazon EC2&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="MS Access-ref"&gt;MS Access&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2007/08/ms-access-let-lines-in-reports-grow-with-its-content"&gt;MS Access: Let lines in Reports grow with it's content&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2007/06/ms-access-and-not-updatable-recordsets"&gt;MS Access and not updatable Recordsets&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="VBA-ref"&gt;VBA&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2007/08/ms-access-let-lines-in-reports-grow-with-its-content"&gt;MS Access: Let lines in Reports grow with it's content&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2007/05/convert-fixed-length-column-to-excel"&gt;Convert fixed length column to Excel&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="Kino-ref"&gt;Kino&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2011/10/zff-2011-kurzes-aus-der-t-rkei"&gt;ZFF 2011: Kurzes aus der T&#xFC;rkei&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2011/09/zff-2011-happy-happy-sykt-lykkelig"&gt;ZFF 2011: Happy, Happy (Sykt Lykkelig)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2011/09/zff-2011-restless"&gt;ZFF 2011: Restless&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2011/09/zff-2011-majority-ogunluk"&gt;ZFF 2011: Majority (&#xC7;ogunluk)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2011/09/zff-2011-kriegerin"&gt;ZFF 2011: Kriegerin&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2011/09/zff-2011-jonas"&gt;ZFF 2011: Jonas&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2011/09/zff-2011-circumstance"&gt;ZFF 2011: Circumstance&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2011/09/es-ist-wieder-so-weit-zurich-film-festival-2011"&gt;Es ist wieder so weit: Zurich Film Festival 2011&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2011/09/zff-2011-take-shelter"&gt;ZFF 2011: Take Shelter&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2011/09/zff-2011-fenster-zum-sommer"&gt;ZFF 2011: Fenster zum Sommer&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2010/11/kino-langer-leben"&gt;Kino: L&#xE4;nger Leben&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2010/10/machete"&gt;ZFF 2010: Machete&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2010/10/catfish"&gt;ZFF 2010: Catfish&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2010/10/monogamy"&gt;ZFF 2010: Monogamy&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2010/10/blue-valentine"&gt;ZFF 2010: Blue Valentine&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2010/09/pieds-nus-sur-les-limaces"&gt;ZFF 2010: Pieds nus sur les limaces&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2010/09/der-letzte-schoene-herbsttag"&gt;ZFF 2010: Der letzte sch&#xF6;ne Herbsttag&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2010/09/tamara-drewe"&gt;ZFF 2010: Tamara Drewe&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2010/09/r"&gt;ZFF 2010: R&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2010/09/hugh-hefner-playboy-activist-and-rebel"&gt;ZFF 2010: Hugh Hefner: Playboy, Activist and Rebel&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2010/09/shorts-from-down-under"&gt;ZFF 2010: Shorts from Down Under&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2010/09/van-diemens-land"&gt;ZFF 2010: Van Diemen's Land&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2010/09/the-joneses"&gt;ZFF 2010: The Joneses&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="Zurich Film Festival-ref"&gt;Zurich Film Festival&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2011/10/zff-2011-kurzes-aus-der-t-rkei"&gt;ZFF 2011: Kurzes aus der T&#xFC;rkei&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2011/09/zff-2011-happy-happy-sykt-lykkelig"&gt;ZFF 2011: Happy, Happy (Sykt Lykkelig)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2011/09/zff-2011-restless"&gt;ZFF 2011: Restless&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2011/09/zff-2011-majority-ogunluk"&gt;ZFF 2011: Majority (&#xC7;ogunluk)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2011/09/zff-2011-kriegerin"&gt;ZFF 2011: Kriegerin&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2011/09/zff-2011-jonas"&gt;ZFF 2011: Jonas&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2011/09/zff-2011-circumstance"&gt;ZFF 2011: Circumstance&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2011/09/es-ist-wieder-so-weit-zurich-film-festival-2011"&gt;Es ist wieder so weit: Zurich Film Festival 2011&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2011/09/zff-2011-take-shelter"&gt;ZFF 2011: Take Shelter&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2011/09/zff-2011-fenster-zum-sommer"&gt;ZFF 2011: Fenster zum Sommer&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2010/10/machete"&gt;ZFF 2010: Machete&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2010/10/catfish"&gt;ZFF 2010: Catfish&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2010/10/monogamy"&gt;ZFF 2010: Monogamy&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2010/10/blue-valentine"&gt;ZFF 2010: Blue Valentine&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2010/09/pieds-nus-sur-les-limaces"&gt;ZFF 2010: Pieds nus sur les limaces&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2010/09/der-letzte-schoene-herbsttag"&gt;ZFF 2010: Der letzte sch&#xF6;ne Herbsttag&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2010/09/tamara-drewe"&gt;ZFF 2010: Tamara Drewe&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2010/09/r"&gt;ZFF 2010: R&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2010/09/hugh-hefner-playboy-activist-and-rebel"&gt;ZFF 2010: Hugh Hefner: Playboy, Activist and Rebel&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2010/09/shorts-from-down-under"&gt;ZFF 2010: Shorts from Down Under&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2010/09/van-diemens-land"&gt;ZFF 2010: Van Diemen's Land&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2010/09/the-joneses"&gt;ZFF 2010: The Joneses&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="Kino, Zurich Film Festival-ref"&gt;Kino, Zurich Film Festival&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2011/10/zff-2011-turn-me-on-goddammit"&gt;ZFF 2011: Turn Me On, Goddammit&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="Twitter, Tumblr-ref"&gt;Twitter, Tumblr&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2011/05/tweet-button-auf-tumblr-integrieren"&gt;Tweet Button auf Tumblr integrieren&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="HSR, Security-ref"&gt;HSR, Security&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2011/05/steganografie-in-der-schweiz-verboten"&gt;Steganografie in der Schweiz verboten?&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="URL shortener-ref"&gt;URL shortener&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2011/06/rdmr-ch"&gt;Eigener URL shortener (rdmr.ch)&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="YOURLS-ref"&gt;YOURLS&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2011/06/rdmr-ch"&gt;Eigener URL shortener (rdmr.ch)&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="HTML-ref"&gt;HTML&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2011/06/zum-selektierten-wert-springen"&gt;Zum selektierten Wert springen (IE Bug)&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="JavaScript-ref"&gt;JavaScript&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2011/06/zum-selektierten-wert-springen"&gt;Zum selektierten Wert springen (IE Bug)&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="PHP-ref"&gt;PHP&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2011/06/php-unit-testing-mit-simpletest"&gt;PHP Unit Testing mit SimpleTest&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2010/11/developers-shame-day-2010"&gt;Developers Shame Day: BB-Code selbstgemacht&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="Userscript, Programming, JavaScript-ref"&gt;Userscript, Programming, JavaScript&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2011/09/team-filter-f-r-hockeytoto-ch"&gt;Team-Filter f&#xFC;r hockeytoto.ch&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="csv-ref"&gt;csv&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2005/10/csv-seperator-character"&gt;CSV seperator character&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="Politics-ref"&gt;Politics&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2005/04/schengen-propaganda"&gt;Schengen Propaganda&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="C-ref"&gt;C&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2005/04/release-hostages"&gt;Release Hostages&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="Geocaching-ref"&gt;Geocaching&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2009/11/wwfm-iv-in-z-rich"&gt;WWFM IV in Z&#xFC;rich&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="Linux-ref"&gt;Linux&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2009/11/extract-tar-gz-to-specific-directory"&gt;Extract .tar.gz to specific directory&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2009/10/delete-all-symlink-of-a-directory"&gt;Delete all symlink of a directory&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2009/10/doom-for-sysadmins"&gt;Doom for Sysadmins&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2009/10/dvd-rip-and-gentoo"&gt;dvd::rip and gentoo&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2009/10/find-old-files-and-their-size"&gt;Find old Files and their size&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2009/10/insert-text-at-top-of-a-file"&gt;Insert text at top of a file&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="Barcamp-ref"&gt;Barcamp&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2009/10/barcamp-rapperswil"&gt;BarCamp Rapperswil&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="HSR-ref"&gt;HSR&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2009/10/barcamp-rapperswil"&gt;BarCamp Rapperswil&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="bcrappi-ref"&gt;bcrappi&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2009/10/barcamp-rapperswil"&gt;BarCamp Rapperswil&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="Brainfuck-ref"&gt;Brainfuck&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2009/10/brainfucked-logo"&gt;Brainfucked Logo&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="Games-ref"&gt;Games&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2009/10/doom-for-sysadmins"&gt;Doom for Sysadmins&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="Oracle, PHP, PL/SQL, SQL, Programming-ref"&gt;Oracle, PHP, PL/SQL, SQL, Programming&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2009/10/odbc-hell"&gt;ODBC Hell&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="SQL, Oracle-ref"&gt;SQL, Oracle&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2009/10/generate-n-rows-from-dual"&gt;Generate n rows from dual&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="MSN, Linux-ref"&gt;MSN, Linux&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2009/10/using-pidgin-with-msn-pecan"&gt;Using Pidgin with msn-pecan&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="Twitter-ref"&gt;Twitter&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2010/11/kino-langer-leben"&gt;Kino: L&#xE4;nger Leben&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2010/08/neuer-tweet-button-in-der-sidebar"&gt;Neuer Tweet-Button in der Sidebar&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2010/08/ciao-odi86-hello-odi"&gt;Ciao @odi86, Hello @odi&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="Developers Shame Day-ref"&gt;Developers Shame Day&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2010/11/developers-shame-day-2010"&gt;Developers Shame Day: BB-Code selbstgemacht&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="HSR, Linux-ref"&gt;HSR, Linux&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2010/10/linux-install-event-vom-alt-comp-hsr"&gt;Linux Install-Event vom alt.comp.hsr&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="Kino, Zurich Film Festival, Twitter-ref"&gt;Kino, Zurich Film Festival, Twitter&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2010/10/fazit-des-zurich-film-festivals-2010"&gt;Fazit des Zurich Film Festivals 2010&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="utPLSQL, Oracle, Unit Testing, PL/SQL-ref"&gt;utPLSQL, Oracle, Unit Testing, PL/SQL&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2010/07/using-utplsql-with-multiple-schemas"&gt;Using utPLSQL with multiple schemas&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="Java, JCIFS, VFS-ref"&gt;Java, JCIFS, VFS&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2010/05/erroneous-copyfrom-method-in-jcifs-vfs"&gt;Erroneous copyFrom() method in JCIFS/VFS&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 id="Zurich Film Festival, Kino-ref"&gt;Zurich Film Festival, Kino&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2010/09/zurich-film-festival-2010-beginnt"&gt;Zurich Film Festival 2010 beginnt&lt;/a&gt;&lt;/li&gt;
  
-</description>
-    </item>
-    <item>
-      <title>Test</title>
-      <link>/test</link>
-      <description>&lt;h1 id="toc_0"&gt;Hello World =D&lt;/h1&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;A profound quote.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id="toc_1"&gt;Fruits I like&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;apples&lt;/li&gt;
-&lt;li&gt;oranges&lt;/li&gt;
-&lt;li&gt;watermelons&lt;/li&gt;
-&lt;li&gt;tomatoes&lt;/li&gt;
-&lt;li&gt;avocados&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
   </channel>

@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Rosarivo' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Stefan Oderbolz (&quot;Odi&quot;)">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- load static files from bower -->
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <script src="/bower_components/jquery/jquery.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Le styles -->
+<link href='/assets/stylesheets/style-6f857850c832817175fdbb4d71c6ee0d.css' type='text/css' rel='stylesheet' media='all'>
+<link href='/assets/stylesheets/google_prettify/sons-of-obsidian-afb0925bfa2d994f17dab93e13fbf999.css' type='text/css' rel='stylesheet' media='all'>    
+    <!-- Le scripts -->
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+  -->
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">metaodi</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            
+              <li><a href="/tags">Tags</a></li>
+            
+            
+              <li><a href="/archive">Archive</a></li>
+            
+            
+              <li><a href="/about">About me</a></li>
+            
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="content">
+        <div class="row-fluid">
+  <div class="span12">
+      <div class="posts">
+        <h3 class="title"><a href="/posts/2009/10/papier-zum-tragen-kein-problem">Papier - Zum Tragen kein Problem</a> <span class="date">08.10.2009</span></h3>
+
+        <p>Wenn ich eine Tüte für mein Brötchen bekomme finde ich es immer
+angenehm, dass die auch halten.</p>
+
+<p><img src="http://media.tumblr.com/tumblr_kr7psaSsF81qa2z4q.jpg" alt=""></p>
+
+<p>Eine normale Tüte, aber…</p>
+
+<p><img src="http://media.tumblr.com/tumblr_kr7pslrxP61qa2z4q.jpg" alt=""></p>
+
+<p><strong>DAS ist wichtig!</strong></p>
+
+<p>In dem Sinne: trägt euch sorge, denn es ist gut.</p>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><a href="/posts/2007/08/ms-access-let-lines-in-reports-grow-with-its-content">MS Access: Let lines in Reports grow with it's content</a> <span class="date">24.08.2007</span></h3>
+
+        <p>The problem is the following: You create a report with MS Access with a
+text field. To display the whole text, you have to set the “CanGrow”
+property to “Yes” (on the section and on the text-field). When running
+the report that has vertical lines as column seperator you have an ungly
+effect: The line keeps its size, as this has been fixed in the design
+view.</p>
+
+<p>One might think that the easy solution is to adjust this length at
+runtime. First of all I need to declare what “runtime” means. As this
+problem occures in every “Detail”-Section we must dive in the events a
+section provides. There are three of them “OnRetreat”, “OnFormat” and
+“OnPrint” (apart all the mouse events, which are defenitly not
+suitable).</p>
+
+<p>The Retreat-Event occurs “when Microsoft Access returns to a previous
+report section during report formatting” (Source: VBA Help). Not exactly
+what we’re looking for.</p>
+
+<p>The Format-Event occurs “when Microsoft Access determines which data
+belongs in a report section, but before Access formats the section for
+previewing or printing”. It sounds good, but at this point we don’t have
+our data in the section and are therefore unable to determine the
+correct height.</p>
+
+<p>Finally the Print-Event “after data in a report section is formatted for
+printing, but before the section is printed”. Here we are, we have our
+data which is not yet printed. The problem is that at this point all
+elements are already formatted, all we can do is add new elements and
+that’s why we can’t just adjust the height of each line by setting it
+via</p>
+
+<pre><code> Me.myLine.Height = Me.Height &#39;&#39;&#39;this does not work in the OnPrint event, myLine has already been formatted
+</code></pre>
+
+<p>The simple solution is to draw a new line and use your already placed
+line as a template:</p>
+
+<pre><code>Private Sub Detail_Print(Cancel As Integer, PrintCount As Integer)
+    Dim EndOfLine As Double
+    EndOfLine = Me.Height       &#39;&#39;height of section (where the line stops)
+
+    &#39;&#39;becasue it&#39;s not allowed in such a late state to change lines, we draw new one&#39;s based on the old
+    &#39;&#39;myLine
+    Me.Line (Me.myLine.Left, 0)-(Me.myLine.Left, EndOfLine)
+
+End Sub;
+</code></pre>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><a href="/posts/2007/06/ms-access-and-not-updatable-recordsets">MS Access and not updatable Recordsets</a> <span class="date">30.06.2007</span></h3>
+
+        <p>The whole thing is just plain stupid: Someone in the department I work
+in has created an MS Access Database to track our customers. Above this
+application are some forms to insert the data. Now we already have much
+of the data in various excel sheets etc. So my task was to write a
+function (or method or sub or whatever you call it in your world) to get
+some values from an excel sheet and insert it to a form, just like a
+user would do it. Like that the user has the possibility to check and
+change the data before it gets saved in the database. Now if you bind
+the form elements to parts of a query, Access gets your data as a so
+called snapshot via MS Jet (your communication channel to the DB).
+Snapshot data is not updateable, so if you try to assign your own values
+to form elements an error message pops up and that’s it.</p>
+
+<p>My first solution was to ignore that fact and simply update my data
+directly to the database. But then all nice features like the “undo”
+option (to reset a record) or the possibility to check values before
+they get inserted are lost. The solution I came up is simple, but you
+need to check your status very exact to keep a usable form.</p>
+
+<p>I have a form with my data, I have a save button, I have an exit button
+and I have an update button. There is a special button to start the
+gathering of data from the excel sheet. Now If you want to change the
+value of a textbox on the form you need to cut the textbox off the data
+(<code>ControlSource = &quot;&quot;</code>), then you can freely change the value.</p>
+
+<p>Now you can’t simply update the current record, because the textbox is
+no longer in the recordset. This means that you have to update the value
+directly in the database when the save button is pressed. Then reattach
+the ControlSource and Requery and Repaint your form.</p>
+
+<p>When you want to Undo your changed, just don’t save your values in the
+DB and reassign the ControlSource and Refresh the form, the old value
+will appear.</p>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><a href="/posts/2007/05/convert-fixed-length-column-to-excel">Convert fixed length column to Excel</a> <span class="date">14.05.2007</span></h3>
+
+        <p>I had to convert the output from sqlplus to an excel sheet. The problem
+was, that I had no influence on the creation, so I could spool the file
+directly to excel.</p>
+
+<p>All I got were spool files like that:</p>
+
+<pre><code>      CLASS_ID SUPER_CLASS_ID   COUNT(*)
+============== ============== ==========
+       128           8765         18
+       128           8765        131
+       128           8765          7
+</code></pre>
+
+<p>My idea was to take the line used to seperate the column titles and the
+data as the data that gives me the length of each column (refered as the
+column line in my function below). Then just simply extract a block from
+start to end (as given) based on the gathered column length information.</p>
+
+<p>Maybe someone can use this piece of VBA code:</p>
+
+<pre><code>Public Sub convertFixed()
+    Dim sFile As String
+    Dim iCount As Long
+    Dim iSubCount As Long
+    Dim iLastCount As Long
+    Dim i As Integer
+    Dim Length() As Integer
+    Dim sValue As String
+
+    Dim iStart As Integer
+    Dim iEnd As Integer
+    Dim iColumn As Integer
+
+
+    &#39;&#39;clear previous data
+    Cells.ClearContents
+
+    &#39;&#39;choose the file with the windows file dialog
+    With Application.FileDialog(msoFileDialogFilePicker)
+    .AllowMultiSelect = False
+    .Title = &quot;Choose log file to convert&quot;
+    .InitialFileName = ThisWorkbook.Path
+    .InitialView = msoFileDialogViewDetails
+    .Filters.Clear
+
+    &#39;&#39;the filter is set to .log .spool and .txt files
+    .Filters.Add &quot;Log file&quot;, &quot;*.log, *.spool, *.txt&quot;
+
+    .ButtonName = &quot;Load&quot;
+    If .Show = -1 Then
+        sFile = .SelectedItems(1)
+    Else
+        &#39;&#39;stop execution if no file is selected
+        Exit Sub
+    End If
+    End With
+
+
+    &#39;&#39;we need the following informtion (gather with InputBoxes)
+    &#39;&#39;line to scan the column lengh (space delimiteted) -&gt; line number
+    &#39;&#39;begin of block (line number)
+    &#39;&#39;end of block (line number)
+    iStart = InputBox(&quot;Enter line number where block starts:&quot;, &quot;Line number of Start&quot;)
+    iEnd = InputBox(&quot;Enter line number where block ends:&quot;, &quot;Line number of End&quot;)
+    iColumn = InputBox(&quot;Enter line number of fixed length specification&quot;, &quot;Line number for fixed length&quot;)
+
+    &#39;&#39;the first loop is to get the correct column length
+    &#39;open the file
+    Open sFile For Input Access Read As #1
+    iCount = 1
+    &#39;&#39;loop until end of file (EOF) is reached
+    Do Until EOF(1)
+    Line Input #1, sLine
+    If (iCount = iColumn) Then
+        &#39;&#39;exit if the column line (to scan the length) is reached
+        Exit Do
+    End If
+    iCount = iCount + 1
+    Loop
+    &#39;&#39;close the file
+    Close #1
+
+    iCount = 0
+    iSubCount = 1
+    iLastCount = 0
+    &#39;&#39;sLine now contains a line that gives us the fixed length of the columns
+    sLine = RTrim(sLine)
+    Do Until iSubCount &gt; Len(sLine)
+    If (Mid(sLine, iSubCount, 1) = &quot; &quot; Or iSubCount = Len(sLine)) Then
+        &#39;&#39;the Length array stores the length of each column (needs to be ReDim&#39;ed with each new column)
+        ReDim Preserve Length(iCount)
+        Length(iCount) = iSubCount - iLastCount
+        iLastCount = iSubCount
+        iCount = iCount + 1
+    End If
+    iSubCount = iSubCount + 1
+    Loop
+
+    &#39;&#39;open the file to extract the block based on the column length stored in the Length-Array
+    Open sFile For Input Access Read As #1
+    iCount = 1
+    iSubCount = 1
+
+    &#39;&#39;loop until the end of the block is reached
+    Do Until iCount &gt; iEnd
+    Line Input #1, sLine
+    iLastCount = 1
+    If (iCount &gt;= iStart) Then
+        For i = 0 To UBound(Length)
+            sValue = Trim(Mid(sLine, iLastCount, Length(i)))
+            &#39;&#39;prevent application errors with adding of &quot;&#39;&quot; in front of special characters
+            If (Left(sValue, 1) = &quot;=&quot; Or Left(sValue, 1) = &quot;-&quot; Or Left(sValue, 1) = &quot;+&quot;) Then
+                sValue = &quot;&#39;&quot; &amp; sValue
+            End If
+            &#39;&#39;insert the data to the current Excel sheet
+            Cells(iSubCount, i + 1).Value = sValue
+            iLastCount = iLastCount + Length(i)
+        Next i
+        iSubCount = iSubCount + 1
+    End If
+    iCount = iCount + 1
+    Loop
+    &#39;&#39;close the file
+    Close #1
+
+End Sub
+</code></pre>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><a href="/posts/2006/12/information-about-oracle-directories">Information about Oracle Directories</a> <span class="date">27.12.2006</span></h3>
+
+        <p>I know what I write is quite newbieish, but I needed information about a
+directory I’ve created, means which path it’s pointing to:</p>
+
+<pre><code>select * from all_directories dir;
+</code></pre>
+
+<p>There simply is no user<em>directories, and with all</em>objects I didn’t get
+what I wanted.</p>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><a href="/posts/2006/12/excel-to-csv-with-python">Excel to CSV with Python</a> <span class="date">27.12.2006</span></h3>
+
+        <p>I wanted to handle a simple task: convert a bunch of XSLs to CSVs. Well
+I wrote a small Script in VBScript and it worked. Then I needed to
+change the List separator, so I did that in my System settings, and then
+my Script didn’t work anymore, because it just ignored my changed
+settings.</p>
+
+<p>I googled a lot and didn’t find the solution (only people with the same
+problem). It seems that VBScript (or WSH) is using it’s own locale that
+you can not change.</p>
+
+<p>So I began to look for alternatives. Python can handle the COM interface
+when you install PyWin32 (the version must match the python version
+you’re using). So I just rebuild my script with python and it’s
+COM-Interface. Et voil�: it takes the user defined settings and converts
+my files in the way I want them.</p>
+
+<pre><code>#import win32 stuff
+from win32com.client import Dispatch
+#import other needed
+import glob,sys,os
+
+path = os.path.split(sys.argv[0]) #gather the path of the script
+path = path[0]
+path = path + &#39;\\&#39; #append \ at the end of path (when using *NIX you must use / instead
+files = glob.glob(&#39;*.xls&#39;) #get list of files
+
+xlApp = Dispatch(&quot;Excel.Application&quot;) #create Excel COM-Object
+xlApp.DisplayAlerts = False
+for file in files:
+    xlWB = xlApp.Workbooks.Open(path + file)
+    xlWB.SaveAs(path + file.replace(&quot;.xls&quot;,&quot;.csv&quot;), 6 ) #6 = xlcsv
+    xlWB.Close()
+xlApp.Quit()
+del xlApp
+</code></pre>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><a href="/posts/2006/12/sql-start-script-generator">SQL Start-Script generator</a> <span class="date">12.12.2006</span></h3>
+
+        <p>Sometimes it’s so simple:</p>
+
+<pre><code>import glob
+files = glob.glob(&#39;*.*&#39;);
+f=open(&#39;start_script.sql&#39;, &#39;w&#39;)
+f.write(&#39;PROMPT This is an automatic generated start script\n&#39;);
+f.write(&#39;PROMPT\n&#39;);
+f.write(&#39;SPOOL start_script.LOG\n\n&#39;);
+for filename in files:
+    if filename == &#39;start_script.sql&#39;:
+        continue
+    f.write(&#39;PROMPT Starting script &#39; + filename + &#39;\n&#39;);
+    f.write(&#39;@@&#39; + filename + &#39;\n&#39;);
+f.write(&#39;\nPROMPT\n&#39;);
+f.write(&#39;PROMPT Finished.\n&#39;);
+f.write(&#39;SPOOL OFF\n&#39;);
+f.close();
+exit();
+</code></pre>
+
+<h2 id="toc_0">Explanation:</h2>
+
+<p>First get a file list of the current directory (glob.glob(‘<em>.</em>’), this
+won’t return you directories since they don’t have an extension, if your
+files doesn’t have an extension, either: your fault). Then open a file
+called start_script.sql which will held our start-script (pretty
+self-explanatory). Then we generate a “@@” line for each file (this
+means if you have non-SQL-files in that directory you have to clean-up
+your script or edit it that it only takes .sql files (tip:
+glob.glob(‘*.sql’)). The start-script itself is excluded but the python
+script will be included (can easily be made excluded as well). After the
+loop the file gets closed and that’s it.</p>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><a href="/posts/2006/11/delete-duplicate-records-with-orcle">Delete duplicate records with Orcle</a> <span class="date">07.11.2006</span></h3>
+
+        <p>Don’t ask me why I needed to do that, but I had a lot (about 14 Mio.)
+duplicate records in a table.</p>
+
+<pre><code>DELETE FROM our_table
+WHERE rowid not in
+(SELECT MIN(rowid)
+FROM our_table
+GROUP BY column1, column2, column3... ;
+</code></pre>
+
+<p>helped me out. (thanks to <a href="http://www.devx.com"></a><a href="http://www.devx.com">www.devx.com</a>)</p>
+
+<p>Next time I write my queries to filter those out before inserting them…</p>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><a href="/posts/2006/11/pisa-test">PISA-Test</a> <span class="date">02.11.2006</span></h3>
+
+        <p>Danke Baba fürs schicken des Artikels ;)</p>
+
+<p>War so im <a href="http://www.tagesanzeiger.ch">Tagi</a> (weiss leider nicht genau von welchem Tag):
+<img src="http://media.tumblr.com/tumblr_krvch867I21qa2z4q.jpg" alt=""></p>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><a href="/posts/2006/10/need-to-generate-a-guid-with-oracle">Need to generate a GUID with Oracle?</a> <span class="date">18.10.2006</span></h3>
+
+        <p>I just searched the web for this simple task, and it was difficult to
+find.</p>
+
+<p>Maybe anyone working a bit with Oracle knows this, but it helped me,
+maybe I can help someone out there too, so here it is:</p>
+
+<pre><code>select sys_guid() from dual
+</code></pre>
+
+<p>This generates a 32 character GUID (fits best in a RAW(16) field).</p>
+
+
+      </div>
+    
+   <ul class="pagination">
+       <li><a href="/posts/index/1">1</a></li>
+       <li><a href="/posts/index/2">2</a></li>
+       <li><a href="/posts/index/3">3</a></li>
+       <li><a href="/posts/index/4">4</a></li>
+       <li><a href="/posts/index/5">5</a></li>
+       <li><a href="/posts/index/6">6</a></li>
+       <li><a href="/posts/index/7">7</a></li>
+       <li class="active"><a href="/posts/index/8">8</a></li>
+       <li><a href="/posts/index/9">9</a></li>
+   </ul>
+  </div>
+</div>
+
+      </div>
+
+      <hr>
+      <div class="footer">
+        <p>&copy; Stefan Oderbolz (&quot;Odi&quot;) 2014
+          with <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a>
+          and <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>
+        </p>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- Google Prettify -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.js"></script>
+<script>
+  var pres = document.getElementsByTagName("pre");
+  for (var i=0; i < pres.length; ++i) {
+    pres[i].className = "prettyprint linenums";
+  }
+  prettyPrint();
+</script>
+<!-- end Google Prettify -->
+    
+    
+  </body>
+</html>

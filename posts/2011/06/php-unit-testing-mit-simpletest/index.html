@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Rosarivo' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <title>PHP Unit Testing mit SimpleTest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Stefan Oderbolz (&quot;Odi&quot;)">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- load static files from bower -->
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <script src="/bower_components/jquery/jquery.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Le styles -->
+<link href='/assets/stylesheets/style-6f857850c832817175fdbb4d71c6ee0d.css' type='text/css' rel='stylesheet' media='all'>
+<link href='/assets/stylesheets/google_prettify/sons-of-obsidian-afb0925bfa2d994f17dab93e13fbf999.css' type='text/css' rel='stylesheet' media='all'>    
+    <!-- Le scripts -->
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+  -->
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">metaodi</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            
+              <li><a href="/tags">Tags</a></li>
+            
+            
+              <li><a href="/archive">Archive</a></li>
+            
+            
+              <li><a href="/about">About me</a></li>
+            
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>PHP Unit Testing mit SimpleTest </h1>
+</div>
+
+<div class="row-fluid post-full">
+  <div class="span12">
+    <div class="date">
+      <span>21.06.2011</strong>
+    </div>
+    <div class="content">
+      <p><img src="http://media.tumblr.com/tumblr_ln5d7sf2901qa2z4q.png" alt="SimpleTest in action"></p>
+
+<p>Seit letzter Woche habe ich <a href="http://www.simpletest.org/">SimpleTest</a> im Einsatz und bin davon ziemlich begeistert. Das Framework bietet alles was man von einem konventionellen Unit-Testframework her kennt, wie diverse Assertion-Methoden oder Gruppierung von Testfällen zu <a href="http://www.simpletest.org/en/start-testing.html#group">Testsuiten</a>.</p>
+
+<p>Daneben gibt es aber noch eine ganze Reihe von coolen Erweiterungen:</p>
+
+<ul>
+<li>  Es gibt einige vordefinierte Test-Reports, welche den Erfolg (oder Misserfolg) der Tests anzeigen. Wenn einem diese nicht genügend kann man diese (dank OO) ganz einfach erweitern. So habe ich meinen “persönlichen” Testreporter geschrieben, welcher mir neben den Details zu den Fehlern auch die Details zu den erfolgreichen Tests beschreibt (dazu muss man nur die Methode <code>paintPass()</code> überschreiben), das Resultat ist in obigem Bild ersichtlich.</li>
+<li>  Man kann auch sogenannte <a href="http://www.simpletest.org/en/web_tester_documentation.html">Web-Tests</a> machen, d.h. man kann das Browserverhalten simulieren und so beispielweise automatisiert ein Formular ausfüllen und abschicken
+lassen, anschliessend dann das Ergebnis prüfen.</li>
+<li>  Das erzeugen von <a href="http://www.simpletest.org/en/mock_objects_documentation.html">Mock-Objekten</a> ist kinderleicht, das Framework bietet eine einfache Methode um eine “leere” Hülle eines Objekts zu generieren (z.B. einer Datenbankverbindung) </li>
+</ul>
+
+<p>Das <a href="http://www.simpletest.org/en/first_test_tutorial.html">Tutorial</a>
+führt einem durch die ersten Schritte, die
+<a href="http://simpletest.org/api/">API</a> gibt den vollständigen Überblick.
+Durch die verschiedenen Reporter kann das gleiche Skript auch gebraucht
+werden um in einem automatisierten Build zu laufen, so wie man es z.B.
+von JUnit kennt.</p>
+
+<p>Ich habe momentan alle meine Testfiles in einem Verzeichnis und habe mir
+deshalb ein simples Skript geschrieben, welche alle Tests ausführt:</p>
+
+<p><a href="http://pastie.org/2101994">[Pastie-Link]</a></p>
+
+<p>Um jedes einzelne File jedoch immer noch separat ausführen zu können,
+include ich <code>autorun.php</code> nur genau dann, wenn ich das File direkt
+anspreche:</p>
+
+<pre><code>if (count(get_included_files()) == 1) {
+    require_once(&quot;includes/simpletest/autorun.php&quot;);
+}
+</code></pre>
+
+<p>Ich kann das Framework also nur empfehlen!</p>
+
+    </div>
+    <ul class="tag_box inline">
+      <li><i class="icon-folder-open"></i></li>
+      <li>
+        <a href="/categories#Tech-ref">Tech <span>11</span></a>
+      </li>
+    </ul>
+    <ul class="tag_box inline">
+      <li><i class="icon-tags"></i></li>
+      <li>
+        <a href="/tags#PHP-ref">PHP <span>2</span></a>
+      </li>
+      <li>
+        <a href="/tags#Unit Testing-ref">Unit Testing <span>2</span></a>
+      </li>
+      <li>
+        <a href="/tags#Programming-ref">Programming <span>11</span></a>
+      </li>
+    </ul>
+    <hr>
+    <ul class="pagination">
+        <li class="prev"><a href="/posts/2011/06/rdmr-ch" title="Eigener URL shortener (rdmr.ch)">&larr; Previous</a></li>
+
+        <li><a href="/archive">Archive</a></li>
+
+        <li class="next"><a href="/posts/2011/06/zum-selektierten-wert-springen" title="Zum selektierten Wert springen (IE Bug)">Next &rarr;</a></li>
+    </ul>
+    <hr>
+    
+  </div>
+</div>
+
+
+      </div>
+
+      <hr>
+      <div class="footer">
+        <p>&copy; Stefan Oderbolz (&quot;Odi&quot;) 2014
+          with <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a>
+          and <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>
+        </p>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- Google Prettify -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.js"></script>
+<script>
+  var pres = document.getElementsByTagName("pre");
+  for (var i=0; i < pres.length; ++i) {
+    pres[i].className = "prettyprint linenums";
+  }
+  prettyPrint();
+</script>
+<!-- end Google Prettify -->
+    
+    
+  </body>
+</html>
