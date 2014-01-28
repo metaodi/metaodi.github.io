@@ -2,9 +2,11 @@
 layout : default
 ---
 
+{{^ page.hide_title }}
 <div class="page-header">
   <h1>{{ page.title }} {{# page.tagline }} <small>{{ . }}</small>{{/ page.tagline }}</h1>
 </div>
+{{/ page.hide_title }}
 
 <div class="row-fluid">
   <div class="span12">
