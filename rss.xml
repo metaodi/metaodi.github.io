@@ -8,9 +8,7 @@
     <item>
       <title>About me</title>
       <link>/about</link>
-      <description>&lt;p&gt;&lt;img src="/assets/media/odi.jpg" alt="Stefan Oderbolz (&amp;quot;Odi&amp;quot;)"&gt;&lt;/p&gt;
-
-&lt;p&gt;My name is Stefan Oderbolz (&amp;quot;Odi&amp;quot;) and I live in Zurich.&lt;/p&gt;
+      <description>&lt;p&gt;My name is Stefan Oderbolz (&amp;quot;Odi&amp;quot;) and I live in Zurich.&lt;/p&gt;
 
 &lt;p&gt;I&amp;#39;m currently working for &lt;a href="http://www.liip.ch/"&gt;Liip&lt;/a&gt; as a web developer. I am one of the creators of &lt;a href="http://www.kort.ch/"&gt;Kort&lt;/a&gt;, an OpenStreetMap game.&lt;/p&gt;
 
@@ -276,7 +274,7 @@
       <title>Home</title>
       <link>/</link>
       <description>&lt;div class="posts"&gt;
-  &lt;h3 class="title"&gt;&lt;a href="/posts/2013/05/on-citizenship-in-open-source-software-development"&gt;On Citizenship in Open-source software development &#x2014; Products I Wish Existed&lt;/a&gt; &lt;span class="date"&gt;23.05.2013&lt;/span&gt;&lt;/h3&gt;
+  &lt;h3 class="title"&gt;&lt;span class="date"&gt;23.05.2013&lt;/span&gt;&lt;a href="/posts/2013/05/on-citizenship-in-open-source-software-development"&gt;On Citizenship in Open-source software development &#x2014; Products I Wish Existed&lt;/a&gt;&lt;/h3&gt;
 
   &lt;p&gt;&lt;a href="https://medium.com/products-i-wish-existed/ddd1f7be1415"&gt;https://medium.com/products-i-wish-existed/ddd1f7be1415&lt;/a&gt;&lt;/p&gt;
 
@@ -291,7 +289,7 @@ a repository, GitHub would solve the problem of zombie-projects with &#x2026;&lt
 
 &lt;/div&gt;
 &lt;div class="posts"&gt;
-  &lt;h3 class="title"&gt;&lt;a href="/posts/2012/10/remember-without-unit-tests-youre-not"&gt;Remember: Without unit tests, you're not refactoring. You're just changing shit&lt;/a&gt; &lt;span class="date"&gt;22.10.2012&lt;/span&gt;&lt;/h3&gt;
+  &lt;h3 class="title"&gt;&lt;span class="date"&gt;22.10.2012&lt;/span&gt;&lt;a href="/posts/2012/10/remember-without-unit-tests-youre-not"&gt;Remember: Without unit tests, you're not refactoring. You're just changing shit&lt;/a&gt;&lt;/h3&gt;
 
   &lt;iframe width="560" height="315" src="//www.youtube.com/embed/JWm68Ghc1vA" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
@@ -313,7 +311,7 @@ a repository, GitHub would solve the problem of zombie-projects with &#x2026;&lt
 
 &lt;/div&gt;
 &lt;div class="posts"&gt;
-  &lt;h3 class="title"&gt;&lt;a href="/posts/2012/10/insert-coin-to-play-can-gaming-concepts-help"&gt;Insert Coin To Play&lt;/a&gt; &lt;span class="date"&gt;11.10.2012&lt;/span&gt;&lt;/h3&gt;
+  &lt;h3 class="title"&gt;&lt;span class="date"&gt;11.10.2012&lt;/span&gt;&lt;a href="/posts/2012/10/insert-coin-to-play-can-gaming-concepts-help"&gt;Insert Coin To Play&lt;/a&gt;&lt;/h3&gt;
 
   &lt;p&gt;Can gaming concepts help make OpenStreetMap better?&lt;/p&gt;
 
@@ -333,7 +331,7 @@ a repository, GitHub would solve the problem of zombie-projects with &#x2026;&lt
 
 &lt;/div&gt;
 &lt;div class="posts"&gt;
-  &lt;h3 class="title"&gt;&lt;a href="/posts/2012/05/fiddle-around-code"&gt;Fiddle around (code)&lt;/a&gt; &lt;span class="date"&gt;29.05.2012&lt;/span&gt;&lt;/h3&gt;
+  &lt;h3 class="title"&gt;&lt;span class="date"&gt;29.05.2012&lt;/span&gt;&lt;a href="/posts/2012/05/fiddle-around-code"&gt;Fiddle around (code)&lt;/a&gt;&lt;/h3&gt;
 
   &lt;p&gt;Since I&#x2019;m using JavaScript more heavily, and beeing active on
 &lt;a href="http://stackoverflow.com/users/549755/odi"&gt;StackOverflow&lt;/a&gt;, I&#x2019;m using a
@@ -405,7 +403,7 @@ Suter&lt;/a&gt;)&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;div class="posts"&gt;
-  &lt;h3 class="title"&gt;&lt;a href="/posts/2012/03/setup-javascript-unit-testing-using-qunit-phantomjs"&gt;Setup JavaScript unit testing using QUnit, PhantomJS and Jenkins on Amazon EC2&lt;/a&gt; &lt;span class="date"&gt;08.03.2012&lt;/span&gt;&lt;/h3&gt;
+  &lt;h3 class="title"&gt;&lt;span class="date"&gt;08.03.2012&lt;/span&gt;&lt;a href="/posts/2012/03/setup-javascript-unit-testing-using-qunit-phantomjs"&gt;Setup JavaScript unit testing using QUnit, PhantomJS and Jenkins on Amazon EC2&lt;/a&gt;&lt;/h3&gt;
 
   &lt;p&gt;Me and my friend are currently working on a term paper about &lt;a href="https://developers.google.com/fusiontables/"&gt;Google
 Fusion Tables&lt;/a&gt;. It&#x2019;s about
@@ -565,7 +563,7 @@ tests" title="Overview of all performed tests"&gt;&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;div class="posts"&gt;
-  &lt;h3 class="title"&gt;&lt;a href="/posts/2011/10/zff-2011-turn-me-on-goddammit"&gt;ZFF 2011: Turn Me On, Goddammit&lt;/a&gt; &lt;span class="date"&gt;06.10.2011&lt;/span&gt;&lt;/h3&gt;
+  &lt;h3 class="title"&gt;&lt;span class="date"&gt;06.10.2011&lt;/span&gt;&lt;a href="/posts/2011/10/zff-2011-turn-me-on-goddammit"&gt;ZFF 2011: Turn Me On, Goddammit&lt;/a&gt;&lt;/h3&gt;
 
   &lt;p&gt;&lt;a href="http://www.zurichfilmfestival.org/de/programm/Filme/1896/turn-me-on-goddammit/"&gt;&lt;img src="http://media.tumblr.com/tumblr_lsdq0air4I1qa2z4q.jpg" alt="Turn Me On,
 Goddammit" title="Turn Me On, Goddammit"&gt;&lt;/a&gt;&lt;/p&gt;
@@ -605,7 +603,7 @@ weder &#xFC;bertrieben wirkt noch ins L&#xE4;cherliche gezogen wird.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;div class="posts"&gt;
-  &lt;h3 class="title"&gt;&lt;a href="/posts/2011/10/zff-2011-kurzes-aus-der-t-rkei"&gt;ZFF 2011: Kurzes aus der T&#xFC;rkei&lt;/a&gt; &lt;span class="date"&gt;04.10.2011&lt;/span&gt;&lt;/h3&gt;
+  &lt;h3 class="title"&gt;&lt;span class="date"&gt;04.10.2011&lt;/span&gt;&lt;a href="/posts/2011/10/zff-2011-kurzes-aus-der-t-rkei"&gt;ZFF 2011: Kurzes aus der T&#xFC;rkei&lt;/a&gt;&lt;/h3&gt;
 
   &lt;p&gt;Die &lt;a href="http://www.kurzfilmtage.ch/"&gt;Internationlen Kurzfilmtage
 Winterthur&lt;/a&gt; zeigten &lt;a href="http://www.zurichfilmfestival.org/de/programm/Filme/3025/kurzes-aus-der-turkei/"&gt;Kurzfilme aus der
@@ -726,7 +724,7 @@ Kinoerlebnissen berichten. Ein Schmaus!&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;div class="posts"&gt;
-  &lt;h3 class="title"&gt;&lt;a href="/posts/2011/09/zff-2011-kriegerin"&gt;ZFF 2011: Kriegerin&lt;/a&gt; &lt;span class="date"&gt;30.09.2011&lt;/span&gt;&lt;/h3&gt;
+  &lt;h3 class="title"&gt;&lt;span class="date"&gt;30.09.2011&lt;/span&gt;&lt;a href="/posts/2011/09/zff-2011-kriegerin"&gt;ZFF 2011: Kriegerin&lt;/a&gt;&lt;/h3&gt;
 
   &lt;p&gt;&lt;a href="http://www.zurichfilmfestival.org/de/programm/Filme/2059/kriegerin/"&gt;&lt;img src="http://media.tumblr.com/tumblr_lscbfabgq11qa2z4q.jpg" alt="Kriegerin" title="Kriegerin"&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -777,7 +775,7 @@ auszusprechen.&lt;/em&gt;&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;div class="posts"&gt;
-  &lt;h3 class="title"&gt;&lt;a href="/posts/2011/09/zff-2011-majority-ogunluk"&gt;ZFF 2011: Majority (&#xC7;ogunluk)&lt;/a&gt; &lt;span class="date"&gt;30.09.2011&lt;/span&gt;&lt;/h3&gt;
+  &lt;h3 class="title"&gt;&lt;span class="date"&gt;30.09.2011&lt;/span&gt;&lt;a href="/posts/2011/09/zff-2011-majority-ogunluk"&gt;ZFF 2011: Majority (&#xC7;ogunluk)&lt;/a&gt;&lt;/h3&gt;
 
   &lt;p&gt;&lt;a href="http://www.zurichfilmfestival.org/de/programm/Filme/2704/majority/"&gt;&lt;img src="http://media.tumblr.com/tumblr_lsca0llnJ51qa2z4q.jpg" alt="Majority
 (&#xC7;ogunluk)" title="Majority (&#xC7;ogunluk)"&gt;&lt;/a&gt;&lt;/p&gt;
@@ -831,7 +829,7 @@ erz&#xE4;hlt, die einem nicht einfach so losl&#xE4;sst.&lt;/em&gt;&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;div class="posts"&gt;
-  &lt;h3 class="title"&gt;&lt;a href="/posts/2011/09/zff-2011-happy-happy-sykt-lykkelig"&gt;ZFF 2011: Happy, Happy (Sykt Lykkelig)&lt;/a&gt; &lt;span class="date"&gt;27.09.2011&lt;/span&gt;&lt;/h3&gt;
+  &lt;h3 class="title"&gt;&lt;span class="date"&gt;27.09.2011&lt;/span&gt;&lt;a href="/posts/2011/09/zff-2011-happy-happy-sykt-lykkelig"&gt;ZFF 2011: Happy, Happy (Sykt Lykkelig)&lt;/a&gt;&lt;/h3&gt;
 
   &lt;p&gt;&lt;a href="http://www.zurichfilmfestival.org/de/programm/Filme/1491/happy-happy/"&gt;&lt;img src="http://media.tumblr.com/tumblr_ls6a10DuOD1qa2z4q.jpg" alt="Happy, Happy (Sykt
 Lykkelig)" title="Happy, Happy (Sykt Lykkelig)"&gt;&lt;/a&gt;&lt;/p&gt;
@@ -879,6 +877,7 @@ haben, bietet aber 90min Unterhaltung&lt;/em&gt;&lt;/p&gt;
 
 &lt;/div&gt;
 
+&lt;div class="text-center"&gt;
 &lt;ul class="pagination"&gt;
     &lt;li class="active"&gt;&lt;a href="/posts/index/1"&gt;1&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/index/2"&gt;2&lt;/a&gt;&lt;/li&gt;
@@ -890,6 +889,7 @@ haben, bietet aber 90min Unterhaltung&lt;/em&gt;&lt;/p&gt;
     &lt;li&gt;&lt;a href="/posts/index/8"&gt;8&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/index/9"&gt;9&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
 </description>
     </item>
     <item>

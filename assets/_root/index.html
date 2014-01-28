@@ -6,7 +6,7 @@ hide_title: yes
 
 {{# posts.paginator }}
 <div class="posts">
-  <h3 class="title"><a href="{{url}}">{{title}}</a> <span class="date">{{ date }}</span></h3>
+  <h3 class="title"><span class="date">{{ date }}</span><a href="{{url}}">{{title}}</a></h3>
 
   {{{ content }}}
 
@@ -19,6 +19,7 @@ hide_title: yes
 </div>
 {{/ posts.paginator }}
 
+<div class="text-center">
 <ul class="pagination">
 {{#posts.paginator_navigation}}
   {{#is_active_page}}
@@ -29,3 +30,4 @@ hide_title: yes
   {{/is_active_page}}
 {{/posts.paginator_navigation}}
 </ul>
+</div>
