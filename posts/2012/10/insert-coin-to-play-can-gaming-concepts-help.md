@@ -13,5 +13,5 @@ title: Insert Coin To Play
 Can gaming concepts help make OpenStreetMap better?
 
 
-
+<iframe src="http://blip.tv/play/hdlkgtK6EAI.html?p=1" width="550" height="443" frameborder="0" allowfullscreen></iframe><embed type="application/x-shockwave-flash" src="http://a.blip.tv/api.swf#hdlkgtK6EAI" style="display:none"></embed>
 
