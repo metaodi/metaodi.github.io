@@ -8,18 +8,14 @@ hide_title: yes
 <div class="post">
   <h3 class="title"><a href="{{url}}">{{title}}</a> <span class="date">{{ date }}</span></h3>
 
-  {{{ summary }}}
+  {{{ content }}}
 
   <ul class="tag_box inline">
-
   {{# tags }}
     {{> simple_tags_list }}
   {{/ tags }}
   </ul>
 
-  <div class="more">
-    <a href="{{url}}" class="btn btn-small">read more...</a>
-  </div>
 </div>
 {{/ posts.paginator }}
 
