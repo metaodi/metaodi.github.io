@@ -31,8 +31,9 @@ class Ruhoh
 
       ruhoh = compile
 
-      # Copy CNAME file to compilation
+      # Copy static files to compilation
       FileUtils.cp(File.join('.', 'CNAME'), ruhoh.config['compiled_path'])
+      FileUtils.cp(File.join('.', 'README.md'), ruhoh.config['compiled_path'])
 
       # Add to deploy_branch
       return false unless checkout_deploy_branch
