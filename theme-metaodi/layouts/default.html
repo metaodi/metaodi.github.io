@@ -3,7 +3,19 @@
   <head>
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <meta charset="utf-8">
-    <title>{{ page.title }}</title>
+    <title>
+        {{^page.hide_title }}
+            {{#page.title }}
+                {{page.title}} | {{data.title }}
+            {{/page.title }}
+            {{^page.title }}
+                {{data.title }}
+            {{/ page.title}}
+        {{/page.hide_title }}
+        {{#page.hide_title }}
+            {{data.title}}
+        {{/ page.hide_title }}
+    </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   {{# page.description }}
     <meta name="description" content="{{ . }}">
