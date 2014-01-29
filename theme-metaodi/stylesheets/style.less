@@ -1,5 +1,12 @@
+@top-pad: 60px;
+
 body { 
-    padding-top: 40px; 
+    padding-top: @top-pad; 
+}
+/* anchors */
+.anchor {
+    padding-top: @top-pad;
+    margin-top: -@top-pad + 20px;
 }
 
 body, h1, h2, h3, h4, h5, h6 {
@@ -37,6 +44,7 @@ iframe {
 .pagination>li>a {
     vertical-align: middle;
 }
+
 
 /* about */
 #about {
