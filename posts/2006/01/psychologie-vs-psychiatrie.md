@@ -19,25 +19,21 @@ weshalb, warum? Wer nicht fragr bleibt dumm!”
 Nun frei nach Kopf, die Definition die ich aus dem Abend mitgenommen
 habe:
 
-Psychologe
-==========
+## Psychologe
 
 befasst sich mit dem menschlichen Verhalten, wie wir reagieren, wie wir
 ticken.
 
-Wann gehe ich dahin?
---------------------
+### Wann gehe ich dahin?
 
 Einen Psychologen besuche ich, wenn ich mich beispielsweise in einer
 Lebenskrise befinde und dafür Hilfe will.
 
-Psychiater
-==========
+## Psychiater
 
 befasst sich mit psychischen Krankheiten wie Psychosen, Sucht usw.
 
-Wann gehe ich dahin?
---------------------
+### Wann gehe ich dahin?
 
 Meist werde ich von einem Psychologen oder dem Hausarzt an einen
 Psychiater verwiesen. Es handelt sich dabei ebenfalls um einen Dr.med.,

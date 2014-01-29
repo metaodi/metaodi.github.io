@@ -1,13 +1,8 @@
 ---
-id: 220827893
-link: http://odi.tumblr.com/post/220827893/snowboard-garage-vs-fischer-bettwaren
-slug: snowboard-garage-vs-fischer-bettwaren
 date: Fri Oct 23 2009 12:44:11 GMT+0200 (CEST)
-publish: 2009-10-023
-tags: 
+tags: [German, Video]
 title: Snowboard Garage vs. Fischer Bettwaren
 ---
 
-
-
+<iframe width="420" height="315" src="//www.youtube.com/embed/3J1N7PwwbAI" frameborder="0" allowfullscreen></iframe>
 
