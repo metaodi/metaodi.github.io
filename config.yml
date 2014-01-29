@@ -13,3 +13,8 @@
         limit: 1000
     paginator:
         per_page: 10
+
+widgets:
+    analytics:
+        use: google
+        tracking_id : 'UA-47578431-1'
