@@ -31,6 +31,9 @@ class Ruhoh
 
       ruhoh = compile
 
+      # Copy CNAME file to compilation
+      FileUtils.cp(File.join('.', 'CNAME'), ruhoh.config['compiled_path'])
+
       # Add to deploy_branch
       return false unless checkout_deploy_branch
       system("git", "rm", "-rf", ".")
