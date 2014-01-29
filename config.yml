@@ -18,3 +18,6 @@ widgets:
     analytics:
         use: google
         tracking_id : 'UA-47578431-1'
+    comments:
+        use : disqus
+        short_name : metaodi
