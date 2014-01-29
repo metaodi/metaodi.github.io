@@ -1,5 +1,6 @@
 ---
 layout : default
+title: metaodi
 ---
 
 <div class="row-fluid">
@@ -7,6 +8,12 @@ layout : default
     {{#collection.paginator}}
       <div class="{{ collection.resource_name}}">
         <h3 class="title"><span class="date">{{ date }}</span><a href="{{url}}">{{title}}</a> </h3>
+
+        <ul class="tag_box">
+        {{# tags }}
+          {{> simple_tags_list }}
+        {{/ tags }}
+        </ul>
 
         {{{ content }}}
 
