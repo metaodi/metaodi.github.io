@@ -4,10 +4,10 @@
 "bower_components":
     "use": "static"
 
-"date_format": '%d.%m.%Y'
+date_format: '%d.%m.%Y'
 
-"posts":
-    "sort": ["date", "desc"]
+posts:
+    sort: ["date", "desc"]
     rss:
         enable: true 
         limit: 1000
