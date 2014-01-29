@@ -1,6 +1,5 @@
 ---
-title: Home
-description:
+title: metaodi
 hide_title: yes
 ---
 
@@ -8,13 +7,14 @@ hide_title: yes
 <div class="posts">
   <h3 class="title"><span class="date">{{ date }}</span><a href="{{url}}">{{title}}</a></h3>
 
-  {{{ content }}}
-
   <ul class="tag_box inline">
+  <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
   {{# tags }}
-    {{> simple_tags_list }}
+    {{> tags_list }}
   {{/ tags }}
   </ul>
+
+  {{{ content }}}
 
 </div>
 {{/ posts.paginator }}

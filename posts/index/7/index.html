@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link href='http://fonts.googleapis.com/css?family=Rosarivo' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <meta charset="utf-8">
-    <title></title>
+    <title>
+                metaodi
+    </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Stefan Oderbolz (&quot;Odi&quot;)">
 
@@ -19,7 +20,7 @@
     <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- Le styles -->
-<link href='/assets/stylesheets/style-19503cb7a292d7f3dede6225b80f1d8c.css' type='text/css' rel='stylesheet' media='all'>
+<link href='/assets/stylesheets/style-5612bdb936f3bbe414b2cf36b72e39c5.css' type='text/css' rel='stylesheet' media='all'>
 <link href='/assets/stylesheets/google_prettify/sons-of-obsidian-afb0925bfa2d994f17dab93e13fbf999.css' type='text/css' rel='stylesheet' media='all'>    
     <!-- Le scripts -->
 
@@ -73,79 +74,14 @@
         <div class="row-fluid">
   <div class="span12">
       <div class="posts">
-        <h3 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/dvd-rip-and-gentoo">dvd::rip and gentoo</a> </h3>
-
-        <p><a href="http://exit1.org/dvdrip/">dvd::rip</a> (or dvdrip at the gentoo
-repository) is a very comfortable ripping software to bring your DVDs on
-your harddisk.</p>
-
-<p>When I emerged it and wanted to rip a dvd, I just got no result.</p>
-
-<ol>
-<li> the logfile showed no error</li>
-<li> in the status bar the text appeared Grab
-<code>preview - title #3 Duration: 00:01 [Error]</code></li>
-<li> dvd::rip did nothing.</li>
-</ol>
-
-<p>The chapter has been ripped and the file existed on the filesystem, but
-I was unable to transcode it or do anything else with dvd::rip.</p>
-
-<p>A lot of googling did not provide the solution, but finally I saw that
-dvd::rip prints the exact command that is executed in the logfile, so I
-tried to run it manually to eventually see an error.</p>
-
-<p>And then there was theerror:</p>
-
-<pre><code>convert: no decode delegate for this image format `/tmp/dvdrip24111.snap/snapshot001.png&#39;.
-</code></pre>
-
-<p>I quick search with that showed me, that the problem was imagemagick,
-which obviously did not have png support. I added the USE-flag “png” to
-imagemagick in /etc/portage/package.use and re-emerged imagemagick.</p>
-
-<p>Another problems was that transcode was missing the “mp3” USE-flag.</p>
-
-<p>Since then dvd::rip just works!</p>
-
-
-      </div>
-      <div class="posts">
-        <h3 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/using-pidgin-with-msn-pecan">Using Pidgin with msn-pecan</a> </h3>
-
-        <p>Today when I was starting pidgin I could connect to ICQ, but when trying
-to connect to MSN Pidgin comes up with:</p>
-
-<pre><code>unable to retrieve MSN address book
-</code></pre>
-
-<p>So I was googeling a little bit and found a bug @ pidgin from yesterday.
-The problem is not pidgin, although the official MSN client and some
-others clients still work (e.g. meebo). There are several different
-versions of the MSN protocol, pidgin is using MSNP15. And exactly this
-protocol is currently not working on the server side @ Microsoft (as it
-seems).</p>
-
-<p>Other clients are not affected as they switch to older version of the
-protocol, which are still working.</p>
-
-<p>Because I don’t want to wait until MS fixed the problem, I use a quick
-workaround. As an alternative you can install <code>msn-pecan</code>.</p>
-
-<p>With Gentoo this works (after adding “x11-plugins/pidgin-msn-pecan
-~x86” to <code>/etc/portage/package.keywords</code>):</p>
-
-<pre><code># emerge pidgin-msn-pecan
-</code></pre>
-
-<p>After the installation just restart Pidgin go to “Accounts” -&gt; “Manage
-Accounts”. Select your MSN-Account, click “Modify”. Choose “WLM” as
-protocol. Save and reconnect your MSN account. Works like a charm!</p>
-
-
-      </div>
-      <div class="posts">
         <h3 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/wie-schreibt-man-eine-rede">Wie schreibt man eine Rede</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#German-ref">German <span>19</span></a>
+          </li>
+        </ul>
 
         <p>Die letzten 2 Wochen habe ich mich intensiv mit einer Rede die ich an
 einer Geburtstagsfeier halten musste/durfte. :D</p>
@@ -169,14 +105,27 @@ fertig ist.</li>
       <div class="posts">
         <h3 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/ipa-client-backup-services">IPA - Client Backup Services</a> </h3>
 
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#IPA-ref">IPA <span>1</span></a>
+          </li>
+          <li>
+            <a href="/tags#Trivadis-ref">Trivadis <span>1</span></a>
+          </li>
+          <li>
+            <a href="/tags#German-ref">German <span>19</span></a>
+          </li>
+        </ul>
+
         <p>Da es mir zu mühsam ist, die Arbeit in HTML zu konvertieren (werde ich
 vielleicht noch nachholen), hier die Arbeit als PDF. PDF:
-<a href="http://www.readmore.ch/content/pdf/backup_services.pdf">backup_services.pdf</a>
+<a href="/assets/media/ipa/backup_services.pdf">backup_services.pdf</a>
 [4MB]</p>
 
 <p>Da zur Arbeit auch eine Präsentation gehört, liefere ich diese natürlich
 auch mit (im neue Trivadis-Firmen-Look): PDF:
-<a href="http://www.readmore.ch/content/pdf/backup_services_pp.pdf">backup_services_pp.pdf</a>
+<a href="/assets/media/ipa/backup_services_pp.pdf">backup_services_pp.pdf</a>
 [1MB]</p>
 
 <p>Viel Spass beim lesen.</p>
@@ -189,13 +138,40 @@ inhaltlichen, aber: Nobody’s perfect!</p>
       <div class="posts">
         <h3 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/im-bus">Im Bus</a> </h3>
 
-        <p>Frau: lacht. Ein Mann der neben ihr sitzt und sie offenbar kennt sagt:
-&quot;Wie kannst du lachen? Deine Schwestern sind tot.&quot; Stille</p>
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#German-ref">German <span>19</span></a>
+          </li>
+          <li>
+            <a href="/tags#Text-ref">Text <span>5</span></a>
+          </li>
+        </ul>
+
+        <p>Frau: lacht.</p>
+
+<p>Ein Mann der neben ihr sitzt und sie offenbar kennt sagt:
+&quot;Wie kannst du lachen? Deine Schwestern sind tot.&quot; </p>
+
+<p>Stille.</p>
 
 
       </div>
       <div class="posts">
         <h3 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/doom-for-sysadmins">Doom for Sysadmins</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Games-ref">Games <span>1</span></a>
+          </li>
+          <li>
+            <a href="/tags#Linux-ref">Linux <span>8</span></a>
+          </li>
+          <li>
+            <a href="/tags#German-ref">German <span>19</span></a>
+          </li>
+        </ul>
 
         <p>Das Projekt <a href="http://www.cs.unm.edu/%7Edlchao/flake/doom/">Doom for
 Sysadmins</a> lässt Kinderträume
@@ -210,6 +186,13 @@ Monster überprüfen. Sobalds zu viele sind: losballern!</p>
       </div>
       <div class="posts">
         <h3 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/find-old-files-and-their-size">Find old Files and their size</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Linux-ref">Linux <span>8</span></a>
+          </li>
+        </ul>
 
         <p>The first part is clear, find the old files like that:</p>
 
@@ -251,6 +234,25 @@ same age as the files within.</p>
       </div>
       <div class="posts">
         <h3 class="title"><span class="date">21.10.2009</span><a href="/posts/2009/10/odbc-hell">ODBC Hell</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Oracle-ref">Oracle <span>6</span></a>
+          </li>
+          <li>
+            <a href="/tags#PHP-ref">PHP <span>3</span></a>
+          </li>
+          <li>
+            <a href="/tags#PL/SQL-ref">PL/SQL <span>2</span></a>
+          </li>
+          <li>
+            <a href="/tags#SQL-ref">SQL <span>6</span></a>
+          </li>
+          <li>
+            <a href="/tags#Programming-ref">Programming <span>15</span></a>
+          </li>
+        </ul>
 
         <p>It is so easy: I have a testing environement where an OCI8-Driver is
 installed. Therefore I can use the OCI-Function if PHP to Bind
@@ -304,6 +306,16 @@ open to new ways of doing this.</p>
       </div>
       <div class="posts">
         <h3 class="title"><span class="date">21.10.2009</span><a href="/posts/2009/10/brainfucked-logo">Brainfucked Logo</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Programming-ref">Programming <span>15</span></a>
+          </li>
+          <li>
+            <a href="/tags#Brainfuck-ref">Brainfuck <span>1</span></a>
+          </li>
+        </ul>
 
         <blockquote>
 <p>++++++++++[&gt;++++++++++&lt;-]&gt;——-&lt;++++++++++[»+++++++++++++«-]\
@@ -648,17 +660,25 @@ for “d”) and print it (pos:7)\
       <div class="posts">
         <h3 class="title"><span class="date">08.10.2009</span><a href="/posts/2009/10/ein-tisch-ist-ein-tisch">Ein Tisch ist ein Tisch</a> </h3>
 
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#German-ref">German <span>19</span></a>
+          </li>
+          <li>
+            <a href="/tags#Text-ref">Text <span>5</span></a>
+          </li>
+        </ul>
+
         <p>Nach einem Text vom Peter Bichsel, im Stile von “Kunst aufräumen” ordne
 ich mal Bichsels Text neu.</p>
 
 <p><strong>Orginal Text:
 <a href="http://www.yolanthe.de/stories/bichsel01.htm"></a><a href="http://www.yolanthe.de/stories/bichsel01.htm">http://www.yolanthe.de/stories/bichsel01.htm</a></strong></p>
 
-<p>Nomen</p>
+<h3 id="toc_0">Nomen</h3>
 
-<hr>
-
-<p>Mann        Menschen
+<pre><code>  Mann        Menschen
   Bild        Bett
   Wecker      Stuhl
   Teppich     Tisch
@@ -670,19 +690,111 @@ ich mal Bichsels Text neu.</p>
   Spiegel     Fotoalbum
   Fuss        Mann
   Morgen      Fuss
-  Mann        Morgen</p>
+  Mann        Morgen
+</code></pre>
 
-<p>\</p>
+<h3 id="toc_1">Verben</h3>
 
-<p>Verben</p>
-
-<hr>
-
-<p>stellen    läuten
+<pre><code>  stellen    läuten
   schauen    frieren
   läuten     liegen
   frieren    stehen
-  blättern   stellen</p>
+  blättern   stellen
+</code></pre>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><span class="date">08.10.2009</span><a href="/posts/2009/10/papier-zum-tragen-kein-problem">Papier - Zum Tragen kein Problem</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#German-ref">German <span>19</span></a>
+          </li>
+          <li>
+            <a href="/tags#Fun-ref">Fun <span>4</span></a>
+          </li>
+        </ul>
+
+        <p>Wenn ich eine Tüte für mein Brötchen bekomme finde ich es immer
+angenehm, dass die auch halten.</p>
+
+<p><img src="http://media.tumblr.com/tumblr_kr7psaSsF81qa2z4q.jpg" alt=""></p>
+
+<p>Eine normale Tüte, aber…</p>
+
+<p><img src="http://media.tumblr.com/tumblr_kr7pslrxP61qa2z4q.jpg" alt=""></p>
+
+<p><strong>DAS ist wichtig!</strong></p>
+
+<p>In dem Sinne: trägt euch sorge, denn es ist gut.</p>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><span class="date">24.08.2007</span><a href="/posts/2007/08/ms-access-let-lines-in-reports-grow-with-its-content">MS Access: Let lines in Reports grow with it's content</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#MS Access-ref">MS Access <span>2</span></a>
+          </li>
+          <li>
+            <a href="/tags#VBA-ref">VBA <span>2</span></a>
+          </li>
+          <li>
+            <a href="/tags#Programming-ref">Programming <span>15</span></a>
+          </li>
+        </ul>
+
+        <p>The problem is the following: You create a report with MS Access with a
+text field. To display the whole text, you have to set the “CanGrow”
+property to “Yes” (on the section and on the text-field). When running
+the report that has vertical lines as column seperator you have an ungly
+effect: The line keeps its size, as this has been fixed in the design
+view.</p>
+
+<p>One might think that the easy solution is to adjust this length at
+runtime. First of all I need to declare what “runtime” means. As this
+problem occures in every “Detail”-Section we must dive in the events a
+section provides. There are three of them “OnRetreat”, “OnFormat” and
+“OnPrint” (apart all the mouse events, which are defenitly not
+suitable).</p>
+
+<p>The Retreat-Event occurs “when Microsoft Access returns to a previous
+report section during report formatting” (Source: VBA Help). Not exactly
+what we’re looking for.</p>
+
+<p>The Format-Event occurs “when Microsoft Access determines which data
+belongs in a report section, but before Access formats the section for
+previewing or printing”. It sounds good, but at this point we don’t have
+our data in the section and are therefore unable to determine the
+correct height.</p>
+
+<p>Finally the Print-Event “after data in a report section is formatted for
+printing, but before the section is printed”. Here we are, we have our
+data which is not yet printed. The problem is that at this point all
+elements are already formatted, all we can do is add new elements and
+that’s why we can’t just adjust the height of each line by setting it
+via</p>
+
+<pre><code> Me.myLine.Height = Me.Height &#39;&#39;&#39;this does not work in the OnPrint event, myLine has already been formatted
+</code></pre>
+
+<p>The simple solution is to draw a new line and use your already placed
+line as a template:</p>
+
+<pre><code>Private Sub Detail_Print(Cancel As Integer, PrintCount As Integer)
+    Dim EndOfLine As Double
+    EndOfLine = Me.Height       &#39;&#39;height of section (where the line stops)
+
+    &#39;&#39;becasue it&#39;s not allowed in such a late state to change lines, we draw new one&#39;s based on the old
+    &#39;&#39;myLine
+    Me.Line (Me.myLine.Left, 0)-(Me.myLine.Left, EndOfLine)
+
+End Sub;
+</code></pre>
 
 
       </div>
@@ -724,7 +836,22 @@ ich mal Bichsels Text neu.</p>
   prettyPrint();
 </script>
 <!-- end Google Prettify -->
-    
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-47578431-1']);
+  _gaq.push(['_trackPageview']);
+  
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
     
   </body>
 </html>

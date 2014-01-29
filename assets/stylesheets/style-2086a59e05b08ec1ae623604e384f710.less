@@ -1,5 +1,12 @@
+@top-pad: 60px;
+
 body { 
-    padding-top: 40px; 
+    padding-top: @top-pad; 
+}
+/* anchors */
+.anchor {
+    padding-top: @top-pad;
+    margin-top: -@top-pad + 20px;
 }
 
 body, h1, h2, h3, h4, h5, h6 {
@@ -18,10 +25,6 @@ iframe {
 }
 
 /* navbar */
-.navbar {
-    font-family: 'Rosarivo', serif;
-}
-
 .navbar-inverse {
     background-color: #093;
     
@@ -41,6 +44,7 @@ iframe {
 .pagination>li>a {
     vertical-align: middle;
 }
+
 
 /* about */
 #about {
@@ -92,17 +96,19 @@ iframe {
 /* tag_box */
 .tag_box {
   list-style:none;
-  margin:0;
+  padding: 0;
   overflow:hidden;
+  display: block;
 }
 .tag_box li {
   line-height:28px;
+  float: left;
 }
-.tag_box li i {
-  opacity:0.9;
-}
-.tag_box.inline li {
-  float:left;
+.tag_box li.icon {
+    i {
+        margin-top: 10px;
+    }
+    margin-right: 6px;
 }
 .tag_box a {
   padding: 3px 6px;

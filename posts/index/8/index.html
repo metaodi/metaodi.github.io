@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link href='http://fonts.googleapis.com/css?family=Rosarivo' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <meta charset="utf-8">
-    <title></title>
+    <title>
+                metaodi
+    </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Stefan Oderbolz (&quot;Odi&quot;)">
 
@@ -19,7 +20,7 @@
     <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- Le styles -->
-<link href='/assets/stylesheets/style-19503cb7a292d7f3dede6225b80f1d8c.css' type='text/css' rel='stylesheet' media='all'>
+<link href='/assets/stylesheets/style-5612bdb936f3bbe414b2cf36b72e39c5.css' type='text/css' rel='stylesheet' media='all'>
 <link href='/assets/stylesheets/google_prettify/sons-of-obsidian-afb0925bfa2d994f17dab93e13fbf999.css' type='text/css' rel='stylesheet' media='all'>    
     <!-- Le scripts -->
 
@@ -73,78 +74,17 @@
         <div class="row-fluid">
   <div class="span12">
       <div class="posts">
-        <h3 class="title"><span class="date">08.10.2009</span><a href="/posts/2009/10/papier-zum-tragen-kein-problem">Papier - Zum Tragen kein Problem</a> </h3>
-
-        <p>Wenn ich eine Tüte für mein Brötchen bekomme finde ich es immer
-angenehm, dass die auch halten.</p>
-
-<p><img src="http://media.tumblr.com/tumblr_kr7psaSsF81qa2z4q.jpg" alt=""></p>
-
-<p>Eine normale Tüte, aber…</p>
-
-<p><img src="http://media.tumblr.com/tumblr_kr7pslrxP61qa2z4q.jpg" alt=""></p>
-
-<p><strong>DAS ist wichtig!</strong></p>
-
-<p>In dem Sinne: trägt euch sorge, denn es ist gut.</p>
-
-
-      </div>
-      <div class="posts">
-        <h3 class="title"><span class="date">24.08.2007</span><a href="/posts/2007/08/ms-access-let-lines-in-reports-grow-with-its-content">MS Access: Let lines in Reports grow with it's content</a> </h3>
-
-        <p>The problem is the following: You create a report with MS Access with a
-text field. To display the whole text, you have to set the “CanGrow”
-property to “Yes” (on the section and on the text-field). When running
-the report that has vertical lines as column seperator you have an ungly
-effect: The line keeps its size, as this has been fixed in the design
-view.</p>
-
-<p>One might think that the easy solution is to adjust this length at
-runtime. First of all I need to declare what “runtime” means. As this
-problem occures in every “Detail”-Section we must dive in the events a
-section provides. There are three of them “OnRetreat”, “OnFormat” and
-“OnPrint” (apart all the mouse events, which are defenitly not
-suitable).</p>
-
-<p>The Retreat-Event occurs “when Microsoft Access returns to a previous
-report section during report formatting” (Source: VBA Help). Not exactly
-what we’re looking for.</p>
-
-<p>The Format-Event occurs “when Microsoft Access determines which data
-belongs in a report section, but before Access formats the section for
-previewing or printing”. It sounds good, but at this point we don’t have
-our data in the section and are therefore unable to determine the
-correct height.</p>
-
-<p>Finally the Print-Event “after data in a report section is formatted for
-printing, but before the section is printed”. Here we are, we have our
-data which is not yet printed. The problem is that at this point all
-elements are already formatted, all we can do is add new elements and
-that’s why we can’t just adjust the height of each line by setting it
-via</p>
-
-<pre><code> Me.myLine.Height = Me.Height &#39;&#39;&#39;this does not work in the OnPrint event, myLine has already been formatted
-</code></pre>
-
-<p>The simple solution is to draw a new line and use your already placed
-line as a template:</p>
-
-<pre><code>Private Sub Detail_Print(Cancel As Integer, PrintCount As Integer)
-    Dim EndOfLine As Double
-    EndOfLine = Me.Height       &#39;&#39;height of section (where the line stops)
-
-    &#39;&#39;becasue it&#39;s not allowed in such a late state to change lines, we draw new one&#39;s based on the old
-    &#39;&#39;myLine
-    Me.Line (Me.myLine.Left, 0)-(Me.myLine.Left, EndOfLine)
-
-End Sub;
-</code></pre>
-
-
-      </div>
-      <div class="posts">
         <h3 class="title"><span class="date">30.06.2007</span><a href="/posts/2007/06/ms-access-and-not-updatable-recordsets">MS Access and not updatable Recordsets</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#MS Access-ref">MS Access <span>2</span></a>
+          </li>
+          <li>
+            <a href="/tags#Programming-ref">Programming <span>15</span></a>
+          </li>
+        </ul>
 
         <p>The whole thing is just plain stupid: Someone in the department I work
 in has created an MS Access Database to track our customers. Above this
@@ -184,6 +124,19 @@ will appear.</p>
       </div>
       <div class="posts">
         <h3 class="title"><span class="date">14.05.2007</span><a href="/posts/2007/05/convert-fixed-length-column-to-excel">Convert fixed length column to Excel</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Excel-ref">Excel <span>2</span></a>
+          </li>
+          <li>
+            <a href="/tags#VBA-ref">VBA <span>2</span></a>
+          </li>
+          <li>
+            <a href="/tags#Programming-ref">Programming <span>15</span></a>
+          </li>
+        </ul>
 
         <p>I had to convert the output from sqlplus to an excel sheet. The problem
 was, that I had no influence on the creation, so I could spool the file
@@ -316,21 +269,23 @@ End Sub
 
       </div>
       <div class="posts">
-        <h3 class="title"><span class="date">27.12.2006</span><a href="/posts/2006/12/information-about-oracle-directories">Information about Oracle Directories</a> </h3>
-
-        <p>I know what I write is quite newbieish, but I needed information about a
-directory I’ve created, means which path it’s pointing to:</p>
-
-<pre><code>select * from all_directories dir;
-</code></pre>
-
-<p>There simply is no user<em>directories, and with all</em>objects I didn’t get
-what I wanted.</p>
-
-
-      </div>
-      <div class="posts">
         <h3 class="title"><span class="date">27.12.2006</span><a href="/posts/2006/12/excel-to-csv-with-python">Excel to CSV with Python</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Programming-ref">Programming <span>15</span></a>
+          </li>
+          <li>
+            <a href="/tags#Python-ref">Python <span>2</span></a>
+          </li>
+          <li>
+            <a href="/tags#Excel-ref">Excel <span>2</span></a>
+          </li>
+          <li>
+            <a href="/tags#CSV-ref">CSV <span>2</span></a>
+          </li>
+        </ul>
 
         <p>I wanted to handle a simple task: convert a bunch of XSLs to CSVs. Well
 I wrote a small Script in VBScript and it worked. Then I needed to
@@ -371,7 +326,41 @@ del xlApp
 
       </div>
       <div class="posts">
+        <h3 class="title"><span class="date">27.12.2006</span><a href="/posts/2006/12/information-about-oracle-directories">Information about Oracle Directories</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Oracle-ref">Oracle <span>6</span></a>
+          </li>
+        </ul>
+
+        <p>I know what I write is quite newbieish, but I needed information about a
+directory I’ve created, means which path it’s pointing to:</p>
+
+<pre><code>select * from all_directories dir;
+</code></pre>
+
+<p>There simply is no user<em>directories, and with all</em>objects I didn’t get
+what I wanted.</p>
+
+
+      </div>
+      <div class="posts">
         <h3 class="title"><span class="date">12.12.2006</span><a href="/posts/2006/12/sql-start-script-generator">SQL Start-Script generator</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Python-ref">Python <span>2</span></a>
+          </li>
+          <li>
+            <a href="/tags#SQL-ref">SQL <span>6</span></a>
+          </li>
+          <li>
+            <a href="/tags#Programming-ref">Programming <span>15</span></a>
+          </li>
+        </ul>
 
         <p>Sometimes it’s so simple:</p>
 
@@ -411,6 +400,16 @@ loop the file gets closed and that’s it.</p>
       <div class="posts">
         <h3 class="title"><span class="date">07.11.2006</span><a href="/posts/2006/11/delete-duplicate-records-with-orcle">Delete duplicate records with Orcle</a> </h3>
 
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Oracle-ref">Oracle <span>6</span></a>
+          </li>
+          <li>
+            <a href="/tags#SQL-ref">SQL <span>6</span></a>
+          </li>
+        </ul>
+
         <p>Don’t ask me why I needed to do that, but I had a lot (about 14 Mio.)
 duplicate records in a table.</p>
 
@@ -430,6 +429,16 @@ GROUP BY column1, column2, column3... ;
       <div class="posts">
         <h3 class="title"><span class="date">02.11.2006</span><a href="/posts/2006/11/pisa-test">PISA-Test</a> </h3>
 
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Fun-ref">Fun <span>4</span></a>
+          </li>
+          <li>
+            <a href="/tags#German-ref">German <span>19</span></a>
+          </li>
+        </ul>
+
         <p>Danke Baba fürs schicken des Artikels ;)</p>
 
 <p>War so im <a href="http://www.tagesanzeiger.ch">Tagi</a> (weiss leider nicht genau von welchem Tag):
@@ -439,6 +448,16 @@ GROUP BY column1, column2, column3... ;
       </div>
       <div class="posts">
         <h3 class="title"><span class="date">18.10.2006</span><a href="/posts/2006/10/need-to-generate-a-guid-with-oracle">Need to generate a GUID with Oracle?</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Oracle-ref">Oracle <span>6</span></a>
+          </li>
+          <li>
+            <a href="/tags#SQL-ref">SQL <span>6</span></a>
+          </li>
+        </ul>
 
         <p>I just searched the web for this simple task, and it was difficult to
 find.</p>
@@ -450,6 +469,88 @@ maybe I can help someone out there too, so here it is:</p>
 </code></pre>
 
 <p>This generates a 32 character GUID (fits best in a RAW(16) field).</p>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><span class="date">24.01.2006</span><a href="/posts/2006/01/psychologie-vs-psychiatrie">Psychologie vs. Psychiatrie</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#German-ref">German <span>19</span></a>
+          </li>
+        </ul>
+
+        <p>Wie das so ist, wenn man gemütlich zusammen sitzt, vorzugsweise mit
+gutem Essen, spricht man über Gott und die Welt und plötzlich:</p>
+
+<p><strong>Was ist eigentlich der Unterschied zwischen einem Psychologen und
+einem Psychiater?</strong></p>
+
+<p>Solche Dinge brennen auf der Zunge, man gibt sich der Unwissenheit zu
+erkennen, hat aber gute Aussichten nach dem Gespräch mehr Wissen zu
+haben, denn schon das Fernsehen hat uns gelehrt: “Wer, wie was; wieso,
+weshalb, warum? Wer nicht fragr bleibt dumm!”</p>
+
+<p>Nun frei nach Kopf, die Definition die ich aus dem Abend mitgenommen
+habe:</p>
+
+<h2 id="toc_0">Psychologe</h2>
+
+<p>befasst sich mit dem menschlichen Verhalten, wie wir reagieren, wie wir
+ticken.</p>
+
+<h3 id="toc_1">Wann gehe ich dahin?</h3>
+
+<p>Einen Psychologen besuche ich, wenn ich mich beispielsweise in einer
+Lebenskrise befinde und dafür Hilfe will.</p>
+
+<h2 id="toc_2">Psychiater</h2>
+
+<p>befasst sich mit psychischen Krankheiten wie Psychosen, Sucht usw.</p>
+
+<h3 id="toc_3">Wann gehe ich dahin?</h3>
+
+<p>Meist werde ich von einem Psychologen oder dem Hausarzt an einen
+Psychiater verwiesen. Es handelt sich dabei ebenfalls um einen Dr.med.,
+der sich spezialisiert hat.</p>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><span class="date">25.10.2005</span><a href="/posts/2005/10/csv-seperator-character">CSV seperator character</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#CSV-ref">CSV <span>2</span></a>
+          </li>
+        </ul>
+
+        <p>In my particular case I got an excel sheet from the customer to import
+in a DB. The idea is to use a CSV as the base for an Oracle external
+table and then import the data in the real table with a “insert into
+select”.</p>
+
+<p>When I loaded the excel sheet and saved it as a CSV, the semicolon (“;”)
+was used as a seperator. I therefore created my external table and
+worked with the data. Then i realized that the order of the fields get
+messed up, because there were free text fields that contained “;” as
+data.</p>
+
+<p>I didn’t find an option in excel to change the seperator character, but
+as usually <a href="http://www.google.com/search?q=excel+csv+separator+character">Google is your
+friend</a>.</p>
+
+<p>This character is saved directly in your system in the “Region and
+Language Options” in the “Control Panel” (yes, I’m talking about MS
+Windows). You can selected there the “Customize” button and change the
+“List separator” to the value you want.</p>
+
+<p>First I tried to set this to “###”, but this didn’t work, excel then
+used a single space as separator. It seems it’s not allowed to use
+multiple characters. Now, I use “#” and everything works fine.</p>
 
 
       </div>
@@ -491,7 +592,22 @@ maybe I can help someone out there too, so here it is:</p>
   prettyPrint();
 </script>
 <!-- end Google Prettify -->
-    
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-47578431-1']);
+  _gaq.push(['_trackPageview']);
+  
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
     
   </body>
 </html>

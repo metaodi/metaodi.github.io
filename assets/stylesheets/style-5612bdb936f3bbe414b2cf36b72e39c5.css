@@ -1,5 +1,10 @@
 body {
-  padding-top: 40px;
+  padding-top: 60px;
+}
+/* anchors */
+.anchor {
+  padding-top: 60px;
+  margin-top: -40px;
 }
 body,
 h1,
@@ -21,9 +26,6 @@ iframe {
   max-width: 100%;
 }
 /* navbar */
-.navbar {
-  font-family: 'Rosarivo', serif;
-}
 .navbar-inverse {
   background-color: #093;
 }
@@ -86,17 +88,19 @@ iframe {
 /* tag_box */
 .tag_box {
   list-style: none;
-  margin: 0;
+  padding: 0;
   overflow: hidden;
+  display: block;
 }
 .tag_box li {
   line-height: 28px;
-}
-.tag_box li i {
-  opacity: 0.9;
-}
-.tag_box.inline li {
   float: left;
+}
+.tag_box li.icon {
+  margin-right: 6px;
+}
+.tag_box li.icon i {
+  margin-top: 10px;
 }
 .tag_box a {
   padding: 3px 6px;

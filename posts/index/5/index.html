@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link href='http://fonts.googleapis.com/css?family=Rosarivo' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <meta charset="utf-8">
-    <title></title>
+    <title>
+                metaodi
+    </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Stefan Oderbolz (&quot;Odi&quot;)">
 
@@ -19,7 +20,7 @@
     <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- Le styles -->
-<link href='/assets/stylesheets/style-19503cb7a292d7f3dede6225b80f1d8c.css' type='text/css' rel='stylesheet' media='all'>
+<link href='/assets/stylesheets/style-5612bdb936f3bbe414b2cf36b72e39c5.css' type='text/css' rel='stylesheet' media='all'>
 <link href='/assets/stylesheets/google_prettify/sons-of-obsidian-afb0925bfa2d994f17dab93e13fbf999.css' type='text/css' rel='stylesheet' media='all'>    
     <!-- Le scripts -->
 
@@ -73,92 +74,20 @@
         <div class="row-fluid">
   <div class="span12">
       <div class="posts">
-        <h3 class="title"><span class="date">13.08.2010</span><a href="/posts/2010/08/neuer-tweet-button-in-der-sidebar">Neuer Tweet-Button in der Sidebar</a> </h3>
-
-        <p><a href="http://twitter.com/tweetbutton"><img src="http://media.tumblr.com/tumblr_l741gd411O1qa2z4q.png" alt="Tweetbutton auf
-Readmore.ch"></a></p>
-
-<p>…und zwar <a href="http://twitter.com/tweetbutton">DEN Tweet-Button</a>, eine
-Erklärung dazu gibts <a href="http://www.youtube.com/watch?v=LB0hrJ_ZZzc">per
-Video</a>.</p>
-
-<p>Der Button verweist jeweils auf die aktuelle URL, d.h. auf der
-Hauptseite auf “www.readmore.ch” und auf den Beitragsseiten jeweils auf
-die spezifische Beitrags-URL.</p>
-
-
-      </div>
-      <div class="posts">
-        <h3 class="title"><span class="date">12.07.2010</span><a href="/posts/2010/07/using-utplsql-with-multiple-schemas">Using utPLSQL with multiple schemas</a> </h3>
-
-        <p>I really like unit testing, and nowadays there is an helping framework
-for almost every environment and/or programming language. For PL/SQL
-this is <a href="http://utplsql.sourceforge.net/">utPLSQL</a>, which consists of a
-bunch of packages that you need to put on your database and then you
-should be good to test your could. You <em>should</em>.</p>
-
-<p>I just spent some hours debugging my test code, so I want to share this
-with you, maybe I can save someone out there some time.</p>
-
-<h3 id="toc_0">My setting</h3>
-
-<ul>
-<li>  <strong>Schema A:</strong> utPLSQL package</li>
-<li>  <strong>Schema B:</strong> package XY (code to test), package UT_XY (test code)</li>
-</ul>
-
-<p>I have two schemas A and B. In schema A utPLSQL is installed, and in B
-is the code to test. It is recommended to have your code to test and
-your test code in the same schema.</p>
-
-<p>The following script is used to run the tests:</p>
-
-<pre><code> begin
-   for c in (select object_name,owner
-               from all_objects
-              where object_name like &#39;UT\_%&#39; escape &#39;\&#39;
-                and object_type =&#39;PACKAGE&#39;)
-   loop
-     begin
-     utPLSQL.test(
-       package_in =&gt; substr(c.object_name,4),
-       prefix_in =&gt; &#39;UT_&#39;,
-       owner_in =&gt; c.owner
-     );
-   exception
-     -- in case of a faulty unittest continue with the others.
-     when others then
-       null;
-   end;
-   end loop;
- end;
- /
-</code></pre>
-
-<p>But I kept getting the error:</p>
-
-<pre><code> Program named &quot;XY&quot; does not exist.
-</code></pre>
-
-<p>So I thought that somehow the schema A does not “see” the packages in
-the schema B and created public synonyms. Unfortunately this didn’t
-help. Then I tried to move the “UT_” package to schema A, which worked,
-but now I got an error that the code to test and the test code are in
-different schemas.</p>
-
-<p>There must be something obvious I’m missing!</p>
-
-<p>And there it was: A had not “execute” grant on the packages in B.</p>
-
-<pre><code>  grant execute on b.xy to A;
-</code></pre>
-
-<p>Now everything just worked fine.</p>
-
-
-      </div>
-      <div class="posts">
         <h3 class="title"><span class="date">30.05.2010</span><a href="/posts/2010/05/erroneous-copyfrom-method-in-jcifs-vfs">Erroneous copyFrom() method in JCIFS/VFS</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Java-ref">Java <span>1</span></a>
+          </li>
+          <li>
+            <a href="/tags#JCIFS-ref">JCIFS <span>1</span></a>
+          </li>
+          <li>
+            <a href="/tags#VFS-ref">VFS <span>1</span></a>
+          </li>
+        </ul>
 
         <p>At the <a href="http://www.hsr.ch">HSR (University of Applied Science
 Rapperswil)</a> we are currently developing a software
@@ -226,19 +155,48 @@ behavior.</p>
       <div class="posts">
         <h3 class="title"><span class="date">23.12.2009</span><a href="/posts/2009/12/guardian-how-do-i-know-china-wrecked-the-copenhagen">Guardian: How do I know China wrecked the Copenhagen deal? I was in the room</a> </h3>
 
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Link-ref">Link <span>4</span></a>
+          </li>
+        </ul>
+
         <p><a href="http://www.guardian.co.uk/environment/2009/dec/22/copenhagen-climate-change-mark-lynas">http://www.guardian.co.uk/environment/2009/dec/22/copenhagen-climate-change-mark-lynas</a></p>
+
+<blockquote>
+<p>With the deal gutted, the heads of state session concluded with a final battle as the Chinese delegate insisted on removing the 1.5C target so beloved of the small island states and low-lying nations who have most to lose from rising seas. President Nasheed of the Maldives, supported by Brown, fought valiantly to save this crucial number. &quot;How can you ask my country to go extinct?&quot; demanded Nasheed. The Chinese delegate feigned great offence – and the number stayed, but surrounded by language which makes it all but meaningless. The deed was done.</p>
+</blockquote>
 
 
       </div>
       <div class="posts">
         <h3 class="title"><span class="date">22.12.2009</span><a href="/posts/2009/12/how-to-make-your-eye-feel-like-its-closed-when-its">How to make your eye feel like it's closed, when it's actually open</a> </h3>
 
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Link-ref">Link <span>4</span></a>
+          </li>
+        </ul>
+
         <p><a href="http://scienceblogs.com/cognitivedaily/2008/05/how_to_make_your_eye_feel_like.php">http://scienceblogs.com/cognitivedaily/2008/05/how_to_make_your_eye_feel_like.php</a></p>
+
+<blockquote>
+<p>In fact, my left eye felt as if it was closed. I made every effort to open the eye, but it seemed that some unstoppable force was keeping it closed. The only way to make my eye feel as if it was open was to cover it with my hand. I still couldn’t see anything with the eye, but at least I could convince myself it was open.</p>
+</blockquote>
 
 
       </div>
       <div class="posts">
         <h3 class="title"><span class="date">03.12.2009</span><a href="/posts/2009/12/mnmal-i-think-this-summarizes-everything">mnmal</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Image-ref">Image <span>1</span></a>
+          </li>
+        </ul>
 
         <p>I think this summarizes everything.</p>
 
@@ -249,32 +207,71 @@ behavior.</p>
       <div class="posts">
         <h3 class="title"><span class="date">03.12.2009</span><a href="/posts/2009/12/charles-lewinsky-ussert-sich-in-einem-essay-ber-das">Charles Lewinsky äussert sich in einem Essay über das Minarettverbot, den ewigen Populismus und Roger Köppel</a> </h3>
 
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Link-ref">Link <span>4</span></a>
+          </li>
+        </ul>
+
         <p><a href="http://www.tagesanzeiger.ch/kultur/buecher/Jetzt-muessen-wir-sogar-Koeppels-triumphierende-Ironie-schlucken/story/10202730">http://www.tagesanzeiger.ch/kultur/buecher/Jetzt-muessen-wir-sogar-Koeppels-triumphierende-Ironie-schlucken/story/10202730</a></p>
+
+<blockquote>
+<p>Wir haben den Kampf gegen diesen eidenbenzischen Pseudodenk nie wirklich aufgenommen, weil wir uns nicht vorstellen konnten, dass eine Mehrheit solche logischen Bocksprünge mithüpfen würde.</p>
+</blockquote>
 
 
       </div>
       <div class="posts">
         <h3 class="title"><span class="date">17.11.2009</span><a href="/posts/2009/11/wwfm-vi-in-z-rich-das-video-zum-event">WWFM VI in Zürich, das Video zum Event</a> </h3>
 
-        
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Geocaching-ref">Geocaching <span>2</span></a>
+          </li>
+        </ul>
+
+        <iframe width="420" height="315" src="//www.youtube.com/embed/9u-K_LFbGO8" frameborder="0" allowfullscreen></iframe>
+
 
       </div>
       <div class="posts">
         <h3 class="title"><span class="date">11.11.2009</span><a href="/posts/2009/11/the-go-programming-language">The Go Programming Language</a> </h3>
 
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Programming-ref">Programming <span>15</span></a>
+          </li>
+          <li>
+            <a href="/tags#Go-ref">Go <span>1</span></a>
+          </li>
+        </ul>
+
         <p>Today I came across <a href="http://golang.org/">a new programming language called
 Go</a>, developed by Google</p>
 
 <p>It is meant to be fast, but still garbage collected and type safe. They
-use pointers, but no pointer arithmetic.\
- The questions remains: Do we really need another C++-like language?</p>
+use pointers, but no pointer arithmetic.</p>
+
+<p>The questions remains: Do we really need another C++-like language?</p>
 
 <p>See Yourself:</p>
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/wwoWei-GAPo" frameborder="0" allowfullscreen></iframe>
 
 
       </div>
       <div class="posts">
         <h3 class="title"><span class="date">09.11.2009</span><a href="/posts/2009/11/extract-tar-gz-to-specific-directory">Extract .tar.gz to specific directory</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Linux-ref">Linux <span>8</span></a>
+          </li>
+        </ul>
 
         <p>I want to extract all files form a “.tar.gz” file to a specific
 directory (not the current).</p>
@@ -304,6 +301,96 @@ When we put all that together the following finally works:</p>
 
 <pre><code>$ cd /specific/directory &amp;&amp; gzip -cd /some/dir/something.tar.gz | tar -xvf - &amp;&amp; cd -
 </code></pre>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><span class="date">09.11.2009</span><a href="/posts/2009/11/wwfm-vi-in-z-rich">WWFM VI in Zürich</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Geocaching-ref">Geocaching <span>2</span></a>
+          </li>
+        </ul>
+
+        <p>Am nächsten Wochenende (14. November 2009) ist wieder mal ein
+<a href="http://www.geocaching.com/seek/cache_details.aspx?guid=12520097-066c-4a68-a6de-4aff62664db6">World-Wide-Flash-Mob
+(WWFM)</a>
+der Geocache-Anhänger. <img src="http://media.tumblr.com/tumblr_ksu44lKZDQ1qa2z4q.jpg" alt="WWFM
+Geocaching"></p>
+
+<p>Dieser Event steht ganz im Zeichen der kalten Jahreszeit und wird mit
+Wunderkerzen und
+<a href="http://de.wikipedia.org/wiki/R%C3%A4benlicht">Räbeliechtli</a> bestritten.
+Der Clou ist etwas Verwirrung und Verwunderung zu stiften und natürlich
+sich mal wieder zu treffen.</p>
+
+<p>Solche Event-Caches sind immer eine wunderbare Gelegenheit sich über
+Caches zu unterhalten, mal Leute zu sehen die man sonst nur liest oder
+einfach in der Gruppe eine lustige Aktion durchzuführen.</p>
+
+<p>Also alle Cacher da draussen: Kommt auch nach
+<a href="http://www.geocaching.com/seek/cache_details.aspx?guid=12520097-066c-4a68-a6de-4aff62664db6">Zürich</a>,
+oder besucht einen der <a href="http://www.geocaching.com/bookmarks/view.aspx?guid=949fe287-fe1a-41af-9a46-92d891248197">150 anderen WWFM Event
+Caches</a>
+in eurer Nähe!</p>
+
+
+      </div>
+      <div class="posts">
+        <h3 class="title"><span class="date">25.10.2009</span><a href="/posts/2009/10/barcamp-rapperswil">BarCamp Rapperswil</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Barcamp-ref">Barcamp <span>1</span></a>
+          </li>
+          <li>
+            <a href="/tags#HSR-ref">HSR <span>3</span></a>
+          </li>
+          <li>
+            <a href="/tags#bcrappi-ref">bcrappi <span>1</span></a>
+          </li>
+        </ul>
+
+        <p>Das gestrige <a href="http://barcamp.ch/BarCampRapperswil">BarCamp in
+Rapperswil</a> hat riesigen Spass
+gemacht.</p>
+
+<p><img src="http://media.tumblr.com/tumblr_ks2qe1uMbt1qa2z4q.jpg" alt="BarCamp
+Rapperswil"></p>
+
+<p>Als erstes will ich mich gleich bei <a href="http://camichel.com/">Corsin</a> als
+Organisator bedanken, war echt super. Das BarCamp fand in der
+<a href="http://www.hsr.ch">Hochschule für Technik Rapperswil (HSR)</a> statt, von
+dem her ein für mich vertrautes Terrain. Es war ein Treffen technisch
+interessierter Leute über die unterschiedlichsten Facetten der IT. Da
+gab es einen Speech von <a href="http://commetrics.com/">Urs (ComMetrics)</a> über
+Blogs, Social Media und deren Messbarkeit. Dann war <a href="http://www.fybit.com">Yvonne-Anne von
+Fybit</a> vor Ort um ihr Produkt RIATrax vorzustellen
+(Rich Internet Applications in Pure Java), oder Frank, welcher eine
+Diskussion leitete über die Zukunft des Web 2.0, welche Konzepte
+überleben, welche nicht und warum.</p>
+
+<p>Ein weiteres Highlight war die Präsentation von Markus Stolze (Professor
+an der HSR) über den Multi-Touch Table, welcher an der HSR mitentwickelt
+wurde. <img src="http://media.tumblr.com/tumblr_ks2rkyLwuL1qa2z4q.jpg" alt="Multi-Touch
+Table"></p>
+
+<p>Alles in allem war es ein Event unter Gleichgesinnten um sich
+auszutauschen. Wir haben viel gelacht (z.B. über das Hashtag #bcrappi)
+und nachgedacht, kritisch betrachtet und kommentiert.</p>
+
+<p>Ich ging mit vielen neuen Ideen und Eindrücken nach Hause, genau so
+sollte das sein. Ich freue mich bereits auf nachfolgende BarCamps, ist
+sicher nicht das letzte Mal, dass ich da war.</p>
+
+<p><a href="http://www.flickr.com/photos/tags/bcrappi">Die Bilder zum Event gibts auf
+Flickr.</a></p>
+
+<p>PS: I don’t want to miss to mention Joel our Swedish guy, who made this
+BarCamp truly international ;-)</p>
 
 
       </div>
@@ -345,7 +432,22 @@ When we put all that together the following finally works:</p>
   prettyPrint();
 </script>
 <!-- end Google Prettify -->
-    
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-47578431-1']);
+  _gaq.push(['_trackPageview']);
+  
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
     
   </body>
 </html>
