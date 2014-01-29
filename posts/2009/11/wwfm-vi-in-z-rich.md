@@ -1,7 +1,7 @@
 ---
 date: Mon Nov 09 2009 13:34:34 GMT+0100 (CET)
 tags: Geocaching
-title: WWFM IV in Zürich
+title: WWFM VI in Zürich
 ---
 
 
