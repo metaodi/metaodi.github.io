@@ -1,10 +1,6 @@
 ---
-id: 207785013
-link: http://odi.tumblr.com/post/207785013/papier-zum-tragen-kein-problem
-slug: papier-zum-tragen-kein-problem
 date: Thu Oct 08 2009 22:19:00 GMT+0200 (CEST)
-publish: 2009-10-08
-tags: 
+tags: [German, Fun]
 title: Papier - Zum Tragen kein Problem
 ---
 

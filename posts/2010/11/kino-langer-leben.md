@@ -1,7 +1,7 @@
 ---
 date: Wed Nov 03 2010 07:14:30 GMT+0100 (CET)
 tags:
-    - Kino
+    - Cinema
     - Twitter
 title: "Kino: Länger Leben"
 ---

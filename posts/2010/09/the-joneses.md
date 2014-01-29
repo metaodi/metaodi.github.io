@@ -2,7 +2,8 @@
 date: Sat Sep 25 2010 07:47:00 GMT+0200 (CEST)
 tags:
     - Zurich Film Festival
-    - Kino
+    - Cinema
+    - German
 title: "ZFF 2010: The Joneses"
 ---
 

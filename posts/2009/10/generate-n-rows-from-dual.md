@@ -1,10 +1,6 @@
 ---
-id: 220828098
-link: http://odi.tumblr.com/post/220828098/generate-n-rows-from-dual
-slug: generate-n-rows-from-dual
 date: Fri Oct 23 2009 12:44:00 GMT+0200 (CEST)
-publish: 2009-10-023
-tags: SQL, Oracle
+tags: [SQL, Oracle]
 title: Generate n rows from dual
 ---
 

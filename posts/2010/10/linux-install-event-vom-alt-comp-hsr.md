@@ -1,10 +1,6 @@
 ---
-id: 1248048292
-link: http://odi.tumblr.com/post/1248048292/linux-install-event-vom-alt-comp-hsr
-slug: linux-install-event-vom-alt-comp-hsr
 date: Tue Oct 05 2010 10:00:43 GMT+0200 (CEST)
-publish: 2010-10-05
-tags: HSR, Linux
+tags: [HSR, Linux]
 title: Linux Install-Event vom alt.comp.hsr
 ---
 

@@ -1,7 +1,7 @@
 ---
 date: Fri Sep 30 2011 17:12:00 GMT+0200 (CEST)
 tags:
-    - Kino
+    - Cinema
     - Zurich Film Festival
 title: "ZFF 2011: Kriegerin"
 ---

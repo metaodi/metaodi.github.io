@@ -1,10 +1,6 @@
 ---
-id: 23998739769
-link: http://odi.tumblr.com/post/23998739769/fiddle-around-code
-slug: fiddle-around-code
 date: Tue May 29 2012 17:18:00 GMT+0200 (CEST)
-publish: 2012-05-029
-tags: Programming, JavaScript, SQL, Sencha Touch
+tags: [Programming, JavaScript, SQL, Sencha Touch]
 title: Fiddle around (code)
 ---
 

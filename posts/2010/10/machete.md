@@ -2,7 +2,7 @@
 date: Sat Oct 02 2010 16:46:00 GMT+0200 (CEST)
 tags:
     - Zurich Film Festival
-    - Kino
+    - Cinema
 title: "ZFF 2010: Machete"
 ---
 

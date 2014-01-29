@@ -1,7 +1,7 @@
 ---
 date: Sat Sep 24 2011 13:08:06 GMT+0200 (CEST)
 tags:
-    - Kino
+    - Cinema
     - Zurich Film Festival
 title: "ZFF 2011: Fenster zum Sommer"
 ---

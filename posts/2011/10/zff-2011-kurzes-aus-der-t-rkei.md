@@ -2,7 +2,7 @@
 date: Tue Oct 04 2011 14:26:44 GMT+0200 (CEST)
 categorie: Film
 tags: 
-    - Kino
+    - Cinema
     - Zurich Film Festival
 title: "ZFF 2011: Kurzes aus der Türkei"
 ---

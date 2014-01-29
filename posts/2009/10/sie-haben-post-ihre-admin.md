@@ -1,6 +1,6 @@
 ---
 date: Fri Oct 23 2009 15:16:58 GMT+0200 (CEST)
-tags: 
+tags: [German, Text, Fun]
 title: "Sie haben Post: Ihre Admin."
 ---
 

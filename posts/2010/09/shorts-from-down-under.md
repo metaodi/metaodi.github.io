@@ -2,7 +2,7 @@
 date: Mon Sep 27 2010 20:04:00 GMT+0200 (CEST)
 tags:
     - Zurich Film Festival
-    - Kino
+    - Cinema
 title: "ZFF 2010: Shorts from Down Under"
 ---
 

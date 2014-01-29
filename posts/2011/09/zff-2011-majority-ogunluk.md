@@ -1,7 +1,7 @@
 ---
 date: Fri Sep 30 2011 16:39:05 GMT+0200 (CEST)
 tags:
-    - Kino
+    - Cinema
     - Zurich Film Festival
 title: "ZFF 2011: Majority (Çogunluk)"
 ---

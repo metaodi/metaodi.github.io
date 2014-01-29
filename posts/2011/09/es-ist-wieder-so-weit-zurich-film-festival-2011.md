@@ -1,7 +1,7 @@
 ---
 date: Mon Sep 19 2011 08:11:15 GMT+0200 (CEST)
 tags:
-    - Kino
+    - Cinema
     - Zurich Film Festival
 title: "Es ist wieder so weit: Zurich Film Festival 2011"
 ---

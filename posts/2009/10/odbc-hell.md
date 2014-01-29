@@ -1,10 +1,6 @@
 ---
-id: 219088527
-link: http://odi.tumblr.com/post/219088527/odbc-hell
-slug: odbc-hell
 date: Wed Oct 21 2009 16:27:00 GMT+0200 (CEST)
-publish: 2009-10-021
-tags: Oracle, PHP, PL/SQL, SQL, Programming
+tags: [Oracle, PHP, PL/SQL, SQL, Programming]
 title: ODBC Hell
 ---
 

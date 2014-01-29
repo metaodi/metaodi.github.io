@@ -1,10 +1,6 @@
 ---
-id: 5830759211
-link: http://odi.tumblr.com/post/5830759211/steganografie-in-der-schweiz-verboten
-slug: steganografie-in-der-schweiz-verboten
 date: Wed May 25 2011 17:42:00 GMT+0200 (CEST)
-publish: 2011-05-025
-tags: HSR, Security
+tags: [HSR, Security]
 title: Steganografie in der Schweiz verboten?
 ---
 

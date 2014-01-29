@@ -1,6 +1,6 @@
 ---
 date: Thu Nov 02 2006 00:00:00 GMT+0100 (CET)
-tags: Fun
+tags: [Fun, German]
 title: PISA-Test
 ---
 

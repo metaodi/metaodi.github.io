@@ -2,7 +2,7 @@
 date: Sun Oct 03 2010 09:18:00 GMT+0200 (CEST)
 tags:
     - Zurich Film Festival
-    - Kino
+    - Cinema
 title: "ZFF 2010: Monogamy"
 ---
 

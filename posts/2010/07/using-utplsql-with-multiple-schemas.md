@@ -1,10 +1,6 @@
 ---
-id: 801787955
-link: http://odi.tumblr.com/post/801787955/using-utplsql-with-multiple-schemas
-slug: using-utplsql-with-multiple-schemas
 date: Mon Jul 12 2010 13:57:00 GMT+0200 (CEST)
-publish: 2010-07-012
-tags: utPLSQL, Oracle, Unit Testing, PL/SQL
+tags: [utPLSQL, Oracle, Unit Testing, PL/SQL]
 title: Using utPLSQL with multiple schemas
 ---
 

@@ -1,10 +1,6 @@
 ---
-id: 10208944483
-link: http://odi.tumblr.com/post/10208944483/team-filter-f-r-hockeytoto-ch
-slug: team-filter-f-r-hockeytoto-ch
 date: Wed Sep 14 2011 21:15:42 GMT+0200 (CEST)
-publish: 2011-09-014
-tags: Userscript, Programming, JavaScript
+tags: [Userscript, Programming, JavaScript]
 title: Team-Filter für hockeytoto.ch
 ---
 

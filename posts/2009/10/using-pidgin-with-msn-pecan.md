@@ -1,10 +1,6 @@
 ---
-id: 220827960
-link: http://odi.tumblr.com/post/220827960/using-pidgin-with-msn-pecan
-slug: using-pidgin-with-msn-pecan
 date: Fri Oct 23 2009 12:44:00 GMT+0200 (CEST)
-publish: 2009-10-023
-tags: MSN, Linux
+tags: [MSN, Linux]
 title: Using Pidgin with msn-pecan
 ---
 

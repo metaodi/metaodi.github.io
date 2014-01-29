@@ -1,10 +1,6 @@
 ---
-id: 18940470535
-link: http://odi.tumblr.com/post/18940470535/setup-javascript-unit-testing-using-qunit-phantomjs
-slug: setup-javascript-unit-testing-using-qunit-phantomjs
 date: Thu Mar 08 2012 08:24:00 GMT+0100 (CET)
-publish: 2012-03-08
-tags: JavaScript, Unit Testing, Programming, QUnit, Jenkins, PhantomJS, Amazon EC2
+tags: [JavaScript, Unit Testing, Programming, QUnit, Jenkins, PhantomJS, Amazon EC2]
 title: Setup JavaScript unit testing using QUnit, PhantomJS and Jenkins on Amazon EC2
 ---
 

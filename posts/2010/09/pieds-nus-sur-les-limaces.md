@@ -2,7 +2,7 @@
 date: Fri Sep 24 2010 08:11:00 GMT+0200 (CEST)
 tags:
     - Zurich Film Festival
-    - Kino
+    - Cinema
 title: "ZFF 2010: Pieds nus sur les limaces"
 ---
 

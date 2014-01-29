@@ -1,10 +1,6 @@
 ---
-id: 220828143
-link: http://odi.tumblr.com/post/220828143/zusammengesetzte-w-rter
-slug: zusammengesetzte-w-rter
 date: Fri Oct 23 2009 12:44:42 GMT+0200 (CEST)
-publish: 2009-10-023
-tags: 
+tags: [German, Text]
 title: Zusammengesetzte Wörter
 ---
 

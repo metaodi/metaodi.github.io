@@ -1,10 +1,6 @@
 ---
-id: 1173157406
-link: http://odi.tumblr.com/post/1173157406/zurich-film-festival-2010-beginnt
-slug: zurich-film-festival-2010-beginnt
 date: Thu Sep 23 2010 16:51:00 GMT+0200 (CEST)
-publish: 2010-09-023
-tags: Zurich Film Festival, Kino
+tags: [Zurich Film Festival, Cinema]
 title: Zurich Film Festival 2010 beginnt
 ---
 

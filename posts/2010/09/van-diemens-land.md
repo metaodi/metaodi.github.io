@@ -2,7 +2,7 @@
 date: Wed Sep 29 2010 08:42:00 GMT+0200 (CEST)
 tags:
     - Zurich Film Festival
-    - Kino
+    - Cinema
 title: "ZFF 2010: Van Diemen's Land"
 ---
 

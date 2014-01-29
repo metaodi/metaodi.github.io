@@ -1,7 +1,7 @@
 ---
 date: Sat Sep 24 2011 13:42:31 GMT+0200 (CEST)
 tags:
-    - Kino
+    - Cinema
     - Zurich Film Festival
 title: "ZFF 2011: Restless"
 ---

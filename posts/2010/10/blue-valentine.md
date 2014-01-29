@@ -2,7 +2,7 @@
 date: Mon Oct 04 2010 09:48:00 GMT+0200 (CEST)
 tags:
     - Zurich Film Festival
-    - Kino
+    - Cinema
 title: "ZFF 2010: Blue Valentine"
 ---
 

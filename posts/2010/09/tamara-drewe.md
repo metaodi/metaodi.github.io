@@ -2,7 +2,7 @@
 date: Tue Sep 28 2010 09:46:00 GMT+0200 (CEST)
 tags:
     - Zurich Film Festival
-    - Kino
+    - Cinema
 title: "ZFF 2010: Tamara Drewe"
 ---
 

@@ -1,10 +1,6 @@
 ---
-id: 11096019623
-link: http://odi.tumblr.com/post/11096019623/zff-2011-turn-me-on-goddammit
-slug: zff-2011-turn-me-on-goddammit
 date: Thu Oct 06 2011 11:29:43 GMT+0200 (CEST)
-publish: 2011-10-06
-tags: Kino, Zurich Film Festival
+tags: [Cinema, Zurich Film Festival]
 title: "ZFF 2011: Turn Me On, Goddammit"
 ---
 

@@ -2,7 +2,8 @@
 date: Wed Sep 29 2010 08:31:00 GMT+0200 (CEST)
 tags:
     - Zurich Film Festival
-    - Kino
+    - Cinema
+    - German
 title: "ZFF 2010: R"
 ---
 
@@ -24,8 +25,9 @@ zeigen, kann sehr viel transportieren.
 
 Die Spannungen zwischen den Insassen sind fast nicht zum aushalten. Die
 Grenzen zwischen Freund und Feind sind sehr fliessend und können sich
-blitzartig ändern.\
- Der Film bekommt in der zweiten Hälfte eine für mich unerwartete
+blitzartig ändern.
+
+Der Film bekommt in der zweiten Hälfte eine für mich unerwartete
 Wendung, welche auch den Titel “R” nochmals in einem neuen Licht
 erscheinen lässt.
 

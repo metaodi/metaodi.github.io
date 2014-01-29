@@ -1,10 +1,6 @@
 ---
-id: 647071965
-link: http://odi.tumblr.com/post/647071965/erroneous-copyfrom-method-in-jcifs-vfs
-slug: erroneous-copyfrom-method-in-jcifs-vfs
 date: Sun May 30 2010 18:04:00 GMT+0200 (CEST)
-publish: 2010-05-030
-tags: Java, JCIFS, VFS
+tags: [Java, JCIFS, VFS]
 title: Erroneous copyFrom() method in JCIFS/VFS
 ---
 

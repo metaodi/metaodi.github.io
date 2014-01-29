@@ -1,7 +1,7 @@
 ---
 date: Sun Sep 25 2011 09:40:50 GMT+0200 (CEST)
 tags: 
-    - Kino
+    - Cinema
     - Zurich Film Festival
 title: "ZFF 2011: Circumstance"
 ---

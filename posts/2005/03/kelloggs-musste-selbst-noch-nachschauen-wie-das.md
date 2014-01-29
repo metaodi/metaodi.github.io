@@ -1,6 +1,6 @@
 ---
 date: '2005-03-24'
-tags: german
+tags: [German, Fun]
 title: Kelloggs musste selbst noch nachschauen wie das denn nun heisst, und hat prompt einen Kompromiss gefunden.
 ---
 

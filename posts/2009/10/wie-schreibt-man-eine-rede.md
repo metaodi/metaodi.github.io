@@ -1,10 +1,6 @@
 ---
-id: 220823793
-link: http://odi.tumblr.com/post/220823793/wie-schreibt-man-eine-rede
-slug: wie-schreibt-man-eine-rede
 date: Fri Oct 23 2009 12:34:00 GMT+0200 (CEST)
-publish: 2009-10-023
-tags: 
+tags: German
 title: Wie schreibt man eine Rede
 ---
 

@@ -1,10 +1,6 @@
 ---
-id: 220911706
-link: http://odi.tumblr.com/post/220911706/postfinance-sms-service
-slug: postfinance-sms-service
 date: Fri Oct 23 2009 15:29:09 GMT+0200 (CEST)
-publish: 2009-10-023
-tags: 
+tags: [German, PostFinance, SMS]
 title: PostFinance SMS Service
 ---
 
