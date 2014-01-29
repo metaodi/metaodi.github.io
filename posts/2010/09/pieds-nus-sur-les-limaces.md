@@ -7,9 +7,9 @@ title: "ZFF 2010: Pieds nus sur les limaces"
 ---
 
 
-[![Pieds nus sur les limaces (Lily Sometimes)](http://media.tumblr.com/tumblr_l97zevIIqp1qa2z4q.jpg)](http://www.zurichfilmfestival.org/de/programm-2010/Filme/541/lily-sometimes/)
+[![Pieds nus sur les limaces (Lily Sometimes)](http://media.tumblr.com/tumblr_l97zevIIqp1qa2z4q.jpg)](http://www.zurichfilmfestival.org/de/programm-2010/filme/541/lily-sometimes/)
 
-Mein persönlicher Eröffnungsfilm [Pieds nus sur les limaces (Lily Sometimes)](http://www.zurichfilmfestival.org/de/programm-2010/Filme/541/lily-sometimes/)
+Mein persönlicher Eröffnungsfilm [Pieds nus sur les limaces (Lily Sometimes)](http://www.zurichfilmfestival.org/de/programm-2010/filme/541/lily-sometimes/)
 (gleichzeitig auch tatsächlich zeitlich der erste Film des Festivals)
 war etwas zwiespältig.
 

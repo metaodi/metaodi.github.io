@@ -7,7 +7,7 @@ title: "ZFF 2011: Jonas"
 ---
 
 
-[![Jonas](http://media.tumblr.com/tumblr_ls1w3l2C7g1qa2z4q.jpg "Jonas")](http://www.zurichfilmfestival.org/de/programm/Filme/2914/jonas/)
+[![Jonas](http://media.tumblr.com/tumblr_ls1w3l2C7g1qa2z4q.jpg "Jonas")](http://www.zurichfilmfestival.org/de//filme/2914/jonas/)
 
 Auf das Filmprojekt **"Jonas"** war ist sehr gespannt. Die Idee war es,
 die Kunstfigur Jonas in eine echte Schule, mit echten Schülern und

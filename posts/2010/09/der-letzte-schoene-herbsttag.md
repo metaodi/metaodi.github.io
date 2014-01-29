@@ -7,12 +7,11 @@ title: "ZFF 2010: Der letzte schöne Herbsttag"
 ---
 
 
-[![Der letzte schöne
-Herbsttag](http://media.tumblr.com/tumblr_l9b8lzAZFC1qa2z4q.jpg)](http://www.zurichfilmfestival.org/de/programm-2010/Filme/513/der-letzte-schone-herbsttag/)
+[![Der letzte schöne Herbsttag](http://media.tumblr.com/tumblr_l9b8lzAZFC1qa2z4q.jpg)](http://www.zurichfilmfestival.org/de/programm-2010/filme/513/der-letzte-schone-herbsttag/)
 
 Nach der gestrigen Satire stand heute eine Beziehungskomödie auf dem
 Programm. Mit “[Der letzte schöne
-Herbsttag”](http://www.zurichfilmfestival.org/de/programm-2010/Filme/513/der-letzte-schone-herbsttag/)
+Herbsttag”](http://www.zurichfilmfestival.org/de/programm-2010/filme/513/der-letzte-schone-herbsttag/)
 ist dem Drehbuchautor und Regisseur [Ralf
 Westhoff](http://www.imdb.com/name/nm1311684/) ein wunderbarer Film
 gelungen. Er erzählt die Geschichte eines jungen Paares, das dabei ist

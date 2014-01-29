@@ -10,7 +10,7 @@ title: "ZFF 2011: Turn Me On, Goddammit"
 
 
 [![Turn Me On,
-Goddammit](http://media.tumblr.com/tumblr_lsdq0air4I1qa2z4q.jpg "Turn Me On, Goddammit")](http://www.zurichfilmfestival.org/de/programm/Filme/1896/turn-me-on-goddammit/)
+Goddammit](http://media.tumblr.com/tumblr_lsdq0air4I1qa2z4q.jpg "Turn Me On, Goddammit")](http://www.zurichfilmfestival.org/de//filme/1896/turn-me-on-goddammit/)
 
 In **"Turn Me On, Goddammit"** von Jannicke Systad Jacobsen spielt die
 bemerkenswerte Helene Bergsholm die 15jährige Alma, welche gerade dabei

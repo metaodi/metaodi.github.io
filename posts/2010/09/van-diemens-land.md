@@ -8,10 +8,10 @@ title: "ZFF 2010: Van Diemen's Land"
 
 
 [![Van Diemen's
-Land](http://media.tumblr.com/tumblr_l9g7vtX6kC1qa2z4q.jpg "Van Diemen's Land")](http://www.zurichfilmfestival.org/de/programm-2010/Filme/720/van-diemens-land/)
+Land](http://media.tumblr.com/tumblr_l9g7vtX6kC1qa2z4q.jpg "Van Diemen's Land")](http://www.zurichfilmfestival.org/de/programm-2010/filme/720/van-diemens-land/)
 
 [Van Diemen’s
-Land](http://www.zurichfilmfestival.org/de/programm-2010/Filme/720/van-diemens-land/)
+Land](http://www.zurichfilmfestival.org/de/programm-2010/filme/720/van-diemens-land/)
 spielt im Jahre 1822. Es geht um eine Gruppe von Häftlingen, welche von
 einer Strafkolonie flüchtet, direkt in das unwegsame Land hinein. Schon
 nach kurzer Zeit geht der Gruppe die Nahrung aus, und so beschliessen

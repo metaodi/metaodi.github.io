@@ -33,28 +33,28 @@ Es gibt einige Neuerungen im Vergleich zum Vorjahr:
 Dieses Jahr ist die Türkei Gastland am Festival. Türkische Filme gibt es
 darum in der Programmreihe “Neue Welt Sicht” zu sehen. Zusätzlich werden
 auch wieder [Kurzfilme aus dem
-Gastland](http://www.zurichfilmfestival.org/de/programm/Filme/3025/kurzes-aus-der-turkei/)
+Gastland](http://www.zurichfilmfestival.org/de//filme/3025/kurzes-aus-der-turkei/)
 gezeigt (kuratiert von den [Internationalen Kurzfilmtagen
 Winterthur](http://www.kurzfilmtage.ch/)).
 
 Auf meinem Programm stehen dieses Jahr 11 Filme, ich bin gespannt:
 
 1.  [Take
-    Shelter](http://www.zurichfilmfestival.org/de/programm/Filme/1471/take-shelter/)
+    Shelter](http://www.zurichfilmfestival.org/de//filme/1471/take-shelter/)
 2.  [Fenster zum
-    Sommer](http://www.zurichfilmfestival.org/de/programm/Filme/1844/fenster-zum-sommer/)
-3.  [Restless](http://www.zurichfilmfestival.org/de/programm/Filme/1796/restless/)
-4.  [Circumstance](http://www.zurichfilmfestival.org/de/programm/Filme/1463/circumstance/)
-5.  [Jonas](http://www.zurichfilmfestival.org/de/programm/Filme/2914/jonas/)
+    Sommer](http://www.zurichfilmfestival.org/de//filme/1844/fenster-zum-sommer/)
+3.  [Restless](http://www.zurichfilmfestival.org/de//filme/1796/restless/)
+4.  [Circumstance](http://www.zurichfilmfestival.org/de//filme/1463/circumstance/)
+5.  [Jonas](http://www.zurichfilmfestival.org/de//filme/2914/jonas/)
 6.  [Happy,
-    Happy](http://www.zurichfilmfestival.org/de/programm/Filme/1491/happy-happy/)
-7.  [Majority](http://www.zurichfilmfestival.org/de/programm/Filme/2704/majority/)
-8.  [Kriegerin](http://www.zurichfilmfestival.org/de/programm/Filme/2059/combat-girls/)
+    Happy](http://www.zurichfilmfestival.org/de//filme/1491/happy-happy/)
+7.  [Majority](http://www.zurichfilmfestival.org/de//filme/2704/majority/)
+8.  [Kriegerin](http://www.zurichfilmfestival.org/de//filme/2059/combat-girls/)
 9.  [Kurzes aus der Türkei
-    (Kurzfilme)](http://www.zurichfilmfestival.org/de/programm/Filme/3025/kurzes-aus-der-turkei/)
+    (Kurzfilme)](http://www.zurichfilmfestival.org/de//filme/3025/kurzes-aus-der-turkei/)
 10. [Turn me on,
-    Goddammit](http://www.zurichfilmfestival.org/de/programm/Filme/1896/turn-me-on-goddammit/)
+    Goddammit](http://www.zurichfilmfestival.org/de//filme/1896/turn-me-on-goddammit/)
 11. [Better This
-    World](http://www.zurichfilmfestival.org/de/programm/Filme/2173/better-this-world/)
+    World](http://www.zurichfilmfestival.org/de//filme/2173/better-this-world/)
 
 

@@ -7,9 +7,9 @@ title: "ZFF 2010: R"
 ---
 
 
-[![R](http://media.tumblr.com/tumblr_l9g7tg4ho01qa2z4q.jpg "R")](http://www.zurichfilmfestival.org/de/programm-2010/Filme/876/r/)
+[![R](http://media.tumblr.com/tumblr_l9g7tg4ho01qa2z4q.jpg "R")](http://www.zurichfilmfestival.org/de/programm-2010/filme/876/r/)
 
-[R](http://www.zurichfilmfestival.org/de/programm-2010/Filme/876/r/) hat
+[R](http://www.zurichfilmfestival.org/de/programm-2010/filme/876/r/) hat
 mich gefesselt: stimmungsvolle Bilder des tristen Gefängnisalltags, dazu
 der Sound, der einfach durchdringend ist. Es herrscht den ganzen Film
 durch eine spürbare Anspannung, die Ungewissheit von Rune, der

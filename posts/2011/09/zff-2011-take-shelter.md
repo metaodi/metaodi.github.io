@@ -8,7 +8,7 @@ title: "ZFF 2011: Take Shelter"
 
 
 [![Take
-Shelter](http://media.tumblr.com/tumblr_lryyy24HnR1qa2z4q.jpg "Take Shelter")](http://www.zurichfilmfestival.org/de/programm/Filme/1471/take-shelter/)
+Shelter](http://media.tumblr.com/tumblr_lryyy24HnR1qa2z4q.jpg "Take Shelter")](http://www.zurichfilmfestival.org/de//filme/1471/take-shelter/)
 
 Gestern habe ich zum Auftakt des [7. Zurich Film
 Festivals](http://www.zurichfilmfestival.org) den Film **"Take

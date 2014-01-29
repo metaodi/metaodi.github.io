@@ -7,9 +7,9 @@ title: "ZFF 2010: Monogamy"
 ---
 
 
-[![Monogamy](http://media.tumblr.com/tumblr_l9oo4mUOb11qa2z4q.jpg "Monogamy")](http://www.zurichfilmfestival.org/de/programm-2010/Filme/243/monogamy/)
+[![Monogamy](http://media.tumblr.com/tumblr_l9oo4mUOb11qa2z4q.jpg "Monogamy")](http://www.zurichfilmfestival.org/de/programm-2010/filme/243/monogamy/)
 
-[Monogamy](http://www.zurichfilmfestival.org/de/programm-2010/Filme/243/monogamy/)
+[Monogamy](http://www.zurichfilmfestival.org/de/programm-2010/filme/243/monogamy/)
 handelt von Theo, einem Fotografen, mit einer verrückten Idee: Er
 entwickelt ein Konzept namens *Gumshot*. Dabei wird ein Kunde zu einer
 ausgemachten Zeit “heimlich” fotografiert, so dass Bilder entstehen,

@@ -31,13 +31,13 @@ Dieses Jahr habe ich mir 10 Filme ausgesucht. Ich freue mich auf die
 fast familiäre Atmosphäre und natürlich auf den Besuch der Regisseure
 und Darsteller. Genau dies macht für mich den Reiz eines Festivals aus.
 Neben den Wettbewerbsfilmen freue ich mich auf besonders auf [The
-Joneses](http://www.zurichfilmfestival.org/de/programm-2010/Filme/1386/the-joneses/),
-[Catfish](http://www.zurichfilmfestival.org/de/programm-2010/Filme/525/catfish/)
+Joneses](http://www.zurichfilmfestival.org/de/programm-2010/filme/1386/the-joneses/),
+[Catfish](http://www.zurichfilmfestival.org/de/programm-2010/filme/525/catfish/)
 (der Social-Network Film) und die australischen Kurzfilme [Shorts from
 Down
-Under](http://www.zurichfilmfestival.org/de/programm-2010/Filme/1399/shorts-from-down-under/).
+Under](http://www.zurichfilmfestival.org/de/programm-2010/filme/1399/shorts-from-down-under/).
 
 Ich will versuchen zu den verschiedenen Filmen jeweils kurz etwas zu
 schreiben, heute Abend geht es los mit [Pieds nus sur les limaces (Lily
-Sometimes)](http://www.zurichfilmfestival.org/de/programm-2010/Filme/541/lily-sometimes/).
+Sometimes)](http://www.zurichfilmfestival.org/de/programm-2010/filme/541/lily-sometimes/).
 

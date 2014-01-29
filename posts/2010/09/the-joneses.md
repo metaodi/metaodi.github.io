@@ -7,10 +7,10 @@ title: "ZFF 2010: The Joneses"
 ---
 
 
-[![](http://media.tumblr.com/tumblr_l9g5t2nLwt1qa2z4q.png)](http://www.zurichfilmfestival.org/de/programm-2010/Filme/1386/the-joneses/)
+[![](http://media.tumblr.com/tumblr_l9g5t2nLwt1qa2z4q.png)](http://www.zurichfilmfestival.org/de/programm-2010/filme/1386/the-joneses/)
 
 [The
-Joneses](http://www.zurichfilmfestival.org/de/programm-2010/Filme/1386/the-joneses/)
+Joneses](http://www.zurichfilmfestival.org/de/programm-2010/filme/1386/the-joneses/)
 handelt von einer Familie, welche neu in die Nachbarschaft zieht und
 dabei sofort den Neid der Nachbarn auf sich zieht. Mit Absicht, denn die
 Familienmitglieder sind alles Angestellte einer Marketingfirma.

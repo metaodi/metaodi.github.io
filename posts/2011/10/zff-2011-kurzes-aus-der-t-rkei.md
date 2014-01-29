@@ -10,7 +10,7 @@ title: "ZFF 2011: Kurzes aus der Türkei"
 
 Die [Internationlen Kurzfilmtage
 Winterthur](http://www.kurzfilmtage.ch/) zeigten [Kurzfilme aus der
-Türkei](http://www.zurichfilmfestival.org/de/programm/Filme/3025/kurzes-aus-der-turkei/),
+Türkei](http://www.zurichfilmfestival.org/de//filme/3025/kurzes-aus-der-turkei/),
 dem diesjährigen Gastland des Zurich Film Festival. Die beiden Festivals
 haben schon die letzten Jahre eine Zusammenarbeit gepflegt.
 

@@ -7,9 +7,9 @@ title: "ZFF 2010: Tamara Drewe"
 ---
 
 
-[![Tamara Drewe](http://media.tumblr.com/tumblr_l9ff3cavTO1qa2z4q.jpg)](http://www.zurichfilmfestival.org/de/programm-2010/Filme/1224/tamara-drewe/)
+[![Tamara Drewe](http://media.tumblr.com/tumblr_l9ff3cavTO1qa2z4q.jpg)](http://www.zurichfilmfestival.org/de/programm-2010/filme/1224/tamara-drewe/)
 
-[Tamara Drewe](http://www.zurichfilmfestival.org/de/programm-2010/Filme/1224/tamara-drewe/)
+[Tamara Drewe](http://www.zurichfilmfestival.org/de/programm-2010/filme/1224/tamara-drewe/)
 ist eine Komödie nach feinster englischer Art. In ein verschlafenes
 Örtchen auf dem Land kommt endlich etwas Leben als Tamara auftaucht um
 sich um das Haus ihrer Mutter zu kümmern. Reihenweise lassen sich die

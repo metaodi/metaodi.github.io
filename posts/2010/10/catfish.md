@@ -7,10 +7,10 @@ title: "ZFF 2010: Catfish"
 ---
 
 
-[![Catfish](http://media.tumblr.com/tumblr_l9not5VLJR1qa2z4q.jpg "Catfish")](http://www.zurichfilmfestival.org/de/programm-2010/Filme/525/catfish/)
+[![Catfish](http://media.tumblr.com/tumblr_l9not5VLJR1qa2z4q.jpg "Catfish")](http://www.zurichfilmfestival.org/de/programm-2010/filme/525/catfish/)
 
 Der Dokumentarfilm
-[Catfish](http://www.zurichfilmfestival.org/de/programm-2010/Filme/525/catfish/)
+[Catfish](http://www.zurichfilmfestival.org/de/programm-2010/filme/525/catfish/)
 ist in vielerlei Hinsicht bemerkenswert: Er erzählt eine sehr
 persönliche Geschichte und das gleich von zwei Seiten. Es geht um die
 virtuelle Identität in Zeiten von Facebook, Youtube & Co. und trifft

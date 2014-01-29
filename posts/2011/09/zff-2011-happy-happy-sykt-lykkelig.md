@@ -8,7 +8,7 @@ title: "ZFF 2011: Happy, Happy (Sykt Lykkelig)"
 
 
 [![Happy, Happy (Sykt
-Lykkelig)](http://media.tumblr.com/tumblr_ls6a10DuOD1qa2z4q.jpg "Happy, Happy (Sykt Lykkelig)")](http://www.zurichfilmfestival.org/de/programm/Filme/1491/happy-happy/)
+Lykkelig)](http://media.tumblr.com/tumblr_ls6a10DuOD1qa2z4q.jpg "Happy, Happy (Sykt Lykkelig)")](http://www.zurichfilmfestival.org/de//filme/1491/happy-happy/)
 
 Die norwegische Komödie **"Happy, Happy"** bietet ein kurzweiliges
 Filmerlebnis. Die zugrunde liegende Geschichte ich zwar eigentlich

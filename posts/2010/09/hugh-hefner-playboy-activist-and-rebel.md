@@ -7,12 +7,11 @@ title: "ZFF 2010: Hugh Hefner: Playboy, Activist and Rebel"
 ---
 
 
-[![Hugh Hefner: Playboy, Activist and
-Rebel](http://media.tumblr.com/tumblr_l9cpkuT9ia1qa2z4q.jpg)](http://www.zurichfilmfestival.org/de/programm-2010/Filme/726/hugh-hefner-playboy-activist-and-rebel/)
+[![Hugh Hefner: Playboy, Activist and Rebel](http://media.tumblr.com/tumblr_l9cpkuT9ia1qa2z4q.jpg)](http://www.zurichfilmfestival.org/de/programm-2010/filme/726/hugh-hefner-playboy-activist-and-rebel/)
 
 Zur Abwechslung stand gestern ein Dokumentarfilm auf dem Programm. Bei
 ["Hugh Hefner: Playboy, Activist and
-Rebel"](http://www.zurichfilmfestival.org/de/programm-2010/Filme/726/hugh-hefner-playboy-activist-and-rebel/)
+Rebel"](http://www.zurichfilmfestival.org/de/programm-2010/filme/726/hugh-hefner-playboy-activist-and-rebel/)
 wird das beeindruckende Leben von Hefner gezeigt. Mir persönlich war
 davon so gut wie nichts bekannt, ausser die Mansion und die vielen
 Frauen/Freundinnen.

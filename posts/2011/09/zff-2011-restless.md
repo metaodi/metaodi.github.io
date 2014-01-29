@@ -7,7 +7,7 @@ title: "ZFF 2011: Restless"
 ---
 
 
-[![Restless](http://media.tumblr.com/tumblr_ls0xusJKAA1qa2z4q.jpg "Restless")](http://www.zurichfilmfestival.org/de/programm/Filme/1796/restless/)
+[![Restless](http://media.tumblr.com/tumblr_ls0xusJKAA1qa2z4q.jpg "Restless")](http://www.zurichfilmfestival.org/de//filme/1796/restless/)
 
 Die hoffnungsvolle und schräge Geschichte von **"Restless"** hat mich
 voll und ganz überzeugt: Gus Van Sant hat schon einige Male bewiesen,

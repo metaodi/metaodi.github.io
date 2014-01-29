@@ -7,7 +7,7 @@ title: "ZFF 2011: Kriegerin"
 ---
 
 
-[![Kriegerin](http://media.tumblr.com/tumblr_lscbfabgq11qa2z4q.jpg "Kriegerin")](http://www.zurichfilmfestival.org/de/programm/Filme/2059/kriegerin/)
+[![Kriegerin](http://media.tumblr.com/tumblr_lscbfabgq11qa2z4q.jpg "Kriegerin")](http://www.zurichfilmfestival.org/de//filme/2059/kriegerin/)
 
 **"Kriegerin"** von David Wnendt ist eine Geschichte einer jungen,
 rechtsextremen Frau irgendwo in einer tristen Kleinstadt in

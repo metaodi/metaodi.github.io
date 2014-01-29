@@ -8,7 +8,7 @@ title: "ZFF 2011: Majority (Çogunluk)"
 
 
 [![Majority
-(Çogunluk)](http://media.tumblr.com/tumblr_lsca0llnJ51qa2z4q.jpg "Majority (Çogunluk)")](http://www.zurichfilmfestival.org/de/programm/Filme/2704/majority/)
+(Çogunluk)](http://media.tumblr.com/tumblr_lsca0llnJ51qa2z4q.jpg "Majority (Çogunluk)")](http://www.zurichfilmfestival.org/de//filme/2704/majority/)
 
 Der Debütfilm **"Majority"** von Seren Yüce war für mich eine grosse
 Überraschung. Ich bin gar nicht vertraut mit dem türkischen
