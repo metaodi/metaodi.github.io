@@ -1,7 +1,6 @@
 ---
 date: '2005-03-24'
 tags: german
-categories: image
 title: Kelloggs musste selbst noch nachschauen wie das denn nun heisst, und hat prompt einen Kompromiss gefunden.
 ---
 

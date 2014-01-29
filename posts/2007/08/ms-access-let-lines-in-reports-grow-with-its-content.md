@@ -1,6 +1,5 @@
 ---
 date: Fri Aug 24 2007 12:54:00 GMT+0200 (CEST)
-categories: Tech
 tags:
     - MS Access
     - VBA

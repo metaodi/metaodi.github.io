@@ -1,7 +1,6 @@
 ---
 date: Sat Mar 26 2005 00:00:00 GMT+0100 (CET)
 tags: german
-categories: text
 title: Nie mehr St. Moritz
 ---
 

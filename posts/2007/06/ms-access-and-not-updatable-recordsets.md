@@ -1,6 +1,5 @@
 ---
 date: Sat Jun 30 2007 01:49:00 GMT+0200 (CEST)
-categories: Tech
 tags: 
     - MS Access
     - Programming

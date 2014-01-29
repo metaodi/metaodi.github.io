@@ -1,7 +1,6 @@
 ---
 date: Tue Jan 24 2006 00:00:00 GMT+0100 (CET)
 tags: German
-categories: Text
 title: Psychologie vs. Psychiatrie
 ---
 

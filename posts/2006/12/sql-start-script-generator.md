@@ -1,6 +1,5 @@
 ---
 date: Tue Dec 12 2006 00:00:00 GMT+0100 (CET)
-categories: Tech
 tags:
     - Python
     - SQL

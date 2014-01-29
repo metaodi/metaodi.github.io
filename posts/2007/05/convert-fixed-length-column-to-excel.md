@@ -1,6 +1,5 @@
 ---
 date: Mon May 14 2007 14:49:00 GMT+0200 (CEST)
-categories: Tech
 tags:
     - Excel
     - VBA

@@ -1,6 +1,5 @@
 ---
 date: Wed Nov 03 2010 07:43:00 GMT+0100 (CET)
-categories: Tech
 tags:
     - PHP
     - Programming

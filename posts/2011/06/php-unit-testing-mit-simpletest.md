@@ -1,6 +1,5 @@
 ---
 date: '2011-06-21'
-categories: Tech
 tags:
     - PHP
     - Unit Testing
