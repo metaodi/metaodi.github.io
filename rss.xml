@@ -3,11 +3,11 @@
   <channel>
     <title>metaodi</title>
     <description>metaodi</description>
-    <link/>
+    <link>http://metaodi.ch</link>
     <pubDate>30.01.2014</pubDate>
     <item>
       <title>About me</title>
-      <link>/about</link>
+      <link>http://metaodi.ch/about</link>
       <description>&lt;p&gt;My name is Stefan Oderbolz (&amp;quot;Odi&amp;quot;) and I live in Zurich.&lt;/p&gt;
 
 &lt;p&gt;I&amp;#39;m currently working for &lt;a href="http://www.liip.ch/"&gt;Liip&lt;/a&gt; as a web developer. I am one of the creators of &lt;a href="http://www.kort.ch/"&gt;Kort&lt;/a&gt;, an OpenStreetMap game.&lt;/p&gt;
@@ -21,7 +21,7 @@
     </item>
     <item>
       <title>Archive</title>
-      <link>/archive</link>
+      <link>http://metaodi.ch/archive</link>
       <description>
   &lt;h2&gt;2014&lt;/h2&gt;
     &lt;h3&gt;January&lt;/h3&gt;
@@ -205,7 +205,7 @@
     </item>
     <item>
       <title>Categories</title>
-      <link>/categories</link>
+      <link>http://metaodi.ch/categories</link>
       <description>
 &lt;ul class="tag_box inline"&gt;
 &lt;/ul&gt;
@@ -214,7 +214,7 @@
     </item>
     <item>
       <title>Pages</title>
-      <link>/pages</link>
+      <link>http://metaodi.ch/pages</link>
       <description>
 &lt;ul&gt;
   
@@ -240,7 +240,7 @@
     </item>
     <item>
       <title>Tags</title>
-      <link>/tags</link>
+      <link>http://metaodi.ch/tags</link>
       <description>
 &lt;ul class="tag_box inline"&gt;
   &lt;li&gt;
@@ -653,7 +653,7 @@
     </item>
     <item>
       <title>metaodi</title>
-      <link>/</link>
+      <link>http://metaodi.ch/</link>
       <description>&lt;div class="posts"&gt;
   &lt;h3 class="title"&gt;&lt;span class="date"&gt;30.01.2014&lt;/span&gt;&lt;a href="/posts/2014/01/all-new-in-2014"&gt;All new in 2014&lt;/a&gt;&lt;/h3&gt;
 
