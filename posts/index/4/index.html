@@ -74,6 +74,42 @@
         <div class="row-fluid">
   <div class="span12">
       <div class="posts">
+        <h3 class="title"><span class="date">29.09.2010</span><a href="/posts/2010/09/van-diemens-land">ZFF 2010: Van Diemen's Land</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Zurich Film Festival-ref">Zurich Film Festival <span>25</span></a>
+          </li>
+          <li>
+            <a href="/tags#Cinema-ref">Cinema <span>26</span></a>
+          </li>
+        </ul>
+
+        <p><a href="http://www.zurichfilmfestival.org/de/programm-2010/filme/720/van-diemens-land/"><img src="http://media.tumblr.com/tumblr_l9g7vtX6kC1qa2z4q.jpg" alt="Van Diemen&#39;s
+Land" title="Van Diemen&#39;s Land"></a></p>
+
+<p><a href="http://www.zurichfilmfestival.org/de/programm-2010/filme/720/van-diemens-land/">Van Diemen’s
+Land</a>
+spielt im Jahre 1822. Es geht um eine Gruppe von Häftlingen, welche von
+einer Strafkolonie flüchtet, direkt in das unwegsame Land hinein. Schon
+nach kurzer Zeit geht der Gruppe die Nahrung aus, und so beschliessen
+sie einen der Ihren zu töten, um so Nahrung zu beschaffen.</p>
+
+<p>Soweit so gut: Die Story ist krass und das ganze fährt ein. Jedoch
+passiert dann genau das gleiche noch X-mal. Irgendwann ist es fast
+langweilig. Es wechseln sich die immer gleichen Bilder ab: schöne
+Landschaften durch die am Tag gelaufen wird, am Abend ist die Gruppe
+jeweils am Lagerfeuer, und je nach Hunger wird dann einer getötet. Das
+geht eigentlich so weiter, bis nur noch einer, <a href="http://en.wikipedia.org/wiki/Alexander_Pearce">Alexander
+Pearce</a>, übrig ist.</p>
+
+<p>Der Film ist nur für absolute Fans der brachialen Gewalt, welche gerne
+Menschen in Extremsituationen beobachten wollen.</p>
+
+
+      </div>
+      <div class="posts">
         <h3 class="title"><span class="date">29.09.2010</span><a href="/posts/2010/09/r">ZFF 2010: R</a> </h3>
 
         <ul class="tag_box">
@@ -475,91 +511,6 @@ Dann hiess es 5 Tage “Dauer-F5-Drücken”.</p>
 
 <p>Ich hatte schon fast nicht mehr damit gerechnet, aber jetzt ist es
 offiziell: Ciao @odi86, Hello @odi!</p>
-
-
-      </div>
-      <div class="posts">
-        <h3 class="title"><span class="date">12.07.2010</span><a href="/posts/2010/07/using-utplsql-with-multiple-schemas">Using utPLSQL with multiple schemas</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#utPLSQL-ref">utPLSQL <span>1</span></a>
-          </li>
-          <li>
-            <a href="/tags#Oracle-ref">Oracle <span>6</span></a>
-          </li>
-          <li>
-            <a href="/tags#Unit Testing-ref">Unit Testing <span>4</span></a>
-          </li>
-          <li>
-            <a href="/tags#PL/SQL-ref">PL/SQL <span>2</span></a>
-          </li>
-        </ul>
-
-        <p>I really like unit testing, and nowadays there is an helping framework
-for almost every environment and/or programming language. For PL/SQL
-this is <a href="http://utplsql.sourceforge.net/">utPLSQL</a>, which consists of a
-bunch of packages that you need to put on your database and then you
-should be good to test your could. You <em>should</em>.</p>
-
-<p>I just spent some hours debugging my test code, so I want to share this
-with you, maybe I can save someone out there some time.</p>
-
-<h3 id="toc_0">My setting</h3>
-
-<ul>
-<li>  <strong>Schema A:</strong> utPLSQL package</li>
-<li>  <strong>Schema B:</strong> package XY (code to test), package UT_XY (test code)</li>
-</ul>
-
-<p>I have two schemas A and B. In schema A utPLSQL is installed, and in B
-is the code to test. It is recommended to have your code to test and
-your test code in the same schema.</p>
-
-<p>The following script is used to run the tests:</p>
-
-<pre><code> begin
-   for c in (select object_name,owner
-               from all_objects
-              where object_name like &#39;UT\_%&#39; escape &#39;\&#39;
-                and object_type =&#39;PACKAGE&#39;)
-   loop
-     begin
-     utPLSQL.test(
-       package_in =&gt; substr(c.object_name,4),
-       prefix_in =&gt; &#39;UT_&#39;,
-       owner_in =&gt; c.owner
-     );
-   exception
-     -- in case of a faulty unittest continue with the others.
-     when others then
-       null;
-   end;
-   end loop;
- end;
- /
-</code></pre>
-
-<p>But I kept getting the error:</p>
-
-<pre><code> Program named &quot;XY&quot; does not exist.
-</code></pre>
-
-<p>So I thought that somehow the schema A does not “see” the packages in
-the schema B and created public synonyms. Unfortunately this didn’t
-help. Then I tried to move the “UT_” package to schema A, which worked,
-but now I got an error that the code to test and the test code are in
-different schemas.</p>
-
-<p>There must be something obvious I’m missing!</p>
-
-<p>And there it was: A had not “execute” grant on the packages in B.</p>
-
-<pre><code>  grant execute on b.xy to A;
-</code></pre>
-
-<p>Now everything just worked fine.</p>
 
 
       </div>

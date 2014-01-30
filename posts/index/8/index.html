@@ -74,6 +74,72 @@
         <div class="row-fluid">
   <div class="span12">
       <div class="posts">
+        <h3 class="title"><span class="date">24.08.2007</span><a href="/posts/2007/08/ms-access-let-lines-in-reports-grow-with-its-content">MS Access: Let lines in Reports grow with it's content</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#MS Access-ref">MS Access <span>2</span></a>
+          </li>
+          <li>
+            <a href="/tags#VBA-ref">VBA <span>2</span></a>
+          </li>
+          <li>
+            <a href="/tags#Programming-ref">Programming <span>15</span></a>
+          </li>
+        </ul>
+
+        <p>The problem is the following: You create a report with MS Access with a
+text field. To display the whole text, you have to set the “CanGrow”
+property to “Yes” (on the section and on the text-field). When running
+the report that has vertical lines as column seperator you have an ungly
+effect: The line keeps its size, as this has been fixed in the design
+view.</p>
+
+<p>One might think that the easy solution is to adjust this length at
+runtime. First of all I need to declare what “runtime” means. As this
+problem occures in every “Detail”-Section we must dive in the events a
+section provides. There are three of them “OnRetreat”, “OnFormat” and
+“OnPrint” (apart all the mouse events, which are defenitly not
+suitable).</p>
+
+<p>The Retreat-Event occurs “when Microsoft Access returns to a previous
+report section during report formatting” (Source: VBA Help). Not exactly
+what we’re looking for.</p>
+
+<p>The Format-Event occurs “when Microsoft Access determines which data
+belongs in a report section, but before Access formats the section for
+previewing or printing”. It sounds good, but at this point we don’t have
+our data in the section and are therefore unable to determine the
+correct height.</p>
+
+<p>Finally the Print-Event “after data in a report section is formatted for
+printing, but before the section is printed”. Here we are, we have our
+data which is not yet printed. The problem is that at this point all
+elements are already formatted, all we can do is add new elements and
+that’s why we can’t just adjust the height of each line by setting it
+via</p>
+
+<pre><code> Me.myLine.Height = Me.Height &#39;&#39;&#39;this does not work in the OnPrint event, myLine has already been formatted
+</code></pre>
+
+<p>The simple solution is to draw a new line and use your already placed
+line as a template:</p>
+
+<pre><code>Private Sub Detail_Print(Cancel As Integer, PrintCount As Integer)
+    Dim EndOfLine As Double
+    EndOfLine = Me.Height       &#39;&#39;height of section (where the line stops)
+
+    &#39;&#39;becasue it&#39;s not allowed in such a late state to change lines, we draw new one&#39;s based on the old
+    &#39;&#39;myLine
+    Me.Line (Me.myLine.Left, 0)-(Me.myLine.Left, EndOfLine)
+
+End Sub;
+</code></pre>
+
+
+      </div>
+      <div class="posts">
         <h3 class="title"><span class="date">30.06.2007</span><a href="/posts/2007/06/ms-access-and-not-updatable-recordsets">MS Access and not updatable Recordsets</a> </h3>
 
         <ul class="tag_box">
@@ -269,6 +335,27 @@ End Sub
 
       </div>
       <div class="posts">
+        <h3 class="title"><span class="date">27.12.2006</span><a href="/posts/2006/12/information-about-oracle-directories">Information about Oracle Directories</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Oracle-ref">Oracle <span>6</span></a>
+          </li>
+        </ul>
+
+        <p>I know what I write is quite newbieish, but I needed information about a
+directory I’ve created, means which path it’s pointing to:</p>
+
+<pre><code>select * from all_directories dir;
+</code></pre>
+
+<p>There simply is no user<em>directories, and with all</em>objects I didn’t get
+what I wanted.</p>
+
+
+      </div>
+      <div class="posts">
         <h3 class="title"><span class="date">27.12.2006</span><a href="/posts/2006/12/excel-to-csv-with-python">Excel to CSV with Python</a> </h3>
 
         <ul class="tag_box">
@@ -322,27 +409,6 @@ for file in files:
 xlApp.Quit()
 del xlApp
 </code></pre>
-
-
-      </div>
-      <div class="posts">
-        <h3 class="title"><span class="date">27.12.2006</span><a href="/posts/2006/12/information-about-oracle-directories">Information about Oracle Directories</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#Oracle-ref">Oracle <span>6</span></a>
-          </li>
-        </ul>
-
-        <p>I know what I write is quite newbieish, but I needed information about a
-directory I’ve created, means which path it’s pointing to:</p>
-
-<pre><code>select * from all_directories dir;
-</code></pre>
-
-<p>There simply is no user<em>directories, and with all</em>objects I didn’t get
-what I wanted.</p>
 
 
       </div>
@@ -515,42 +581,6 @@ Lebenskrise befinde und dafür Hilfe will.</p>
 <p>Meist werde ich von einem Psychologen oder dem Hausarzt an einen
 Psychiater verwiesen. Es handelt sich dabei ebenfalls um einen Dr.med.,
 der sich spezialisiert hat.</p>
-
-
-      </div>
-      <div class="posts">
-        <h3 class="title"><span class="date">25.10.2005</span><a href="/posts/2005/10/csv-seperator-character">CSV seperator character</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#CSV-ref">CSV <span>2</span></a>
-          </li>
-        </ul>
-
-        <p>In my particular case I got an excel sheet from the customer to import
-in a DB. The idea is to use a CSV as the base for an Oracle external
-table and then import the data in the real table with a “insert into
-select”.</p>
-
-<p>When I loaded the excel sheet and saved it as a CSV, the semicolon (“;”)
-was used as a seperator. I therefore created my external table and
-worked with the data. Then i realized that the order of the fields get
-messed up, because there were free text fields that contained “;” as
-data.</p>
-
-<p>I didn’t find an option in excel to change the seperator character, but
-as usually <a href="http://www.google.com/search?q=excel+csv+separator+character">Google is your
-friend</a>.</p>
-
-<p>This character is saved directly in your system in the “Region and
-Language Options” in the “Control Panel” (yes, I’m talking about MS
-Windows). You can selected there the “Customize” button and change the
-“List separator” to the value you want.</p>
-
-<p>First I tried to set this to “###”, but this didn’t work, excel then
-used a single space as separator. It seems it’s not allowed to use
-multiple characters. Now, I use “#” and everything works fine.</p>
 
 
       </div>

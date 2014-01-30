@@ -4,7 +4,7 @@
     <title>metaodi</title>
     <description>metaodi</description>
     <link/>
-    <pubDate>29.01.2014</pubDate>
+    <pubDate>30.01.2014</pubDate>
     <item>
       <title>About me</title>
       <link>/about</link>
@@ -16,13 +16,18 @@
 
 &lt;p&gt;In my spare time, I play &lt;a href="http://www.bcrf.ch/"&gt;badminton&lt;/a&gt; and all kinds of tabletop games. I&amp;#39;m a film and TV series junkie, but I&amp;#39;m a keen reader, too.&lt;/p&gt;
 
-&lt;p&gt;Follow me on &lt;a href="http://twitter.com/odi"&gt;Twitter&lt;/a&gt; if you like.&lt;/p&gt;
+&lt;p&gt;Follow me on &lt;a href="http://twitter.com/odi"&gt;Twitter&lt;/a&gt; or reach me via &lt;a href="mailto:odi%20AT%20readmore%20DOT%20ch"&gt;e-mail&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     <item>
       <title>Archive</title>
       <link>/archive</link>
       <description>
+  &lt;h2&gt;2014&lt;/h2&gt;
+    &lt;h3&gt;January&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;30.01.2014&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2014/01/all-new-in-2014"&gt;All new in 2014&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
   &lt;h2&gt;2013&lt;/h2&gt;
     &lt;h3&gt;May&lt;/h3&gt;
     &lt;ul&gt;
@@ -136,8 +141,8 @@
       &lt;li&gt;&lt;span&gt;23.10.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/10/zusammengesetzte-w-rter"&gt;Zusammengesetzte W&#xF6;rter&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;span&gt;23.10.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/10/snowboard-garage-vs-fischer-bettwaren"&gt;Snowboard Garage vs. Fischer Bettwaren&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;span&gt;23.10.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/10/generate-n-rows-from-dual"&gt;Generate n rows from dual&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;span&gt;23.10.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/10/using-pidgin-with-msn-pecan"&gt;Using Pidgin with msn-pecan&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;span&gt;23.10.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/10/dvd-rip-and-gentoo"&gt;dvd::rip and gentoo&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;23.10.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/10/using-pidgin-with-msn-pecan"&gt;Using Pidgin with msn-pecan&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;span&gt;23.10.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/10/wie-schreibt-man-eine-rede"&gt;Wie schreibt man eine Rede&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;span&gt;23.10.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/10/ipa-client-backup-services"&gt;IPA - Client Backup Services&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;span&gt;23.10.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/10/im-bus"&gt;Im Bus&lt;/a&gt;&lt;/li&gt;
@@ -164,8 +169,8 @@
   &lt;h2&gt;2006&lt;/h2&gt;
     &lt;h3&gt;December&lt;/h3&gt;
     &lt;ul&gt;
-      &lt;li&gt;&lt;span&gt;27.12.2006&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2006/12/excel-to-csv-with-python"&gt;Excel to CSV with Python&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;span&gt;27.12.2006&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2006/12/information-about-oracle-directories"&gt;Information about Oracle Directories&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;27.12.2006&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2006/12/excel-to-csv-with-python"&gt;Excel to CSV with Python&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;span&gt;12.12.2006&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2006/12/sql-start-script-generator"&gt;SQL Start-Script generator&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
     &lt;h3&gt;November&lt;/h3&gt;
@@ -300,6 +305,9 @@
   &lt;/li&gt;
   &lt;li&gt;
     &lt;a href="/tags#VBA-ref"&gt;VBA &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#ruhoh-ref"&gt;ruhoh &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;a href="/tags#Cinema-ref"&gt;Cinema &lt;span&gt;26&lt;/span&gt;&lt;/a&gt;
@@ -504,6 +512,8 @@
   &lt;h3 class="anchor" id="VBA-ref"&gt;VBA&lt;/h3&gt;
     &lt;li&gt;&lt;a href="/posts/2007/08/ms-access-let-lines-in-reports-grow-with-its-content"&gt;MS Access: Let lines in Reports grow with it's content&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2007/05/convert-fixed-length-column-to-excel"&gt;Convert fixed length column to Excel&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 class="anchor" id="ruhoh-ref"&gt;ruhoh&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2014/01/all-new-in-2014"&gt;All new in 2014&lt;/a&gt;&lt;/li&gt;
   &lt;h3 class="anchor" id="Cinema-ref"&gt;Cinema&lt;/h3&gt;
     &lt;li&gt;&lt;a href="/posts/2011/10/zff-2011-kurzes-aus-der-t-rkei"&gt;ZFF 2011: Kurzes aus der T&#xFC;rkei&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2011/10/zff-2011-turn-me-on-goddammit"&gt;ZFF 2011: Turn Me On, Goddammit&lt;/a&gt;&lt;/li&gt;
@@ -645,6 +655,39 @@
       <title>metaodi</title>
       <link>/</link>
       <description>&lt;div class="posts"&gt;
+  &lt;h3 class="title"&gt;&lt;span class="date"&gt;30.01.2014&lt;/span&gt;&lt;a href="/posts/2014/01/all-new-in-2014"&gt;All new in 2014&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;ul class="tag_box inline"&gt;
+  &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#ruhoh-ref"&gt;ruhoh &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;Some time ago I started to fiddle with &lt;a href="http://ruhoh.com"&gt;ruhoh&lt;/a&gt;, a static blog generator.
+I thought the idea of having static files as &lt;em&gt;the interface&lt;/em&gt; to your website was intriguing.&lt;/p&gt;
+
+&lt;p&gt;When I started ruhoh was still beta (I don&amp;#39;t remebember the exact version number, but you can &lt;a href="https://github.com/metaodi/odi86.ruhoh.com"&gt;see for yourself&lt;/a&gt; if you want).
+The nice thing about ruhoh is, that it&amp;#39;s still in development, and not all things just work. But the creater of ruhoh is available on &lt;a href="https://twitter.com/ruhohBlog"&gt;Twitter&lt;/a&gt; or &lt;a href="https://github.com/ruhoh/ruhoh.rb"&gt;GitHub&lt;/a&gt;, so you can just ask, if something does not work.&lt;/p&gt;
+
+&lt;p&gt;Anyway, my early attempts to move from Tumblr to ruhoh never really made it past this fiddle phase.
+But when Tumblr announced a big DNS change and I found out that the DNS service I was using (&lt;a href="http://xname.org"&gt;XName&lt;/a&gt;) is really bad when I comes to changes, I &lt;em&gt;lost&lt;/em&gt; my blog.&lt;/p&gt;
+
+&lt;p&gt;I used to blog under the domain &lt;code&gt;readmore.ch&lt;/code&gt;. But this doesn&amp;#39;t feel right anymore. I use my nickname &amp;#39;odi&amp;#39; resp. &amp;#39;metaodi&amp;#39; all over the interwebs. So why not use it for my blog?
+Therefore I was once more looking into ruhoh, which in the meantime grew to a pretty good stable product (with still some fiddling if you want). So finally I created a new blog using ruhoh 2.6, imported my old Tumblr content here as markdown files and start all over again.&lt;/p&gt;
+
+&lt;p&gt;The fun part was to upgrade the &lt;a href="https://github.com/ruhoh/theme-bootstrap-2"&gt;ruhoh standard template&lt;/a&gt; to &lt;a href="http://getbootstrap.com/"&gt;Bootstrap 3&lt;/a&gt;.
+Now I got an up to date blog, which is even responsive.
+&lt;a href="https://github.com/metaodi/metaodi.github.io"&gt;The complete source can be found on GitHub&lt;/a&gt;.
+Btw: I use &lt;a href="http://pages.github.com/"&gt;GitHub Pages&lt;/a&gt; for the hosting and switched to &lt;a href="https://dnsimple.com"&gt;DNSimple&lt;/a&gt; to provide my DNS service for &lt;code&gt;metaodi.ch&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;My plan for this blog is, that it should contain my opinion on various topics. It should not be too technical (I will write such content on other blogs, like the one of my company). It&amp;#39;ll be mainly in English, but every once in a while I will write in German if needed (look out for the corresponding tag).&lt;/p&gt;
+
+&lt;p&gt;Happy reading and welcome to my new home!&lt;/p&gt;
+
+
+&lt;/div&gt;
+&lt;div class="posts"&gt;
   &lt;h3 class="title"&gt;&lt;span class="date"&gt;23.05.2013&lt;/span&gt;&lt;a href="/posts/2013/05/on-citizenship-in-open-source-software-development"&gt;On Citizenship in Open-source software development &#x2014; Products I Wish Existed&lt;/a&gt;&lt;/h3&gt;
 
   &lt;ul class="tag_box inline"&gt;
@@ -1224,53 +1267,6 @@ Perspektive.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Ein stimmungsvolles Kammerspiel, welches eine eindr&#xFC;ckliche Geschichte
 erz&#xE4;hlt, die einem nicht einfach so losl&#xE4;sst.&lt;/em&gt;&lt;/p&gt;
-
-
-&lt;/div&gt;
-&lt;div class="posts"&gt;
-  &lt;h3 class="title"&gt;&lt;span class="date"&gt;27.09.2011&lt;/span&gt;&lt;a href="/posts/2011/09/zff-2011-happy-happy-sykt-lykkelig"&gt;ZFF 2011: Happy, Happy (Sykt Lykkelig)&lt;/a&gt;&lt;/h3&gt;
-
-  &lt;ul class="tag_box inline"&gt;
-  &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="/tags#Cinema-ref"&gt;Cinema &lt;span&gt;26&lt;/span&gt;&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="/tags#Zurich Film Festival-ref"&gt;Zurich Film Festival &lt;span&gt;25&lt;/span&gt;&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;p&gt;&lt;a href="http://www.zurichfilmfestival.org/de//filme/1491/happy-happy/"&gt;&lt;img src="http://media.tumblr.com/tumblr_ls6a10DuOD1qa2z4q.jpg" alt="Happy, Happy (Sykt
-Lykkelig)" title="Happy, Happy (Sykt Lykkelig)"&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Die norwegische Kom&#xF6;die &lt;strong&gt;&amp;quot;Happy, Happy&amp;quot;&lt;/strong&gt; bietet ein kurzweiliges
-Filmerlebnis. Die zugrunde liegende Geschichte ich zwar eigentlich
-tieftraurig, wird aber sehr leichtf&#xFC;ssig erz&#xE4;hlt so dass nie Herzschmerz
-aufkommt oder man Mitleid mit einem der Protagonisten haben muss.&lt;/p&gt;
-
-&lt;p&gt;Kaja (Agnes Kittelsen) und Eirik (Joachim Rafaelsen) leben sehr
-abgelegen irgendwo in Norwegen. Um jede Abwechslung froh, freuen sie
-sich auf ihre neuen Nachbarn Sigve (Henrik Rafaelsen) und Elisabeth
-(Maibritt Saerens), die hierher umziehen. Bei einem Spielabend kommt ans
-Licht, dass es um die beiden Ehen nicht sonderlich gut steht. Der ruhige
-Eirik und die gar lebendige Kaja haben sich nicht mehr viel zu sagen.
-Sigve wiederum wollte aufs Land ziehen um mit Elisabeth neu anzufangen,
-nachdem diese eine Aff&#xE4;re hatte.&lt;/p&gt;
-
-&lt;p&gt;Dies bietet nat&#xFC;rlich den idealen Stoff f&#xFC;r weitere Aff&#xE4;ren, Romanzen
-und Liebeleien. Zur Auflockerung spielt jeweils eine Acapella-Band ein
-kurzes St&#xFC;ck bevor ein neues Kapitel der Geschichte aufgeschlagen wird.
-Diese Sequenzen sind urkomisch und die Lieder passen nat&#xFC;rlich immer
-peinlich-perfekt zur Situation.&lt;/p&gt;
-
-&lt;p&gt;Der Schluss ist ziemlich gut gemacht, kommt doch alles anders als man
-denkt: die typischen Klischees werden links liegen gelassen und mal
-etwas Neues probiert. Etwas merkw&#xFC;rdig ist die Nebengeschichte der
-beiden S&#xF6;hne der beiden Familien, diese wirkt wie ein Fremdk&#xF6;rper, nicht
-richtig verbunden mit dem Rest, schlicht unpassend.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Leichtf&#xFC;ssig erz&#xE4;hlt, viel Situationskomik, muss man nicht gesehen
-haben, bietet aber 90min Unterhaltung&lt;/em&gt;&lt;/p&gt;
 
 
 &lt;/div&gt;
