@@ -7,8 +7,8 @@ title: All new in 2014
 Some time ago I started to fiddle with [ruhoh](http://ruhoh.com), a static blog generator.
 I thought the idea of having static files as _the interface_ to your website was intriguing.
 
-When I started ruhoh was still beta (I don't remebember the exact version number, but you can [see for yourself](https://github.com/metaodi/odi86.ruhoh.com) if you want).
-The nice thing about ruhoh is, that it's still in development, and not all things just work. But the creater of ruhoh is available on [Twitter](https://twitter.com/ruhohBlog) or [GitHub](https://github.com/ruhoh/ruhoh.rb), so you can just ask, if something does not work.
+When I started ruhoh was still beta (I don't remember the exact version number, but you can [see for yourself](https://github.com/metaodi/odi86.ruhoh.com) if you want).
+The nice thing about ruhoh is, that it's still in development, and not all things just work. But the creator of ruhoh is available on [Twitter](https://twitter.com/ruhohBlog) or [GitHub](https://github.com/ruhoh/ruhoh.rb), so you can just ask, if something does not work.
 
 Anyway, my early attempts to move from Tumblr to ruhoh never really made it past this fiddle phase.
 But when Tumblr announced a big DNS change and I found out that the DNS service I was using ([XName](http://xname.org)) is really bad when I comes to changes, I _lost_ my blog.
