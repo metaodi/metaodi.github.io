@@ -74,6 +74,60 @@
         <div class="row-fluid">
   <div class="span12">
       <div class="posts">
+        <h3 class="title"><span class="date">21.06.2011</span><a href="/posts/2011/06/php-unit-testing-mit-simpletest">PHP Unit Testing mit SimpleTest</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#PHP-ref">PHP <span>3</span></a>
+          </li>
+          <li>
+            <a href="/tags#Unit Testing-ref">Unit Testing <span>4</span></a>
+          </li>
+          <li>
+            <a href="/tags#Programming-ref">Programming <span>15</span></a>
+          </li>
+        </ul>
+
+        <p><img src="http://media.tumblr.com/tumblr_ln5d7sf2901qa2z4q.png" alt="SimpleTest in action"></p>
+
+<p>Seit letzter Woche habe ich <a href="http://www.simpletest.org/">SimpleTest</a> im Einsatz und bin davon ziemlich begeistert. Das Framework bietet alles was man von einem konventionellen Unit-Testframework her kennt, wie diverse Assertion-Methoden oder Gruppierung von Testfällen zu <a href="http://www.simpletest.org/en/start-testing.html#group">Testsuiten</a>.</p>
+
+<p>Daneben gibt es aber noch eine ganze Reihe von coolen Erweiterungen:</p>
+
+<ul>
+<li>  Es gibt einige vordefinierte Test-Reports, welche den Erfolg (oder Misserfolg) der Tests anzeigen. Wenn einem diese nicht genügend kann man diese (dank OO) ganz einfach erweitern. So habe ich meinen “persönlichen” Testreporter geschrieben, welcher mir neben den Details zu den Fehlern auch die Details zu den erfolgreichen Tests beschreibt (dazu muss man nur die Methode <code>paintPass()</code> überschreiben), das Resultat ist in obigem Bild ersichtlich.</li>
+<li>  Man kann auch sogenannte <a href="http://www.simpletest.org/en/web_tester_documentation.html">Web-Tests</a> machen, d.h. man kann das Browserverhalten simulieren und so beispielweise automatisiert ein Formular ausfüllen und abschicken
+lassen, anschliessend dann das Ergebnis prüfen.</li>
+<li>  Das erzeugen von <a href="http://www.simpletest.org/en/mock_objects_documentation.html">Mock-Objekten</a> ist kinderleicht, das Framework bietet eine einfache Methode um eine “leere” Hülle eines Objekts zu generieren (z.B. einer Datenbankverbindung) </li>
+</ul>
+
+<p>Das <a href="http://www.simpletest.org/en/first_test_tutorial.html">Tutorial</a>
+führt einem durch die ersten Schritte, die
+<a href="http://simpletest.org/api/">API</a> gibt den vollständigen Überblick.
+Durch die verschiedenen Reporter kann das gleiche Skript auch gebraucht
+werden um in einem automatisierten Build zu laufen, so wie man es z.B.
+von JUnit kennt.</p>
+
+<p>Ich habe momentan alle meine Testfiles in einem Verzeichnis und habe mir
+deshalb ein simples Skript geschrieben, welche alle Tests ausführt:</p>
+
+<p><a href="http://pastie.org/2101994">[Pastie-Link]</a></p>
+
+<p>Um jedes einzelne File jedoch immer noch separat ausführen zu können,
+include ich <code>autorun.php</code> nur genau dann, wenn ich das File direkt
+anspreche:</p>
+
+<pre><code>if (count(get_included_files()) == 1) {
+    require_once(&quot;includes/simpletest/autorun.php&quot;);
+}
+</code></pre>
+
+<p>Ich kann das Framework also nur empfehlen!</p>
+
+
+      </div>
+      <div class="posts">
         <h3 class="title"><span class="date">06.06.2011</span><a href="/posts/2011/06/rdmr-ch">Eigener URL shortener (rdmr.ch)</a> </h3>
 
         <ul class="tag_box">
@@ -457,47 +511,6 @@ sich schnell und einfach aus einem Gebäude abseilt oder wie man von
 einem “Ave Maria” begleitet eine Kirche zerstört.</p>
 
 <p>Genial!</p>
-
-
-      </div>
-      <div class="posts">
-        <h3 class="title"><span class="date">02.10.2010</span><a href="/posts/2010/10/catfish">ZFF 2010: Catfish</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#Zurich Film Festival-ref">Zurich Film Festival <span>25</span></a>
-          </li>
-          <li>
-            <a href="/tags#Cinema-ref">Cinema <span>26</span></a>
-          </li>
-        </ul>
-
-        <p><a href="http://www.zurichfilmfestival.org/de/programm-2010/filme/525/catfish/"><img src="http://media.tumblr.com/tumblr_l9not5VLJR1qa2z4q.jpg" alt="Catfish" title="Catfish"></a></p>
-
-<p>Der Dokumentarfilm
-<a href="http://www.zurichfilmfestival.org/de/programm-2010/filme/525/catfish/">Catfish</a>
-ist in vielerlei Hinsicht bemerkenswert: Er erzählt eine sehr
-persönliche Geschichte und das gleich von zwei Seiten. Es geht um die
-virtuelle Identität in Zeiten von Facebook, Youtube &amp; Co. und trifft
-damit genau den Nerv der Zeit. So fällt es natürlich auch nicht schwer
-sich mit den Protagonisten zu identifizieren.</p>
-
-<p>Der Film zieht einem von Anfang an in seinen Bann. Die Geschichte
-beginnt damit, dass die 8-jährige Abby ein Foto von Nev abzeichnet und
-ihm davon auf Facebook berichtet. Nev schickt von da an regelmässig
-Bilder zu Abby, welche diese dann zeichnet. Daneben freundet sich Nev
-mit Abbys Schwester Megan an - natürlich virtuell via Facebook - und
-beginnt mit ihr zu flirten. Als sich gerade eine Gelegenheit ergibt,
-beschliesst Nev die ganze Familie, allen voran natürlich Megan, zu
-besuchen. Dabei ändert sich die Geschichte völlig und alles bisherige
-erscheint in einem neuen Licht.</p>
-
-<p>Das spezielle daran ist, dass der Filmemache Ariel Schulman (zusammen
-mit Henry Joost) seinen Bruder Nev begleitet und damit eine sehr
-vertraute Stimmung herrscht. Ein eindrückliches Stück Film, welches
-genau die Richtige Mischung aus Nähe und Distanz findet und mit sehr
-charismatischen Personen aufwartet. Sehr zu empfehlen!</p>
 
 
       </div>

@@ -74,6 +74,51 @@
         <div class="row-fluid">
   <div class="span12">
       <div class="posts">
+        <h3 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/dvd-rip-and-gentoo">dvd::rip and gentoo</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Linux-ref">Linux <span>8</span></a>
+          </li>
+        </ul>
+
+        <p><a href="http://exit1.org/dvdrip/">dvd::rip</a> (or dvdrip at the gentoo
+repository) is a very comfortable ripping software to bring your DVDs on
+your harddisk.</p>
+
+<p>When I emerged it and wanted to rip a dvd, I just got no result.</p>
+
+<ol>
+<li> the logfile showed no error</li>
+<li> in the status bar the text appeared Grab
+<code>preview - title #3 Duration: 00:01 [Error]</code></li>
+<li> dvd::rip did nothing.</li>
+</ol>
+
+<p>The chapter has been ripped and the file existed on the filesystem, but
+I was unable to transcode it or do anything else with dvd::rip.</p>
+
+<p>A lot of googling did not provide the solution, but finally I saw that
+dvd::rip prints the exact command that is executed in the logfile, so I
+tried to run it manually to eventually see an error.</p>
+
+<p>And then there was theerror:</p>
+
+<pre><code>convert: no decode delegate for this image format `/tmp/dvdrip24111.snap/snapshot001.png&#39;.
+</code></pre>
+
+<p>I quick search with that showed me, that the problem was imagemagick,
+which obviously did not have png support. I added the USE-flag “png” to
+imagemagick in /etc/portage/package.use and re-emerged imagemagick.</p>
+
+<p>Another problems was that transcode was missing the “mp3” USE-flag.</p>
+
+<p>Since then dvd::rip just works!</p>
+
+
+      </div>
+      <div class="posts">
         <h3 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/using-pidgin-with-msn-pecan">Using Pidgin with msn-pecan</a> </h3>
 
         <ul class="tag_box">
@@ -745,34 +790,6 @@ ich mal Bichsels Text neu.</p>
   frieren    stehen
   blättern   stellen
 </code></pre>
-
-
-      </div>
-      <div class="posts">
-        <h3 class="title"><span class="date">08.10.2009</span><a href="/posts/2009/10/papier-zum-tragen-kein-problem">Papier - Zum Tragen kein Problem</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#German-ref">German <span>19</span></a>
-          </li>
-          <li>
-            <a href="/tags#Fun-ref">Fun <span>4</span></a>
-          </li>
-        </ul>
-
-        <p>Wenn ich eine Tüte für mein Brötchen bekomme finde ich es immer
-angenehm, dass die auch halten.</p>
-
-<p><img src="http://media.tumblr.com/tumblr_kr7psaSsF81qa2z4q.jpg" alt=""></p>
-
-<p>Eine normale Tüte, aber…</p>
-
-<p><img src="http://media.tumblr.com/tumblr_kr7pslrxP61qa2z4q.jpg" alt=""></p>
-
-<p><strong>DAS ist wichtig!</strong></p>
-
-<p>In dem Sinne: trägt euch sorge, denn es ist gut.</p>
 
 
       </div>

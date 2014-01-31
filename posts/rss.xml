@@ -4,7 +4,76 @@
     <title>metaodi</title>
     <description>metaodi</description>
     <link>http://metaodi.ch</link>
-    <pubDate>30.01.2014</pubDate>
+    <pubDate>31.01.2014</pubDate>
+    <item>
+      <title>Stop making stupid Open Data contests!</title>
+      <link>http://metaodi.ch/posts/2014/01/stop-making-stupid-open-data-contests</link>
+      <pubDate>31.01.2014</pubDate>
+      <description>&lt;p&gt;&lt;em&gt;Disclaimer:
+I work for &lt;a href="http://www.liip.ch"&gt;Liip&lt;/a&gt;, the company that build the &lt;a href="http://opendata.admin.ch"&gt;Open Data pilot portal for Switzerland&lt;/a&gt;.
+I&amp;#39;m one of the developers of the portal.
+On the other hand, I&amp;#39;m a member of the &lt;a href="http://opendata.ch"&gt;opendata.ch&lt;/a&gt; association.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Although I&amp;#39;m a relatively new member of the Open Data community, I use and work with Open Data in different forms for many years now.
+I&amp;#39;m a keen enthusiast of the underlying idea of openness, collaboration and knowledge sharing.
+But the whole idea of Open Government Data (OGD) in Switzerland is currently broken.
+There are numerous problems and it probably all boils down to false expectations.&lt;/p&gt;
+
+&lt;p&gt;To make new data known to the public, often the first idea is to make an app contest.
+At first this sounds like a good idea: People working with your data and creating an app.
+It sounds like a win-win situation.
+Some may even think it&amp;#39;s cheap way to get a lot of apps.
+The problem is, that contests have winners. And when there are winners, there must be losers.
+&lt;strong&gt;Your data is much too valuable, and every contribution is too important to waste time to choose a &lt;em&gt;winner&lt;/em&gt;.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;You limit the interest in the data (&lt;em&gt;why should I continue my project if I just lost a contest?&lt;/em&gt;).&lt;/li&gt;
+&lt;li&gt;You limit the collaboration between the different groups that take part in the contest (&lt;em&gt;why should I help somebody else to create a better app, if that decreases my chances to win this contest myself?&lt;/em&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The goal of an OGD data owner should be, that a lot of people know and use your data.
+This makes it worth to create this data in the first place.
+It doesn&amp;#39;t matter if it is used by a special interest group of by an app used by millions of people.&lt;/p&gt;
+
+&lt;p&gt;On the other side, hackathons provide a good environment to play around, talk with different people and hack along.
+This is the kind of thing we need.
+Please understand that after such an event there are tons of ideas around. Prototypes, unfinished apps, visualizations etc. This is all very valuable. Don&amp;#39;t expect a bunch of polished, ready-to-use apps as a result.&lt;/p&gt;
+
+&lt;p&gt;Most data owners consider it a failure if nothing happens after they release data.
+This is just plain wrong. The whole point of Open Data is to open your data. It&amp;#39;s done. It&amp;#39;s out there.
+Anyone that is interested can use this data. You never know when this is. Eventually someone creates a mashup, where you dataset is the missing piece.&lt;/p&gt;
+
+&lt;p&gt;What if this does not happen? It doesn&amp;#39;t matter. Maybe the time was not right. Maybe this dataset is just not interesting enough.
+But that doesn&amp;#39;t mean it was not worth to open it.&lt;/p&gt;
+
+&lt;p&gt;But of course there some things that you &lt;em&gt;can&lt;/em&gt; and &lt;em&gt;should&lt;/em&gt; do. Here is my little list of &lt;strong&gt;DOs&lt;/strong&gt; and &lt;strong&gt;DON&amp;#39;Ts&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;h4 id="toc_0"&gt;&lt;strong&gt;DO&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Talk about your data (speeches, blog posts)&lt;/li&gt;
+&lt;li&gt;Make events to explain your data&lt;/li&gt;
+&lt;li&gt;Bring cool swag to hackathons (for everyone!) :)&lt;/li&gt;
+&lt;li&gt;Invite people to visit you, connect your experts with the community&lt;/li&gt;
+&lt;li&gt;Provide help to process your data&lt;/li&gt;
+&lt;li&gt;Open Source the tools you use internally to make them available for everybody&lt;/li&gt;
+&lt;li&gt;Make sure to involve the media (yes, if you release your data or make an event, invite them)&lt;/li&gt;
+&lt;li&gt;Coordinate with the community, ask questions, don&amp;#39;t make assumptions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id="toc_1"&gt;&lt;strong&gt;DON&amp;#39;T&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Measure the success of your Open Data by the &lt;em&gt;amount&lt;/em&gt; of apps/visualization build with it. Actually, don&amp;#39;t measure the success at all. Concentrate on releasing new and interesting data.&lt;/li&gt;
+&lt;li&gt;Organize stupid contests. Your data is much too valuable, and every contribution is too important to waste everybody&amp;#39;s time to choose a &lt;em&gt;winner&lt;/em&gt;. Find new ways (e.g. hackathons) to attract people. &lt;/li&gt;
+&lt;li&gt;Expect people to do your work&lt;/li&gt;
+&lt;li&gt;Assume everybody was just waiting for your data and must be grateful for it. Give people time to discover your data&lt;/li&gt;
+&lt;li&gt;Think that a press release is all it takes to get attention from the media&lt;/li&gt;
+&lt;li&gt;If you have a budget for Open Data, don&amp;#39;t spend it for someone to create an app with your data. Use it to organize events, invite people, do whatever you are best at!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Seriously: No more contests, no more fucking prizes.&lt;/strong&gt; &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     <item>
       <title>All new in 2014</title>
       <link>http://metaodi.ch/posts/2014/01/all-new-in-2014</link>
@@ -12,8 +81,8 @@
       <description>&lt;p&gt;Some time ago I started to fiddle with &lt;a href="http://ruhoh.com"&gt;ruhoh&lt;/a&gt;, a static blog generator.
 I thought the idea of having static files as &lt;em&gt;the interface&lt;/em&gt; to your website was intriguing.&lt;/p&gt;
 
-&lt;p&gt;When I started ruhoh was still beta (I don&amp;#39;t remebember the exact version number, but you can &lt;a href="https://github.com/metaodi/odi86.ruhoh.com"&gt;see for yourself&lt;/a&gt; if you want).
-The nice thing about ruhoh is, that it&amp;#39;s still in development, and not all things just work. But the creater of ruhoh is available on &lt;a href="https://twitter.com/ruhohBlog"&gt;Twitter&lt;/a&gt; or &lt;a href="https://github.com/ruhoh/ruhoh.rb"&gt;GitHub&lt;/a&gt;, so you can just ask, if something does not work.&lt;/p&gt;
+&lt;p&gt;When I started ruhoh was still beta (I don&amp;#39;t remember the exact version number, but you can &lt;a href="https://github.com/metaodi/odi86.ruhoh.com"&gt;see for yourself&lt;/a&gt; if you want).
+The nice thing about ruhoh is, that it&amp;#39;s still in development, and not all things just work. But the creator of ruhoh is available on &lt;a href="https://twitter.com/ruhohBlog"&gt;Twitter&lt;/a&gt; or &lt;a href="https://github.com/ruhoh/ruhoh.rb"&gt;GitHub&lt;/a&gt;, so you can just ask, if something does not work.&lt;/p&gt;
 
 &lt;p&gt;Anyway, my early attempts to move from Tumblr to ruhoh never really made it past this fiddle phase.
 But when Tumblr announced a big DNS change and I found out that the DNS service I was using (&lt;a href="http://xname.org"&gt;XName&lt;/a&gt;) is really bad when I comes to changes, I &lt;em&gt;lost&lt;/em&gt; my blog.&lt;/p&gt;
