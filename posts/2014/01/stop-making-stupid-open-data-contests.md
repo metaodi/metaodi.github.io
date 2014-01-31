@@ -53,7 +53,6 @@ But of course there some things that you *can* and *should* do. Here is my littl
 
 #### **DON'T**
 * Measure the success of your Open Data by the *amount* of apps/visualization build with it. Actually, don't measure the success at all. Concentrate on releasing new and interesting data.
-* Organize stupid contests. Your data is much too valuable, and every contribution is too important to waste everybody's time to choose a _winner_. Find new ways (e.g. hackathons) to attract people. 
 * Expect people to do your work
 * Assume everybody was just waiting for your data and must be grateful for it. Give people time to discover your data
 * Think that a press release is all it takes to get attention from the media
