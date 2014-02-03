@@ -26,7 +26,7 @@ The problem is, that contests have winners. And when there are winners, there mu
 
 The goal of an OGD data owner should be, that a lot of people know and use your data.
 This makes it worth to create this data in the first place.
-It doesn't matter if it is used by a special interest group of by an app used by millions of people.
+It doesn't matter if it is used by a special interest group or by an app used by millions of people.
 
 On the other side, hackathons provide a good environment to play around, talk with different people and hack along.
 This is the kind of thing we need.
