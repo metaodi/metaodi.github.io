@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <title>
+                Usage of MongoDB with a spatial index and GeoJSON | metaodi
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Stefan Oderbolz (&quot;Odi&quot;)">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- load static files from bower -->
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <script src="/bower_components/jquery/jquery.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Le styles -->
+<link href='/assets/stylesheets/style-a039e10a7d2de8b24d250376ec3148ed.css' type='text/css' rel='stylesheet' media='all'>
+<link href='/assets/stylesheets/google_prettify/sons-of-obsidian-afb0925bfa2d994f17dab93e13fbf999.css' type='text/css' rel='stylesheet' media='all'>    
+    <!-- Le scripts -->
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/posts/rss.xml" />
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+  -->
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">metaodi</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            
+              <li><a href="/tags">Tags</a></li>
+            
+            
+              <li><a href="/archive">Archive</a></li>
+            
+            
+              <li><a href="/about">About me</a></li>
+            
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>Usage of MongoDB with a spatial index and GeoJSON </h1>
+</div>
+
+<div class="row-fluid post-full">
+  <div class="span12">
+    <div class="date">
+      <span>11.02.2014</strong>
+    </div>
+    <div class="content">
+      <p>During the <a href="http://opendata.ch/projects/open-data-zuerich-hacknights/">Zurich Hacknights 2013</a> I was part of the team, that wanted to build a <a href="http://make.opendata.ch/wiki/project:denkmalfuehrer">guide for monuments in Zurich</a>.
+We were a large group of people with lots of ideas.
+Unfortunately I was the only web developer at that time, so I did my best to create a <a href="https://github.com/denkmap/denkmap">prototype of the guide called <em>Denkmap</em></a>.</p>
+
+<p>There is a <a href="http://www.geolion.zh.ch/geodatenservice/show?nbid=691">webservice (WFS) of the GIS-ZH containing all monuments of the Canton</a>.
+I converted the source to <a href="http://geojson.org/">GeoJSON</a> using <a href="http://www.gdal.org/ogr2ogr.html">ogr2ogr</a>:</p>
+
+<pre><code class="bash">wget -O DenkmalschutzWFS.gml http://maps.zh.ch/wfs/DenkmalschutzWFS?service=wfs&amp;version=1.1.0&amp;request=GetFeature&amp;typeName=denkmalschutzobjekte
+ogr2ogr -f geoJSON -s_srs EPSG:21781 -t_srs EPSG:4326 denkmal.geojson DenkmalschutzWFS.gml
+</code></pre>
+
+<p>I added the result as a layer to the map.
+This worked, but unfortunately the GeoJSON file is about <strong>7MB</strong>.
+And each client has to download it.
+This takes time, especially on mobile devices not connected to a WLAN.</p>
+
+<p><strong>For a prototype this was okay, but how can we solve this for the future?</strong></p>
+
+<p>At this point it was clear that I need some part running on a server.
+This part must be able to divide all my data in reasonable chunks, that the client is able to download in a short time.
+Because I&#39;m  already dealing with GeoJSON and I didn&#39;t yet use <a href="http://www.mongodb.org/">MongoDB</a>, I wanted to give it a try.
+I read that there is a <a href="http://docs.mongodb.org/manual/applications/geospatial-indexes/">spatial index</a> and the possibility to run <a href="http://docs.mongodb.org/manual/reference/operator/query-geospatial/">spatial queries</a>.
+Hence, I had my perfect candidate.
+The other obvious solution would have been <a href="http://postgis.net/">PostgreSQL with PostGIS</a>.
+This would have worked too, but I wanted to try something new. </p>
+
+<h3 id="toc_0">Import GeoJSON in MongoDB</h3>
+
+<p>This is quite easy if you respect the rules set by the <a href="http://docs.mongodb.org/manual/reference/program/mongoimport/"><code>mongoimport</code> command</a>:</p>
+
+<ol>
+<li>There used to be a <code>FeatureCollection</code>, which basically is a big array. I removed it to get a list of objects.</li>
+<li>Only use the MongoDB-supported subset of GeoJSON (i.e. Point, LineString and Polygon)</li>
+<li>The file must contain exactly one object per line, remove extra lines to make the importer happy</li>
+</ol>
+
+<p>Once this is done, you can run the following to import your GeoJSON in a database called <code>denkmap</code> and a collection called <code>wfsktzh</code>:</p>
+
+<pre><code class="bash">mongoimport --db denkmap --collection wfsktzh &lt; denkmal.geojson
+mongo denkmap --eval &quot;db.wfsktzh.ensureIndex({geometry: &#39;2dsphere&#39;})&quot;
+</code></pre>
+
+<h3 id="toc_1">Create RESTful interface to consume the data</h3>
+
+<p>Once the data is save and sound in MongoDB, all you need is a script to expose exactly the data you need.</p>
+
+<p>The <a href="https://www.npmjs.org/package/express">Sinatra-like <code>express</code> framework</a> helps to create the structure:</p>
+
+<pre><code class="javascript">var express = require(&#39;express&#39;),
+    geodata = require(&#39;./geodata.js&#39;),
+    app = express(),
+    port = 3000;
+
+app.get(&#39;/nearby/:lat/:lon&#39;, function(req, res) {
+    console.log(req.method + &#39; request: &#39; + req.url);
+    var lat = parseFloat(req.params.lat),
+        lon = parseFloat(req.params.lon);
+    geodata.nearby(lat, lon, function(docs) {
+        res.send(docs);
+    });
+});
+
+app.listen(port);
+console.log(&#39;Listening on port &#39; + port + &#39;...&#39;);
+</code></pre>
+
+<p>This allows us to query MongoDB using URLs like this: <a href="http://localhost:3000/nearby/47.3456/8.5432">http://localhost:3000/nearby/47.3456/8.5432</a></p>
+
+<p>The <code>geodata.js</code> contains the spatial query using <code>$near</code>. It returns all results in 1000m distance from the given coordinates (lat/lon). <a href="https://www.npmjs.org/package/mongojs"><code>mongojs</code> is a Node.js library for MongoDB</a>:</p>
+
+<pre><code class="javascript">var dbUrl = &quot;denkmap&quot;,
+    coll = [&quot;wfsktzh&quot;],
+    db = require(&quot;mongojs&quot;).connect(dbUrl, coll);
+
+exports.nearby = function(lat, lon, callbackFn) {
+    db.wfsktzh.find({
+        geometry: {
+            $near: { 
+                $geometry : {
+                    type: &quot;Point&quot;,
+                    coordinates: [lon, lat]
+                },
+                $maxDistance: 1000
+            }
+        }
+    },
+    function(err, res) {
+        callbackFn(res);
+    });
+}
+</code></pre>
+
+<p>By the way: the project is still active and we are still looking for people to participate.
+The next step would be to connect DenkMap to <a href="http://wikidata.org">WikiData</a> and display some extra information, link to the corresponding Wikipedia page, and/or display images of the monument in the app.</p>
+
+    </div>
+    <ul class="tag_box inline">
+      <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+      <li>
+        <a href="/tags#MongoDB-ref">MongoDB <span>1</span></a>
+      </li>
+      <li>
+        <a href="/tags#Open Data-ref">Open Data <span>2</span></a>
+      </li>
+      <li>
+        <a href="/tags#OpenStreetMap-ref">OpenStreetMap <span>2</span></a>
+      </li>
+      <li>
+        <a href="/tags#GIS-ref">GIS <span>1</span></a>
+      </li>
+    </ul>
+    <hr>
+    <ul class="pagination">
+        <li class="prev"><a href="/posts/2014/01/stop-making-stupid-open-data-contests" title="Stop making stupid Open Data contests!">&larr; Previous</a></li>
+
+        <li><a href="/archive">Archive</a></li>
+
+        <li class="next disabled"><a>Next &rarr;</a>
+    </ul>
+    <hr>
+    <div id="disqus_thread"></div>
+<script>
+    var disqus_developer = 1;
+    var disqus_shortname = 'metaodi'; // required: replace example with your forum shortname
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+  </div>
+</div>
+
+
+      </div>
+
+      <hr>
+      <div class="footer">
+        <p>&copy; Stefan Oderbolz (&quot;Odi&quot;) 2014
+          with <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a>
+          and <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>
+        </p>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- Google Prettify -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.js"></script>
+<script>
+  var pres = document.getElementsByTagName("pre");
+  for (var i=0; i < pres.length; ++i) {
+    pres[i].className = "prettyprint linenums";
+  }
+  prettyPrint();
+</script>
+<!-- end Google Prettify -->
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-47578431-1']);
+  _gaq.push(['_trackPageview']);
+  
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+    
+  </body>
+</html>

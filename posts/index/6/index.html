@@ -20,7 +20,7 @@
     <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- Le styles -->
-<link href='/assets/stylesheets/style-5612bdb936f3bbe414b2cf36b72e39c5.css' type='text/css' rel='stylesheet' media='all'>
+<link href='/assets/stylesheets/style-a039e10a7d2de8b24d250376ec3148ed.css' type='text/css' rel='stylesheet' media='all'>
 <link href='/assets/stylesheets/google_prettify/sons-of-obsidian-afb0925bfa2d994f17dab93e13fbf999.css' type='text/css' rel='stylesheet' media='all'>    
     <!-- Le scripts -->
 
@@ -74,7 +74,48 @@
         <div class="row-fluid">
   <div class="span12">
       <div class="posts">
-        <h3 class="title"><span class="date">09.11.2009</span><a href="/posts/2009/11/wwfm-vi-in-z-rich">WWFM VI in Zürich</a> </h3>
+        <h2 class="title"><span class="date">09.11.2009</span><a href="/posts/2009/11/extract-tar-gz-to-specific-directory">Extract .tar.gz to specific directory</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Linux-ref">Linux <span>8</span></a>
+          </li>
+        </ul>
+
+        <p>I want to extract all files form a “.tar.gz” file to a specific
+directory (not the current).</p>
+
+<p>When you ask Google you quickly come up with the elegant solution:</p>
+
+<pre><code>$ gzip -cd /some/dir/something.tar.gz | tar -xvf - -C /specific/directory
+</code></pre>
+
+<p>Somehow my development machine doesn’t accept this, as I keep getting
+the error:</p>
+
+<pre><code>File -C not present in the archive.
+File /specific/directory not present in the archive.
+</code></pre>
+
+<p>I couldn’t find the answer, but as usual many ways lead to Rome. I’m
+able to extract the files to the current directory using</p>
+
+<pre><code>$ gzip -cd /some/dir/something.tar.gz | tar -xvf -
+</code></pre>
+
+<p>Therefore I can simply change the current directory to my specific
+directory and after the extraction return to the prior directory (I need
+to unzip the file in a script, therefore I need a generic approach).
+When we put all that together the following finally works:</p>
+
+<pre><code>$ cd /specific/directory &amp;&amp; gzip -cd /some/dir/something.tar.gz | tar -xvf - &amp;&amp; cd -
+</code></pre>
+
+
+      </div>
+      <div class="posts">
+        <h2 class="title"><span class="date">09.11.2009</span><a href="/posts/2009/11/wwfm-vi-in-z-rich">WWFM VI in Zürich</a> </h3>
 
         <ul class="tag_box">
         <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
@@ -108,7 +149,7 @@ in eurer Nähe!</p>
 
       </div>
       <div class="posts">
-        <h3 class="title"><span class="date">25.10.2009</span><a href="/posts/2009/10/barcamp-rapperswil">BarCamp Rapperswil</a> </h3>
+        <h2 class="title"><span class="date">25.10.2009</span><a href="/posts/2009/10/barcamp-rapperswil">BarCamp Rapperswil</a> </h3>
 
         <ul class="tag_box">
         <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
@@ -164,7 +205,7 @@ BarCamp truly international ;-)</p>
 
       </div>
       <div class="posts">
-        <h3 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/postfinance-sms-service">PostFinance SMS Service</a> </h3>
+        <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/postfinance-sms-service">PostFinance SMS Service</a> </h3>
 
         <ul class="tag_box">
         <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
@@ -218,7 +259,7 @@ registriert diesen online.</p>
 
       </div>
       <div class="posts">
-        <h3 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/insert-text-at-top-of-a-file">Insert text at top of a file</a> </h3>
+        <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/insert-text-at-top-of-a-file">Insert text at top of a file</a> </h3>
 
         <ul class="tag_box">
         <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
@@ -266,7 +307,7 @@ this means the logfile will be kept and not moved.</p>
 
       </div>
       <div class="posts">
-        <h3 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/delete-all-symlink-of-a-directory">Delete all symlink of a directory</a> </h3>
+        <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/delete-all-symlink-of-a-directory">Delete all symlink of a directory</a> </h3>
 
         <ul class="tag_box">
         <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
@@ -308,7 +349,7 @@ every element of it’s input, so the final task can be done by:</p>
 
       </div>
       <div class="posts">
-        <h3 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/sie-haben-post-ihre-admin">Sie haben Post: Ihre Admin.</a> </h3>
+        <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/sie-haben-post-ihre-admin">Sie haben Post: Ihre Admin.</a> </h3>
 
         <ul class="tag_box">
         <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
@@ -362,7 +403,7 @@ Grüessli Admin Body: -no data-</p></li>
 
       </div>
       <div class="posts">
-        <h3 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/ausreden-fuers-nicht-trinken">Ausreden fürs Nicht-Trinken</a> </h3>
+        <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/ausreden-fuers-nicht-trinken">Ausreden fürs Nicht-Trinken</a> </h3>
 
         <ul class="tag_box">
         <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
@@ -392,7 +433,7 @@ ist)</li>
 
       </div>
       <div class="posts">
-        <h3 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/zusammengesetzte-w-rter">Zusammengesetzte Wörter</a> </h3>
+        <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/zusammengesetzte-w-rter">Zusammengesetzte Wörter</a> </h3>
 
         <ul class="tag_box">
         <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
@@ -444,7 +485,7 @@ Selbstentscheidungsfreiheit.</p>
 
       </div>
       <div class="posts">
-        <h3 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/snowboard-garage-vs-fischer-bettwaren">Snowboard Garage vs. Fischer Bettwaren</a> </h3>
+        <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/snowboard-garage-vs-fischer-bettwaren">Snowboard Garage vs. Fischer Bettwaren</a> </h3>
 
         <ul class="tag_box">
         <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
@@ -457,33 +498,6 @@ Selbstentscheidungsfreiheit.</p>
         </ul>
 
         <iframe width="420" height="315" src="//www.youtube.com/embed/3J1N7PwwbAI" frameborder="0" allowfullscreen></iframe>
-
-
-      </div>
-      <div class="posts">
-        <h3 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/generate-n-rows-from-dual">Generate n rows from dual</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#SQL-ref">SQL <span>6</span></a>
-          </li>
-          <li>
-            <a href="/tags#Oracle-ref">Oracle <span>6</span></a>
-          </li>
-        </ul>
-
-        <p>I needed to generate exactly n rows and then this is very handy.</p>
-
-<pre><code>select * from (
-select level lvl
-from dual
-connect by level &lt;= N
-)
-</code></pre>
-
-<p>Found at:
-<a href="http://awads.net/wp/2005/07/01/generating-n-rows-from-dual/"></a><a href="http://awads.net/wp/2005/07/01/generating-n-rows-from-dual/">http://awads.net/wp/2005/07/01/generating-n-rows-from-dual/</a></p>
 
 
       </div>

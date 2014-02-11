@@ -4,7 +4,107 @@
     <title>metaodi</title>
     <description>metaodi</description>
     <link>http://metaodi.ch</link>
-    <pubDate>03.02.2014</pubDate>
+    <pubDate>11.02.2014</pubDate>
+    <item>
+      <title>Usage of MongoDB with a spatial index and GeoJSON</title>
+      <link>http://metaodi.ch/posts/2014/02/usage-of-mongodb-with-a-spatial--and-geojson</link>
+      <pubDate>11.02.2014</pubDate>
+      <description>&lt;p&gt;During the &lt;a href="http://opendata.ch/projects/open-data-zuerich-hacknights/"&gt;Zurich Hacknights 2013&lt;/a&gt; I was part of the team, that wanted to build a &lt;a href="http://make.opendata.ch/wiki/project:denkmalfuehrer"&gt;guide for monuments in Zurich&lt;/a&gt;.
+We were a large group of people with lots of ideas.
+Unfortunately I was the only web developer at that time, so I did my best to create a &lt;a href="https://github.com/denkmap/denkmap"&gt;prototype of the guide called &lt;em&gt;Denkmap&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;There is a &lt;a href="http://www.geolion.zh.ch/geodatenservice/show?nbid=691"&gt;webservice (WFS) of the GIS-ZH containing all monuments of the Canton&lt;/a&gt;.
+I converted the source to &lt;a href="http://geojson.org/"&gt;GeoJSON&lt;/a&gt; using &lt;a href="http://www.gdal.org/ogr2ogr.html"&gt;ogr2ogr&lt;/a&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="bash"&gt;wget -O DenkmalschutzWFS.gml http://maps.zh.ch/wfs/DenkmalschutzWFS?service=wfs&amp;amp;version=1.1.0&amp;amp;request=GetFeature&amp;amp;typeName=denkmalschutzobjekte
+ogr2ogr -f geoJSON -s_srs EPSG:21781 -t_srs EPSG:4326 denkmal.geojson DenkmalschutzWFS.gml
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I added the result as a layer to the map.
+This worked, but unfortunately the GeoJSON file is about &lt;strong&gt;7MB&lt;/strong&gt;.
+And each client has to download it.
+This takes time, especially on mobile devices not connected to a WLAN.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;For a prototype this was okay, but how can we solve this for the future?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;At this point it was clear that I need some part running on a server.
+This part must be able to divide all my data in reasonable chunks, that the client is able to download in a short time.
+Because I&amp;#39;m  already dealing with GeoJSON and I didn&amp;#39;t yet use &lt;a href="http://www.mongodb.org/"&gt;MongoDB&lt;/a&gt;, I wanted to give it a try.
+I read that there is a &lt;a href="http://docs.mongodb.org/manual/applications/geospatial-indexes/"&gt;spatial index&lt;/a&gt; and the possibility to run &lt;a href="http://docs.mongodb.org/manual/reference/operator/query-geospatial/"&gt;spatial queries&lt;/a&gt;.
+Hence, I had my perfect candidate.
+The other obvious solution would have been &lt;a href="http://postgis.net/"&gt;PostgreSQL with PostGIS&lt;/a&gt;.
+This would have worked too, but I wanted to try something new. &lt;/p&gt;
+
+&lt;h3 id="toc_0"&gt;Import GeoJSON in MongoDB&lt;/h3&gt;
+
+&lt;p&gt;This is quite easy if you respect the rules set by the &lt;a href="http://docs.mongodb.org/manual/reference/program/mongoimport/"&gt;&lt;code&gt;mongoimport&lt;/code&gt; command&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;There used to be a &lt;code&gt;FeatureCollection&lt;/code&gt;, which basically is a big array. I removed it to get a list of objects.&lt;/li&gt;
+&lt;li&gt;Only use the MongoDB-supported subset of GeoJSON (i.e. Point, LineString and Polygon)&lt;/li&gt;
+&lt;li&gt;The file must contain exactly one object per line, remove extra lines to make the importer happy&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Once this is done, you can run the following to import your GeoJSON in a database called &lt;code&gt;denkmap&lt;/code&gt; and a collection called &lt;code&gt;wfsktzh&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="bash"&gt;mongoimport --db denkmap --collection wfsktzh &amp;lt; denkmal.geojson
+mongo denkmap --eval &amp;quot;db.wfsktzh.ensureIndex({geometry: &amp;#39;2dsphere&amp;#39;})&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id="toc_1"&gt;Create RESTful interface to consume the data&lt;/h3&gt;
+
+&lt;p&gt;Once the data is save and sound in MongoDB, all you need is a script to expose exactly the data you need.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href="https://www.npmjs.org/package/express"&gt;Sinatra-like &lt;code&gt;express&lt;/code&gt; framework&lt;/a&gt; helps to create the structure:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="javascript"&gt;var express = require(&amp;#39;express&amp;#39;),
+    geodata = require(&amp;#39;./geodata.js&amp;#39;),
+    app = express(),
+    port = 3000;
+
+app.get(&amp;#39;/nearby/:lat/:lon&amp;#39;, function(req, res) {
+    console.log(req.method + &amp;#39; request: &amp;#39; + req.url);
+    var lat = parseFloat(req.params.lat),
+        lon = parseFloat(req.params.lon);
+    geodata.nearby(lat, lon, function(docs) {
+        res.send(docs);
+    });
+});
+
+app.listen(port);
+console.log(&amp;#39;Listening on port &amp;#39; + port + &amp;#39;...&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This allows us to query MongoDB using URLs like this: &lt;a href="http://localhost:3000/nearby/47.3456/8.5432"&gt;http://localhost:3000/nearby/47.3456/8.5432&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;geodata.js&lt;/code&gt; contains the spatial query using &lt;code&gt;$near&lt;/code&gt;. It returns all results in 1000m distance from the given coordinates (lat/lon). &lt;a href="https://www.npmjs.org/package/mongojs"&gt;&lt;code&gt;mongojs&lt;/code&gt; is a Node.js library for MongoDB&lt;/a&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="javascript"&gt;var dbUrl = &amp;quot;denkmap&amp;quot;,
+    coll = [&amp;quot;wfsktzh&amp;quot;],
+    db = require(&amp;quot;mongojs&amp;quot;).connect(dbUrl, coll);
+
+exports.nearby = function(lat, lon, callbackFn) {
+    db.wfsktzh.find({
+        geometry: {
+            $near: { 
+                $geometry : {
+                    type: &amp;quot;Point&amp;quot;,
+                    coordinates: [lon, lat]
+                },
+                $maxDistance: 1000
+            }
+        }
+    },
+    function(err, res) {
+        callbackFn(res);
+    });
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;By the way: the project is still active and we are still looking for people to participate.
+The next step would be to connect DenkMap to &lt;a href="http://wikidata.org"&gt;WikiData&lt;/a&gt; and display some extra information, link to the corresponding Wikipedia page, and/or display images of the monument in the app.&lt;/p&gt;
+</description>
+    </item>
     <item>
       <title>Stop making stupid Open Data contests!</title>
       <link>http://metaodi.ch/posts/2014/01/stop-making-stupid-open-data-contests</link>
@@ -2180,6 +2280,40 @@ connect by level &amp;lt;= N
 </description>
     </item>
     <item>
+      <title>Using Pidgin with msn-pecan</title>
+      <link>http://metaodi.ch/posts/2009/10/using-pidgin-with-msn-pecan</link>
+      <pubDate>23.10.2009</pubDate>
+      <description>&lt;p&gt;Today when I was starting pidgin I could connect to ICQ, but when trying
+to connect to MSN Pidgin comes up with:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;unable to retrieve MSN address book
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So I was googeling a little bit and found a bug @ pidgin from yesterday.
+The problem is not pidgin, although the official MSN client and some
+others clients still work (e.g. meebo). There are several different
+versions of the MSN protocol, pidgin is using MSNP15. And exactly this
+protocol is currently not working on the server side @ Microsoft (as it
+seems).&lt;/p&gt;
+
+&lt;p&gt;Other clients are not affected as they switch to older version of the
+protocol, which are still working.&lt;/p&gt;
+
+&lt;p&gt;Because I don&#x2019;t want to wait until MS fixed the problem, I use a quick
+workaround. As an alternative you can install &lt;code&gt;msn-pecan&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;With Gentoo this works (after adding &#x201C;x11-plugins/pidgin-msn-pecan
+~x86&#x201D; to &lt;code&gt;/etc/portage/package.keywords&lt;/code&gt;):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# emerge pidgin-msn-pecan
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;After the installation just restart Pidgin go to &#x201C;Accounts&#x201D; -&amp;gt; &#x201C;Manage
+Accounts&#x201D;. Select your MSN-Account, click &#x201C;Modify&#x201D;. Choose &#x201C;WLM&#x201D; as
+protocol. Save and reconnect your MSN account. Works like a charm!&lt;/p&gt;
+</description>
+    </item>
+    <item>
       <title>dvd::rip and gentoo</title>
       <link>http://metaodi.ch/posts/2009/10/dvd-rip-and-gentoo</link>
       <pubDate>23.10.2009</pubDate>
@@ -2215,40 +2349,6 @@ imagemagick in /etc/portage/package.use and re-emerged imagemagick.&lt;/p&gt;
 &lt;p&gt;Another problems was that transcode was missing the &#x201C;mp3&#x201D; USE-flag.&lt;/p&gt;
 
 &lt;p&gt;Since then dvd::rip just works!&lt;/p&gt;
-</description>
-    </item>
-    <item>
-      <title>Using Pidgin with msn-pecan</title>
-      <link>http://metaodi.ch/posts/2009/10/using-pidgin-with-msn-pecan</link>
-      <pubDate>23.10.2009</pubDate>
-      <description>&lt;p&gt;Today when I was starting pidgin I could connect to ICQ, but when trying
-to connect to MSN Pidgin comes up with:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;unable to retrieve MSN address book
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;So I was googeling a little bit and found a bug @ pidgin from yesterday.
-The problem is not pidgin, although the official MSN client and some
-others clients still work (e.g. meebo). There are several different
-versions of the MSN protocol, pidgin is using MSNP15. And exactly this
-protocol is currently not working on the server side @ Microsoft (as it
-seems).&lt;/p&gt;
-
-&lt;p&gt;Other clients are not affected as they switch to older version of the
-protocol, which are still working.&lt;/p&gt;
-
-&lt;p&gt;Because I don&#x2019;t want to wait until MS fixed the problem, I use a quick
-workaround. As an alternative you can install &lt;code&gt;msn-pecan&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;With Gentoo this works (after adding &#x201C;x11-plugins/pidgin-msn-pecan
-~x86&#x201D; to &lt;code&gt;/etc/portage/package.keywords&lt;/code&gt;):&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# emerge pidgin-msn-pecan
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;After the installation just restart Pidgin go to &#x201C;Accounts&#x201D; -&amp;gt; &#x201C;Manage
-Accounts&#x201D;. Select your MSN-Account, click &#x201C;Modify&#x201D;. Choose &#x201C;WLM&#x201D; as
-protocol. Save and reconnect your MSN account. Works like a charm!&lt;/p&gt;
 </description>
     </item>
     <item>

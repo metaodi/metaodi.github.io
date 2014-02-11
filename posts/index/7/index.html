@@ -20,7 +20,7 @@
     <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- Le styles -->
-<link href='/assets/stylesheets/style-5612bdb936f3bbe414b2cf36b72e39c5.css' type='text/css' rel='stylesheet' media='all'>
+<link href='/assets/stylesheets/style-a039e10a7d2de8b24d250376ec3148ed.css' type='text/css' rel='stylesheet' media='all'>
 <link href='/assets/stylesheets/google_prettify/sons-of-obsidian-afb0925bfa2d994f17dab93e13fbf999.css' type='text/css' rel='stylesheet' media='all'>    
     <!-- Le scripts -->
 
@@ -74,7 +74,78 @@
         <div class="row-fluid">
   <div class="span12">
       <div class="posts">
-        <h3 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/dvd-rip-and-gentoo">dvd::rip and gentoo</a> </h3>
+        <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/generate-n-rows-from-dual">Generate n rows from dual</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#SQL-ref">SQL <span>6</span></a>
+          </li>
+          <li>
+            <a href="/tags#Oracle-ref">Oracle <span>6</span></a>
+          </li>
+        </ul>
+
+        <p>I needed to generate exactly n rows and then this is very handy.</p>
+
+<pre><code>select * from (
+select level lvl
+from dual
+connect by level &lt;= N
+)
+</code></pre>
+
+<p>Found at:
+<a href="http://awads.net/wp/2005/07/01/generating-n-rows-from-dual/"></a><a href="http://awads.net/wp/2005/07/01/generating-n-rows-from-dual/">http://awads.net/wp/2005/07/01/generating-n-rows-from-dual/</a></p>
+
+
+      </div>
+      <div class="posts">
+        <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/using-pidgin-with-msn-pecan">Using Pidgin with msn-pecan</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#MSN-ref">MSN <span>1</span></a>
+          </li>
+          <li>
+            <a href="/tags#Linux-ref">Linux <span>8</span></a>
+          </li>
+        </ul>
+
+        <p>Today when I was starting pidgin I could connect to ICQ, but when trying
+to connect to MSN Pidgin comes up with:</p>
+
+<pre><code>unable to retrieve MSN address book
+</code></pre>
+
+<p>So I was googeling a little bit and found a bug @ pidgin from yesterday.
+The problem is not pidgin, although the official MSN client and some
+others clients still work (e.g. meebo). There are several different
+versions of the MSN protocol, pidgin is using MSNP15. And exactly this
+protocol is currently not working on the server side @ Microsoft (as it
+seems).</p>
+
+<p>Other clients are not affected as they switch to older version of the
+protocol, which are still working.</p>
+
+<p>Because I don’t want to wait until MS fixed the problem, I use a quick
+workaround. As an alternative you can install <code>msn-pecan</code>.</p>
+
+<p>With Gentoo this works (after adding “x11-plugins/pidgin-msn-pecan
+~x86” to <code>/etc/portage/package.keywords</code>):</p>
+
+<pre><code># emerge pidgin-msn-pecan
+</code></pre>
+
+<p>After the installation just restart Pidgin go to “Accounts” -&gt; “Manage
+Accounts”. Select your MSN-Account, click “Modify”. Choose “WLM” as
+protocol. Save and reconnect your MSN account. Works like a charm!</p>
+
+
+      </div>
+      <div class="posts">
+        <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/dvd-rip-and-gentoo">dvd::rip and gentoo</a> </h3>
 
         <ul class="tag_box">
         <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
@@ -119,51 +190,7 @@ imagemagick in /etc/portage/package.use and re-emerged imagemagick.</p>
 
       </div>
       <div class="posts">
-        <h3 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/using-pidgin-with-msn-pecan">Using Pidgin with msn-pecan</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#MSN-ref">MSN <span>1</span></a>
-          </li>
-          <li>
-            <a href="/tags#Linux-ref">Linux <span>8</span></a>
-          </li>
-        </ul>
-
-        <p>Today when I was starting pidgin I could connect to ICQ, but when trying
-to connect to MSN Pidgin comes up with:</p>
-
-<pre><code>unable to retrieve MSN address book
-</code></pre>
-
-<p>So I was googeling a little bit and found a bug @ pidgin from yesterday.
-The problem is not pidgin, although the official MSN client and some
-others clients still work (e.g. meebo). There are several different
-versions of the MSN protocol, pidgin is using MSNP15. And exactly this
-protocol is currently not working on the server side @ Microsoft (as it
-seems).</p>
-
-<p>Other clients are not affected as they switch to older version of the
-protocol, which are still working.</p>
-
-<p>Because I don’t want to wait until MS fixed the problem, I use a quick
-workaround. As an alternative you can install <code>msn-pecan</code>.</p>
-
-<p>With Gentoo this works (after adding “x11-plugins/pidgin-msn-pecan
-~x86” to <code>/etc/portage/package.keywords</code>):</p>
-
-<pre><code># emerge pidgin-msn-pecan
-</code></pre>
-
-<p>After the installation just restart Pidgin go to “Accounts” -&gt; “Manage
-Accounts”. Select your MSN-Account, click “Modify”. Choose “WLM” as
-protocol. Save and reconnect your MSN account. Works like a charm!</p>
-
-
-      </div>
-      <div class="posts">
-        <h3 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/wie-schreibt-man-eine-rede">Wie schreibt man eine Rede</a> </h3>
+        <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/wie-schreibt-man-eine-rede">Wie schreibt man eine Rede</a> </h3>
 
         <ul class="tag_box">
         <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
@@ -192,7 +219,7 @@ fertig ist.</li>
 
       </div>
       <div class="posts">
-        <h3 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/ipa-client-backup-services">IPA - Client Backup Services</a> </h3>
+        <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/ipa-client-backup-services">IPA - Client Backup Services</a> </h3>
 
         <ul class="tag_box">
         <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
@@ -225,7 +252,7 @@ inhaltlichen, aber: Nobody’s perfect!</p>
 
       </div>
       <div class="posts">
-        <h3 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/im-bus">Im Bus</a> </h3>
+        <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/im-bus">Im Bus</a> </h3>
 
         <ul class="tag_box">
         <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
@@ -247,7 +274,7 @@ inhaltlichen, aber: Nobody’s perfect!</p>
 
       </div>
       <div class="posts">
-        <h3 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/doom-for-sysadmins">Doom for Sysadmins</a> </h3>
+        <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/doom-for-sysadmins">Doom for Sysadmins</a> </h3>
 
         <ul class="tag_box">
         <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
@@ -274,7 +301,7 @@ Monster überprüfen. Sobalds zu viele sind: losballern!</p>
 
       </div>
       <div class="posts">
-        <h3 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/find-old-files-and-their-size">Find old Files and their size</a> </h3>
+        <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/find-old-files-and-their-size">Find old Files and their size</a> </h3>
 
         <ul class="tag_box">
         <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
@@ -322,7 +349,7 @@ same age as the files within.</p>
 
       </div>
       <div class="posts">
-        <h3 class="title"><span class="date">21.10.2009</span><a href="/posts/2009/10/odbc-hell">ODBC Hell</a> </h3>
+        <h2 class="title"><span class="date">21.10.2009</span><a href="/posts/2009/10/odbc-hell">ODBC Hell</a> </h3>
 
         <ul class="tag_box">
         <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
@@ -394,7 +421,7 @@ open to new ways of doing this.</p>
 
       </div>
       <div class="posts">
-        <h3 class="title"><span class="date">21.10.2009</span><a href="/posts/2009/10/brainfucked-logo">Brainfucked Logo</a> </h3>
+        <h2 class="title"><span class="date">21.10.2009</span><a href="/posts/2009/10/brainfucked-logo">Brainfucked Logo</a> </h3>
 
         <ul class="tag_box">
         <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
@@ -743,53 +770,6 @@ for “d”) and print it (pos:7)\
 </blockquote>
 
 <p>Brainfucked wishes</p>
-
-
-      </div>
-      <div class="posts">
-        <h3 class="title"><span class="date">08.10.2009</span><a href="/posts/2009/10/ein-tisch-ist-ein-tisch">Ein Tisch ist ein Tisch</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#German-ref">German <span>19</span></a>
-          </li>
-          <li>
-            <a href="/tags#Text-ref">Text <span>5</span></a>
-          </li>
-        </ul>
-
-        <p>Nach einem Text vom Peter Bichsel, im Stile von “Kunst aufräumen” ordne
-ich mal Bichsels Text neu.</p>
-
-<p><strong>Orginal Text:
-<a href="http://www.yolanthe.de/stories/bichsel01.htm"></a><a href="http://www.yolanthe.de/stories/bichsel01.htm">http://www.yolanthe.de/stories/bichsel01.htm</a></strong></p>
-
-<h3 id="toc_0">Nomen</h3>
-
-<pre><code>  Mann        Menschen
-  Bild        Bett
-  Wecker      Stuhl
-  Teppich     Tisch
-  Bett        Zeitung
-  Stuhl       Spiegel
-  Fotoalbum   Wecker
-  Zeitung     Schrank
-  Schrank     Teppich
-  Spiegel     Fotoalbum
-  Fuss        Mann
-  Morgen      Fuss
-  Mann        Morgen
-</code></pre>
-
-<h3 id="toc_1">Verben</h3>
-
-<pre><code>  stellen    läuten
-  schauen    frieren
-  läuten     liegen
-  frieren    stehen
-  blättern   stellen
-</code></pre>
 
 
       </div>

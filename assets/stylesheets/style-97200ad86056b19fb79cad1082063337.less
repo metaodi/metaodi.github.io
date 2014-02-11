@@ -13,6 +13,10 @@ body, h1, h2, h3, h4, h5, h6 {
     font-family: 'Merriweather', serif;
 }
 
+h2 {
+    font-size: 28px;
+}
+
 /* make img and iframe responsive */
 img {
     display: block;
@@ -59,24 +63,24 @@ iframe {
 }
 
 /* posts index */
-.posts > h3.title {
+.posts > h2.title {
   position:relative;
   padding-top:10px;
 }
 
 /* post date */
-.posts > h3.title span.date { 
+.posts > h2.title span.date { 
   font-size:0.8em;
 }
 @media (max-width: 768px) {  
-    .posts > h3.title span.date { 
+    .posts > h2.title span.date { 
         float: left;
         margin-bottom: 10px;
         margin-right: 10px;
     }
 }
 @media (min-width: 768px) {  
-    .posts > h3.title span.date { 
+    .posts > h2.title span.date { 
         float: right;
     }
 }

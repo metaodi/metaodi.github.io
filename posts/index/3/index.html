@@ -20,7 +20,7 @@
     <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- Le styles -->
-<link href='/assets/stylesheets/style-5612bdb936f3bbe414b2cf36b72e39c5.css' type='text/css' rel='stylesheet' media='all'>
+<link href='/assets/stylesheets/style-a039e10a7d2de8b24d250376ec3148ed.css' type='text/css' rel='stylesheet' media='all'>
 <link href='/assets/stylesheets/google_prettify/sons-of-obsidian-afb0925bfa2d994f17dab93e13fbf999.css' type='text/css' rel='stylesheet' media='all'>    
     <!-- Le scripts -->
 
@@ -74,7 +74,59 @@
         <div class="row-fluid">
   <div class="span12">
       <div class="posts">
-        <h3 class="title"><span class="date">21.06.2011</span><a href="/posts/2011/06/php-unit-testing-mit-simpletest">PHP Unit Testing mit SimpleTest</a> </h3>
+        <h2 class="title"><span class="date">25.06.2011</span><a href="/posts/2011/06/zum-selektierten-wert-springen">Zum selektierten Wert springen (IE Bug)</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#HTML-ref">HTML <span>1</span></a>
+          </li>
+          <li>
+            <a href="/tags#JavaScript-ref">JavaScript <span>4</span></a>
+          </li>
+          <li>
+            <a href="/tags#Programming-ref">Programming <span>15</span></a>
+          </li>
+        </ul>
+
+        <p>Der Internet Explorer hat die Angewohnheit in einer <code>&lt;select&gt;</code>-Box den
+ausgewählten Wert nicht direkt anzuzeigen. Stattdessen werden immer nur
+die ersten Werte angezeigt. Der IE zeigt also folgendes:</p>
+
+<p><img src="http://media.tumblr.com/tumblr_lncuiemzXt1qa2z4q.png" alt="Der ausgewählte Wert ist nicht
+sichtbar" title="Der ausgewählte Wert ist nicht sichtbar"></p>
+
+<p>Wobei ich eigentlich folgendes erwarten würde:</p>
+
+<p><img src="http://media.tumblr.com/tumblr_lncujzRQP21qa2z4q.png" alt="Der ausgewählte Wert ist als solcher
+erkennbar" title="Der ausgewählte Wert ist als solcher erkennbar"></p>
+
+<p>Wenn der Benutzer scrollt, sieht er schon welcher Wert gewählt ist, die
+Liste springt jedoch nicht automatisch zum ersten ausgewählten Wert (wie
+das beispielsweise der Firefox macht).</p>
+
+<p>Mit einer kleinen JavaScript-Funktion kann dies aber einfach nachgebaut
+werden, die Funktion erwartet den Namen der <code>&lt;select&gt;</code>-Box als
+Parameter, eine analoge Funktion für die ID lässt sich sehr einfach
+bauen:</p>
+
+<p><a href="http://pastie.org/2121185">[Pastie-Link]</a></p>
+
+<p>Offenbar reagiert der IE auf dynamisch gesetzte Selektionen, warum er
+das nicht von sich aus macht, ist mir schleierhaft. Am einfachsten ist
+es wenn das Script beim laden der Seite aufgerufen wird:</p>
+
+<pre><code>&lt;body onload=&quot;jumpToSelectedOptions(pizzaList);&quot;&gt;
+</code></pre>
+
+<p>Evtl. ist das ja jemand anderem auch noch nützlich. Ich verwende die
+Funktion bei einer Auswahlliste die eine Mehrfachauswahl zulässt, dank
+dem “<code>break</code>&quot; springt die Funktion einfach zum ersten gewählten Wert.</p>
+
+
+      </div>
+      <div class="posts">
+        <h2 class="title"><span class="date">21.06.2011</span><a href="/posts/2011/06/php-unit-testing-mit-simpletest">PHP Unit Testing mit SimpleTest</a> </h3>
 
         <ul class="tag_box">
         <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
@@ -128,7 +180,7 @@ anspreche:</p>
 
       </div>
       <div class="posts">
-        <h3 class="title"><span class="date">06.06.2011</span><a href="/posts/2011/06/rdmr-ch">Eigener URL shortener (rdmr.ch)</a> </h3>
+        <h2 class="title"><span class="date">06.06.2011</span><a href="/posts/2011/06/rdmr-ch">Eigener URL shortener (rdmr.ch)</a> </h3>
 
         <ul class="tag_box">
         <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
@@ -167,7 +219,7 @@ Applikationen einbauen.</p>
 
       </div>
       <div class="posts">
-        <h3 class="title"><span class="date">25.05.2011</span><a href="/posts/2011/05/steganografie-in-der-schweiz-verboten">Steganografie in der Schweiz verboten?</a> </h3>
+        <h2 class="title"><span class="date">25.05.2011</span><a href="/posts/2011/05/steganografie-in-der-schweiz-verboten">Steganografie in der Schweiz verboten?</a> </h3>
 
         <ul class="tag_box">
         <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
@@ -197,7 +249,7 @@ dazu?</p>
 
       </div>
       <div class="posts">
-        <h3 class="title"><span class="date">03.11.2010</span><a href="/posts/2010/11/developers-shame-day-2010">Developers Shame Day: BB-Code selbstgemacht</a> </h3>
+        <h2 class="title"><span class="date">03.11.2010</span><a href="/posts/2010/11/developers-shame-day-2010">Developers Shame Day: BB-Code selbstgemacht</a> </h3>
 
         <ul class="tag_box">
         <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
@@ -257,7 +309,7 @@ kann”).</p>
 
       </div>
       <div class="posts">
-        <h3 class="title"><span class="date">03.11.2010</span><a href="/posts/2010/11/kino-langer-leben">Kino: Länger Leben</a> </h3>
+        <h2 class="title"><span class="date">03.11.2010</span><a href="/posts/2010/11/kino-langer-leben">Kino: Länger Leben</a> </h3>
 
         <ul class="tag_box">
         <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
@@ -306,7 +358,7 @@ Low-Budget wurde ein qualitativ hochstehender Film gedreht. Anschauen!</p>
 
       </div>
       <div class="posts">
-        <h3 class="title"><span class="date">05.10.2010</span><a href="/posts/2010/10/linux-install-event-vom-alt-comp-hsr">Linux Install-Event vom alt.comp.hsr</a> </h3>
+        <h2 class="title"><span class="date">05.10.2010</span><a href="/posts/2010/10/linux-install-event-vom-alt-comp-hsr">Linux Install-Event vom alt.comp.hsr</a> </h3>
 
         <ul class="tag_box">
         <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
@@ -343,7 +395,7 @@ einem Ort, an dem man einfach Fragen stellen kann.</p>
 
       </div>
       <div class="posts">
-        <h3 class="title"><span class="date">04.10.2010</span><a href="/posts/2010/10/fazit-des-zurich-film-festivals-2010">Fazit des Zurich Film Festivals 2010</a> </h3>
+        <h2 class="title"><span class="date">04.10.2010</span><a href="/posts/2010/10/fazit-des-zurich-film-festivals-2010">Fazit des Zurich Film Festivals 2010</a> </h3>
 
         <ul class="tag_box">
         <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
@@ -398,7 +450,7 @@ Filmschaffende etc.).</p>
 
       </div>
       <div class="posts">
-        <h3 class="title"><span class="date">04.10.2010</span><a href="/posts/2010/10/blue-valentine">ZFF 2010: Blue Valentine</a> </h3>
+        <h2 class="title"><span class="date">04.10.2010</span><a href="/posts/2010/10/blue-valentine">ZFF 2010: Blue Valentine</a> </h3>
 
         <ul class="tag_box">
         <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
@@ -432,7 +484,7 @@ eigentlich, der Film hätte auch so genug zu bieten gehabt.</p>
 
       </div>
       <div class="posts">
-        <h3 class="title"><span class="date">03.10.2010</span><a href="/posts/2010/10/monogamy">ZFF 2010: Monogamy</a> </h3>
+        <h2 class="title"><span class="date">03.10.2010</span><a href="/posts/2010/10/monogamy">ZFF 2010: Monogamy</a> </h3>
 
         <ul class="tag_box">
         <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
@@ -467,50 +519,6 @@ Messina</a> und <a href="http://www.imdb.com/name/nm0429069/">Rashida
 Jones</a> sehr eindrücklich vermittelt
 wird. Dieses Beziehsdrama ist sehr spannend und lässt einem so schnell
 nicht los.</p>
-
-
-      </div>
-      <div class="posts">
-        <h3 class="title"><span class="date">02.10.2010</span><a href="/posts/2010/10/machete">ZFF 2010: Machete</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#Zurich Film Festival-ref">Zurich Film Festival <span>25</span></a>
-          </li>
-          <li>
-            <a href="/tags#Cinema-ref">Cinema <span>26</span></a>
-          </li>
-        </ul>
-
-        <p><a href="http://www.zurichfilmfestival.org/de/programm-2010/filme/1194/machete/"><img src="http://media.tumblr.com/tumblr_l9novndScU1qa2z4q.jpg" alt="Machete" title="Machete"></a></p>
-
-<p>Ach was habe ich mich auf diesen Film gefreut: Zum einen natürlich weil
-ich für diesen Film vom <a href="http://www.zurichfilmfestival.org">Zurich Film
-Festival</a> eingeladen wurde, als
-Dankeschön für meine <a href="http://search.twitter.com/search?q=%23zff2010">Tweets über das
-Festival</a>. Dafür nochmals
-herzlichen Dank, fand ich eine super Geste! Zum anderen natürlich weil
-ich
-<a href="http://de.wikipedia.org/wiki/Robert_Rodriguez#Filmografie">Rodriguez-Filme</a>
-einfach liebe. Einfach herrlich trashig, mit viel Blut und Gewalt,
-witzigen Anspielungen und coolen Sprüchen (<em>&quot;Machete don’t text&quot;</em>).</p>
-
-<p>Ich wurde denn auch nicht enttäuscht: Es gab jede Menge Blut, skurrile
-Aktionen und herrliche Sprüche. Natürlich dürften auch die Frauen nicht
-fehlen (welche entweder als Krankenschwestern, in Lack und Leder oder
-ganz nackt zu sehen waren).\
- Der Film wartet mit vielen Stars auf in nicht immer typischen Rollen
-(z.B. Robert De Niro als texanischer Senator). Machete (gespielt von
-<a href="http://www.imdb.com/name/nm0001803/">Danny Trejo</a>) ist ein wortkarger,
-macheten-schwingender Übermensch, der immer weiss was zu tun ist. Ideal
-für diesen Streifen.</p>
-
-<p>Daneben lehrt der Film wie man mit einer Machete Auto fährt, wie man
-sich schnell und einfach aus einem Gebäude abseilt oder wie man von
-einem “Ave Maria” begleitet eine Kirche zerstört.</p>
-
-<p>Genial!</p>
 
 
       </div>
