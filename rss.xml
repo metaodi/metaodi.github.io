@@ -4,7 +4,7 @@
     <title>metaodi</title>
     <description>metaodi</description>
     <link>http://metaodi.ch</link>
-    <pubDate>11.02.2014</pubDate>
+    <pubDate>08.07.2014</pubDate>
     <item>
       <title>About me</title>
       <link>http://metaodi.ch/about</link>
@@ -24,6 +24,10 @@
       <link>http://metaodi.ch/archive</link>
       <description>
   &lt;h2&gt;2014&lt;/h2&gt;
+    &lt;h3&gt;July&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;08.07.2014&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2014/07/q-a-wall"&gt;Q&amp;amp;A Wall at the OKFestival in Berlin&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
     &lt;h3&gt;February&lt;/h3&gt;
     &lt;ul&gt;
       &lt;li&gt;&lt;span&gt;11.02.2014&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2014/02/usage-of-mongodb-with-a-spatial--and-geojson"&gt;Usage of MongoDB with a spatial index and GeoJSON&lt;/a&gt;&lt;/li&gt;
@@ -146,8 +150,8 @@
       &lt;li&gt;&lt;span&gt;23.10.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/10/zusammengesetzte-w-rter"&gt;Zusammengesetzte W&#xF6;rter&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;span&gt;23.10.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/10/snowboard-garage-vs-fischer-bettwaren"&gt;Snowboard Garage vs. Fischer Bettwaren&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;span&gt;23.10.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/10/generate-n-rows-from-dual"&gt;Generate n rows from dual&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;span&gt;23.10.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/10/using-pidgin-with-msn-pecan"&gt;Using Pidgin with msn-pecan&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;span&gt;23.10.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/10/dvd-rip-and-gentoo"&gt;dvd::rip and gentoo&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;23.10.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/10/using-pidgin-with-msn-pecan"&gt;Using Pidgin with msn-pecan&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;span&gt;23.10.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/10/wie-schreibt-man-eine-rede"&gt;Wie schreibt man eine Rede&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;span&gt;23.10.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/10/ipa-client-backup-services"&gt;IPA - Client Backup Services&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;span&gt;23.10.2009&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2009/10/im-bus"&gt;Im Bus&lt;/a&gt;&lt;/li&gt;
@@ -267,7 +271,7 @@
     &lt;a href="/tags#Python-ref"&gt;Python &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;a href="/tags#Programming-ref"&gt;Programming &lt;span&gt;15&lt;/span&gt;&lt;/a&gt;
+    &lt;a href="/tags#Programming-ref"&gt;Programming &lt;span&gt;16&lt;/span&gt;&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;a href="/tags#Excel-ref"&gt;Excel &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
@@ -310,6 +314,12 @@
   &lt;/li&gt;
   &lt;li&gt;
     &lt;a href="/tags#VBA-ref"&gt;VBA &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#OKFestival-ref"&gt;OKFestival &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;a href="/tags#MongoDB-ref"&gt;MongoDB &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
@@ -408,6 +418,9 @@
     &lt;a href="/tags#Image-ref"&gt;Image &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
+    &lt;a href="/tags#Coding standards-ref"&gt;Coding standards &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
     &lt;a href="/tags#Twitter-ref"&gt;Twitter &lt;span&gt;3&lt;/span&gt;&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
@@ -489,6 +502,7 @@
     &lt;li&gt;&lt;a href="/posts/2009/11/the-go-programming-language"&gt;The Go Programming Language&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2009/10/brainfucked-logo"&gt;Brainfucked Logo&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2009/10/odbc-hell"&gt;ODBC Hell&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/drafts/why-coding-standards-matter"&gt;Why Coding Standard matter&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2010/11/developers-shame-day-2010"&gt;Developers Shame Day: BB-Code selbstgemacht&lt;/a&gt;&lt;/li&gt;
   &lt;h3 class="anchor" id="Excel-ref"&gt;Excel&lt;/h3&gt;
     &lt;li&gt;&lt;a href="/posts/2006/12/excel-to-csv-with-python"&gt;Excel to CSV with Python&lt;/a&gt;&lt;/li&gt;
@@ -530,6 +544,10 @@
   &lt;h3 class="anchor" id="VBA-ref"&gt;VBA&lt;/h3&gt;
     &lt;li&gt;&lt;a href="/posts/2007/08/ms-access-let-lines-in-reports-grow-with-its-content"&gt;MS Access: Let lines in Reports grow with it's content&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2007/05/convert-fixed-length-column-to-excel"&gt;Convert fixed length column to Excel&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 class="anchor" id="OKFestival-ref"&gt;OKFestival&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2014/07/q-a-wall"&gt;Q&amp;amp;A Wall at the OKFestival in Berlin&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 class="anchor" id="Conferences-ref"&gt;Conferences&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2014/07/q-a-wall"&gt;Q&amp;amp;A Wall at the OKFestival in Berlin&lt;/a&gt;&lt;/li&gt;
   &lt;h3 class="anchor" id="MongoDB-ref"&gt;MongoDB&lt;/h3&gt;
     &lt;li&gt;&lt;a href="/posts/2014/02/usage-of-mongodb-with-a-spatial--and-geojson"&gt;Usage of MongoDB with a spatial index and GeoJSON&lt;/a&gt;&lt;/li&gt;
   &lt;h3 class="anchor" id="Open Data-ref"&gt;Open Data&lt;/h3&gt;
@@ -661,6 +679,8 @@
     &lt;li&gt;&lt;a href="/posts/2009/10/using-pidgin-with-msn-pecan"&gt;Using Pidgin with msn-pecan&lt;/a&gt;&lt;/li&gt;
   &lt;h3 class="anchor" id="Image-ref"&gt;Image&lt;/h3&gt;
     &lt;li&gt;&lt;a href="/posts/2009/12/mnmal-i-think-this-summarizes-everything"&gt;mnmal&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 class="anchor" id="Coding standards-ref"&gt;Coding standards&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/drafts/why-coding-standards-matter"&gt;Why Coding Standard matter&lt;/a&gt;&lt;/li&gt;
   &lt;h3 class="anchor" id="Twitter-ref"&gt;Twitter&lt;/h3&gt;
     &lt;li&gt;&lt;a href="/posts/2010/11/kino-langer-leben"&gt;Kino: L&#xE4;nger Leben&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2010/10/fazit-des-zurich-film-festivals-2010"&gt;Fazit des Zurich Film Festivals 2010&lt;/a&gt;&lt;/li&gt;
@@ -682,6 +702,70 @@
       <title>metaodi</title>
       <link>http://metaodi.ch/</link>
       <description>&lt;div class="posts"&gt;
+  &lt;h2 class="title"&gt;&lt;span class="date"&gt;08.07.2014&lt;/span&gt;&lt;a href="/posts/2014/07/q-a-wall"&gt;Q&amp;amp;A Wall at the OKFestival in Berlin&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;ul class="tag_box inline"&gt;
+  &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#OKFestival-ref"&gt;OKFestival &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;Some time ago the OKFestival asked for session proposals for this years conference in Berlin.
+I was at the conference last year in Geneva and enjoyed very much.
+It&amp;#39;s just a nice atmosphere to talk to people from divers backgrounds (I&amp;#39;ll get back to that in a minute).&lt;/p&gt;
+
+&lt;p&gt;Me and my colleagues from Liip thought about sessions for this years topic &amp;quot;Open Minds to Open Action&amp;quot;.
+The &lt;a href="http://2014.okfestival.org/programme/programme-faqs/"&gt;Programme FAQs&lt;/a&gt; gave us some hints, what it takes for a session to be selected:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Does the proposal advance the overall &lt;a href="http://2014.okfestival.org/programme/narrative-and-streams/"&gt;mission of the event&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Does the proposal offer participants a concrete, valuable outcome?&lt;/li&gt;
+&lt;li&gt;Does the proposal advance the conversation around its area of open?&lt;/li&gt;
+&lt;li&gt;Is the proposal interactive? &#x2013; &lt;em&gt;hint: slides and lectures strongly discouraged&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Does the proposal value or build on OKFestival&#x2019;s principles of inclusivity and diversity?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id="toc_0"&gt;Help newbies at the conference&lt;/h3&gt;
+
+&lt;p&gt;We talked about, how we can help people to connect to each other.
+We pictured a person that is interesting in the &amp;quot;Open Knowledge&amp;quot; topic but doesn&amp;#39;t known any people at the conference.
+The first steps are always the hardest.
+How do you find people that are interested in the same topics?
+Of course, one can attend sessions and try to talk to the people there.&lt;/p&gt;
+
+&lt;p&gt;But sometimes a little extra help is required.
+Some conference solve this problem by providing some kind of buddy system (e.g. the &lt;a href="http://events.ccc.de/2013/11/25/chaospatinnen/"&gt;Chaos Mentors at the 30C3&lt;/a&gt;).
+The buddies are volunteers that show newbies around, and show them the venue, introduce them to people and so on.
+This is great for large conferences but &lt;em&gt;might&lt;/em&gt; be an overkill for smaller ones.&lt;/p&gt;
+
+&lt;p&gt;As we were brainstorming about this we came up with the concept of a place, where everybody is encourages to write down his/her questions, so that others can pick that up and answer them right away or provide guidance.
+We first thought about doing this online using something like a twitter hashtag.
+But in the end, this is now why you went to a conference.
+You want to meet real people to talk face-to-face.&lt;/p&gt;
+
+&lt;h3 id="toc_1"&gt;Q&amp;amp;A Wall to the rescue&lt;/h3&gt;
+
+&lt;p&gt;So the challange is just, to find these people.
+To help making this asychronous, we developed the idea of a &lt;strong&gt;physical Q&amp;amp;A wall&lt;/strong&gt;.
+This wall will be at the venue and provides space to write down questions (think of sticky notes or whiteboards to directly write on).
+Like that, this wall provides a meeting point or to simply read and write questions.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;m very interested in how this wall is being used.
+Maybe Q&amp;amp;A is not the only thing that could be done with it.
+Everybody is invited to use that space.
+There are similar approaches to use such walls or boards to share news in local communities (&lt;a href="http://candychang.com/community-chalkboards/"&gt;&amp;quot;Community Chalkboards&amp;quot;&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Btw: the Q&amp;amp;A Wall is also listed as a &lt;a href="http://sched.co/1tx3TIy"&gt;session at the OKFestival&lt;/a&gt;!&lt;/p&gt;
+
+
+&lt;/div&gt;
+&lt;div class="posts"&gt;
   &lt;h2 class="title"&gt;&lt;span class="date"&gt;11.02.2014&lt;/span&gt;&lt;a href="/posts/2014/02/usage-of-mongodb-with-a-spatial--and-geojson"&gt;Usage of MongoDB with a spatial index and GeoJSON&lt;/a&gt;&lt;/h3&gt;
 
   &lt;ul class="tag_box inline"&gt;
@@ -972,7 +1056,7 @@ a repository, GitHub would solve the problem of zombie-projects with &#x2026;&lt
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Programming-ref"&gt;Programming &lt;span&gt;15&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Programming-ref"&gt;Programming &lt;span&gt;16&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#JavaScript-ref"&gt;JavaScript &lt;span&gt;4&lt;/span&gt;&lt;/a&gt;
@@ -1059,7 +1143,7 @@ Suter&lt;/a&gt;)&lt;/p&gt;
       &lt;a href="/tags#Unit Testing-ref"&gt;Unit Testing &lt;span&gt;4&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Programming-ref"&gt;Programming &lt;span&gt;15&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Programming-ref"&gt;Programming &lt;span&gt;16&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#QUnit-ref"&gt;QUnit &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
@@ -1265,126 +1349,6 @@ Sexualit&#xE4;t ist einfach eine Facette ihres (pubert&#xE4;ren) Charakters, der
 weder &#xFC;bertrieben wirkt noch ins L&#xE4;cherliche gezogen wird.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Leichte Erz&#xE4;hlweise, kurzweilige, gute Unterhaltung.&lt;/em&gt;&lt;/p&gt;
-
-
-&lt;/div&gt;
-&lt;div class="posts"&gt;
-  &lt;h2 class="title"&gt;&lt;span class="date"&gt;04.10.2011&lt;/span&gt;&lt;a href="/posts/2011/10/zff-2011-kurzes-aus-der-t-rkei"&gt;ZFF 2011: Kurzes aus der T&#xFC;rkei&lt;/a&gt;&lt;/h3&gt;
-
-  &lt;ul class="tag_box inline"&gt;
-  &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="/tags#Cinema-ref"&gt;Cinema &lt;span&gt;26&lt;/span&gt;&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="/tags#Zurich Film Festival-ref"&gt;Zurich Film Festival &lt;span&gt;25&lt;/span&gt;&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;p&gt;Die &lt;a href="http://www.kurzfilmtage.ch/"&gt;Internationlen Kurzfilmtage
-Winterthur&lt;/a&gt; zeigten &lt;a href="http://www.zurichfilmfestival.org/de//filme/3025/kurzes-aus-der-turkei/"&gt;Kurzfilme aus der
-T&#xFC;rkei&lt;/a&gt;,
-dem diesj&#xE4;hrigen Gastland des Zurich Film Festival. Die beiden Festivals
-haben schon die letzten Jahre eine Zusammenarbeit gepflegt.&lt;/p&gt;
-
-&lt;p&gt;__&lt;/p&gt;
-
-&lt;h2 id="toc_0"&gt;&lt;a href="http://www.imdb.com/title/tt0984004/"&gt;My Mother Learns Cinema&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href="http://www.imdb.com/title/tt0984004/"&gt;&lt;img src="http://media.tumblr.com/tumblr_lsjev5EprV1qa2z4q.jpg" alt="My Mother Learns
-Cinema" title="My Mother Learns Cinema"&gt;&lt;/a&gt;
-(Nesimi Yetik, 2007)&lt;/p&gt;
-
-&lt;p&gt;Eine kleine Ode ans Kino, als ersten Schritt um das Kino kennen zu
-lernen, lehrt ein Sohn seiner Mutter die korrekte Aussprache einiger
-Regisseur.&lt;/p&gt;
-
-&lt;p&gt;__&lt;/p&gt;
-
-&lt;h2 id="toc_1"&gt;&lt;a href="http://vimeo.com/24874194"&gt;Biskilet/Bicycle&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href="http://vimeo.com/24874194"&gt;&lt;img src="http://media.tumblr.com/tumblr_lsjgmehJbe1qa2z4q.jpg" alt="Biskilet/Bicycle" title="Biskilet/Bicycle"&gt;&lt;/a&gt;
-(Serhat Karaaslan, 2010)&lt;/p&gt;
-
-&lt;p&gt;Dieser Film, der ganz ohne gesprochene Sprache auskommt, erz&#xE4;hlt von
-einem Jungen, der gerne ein Fahrrad h&#xE4;tte. Alles was ihm noch fehlt ist
-ein Hinterrad&#x2026;&lt;/p&gt;
-
-&lt;p&gt;__&lt;/p&gt;
-
-&lt;h2 id="toc_2"&gt;&lt;a href="http://i-soldier-the-flag.blogspot.com/"&gt;I, Soldier&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href="http://i-soldier-the-flag.blogspot.com/"&gt;&lt;img src="http://media.tumblr.com/tumblr_lsjg6dBuRs1qa2z4q.png" alt="I,
-Soldier" title="I, Soldier"&gt;&lt;/a&gt;
-(Ergun K&#xF6;ken, 2007)&lt;/p&gt;
-
-&lt;p&gt;Ein ganz spezieller Film, der zum Teil aus 2 Perspektiven gefilmt wurde,
-wobei beide nebeneinander gezeigt werden. Die Aufnahmen sind w&#xE4;hrend den
-Feierlichkeiten zum Unabh&#xE4;ngigkeitstag der T&#xFC;rkei entstanden.&lt;/p&gt;
-
-&lt;p&gt;__&lt;/p&gt;
-
-&lt;h2 id="toc_3"&gt;&lt;a href="https://www.facebook.com/pages/DEM-MOMENT/139449276104220?sk=info"&gt;Dem (Moment)&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href="https://www.facebook.com/pages/DEM-MOMENT/139449276104220?sk=info"&gt;&lt;img src="http://media.tumblr.com/tumblr_lsjh5zqJdl1qa2z4q.png" alt="Dem
-(Moment)" title="Dem (Moment)"&gt;&lt;/a&gt;
-(Ayseg&#xFC;l Okul, 2010)&lt;/p&gt;
-
-&lt;p&gt;Ein Mann ist auf dem Weg zu einem Bewerbungsgespr&#xE4;ch, unterwegs holt er
-sich noch einen Kaffee und trifft dabei eine Frau, welche Minuten sp&#xE4;ter
-von einem Auto &#xFC;berfahren wird, Kurz darauf durchlebt der Mann die Szene
-nochmals, wird er diesmal das Schlimmste verhindern k&#xF6;nnen?&lt;/p&gt;
-
-&lt;p&gt;__&lt;/p&gt;
-
-&lt;h2 id="toc_4"&gt;&lt;a href="http://www.madebyozlemakin.com/2009/05/gemeinschaft.html"&gt;Gemeinschaft&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href="http://www.madebyozlemakin.com/2009/05/gemeinschaft.html"&gt;&lt;img src="http://media.tumblr.com/tumblr_lsjig5oDS01qa2z4q.jpg" alt="Gemeinschaft" title="Gemeinschaft"&gt;&lt;/a&gt;
-(&#xD6;zlem Akin, 2008)&lt;/p&gt;
-
-&lt;p&gt;In diesem kurzen Animationsfilm geht es darum als Gruppe eine unliebsame
-Person loszuwerden. Doch wie stellt man das an? Ein witziger
-Erkl&#xE4;rungsversuch.&lt;/p&gt;
-
-&lt;p&gt;__&lt;/p&gt;
-
-&lt;h2 id="toc_5"&gt;&lt;a href="http://www.feritkarahan.com/en/#/filmography/movies"&gt;Xewna Yusiv / Yusiv&#x2019;s Dream&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href="http://www.feritkarahan.com/en/#/filmography/movies"&gt;&lt;img src="http://media.tumblr.com/tumblr_lsjjulojfy1qa2z4q.png" alt="Xewna Yusiv / Yusiv&amp;#39;s
-Dream" title="Xewna Yusiv  / Yusiv&amp;#39;s Dream"&gt;&lt;/a&gt;
-(Ferit Karahan, 2011)&lt;/p&gt;
-
-&lt;p&gt;Yusiv f&#xFC;hrt ein normales Leben bis seine Idylle gest&#xF6;rt wird: er wird
-heimlicher Zeuge eines Mordes.&lt;/p&gt;
-
-&lt;p&gt;__&lt;/p&gt;
-
-&lt;h2 id="toc_6"&gt;&lt;a href="http://www.imdb.com/title/tt1515847/"&gt;K&#xF6;Y (Das Dorf)&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href="http://www.imdb.com/title/tt1515847/"&gt;&lt;img src="http://media.tumblr.com/tumblr_lsjiaxZetH1qa2z4q.jpg" alt="K&#xF6;Y (Das
-Dorf)" title="K&#xF6;Y (Das Dorf)"&gt;&lt;/a&gt;
-(Mustafa Dok, 2009)&lt;/p&gt;
-
-&lt;p&gt;Der zu Beginn sehr lustig-fr&#xF6;hliche Film zeigt einen Mann, der es sich
-zur Aufgabe gemacht hat, auf einem Schild jeweils die genau Anzahl
-Personen die sich im Dorf befinden zu notieren. Dieser Spass wird aber
-j&#xE4;h durchbrochen als das Milit&#xE4;r auftaucht.&lt;/p&gt;
-
-&lt;p&gt;__&lt;/p&gt;
-
-&lt;h2 id="toc_7"&gt;&lt;a href="http://www.distantdreams.de/filme/bende-sira-ich-bin-dran"&gt;Bende Sira (Ich bin dran)&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href="http://www.distantdreams.de/filme/bende-sira-ich-bin-dran"&gt;&lt;img src="http://media.tumblr.com/tumblr_lsjhzyzddN1qa2z4q.jpg" alt="Bende Sira (Ich bin
-dran)" title="Bende Sira (Ich bin dran)"&gt;&lt;/a&gt;
-(Ismet Erg&#xFC;n, 2007)&lt;/p&gt;
-
-&lt;p&gt;Zum Abschluss gab es noch ein wahres Highlight: eine Gruppe von Jungs
-liebt es ins Kino zu gehen. Da sie nicht gen&#xFC;gend Geld haben, gemeinsam
-zu gehen, legen sie jeweils zusammen und bestimmen wer gehen darf. Nach
-dem Filmbesuch, muss derjenige dann nat&#xFC;rlich ganz genau erz&#xE4;hlen was
-passiert ist. Der Film kommt ganz ohne Untertitel aus, die Bilder
-sprechen f&#xFC;r sich. Die Jungs k&#xF6;nnen sehr bildgewaltig von ihren
-Kinoerlebnissen berichten. Ein Schmaus!&lt;/p&gt;
 
 
 &lt;/div&gt;

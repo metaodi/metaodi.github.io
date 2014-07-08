@@ -4,7 +4,61 @@
     <title>metaodi</title>
     <description>metaodi</description>
     <link>http://metaodi.ch</link>
-    <pubDate>11.02.2014</pubDate>
+    <pubDate>08.07.2014</pubDate>
+    <item>
+      <title>Q&amp;A Wall at the OKFestival in Berlin</title>
+      <link>http://metaodi.ch/posts/2014/07/q-a-wall</link>
+      <pubDate>08.07.2014</pubDate>
+      <description>&lt;p&gt;Some time ago the OKFestival asked for session proposals for this years conference in Berlin.
+I was at the conference last year in Geneva and enjoyed very much.
+It&amp;#39;s just a nice atmosphere to talk to people from divers backgrounds (I&amp;#39;ll get back to that in a minute).&lt;/p&gt;
+
+&lt;p&gt;Me and my colleagues from Liip thought about sessions for this years topic &amp;quot;Open Minds to Open Action&amp;quot;.
+The &lt;a href="http://2014.okfestival.org/programme/programme-faqs/"&gt;Programme FAQs&lt;/a&gt; gave us some hints, what it takes for a session to be selected:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Does the proposal advance the overall &lt;a href="http://2014.okfestival.org/programme/narrative-and-streams/"&gt;mission of the event&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Does the proposal offer participants a concrete, valuable outcome?&lt;/li&gt;
+&lt;li&gt;Does the proposal advance the conversation around its area of open?&lt;/li&gt;
+&lt;li&gt;Is the proposal interactive? &#x2013; &lt;em&gt;hint: slides and lectures strongly discouraged&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Does the proposal value or build on OKFestival&#x2019;s principles of inclusivity and diversity?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id="toc_0"&gt;Help newbies at the conference&lt;/h3&gt;
+
+&lt;p&gt;We talked about, how we can help people to connect to each other.
+We pictured a person that is interesting in the &amp;quot;Open Knowledge&amp;quot; topic but doesn&amp;#39;t known any people at the conference.
+The first steps are always the hardest.
+How do you find people that are interested in the same topics?
+Of course, one can attend sessions and try to talk to the people there.&lt;/p&gt;
+
+&lt;p&gt;But sometimes a little extra help is required.
+Some conference solve this problem by providing some kind of buddy system (e.g. the &lt;a href="http://events.ccc.de/2013/11/25/chaospatinnen/"&gt;Chaos Mentors at the 30C3&lt;/a&gt;).
+The buddies are volunteers that show newbies around, and show them the venue, introduce them to people and so on.
+This is great for large conferences but &lt;em&gt;might&lt;/em&gt; be an overkill for smaller ones.&lt;/p&gt;
+
+&lt;p&gt;As we were brainstorming about this we came up with the concept of a place, where everybody is encourages to write down his/her questions, so that others can pick that up and answer them right away or provide guidance.
+We first thought about doing this online using something like a twitter hashtag.
+But in the end, this is now why you went to a conference.
+You want to meet real people to talk face-to-face.&lt;/p&gt;
+
+&lt;h3 id="toc_1"&gt;Q&amp;amp;A Wall to the rescue&lt;/h3&gt;
+
+&lt;p&gt;So the challange is just, to find these people.
+To help making this asychronous, we developed the idea of a &lt;strong&gt;physical Q&amp;amp;A wall&lt;/strong&gt;.
+This wall will be at the venue and provides space to write down questions (think of sticky notes or whiteboards to directly write on).
+Like that, this wall provides a meeting point or to simply read and write questions.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;m very interested in how this wall is being used.
+Maybe Q&amp;amp;A is not the only thing that could be done with it.
+Everybody is invited to use that space.
+There are similar approaches to use such walls or boards to share news in local communities (&lt;a href="http://candychang.com/community-chalkboards/"&gt;&amp;quot;Community Chalkboards&amp;quot;&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Btw: the Q&amp;amp;A Wall is also listed as a &lt;a href="http://sched.co/1tx3TIy"&gt;session at the OKFestival&lt;/a&gt;!&lt;/p&gt;
+</description>
+    </item>
     <item>
       <title>Usage of MongoDB with a spatial index and GeoJSON</title>
       <link>http://metaodi.ch/posts/2014/02/usage-of-mongodb-with-a-spatial--and-geojson</link>
@@ -2280,40 +2334,6 @@ connect by level &amp;lt;= N
 </description>
     </item>
     <item>
-      <title>Using Pidgin with msn-pecan</title>
-      <link>http://metaodi.ch/posts/2009/10/using-pidgin-with-msn-pecan</link>
-      <pubDate>23.10.2009</pubDate>
-      <description>&lt;p&gt;Today when I was starting pidgin I could connect to ICQ, but when trying
-to connect to MSN Pidgin comes up with:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;unable to retrieve MSN address book
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;So I was googeling a little bit and found a bug @ pidgin from yesterday.
-The problem is not pidgin, although the official MSN client and some
-others clients still work (e.g. meebo). There are several different
-versions of the MSN protocol, pidgin is using MSNP15. And exactly this
-protocol is currently not working on the server side @ Microsoft (as it
-seems).&lt;/p&gt;
-
-&lt;p&gt;Other clients are not affected as they switch to older version of the
-protocol, which are still working.&lt;/p&gt;
-
-&lt;p&gt;Because I don&#x2019;t want to wait until MS fixed the problem, I use a quick
-workaround. As an alternative you can install &lt;code&gt;msn-pecan&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;With Gentoo this works (after adding &#x201C;x11-plugins/pidgin-msn-pecan
-~x86&#x201D; to &lt;code&gt;/etc/portage/package.keywords&lt;/code&gt;):&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# emerge pidgin-msn-pecan
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;After the installation just restart Pidgin go to &#x201C;Accounts&#x201D; -&amp;gt; &#x201C;Manage
-Accounts&#x201D;. Select your MSN-Account, click &#x201C;Modify&#x201D;. Choose &#x201C;WLM&#x201D; as
-protocol. Save and reconnect your MSN account. Works like a charm!&lt;/p&gt;
-</description>
-    </item>
-    <item>
       <title>dvd::rip and gentoo</title>
       <link>http://metaodi.ch/posts/2009/10/dvd-rip-and-gentoo</link>
       <pubDate>23.10.2009</pubDate>
@@ -2349,6 +2369,40 @@ imagemagick in /etc/portage/package.use and re-emerged imagemagick.&lt;/p&gt;
 &lt;p&gt;Another problems was that transcode was missing the &#x201C;mp3&#x201D; USE-flag.&lt;/p&gt;
 
 &lt;p&gt;Since then dvd::rip just works!&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Using Pidgin with msn-pecan</title>
+      <link>http://metaodi.ch/posts/2009/10/using-pidgin-with-msn-pecan</link>
+      <pubDate>23.10.2009</pubDate>
+      <description>&lt;p&gt;Today when I was starting pidgin I could connect to ICQ, but when trying
+to connect to MSN Pidgin comes up with:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;unable to retrieve MSN address book
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So I was googeling a little bit and found a bug @ pidgin from yesterday.
+The problem is not pidgin, although the official MSN client and some
+others clients still work (e.g. meebo). There are several different
+versions of the MSN protocol, pidgin is using MSNP15. And exactly this
+protocol is currently not working on the server side @ Microsoft (as it
+seems).&lt;/p&gt;
+
+&lt;p&gt;Other clients are not affected as they switch to older version of the
+protocol, which are still working.&lt;/p&gt;
+
+&lt;p&gt;Because I don&#x2019;t want to wait until MS fixed the problem, I use a quick
+workaround. As an alternative you can install &lt;code&gt;msn-pecan&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;With Gentoo this works (after adding &#x201C;x11-plugins/pidgin-msn-pecan
+~x86&#x201D; to &lt;code&gt;/etc/portage/package.keywords&lt;/code&gt;):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# emerge pidgin-msn-pecan
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;After the installation just restart Pidgin go to &#x201C;Accounts&#x201D; -&amp;gt; &#x201C;Manage
+Accounts&#x201D;. Select your MSN-Account, click &#x201C;Modify&#x201D;. Choose &#x201C;WLM&#x201D; as
+protocol. Save and reconnect your MSN account. Works like a charm!&lt;/p&gt;
 </description>
     </item>
     <item>
