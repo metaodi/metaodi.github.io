@@ -20,9 +20,9 @@ The [Programme FAQs](http://2014.okfestival.org/programme/programme-faqs/) gave 
 
 ### Help newbies at the conference
 
-We talked about, how we can help people to connect to each other.
-We pictured a person that is interesting in the "Open Knowledge" topic but doesn't known any people at the conference.
-The first steps are always the hardest.
+We asked ourselves, how we can help people to connect to each other?
+We pictured a person that is interesting in the "Open Knowledge" topic but doesn't know any people at the conference.
+The first step is always the hardest.
 How do you find people that are interested in the same topics?
 Of course, one can attend sessions and try to talk to the people there.
 
