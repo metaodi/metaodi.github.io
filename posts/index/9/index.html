@@ -74,6 +74,35 @@
         <div class="row-fluid">
   <div class="span12">
       <div class="posts">
+        <h2 class="title"><span class="date">07.11.2006</span><a href="/posts/2006/11/delete-duplicate-records-with-orcle">Delete duplicate records with Orcle</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Oracle-ref">Oracle <span>6</span></a>
+          </li>
+          <li>
+            <a href="/tags#SQL-ref">SQL <span>6</span></a>
+          </li>
+        </ul>
+
+        <p>Don’t ask me why I needed to do that, but I had a lot (about 14 Mio.)
+duplicate records in a table.</p>
+
+<pre><code>DELETE FROM our_table
+WHERE rowid not in
+(SELECT MIN(rowid)
+FROM our_table
+GROUP BY column1, column2, column3... ;
+</code></pre>
+
+<p>helped me out. (thanks to <a href="http://www.devx.com"></a><a href="http://www.devx.com">www.devx.com</a>)</p>
+
+<p>Next time I write my queries to filter those out before inserting them…</p>
+
+
+      </div>
+      <div class="posts">
         <h2 class="title"><span class="date">02.11.2006</span><a href="/posts/2006/11/pisa-test">PISA-Test</a> </h3>
 
         <ul class="tag_box">

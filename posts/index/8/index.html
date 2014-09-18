@@ -74,6 +74,78 @@
         <div class="row-fluid">
   <div class="span12">
       <div class="posts">
+        <h2 class="title"><span class="date">21.10.2009</span><a href="/posts/2009/10/odbc-hell">ODBC Hell</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Oracle-ref">Oracle <span>6</span></a>
+          </li>
+          <li>
+            <a href="/tags#PHP-ref">PHP <span>3</span></a>
+          </li>
+          <li>
+            <a href="/tags#PL/SQL-ref">PL/SQL <span>2</span></a>
+          </li>
+          <li>
+            <a href="/tags#SQL-ref">SQL <span>6</span></a>
+          </li>
+          <li>
+            <a href="/tags#Programming-ref">Programming <span>16</span></a>
+          </li>
+        </ul>
+
+        <p>It is so easy: I have a testing environement where an OCI8-Driver is
+installed. Therefore I can use the OCI-Function if PHP to Bind
+Variables, get return values and everything is just fine.</p>
+
+<p>Then on the production I needed to switch to ODBC, and thought: Easy
+just write this stuff for ODBC and you’re done.</p>
+
+<p>Unfortunately the driver does simply not support return values of
+functions. The problem is, that there are updates in my function, so I
+can’t solve the problem using:</p>
+
+<pre><code>select function_name(param1,param2,param3,...) from dual
+</code></pre>
+
+<p>After giving up my return value, I wanted to run the function like that
+(in TOAD this is no problem):</p>
+
+<pre><code>begin :retval := function_name(?,?,?,?); end;
+</code></pre>
+
+<p>Afterwards you are giving an array of parameter to the PHP function
+odbc_execute, and this should work alright.</p>
+
+<p>I tried hundrets of possibilities to run my function. Finally I gave up,
+made a procdure (which has no return value and vor sure ODBC has no
+support for OUT or INOUT-Vars). I resigned to have a return value (which
+should only be the number of updated rows).</p>
+
+<p>I tried: begin procedure_name(?,?,?,?); end;</p>
+
+<p>There was no reaction. My last try:</p>
+
+<pre><code>call procedure_name(param1,param2,param3,..);
+</code></pre>
+
+<p>This woked! So I need to use “call” and not using the parameter-array of
+ODBC but giving it directly into the call. I’m happy to get it working,
+but this costs me one day.</p>
+
+<p>Is there any really working ODBC-Driver for PHP?</p>
+
+<p>I gave up.</p>
+
+<p>PS: Yes I know, there is a solution for my return value. In my procedure
+I could write the value into a temporary table. But I rather want to use
+a good driver (like the OCI8) than using such a temporary solution. I’m
+open to new ways of doing this.</p>
+
+
+      </div>
+      <div class="posts">
         <h2 class="title"><span class="date">21.10.2009</span><a href="/posts/2009/10/brainfucked-logo">Brainfucked Logo</a> </h3>
 
         <ul class="tag_box">
@@ -888,35 +960,6 @@ your script or edit it that it only takes .sql files (tip:
 glob.glob(‘*.sql’)). The start-script itself is excluded but the python
 script will be included (can easily be made excluded as well). After the
 loop the file gets closed and that’s it.</p>
-
-
-      </div>
-      <div class="posts">
-        <h2 class="title"><span class="date">07.11.2006</span><a href="/posts/2006/11/delete-duplicate-records-with-orcle">Delete duplicate records with Orcle</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#Oracle-ref">Oracle <span>6</span></a>
-          </li>
-          <li>
-            <a href="/tags#SQL-ref">SQL <span>6</span></a>
-          </li>
-        </ul>
-
-        <p>Don’t ask me why I needed to do that, but I had a lot (about 14 Mio.)
-duplicate records in a table.</p>
-
-<pre><code>DELETE FROM our_table
-WHERE rowid not in
-(SELECT MIN(rowid)
-FROM our_table
-GROUP BY column1, column2, column3... ;
-</code></pre>
-
-<p>helped me out. (thanks to <a href="http://www.devx.com"></a><a href="http://www.devx.com">www.devx.com</a>)</p>
-
-<p>Next time I write my queries to filter those out before inserting them…</p>
 
 
       </div>

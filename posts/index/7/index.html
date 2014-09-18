@@ -74,6 +74,58 @@
         <div class="row-fluid">
   <div class="span12">
       <div class="posts">
+        <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/zusammengesetzte-w-rter">Zusammengesetzte Wörter</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#German-ref">German <span>19</span></a>
+          </li>
+          <li>
+            <a href="/tags#Text-ref">Text <span>5</span></a>
+          </li>
+        </ul>
+
+        <p>Zur Zeit ist wieder ein Deutsch-Groove in mir. Ich weiss nicht ob dies
+schubweise kommt - was am ehesten mit einer Krankheit zu vergleichen
+wäre - oder ob es gar ein Dauerzustand ist, der immer in mir schlummert
+und zu gegebenen Zeiten ausbricht. Dies wäre wohl eine … äähm …
+chronische Krankheit?</p>
+
+<p>Egal, jedenfalls fällt es mir wieder vermehrt auf, seitdem ich
+intensiver mit unseren Deutschen Kollegen zusammenarbeite. Ich finde es
+witzig mit welchen schweizerdeutschen Ausdrücken sie Mühe haben (z.B.
+dass eine Wähe ein Kuchen ist, klingt eklig, ist aber so. Und is(s)t
+dazu noch lecker :) ).</p>
+
+<p>Umgekehrt ist es so, dass mich unsere nördlichen Nachbarn immer wieder
+mit zusammengesetzten Wortgefechtsfetzen auszuschalten versuchen. Sei es
+ein “Wortspiel” (jemand beginnt mit einem Wort, an das ein Neues gehängt
+wird, welches als Grundlage für das nächste dient: Hausdach - Dachziegel
+- Ziegelstein - Steinschleuder - Schleudersitz - Sitzplatz - Platzregen
+[..] usw.). Welch ein Spass.</p>
+
+<p>Während sonst viele im Business mit Anglizsmen um sich werfen, um ihre
+Hippheit zu manifestieren, gelingt es den erwähnten Kollegen sich davon
+zu befreien und erfrischend unverfroren einen Koloss eines Wortes
+einzuwerfen. Entscheidet selbst, was klingt besser:</p>
+
+<ul>
+<li>  Kundenstellvertreterzuteilungsveränderung</li>
+</ul>
+
+<p>oder</p>
+
+<ul>
+<li>  Change beim Substitute Customer Responsible</li>
+</ul>
+
+<p>Feel free. Oder sollte ich sagen: Hier herrscht
+Selbstentscheidungsfreiheit.</p>
+
+
+      </div>
+      <div class="posts">
         <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/snowboard-garage-vs-fischer-bettwaren">Snowboard Garage vs. Fischer Bettwaren</a> </h3>
 
         <ul class="tag_box">
@@ -114,6 +166,50 @@ connect by level &lt;= N
 
 <p>Found at:
 <a href="http://awads.net/wp/2005/07/01/generating-n-rows-from-dual/"></a><a href="http://awads.net/wp/2005/07/01/generating-n-rows-from-dual/">http://awads.net/wp/2005/07/01/generating-n-rows-from-dual/</a></p>
+
+
+      </div>
+      <div class="posts">
+        <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/using-pidgin-with-msn-pecan">Using Pidgin with msn-pecan</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#MSN-ref">MSN <span>1</span></a>
+          </li>
+          <li>
+            <a href="/tags#Linux-ref">Linux <span>8</span></a>
+          </li>
+        </ul>
+
+        <p>Today when I was starting pidgin I could connect to ICQ, but when trying
+to connect to MSN Pidgin comes up with:</p>
+
+<pre><code>unable to retrieve MSN address book
+</code></pre>
+
+<p>So I was googeling a little bit and found a bug @ pidgin from yesterday.
+The problem is not pidgin, although the official MSN client and some
+others clients still work (e.g. meebo). There are several different
+versions of the MSN protocol, pidgin is using MSNP15. And exactly this
+protocol is currently not working on the server side @ Microsoft (as it
+seems).</p>
+
+<p>Other clients are not affected as they switch to older version of the
+protocol, which are still working.</p>
+
+<p>Because I don’t want to wait until MS fixed the problem, I use a quick
+workaround. As an alternative you can install <code>msn-pecan</code>.</p>
+
+<p>With Gentoo this works (after adding “x11-plugins/pidgin-msn-pecan
+~x86” to <code>/etc/portage/package.keywords</code>):</p>
+
+<pre><code># emerge pidgin-msn-pecan
+</code></pre>
+
+<p>After the installation just restart Pidgin go to “Accounts” -&gt; “Manage
+Accounts”. Select your MSN-Account, click “Modify”. Choose “WLM” as
+protocol. Save and reconnect your MSN account. Works like a charm!</p>
 
 
       </div>
@@ -159,50 +255,6 @@ imagemagick in /etc/portage/package.use and re-emerged imagemagick.</p>
 <p>Another problems was that transcode was missing the “mp3” USE-flag.</p>
 
 <p>Since then dvd::rip just works!</p>
-
-
-      </div>
-      <div class="posts">
-        <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/using-pidgin-with-msn-pecan">Using Pidgin with msn-pecan</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#MSN-ref">MSN <span>1</span></a>
-          </li>
-          <li>
-            <a href="/tags#Linux-ref">Linux <span>8</span></a>
-          </li>
-        </ul>
-
-        <p>Today when I was starting pidgin I could connect to ICQ, but when trying
-to connect to MSN Pidgin comes up with:</p>
-
-<pre><code>unable to retrieve MSN address book
-</code></pre>
-
-<p>So I was googeling a little bit and found a bug @ pidgin from yesterday.
-The problem is not pidgin, although the official MSN client and some
-others clients still work (e.g. meebo). There are several different
-versions of the MSN protocol, pidgin is using MSNP15. And exactly this
-protocol is currently not working on the server side @ Microsoft (as it
-seems).</p>
-
-<p>Other clients are not affected as they switch to older version of the
-protocol, which are still working.</p>
-
-<p>Because I don’t want to wait until MS fixed the problem, I use a quick
-workaround. As an alternative you can install <code>msn-pecan</code>.</p>
-
-<p>With Gentoo this works (after adding “x11-plugins/pidgin-msn-pecan
-~x86” to <code>/etc/portage/package.keywords</code>):</p>
-
-<pre><code># emerge pidgin-msn-pecan
-</code></pre>
-
-<p>After the installation just restart Pidgin go to “Accounts” -&gt; “Manage
-Accounts”. Select your MSN-Account, click “Modify”. Choose “WLM” as
-protocol. Save and reconnect your MSN account. Works like a charm!</p>
 
 
       </div>
@@ -362,78 +414,6 @@ command line magic.</p>
 command ended with a broken pipe. I used <code>-type d</code> to reduce the amount
 of arguments, the disadvantage is that directories are not necessary the
 same age as the files within.</p>
-
-
-      </div>
-      <div class="posts">
-        <h2 class="title"><span class="date">21.10.2009</span><a href="/posts/2009/10/odbc-hell">ODBC Hell</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#Oracle-ref">Oracle <span>6</span></a>
-          </li>
-          <li>
-            <a href="/tags#PHP-ref">PHP <span>3</span></a>
-          </li>
-          <li>
-            <a href="/tags#PL/SQL-ref">PL/SQL <span>2</span></a>
-          </li>
-          <li>
-            <a href="/tags#SQL-ref">SQL <span>6</span></a>
-          </li>
-          <li>
-            <a href="/tags#Programming-ref">Programming <span>16</span></a>
-          </li>
-        </ul>
-
-        <p>It is so easy: I have a testing environement where an OCI8-Driver is
-installed. Therefore I can use the OCI-Function if PHP to Bind
-Variables, get return values and everything is just fine.</p>
-
-<p>Then on the production I needed to switch to ODBC, and thought: Easy
-just write this stuff for ODBC and you’re done.</p>
-
-<p>Unfortunately the driver does simply not support return values of
-functions. The problem is, that there are updates in my function, so I
-can’t solve the problem using:</p>
-
-<pre><code>select function_name(param1,param2,param3,...) from dual
-</code></pre>
-
-<p>After giving up my return value, I wanted to run the function like that
-(in TOAD this is no problem):</p>
-
-<pre><code>begin :retval := function_name(?,?,?,?); end;
-</code></pre>
-
-<p>Afterwards you are giving an array of parameter to the PHP function
-odbc_execute, and this should work alright.</p>
-
-<p>I tried hundrets of possibilities to run my function. Finally I gave up,
-made a procdure (which has no return value and vor sure ODBC has no
-support for OUT or INOUT-Vars). I resigned to have a return value (which
-should only be the number of updated rows).</p>
-
-<p>I tried: begin procedure_name(?,?,?,?); end;</p>
-
-<p>There was no reaction. My last try:</p>
-
-<pre><code>call procedure_name(param1,param2,param3,..);
-</code></pre>
-
-<p>This woked! So I need to use “call” and not using the parameter-array of
-ODBC but giving it directly into the call. I’m happy to get it working,
-but this costs me one day.</p>
-
-<p>Is there any really working ODBC-Driver for PHP?</p>
-
-<p>I gave up.</p>
-
-<p>PS: Yes I know, there is a solution for my return value. In my procedure
-I could write the value into a temporary table. But I rather want to use
-a good driver (like the OCI8) than using such a temporary solution. I’m
-open to new ways of doing this.</p>
 
 
       </div>

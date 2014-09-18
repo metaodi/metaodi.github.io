@@ -4,7 +4,29 @@
     <title>metaodi</title>
     <description>metaodi</description>
     <link>http://metaodi.ch</link>
-    <pubDate>08.07.2014</pubDate>
+    <pubDate>19.09.2014</pubDate>
+    <item>
+      <title>Workshop about Open Data Technologies</title>
+      <link>http://metaodi.ch/posts/2014/09/open-data-workshop</link>
+      <pubDate>18.09.2014</pubDate>
+      <description>&lt;p&gt;At todays &lt;a href="http://opendata.ch/2014"&gt;Opendata.ch Conference 2014&lt;/a&gt; I had the opportunity to talk about technologies around the topic of open data.
+I gave a quick overview over different approaches that are being used including &lt;a href="http://ckan.org/"&gt;CKAN&lt;/a&gt;, &lt;a href="http://thedatatank.com"&gt;The DataTank&lt;/a&gt; and &lt;a href="http://centraldedados.pt/"&gt;Data Central&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;On the technical side a talked about &lt;a href="http://data.okfn.org/standards"&gt;(Tabular) Data Packages&lt;/a&gt; and a little bit about &lt;a href="http://json-ld.org/"&gt;JSON-LD&lt;/a&gt;.
+Did you know, that &lt;a href="https://developers.google.com/gmail/actions/reference/formats/json-ld"&gt;GMail is already using it&lt;/a&gt;?.&lt;/p&gt;
+
+&lt;p&gt;Here are my slides (German only, sorry!):&lt;/p&gt;
+
+&lt;iframe src="//slides.com/odi/opendatatech/embed" width="576" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;In the discussions that followed we talked about why we need Open Data portals (&lt;strong&gt;conclusion: mainly for the PR&lt;/strong&gt;) and if
+we prefer to wait until a data provider &amp;quot;cleaned&amp;quot; it&amp;#39;s data or rather want it fast, so that the community can help to clean it up (&lt;strong&gt;consensus: quick and dirty&lt;/strong&gt;).&lt;/p&gt;
+
+&lt;p&gt;For me, today was a really fun conferences. I met lots of new people, could catch up with already familiar ones and listen to a lot of great talks.&lt;/p&gt;
+</description>
+    </item>
     <item>
       <title>Q&amp;A Wall at the OKFestival in Berlin</title>
       <link>http://metaodi.ch/posts/2014/07/q-a-wall</link>
@@ -2334,6 +2356,40 @@ connect by level &amp;lt;= N
 </description>
     </item>
     <item>
+      <title>Using Pidgin with msn-pecan</title>
+      <link>http://metaodi.ch/posts/2009/10/using-pidgin-with-msn-pecan</link>
+      <pubDate>23.10.2009</pubDate>
+      <description>&lt;p&gt;Today when I was starting pidgin I could connect to ICQ, but when trying
+to connect to MSN Pidgin comes up with:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;unable to retrieve MSN address book
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So I was googeling a little bit and found a bug @ pidgin from yesterday.
+The problem is not pidgin, although the official MSN client and some
+others clients still work (e.g. meebo). There are several different
+versions of the MSN protocol, pidgin is using MSNP15. And exactly this
+protocol is currently not working on the server side @ Microsoft (as it
+seems).&lt;/p&gt;
+
+&lt;p&gt;Other clients are not affected as they switch to older version of the
+protocol, which are still working.&lt;/p&gt;
+
+&lt;p&gt;Because I don&#x2019;t want to wait until MS fixed the problem, I use a quick
+workaround. As an alternative you can install &lt;code&gt;msn-pecan&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;With Gentoo this works (after adding &#x201C;x11-plugins/pidgin-msn-pecan
+~x86&#x201D; to &lt;code&gt;/etc/portage/package.keywords&lt;/code&gt;):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# emerge pidgin-msn-pecan
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;After the installation just restart Pidgin go to &#x201C;Accounts&#x201D; -&amp;gt; &#x201C;Manage
+Accounts&#x201D;. Select your MSN-Account, click &#x201C;Modify&#x201D;. Choose &#x201C;WLM&#x201D; as
+protocol. Save and reconnect your MSN account. Works like a charm!&lt;/p&gt;
+</description>
+    </item>
+    <item>
       <title>dvd::rip and gentoo</title>
       <link>http://metaodi.ch/posts/2009/10/dvd-rip-and-gentoo</link>
       <pubDate>23.10.2009</pubDate>
@@ -2369,40 +2425,6 @@ imagemagick in /etc/portage/package.use and re-emerged imagemagick.&lt;/p&gt;
 &lt;p&gt;Another problems was that transcode was missing the &#x201C;mp3&#x201D; USE-flag.&lt;/p&gt;
 
 &lt;p&gt;Since then dvd::rip just works!&lt;/p&gt;
-</description>
-    </item>
-    <item>
-      <title>Using Pidgin with msn-pecan</title>
-      <link>http://metaodi.ch/posts/2009/10/using-pidgin-with-msn-pecan</link>
-      <pubDate>23.10.2009</pubDate>
-      <description>&lt;p&gt;Today when I was starting pidgin I could connect to ICQ, but when trying
-to connect to MSN Pidgin comes up with:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;unable to retrieve MSN address book
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;So I was googeling a little bit and found a bug @ pidgin from yesterday.
-The problem is not pidgin, although the official MSN client and some
-others clients still work (e.g. meebo). There are several different
-versions of the MSN protocol, pidgin is using MSNP15. And exactly this
-protocol is currently not working on the server side @ Microsoft (as it
-seems).&lt;/p&gt;
-
-&lt;p&gt;Other clients are not affected as they switch to older version of the
-protocol, which are still working.&lt;/p&gt;
-
-&lt;p&gt;Because I don&#x2019;t want to wait until MS fixed the problem, I use a quick
-workaround. As an alternative you can install &lt;code&gt;msn-pecan&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;With Gentoo this works (after adding &#x201C;x11-plugins/pidgin-msn-pecan
-~x86&#x201D; to &lt;code&gt;/etc/portage/package.keywords&lt;/code&gt;):&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# emerge pidgin-msn-pecan
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;After the installation just restart Pidgin go to &#x201C;Accounts&#x201D; -&amp;gt; &#x201C;Manage
-Accounts&#x201D;. Select your MSN-Account, click &#x201C;Modify&#x201D;. Choose &#x201C;WLM&#x201D; as
-protocol. Save and reconnect your MSN account. Works like a charm!&lt;/p&gt;
 </description>
     </item>
     <item>
