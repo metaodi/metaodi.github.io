@@ -20,3 +20,8 @@ In the discussions that followed we talked about why we need Open Data portals (
 we prefer to wait until a data provider "cleaned" it's data or rather want it fast, so that the community can help to clean it up (**consensus: quick and dirty**).
 
 For me, today was a really fun conferences. I met lots of new people, could catch up with already familiar ones and listen to a lot of great talks.
+
+**Update:** Now the [videos of the conference](https://www.youtube.com/playlist?list=PLofS3lNZcksf4GROXzrAzSdXv7T10nGhX) have been published.
+My session has not been recorded, but at the end I could quickly present our findings (again German only):
+
+<iframe width="560" height="315" src="//www.youtube-nocookie.com/embed/-Tg22pvHTKQ?rel=0&start=550" frameborder="0" allowfullscreen></iframe>
