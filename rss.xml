@@ -4,7 +4,7 @@
     <title>metaodi</title>
     <description>metaodi</description>
     <link>http://metaodi.ch</link>
-    <pubDate>03.10.2014</pubDate>
+    <pubDate>01.01.2015</pubDate>
     <item>
       <title>About me</title>
       <link>http://metaodi.ch/about</link>
@@ -23,6 +23,11 @@
       <title>Archive</title>
       <link>http://metaodi.ch/archive</link>
       <description>
+  &lt;h2&gt;2015&lt;/h2&gt;
+    &lt;h3&gt;January&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;01.01.2015&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2015/01/openerz"&gt;Why and how I created the OpenERZ API&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
   &lt;h2&gt;2014&lt;/h2&gt;
     &lt;h3&gt;September&lt;/h3&gt;
     &lt;ul&gt;
@@ -281,7 +286,22 @@
     &lt;a href="/tags#Excel-ref"&gt;Excel &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;a href="/tags#CSV-ref"&gt;CSV &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
+    &lt;a href="/tags#CSV-ref"&gt;CSV &lt;span&gt;3&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;4&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#ERZ-ref"&gt;ERZ &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#API-ref"&gt;API &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#JavaScript-ref"&gt;JavaScript &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#MongoDB-ref"&gt;MongoDB &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;a href="/tags#OpenStreetMap-ref"&gt;OpenStreetMap &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
@@ -297,9 +317,6 @@
   &lt;/li&gt;
   &lt;li&gt;
     &lt;a href="/tags#Unit Testing-ref"&gt;Unit Testing &lt;span&gt;4&lt;/span&gt;&lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;a href="/tags#JavaScript-ref"&gt;JavaScript &lt;span&gt;4&lt;/span&gt;&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;a href="/tags#QUnit-ref"&gt;QUnit &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
@@ -324,12 +341,6 @@
   &lt;/li&gt;
   &lt;li&gt;
     &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;a href="/tags#MongoDB-ref"&gt;MongoDB &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;3&lt;/span&gt;&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;a href="/tags#GIS-ref"&gt;GIS &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
@@ -513,7 +524,26 @@
     &lt;li&gt;&lt;a href="/posts/2007/05/convert-fixed-length-column-to-excel"&gt;Convert fixed length column to Excel&lt;/a&gt;&lt;/li&gt;
   &lt;h3 class="anchor" id="CSV-ref"&gt;CSV&lt;/h3&gt;
     &lt;li&gt;&lt;a href="/posts/2006/12/excel-to-csv-with-python"&gt;Excel to CSV with Python&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2015/01/openerz"&gt;Why and how I created the OpenERZ API&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2005/10/csv-seperator-character"&gt;CSV seperator character&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 class="anchor" id="Open Data-ref"&gt;Open Data&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2015/01/openerz"&gt;Why and how I created the OpenERZ API&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2014/02/usage-of-mongodb-with-a-spatial--and-geojson"&gt;Usage of MongoDB with a spatial index and GeoJSON&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2014/09/open-data-workshop"&gt;Workshop about Open Data Technologies&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2014/01/stop-making-stupid-open-data-contests"&gt;Stop making stupid Open Data contests!&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 class="anchor" id="ERZ-ref"&gt;ERZ&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2015/01/openerz"&gt;Why and how I created the OpenERZ API&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 class="anchor" id="API-ref"&gt;API&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2015/01/openerz"&gt;Why and how I created the OpenERZ API&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 class="anchor" id="JavaScript-ref"&gt;JavaScript&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2015/01/openerz"&gt;Why and how I created the OpenERZ API&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2012/05/fiddle-around-code"&gt;Fiddle around (code)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2012/03/setup-javascript-unit-testing-using-qunit-phantomjs"&gt;Setup JavaScript unit testing using QUnit, PhantomJS and Jenkins on Amazon EC2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2011/06/zum-selektierten-wert-springen"&gt;Zum selektierten Wert springen (IE Bug)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2011/09/team-filter-f-r-hockeytoto-ch"&gt;Team-Filter f&#xFC;r hockeytoto.ch&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 class="anchor" id="MongoDB-ref"&gt;MongoDB&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2015/01/openerz"&gt;Why and how I created the OpenERZ API&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2014/02/usage-of-mongodb-with-a-spatial--and-geojson"&gt;Usage of MongoDB with a spatial index and GeoJSON&lt;/a&gt;&lt;/li&gt;
   &lt;h3 class="anchor" id="OpenStreetMap-ref"&gt;OpenStreetMap&lt;/h3&gt;
     &lt;li&gt;&lt;a href="/posts/2012/10/insert-coin-to-play-can-gaming-concepts-help"&gt;Insert Coin To Play&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2014/02/usage-of-mongodb-with-a-spatial--and-geojson"&gt;Usage of MongoDB with a spatial index and GeoJSON&lt;/a&gt;&lt;/li&gt;
@@ -529,11 +559,6 @@
     &lt;li&gt;&lt;a href="/posts/2012/03/setup-javascript-unit-testing-using-qunit-phantomjs"&gt;Setup JavaScript unit testing using QUnit, PhantomJS and Jenkins on Amazon EC2&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2011/06/php-unit-testing-mit-simpletest"&gt;PHP Unit Testing mit SimpleTest&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2010/07/using-utplsql-with-multiple-schemas"&gt;Using utPLSQL with multiple schemas&lt;/a&gt;&lt;/li&gt;
-  &lt;h3 class="anchor" id="JavaScript-ref"&gt;JavaScript&lt;/h3&gt;
-    &lt;li&gt;&lt;a href="/posts/2012/05/fiddle-around-code"&gt;Fiddle around (code)&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="/posts/2012/03/setup-javascript-unit-testing-using-qunit-phantomjs"&gt;Setup JavaScript unit testing using QUnit, PhantomJS and Jenkins on Amazon EC2&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="/posts/2011/06/zum-selektierten-wert-springen"&gt;Zum selektierten Wert springen (IE Bug)&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="/posts/2011/09/team-filter-f-r-hockeytoto-ch"&gt;Team-Filter f&#xFC;r hockeytoto.ch&lt;/a&gt;&lt;/li&gt;
   &lt;h3 class="anchor" id="QUnit-ref"&gt;QUnit&lt;/h3&gt;
     &lt;li&gt;&lt;a href="/posts/2012/03/setup-javascript-unit-testing-using-qunit-phantomjs"&gt;Setup JavaScript unit testing using QUnit, PhantomJS and Jenkins on Amazon EC2&lt;/a&gt;&lt;/li&gt;
   &lt;h3 class="anchor" id="Jenkins-ref"&gt;Jenkins&lt;/h3&gt;
@@ -553,12 +578,6 @@
   &lt;h3 class="anchor" id="Conferences-ref"&gt;Conferences&lt;/h3&gt;
     &lt;li&gt;&lt;a href="/posts/2014/07/q-a-wall"&gt;Q&amp;amp;A Wall at the OKFestival in Berlin&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2014/09/open-data-workshop"&gt;Workshop about Open Data Technologies&lt;/a&gt;&lt;/li&gt;
-  &lt;h3 class="anchor" id="MongoDB-ref"&gt;MongoDB&lt;/h3&gt;
-    &lt;li&gt;&lt;a href="/posts/2014/02/usage-of-mongodb-with-a-spatial--and-geojson"&gt;Usage of MongoDB with a spatial index and GeoJSON&lt;/a&gt;&lt;/li&gt;
-  &lt;h3 class="anchor" id="Open Data-ref"&gt;Open Data&lt;/h3&gt;
-    &lt;li&gt;&lt;a href="/posts/2014/02/usage-of-mongodb-with-a-spatial--and-geojson"&gt;Usage of MongoDB with a spatial index and GeoJSON&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="/posts/2014/09/open-data-workshop"&gt;Workshop about Open Data Technologies&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="/posts/2014/01/stop-making-stupid-open-data-contests"&gt;Stop making stupid Open Data contests!&lt;/a&gt;&lt;/li&gt;
   &lt;h3 class="anchor" id="GIS-ref"&gt;GIS&lt;/h3&gt;
     &lt;li&gt;&lt;a href="/posts/2014/02/usage-of-mongodb-with-a-spatial--and-geojson"&gt;Usage of MongoDB with a spatial index and GeoJSON&lt;/a&gt;&lt;/li&gt;
   &lt;h3 class="anchor" id="OGD-ref"&gt;OGD&lt;/h3&gt;
@@ -708,12 +727,111 @@
       <title>metaodi</title>
       <link>http://metaodi.ch/</link>
       <description>&lt;div class="posts"&gt;
+  &lt;h2 class="title"&gt;&lt;span class="date"&gt;01.01.2015&lt;/span&gt;&lt;a href="/posts/2015/01/openerz"&gt;Why and how I created the OpenERZ API&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;ul class="tag_box inline"&gt;
+  &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;4&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#ERZ-ref"&gt;ERZ &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#API-ref"&gt;API &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#CSV-ref"&gt;CSV &lt;span&gt;3&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#JavaScript-ref"&gt;JavaScript &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#MongoDB-ref"&gt;MongoDB &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;The holidays season is always a good point in time to reflect and sort ideas/thoughts etc.
+A number of reasons lead me to create the &lt;a href="http://openerz.herokuapp.com"&gt;OpenERZ API&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;It all started about a month ago, when I got the new calendar of Entsorung und Recycling Z&#xFC;rich (ERZ) with the dates for the different waste collections.
+This is a phyisical paper thingy that is sent to all households in Zurich.
+There was also an information attached that ERZ has its own iOS and Android app, so you have the same data in an eletronic format on your personal smartphone.&lt;/p&gt;
+
+&lt;p&gt;That&amp;#39;s when it got interesting.
+I knew that ERZ already published their data as CSVs on the &lt;a href="http://data.stadt-zuerich.ch/"&gt;Open Data portal of the City of Zurich&lt;/a&gt;.
+I also knew that my fellow open data enthusiasts already created a &lt;a href="https://play.google.com/store/apps/details?id=ch.bretscherhochstrasser.android.entsorgungzuerich"&gt;smartphone app&lt;/a&gt; with that data.
+What I didn&amp;#39;t know at that point was, if there has been any kind of communication between those parties or how this all fits together.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://twitter.com/andreasamsler/status/539033563149402113"&gt;Via twitter&lt;/a&gt; I got confirmation, that there was indeed no communication.
+Unfortunately ERZ did not contact the original developers and did not engage with the official Open Data team of the City of Zurich.
+Andr&#xE9; Golliez wrote an &lt;a href="http://opendata.ch/pressearchiv/offener-brief-zur-smartphone-app-sauberes-zuerich/"&gt;&amp;quot;open letter&amp;quot; to the CEO of ERZ&lt;/a&gt;.
+After that there were replies, meetings etc. to clear things up.&lt;/p&gt;
+
+&lt;p&gt;What really caught my attention was the reply of SR Filippo Leutenegger, where he stated:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;quot;Die Datenbank steht im Zentrum, die App &#xAB;Sauberes Z&#xFC;rich&#xBB; ist mit ihren drei Betriebssystemen ein Output aus der Datenbank. Die Datenbank steht im Zentrum, die App &#xAB;Sauberes Z&#xFC;rich&#xBB; ist mit ihren drei Betriebssystemen ein Output aus der Datenbank.&amp;quot;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So they created a database, which makes it easier for them to update the data.
+And this database is used for the print products, the apps and possible other clients like their website (not sure if that&amp;#39;s the case though).
+For me it was clear, that there is a need for an API on top of this data, no matter what client uses this.
+A database is a good start but an API is how data becomes really useful and easy to integrate.&lt;/p&gt;
+
+&lt;p&gt;My first thought was, that the developers of the new app already created an API, but just didn&amp;#39;t tell anyone.
+That would&amp;#39;ve been perfect, as all I had to do, was find this hidden API and create a public proxy to it.
+To investigate this, I downloaded &lt;a href="https://play.google.com/store/apps/details?id=ch.erz.sauberes_zuerich"&gt;the app&lt;/a&gt;, setup a &lt;a href="http://www.charlesproxy.com/"&gt;Charles proxy&lt;/a&gt; and looked at the communication (thanks to my colleague &lt;a href="https://twitter.com/fterrier"&gt;Franz&lt;/a&gt; for pointing me in the right direction here!).&lt;/p&gt;
+
+&lt;p&gt;I quickly found the calls of the app:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;http://erz.w-4.ch/export/metadata.json&lt;/code&gt; (first call)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;http://erz.w-4.ch/export/wastetypes.json&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;http://erz.w-4.ch/export/calendars-2014.json&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;... etc.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So there we have all the data.
+The &lt;code&gt;metadata.json&lt;/code&gt; contains a list of available files, which are then requested by the client.
+It looks like an export from the above-mentioned database, which is loaded when the app starts.
+Of course, this is a kind of API, but not one that you can query for single records.&lt;/p&gt;
+
+&lt;p&gt;At this point, I decided to create the OpenERZ API.
+The JSON from the app are not very clear and self-explanatory (they were not designed with that in mind).
+So I decided to use the CSVs from the Open Data portal as a basis instead.
+It was made clear by SR Filippo Leutenegger, that ERZ wants to continue to provide this data, so I think its a safe choice to build the API on top of that.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://openerz.herokuapp.com"&gt;&lt;img src="/assets/media/openerz.png" alt="Screenshot of the OpenERZ swagger UI"&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The OpenERZ API is a &lt;a href="http://nodejs.org/"&gt;node application&lt;/a&gt; that runs on &lt;a href="https://www.heroku.com/"&gt;Heroku&lt;/a&gt;.
+The process is quite simple: the CSVs are converted to JSON and transformed to be in a clear format.
+After that, the nicely formatted JSON is imported in a &lt;a href="http://www.mongodb.org/"&gt;MongoDB&lt;/a&gt; as documents.
+Later this allows us to query the data easily.
+And by using MongoDB, it&amp;#39;s easy to extend the data model at a later point without breaking the application.&lt;/p&gt;
+
+&lt;p&gt;The routing part of the API is build using the &lt;a href="http://hapijs.com/"&gt;Hapi framework&lt;/a&gt; and its ecosystem (Joi, hapi-swagger etc.).
+After some iterations the current API gained some features:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;route for all the different waste types&lt;/li&gt;
+&lt;li&gt;a list of stations&lt;/li&gt;
+&lt;li&gt;data can be filtered and sorted  by different parameter&lt;/li&gt;
+&lt;li&gt;GeoJSON of all the cargo and e-tram stops&lt;/li&gt;
+&lt;li&gt;For the sake of completeness, I added the JSONs of the app as well, those are available at the /export route.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;All the &lt;a href="https://github.com/metaodi/openerz"&gt;code is on GitHub&lt;/a&gt;, feel free to contribute, either with code, ideas or bug reports and of course use the API for whatever you want :)&lt;/p&gt;
+
+
+&lt;/div&gt;
+&lt;div class="posts"&gt;
   &lt;h2 class="title"&gt;&lt;span class="date"&gt;18.09.2014&lt;/span&gt;&lt;a href="/posts/2014/09/open-data-workshop"&gt;Workshop about Open Data Technologies&lt;/a&gt;&lt;/h3&gt;
 
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;3&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;4&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
@@ -814,10 +932,10 @@ There are similar approaches to use such walls or boards to share news in local 
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#MongoDB-ref"&gt;MongoDB &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#MongoDB-ref"&gt;MongoDB &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;3&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;4&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#OpenStreetMap-ref"&gt;OpenStreetMap &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
@@ -930,7 +1048,7 @@ The next step would be to connect DenkMap to &lt;a href="http://wikidata.org"&gt
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;3&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;4&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#OGD-ref"&gt;OGD &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
@@ -1102,7 +1220,7 @@ a repository, GitHub would solve the problem of zombie-projects with &#x2026;&lt
       &lt;a href="/tags#Programming-ref"&gt;Programming &lt;span&gt;16&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#JavaScript-ref"&gt;JavaScript &lt;span&gt;4&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#JavaScript-ref"&gt;JavaScript &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#SQL-ref"&gt;SQL &lt;span&gt;6&lt;/span&gt;&lt;/a&gt;
@@ -1171,184 +1289,6 @@ that in the future.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;UPDATE III:&lt;/strong&gt; &lt;a href="http://refiddle.com/"&gt;reFiddle&lt;/a&gt; for regular expressions
 (thanks &lt;a href="https://twitter.com/tonisuter/status/215759431483396096"&gt;Toni
 Suter&lt;/a&gt;)&lt;/p&gt;
-
-
-&lt;/div&gt;
-&lt;div class="posts"&gt;
-  &lt;h2 class="title"&gt;&lt;span class="date"&gt;08.03.2012&lt;/span&gt;&lt;a href="/posts/2012/03/setup-javascript-unit-testing-using-qunit-phantomjs"&gt;Setup JavaScript unit testing using QUnit, PhantomJS and Jenkins on Amazon EC2&lt;/a&gt;&lt;/h3&gt;
-
-  &lt;ul class="tag_box inline"&gt;
-  &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="/tags#JavaScript-ref"&gt;JavaScript &lt;span&gt;4&lt;/span&gt;&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="/tags#Unit Testing-ref"&gt;Unit Testing &lt;span&gt;4&lt;/span&gt;&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="/tags#Programming-ref"&gt;Programming &lt;span&gt;16&lt;/span&gt;&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="/tags#QUnit-ref"&gt;QUnit &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="/tags#Jenkins-ref"&gt;Jenkins &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="/tags#PhantomJS-ref"&gt;PhantomJS &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="/tags#Amazon EC2-ref"&gt;Amazon EC2 &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;p&gt;Me and my friend are currently working on a term paper about &lt;a href="https://developers.google.com/fusiontables/"&gt;Google
-Fusion Tables&lt;/a&gt;. It&#x2019;s about
-it&#x2019;s possibilities and potential. Our goal is to create a cross-platform
-mobile application using &lt;a href="http://www.sencha.com/products/touch"&gt;Sencha
-Touch&lt;/a&gt;, therefore we need to write
-a lot of JavaScript code for the UI and to access the Google Fusion
-Tables. Fortunately Google provides an &lt;a href="https://groups.google.com/forum/#!topic/fusion-tables-users-group/TGDzExKymoI/discussion"&gt;inofficial JSONP
-API&lt;/a&gt;,
-so we get native JavaScript access without another server roundtrip
-(there is &lt;a href="http://www.reddmetrics.com/2011/08/10/fusion-tables-javascript-query-maps.html"&gt;a good blog
-post&lt;/a&gt;
-explaining the usage with jQuery).&lt;/p&gt;
-
-&lt;p&gt;The next question is: if we write tons of code in JavaScript, how are we
-going to unit test this code. We already used
-&lt;a href="http://docs.jquery.com/QUnit"&gt;QUnit&lt;/a&gt; in a former project and it&#x2019;s
-fairly easy to use, so we decided to use that. This all works very well,
-you get a &lt;a href="http://gft.rdmr.ch/test/js"&gt;nice web page where all your tests
-run&lt;/a&gt; in the browser and you get nice output,
-everything&#x2019;s fine.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="http://media.tumblr.com/tumblr_m0ivihw8Rb1qa2z4q.png" alt="Browser output of
-QUnit" title="Browser output of QUnit"&gt;&lt;/p&gt;
-
-&lt;p&gt;But, wait! What about our build? We use &lt;a href="http://jenkins-ci.org/"&gt;Jenkins
-CI&lt;/a&gt;, which is configured to &lt;a href="https://wiki.jenkins-ci.org/display/JENKINS/Github+Plugin"&gt;build our project
-every time we push new code to
-GitHub&lt;/a&gt;.
-Wouldn&#x2019;t it be nice if our tests run when we build, so we get immediate
-feedback and never ever forget to run them and fix our code?&lt;/p&gt;
-
-&lt;p&gt;Yes, it definitely would be!&lt;/p&gt;
-
-&lt;p&gt;Now we have several problems&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;  How do I run JavaScript without a browser?&lt;/li&gt;
-&lt;li&gt;  Does Jenkins &#x201C;speak&#x201D; JavaScript?&lt;/li&gt;
-&lt;li&gt;  Is there a solution for ant? Do I need another tool? Another server?&lt;/li&gt;
-&lt;li&gt;  How do I get my test results as XML, so Jenkins can handle them?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I checked serveral solutions to my this problems: From
-&lt;a href="http://nodejs.org/"&gt;node.js&lt;/a&gt; to &lt;a href="http://www.mozilla.org/rhino/"&gt;Rhino&lt;/a&gt;
-(there is even an &lt;a href="http://code.google.com/p/rhinounit/"&gt;ant based unit testing
-framework&lt;/a&gt; using Rhino) to
-&lt;a href="http://swarm.jquery.org/"&gt;TestSwarm&lt;/a&gt;. They were all too limited or too
-bloated. I couldn&#x2019;t believe this is such a big deal to run QUnit
-JavaScript code, get the results and publish them in Jenkins.&lt;/p&gt;
-
-&lt;p&gt;This is when I found out about &lt;a href="http://www.phantomjs.org/"&gt;PhantomJS&lt;/a&gt;, a
-nice and handy headless WebKit browser, that runs JavaScript code.
-Exactly what I need. As we are using &lt;a href="http://aws.amazon.com/ec2/"&gt;Amazon
-EC2&lt;/a&gt; for this project, I tried to install
-PhantomJS on a basic Amazon AMI. I just couldn&#x2019;t get it to work, when I
-asked in Twitter if someone succeeded to setup PhantomJS. &lt;a href="https://twitter.com/#!/philippkueng/status/176606716492914688"&gt;Philipp K&#xFC;ng
-pointed
-out&lt;/a&gt;
-(thanks again!) that it is much easier to setup with Ubuntu. Well then,
-launch a new Instance on EC2, choose the &lt;a href="http://cloud.ubuntu.com/ami/"&gt;latest Ubuntu
-AMI&lt;/a&gt;, and after some simple commands
-you&#x2019;re good to go:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo add-apt-repository ppa:jerome-etienne/neoip
-sudo apt-get update
-sudo apt-get install phantomjs
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;After that I had to &lt;a href="http://code.google.com/p/phantomjs/wiki/XvfbSetup"&gt;setup Xvfb (virutal
-framebuffer)&lt;/a&gt;,
-because EC2 instances are headless. Generally see the &lt;a href="http://code.google.com/p/phantomjs/wiki/PhantomJS"&gt;PhantomJS
-Wiki&lt;/a&gt; for further
-information.&lt;/p&gt;
-
-&lt;p&gt;Now I have a PhantomJS instance, the published QUnit tests and Jenkins.
-To be able to retrieve the data from PhantomJS I created a simple PHP
-script, which runs on the new instance and just executes a shell command
-(idea from &lt;a href="http://cisight.com/run-latest-phantomjs-with-shell_exec-php-on-ubuntu-11-10-oneiric/"&gt;this blog
-post&lt;/a&gt;).&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;?php
-/* Display 99 is configured on the server using Xvfb */
-$value = shell_exec(&amp;quot;DISPLAY=:99 phantomjs run_qunit.js http://gft.rdmr.ch/test/js/index.html junit-xml&amp;quot;);
-echo $value;
-?&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;With this URL I was able to create a simple ant target, which fetches
-the latest results from the tests:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;target name=&amp;quot;test-js&amp;quot; depends=&amp;quot;deploy&amp;quot;&amp;gt;
-    &amp;lt;get src=&amp;quot;${test.url}&amp;quot; dest=&amp;quot;${result.dir}/${result.js.file}&amp;quot;/&amp;gt;
-&amp;lt;/target&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Where &lt;code&gt;${test.url}&lt;/code&gt; referes to my PHP script, and &lt;code&gt;${result.dir}&lt;/code&gt; is
-configured as the location of JUnit reports in Jenkins (see screenshot):&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="http://media.tumblr.com/tumblr_m0jhgm87wz1qa2z4q.png" alt="Jenkins job configuration for JUnit XML
-reports" title="Jenkins job configuration for JUnit XML reports"&gt;&lt;/p&gt;
-
-&lt;p&gt;Now the last missing piece is to get proper output for Jenkins. I
-adapted the &lt;a href="https://github.com/ariya/phantomjs/blob/1.2/examples/run-qunit.js"&gt;QUnit test
-runner&lt;/a&gt;
-from the PhantomJS examples accordingly (called &lt;code&gt;run_qunit.js&lt;/code&gt;, see
-above, here is &lt;a href="https://github.com/odi86/GFTPrototype/blob/master/test/js/run_qunit.js"&gt;my
-version&lt;/a&gt;).
-I added a new command line parameter &lt;code&gt;type&lt;/code&gt;, which determines the type
-of output the runner generates. With the value &lt;code&gt;junit-xml&lt;/code&gt;, the output
-can directly be used by Jenkins, this is the reason for the junit-xml
-parameter in the PHP script above.&lt;/p&gt;
-
-&lt;p&gt;The generated XML looks like that:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot;?&amp;gt;
----
- Tests completed in 2294 milliseconds.
-36 tests of 36 passed, 0 failed. 
----
-&amp;lt;testsuite name=&amp;quot;QUnit - JavaScript Tests&amp;quot; timestamp=&amp;quot;2012-03-08T00:11:27Z&amp;quot; tests=&amp;quot;36&amp;quot; failures=&amp;quot;0&amp;quot; time=&amp;quot;2.294&amp;quot;&amp;gt;
-&amp;lt;testcase name=&amp;quot;PaintSwitzerland&amp;quot; classname=&amp;quot;GoogleFusionTable&amp;quot;&amp;gt;
-&amp;lt;/testcase&amp;gt;
-&amp;lt;testcase name=&amp;quot;Construtor&amp;quot; classname=&amp;quot;GftLib&amp;quot;&amp;gt;
-&amp;lt;/testcase&amp;gt;
-&amp;lt;testcase name=&amp;quot;Constants&amp;quot; classname=&amp;quot;GftLib&amp;quot;&amp;gt;
-&amp;lt;/testcase&amp;gt;
-&amp;lt;testcase name=&amp;quot;doGet&amp;quot; classname=&amp;quot;GftLib&amp;quot;&amp;gt;
-&amp;lt;/testcase&amp;gt;
-&amp;lt;testcase name=&amp;quot;doPost&amp;quot; classname=&amp;quot;GftLib&amp;quot;&amp;gt;
-&amp;lt;/testcase&amp;gt;
-&amp;lt;testcase name=&amp;quot;doGetJSONP&amp;quot; classname=&amp;quot;GftLib&amp;quot;&amp;gt;
-&amp;lt;/testcase&amp;gt;
-&amp;lt;testcase name=&amp;quot;doPostJSONP&amp;quot; classname=&amp;quot;GftLib&amp;quot;&amp;gt;
-&amp;lt;/testcase&amp;gt;
-&amp;lt;testcase name=&amp;quot;ExecSelect&amp;quot; classname=&amp;quot;GftLib&amp;quot;&amp;gt;
-&amp;lt;/testcase&amp;gt;
-&amp;lt;/testsuite&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;And in Jenkins like that: &lt;img src="http://media.tumblr.com/tumblr_m0ji3zihxl1qa2z4q.png" alt="Test trend with failed/successful tests over
-time" title="Test trend with failed/successful tests over time"&gt;&lt;/p&gt;
-
-&lt;p&gt;Overview of tests: &lt;img src="http://media.tumblr.com/tumblr_m0ji5dTeGL1qa2z4q.png" alt="Overview of all performed
-tests" title="Overview of all performed tests"&gt;&lt;/p&gt;
-
-&lt;p&gt;Failed test: &lt;img src="http://media.tumblr.com/tumblr_m0jie0S4WY1qa2z4q.png" alt="Detail of a failed test incl.
-&amp;#39;stacktrace&amp;#39;" title="Detail of a failed test incl. &amp;#39;stacktrace&amp;#39;"&gt;&lt;/p&gt;
 
 
 &lt;/div&gt;

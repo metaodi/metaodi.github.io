@@ -81,6 +81,184 @@
         </ul>
 
         <div class="posts">
+  <h2 class="title"><span class="date">08.03.2012</span><a href="/posts/2012/03/setup-javascript-unit-testing-using-qunit-phantomjs">Setup JavaScript unit testing using QUnit, PhantomJS and Jenkins on Amazon EC2</a></h3>
+
+  <ul class="tag_box inline">
+  <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+    <li>
+      <a href="/tags#JavaScript-ref">JavaScript <span>5</span></a>
+    </li>
+    <li>
+      <a href="/tags#Unit Testing-ref">Unit Testing <span>4</span></a>
+    </li>
+    <li>
+      <a href="/tags#Programming-ref">Programming <span>16</span></a>
+    </li>
+    <li>
+      <a href="/tags#QUnit-ref">QUnit <span>1</span></a>
+    </li>
+    <li>
+      <a href="/tags#Jenkins-ref">Jenkins <span>1</span></a>
+    </li>
+    <li>
+      <a href="/tags#PhantomJS-ref">PhantomJS <span>1</span></a>
+    </li>
+    <li>
+      <a href="/tags#Amazon EC2-ref">Amazon EC2 <span>1</span></a>
+    </li>
+  </ul>
+
+  <p>Me and my friend are currently working on a term paper about <a href="https://developers.google.com/fusiontables/">Google
+Fusion Tables</a>. It’s about
+it’s possibilities and potential. Our goal is to create a cross-platform
+mobile application using <a href="http://www.sencha.com/products/touch">Sencha
+Touch</a>, therefore we need to write
+a lot of JavaScript code for the UI and to access the Google Fusion
+Tables. Fortunately Google provides an <a href="https://groups.google.com/forum/#!topic/fusion-tables-users-group/TGDzExKymoI/discussion">inofficial JSONP
+API</a>,
+so we get native JavaScript access without another server roundtrip
+(there is <a href="http://www.reddmetrics.com/2011/08/10/fusion-tables-javascript-query-maps.html">a good blog
+post</a>
+explaining the usage with jQuery).</p>
+
+<p>The next question is: if we write tons of code in JavaScript, how are we
+going to unit test this code. We already used
+<a href="http://docs.jquery.com/QUnit">QUnit</a> in a former project and it’s
+fairly easy to use, so we decided to use that. This all works very well,
+you get a <a href="http://gft.rdmr.ch/test/js">nice web page where all your tests
+run</a> in the browser and you get nice output,
+everything’s fine.</p>
+
+<p><img src="http://media.tumblr.com/tumblr_m0ivihw8Rb1qa2z4q.png" alt="Browser output of
+QUnit" title="Browser output of QUnit"></p>
+
+<p>But, wait! What about our build? We use <a href="http://jenkins-ci.org/">Jenkins
+CI</a>, which is configured to <a href="https://wiki.jenkins-ci.org/display/JENKINS/Github+Plugin">build our project
+every time we push new code to
+GitHub</a>.
+Wouldn’t it be nice if our tests run when we build, so we get immediate
+feedback and never ever forget to run them and fix our code?</p>
+
+<p>Yes, it definitely would be!</p>
+
+<p>Now we have several problems</p>
+
+<ul>
+<li>  How do I run JavaScript without a browser?</li>
+<li>  Does Jenkins “speak” JavaScript?</li>
+<li>  Is there a solution for ant? Do I need another tool? Another server?</li>
+<li>  How do I get my test results as XML, so Jenkins can handle them?</li>
+</ul>
+
+<p>I checked serveral solutions to my this problems: From
+<a href="http://nodejs.org/">node.js</a> to <a href="http://www.mozilla.org/rhino/">Rhino</a>
+(there is even an <a href="http://code.google.com/p/rhinounit/">ant based unit testing
+framework</a> using Rhino) to
+<a href="http://swarm.jquery.org/">TestSwarm</a>. They were all too limited or too
+bloated. I couldn’t believe this is such a big deal to run QUnit
+JavaScript code, get the results and publish them in Jenkins.</p>
+
+<p>This is when I found out about <a href="http://www.phantomjs.org/">PhantomJS</a>, a
+nice and handy headless WebKit browser, that runs JavaScript code.
+Exactly what I need. As we are using <a href="http://aws.amazon.com/ec2/">Amazon
+EC2</a> for this project, I tried to install
+PhantomJS on a basic Amazon AMI. I just couldn’t get it to work, when I
+asked in Twitter if someone succeeded to setup PhantomJS. <a href="https://twitter.com/#!/philippkueng/status/176606716492914688">Philipp Küng
+pointed
+out</a>
+(thanks again!) that it is much easier to setup with Ubuntu. Well then,
+launch a new Instance on EC2, choose the <a href="http://cloud.ubuntu.com/ami/">latest Ubuntu
+AMI</a>, and after some simple commands
+you’re good to go:</p>
+
+<pre><code>sudo add-apt-repository ppa:jerome-etienne/neoip
+sudo apt-get update
+sudo apt-get install phantomjs
+</code></pre>
+
+<p>After that I had to <a href="http://code.google.com/p/phantomjs/wiki/XvfbSetup">setup Xvfb (virutal
+framebuffer)</a>,
+because EC2 instances are headless. Generally see the <a href="http://code.google.com/p/phantomjs/wiki/PhantomJS">PhantomJS
+Wiki</a> for further
+information.</p>
+
+<p>Now I have a PhantomJS instance, the published QUnit tests and Jenkins.
+To be able to retrieve the data from PhantomJS I created a simple PHP
+script, which runs on the new instance and just executes a shell command
+(idea from <a href="http://cisight.com/run-latest-phantomjs-with-shell_exec-php-on-ubuntu-11-10-oneiric/">this blog
+post</a>).</p>
+
+<pre><code>&lt;?php
+/* Display 99 is configured on the server using Xvfb */
+$value = shell_exec(&quot;DISPLAY=:99 phantomjs run_qunit.js http://gft.rdmr.ch/test/js/index.html junit-xml&quot;);
+echo $value;
+?&gt;
+</code></pre>
+
+<p>With this URL I was able to create a simple ant target, which fetches
+the latest results from the tests:</p>
+
+<pre><code>&lt;target name=&quot;test-js&quot; depends=&quot;deploy&quot;&gt;
+    &lt;get src=&quot;${test.url}&quot; dest=&quot;${result.dir}/${result.js.file}&quot;/&gt;
+&lt;/target&gt;
+</code></pre>
+
+<p>Where <code>${test.url}</code> referes to my PHP script, and <code>${result.dir}</code> is
+configured as the location of JUnit reports in Jenkins (see screenshot):</p>
+
+<p><img src="http://media.tumblr.com/tumblr_m0jhgm87wz1qa2z4q.png" alt="Jenkins job configuration for JUnit XML
+reports" title="Jenkins job configuration for JUnit XML reports"></p>
+
+<p>Now the last missing piece is to get proper output for Jenkins. I
+adapted the <a href="https://github.com/ariya/phantomjs/blob/1.2/examples/run-qunit.js">QUnit test
+runner</a>
+from the PhantomJS examples accordingly (called <code>run_qunit.js</code>, see
+above, here is <a href="https://github.com/odi86/GFTPrototype/blob/master/test/js/run_qunit.js">my
+version</a>).
+I added a new command line parameter <code>type</code>, which determines the type
+of output the runner generates. With the value <code>junit-xml</code>, the output
+can directly be used by Jenkins, this is the reason for the junit-xml
+parameter in the PHP script above.</p>
+
+<p>The generated XML looks like that:</p>
+
+<pre><code>&lt;?xml version=&quot;1.0&quot;?&gt;
+---
+ Tests completed in 2294 milliseconds.
+36 tests of 36 passed, 0 failed. 
+---
+&lt;testsuite name=&quot;QUnit - JavaScript Tests&quot; timestamp=&quot;2012-03-08T00:11:27Z&quot; tests=&quot;36&quot; failures=&quot;0&quot; time=&quot;2.294&quot;&gt;
+&lt;testcase name=&quot;PaintSwitzerland&quot; classname=&quot;GoogleFusionTable&quot;&gt;
+&lt;/testcase&gt;
+&lt;testcase name=&quot;Construtor&quot; classname=&quot;GftLib&quot;&gt;
+&lt;/testcase&gt;
+&lt;testcase name=&quot;Constants&quot; classname=&quot;GftLib&quot;&gt;
+&lt;/testcase&gt;
+&lt;testcase name=&quot;doGet&quot; classname=&quot;GftLib&quot;&gt;
+&lt;/testcase&gt;
+&lt;testcase name=&quot;doPost&quot; classname=&quot;GftLib&quot;&gt;
+&lt;/testcase&gt;
+&lt;testcase name=&quot;doGetJSONP&quot; classname=&quot;GftLib&quot;&gt;
+&lt;/testcase&gt;
+&lt;testcase name=&quot;doPostJSONP&quot; classname=&quot;GftLib&quot;&gt;
+&lt;/testcase&gt;
+&lt;testcase name=&quot;ExecSelect&quot; classname=&quot;GftLib&quot;&gt;
+&lt;/testcase&gt;
+&lt;/testsuite&gt;
+</code></pre>
+
+<p>And in Jenkins like that: <img src="http://media.tumblr.com/tumblr_m0ji3zihxl1qa2z4q.png" alt="Test trend with failed/successful tests over
+time" title="Test trend with failed/successful tests over time"></p>
+
+<p>Overview of tests: <img src="http://media.tumblr.com/tumblr_m0ji5dTeGL1qa2z4q.png" alt="Overview of all performed
+tests" title="Overview of all performed tests"></p>
+
+<p>Failed test: <img src="http://media.tumblr.com/tumblr_m0jie0S4WY1qa2z4q.png" alt="Detail of a failed test incl.
+&#39;stacktrace&#39;" title="Detail of a failed test incl. &#39;stacktrace&#39;"></p>
+
+
+</div>
+<div class="posts">
   <h2 class="title"><span class="date">06.10.2011</span><a href="/posts/2011/10/zff-2011-turn-me-on-goddammit">ZFF 2011: Turn Me On, Goddammit</a></h3>
 
   <ul class="tag_box inline">
@@ -582,51 +760,6 @@ speziellen Retro-Look zur Folge hat. Sieht klasse aus!</p>
 <p><em>Spannende, herzliche und tragisch-komische Liebesgeschichte über das
 Schicksal und die Chance auf die 2. Chance, garniert mit schönen Bildern
 aus Finnland.</em></p>
-
-
-</div>
-<div class="posts">
-  <h2 class="title"><span class="date">23.09.2011</span><a href="/posts/2011/09/zff-2011-take-shelter">ZFF 2011: Take Shelter</a></h3>
-
-  <ul class="tag_box inline">
-  <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-    <li>
-      <a href="/tags#Cinema-ref">Cinema <span>26</span></a>
-    </li>
-    <li>
-      <a href="/tags#Zurich Film Festival-ref">Zurich Film Festival <span>25</span></a>
-    </li>
-  </ul>
-
-  <p><a href="http://www.zurichfilmfestival.org/de//filme/1471/take-shelter/"><img src="http://media.tumblr.com/tumblr_lryyy24HnR1qa2z4q.jpg" alt="Take
-Shelter" title="Take Shelter"></a></p>
-
-<p>Gestern habe ich zum Auftakt des <a href="http://www.zurichfilmfestival.org">7. Zurich Film
-Festivals</a> den Film <strong>&quot;Take
-Shelter&quot;</strong> im Kino <a href="http://www.arthouse.ch/kino/leparis">Arthouse Le
-Paris</a> gesehen. Dies war zugleich
-auch der erste gezeigte Film am Festival der öffentlich zugänglich war.</p>
-
-<p>Das Drama “Take Shelter” von Jeff Nichols lebt von der Atmosphäre.
-Manchmal herrscht drückende Stille. Dann wieder wird mit einem Sturm
-grosses Unheil angekündigt, dabei verschwimmen die Grenzen zwischen
-Realität und Wahn zunehmend. Ist dieser Sturm nun nur ein Sinnbild? Oder
-doch mehr?</p>
-
-<p>Michael Shannon spielt Curtis, einen 35jährigen der plötzlich von
-Albträumen geplagt wird. In seinen Träumen passiert Ungeheuerliches, und
-stets wird die Szene von einem Sturm eingeläutet. Curtis schweigt zu
-seinen Träumen, versucht sich selbst zu helfen und gerät dabei immer
-mehr an die Grenze seiner Psyche. Shannon spielt den allmählichen
-Zerfall sehr überzeugend, er ist Hauptverantwortlich, dass dieser ruhige
-Film einen derartigen Sog entwickeln kann. Curtis’ Frau Samantha
-(gespielt von Jessica Chastain) ist ein würdiger Gegenpart: sie merkt,
-dass mit mit ihrem Mann etwas nicht stimmt, kann es aber nicht genau
-verorten. Sie versucht ihm eine Stütze zu sein, versucht ihm den
-“Unsinn” seiner Angst/Schizophrenie vor Augen zu führen. Kein leichtes
-Unterfangen.</p>
-
-<p><em>Ruhig, stark, spannend und extrem atmosphärisch.</em></p>
 
 
 </div>

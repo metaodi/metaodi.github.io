@@ -74,6 +74,36 @@
         <div class="row-fluid">
   <div class="span12">
       <div class="posts">
+        <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/ausreden-fuers-nicht-trinken">Ausreden fürs Nicht-Trinken</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#German-ref">German <span>19</span></a>
+          </li>
+        </ul>
+
+        <p>Es soll vorkommen. In der Abteilung in der ich zur Zeit arbeite, ist es
+der Donnerstag. In der Cafeteria trifft man sich. Es wird eine Flasche
+Wein geöffnet und reihum kriegt jeder sein Glas gefüllt.</p>
+
+<p>Wenn man das nicht will, steht man blöd da. Hier Tipps für die passende
+Ausrede:</p>
+
+<ul>
+<li>  Ich komme gerade von einem anderen Apéro</li>
+<li>  Ich habe einen 0,0 Promille-Grenze für die Autoversicherung</li>
+<li>  Ich trinke nur Bier (welches zufälligerweise gerade nicht zur Hand
+ist)</li>
+<li>  Ich habe nachher noch ein Meeting - mit meinem Chef</li>
+<li>  Ich geh gleich ins Fitness-Studio</li>
+</ul>
+
+<p>Weitere Ideen sind willkommen und werden gerne aufgenommen.</p>
+
+
+      </div>
+      <div class="posts">
         <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/zusammengesetzte-w-rter">Zusammengesetzte Wörter</a> </h3>
 
         <ul class="tag_box">
@@ -366,54 +396,6 @@ der Shooter Doom) und kann alle Prozesse die auf dem System laufen
 
 <p>Ach das Admin-Leben ist schön, den ganzen Tag schiessen und Räume voller
 Monster überprüfen. Sobalds zu viele sind: losballern!</p>
-
-
-      </div>
-      <div class="posts">
-        <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/find-old-files-and-their-size">Find old Files and their size</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#Linux-ref">Linux <span>8</span></a>
-          </li>
-        </ul>
-
-        <p>The first part is clear, find the old files like that:</p>
-
-<pre><code>find . -type f -mtime +365 -print
-</code></pre>
-
-<p>This gets all Files (<code>-type f</code>, <code>-type d</code> for directories) in the
-current directory (<code>.</code>) older than a year (<code>-mtime +365</code>) and prints
-them on stdout (<code>-print</code>)</p>
-
-<p>to delet them, just use:</p>
-
-<pre><code>find . -type f -mtime +365 -exec rm {} \;
-</code></pre>
-
-<p>But if you want to use them further, a pipe will help you. For any
-reasons (I don’t know) this is not possible with the <code>-print</code> command.
-My Solution was the following:</p>
-
-<pre><code>find . -type f -mtime +365 -exec echo {} \;
-</code></pre>
-
-<p>Now, because there are possibly many many many files, it’s best to use
-xargs for the argument handling. I use <code>du -ch</code> to determine the
-file-size and the total:</p>
-
-<pre><code>find . -type f -mtime +365 -exec echo {} \; | xargs du -ch
-</code></pre>
-
-<p>This should help, Google helped me half-way out, the rest is a little
-command line magic.</p>
-
-<p>Note: In my case there where really too many files, so that the whole
-command ended with a broken pipe. I used <code>-type d</code> to reduce the amount
-of arguments, the disadvantage is that directories are not necessary the
-same age as the files within.</p>
 
 
       </div>

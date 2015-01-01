@@ -74,6 +74,54 @@
         <div class="row-fluid">
   <div class="span12">
       <div class="posts">
+        <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/find-old-files-and-their-size">Find old Files and their size</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Linux-ref">Linux <span>8</span></a>
+          </li>
+        </ul>
+
+        <p>The first part is clear, find the old files like that:</p>
+
+<pre><code>find . -type f -mtime +365 -print
+</code></pre>
+
+<p>This gets all Files (<code>-type f</code>, <code>-type d</code> for directories) in the
+current directory (<code>.</code>) older than a year (<code>-mtime +365</code>) and prints
+them on stdout (<code>-print</code>)</p>
+
+<p>to delet them, just use:</p>
+
+<pre><code>find . -type f -mtime +365 -exec rm {} \;
+</code></pre>
+
+<p>But if you want to use them further, a pipe will help you. For any
+reasons (I don’t know) this is not possible with the <code>-print</code> command.
+My Solution was the following:</p>
+
+<pre><code>find . -type f -mtime +365 -exec echo {} \;
+</code></pre>
+
+<p>Now, because there are possibly many many many files, it’s best to use
+xargs for the argument handling. I use <code>du -ch</code> to determine the
+file-size and the total:</p>
+
+<pre><code>find . -type f -mtime +365 -exec echo {} \; | xargs du -ch
+</code></pre>
+
+<p>This should help, Google helped me half-way out, the rest is a little
+command line magic.</p>
+
+<p>Note: In my case there where really too many files, so that the whole
+command ended with a broken pipe. I used <code>-type d</code> to reduce the amount
+of arguments, the disadvantage is that directories are not necessary the
+same age as the files within.</p>
+
+
+      </div>
+      <div class="posts">
         <h2 class="title"><span class="date">21.10.2009</span><a href="/posts/2009/10/odbc-hell">ODBC Hell</a> </h3>
 
         <ul class="tag_box">
@@ -870,7 +918,7 @@ what I wanted.</p>
             <a href="/tags#Excel-ref">Excel <span>2</span></a>
           </li>
           <li>
-            <a href="/tags#CSV-ref">CSV <span>2</span></a>
+            <a href="/tags#CSV-ref">CSV <span>3</span></a>
           </li>
         </ul>
 
@@ -909,57 +957,6 @@ for file in files:
 xlApp.Quit()
 del xlApp
 </code></pre>
-
-
-      </div>
-      <div class="posts">
-        <h2 class="title"><span class="date">12.12.2006</span><a href="/posts/2006/12/sql-start-script-generator">SQL Start-Script generator</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#Python-ref">Python <span>2</span></a>
-          </li>
-          <li>
-            <a href="/tags#SQL-ref">SQL <span>6</span></a>
-          </li>
-          <li>
-            <a href="/tags#Programming-ref">Programming <span>16</span></a>
-          </li>
-        </ul>
-
-        <p>Sometimes it’s so simple:</p>
-
-<pre><code>import glob
-files = glob.glob(&#39;*.*&#39;);
-f=open(&#39;start_script.sql&#39;, &#39;w&#39;)
-f.write(&#39;PROMPT This is an automatic generated start script\n&#39;);
-f.write(&#39;PROMPT\n&#39;);
-f.write(&#39;SPOOL start_script.LOG\n\n&#39;);
-for filename in files:
-    if filename == &#39;start_script.sql&#39;:
-        continue
-    f.write(&#39;PROMPT Starting script &#39; + filename + &#39;\n&#39;);
-    f.write(&#39;@@&#39; + filename + &#39;\n&#39;);
-f.write(&#39;\nPROMPT\n&#39;);
-f.write(&#39;PROMPT Finished.\n&#39;);
-f.write(&#39;SPOOL OFF\n&#39;);
-f.close();
-exit();
-</code></pre>
-
-<h2 id="toc_0">Explanation:</h2>
-
-<p>First get a file list of the current directory (glob.glob(‘<em>.</em>’), this
-won’t return you directories since they don’t have an extension, if your
-files doesn’t have an extension, either: your fault). Then open a file
-called start_script.sql which will held our start-script (pretty
-self-explanatory). Then we generate a “@@” line for each file (this
-means if you have non-SQL-files in that directory you have to clean-up
-your script or edit it that it only takes .sql files (tip:
-glob.glob(‘*.sql’)). The start-script itself is excluded but the python
-script will be included (can easily be made excluded as well). After the
-loop the file gets closed and that’s it.</p>
 
 
       </div>

@@ -4,7 +4,84 @@
     <title>metaodi</title>
     <description>metaodi</description>
     <link>http://metaodi.ch</link>
-    <pubDate>03.10.2014</pubDate>
+    <pubDate>01.01.2015</pubDate>
+    <item>
+      <title>Why and how I created the OpenERZ API</title>
+      <link>http://metaodi.ch/posts/2015/01/openerz</link>
+      <pubDate>01.01.2015</pubDate>
+      <description>&lt;p&gt;The holidays season is always a good point in time to reflect and sort ideas/thoughts etc.
+A number of reasons lead me to create the &lt;a href="http://openerz.herokuapp.com"&gt;OpenERZ API&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;It all started about a month ago, when I got the new calendar of Entsorung und Recycling Z&#xFC;rich (ERZ) with the dates for the different waste collections.
+This is a phyisical paper thingy that is sent to all households in Zurich.
+There was also an information attached that ERZ has its own iOS and Android app, so you have the same data in an eletronic format on your personal smartphone.&lt;/p&gt;
+
+&lt;p&gt;That&amp;#39;s when it got interesting.
+I knew that ERZ already published their data as CSVs on the &lt;a href="http://data.stadt-zuerich.ch/"&gt;Open Data portal of the City of Zurich&lt;/a&gt;.
+I also knew that my fellow open data enthusiasts already created a &lt;a href="https://play.google.com/store/apps/details?id=ch.bretscherhochstrasser.android.entsorgungzuerich"&gt;smartphone app&lt;/a&gt; with that data.
+What I didn&amp;#39;t know at that point was, if there has been any kind of communication between those parties or how this all fits together.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://twitter.com/andreasamsler/status/539033563149402113"&gt;Via twitter&lt;/a&gt; I got confirmation, that there was indeed no communication.
+Unfortunately ERZ did not contact the original developers and did not engage with the official Open Data team of the City of Zurich.
+Andr&#xE9; Golliez wrote an &lt;a href="http://opendata.ch/pressearchiv/offener-brief-zur-smartphone-app-sauberes-zuerich/"&gt;&amp;quot;open letter&amp;quot; to the CEO of ERZ&lt;/a&gt;.
+After that there were replies, meetings etc. to clear things up.&lt;/p&gt;
+
+&lt;p&gt;What really caught my attention was the reply of SR Filippo Leutenegger, where he stated:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;quot;Die Datenbank steht im Zentrum, die App &#xAB;Sauberes Z&#xFC;rich&#xBB; ist mit ihren drei Betriebssystemen ein Output aus der Datenbank. Die Datenbank steht im Zentrum, die App &#xAB;Sauberes Z&#xFC;rich&#xBB; ist mit ihren drei Betriebssystemen ein Output aus der Datenbank.&amp;quot;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So they created a database, which makes it easier for them to update the data.
+And this database is used for the print products, the apps and possible other clients like their website (not sure if that&amp;#39;s the case though).
+For me it was clear, that there is a need for an API on top of this data, no matter what client uses this.
+A database is a good start but an API is how data becomes really useful and easy to integrate.&lt;/p&gt;
+
+&lt;p&gt;My first thought was, that the developers of the new app already created an API, but just didn&amp;#39;t tell anyone.
+That would&amp;#39;ve been perfect, as all I had to do, was find this hidden API and create a public proxy to it.
+To investigate this, I downloaded &lt;a href="https://play.google.com/store/apps/details?id=ch.erz.sauberes_zuerich"&gt;the app&lt;/a&gt;, setup a &lt;a href="http://www.charlesproxy.com/"&gt;Charles proxy&lt;/a&gt; and looked at the communication (thanks to my colleague &lt;a href="https://twitter.com/fterrier"&gt;Franz&lt;/a&gt; for pointing me in the right direction here!).&lt;/p&gt;
+
+&lt;p&gt;I quickly found the calls of the app:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;http://erz.w-4.ch/export/metadata.json&lt;/code&gt; (first call)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;http://erz.w-4.ch/export/wastetypes.json&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;http://erz.w-4.ch/export/calendars-2014.json&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;... etc.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So there we have all the data.
+The &lt;code&gt;metadata.json&lt;/code&gt; contains a list of available files, which are then requested by the client.
+It looks like an export from the above-mentioned database, which is loaded when the app starts.
+Of course, this is a kind of API, but not one that you can query for single records.&lt;/p&gt;
+
+&lt;p&gt;At this point, I decided to create the OpenERZ API.
+The JSON from the app are not very clear and self-explanatory (they were not designed with that in mind).
+So I decided to use the CSVs from the Open Data portal as a basis instead.
+It was made clear by SR Filippo Leutenegger, that ERZ wants to continue to provide this data, so I think its a safe choice to build the API on top of that.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://openerz.herokuapp.com"&gt;&lt;img src="/assets/media/openerz.png" alt="Screenshot of the OpenERZ swagger UI"&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The OpenERZ API is a &lt;a href="http://nodejs.org/"&gt;node application&lt;/a&gt; that runs on &lt;a href="https://www.heroku.com/"&gt;Heroku&lt;/a&gt;.
+The process is quite simple: the CSVs are converted to JSON and transformed to be in a clear format.
+After that, the nicely formatted JSON is imported in a &lt;a href="http://www.mongodb.org/"&gt;MongoDB&lt;/a&gt; as documents.
+Later this allows us to query the data easily.
+And by using MongoDB, it&amp;#39;s easy to extend the data model at a later point without breaking the application.&lt;/p&gt;
+
+&lt;p&gt;The routing part of the API is build using the &lt;a href="http://hapijs.com/"&gt;Hapi framework&lt;/a&gt; and its ecosystem (Joi, hapi-swagger etc.).
+After some iterations the current API gained some features:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;route for all the different waste types&lt;/li&gt;
+&lt;li&gt;a list of stations&lt;/li&gt;
+&lt;li&gt;data can be filtered and sorted  by different parameter&lt;/li&gt;
+&lt;li&gt;GeoJSON of all the cargo and e-tram stops&lt;/li&gt;
+&lt;li&gt;For the sake of completeness, I added the JSONs of the app as well, those are available at the /export route.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;All the &lt;a href="https://github.com/metaodi/openerz"&gt;code is on GitHub&lt;/a&gt;, feel free to contribute, either with code, ideas or bug reports and of course use the API for whatever you want :)&lt;/p&gt;
+</description>
+    </item>
     <item>
       <title>Workshop about Open Data Technologies</title>
       <link>http://metaodi.ch/posts/2014/09/open-data-workshop</link>
