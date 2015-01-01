@@ -11,4 +11,4 @@ I'm interested in [Open Source software](http://github.com/metaodi) and the [Ope
 
 In my spare time, I play [badminton](http://www.bcrf.ch/) and all kinds of tabletop games. I'm a film and TV series junkie, but I'm a keen reader, too.
 
-Follow me on [Twitter](http://twitter.com/odi) or reach me via [e-mail](mailto:odi AT readmore DOT ch).
+Follow me on [Twitter](http://twitter.com/odi) or reach me via [e-mail](mailto:odi AT metaodi DOT ch).
