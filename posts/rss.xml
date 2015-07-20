@@ -4,7 +4,59 @@
     <title>metaodi</title>
     <description>metaodi</description>
     <link>http://metaodi.ch</link>
-    <pubDate>01.01.2015</pubDate>
+    <pubDate>20.07.2015</pubDate>
+    <item>
+      <title>Learn to code if you want to. I'm happy to help.</title>
+      <link>http://metaodi.ch/posts/2015/07/learn-to-code</link>
+      <pubDate>20.07.2015</pubDate>
+      <description>&lt;p&gt;Even though I&amp;#39;m not an education expert, and I don&amp;#39;t really have a professional background in didactics, I have some experience when I comes to teach people how to code, especially if they never wrote a single line of code before.&lt;/p&gt;
+
+&lt;p&gt;The topic of teaching accompanies me since some time now.
+For one, the most obvious one, I&amp;#39;m an apprentice trainer.
+This means it&amp;#39;s part of my job, to teach our young apprentices how to program.
+But it doesn&amp;#39;t stop there.
+I&amp;#39;m quite active on &lt;a href="http://stackoverflow.com/users/549755/odi"&gt;StackOverflow&lt;/a&gt; (although one could argue this doesn&amp;#39;t count as teaching).
+Then last year, I got the chance to hold a &lt;a href="http://www.jungejournalisten.ch/jugendmedientage/workshops-2/"&gt;workshop at the Jugendmedientage&lt;/a&gt; to teach programming to young journalists, that never coded before.
+All these experiences led me to believe that:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Programming can be learned&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;It takes time, effort and patience for both the teacher and the student&lt;/li&gt;
+&lt;li&gt;Curiosity is the key&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src="/assets/media/workshop.jpg" alt="Workshop at Jugendmedientage 2014"&gt;&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;m writing about this topic, because not long ago we were discussing this topic at work.
+One of our project managers said, she wants to learn at least a bit of programming, in order to understand what her team is doing.
+Intuitively I disagreed.
+I argued, that &lt;strong&gt;it&amp;#39;s not the responsibility of a project manager to understand programming&lt;/strong&gt;.
+Everybody should focus on their main responsibilities and skills.&lt;/p&gt;
+
+&lt;p&gt;But then again:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Wouldn&amp;#39;t it be nice to have a &lt;strong&gt;common understanding of some basics&lt;/strong&gt;?&lt;/li&gt;
+&lt;li&gt;It would be a tremendous help, if a PM could already decide if a problem is &lt;em&gt;hard&lt;/em&gt; or &lt;em&gt;easy&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Or if a PM understands some &lt;em&gt;technical terms&lt;/em&gt; that get thrown around in the room all the time?&lt;/li&gt;
+&lt;li&gt;Why should anybody stop someone from learning something they are clearly interested in?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;But it&amp;#39;s not just about PMs, and it&amp;#39;s not just about my work place.
+It&amp;#39;s nice to be able to code.
+To know, that this task, you&amp;#39;ve been doing manually since so many years could be written in just a few lines of code.
+Your life can get easier.&lt;/p&gt;
+
+&lt;p&gt;One of the projects I really like is &lt;a href="http://www.opentechschool.org/"&gt;OpenTechSchool&lt;/a&gt;.
+It aims to create &lt;a href="http://learn.opentechschool.org/"&gt;free online learning material&lt;/a&gt; for everybody to learn about programming and related topics.
+Apart from the docs, &lt;a href="http://www.opentechschool.org/projects/workshops/"&gt;there are workshops&lt;/a&gt;, free of charge, led by volunteers like me.&lt;/p&gt;
+
+&lt;p&gt;The goal of such workshops is not to become a &lt;em&gt;super-hero-programming-ninja&lt;/em&gt;.
+It&amp;#39;s about &lt;strong&gt;understanding how a programmer tackles a problem, learn new skills and grasp some basic concepts&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Everbody can learn to code. If they want to. I&amp;#39;m happy to help.&lt;/p&gt;
+</description>
+    </item>
     <item>
       <title>Why and how I created the OpenERZ API</title>
       <link>http://metaodi.ch/posts/2015/01/openerz</link>
