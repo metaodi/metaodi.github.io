@@ -1,5 +1,5 @@
 ---
-date: 21.07.2015
+date: 20.07.2015
 tags: [Programming, Learning]
 title: Learn to code if you want to. I'm happy to help.
 ---
