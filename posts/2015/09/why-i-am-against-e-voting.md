@@ -73,7 +73,7 @@ We still have a problem: there is no way of telling what code currently runs on 
 So maybe the software has been replaced between the review and the runtime.
 Or it could have been changed at runtime.
 We simply cannot say.
-If we could, we would have solved the [Halting problem](https://en.wikipedia.org/wiki/Halting_problem).
+If we could, we would have solved the [Halting problem](https://en.wikipedia.org/wiki/Halting_problem) (see also [this excellent explanation](http://www.wired.com/2014/02/halting-problem/) about why this is the case).
 
 We as a society have to decide if we're willing to take the risk, that the E-Voting system might get hacked.
 That it might be broken.
