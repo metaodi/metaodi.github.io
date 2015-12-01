@@ -4,7 +4,7 @@
     <title>metaodi</title>
     <description>metaodi</description>
     <link>http://metaodi.ch</link>
-    <pubDate>17.09.2015</pubDate>
+    <pubDate>01.12.2015</pubDate>
     <item>
       <title>About me</title>
       <link>http://metaodi.ch/about</link>
@@ -24,6 +24,10 @@
       <link>http://metaodi.ch/archive</link>
       <description>
   &lt;h2&gt;2015&lt;/h2&gt;
+    &lt;h3&gt;December&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;01.12.2015&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2015/12/open-data-mashup"&gt;Open Data MashUp @ Impact Hub&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
     &lt;h3&gt;September&lt;/h3&gt;
     &lt;ul&gt;
       &lt;li&gt;&lt;span&gt;17.09.2015&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2015/09/why-i-am-against-e-voting"&gt;Why I'm against E-Voting&lt;/a&gt;&lt;/li&gt;
@@ -300,13 +304,16 @@
     &lt;a href="/tags#Learning-ref"&gt;Learning &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
+    &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
     &lt;a href="/tags#Politics-ref"&gt;Politics &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;a href="/tags#E-Voting-ref"&gt;E-Voting &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;4&lt;/span&gt;&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;a href="/tags#ERZ-ref"&gt;ERZ &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
@@ -551,16 +558,20 @@
     &lt;li&gt;&lt;a href="/posts/2005/10/csv-seperator-character"&gt;CSV seperator character&lt;/a&gt;&lt;/li&gt;
   &lt;h3 class="anchor" id="Learning-ref"&gt;Learning&lt;/h3&gt;
     &lt;li&gt;&lt;a href="/posts/2015/07/learn-to-code"&gt;Learn to code if you want to. I'm happy to help.&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 class="anchor" id="Open Data-ref"&gt;Open Data&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2015/12/open-data-mashup"&gt;Open Data MashUp @ Impact Hub&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2015/01/openerz"&gt;Why and how I created the OpenERZ API&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2014/02/usage-of-mongodb-with-a-spatial--and-geojson"&gt;Usage of MongoDB with a spatial index and GeoJSON&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2014/09/open-data-workshop"&gt;Workshop about Open Data Technologies&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2014/01/stop-making-stupid-open-data-contests"&gt;Stop making stupid Open Data contests!&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 class="anchor" id="Talk-ref"&gt;Talk&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2015/12/open-data-mashup"&gt;Open Data MashUp @ Impact Hub&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2014/09/open-data-workshop"&gt;Workshop about Open Data Technologies&lt;/a&gt;&lt;/li&gt;
   &lt;h3 class="anchor" id="Politics-ref"&gt;Politics&lt;/h3&gt;
     &lt;li&gt;&lt;a href="/posts/2015/09/why-i-am-against-e-voting"&gt;Why I'm against E-Voting&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2005/04/schengen-propaganda"&gt;Schengen Propaganda&lt;/a&gt;&lt;/li&gt;
   &lt;h3 class="anchor" id="E-Voting-ref"&gt;E-Voting&lt;/h3&gt;
     &lt;li&gt;&lt;a href="/posts/2015/09/why-i-am-against-e-voting"&gt;Why I'm against E-Voting&lt;/a&gt;&lt;/li&gt;
-  &lt;h3 class="anchor" id="Open Data-ref"&gt;Open Data&lt;/h3&gt;
-    &lt;li&gt;&lt;a href="/posts/2015/01/openerz"&gt;Why and how I created the OpenERZ API&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="/posts/2014/02/usage-of-mongodb-with-a-spatial--and-geojson"&gt;Usage of MongoDB with a spatial index and GeoJSON&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="/posts/2014/09/open-data-workshop"&gt;Workshop about Open Data Technologies&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="/posts/2014/01/stop-making-stupid-open-data-contests"&gt;Stop making stupid Open Data contests!&lt;/a&gt;&lt;/li&gt;
   &lt;h3 class="anchor" id="ERZ-ref"&gt;ERZ&lt;/h3&gt;
     &lt;li&gt;&lt;a href="/posts/2015/01/openerz"&gt;Why and how I created the OpenERZ API&lt;/a&gt;&lt;/li&gt;
   &lt;h3 class="anchor" id="API-ref"&gt;API&lt;/h3&gt;
@@ -759,6 +770,33 @@
       <title>metaodi</title>
       <link>http://metaodi.ch/</link>
       <description>&lt;div class="posts"&gt;
+  &lt;h2 class="title"&gt;&lt;span class="date"&gt;01.12.2015&lt;/span&gt;&lt;a href="/posts/2015/12/open-data-mashup"&gt;Open Data MashUp @ Impact Hub&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;ul class="tag_box inline"&gt;
+  &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;Last week I had the opportunity to talk at the &lt;a href="https://zurich.impacthub.ch/event/mash-up/"&gt;Impact Hub in Zurich about Open Data&lt;/a&gt;.
+This event was part of a group of events in different locations of Impact Hub, called MashUp.&lt;/p&gt;
+
+&lt;p&gt;The talk was held in the &lt;a href="http://www.pechakucha.org/faq"&gt;Pecha Kucha format&lt;/a&gt;, which means you have 20 slides and 20 seconds for each slide.
+Because of this &lt;em&gt;condensed&lt;/em&gt; form of giving a talk, there is not much space for text on the slides, rather images, graphics etc.
+This is just a warning, as the slides without my talk might not be very useful.
+Feel free to either fill the gaps yourself or contact me if you need more information or if you want to hear the talk again.&lt;/p&gt;
+
+&lt;p&gt;Download the &lt;a href="/assets/media/OpenDataPublishing@ImpactHub.pdf"&gt;PDF of my slides&lt;/a&gt; or see them directly here:&lt;/p&gt;
+
+&lt;script async class="speakerdeck-embed" data-id="1648167b88c34555a131ea6849589891" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"&gt;&lt;/script&gt; 
+
+
+&lt;/div&gt;
+&lt;div class="posts"&gt;
   &lt;h2 class="title"&gt;&lt;span class="date"&gt;17.09.2015&lt;/span&gt;&lt;a href="/posts/2015/09/why-i-am-against-e-voting"&gt;Why I'm against E-Voting&lt;/a&gt;&lt;/h3&gt;
 
   &lt;ul class="tag_box inline"&gt;
@@ -933,7 +971,7 @@ It&amp;#39;s about &lt;strong&gt;understanding how a programmer tackles a proble
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;4&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#ERZ-ref"&gt;ERZ &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
@@ -1032,10 +1070,13 @@ After some iterations the current API gained some features:&lt;/p&gt;
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;4&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -1136,7 +1177,7 @@ There are similar approaches to use such walls or boards to share news in local 
       &lt;a href="/tags#MongoDB-ref"&gt;MongoDB &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;4&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#OpenStreetMap-ref"&gt;OpenStreetMap &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
@@ -1249,7 +1290,7 @@ The next step would be to connect DenkMap to &lt;a href="http://wikidata.org"&gt
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;4&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#OGD-ref"&gt;OGD &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
@@ -1370,26 +1411,6 @@ Btw: I use &lt;a href="http://pages.github.com/"&gt;GitHub Pages&lt;/a&gt; for t
 &lt;p&gt;TL;DR: By giving an actual social status to the people contributing to
 a repository, GitHub would solve the problem of zombie-projects with &#x2026;&lt;/p&gt;
 &lt;/blockquote&gt;
-
-
-&lt;/div&gt;
-&lt;div class="posts"&gt;
-  &lt;h2 class="title"&gt;&lt;span class="date"&gt;22.10.2012&lt;/span&gt;&lt;a href="/posts/2012/10/remember-without-unit-tests-youre-not"&gt;Remember: Without unit tests, you're not refactoring. You're just changing shit&lt;/a&gt;&lt;/h3&gt;
-
-  &lt;ul class="tag_box inline"&gt;
-  &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="/tags#Sencha Touch-ref"&gt;Sencha Touch &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="/tags#Siesta-ref"&gt;Siesta &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="/tags#Unit Testing-ref"&gt;Unit Testing &lt;span&gt;4&lt;/span&gt;&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;iframe width="560" height="315" src="//www.youtube.com/embed/JWm68Ghc1vA" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
 
 &lt;/div&gt;

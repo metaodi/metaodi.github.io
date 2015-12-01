@@ -74,6 +74,66 @@
         <div class="row-fluid">
   <div class="span12">
       <div class="posts">
+        <h2 class="title"><span class="date">03.11.2010</span><a href="/posts/2010/11/developers-shame-day-2010">Developers Shame Day: BB-Code selbstgemacht</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#PHP-ref">PHP <span>3</span></a>
+          </li>
+          <li>
+            <a href="/tags#Programming-ref">Programming <span>18</span></a>
+          </li>
+          <li>
+            <a href="/tags#Developers Shame Day-ref">Developers Shame Day <span>1</span></a>
+          </li>
+        </ul>
+
+        <p><img src="http://media.tumblr.com/tumblr_lb5krblZFn1qa2z4q.png" alt="Developers Shame
+Day"></p>
+
+<p>Via Twitter (weiss leider nicht mehr wer das geschrieben hat) bin ich
+<a href="http://phphacker.net/2010/10/26/der-developers-shame-day/">auf einen Artikel vom php
+hacker</a>
+gestossen, wo er dazu aufruft heute am “Developers Shame Day”
+mitzumachen und alte Codeschnippsel von sich zu posten: Beispiele von
+schlechtem Code für die man sich heute schämen sollte.</p>
+
+<p>Einserseits um zu zeigen, dass jeder mal angefangen hat schlechten Code
+zu schreiben und allgemein sich einzugestehen, dass Fehler nun mal
+passieren und man selbst und vielleicht sogar andere davon profititieren
+können. Da mach ich gerne mit.</p>
+
+<p>Das Stück Code das ich vorstellen möchte ist PHP-Code, welcher auf einer
+meiner alten Pages gelaufen ist. Jeder kennt ja die BB-Codes um Artikel
+oder Kommentare mit Formattierungsinformationen anzureichern. Ich habe
+meinen eigenen “Parser” dafür geschrieben, welcher die Codes in
+entsprechendes HTML umgewandelt hat.\
+ Hier ein Auszug:\
+<a href="http://pastie.org/1261848">[Pastie-Link]</a></p>
+
+<p>Die Idee dahinter war einfach, es gibt 2 Arten von Codes:</p>
+
+<ul>
+<li>  ohne Parameter wie z.B. Bold, also [b]fetter Text[/b]</li>
+<li>  mit Parametern wie z.B. URL, also [url=<a href="http://www.readmore.ch%5DMeine">http://www.readmore.ch]Meine</a>
+Webpage[/url]</li>
+</ul>
+
+<p>Die parametrierbaren Codes erhielten im Anfangsarray den Text
+“!!REPLACER!!” welche dann anschliessend ersetzt wurde. Das mag ja alles
+noch gehen, wenn auch sich solche ein Parser mit Regular Expression um
+einiges schöner schreiben liess.</p>
+
+<p>Wirklich <em>stolz</em> bin ich auf Zuweisungen à la “s” =&gt; “&lt;s&gt;”, “h1” =&gt;
+“&lt;h1&gt;”, wo sich mir heute die Nackenhaare aufstellen. Typisch war auch
+die schlechte Namensgebung der Variablen (anz oder sub/newsub) sowie die
+auskommentierten Stellen (“man weiss nie für was das mal noch gut sein
+kann”).</p>
+
+
+      </div>
+      <div class="posts">
         <h2 class="title"><span class="date">03.11.2010</span><a href="/posts/2010/11/kino-langer-leben">Kino: Länger Leben</a> </h3>
 
         <ul class="tag_box">
@@ -448,40 +508,6 @@ Wendung, welche auch den Titel “R” nochmals in einem neuen Licht
 erscheinen lässt.</p>
 
 <p>Wer auf dunkle, atmosphärische Filme steht, darf “R” nicht verpassen.</p>
-
-
-      </div>
-      <div class="posts">
-        <h2 class="title"><span class="date">28.09.2010</span><a href="/posts/2010/09/tamara-drewe">ZFF 2010: Tamara Drewe</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#Zurich Film Festival-ref">Zurich Film Festival <span>25</span></a>
-          </li>
-          <li>
-            <a href="/tags#Cinema-ref">Cinema <span>26</span></a>
-          </li>
-        </ul>
-
-        <p><a href="http://www.zurichfilmfestival.org/de/programm-2010/filme/1224/tamara-drewe/"><img src="http://media.tumblr.com/tumblr_l9ff3cavTO1qa2z4q.jpg" alt="Tamara Drewe"></a></p>
-
-<p><a href="http://www.zurichfilmfestival.org/de/programm-2010/filme/1224/tamara-drewe/">Tamara Drewe</a>
-ist eine Komödie nach feinster englischer Art. In ein verschlafenes
-Örtchen auf dem Land kommt endlich etwas Leben als Tamara auftaucht um
-sich um das Haus ihrer Mutter zu kümmern. Reihenweise lassen sich die
-Männer den Kopf von ihr verdrehen, egal ob verheiratet, frisch getrennt
-oder Single.</p>
-
-<p>Der Film strotzt vor Humor, und bleibt spannend bis zum Schluss.
-Natürlich darf denn auch die Überraschung zum Schluss nicht fehlen, habe
-selten so viele Leute über eine eigentlich zutiefst brutale Szene lachen
-sehen.</p>
-
-<p>Auch einige Sticheleien gegen das Englisch der Amerikaner dürfen nicht
-fehlen (“I like those cookies” “Actually, we call them biscuits here”).
-Den Film kann ich nur empfehlen, super Schauspieler, herrliches Setting
-und eine wirklich lustige Geschichte.</p>
 
 
       </div>
