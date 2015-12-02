@@ -74,6 +74,49 @@
         <div class="row-fluid">
   <div class="span12">
       <div class="posts">
+        <h2 class="title"><span class="date">29.09.2010</span><a href="/posts/2010/09/r">ZFF 2010: R</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Zurich Film Festival-ref">Zurich Film Festival <span>25</span></a>
+          </li>
+          <li>
+            <a href="/tags#Cinema-ref">Cinema <span>26</span></a>
+          </li>
+          <li>
+            <a href="/tags#German-ref">German <span>19</span></a>
+          </li>
+        </ul>
+
+        <p><a href="http://www.zurichfilmfestival.org/de/programm-2010/filme/876/r/"><img src="http://media.tumblr.com/tumblr_l9g7tg4ho01qa2z4q.jpg" alt="R" title="R"></a></p>
+
+<p><a href="http://www.zurichfilmfestival.org/de/programm-2010/filme/876/r/">R</a> hat
+mich gefesselt: stimmungsvolle Bilder des tristen Gefängnisalltags, dazu
+der Sound, der einfach durchdringend ist. Es herrscht den ganzen Film
+durch eine spürbare Anspannung, die Ungewissheit von Rune, der
+Hauptperson, überträgt sich auf den Zuschauer.</p>
+
+<p>Der Film ist zum Teil sehr brutal, jedoch geht es nicht darum,
+geschundene Körper zu zeigen: es wird gerade so viel gezeigt, dass man
+ganz genau versteht was passiert, ohne jedoch lange in der Grossaufnahme
+zu bleiben. Allgemein sind die Szenen sehr lange, mit wenigen Schnitten.
+Die Wirkung davon ist krass. 5 Sekunden lang einen leeren Raum zu
+zeigen, kann sehr viel transportieren.</p>
+
+<p>Die Spannungen zwischen den Insassen sind fast nicht zum aushalten. Die
+Grenzen zwischen Freund und Feind sind sehr fliessend und können sich
+blitzartig ändern.</p>
+
+<p>Der Film bekommt in der zweiten Hälfte eine für mich unerwartete
+Wendung, welche auch den Titel “R” nochmals in einem neuen Licht
+erscheinen lässt.</p>
+
+<p>Wer auf dunkle, atmosphärische Filme steht, darf “R” nicht verpassen.</p>
+
+
+      </div>
+      <div class="posts">
         <h2 class="title"><span class="date">28.09.2010</span><a href="/posts/2010/09/tamara-drewe">ZFF 2010: Tamara Drewe</a> </h3>
 
         <ul class="tag_box">
@@ -517,85 +560,6 @@ different schemas.</p>
 </code></pre>
 
 <p>Now everything just worked fine.</p>
-
-
-      </div>
-      <div class="posts">
-        <h2 class="title"><span class="date">30.05.2010</span><a href="/posts/2010/05/erroneous-copyfrom-method-in-jcifs-vfs">Erroneous copyFrom() method in JCIFS/VFS</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#Java-ref">Java <span>1</span></a>
-          </li>
-          <li>
-            <a href="/tags#JCIFS-ref">JCIFS <span>1</span></a>
-          </li>
-          <li>
-            <a href="/tags#VFS-ref">VFS <span>1</span></a>
-          </li>
-        </ul>
-
-        <p>At the <a href="http://www.hsr.ch">HSR (University of Applied Science
-Rapperswil)</a> we are currently developing a software
-to synchronize files from the central fileserver to the students
-computers. This should help the students to get the latest slides for
-their lectures.</p>
-
-<p>The software is based on <a href="http://commons.apache.org/vfs/">VFS (Virtual
-Filesystem)</a> from the <a href="http://commons.apache.org/">Apache Commons
-project</a>. The file server is a classic Samba
-server that uses the CIFS protocol, and with the use of VFS we ensured a
-common access the the filesystem, no matter if it’s the remote
-filesystem of the file server or the local filesystem on the student’s
-computers.</p>
-
-<p>At a point we got a very strange error: we could copy files from the
-remote system, but when we delete the files while the application is
-running, and try to copy the files again, the copy fails:</p>
-
-<pre><code>FileSystemException &quot;could not copy [source-path] to [target-path]&quot;.
-</code></pre>
-
-<p>We figured out, that the problem were the folders that don’t exist yet.
-But according the the <a href="http://commons.apache.org/vfs/apidocs/org/apache/commons/vfs/FileObject.html#copyFrom%28org.apache.commons.vfs.FileObject,%20org.apache.commons.vfs.FileSelector%29">documentation of the the copyFrom
-method</a>
-the parent folder should be created if it does not exist. This is also
-the case when we do the first-time-copy, which works like a charm.</p>
-
-<p>After serveral tries with refresh() etc. to bring the FileObjects and
-the actual filesystem to sync, we finally implemented this workaround,
-maybe somebody else can use it:</p>
-
-<pre><code>protected void copyFile(FileObject targetFile, FileObject sourceFile) {
-    try {
-        FileObject parentFile = targetFile.getParent();
-        parentFile.refresh();
-        log.debug(&quot;Parent exists?: &quot; + parentFile.exists());
-
-        if (!parentFile.exists()) {
-            parentFile.createFolder();
-            log.debug(&quot; =&gt; Folder created&quot;);
-        }
-        targetFile.copyFrom(sourceFile),new AllFileSelector());
-    } catch (FileSystemException e) {
-        log.warn(&quot;Could not copy file, FileSystemException: &quot;
-                + e.getMessage());
-    }
-}
-</code></pre>
-
-<p>(the above code is a little bit simplified, and the use of an extra
-FileObject for the parent is not absolutely necessary, but it clarifies
-the code)</p>
-
-<p>In my opinion the copyFrom implementation of
-<a href="http://jcifs.samba.org/">JCFIS</a> (which is the Samba part of VFS) does
-not work, i.e. this is a bug. But I’m not sure, maybe we overlook an
-obvious thing on our side. Fact is, the above solution works for us. The
-JCIFS is part of the VFS sandbox, this means the library is still in
-development. Maybe I’ll file a bug, if I can clearly reproduce this
-behavior.</p>
 
 
       </div>

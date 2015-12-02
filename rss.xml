@@ -4,7 +4,7 @@
     <title>metaodi</title>
     <description>metaodi</description>
     <link>http://metaodi.ch</link>
-    <pubDate>01.12.2015</pubDate>
+    <pubDate>02.12.2015</pubDate>
     <item>
       <title>About me</title>
       <link>http://metaodi.ch/about</link>
@@ -26,6 +26,7 @@
   &lt;h2&gt;2015&lt;/h2&gt;
     &lt;h3&gt;December&lt;/h3&gt;
     &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;02.12.2015&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2015/12/e-voting-ii"&gt;E-Voting II&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;span&gt;01.12.2015&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2015/12/open-data-mashup"&gt;Open Data MashUp @ Impact Hub&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
     &lt;h3&gt;September&lt;/h3&gt;
@@ -310,10 +311,10 @@
     &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;a href="/tags#Politics-ref"&gt;Politics &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
+    &lt;a href="/tags#Politics-ref"&gt;Politics &lt;span&gt;3&lt;/span&gt;&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;a href="/tags#E-Voting-ref"&gt;E-Voting &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+    &lt;a href="/tags#E-Voting-ref"&gt;E-Voting &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;a href="/tags#ERZ-ref"&gt;ERZ &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
@@ -568,9 +569,11 @@
     &lt;li&gt;&lt;a href="/posts/2015/12/open-data-mashup"&gt;Open Data MashUp @ Impact Hub&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2014/09/open-data-workshop"&gt;Workshop about Open Data Technologies&lt;/a&gt;&lt;/li&gt;
   &lt;h3 class="anchor" id="Politics-ref"&gt;Politics&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2015/12/e-voting-ii"&gt;E-Voting II&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2015/09/why-i-am-against-e-voting"&gt;Why I'm against E-Voting&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2005/04/schengen-propaganda"&gt;Schengen Propaganda&lt;/a&gt;&lt;/li&gt;
   &lt;h3 class="anchor" id="E-Voting-ref"&gt;E-Voting&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2015/12/e-voting-ii"&gt;E-Voting II&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2015/09/why-i-am-against-e-voting"&gt;Why I'm against E-Voting&lt;/a&gt;&lt;/li&gt;
   &lt;h3 class="anchor" id="ERZ-ref"&gt;ERZ&lt;/h3&gt;
     &lt;li&gt;&lt;a href="/posts/2015/01/openerz"&gt;Why and how I created the OpenERZ API&lt;/a&gt;&lt;/li&gt;
@@ -770,6 +773,43 @@
       <title>metaodi</title>
       <link>http://metaodi.ch/</link>
       <description>&lt;div class="posts"&gt;
+  &lt;h2 class="title"&gt;&lt;span class="date"&gt;02.12.2015&lt;/span&gt;&lt;a href="/posts/2015/12/e-voting-ii"&gt;E-Voting II&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;ul class="tag_box inline"&gt;
+  &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Politics-ref"&gt;Politics &lt;span&gt;3&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#E-Voting-ref"&gt;E-Voting &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;As I already &lt;a href="http://metaodi.ch/posts/2015/09/why-i-am-against-e-voting/"&gt;mentioned before&lt;/a&gt;, I&amp;#39;m not a big fan of E-Voting.&lt;/p&gt;
+
+&lt;p&gt;Last Monday, &lt;a href="http://www.digitale-nachhaltigkeit.ch/"&gt;Parldigi&lt;/a&gt; &lt;a href="http://www.netzwoche.ch/de-CH/News/2015/12/01/E-Voting-in-der-Schweiz---ein-Erfolg.aspx"&gt;invited to an event about E-Voting&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Gr&#xFC;nenfelder warnte davor, dass Unterbrechungen die Verbreitung und Akzeptanz von E-Voting mehr gef&#xE4;hrden als drohende Sicherheitsrisiken. Es sei darum notwendig, dass Bund, Kantone und die Bundeskanzlei das E-Voting und die Digitalisierung der Politik weiter vorantreiben. &amp;quot;Die Erfolgsgeschichte wird weitergehen&amp;quot;, sagte Gr&#xFC;nenfelder. &amp;quot;Allen Unkenrufen zum Trotz.&amp;quot;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;As long as we don&amp;#39;t have an open source solution, that is accessible to everyone and which makes it possible for everyone to verify that their vote has been casted, we can stop all further discussions.&lt;/p&gt;
+
+&lt;p&gt;My fear is, that E-Voting will just be an accepted reality, without any discussions about it.
+I&amp;#39;m not against technology, by no means.
+But we need to have a discussion as a society what this means for us.
+And if we are okay with the consequences.
+Now is the time to discuss this.
+Not when all systems are in place and everybody already uses them.
+Or when they get hacked for the first time.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: Someone mentioned to me, that we have the option to vote by snail mail and that my critic is invalid, as this way of voting is just as bad, but already accepted.
+For the record: just because there is another way of casting my vote, that is equally bad and hard to control/verify, does not mean that the critic is invalid.
+It only means that we have to think about this other way as well. And that the critics may apply as well.&lt;/p&gt;
+
+
+&lt;/div&gt;
+&lt;div class="posts"&gt;
   &lt;h2 class="title"&gt;&lt;span class="date"&gt;01.12.2015&lt;/span&gt;&lt;a href="/posts/2015/12/open-data-mashup"&gt;Open Data MashUp @ Impact Hub&lt;/a&gt;&lt;/h3&gt;
 
   &lt;ul class="tag_box inline"&gt;
@@ -802,10 +842,10 @@ Feel free to either fill the gaps yourself or contact me if you need more inform
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Politics-ref"&gt;Politics &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Politics-ref"&gt;Politics &lt;span&gt;3&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#E-Voting-ref"&gt;E-Voting &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#E-Voting-ref"&gt;E-Voting &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -1392,25 +1432,6 @@ Btw: I use &lt;a href="http://pages.github.com/"&gt;GitHub Pages&lt;/a&gt; for t
 &lt;p&gt;My plan for this blog is, that it should contain my opinion on various topics. It should not be too technical (I will write such content on other blogs, like the one of my company). It&amp;#39;ll be mainly in English, but every once in a while I will write in German if needed (look out for the corresponding tag).&lt;/p&gt;
 
 &lt;p&gt;Happy reading and welcome to my new home!&lt;/p&gt;
-
-
-&lt;/div&gt;
-&lt;div class="posts"&gt;
-  &lt;h2 class="title"&gt;&lt;span class="date"&gt;23.05.2013&lt;/span&gt;&lt;a href="/posts/2013/05/on-citizenship-in-open-source-software-development"&gt;On Citizenship in Open-source software development &#x2014; Products I Wish Existed&lt;/a&gt;&lt;/h3&gt;
-
-  &lt;ul class="tag_box inline"&gt;
-  &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="/tags#Link-ref"&gt;Link &lt;span&gt;4&lt;/span&gt;&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;p&gt;&lt;a href="https://medium.com/products-i-wish-existed/ddd1f7be1415"&gt;https://medium.com/products-i-wish-existed/ddd1f7be1415&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;TL;DR: By giving an actual social status to the people contributing to
-a repository, GitHub would solve the problem of zombie-projects with &#x2026;&lt;/p&gt;
-&lt;/blockquote&gt;
 
 
 &lt;/div&gt;
