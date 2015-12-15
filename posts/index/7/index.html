@@ -74,6 +74,62 @@
         <div class="row-fluid">
   <div class="span12">
       <div class="posts">
+        <h2 class="title"><span class="date">25.10.2009</span><a href="/posts/2009/10/barcamp-rapperswil">BarCamp Rapperswil</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Barcamp-ref">Barcamp <span>1</span></a>
+          </li>
+          <li>
+            <a href="/tags#HSR-ref">HSR <span>3</span></a>
+          </li>
+          <li>
+            <a href="/tags#bcrappi-ref">bcrappi <span>1</span></a>
+          </li>
+        </ul>
+
+        <p>Das gestrige <a href="http://barcamp.ch/BarCampRapperswil">BarCamp in
+Rapperswil</a> hat riesigen Spass
+gemacht.</p>
+
+<p><img src="http://media.tumblr.com/tumblr_ks2qe1uMbt1qa2z4q.jpg" alt="BarCamp
+Rapperswil"></p>
+
+<p>Als erstes will ich mich gleich bei <a href="http://camichel.com/">Corsin</a> als
+Organisator bedanken, war echt super. Das BarCamp fand in der
+<a href="http://www.hsr.ch">Hochschule für Technik Rapperswil (HSR)</a> statt, von
+dem her ein für mich vertrautes Terrain. Es war ein Treffen technisch
+interessierter Leute über die unterschiedlichsten Facetten der IT. Da
+gab es einen Speech von <a href="http://commetrics.com/">Urs (ComMetrics)</a> über
+Blogs, Social Media und deren Messbarkeit. Dann war <a href="http://www.fybit.com">Yvonne-Anne von
+Fybit</a> vor Ort um ihr Produkt RIATrax vorzustellen
+(Rich Internet Applications in Pure Java), oder Frank, welcher eine
+Diskussion leitete über die Zukunft des Web 2.0, welche Konzepte
+überleben, welche nicht und warum.</p>
+
+<p>Ein weiteres Highlight war die Präsentation von Markus Stolze (Professor
+an der HSR) über den Multi-Touch Table, welcher an der HSR mitentwickelt
+wurde. <img src="http://media.tumblr.com/tumblr_ks2rkyLwuL1qa2z4q.jpg" alt="Multi-Touch
+Table"></p>
+
+<p>Alles in allem war es ein Event unter Gleichgesinnten um sich
+auszutauschen. Wir haben viel gelacht (z.B. über das Hashtag #bcrappi)
+und nachgedacht, kritisch betrachtet und kommentiert.</p>
+
+<p>Ich ging mit vielen neuen Ideen und Eindrücken nach Hause, genau so
+sollte das sein. Ich freue mich bereits auf nachfolgende BarCamps, ist
+sicher nicht das letzte Mal, dass ich da war.</p>
+
+<p><a href="http://www.flickr.com/photos/tags/bcrappi">Die Bilder zum Event gibts auf
+Flickr.</a></p>
+
+<p>PS: I don’t want to miss to mention Joel our Swedish guy, who made this
+BarCamp truly international ;-)</p>
+
+
+      </div>
+      <div class="posts">
         <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/postfinance-sms-service">PostFinance SMS Service</a> </h3>
 
         <ul class="tag_box">
@@ -438,51 +494,6 @@ workaround. As an alternative you can install <code>msn-pecan</code>.</p>
 <p>After the installation just restart Pidgin go to “Accounts” -&gt; “Manage
 Accounts”. Select your MSN-Account, click “Modify”. Choose “WLM” as
 protocol. Save and reconnect your MSN account. Works like a charm!</p>
-
-
-      </div>
-      <div class="posts">
-        <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/dvd-rip-and-gentoo">dvd::rip and gentoo</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#Linux-ref">Linux <span>8</span></a>
-          </li>
-        </ul>
-
-        <p><a href="http://exit1.org/dvdrip/">dvd::rip</a> (or dvdrip at the gentoo
-repository) is a very comfortable ripping software to bring your DVDs on
-your harddisk.</p>
-
-<p>When I emerged it and wanted to rip a dvd, I just got no result.</p>
-
-<ol>
-<li> the logfile showed no error</li>
-<li> in the status bar the text appeared Grab
-<code>preview - title #3 Duration: 00:01 [Error]</code></li>
-<li> dvd::rip did nothing.</li>
-</ol>
-
-<p>The chapter has been ripped and the file existed on the filesystem, but
-I was unable to transcode it or do anything else with dvd::rip.</p>
-
-<p>A lot of googling did not provide the solution, but finally I saw that
-dvd::rip prints the exact command that is executed in the logfile, so I
-tried to run it manually to eventually see an error.</p>
-
-<p>And then there was theerror:</p>
-
-<pre><code>convert: no decode delegate for this image format `/tmp/dvdrip24111.snap/snapshot001.png&#39;.
-</code></pre>
-
-<p>I quick search with that showed me, that the problem was imagemagick,
-which obviously did not have png support. I added the USE-flag “png” to
-imagemagick in /etc/portage/package.use and re-emerged imagemagick.</p>
-
-<p>Another problems was that transcode was missing the “mp3” USE-flag.</p>
-
-<p>Since then dvd::rip just works!</p>
 
 
       </div>

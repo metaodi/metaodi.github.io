@@ -74,6 +74,51 @@
         <div class="row-fluid">
   <div class="span12">
       <div class="posts">
+        <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/dvd-rip-and-gentoo">dvd::rip and gentoo</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Linux-ref">Linux <span>8</span></a>
+          </li>
+        </ul>
+
+        <p><a href="http://exit1.org/dvdrip/">dvd::rip</a> (or dvdrip at the gentoo
+repository) is a very comfortable ripping software to bring your DVDs on
+your harddisk.</p>
+
+<p>When I emerged it and wanted to rip a dvd, I just got no result.</p>
+
+<ol>
+<li> the logfile showed no error</li>
+<li> in the status bar the text appeared Grab
+<code>preview - title #3 Duration: 00:01 [Error]</code></li>
+<li> dvd::rip did nothing.</li>
+</ol>
+
+<p>The chapter has been ripped and the file existed on the filesystem, but
+I was unable to transcode it or do anything else with dvd::rip.</p>
+
+<p>A lot of googling did not provide the solution, but finally I saw that
+dvd::rip prints the exact command that is executed in the logfile, so I
+tried to run it manually to eventually see an error.</p>
+
+<p>And then there was theerror:</p>
+
+<pre><code>convert: no decode delegate for this image format `/tmp/dvdrip24111.snap/snapshot001.png&#39;.
+</code></pre>
+
+<p>I quick search with that showed me, that the problem was imagemagick,
+which obviously did not have png support. I added the USE-flag “png” to
+imagemagick in /etc/portage/package.use and re-emerged imagemagick.</p>
+
+<p>Another problems was that transcode was missing the “mp3” USE-flag.</p>
+
+<p>Since then dvd::rip just works!</p>
+
+
+      </div>
+      <div class="posts">
         <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/wie-schreibt-man-eine-rede">Wie schreibt man eine Rede</a> </h3>
 
         <ul class="tag_box">
@@ -250,7 +295,7 @@ same age as the files within.</p>
             <a href="/tags#SQL-ref">SQL <span>6</span></a>
           </li>
           <li>
-            <a href="/tags#Programming-ref">Programming <span>18</span></a>
+            <a href="/tags#Programming-ref">Programming <span>19</span></a>
           </li>
         </ul>
 
@@ -310,7 +355,7 @@ open to new ways of doing this.</p>
         <ul class="tag_box">
         <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
           <li>
-            <a href="/tags#Programming-ref">Programming <span>18</span></a>
+            <a href="/tags#Programming-ref">Programming <span>19</span></a>
           </li>
           <li>
             <a href="/tags#Brainfuck-ref">Brainfuck <span>1</span></a>
@@ -729,72 +774,6 @@ angenehm, dass die auch halten.</p>
 <p><strong>DAS ist wichtig!</strong></p>
 
 <p>In dem Sinne: trägt euch sorge, denn es ist gut.</p>
-
-
-      </div>
-      <div class="posts">
-        <h2 class="title"><span class="date">24.08.2007</span><a href="/posts/2007/08/ms-access-let-lines-in-reports-grow-with-its-content">MS Access: Let lines in Reports grow with it's content</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#MS Access-ref">MS Access <span>2</span></a>
-          </li>
-          <li>
-            <a href="/tags#VBA-ref">VBA <span>2</span></a>
-          </li>
-          <li>
-            <a href="/tags#Programming-ref">Programming <span>18</span></a>
-          </li>
-        </ul>
-
-        <p>The problem is the following: You create a report with MS Access with a
-text field. To display the whole text, you have to set the “CanGrow”
-property to “Yes” (on the section and on the text-field). When running
-the report that has vertical lines as column seperator you have an ungly
-effect: The line keeps its size, as this has been fixed in the design
-view.</p>
-
-<p>One might think that the easy solution is to adjust this length at
-runtime. First of all I need to declare what “runtime” means. As this
-problem occures in every “Detail”-Section we must dive in the events a
-section provides. There are three of them “OnRetreat”, “OnFormat” and
-“OnPrint” (apart all the mouse events, which are defenitly not
-suitable).</p>
-
-<p>The Retreat-Event occurs “when Microsoft Access returns to a previous
-report section during report formatting” (Source: VBA Help). Not exactly
-what we’re looking for.</p>
-
-<p>The Format-Event occurs “when Microsoft Access determines which data
-belongs in a report section, but before Access formats the section for
-previewing or printing”. It sounds good, but at this point we don’t have
-our data in the section and are therefore unable to determine the
-correct height.</p>
-
-<p>Finally the Print-Event “after data in a report section is formatted for
-printing, but before the section is printed”. Here we are, we have our
-data which is not yet printed. The problem is that at this point all
-elements are already formatted, all we can do is add new elements and
-that’s why we can’t just adjust the height of each line by setting it
-via</p>
-
-<pre><code> Me.myLine.Height = Me.Height &#39;&#39;&#39;this does not work in the OnPrint event, myLine has already been formatted
-</code></pre>
-
-<p>The simple solution is to draw a new line and use your already placed
-line as a template:</p>
-
-<pre><code>Private Sub Detail_Print(Cancel As Integer, PrintCount As Integer)
-    Dim EndOfLine As Double
-    EndOfLine = Me.Height       &#39;&#39;height of section (where the line stops)
-
-    &#39;&#39;becasue it&#39;s not allowed in such a late state to change lines, we draw new one&#39;s based on the old
-    &#39;&#39;myLine
-    Me.Line (Me.myLine.Left, 0)-(Me.myLine.Left, EndOfLine)
-
-End Sub;
-</code></pre>
 
 
       </div>
