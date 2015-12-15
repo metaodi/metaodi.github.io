@@ -784,7 +784,7 @@
     &lt;/li&gt;
   &lt;/ul&gt;
 
-  &lt;p&gt;If you are like me, chances are you have a vagrant setup for each project your working on.
+  &lt;p&gt;If you are like me, chances are you have a &lt;a href="https://www.vagrantup.com/"&gt;vagrant&lt;/a&gt; setup for each project your working on.
 It&amp;#39;s a great way of sharing a specific system configuration, especially if you work in a team of developers.
 In my team, we have people running their systems with different operating systems and settings in general.
 So vagrant is a real life-saver when it comes to developing together and agreeing on a setup for a specific project.&lt;/p&gt;
