@@ -4,7 +4,7 @@ tags: [Programming]
 title: Check the status of all vagrant boxes on your system
 ---
 
-If you are like me, chances are you have a vagrant setup for each project your working on.
+If you are like me, chances are you have a [vagrant](https://www.vagrantup.com/) setup for each project your working on.
 It's a great way of sharing a specific system configuration, especially if you work in a team of developers.
 In my team, we have people running their systems with different operating systems and settings in general.
 So vagrant is a real life-saver when it comes to developing together and agreeing on a setup for a specific project.
