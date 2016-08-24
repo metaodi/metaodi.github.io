@@ -8,10 +8,13 @@ layout : default
 </div>
 {{/ page.hide_title }}
 
-<div class="row-fluid" id="about">
-  <div class="span12">
-    <img class="about-img img-responsive" src="{{urls.media}}/odi.jpg" alt="Stefan Oderbolz (&quot;Odi&quot;)">
-    {{{ page.content }}}
-    <br style="clear: both"/>
+<div class="container-fluid">
+  <div class="row" id="about">
+    <div class="col-md-6">
+      <img class="about-img img-responsive" src="{{urls.media}}/odi.png" alt="Stefan Oderbolz (&quot;Odi&quot;)" />
+    </div>
+    <div class="col-md-6">
+      {{{ page.content }}}
+    </div>
   </div>
 </div>
