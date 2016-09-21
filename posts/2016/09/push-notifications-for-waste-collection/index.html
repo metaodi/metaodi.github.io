@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <title>
+                Receive push notifications for waste collection in your area (OpenERZ) | metaodi
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Stefan Oderbolz (&quot;Odi&quot;)">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- load static files from bower -->
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Le styles -->
+<link href='/assets/stylesheets/style-a039e10a7d2de8b24d250376ec3148ed.css' type='text/css' rel='stylesheet' media='all'>
+<link href='/assets/stylesheets/google_prettify/sons-of-obsidian-afb0925bfa2d994f17dab93e13fbf999.css' type='text/css' rel='stylesheet' media='all'>    
+    <!-- Le scripts -->
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/posts/rss.xml" />
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+  -->
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">metaodi</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            
+              <li><a href="/tags">Tags</a></li>
+            
+            
+              <li><a href="/archive">Archive</a></li>
+            
+            
+              <li><a href="/about">About me</a></li>
+            
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>Receive push notifications for waste collection in your area (OpenERZ) </h1>
+</div>
+
+<div class="row-fluid post-full">
+  <div class="col-md-12">
+    <div class="date">
+      <span>21.09.2016</strong>
+    </div>
+    <div class="content">
+      <p>Some time ago, I built the <a href="http://openerz.herokuapp.com/">OpenERZ API</a> (and <a href="http://metaodi.ch/posts/2015/01/openerz/">wrote about it on this blog</a>).
+The API provides a nice and easy way to the waste collection data of the City of Zurich, provided by <a href="https://www.stadt-zuerich.ch/ted/de/index/entsorgung_recycling.html">Entsorgung + Recycling Zürich (ERZ)</a> via the <a href="https://data.stadt-zuerich.ch/dataset?tags=entsorgung">Open Data Portal of the City of Zurich</a>.</p>
+
+<p>OpenERZ provides iCal calendars, so that you can create a custom calender for the types of waste and the the ZIP code your interested in and put that in your digital calendar.</p>
+
+<p>But for me the killer feature is the get push notifications.
+There used to be a free SMS service from ERZ to remind you of the waste collection (e.g. to put your cardboard in front of your house, so that it gets collected the next day).
+Unfortunately they shut down this sevice and launched their own app.</p>
+
+<p>So here I am, with an API that has all the data and the need for push notifications.
+Instead of building everything from scratch, I decided to look into existing solutions.
+The first thing, that came to my mind was <a href="https://ifttt.com">IFTTT</a>, the universal recipe tool to connect different services.</p>
+
+<p>It has almost everything I need:</p>
+
+<ul>
+<li>A time based trigger, to run something every day (think <em>cron</em>)</li>
+<li>A so called channel to make and receive web requests (it&#39;s called <a href="https://ifttt.com/maker">&quot;Maker&quot; on IFTTT</a>)</li>
+<li>A channel for Pushover, a service to receive push notifications on your phone (there are other options to do this, but this is my current choice)</li>
+</ul>
+
+<p>To glue these together, only a little script is needed, that makes API requests to OpenERZ and <em>transforms</em> these into single messages that can be received as a push notification.
+For this purpose I created the <a href="https://github.com/metaodi/erz-trigger">erz-trigger project</a>.
+It&#39;s a small node application that I deployed to Heroku.</p>
+
+<p>If you make a GET request to the application, it calls the OpenERZ API for waste collections of the following day with the given zip code.
+It then makes a call to the Maker channel web hook for each waste collection returned by the API.
+IFTTT takes care that I get a push notification, if the web hook is called.</p>
+
+<p><img src="/assets/media/push_notification.png" alt="Push notification"></p>
+
+<p>In the end, I have the heroku instance running and setup two recipes on IFTTT:</p>
+
+<p><img src="/assets/media/webhook_recipe.png" alt="Recipe for webhook -&gt; push">
+<img src="/assets/media/cron_recipe.png" alt="Recipe for time -&gt; web request (cron)"></p>
+
+<p>To make it a little more secure, the application is protected by an API token.
+So feel free to launch your own instance of erz-trigger, just make sure to configure your own token and to provide your API key of IFTTT.</p>
+
+    </div>
+    <ul class="tag_box inline">
+      <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+      <li>
+        <a href="/tags#Programming-ref">Programming <span>20</span></a>
+      </li>
+      <li>
+        <a href="/tags#Open Data-ref">Open Data <span>6</span></a>
+      </li>
+      <li>
+        <a href="/tags#API-ref">API <span>2</span></a>
+      </li>
+      <li>
+        <a href="/tags#ERZ-ref">ERZ <span>2</span></a>
+      </li>
+      <li>
+        <a href="/tags#JavaScript-ref">JavaScript <span>6</span></a>
+      </li>
+    </ul>
+    <hr>
+    <ul class="pagination">
+        <li class="prev"><a href="/posts/2015/12/vagrant-system-status" title="Check the status of all vagrant boxes on your system">&larr; Previous</a></li>
+
+        <li><a href="/archive">Archive</a></li>
+
+        <li class="next disabled"><a>Next &rarr;</a>
+    </ul>
+    <hr>
+    <div id="disqus_thread"></div>
+<script>
+    var disqus_developer = 1;
+    var disqus_shortname = 'metaodi'; // required: replace example with your forum shortname
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+  </div>
+</div>
+
+
+      </div>
+
+      <hr>
+      <div class="footer">
+        <p>&copy; Stefan Oderbolz (&quot;Odi&quot;) 2016
+          with <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a>
+          and <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>
+        </p>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- Google Prettify -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.js"></script>
+<script>
+  var pres = document.getElementsByTagName("pre");
+  for (var i=0; i < pres.length; ++i) {
+    pres[i].className = "prettyprint linenums";
+  }
+  prettyPrint();
+</script>
+<!-- end Google Prettify -->
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-47578431-1']);
+  _gaq.push(['_trackPageview']);
+  
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+    
+  </body>
+</html>

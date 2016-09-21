@@ -75,12 +75,75 @@
 <div class="row-fluid">
   <div class="col-md-12">
     <div class="posts">
+  <h2 class="title"><span class="date">21.09.2016</span><a href="/posts/2016/09/push-notifications-for-waste-collection">Receive push notifications for waste collection in your area (OpenERZ)</a></h3>
+
+  <ul class="tag_box inline">
+  <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+    <li>
+      <a href="/tags#Programming-ref">Programming <span>20</span></a>
+    </li>
+    <li>
+      <a href="/tags#Open Data-ref">Open Data <span>6</span></a>
+    </li>
+    <li>
+      <a href="/tags#API-ref">API <span>2</span></a>
+    </li>
+    <li>
+      <a href="/tags#ERZ-ref">ERZ <span>2</span></a>
+    </li>
+    <li>
+      <a href="/tags#JavaScript-ref">JavaScript <span>6</span></a>
+    </li>
+  </ul>
+
+  <p>Some time ago, I built the <a href="http://openerz.herokuapp.com/">OpenERZ API</a> (and <a href="http://metaodi.ch/posts/2015/01/openerz/">wrote about it on this blog</a>).
+The API provides a nice and easy way to the waste collection data of the City of Zurich, provided by <a href="https://www.stadt-zuerich.ch/ted/de/index/entsorgung_recycling.html">Entsorgung + Recycling Zürich (ERZ)</a> via the <a href="https://data.stadt-zuerich.ch/dataset?tags=entsorgung">Open Data Portal of the City of Zurich</a>.</p>
+
+<p>OpenERZ provides iCal calendars, so that you can create a custom calender for the types of waste and the the ZIP code your interested in and put that in your digital calendar.</p>
+
+<p>But for me the killer feature is the get push notifications.
+There used to be a free SMS service from ERZ to remind you of the waste collection (e.g. to put your cardboard in front of your house, so that it gets collected the next day).
+Unfortunately they shut down this sevice and launched their own app.</p>
+
+<p>So here I am, with an API that has all the data and the need for push notifications.
+Instead of building everything from scratch, I decided to look into existing solutions.
+The first thing, that came to my mind was <a href="https://ifttt.com">IFTTT</a>, the universal recipe tool to connect different services.</p>
+
+<p>It has almost everything I need:</p>
+
+<ul>
+<li>A time based trigger, to run something every day (think <em>cron</em>)</li>
+<li>A so called channel to make and receive web requests (it&#39;s called <a href="https://ifttt.com/maker">&quot;Maker&quot; on IFTTT</a>)</li>
+<li>A channel for Pushover, a service to receive push notifications on your phone (there are other options to do this, but this is my current choice)</li>
+</ul>
+
+<p>To glue these together, only a little script is needed, that makes API requests to OpenERZ and <em>transforms</em> these into single messages that can be received as a push notification.
+For this purpose I created the <a href="https://github.com/metaodi/erz-trigger">erz-trigger project</a>.
+It&#39;s a small node application that I deployed to Heroku.</p>
+
+<p>If you make a GET request to the application, it calls the OpenERZ API for waste collections of the following day with the given zip code.
+It then makes a call to the Maker channel web hook for each waste collection returned by the API.
+IFTTT takes care that I get a push notification, if the web hook is called.</p>
+
+<p><img src="/assets/media/push_notification.png" alt="Push notification"></p>
+
+<p>In the end, I have the heroku instance running and setup two recipes on IFTTT:</p>
+
+<p><img src="/assets/media/webhook_recipe.png" alt="Recipe for webhook -&gt; push">
+<img src="/assets/media/cron_recipe.png" alt="Recipe for time -&gt; web request (cron)"></p>
+
+<p>To make it a little more secure, the application is protected by an API token.
+So feel free to launch your own instance of erz-trigger, just make sure to configure your own token and to provide your API key of IFTTT.</p>
+
+
+</div>
+<div class="posts">
   <h2 class="title"><span class="date">15.12.2015</span><a href="/posts/2015/12/vagrant-system-status">Check the status of all vagrant boxes on your system</a></h3>
 
   <ul class="tag_box inline">
   <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
     <li>
-      <a href="/tags#Programming-ref">Programming <span>19</span></a>
+      <a href="/tags#Programming-ref">Programming <span>20</span></a>
     </li>
   </ul>
 
@@ -162,7 +225,7 @@ It only means that we have to think about this other way as well. And that the c
   <ul class="tag_box inline">
   <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
     <li>
-      <a href="/tags#Open Data-ref">Open Data <span>5</span></a>
+      <a href="/tags#Open Data-ref">Open Data <span>6</span></a>
     </li>
     <li>
       <a href="/tags#Talk-ref">Talk <span>2</span></a>
@@ -296,7 +359,7 @@ If it&#39;s based on the same principles as I&#39;ve written above, it is not ac
   <ul class="tag_box inline">
   <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
     <li>
-      <a href="/tags#Programming-ref">Programming <span>19</span></a>
+      <a href="/tags#Programming-ref">Programming <span>20</span></a>
     </li>
     <li>
       <a href="/tags#Learning-ref">Learning <span>1</span></a>
@@ -358,19 +421,19 @@ It&#39;s about <strong>understanding how a programmer tackles a problem, learn n
   <ul class="tag_box inline">
   <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
     <li>
-      <a href="/tags#Open Data-ref">Open Data <span>5</span></a>
+      <a href="/tags#Open Data-ref">Open Data <span>6</span></a>
     </li>
     <li>
-      <a href="/tags#ERZ-ref">ERZ <span>1</span></a>
+      <a href="/tags#ERZ-ref">ERZ <span>2</span></a>
     </li>
     <li>
-      <a href="/tags#API-ref">API <span>1</span></a>
+      <a href="/tags#API-ref">API <span>2</span></a>
     </li>
     <li>
       <a href="/tags#CSV-ref">CSV <span>3</span></a>
     </li>
     <li>
-      <a href="/tags#JavaScript-ref">JavaScript <span>5</span></a>
+      <a href="/tags#JavaScript-ref">JavaScript <span>6</span></a>
     </li>
     <li>
       <a href="/tags#MongoDB-ref">MongoDB <span>2</span></a>
@@ -457,7 +520,7 @@ After some iterations the current API gained some features:</p>
   <ul class="tag_box inline">
   <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
     <li>
-      <a href="/tags#Open Data-ref">Open Data <span>5</span></a>
+      <a href="/tags#Open Data-ref">Open Data <span>6</span></a>
     </li>
     <li>
       <a href="/tags#Conferences-ref">Conferences <span>2</span></a>
@@ -564,7 +627,7 @@ There are similar approaches to use such walls or boards to share news in local 
       <a href="/tags#MongoDB-ref">MongoDB <span>2</span></a>
     </li>
     <li>
-      <a href="/tags#Open Data-ref">Open Data <span>5</span></a>
+      <a href="/tags#Open Data-ref">Open Data <span>6</span></a>
     </li>
     <li>
       <a href="/tags#OpenStreetMap-ref">OpenStreetMap <span>2</span></a>
@@ -668,84 +731,6 @@ exports.nearby = function(lat, lon, callbackFn) {
 
 <p>By the way: the project is still active and we are still looking for people to participate.
 The next step would be to connect DenkMap to <a href="http://wikidata.org">WikiData</a> and display some extra information, link to the corresponding Wikipedia page, and/or display images of the monument in the app.</p>
-
-
-</div>
-<div class="posts">
-  <h2 class="title"><span class="date">31.01.2014</span><a href="/posts/2014/01/stop-making-stupid-open-data-contests">Stop making stupid Open Data contests!</a></h3>
-
-  <ul class="tag_box inline">
-  <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-    <li>
-      <a href="/tags#Open Data-ref">Open Data <span>5</span></a>
-    </li>
-    <li>
-      <a href="/tags#OGD-ref">OGD <span>1</span></a>
-    </li>
-  </ul>
-
-  <p><em>Disclaimer:
-I work for <a href="http://www.liip.ch">Liip</a>, the company that build the <a href="http://opendata.admin.ch">Open Data pilot portal for Switzerland</a>.
-I&#39;m one of the developers of the portal.
-On the other hand, I&#39;m a member of the <a href="http://opendata.ch">opendata.ch</a> association.</em></p>
-
-<p>Although I&#39;m a relatively new member of the Open Data community, I use and work with Open Data in different forms for many years now.
-I&#39;m a keen enthusiast of the underlying idea of openness, collaboration and knowledge sharing.
-But the whole idea of Open Government Data (OGD) in Switzerland is currently broken.
-There are numerous problems and it probably all boils down to false expectations.</p>
-
-<p>To make new data known to the public, often the first idea is to make an app contest.
-At first this sounds like a good idea: People working with your data and creating an app.
-It sounds like a win-win situation.
-Some may even think it&#39;s cheap way to get a lot of apps.
-The problem is, that contests have winners. And when there are winners, there must be losers.
-<strong>Your data is much too valuable, and every contribution is too important to waste time to choose a <em>winner</em>.</strong></p>
-
-<ul>
-<li>You limit the interest in the data (<em>why should I continue my project if I just lost a contest?</em>).</li>
-<li>You limit the collaboration between the different groups that take part in the contest (<em>why should I help somebody else to create a better app, if that decreases my chances to win this contest myself?</em>).</li>
-</ul>
-
-<p>The goal of an OGD data owner should be, that a lot of people know and use your data.
-This makes it worth to create this data in the first place.
-It doesn&#39;t matter if it is used by a special interest group or by an app used by millions of people.</p>
-
-<p>On the other side, hackathons provide a good environment to play around, talk with different people and hack along.
-This is the kind of thing we need.
-Please understand that after such an event there are tons of ideas around. Prototypes, unfinished apps, visualizations etc. This is all very valuable. Don&#39;t expect a bunch of polished, ready-to-use apps as a result.</p>
-
-<p>Most data owners consider it a failure if nothing happens after they release data.
-This is just plain wrong. The whole point of Open Data is to open your data. It&#39;s done. It&#39;s out there.
-Anyone that is interested can use this data. You never know when this is. Eventually someone creates a mashup, where you dataset is the missing piece.</p>
-
-<p>What if this does not happen? It doesn&#39;t matter. Maybe the time was not right. Maybe this dataset is just not interesting enough.
-But that doesn&#39;t mean it was not worth to open it.</p>
-
-<p>But of course there some things that you <em>can</em> and <em>should</em> do. Here is my little list of <strong>DOs</strong> and <strong>DON&#39;Ts</strong>:</p>
-
-<h4 id="toc_0"><strong>DO</strong></h4>
-
-<ul>
-<li>Talk about your data (speeches, blog posts)</li>
-<li>Make events to explain your data</li>
-<li>Bring cool swag to hackathons (for everyone!) :)</li>
-<li>Invite people to visit you, connect your experts with the community</li>
-<li>Provide help to process your data</li>
-<li>Open Source the tools you use internally to make them available for everybody</li>
-<li>Make sure to involve the media (yes, if you release your data or make an event, invite them)</li>
-<li>Coordinate with the community, ask questions, don&#39;t make assumptions</li>
-</ul>
-
-<h4 id="toc_1"><strong>DON&#39;T</strong></h4>
-
-<ul>
-<li>Measure the success of your Open Data by the <em>amount</em> of apps/visualization build with it. Actually, don&#39;t measure the success at all. Concentrate on releasing new and interesting data.</li>
-<li>Expect people to do your work</li>
-<li>Assume everybody was just waiting for your data and must be grateful for it. Give people time to discover your data</li>
-<li>Think that a press release is all it takes to get attention from the media</li>
-<li>If you have a budget for Open Data, don&#39;t spend it for someone to create an app with your data. Use it to organize events, invite people, do whatever you are best at!</li>
-<li><strong>Seriously: No more contests, no more fucking prizes.</strong> </li>
-</ul>
 
 
 </div>

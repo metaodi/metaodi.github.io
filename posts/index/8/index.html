@@ -74,6 +74,50 @@
         <div class="row-fluid">
   <div class="col-md-12">
       <div class="posts">
+        <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/using-pidgin-with-msn-pecan">Using Pidgin with msn-pecan</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#MSN-ref">MSN <span>1</span></a>
+          </li>
+          <li>
+            <a href="/tags#Linux-ref">Linux <span>8</span></a>
+          </li>
+        </ul>
+
+        <p>Today when I was starting pidgin I could connect to ICQ, but when trying
+to connect to MSN Pidgin comes up with:</p>
+
+<pre><code>unable to retrieve MSN address book
+</code></pre>
+
+<p>So I was googeling a little bit and found a bug @ pidgin from yesterday.
+The problem is not pidgin, although the official MSN client and some
+others clients still work (e.g. meebo). There are several different
+versions of the MSN protocol, pidgin is using MSNP15. And exactly this
+protocol is currently not working on the server side @ Microsoft (as it
+seems).</p>
+
+<p>Other clients are not affected as they switch to older version of the
+protocol, which are still working.</p>
+
+<p>Because I don’t want to wait until MS fixed the problem, I use a quick
+workaround. As an alternative you can install <code>msn-pecan</code>.</p>
+
+<p>With Gentoo this works (after adding “x11-plugins/pidgin-msn-pecan
+~x86” to <code>/etc/portage/package.keywords</code>):</p>
+
+<pre><code># emerge pidgin-msn-pecan
+</code></pre>
+
+<p>After the installation just restart Pidgin go to “Accounts” -&gt; “Manage
+Accounts”. Select your MSN-Account, click “Modify”. Choose “WLM” as
+protocol. Save and reconnect your MSN account. Works like a charm!</p>
+
+
+      </div>
+      <div class="posts">
         <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/dvd-rip-and-gentoo">dvd::rip and gentoo</a> </h3>
 
         <ul class="tag_box">
@@ -295,7 +339,7 @@ same age as the files within.</p>
             <a href="/tags#SQL-ref">SQL <span>6</span></a>
           </li>
           <li>
-            <a href="/tags#Programming-ref">Programming <span>19</span></a>
+            <a href="/tags#Programming-ref">Programming <span>20</span></a>
           </li>
         </ul>
 
@@ -355,7 +399,7 @@ open to new ways of doing this.</p>
         <ul class="tag_box">
         <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
           <li>
-            <a href="/tags#Programming-ref">Programming <span>19</span></a>
+            <a href="/tags#Programming-ref">Programming <span>20</span></a>
           </li>
           <li>
             <a href="/tags#Brainfuck-ref">Brainfuck <span>1</span></a>
@@ -746,34 +790,6 @@ ich mal Bichsels Text neu.</p>
   frieren    stehen
   blättern   stellen
 </code></pre>
-
-
-      </div>
-      <div class="posts">
-        <h2 class="title"><span class="date">08.10.2009</span><a href="/posts/2009/10/papier-zum-tragen-kein-problem">Papier - Zum Tragen kein Problem</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#German-ref">German <span>19</span></a>
-          </li>
-          <li>
-            <a href="/tags#Fun-ref">Fun <span>4</span></a>
-          </li>
-        </ul>
-
-        <p>Wenn ich eine Tüte für mein Brötchen bekomme finde ich es immer
-angenehm, dass die auch halten.</p>
-
-<p><img src="http://media.tumblr.com/tumblr_kr7psaSsF81qa2z4q.jpg" alt=""></p>
-
-<p>Eine normale Tüte, aber…</p>
-
-<p><img src="http://media.tumblr.com/tumblr_kr7pslrxP61qa2z4q.jpg" alt=""></p>
-
-<p><strong>DAS ist wichtig!</strong></p>
-
-<p>In dem Sinne: trägt euch sorge, denn es ist gut.</p>
 
 
       </div>

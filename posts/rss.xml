@@ -4,7 +4,51 @@
     <title>metaodi</title>
     <description>metaodi</description>
     <link>http://metaodi.ch</link>
-    <pubDate>24.08.2016</pubDate>
+    <pubDate>21.09.2016</pubDate>
+    <item>
+      <title>Receive push notifications for waste collection in your area (OpenERZ)</title>
+      <link>http://metaodi.ch/posts/2016/09/push-notifications-for-waste-collection</link>
+      <pubDate>21.09.2016</pubDate>
+      <description>&lt;p&gt;Some time ago, I built the &lt;a href="http://openerz.herokuapp.com/"&gt;OpenERZ API&lt;/a&gt; (and &lt;a href="http://metaodi.ch/posts/2015/01/openerz/"&gt;wrote about it on this blog&lt;/a&gt;).
+The API provides a nice and easy way to the waste collection data of the City of Zurich, provided by &lt;a href="https://www.stadt-zuerich.ch/ted/de/index/entsorgung_recycling.html"&gt;Entsorgung + Recycling Z&#xFC;rich (ERZ)&lt;/a&gt; via the &lt;a href="https://data.stadt-zuerich.ch/dataset?tags=entsorgung"&gt;Open Data Portal of the City of Zurich&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;OpenERZ provides iCal calendars, so that you can create a custom calender for the types of waste and the the ZIP code your interested in and put that in your digital calendar.&lt;/p&gt;
+
+&lt;p&gt;But for me the killer feature is the get push notifications.
+There used to be a free SMS service from ERZ to remind you of the waste collection (e.g. to put your cardboard in front of your house, so that it gets collected the next day).
+Unfortunately they shut down this sevice and launched their own app.&lt;/p&gt;
+
+&lt;p&gt;So here I am, with an API that has all the data and the need for push notifications.
+Instead of building everything from scratch, I decided to look into existing solutions.
+The first thing, that came to my mind was &lt;a href="https://ifttt.com"&gt;IFTTT&lt;/a&gt;, the universal recipe tool to connect different services.&lt;/p&gt;
+
+&lt;p&gt;It has almost everything I need:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A time based trigger, to run something every day (think &lt;em&gt;cron&lt;/em&gt;)&lt;/li&gt;
+&lt;li&gt;A so called channel to make and receive web requests (it&amp;#39;s called &lt;a href="https://ifttt.com/maker"&gt;&amp;quot;Maker&amp;quot; on IFTTT&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;A channel for Pushover, a service to receive push notifications on your phone (there are other options to do this, but this is my current choice)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To glue these together, only a little script is needed, that makes API requests to OpenERZ and &lt;em&gt;transforms&lt;/em&gt; these into single messages that can be received as a push notification.
+For this purpose I created the &lt;a href="https://github.com/metaodi/erz-trigger"&gt;erz-trigger project&lt;/a&gt;.
+It&amp;#39;s a small node application that I deployed to Heroku.&lt;/p&gt;
+
+&lt;p&gt;If you make a GET request to the application, it calls the OpenERZ API for waste collections of the following day with the given zip code.
+It then makes a call to the Maker channel web hook for each waste collection returned by the API.
+IFTTT takes care that I get a push notification, if the web hook is called.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/assets/media/push_notification.png" alt="Push notification"&gt;&lt;/p&gt;
+
+&lt;p&gt;In the end, I have the heroku instance running and setup two recipes on IFTTT:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/assets/media/webhook_recipe.png" alt="Recipe for webhook -&amp;gt; push"&gt;
+&lt;img src="/assets/media/cron_recipe.png" alt="Recipe for time -&amp;gt; web request (cron)"&gt;&lt;/p&gt;
+
+&lt;p&gt;To make it a little more secure, the application is protected by an API token.
+So feel free to launch your own instance of erz-trigger, just make sure to configure your own token and to provide your API key of IFTTT.&lt;/p&gt;
+</description>
+    </item>
     <item>
       <title>Check the status of all vagrant boxes on your system</title>
       <link>http://metaodi.ch/posts/2015/12/vagrant-system-status</link>

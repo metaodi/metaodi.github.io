@@ -4,7 +4,7 @@
     <title>metaodi</title>
     <description>metaodi</description>
     <link>http://metaodi.ch</link>
-    <pubDate>24.08.2016</pubDate>
+    <pubDate>21.09.2016</pubDate>
     <item>
       <title>About me</title>
       <link>http://metaodi.ch/about</link>
@@ -23,6 +23,11 @@
       <title>Archive</title>
       <link>http://metaodi.ch/archive</link>
       <description>
+  &lt;h2&gt;2016&lt;/h2&gt;
+    &lt;h3&gt;September&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;21.09.2016&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2016/09/push-notifications-for-waste-collection"&gt;Receive push notifications for waste collection in your area (OpenERZ)&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
   &lt;h2&gt;2015&lt;/h2&gt;
     &lt;h3&gt;December&lt;/h3&gt;
     &lt;ul&gt;
@@ -294,7 +299,7 @@
     &lt;a href="/tags#Python-ref"&gt;Python &lt;span&gt;3&lt;/span&gt;&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;a href="/tags#Programming-ref"&gt;Programming &lt;span&gt;19&lt;/span&gt;&lt;/a&gt;
+    &lt;a href="/tags#Programming-ref"&gt;Programming &lt;span&gt;20&lt;/span&gt;&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;a href="/tags#Excel-ref"&gt;Excel &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
@@ -306,7 +311,7 @@
     &lt;a href="/tags#Learning-ref"&gt;Learning &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
+    &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;6&lt;/span&gt;&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
@@ -318,13 +323,13 @@
     &lt;a href="/tags#E-Voting-ref"&gt;E-Voting &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;a href="/tags#ERZ-ref"&gt;ERZ &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+    &lt;a href="/tags#ERZ-ref"&gt;ERZ &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;a href="/tags#API-ref"&gt;API &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+    &lt;a href="/tags#API-ref"&gt;API &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;a href="/tags#JavaScript-ref"&gt;JavaScript &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
+    &lt;a href="/tags#JavaScript-ref"&gt;JavaScript &lt;span&gt;6&lt;/span&gt;&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;a href="/tags#MongoDB-ref"&gt;MongoDB &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
@@ -546,6 +551,7 @@
     &lt;li&gt;&lt;a href="/posts/2011/06/php-unit-testing-mit-simpletest"&gt;PHP Unit Testing mit SimpleTest&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2011/09/team-filter-f-r-hockeytoto-ch"&gt;Team-Filter f&#xFC;r hockeytoto.ch&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2005/04/release-hostages"&gt;Release Hostages&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2016/09/push-notifications-for-waste-collection"&gt;Receive push notifications for waste collection in your area (OpenERZ)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2009/11/the-go-programming-language"&gt;The Go Programming Language&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2009/10/brainfucked-logo"&gt;Brainfucked Logo&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2009/10/odbc-hell"&gt;ODBC Hell&lt;/a&gt;&lt;/li&gt;
@@ -567,6 +573,7 @@
     &lt;li&gt;&lt;a href="/posts/2014/02/usage-of-mongodb-with-a-spatial--and-geojson"&gt;Usage of MongoDB with a spatial index and GeoJSON&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2014/09/open-data-workshop"&gt;Workshop about Open Data Technologies&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2014/01/stop-making-stupid-open-data-contests"&gt;Stop making stupid Open Data contests!&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2016/09/push-notifications-for-waste-collection"&gt;Receive push notifications for waste collection in your area (OpenERZ)&lt;/a&gt;&lt;/li&gt;
   &lt;h3 class="anchor" id="Talk-ref"&gt;Talk&lt;/h3&gt;
     &lt;li&gt;&lt;a href="/posts/2015/12/open-data-mashup"&gt;Open Data MashUp @ Impact Hub&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2014/09/open-data-workshop"&gt;Workshop about Open Data Technologies&lt;/a&gt;&lt;/li&gt;
@@ -579,14 +586,17 @@
     &lt;li&gt;&lt;a href="/posts/2015/09/why-i-am-against-e-voting"&gt;Why I'm against E-Voting&lt;/a&gt;&lt;/li&gt;
   &lt;h3 class="anchor" id="ERZ-ref"&gt;ERZ&lt;/h3&gt;
     &lt;li&gt;&lt;a href="/posts/2015/01/openerz"&gt;Why and how I created the OpenERZ API&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2016/09/push-notifications-for-waste-collection"&gt;Receive push notifications for waste collection in your area (OpenERZ)&lt;/a&gt;&lt;/li&gt;
   &lt;h3 class="anchor" id="API-ref"&gt;API&lt;/h3&gt;
     &lt;li&gt;&lt;a href="/posts/2015/01/openerz"&gt;Why and how I created the OpenERZ API&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2016/09/push-notifications-for-waste-collection"&gt;Receive push notifications for waste collection in your area (OpenERZ)&lt;/a&gt;&lt;/li&gt;
   &lt;h3 class="anchor" id="JavaScript-ref"&gt;JavaScript&lt;/h3&gt;
     &lt;li&gt;&lt;a href="/posts/2015/01/openerz"&gt;Why and how I created the OpenERZ API&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2012/05/fiddle-around-code"&gt;Fiddle around (code)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2012/03/setup-javascript-unit-testing-using-qunit-phantomjs"&gt;Setup JavaScript unit testing using QUnit, PhantomJS and Jenkins on Amazon EC2&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2011/06/zum-selektierten-wert-springen"&gt;Zum selektierten Wert springen (IE Bug)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2011/09/team-filter-f-r-hockeytoto-ch"&gt;Team-Filter f&#xFC;r hockeytoto.ch&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2016/09/push-notifications-for-waste-collection"&gt;Receive push notifications for waste collection in your area (OpenERZ)&lt;/a&gt;&lt;/li&gt;
   &lt;h3 class="anchor" id="MongoDB-ref"&gt;MongoDB&lt;/h3&gt;
     &lt;li&gt;&lt;a href="/posts/2015/01/openerz"&gt;Why and how I created the OpenERZ API&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2014/02/usage-of-mongodb-with-a-spatial--and-geojson"&gt;Usage of MongoDB with a spatial index and GeoJSON&lt;/a&gt;&lt;/li&gt;
@@ -775,12 +785,75 @@
       <title>metaodi</title>
       <link>http://metaodi.ch/</link>
       <description>&lt;div class="posts"&gt;
+  &lt;h2 class="title"&gt;&lt;span class="date"&gt;21.09.2016&lt;/span&gt;&lt;a href="/posts/2016/09/push-notifications-for-waste-collection"&gt;Receive push notifications for waste collection in your area (OpenERZ)&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;ul class="tag_box inline"&gt;
+  &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Programming-ref"&gt;Programming &lt;span&gt;20&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;6&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#API-ref"&gt;API &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#ERZ-ref"&gt;ERZ &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#JavaScript-ref"&gt;JavaScript &lt;span&gt;6&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;Some time ago, I built the &lt;a href="http://openerz.herokuapp.com/"&gt;OpenERZ API&lt;/a&gt; (and &lt;a href="http://metaodi.ch/posts/2015/01/openerz/"&gt;wrote about it on this blog&lt;/a&gt;).
+The API provides a nice and easy way to the waste collection data of the City of Zurich, provided by &lt;a href="https://www.stadt-zuerich.ch/ted/de/index/entsorgung_recycling.html"&gt;Entsorgung + Recycling Z&#xFC;rich (ERZ)&lt;/a&gt; via the &lt;a href="https://data.stadt-zuerich.ch/dataset?tags=entsorgung"&gt;Open Data Portal of the City of Zurich&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;OpenERZ provides iCal calendars, so that you can create a custom calender for the types of waste and the the ZIP code your interested in and put that in your digital calendar.&lt;/p&gt;
+
+&lt;p&gt;But for me the killer feature is the get push notifications.
+There used to be a free SMS service from ERZ to remind you of the waste collection (e.g. to put your cardboard in front of your house, so that it gets collected the next day).
+Unfortunately they shut down this sevice and launched their own app.&lt;/p&gt;
+
+&lt;p&gt;So here I am, with an API that has all the data and the need for push notifications.
+Instead of building everything from scratch, I decided to look into existing solutions.
+The first thing, that came to my mind was &lt;a href="https://ifttt.com"&gt;IFTTT&lt;/a&gt;, the universal recipe tool to connect different services.&lt;/p&gt;
+
+&lt;p&gt;It has almost everything I need:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A time based trigger, to run something every day (think &lt;em&gt;cron&lt;/em&gt;)&lt;/li&gt;
+&lt;li&gt;A so called channel to make and receive web requests (it&amp;#39;s called &lt;a href="https://ifttt.com/maker"&gt;&amp;quot;Maker&amp;quot; on IFTTT&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;A channel for Pushover, a service to receive push notifications on your phone (there are other options to do this, but this is my current choice)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To glue these together, only a little script is needed, that makes API requests to OpenERZ and &lt;em&gt;transforms&lt;/em&gt; these into single messages that can be received as a push notification.
+For this purpose I created the &lt;a href="https://github.com/metaodi/erz-trigger"&gt;erz-trigger project&lt;/a&gt;.
+It&amp;#39;s a small node application that I deployed to Heroku.&lt;/p&gt;
+
+&lt;p&gt;If you make a GET request to the application, it calls the OpenERZ API for waste collections of the following day with the given zip code.
+It then makes a call to the Maker channel web hook for each waste collection returned by the API.
+IFTTT takes care that I get a push notification, if the web hook is called.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/assets/media/push_notification.png" alt="Push notification"&gt;&lt;/p&gt;
+
+&lt;p&gt;In the end, I have the heroku instance running and setup two recipes on IFTTT:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/assets/media/webhook_recipe.png" alt="Recipe for webhook -&amp;gt; push"&gt;
+&lt;img src="/assets/media/cron_recipe.png" alt="Recipe for time -&amp;gt; web request (cron)"&gt;&lt;/p&gt;
+
+&lt;p&gt;To make it a little more secure, the application is protected by an API token.
+So feel free to launch your own instance of erz-trigger, just make sure to configure your own token and to provide your API key of IFTTT.&lt;/p&gt;
+
+
+&lt;/div&gt;
+&lt;div class="posts"&gt;
   &lt;h2 class="title"&gt;&lt;span class="date"&gt;15.12.2015&lt;/span&gt;&lt;a href="/posts/2015/12/vagrant-system-status"&gt;Check the status of all vagrant boxes on your system&lt;/a&gt;&lt;/h3&gt;
 
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Programming-ref"&gt;Programming &lt;span&gt;19&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Programming-ref"&gt;Programming &lt;span&gt;20&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -862,7 +935,7 @@ It only means that we have to think about this other way as well. And that the c
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;6&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
@@ -996,7 +1069,7 @@ If it&amp;#39;s based on the same principles as I&amp;#39;ve written above, it i
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Programming-ref"&gt;Programming &lt;span&gt;19&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Programming-ref"&gt;Programming &lt;span&gt;20&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#Learning-ref"&gt;Learning &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
@@ -1058,19 +1131,19 @@ It&amp;#39;s about &lt;strong&gt;understanding how a programmer tackles a proble
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;6&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#ERZ-ref"&gt;ERZ &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#ERZ-ref"&gt;ERZ &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#API-ref"&gt;API &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#API-ref"&gt;API &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#CSV-ref"&gt;CSV &lt;span&gt;3&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#JavaScript-ref"&gt;JavaScript &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#JavaScript-ref"&gt;JavaScript &lt;span&gt;6&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#MongoDB-ref"&gt;MongoDB &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
@@ -1157,7 +1230,7 @@ After some iterations the current API gained some features:&lt;/p&gt;
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;6&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
@@ -1264,7 +1337,7 @@ There are similar approaches to use such walls or boards to share news in local 
       &lt;a href="/tags#MongoDB-ref"&gt;MongoDB &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;6&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#OpenStreetMap-ref"&gt;OpenStreetMap &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
@@ -1368,84 +1441,6 @@ exports.nearby = function(lat, lon, callbackFn) {
 
 &lt;p&gt;By the way: the project is still active and we are still looking for people to participate.
 The next step would be to connect DenkMap to &lt;a href="http://wikidata.org"&gt;WikiData&lt;/a&gt; and display some extra information, link to the corresponding Wikipedia page, and/or display images of the monument in the app.&lt;/p&gt;
-
-
-&lt;/div&gt;
-&lt;div class="posts"&gt;
-  &lt;h2 class="title"&gt;&lt;span class="date"&gt;31.01.2014&lt;/span&gt;&lt;a href="/posts/2014/01/stop-making-stupid-open-data-contests"&gt;Stop making stupid Open Data contests!&lt;/a&gt;&lt;/h3&gt;
-
-  &lt;ul class="tag_box inline"&gt;
-  &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="/tags#OGD-ref"&gt;OGD &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;p&gt;&lt;em&gt;Disclaimer:
-I work for &lt;a href="http://www.liip.ch"&gt;Liip&lt;/a&gt;, the company that build the &lt;a href="http://opendata.admin.ch"&gt;Open Data pilot portal for Switzerland&lt;/a&gt;.
-I&amp;#39;m one of the developers of the portal.
-On the other hand, I&amp;#39;m a member of the &lt;a href="http://opendata.ch"&gt;opendata.ch&lt;/a&gt; association.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Although I&amp;#39;m a relatively new member of the Open Data community, I use and work with Open Data in different forms for many years now.
-I&amp;#39;m a keen enthusiast of the underlying idea of openness, collaboration and knowledge sharing.
-But the whole idea of Open Government Data (OGD) in Switzerland is currently broken.
-There are numerous problems and it probably all boils down to false expectations.&lt;/p&gt;
-
-&lt;p&gt;To make new data known to the public, often the first idea is to make an app contest.
-At first this sounds like a good idea: People working with your data and creating an app.
-It sounds like a win-win situation.
-Some may even think it&amp;#39;s cheap way to get a lot of apps.
-The problem is, that contests have winners. And when there are winners, there must be losers.
-&lt;strong&gt;Your data is much too valuable, and every contribution is too important to waste time to choose a &lt;em&gt;winner&lt;/em&gt;.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;You limit the interest in the data (&lt;em&gt;why should I continue my project if I just lost a contest?&lt;/em&gt;).&lt;/li&gt;
-&lt;li&gt;You limit the collaboration between the different groups that take part in the contest (&lt;em&gt;why should I help somebody else to create a better app, if that decreases my chances to win this contest myself?&lt;/em&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The goal of an OGD data owner should be, that a lot of people know and use your data.
-This makes it worth to create this data in the first place.
-It doesn&amp;#39;t matter if it is used by a special interest group or by an app used by millions of people.&lt;/p&gt;
-
-&lt;p&gt;On the other side, hackathons provide a good environment to play around, talk with different people and hack along.
-This is the kind of thing we need.
-Please understand that after such an event there are tons of ideas around. Prototypes, unfinished apps, visualizations etc. This is all very valuable. Don&amp;#39;t expect a bunch of polished, ready-to-use apps as a result.&lt;/p&gt;
-
-&lt;p&gt;Most data owners consider it a failure if nothing happens after they release data.
-This is just plain wrong. The whole point of Open Data is to open your data. It&amp;#39;s done. It&amp;#39;s out there.
-Anyone that is interested can use this data. You never know when this is. Eventually someone creates a mashup, where you dataset is the missing piece.&lt;/p&gt;
-
-&lt;p&gt;What if this does not happen? It doesn&amp;#39;t matter. Maybe the time was not right. Maybe this dataset is just not interesting enough.
-But that doesn&amp;#39;t mean it was not worth to open it.&lt;/p&gt;
-
-&lt;p&gt;But of course there some things that you &lt;em&gt;can&lt;/em&gt; and &lt;em&gt;should&lt;/em&gt; do. Here is my little list of &lt;strong&gt;DOs&lt;/strong&gt; and &lt;strong&gt;DON&amp;#39;Ts&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;h4 id="toc_0"&gt;&lt;strong&gt;DO&lt;/strong&gt;&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Talk about your data (speeches, blog posts)&lt;/li&gt;
-&lt;li&gt;Make events to explain your data&lt;/li&gt;
-&lt;li&gt;Bring cool swag to hackathons (for everyone!) :)&lt;/li&gt;
-&lt;li&gt;Invite people to visit you, connect your experts with the community&lt;/li&gt;
-&lt;li&gt;Provide help to process your data&lt;/li&gt;
-&lt;li&gt;Open Source the tools you use internally to make them available for everybody&lt;/li&gt;
-&lt;li&gt;Make sure to involve the media (yes, if you release your data or make an event, invite them)&lt;/li&gt;
-&lt;li&gt;Coordinate with the community, ask questions, don&amp;#39;t make assumptions&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id="toc_1"&gt;&lt;strong&gt;DON&amp;#39;T&lt;/strong&gt;&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Measure the success of your Open Data by the &lt;em&gt;amount&lt;/em&gt; of apps/visualization build with it. Actually, don&amp;#39;t measure the success at all. Concentrate on releasing new and interesting data.&lt;/li&gt;
-&lt;li&gt;Expect people to do your work&lt;/li&gt;
-&lt;li&gt;Assume everybody was just waiting for your data and must be grateful for it. Give people time to discover your data&lt;/li&gt;
-&lt;li&gt;Think that a press release is all it takes to get attention from the media&lt;/li&gt;
-&lt;li&gt;If you have a budget for Open Data, don&amp;#39;t spend it for someone to create an app with your data. Use it to organize events, invite people, do whatever you are best at!&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Seriously: No more contests, no more fucking prizes.&lt;/strong&gt; &lt;/li&gt;
-&lt;/ul&gt;
 
 
 &lt;/div&gt;
