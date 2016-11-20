@@ -4,7 +4,7 @@
     <title>metaodi</title>
     <description>metaodi</description>
     <link>http://metaodi.ch</link>
-    <pubDate>21.09.2016</pubDate>
+    <pubDate>20.11.2016</pubDate>
     <item>
       <title>Receive push notifications for waste collection in your area (OpenERZ)</title>
       <link>http://metaodi.ch/posts/2016/09/push-notifications-for-waste-collection</link>
@@ -2696,6 +2696,44 @@ Selbstentscheidungsfreiheit.&lt;/p&gt;
 </description>
     </item>
     <item>
+      <title>dvd::rip and gentoo</title>
+      <link>http://metaodi.ch/posts/2009/10/dvd-rip-and-gentoo</link>
+      <pubDate>23.10.2009</pubDate>
+      <description>&lt;p&gt;&lt;a href="http://exit1.org/dvdrip/"&gt;dvd::rip&lt;/a&gt; (or dvdrip at the gentoo
+repository) is a very comfortable ripping software to bring your DVDs on
+your harddisk.&lt;/p&gt;
+
+&lt;p&gt;When I emerged it and wanted to rip a dvd, I just got no result.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt; the logfile showed no error&lt;/li&gt;
+&lt;li&gt; in the status bar the text appeared Grab
+&lt;code&gt;preview - title #3 Duration: 00:01 [Error]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt; dvd::rip did nothing.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The chapter has been ripped and the file existed on the filesystem, but
+I was unable to transcode it or do anything else with dvd::rip.&lt;/p&gt;
+
+&lt;p&gt;A lot of googling did not provide the solution, but finally I saw that
+dvd::rip prints the exact command that is executed in the logfile, so I
+tried to run it manually to eventually see an error.&lt;/p&gt;
+
+&lt;p&gt;And then there was theerror:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;convert: no decode delegate for this image format `/tmp/dvdrip24111.snap/snapshot001.png&amp;#39;.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I quick search with that showed me, that the problem was imagemagick,
+which obviously did not have png support. I added the USE-flag &#x201C;png&#x201D; to
+imagemagick in /etc/portage/package.use and re-emerged imagemagick.&lt;/p&gt;
+
+&lt;p&gt;Another problems was that transcode was missing the &#x201C;mp3&#x201D; USE-flag.&lt;/p&gt;
+
+&lt;p&gt;Since then dvd::rip just works!&lt;/p&gt;
+</description>
+    </item>
+    <item>
       <title>Generate n rows from dual</title>
       <link>http://metaodi.ch/posts/2009/10/generate-n-rows-from-dual</link>
       <pubDate>23.10.2009</pubDate>
@@ -2744,44 +2782,6 @@ workaround. As an alternative you can install &lt;code&gt;msn-pecan&lt;/code&gt;
 &lt;p&gt;After the installation just restart Pidgin go to &#x201C;Accounts&#x201D; -&amp;gt; &#x201C;Manage
 Accounts&#x201D;. Select your MSN-Account, click &#x201C;Modify&#x201D;. Choose &#x201C;WLM&#x201D; as
 protocol. Save and reconnect your MSN account. Works like a charm!&lt;/p&gt;
-</description>
-    </item>
-    <item>
-      <title>dvd::rip and gentoo</title>
-      <link>http://metaodi.ch/posts/2009/10/dvd-rip-and-gentoo</link>
-      <pubDate>23.10.2009</pubDate>
-      <description>&lt;p&gt;&lt;a href="http://exit1.org/dvdrip/"&gt;dvd::rip&lt;/a&gt; (or dvdrip at the gentoo
-repository) is a very comfortable ripping software to bring your DVDs on
-your harddisk.&lt;/p&gt;
-
-&lt;p&gt;When I emerged it and wanted to rip a dvd, I just got no result.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt; the logfile showed no error&lt;/li&gt;
-&lt;li&gt; in the status bar the text appeared Grab
-&lt;code&gt;preview - title #3 Duration: 00:01 [Error]&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt; dvd::rip did nothing.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;The chapter has been ripped and the file existed on the filesystem, but
-I was unable to transcode it or do anything else with dvd::rip.&lt;/p&gt;
-
-&lt;p&gt;A lot of googling did not provide the solution, but finally I saw that
-dvd::rip prints the exact command that is executed in the logfile, so I
-tried to run it manually to eventually see an error.&lt;/p&gt;
-
-&lt;p&gt;And then there was theerror:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;convert: no decode delegate for this image format `/tmp/dvdrip24111.snap/snapshot001.png&amp;#39;.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I quick search with that showed me, that the problem was imagemagick,
-which obviously did not have png support. I added the USE-flag &#x201C;png&#x201D; to
-imagemagick in /etc/portage/package.use and re-emerged imagemagick.&lt;/p&gt;
-
-&lt;p&gt;Another problems was that transcode was missing the &#x201C;mp3&#x201D; USE-flag.&lt;/p&gt;
-
-&lt;p&gt;Since then dvd::rip just works!&lt;/p&gt;
 </description>
     </item>
     <item>
@@ -3570,20 +3570,6 @@ End Sub
 </description>
     </item>
     <item>
-      <title>Information about Oracle Directories</title>
-      <link>http://metaodi.ch/posts/2006/12/information-about-oracle-directories</link>
-      <pubDate>27.12.2006</pubDate>
-      <description>&lt;p&gt;I know what I write is quite newbieish, but I needed information about a
-directory I&#x2019;ve created, means which path it&#x2019;s pointing to:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;select * from all_directories dir;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;There simply is no user&lt;em&gt;directories, and with all&lt;/em&gt;objects I didn&#x2019;t get
-what I wanted.&lt;/p&gt;
-</description>
-    </item>
-    <item>
       <title>Excel to CSV with Python</title>
       <link>http://metaodi.ch/posts/2006/12/excel-to-csv-with-python</link>
       <pubDate>27.12.2006</pubDate>
@@ -3622,6 +3608,20 @@ for file in files:
 xlApp.Quit()
 del xlApp
 &lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    <item>
+      <title>Information about Oracle Directories</title>
+      <link>http://metaodi.ch/posts/2006/12/information-about-oracle-directories</link>
+      <pubDate>27.12.2006</pubDate>
+      <description>&lt;p&gt;I know what I write is quite newbieish, but I needed information about a
+directory I&#x2019;ve created, means which path it&#x2019;s pointing to:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;select * from all_directories dir;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;There simply is no user&lt;em&gt;directories, and with all&lt;/em&gt;objects I didn&#x2019;t get
+what I wanted.&lt;/p&gt;
 </description>
     </item>
     <item>

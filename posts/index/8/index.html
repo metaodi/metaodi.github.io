@@ -20,7 +20,7 @@
     <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- Le styles -->
-<link href='/assets/stylesheets/style-a039e10a7d2de8b24d250376ec3148ed.css' type='text/css' rel='stylesheet' media='all'>
+<link href='/assets/stylesheets/style.css' type='text/css' rel='stylesheet' media='all'>
 <link href='/assets/stylesheets/google_prettify/sons-of-obsidian-afb0925bfa2d994f17dab93e13fbf999.css' type='text/css' rel='stylesheet' media='all'>    
     <!-- Le scripts -->
 
@@ -74,6 +74,33 @@
         <div class="row-fluid">
   <div class="col-md-12">
       <div class="posts">
+        <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/generate-n-rows-from-dual">Generate n rows from dual</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#SQL-ref">SQL <span>6</span></a>
+          </li>
+          <li>
+            <a href="/tags#Oracle-ref">Oracle <span>6</span></a>
+          </li>
+        </ul>
+
+        <p>I needed to generate exactly n rows and then this is very handy.</p>
+
+<pre><code>select * from (
+select level lvl
+from dual
+connect by level &lt;= N
+)
+</code></pre>
+
+<p>Found at:
+<a href="http://awads.net/wp/2005/07/01/generating-n-rows-from-dual/"></a><a href="http://awads.net/wp/2005/07/01/generating-n-rows-from-dual/">http://awads.net/wp/2005/07/01/generating-n-rows-from-dual/</a></p>
+
+
+      </div>
+      <div class="posts">
         <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/using-pidgin-with-msn-pecan">Using Pidgin with msn-pecan</a> </h3>
 
         <ul class="tag_box">
@@ -114,51 +141,6 @@ workaround. As an alternative you can install <code>msn-pecan</code>.</p>
 <p>After the installation just restart Pidgin go to “Accounts” -&gt; “Manage
 Accounts”. Select your MSN-Account, click “Modify”. Choose “WLM” as
 protocol. Save and reconnect your MSN account. Works like a charm!</p>
-
-
-      </div>
-      <div class="posts">
-        <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/dvd-rip-and-gentoo">dvd::rip and gentoo</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#Linux-ref">Linux <span>8</span></a>
-          </li>
-        </ul>
-
-        <p><a href="http://exit1.org/dvdrip/">dvd::rip</a> (or dvdrip at the gentoo
-repository) is a very comfortable ripping software to bring your DVDs on
-your harddisk.</p>
-
-<p>When I emerged it and wanted to rip a dvd, I just got no result.</p>
-
-<ol>
-<li> the logfile showed no error</li>
-<li> in the status bar the text appeared Grab
-<code>preview - title #3 Duration: 00:01 [Error]</code></li>
-<li> dvd::rip did nothing.</li>
-</ol>
-
-<p>The chapter has been ripped and the file existed on the filesystem, but
-I was unable to transcode it or do anything else with dvd::rip.</p>
-
-<p>A lot of googling did not provide the solution, but finally I saw that
-dvd::rip prints the exact command that is executed in the logfile, so I
-tried to run it manually to eventually see an error.</p>
-
-<p>And then there was theerror:</p>
-
-<pre><code>convert: no decode delegate for this image format `/tmp/dvdrip24111.snap/snapshot001.png&#39;.
-</code></pre>
-
-<p>I quick search with that showed me, that the problem was imagemagick,
-which obviously did not have png support. I added the USE-flag “png” to
-imagemagick in /etc/portage/package.use and re-emerged imagemagick.</p>
-
-<p>Another problems was that transcode was missing the “mp3” USE-flag.</p>
-
-<p>Since then dvd::rip just works!</p>
 
 
       </div>
