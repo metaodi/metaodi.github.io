@@ -6,6 +6,19 @@
     <link>http://metaodi.ch</link>
     <pubDate>07.02.2017</pubDate>
     <item>
+      <title>Jugend hackt Schweiz: Github &amp; Git</title>
+      <link>http://metaodi.ch/posts/2016/11/git-github-lightning-talk</link>
+      <pubDate>12.11.2016</pubDate>
+      <description>&lt;p&gt;I was co-organizing &amp;quot;Jugend hackt&amp;quot; in Switzerland this year.
+If you want more information about the event, read the &lt;a href="https://jugendhackt.org/jugend-hackt-goes-international-ein-rueckblick/"&gt;excellent blog post&lt;/a&gt; about it, watch the &lt;a href="https://www.youtube.com/watch?v=_2lsOBaIm0U&amp;amp;list=PLQsLR7zBwcw1Tbzd0igtaC6HhMA_Lrmhq&amp;amp;index=11"&gt;video of the final presentations&lt;/a&gt; or read the &lt;a href="http://www.srf.ch/news/panorama/jugend-hackt-zurueck-zu-den-wurzeln-der-hackathons"&gt;article by SRF&lt;/a&gt; (including an audio interview with me :) ).&lt;/p&gt;
+
+&lt;p&gt;During the event there was also a series of lightning talks about a variety of topics.
+I held a talk about &amp;quot;Github &amp;amp; Git&amp;quot;, the slides are on &lt;a href="https://github.com/metaodi/git-talk"&gt;my github account&lt;/a&gt; or &lt;a href="http://metaodi.ch/git-talk"&gt;available online&lt;/a&gt; and they are actually a &lt;a href="https://github.com/0x530302/git-talk/network"&gt;fork of a similar talk&lt;/a&gt; at a previous &amp;quot;Jugend hackt&amp;quot; event.&lt;/p&gt;
+
+&lt;iframe src="http://metaodi.ch/git-talk" width="576" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    <item>
       <title>CKANCon 2016: How We Combined CKAN with WordPress</title>
       <link>http://metaodi.ch/posts/2016/10/how-we-combined-wordpress-with-ckan</link>
       <pubDate>04.10.2016</pubDate>
@@ -2861,16 +2874,11 @@ fertig ist.&lt;/li&gt;
       <link>http://metaodi.ch/posts/2009/10/ipa-client-backup-services</link>
       <pubDate>23.10.2009</pubDate>
       <description>&lt;p&gt;Da es mir zu m&#xFC;hsam ist, die Arbeit in HTML zu konvertieren (werde ich
-vielleicht noch nachholen), hier die Arbeit als PDF. PDF:
+vielleicht noch nachholen), hier die Arbeit als PDF:
 &lt;a href="/assets/media/ipa/backup_services.pdf"&gt;backup_services.pdf&lt;/a&gt;
 [4MB]&lt;/p&gt;
 
-&lt;p&gt;Da zur Arbeit auch eine Pr&#xE4;sentation geh&#xF6;rt, liefere ich diese nat&#xFC;rlich
-auch mit (im neue Trivadis-Firmen-Look): PDF:
-&lt;a href="/assets/media/ipa/backup_services_pp.pdf"&gt;backup_services_pp.pdf&lt;/a&gt;
-[1MB]&lt;/p&gt;
-
-&lt;p&gt;Viel Spass beim lesen.&lt;/p&gt;
+&lt;p&gt;Viel Spass beim Lesen.&lt;/p&gt;
 
 &lt;p&gt;PS: Ja ich weiss sie hat viele Rechtsschreibfehler, evtl. auch mal einen
 inhaltlichen, aber: Nobody&#x2019;s perfect!&lt;/p&gt;
