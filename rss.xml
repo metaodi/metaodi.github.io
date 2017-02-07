@@ -4,7 +4,7 @@
     <title>metaodi</title>
     <description>metaodi</description>
     <link>http://metaodi.ch</link>
-    <pubDate>20.11.2016</pubDate>
+    <pubDate>07.02.2017</pubDate>
     <item>
       <title>About me</title>
       <link>http://metaodi.ch/about</link>
@@ -270,6 +270,9 @@
   
   
     &lt;li&gt;&lt;a href="/tags"&gt;Tags&lt;/a&gt;&lt;/li&gt;
+  
+  
+    &lt;li&gt;&lt;a href="/talks"&gt;Talks/Workshops&lt;/a&gt;&lt;/li&gt;
   
   
     &lt;li&gt;&lt;a href="/"&gt;metaodi&lt;/a&gt;&lt;/li&gt;
@@ -781,6 +784,94 @@
   &lt;h3 class="anchor" id="Learning-ref"&gt;Learning&lt;/h3&gt;
     &lt;li&gt;&lt;a href="/posts/2015/07/learn-to-code"&gt;Learn to code if you want to. I&amp;#39;m happy to help.&lt;/a&gt;&lt;/li&gt;
  
+</description>
+    </item>
+    <item>
+      <title>Talks/Workshops</title>
+      <link>http://metaodi.ch/talks</link>
+      <description>&lt;p class="lead"&gt;
+I regularly speak at events and conferences or give workshops.
+I'm a coach for &lt;a href="http://www.opentechschool.org/zurich/"&gt;OpenTechSchool in Zurich&lt;/a&gt; (education organization providing tech workshops and open learning materials).
+In 2016 I started co-organizing &lt;a href="https://jugendhackt.ch"&gt;"Jugend hackt" in Switzerland&lt;/a&gt;, a hackathon for teenagers (&lt;a href="http://www.srf.ch/news/panorama/jugend-hackt-zurueck-zu-den-wurzeln-der-hackathons"&gt;interview&lt;/a&gt; &amp; &lt;a href="http://www.digitalbrainstorming.ch/de/multimedia/audio/jugendhackt"&gt;podcast&lt;/a&gt; with me).
+&lt;/p&gt;
+&lt;p class="lead"&gt;
+Below you can find my posts about my talks. They are usualy about my main topic of interest: Open Data. I usually put all &lt;a href="https://speakerdeck.com/metaodi"&gt;my slides on SpeackerDeck&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;hr/&gt;
+
+
+&lt;div class="posts"&gt;
+  &lt;h2 class="title"&gt;&lt;span class="date"&gt;01.12.2015&lt;/span&gt;&lt;a href="/posts/2015/12/open-data-mashup"&gt;Open Data MashUp @ Impact Hub&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;ul class="tag_box inline"&gt;
+  &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;6&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;Last week I had the opportunity to talk at the &lt;a href="https://zurich.impacthub.ch/event/mash-up/"&gt;Impact Hub in Zurich about Open Data&lt;/a&gt;.
+This event was part of a group of events in different locations of Impact Hub, called MashUp.&lt;/p&gt;
+
+&lt;p&gt;The talk was held in the &lt;a href="http://www.pechakucha.org/faq"&gt;Pecha Kucha format&lt;/a&gt;, which means you have 20 slides and 20 seconds for each slide.
+Because of this &lt;em&gt;condensed&lt;/em&gt; form of giving a talk, there is not much space for text on the slides, rather images, graphics etc.
+This is just a warning, as the slides without my talk might not be very useful.
+Feel free to either fill the gaps yourself or contact me if you need more information or if you want to hear the talk again.&lt;/p&gt;
+
+&lt;p&gt;Download the &lt;a href="/assets/media/OpenDataPublishing@ImpactHub.pdf"&gt;PDF of my slides&lt;/a&gt; or see them directly here:&lt;/p&gt;
+
+&lt;script async class="speakerdeck-embed" data-id="1648167b88c34555a131ea6849589891" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"&gt;&lt;/script&gt; 
+
+
+&lt;/div&gt;
+
+&lt;div class="posts"&gt;
+  &lt;h2 class="title"&gt;&lt;span class="date"&gt;18.09.2014&lt;/span&gt;&lt;a href="/posts/2014/09/open-data-workshop"&gt;Workshop about Open Data Technologies&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;ul class="tag_box inline"&gt;
+  &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;6&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;At todays &lt;a href="http://opendata.ch/2014"&gt;Opendata.ch Conference 2014&lt;/a&gt; I had the opportunity to talk about technologies around the topic of open data.
+I gave a quick overview over different approaches that are being used including &lt;a href="http://ckan.org/"&gt;CKAN&lt;/a&gt;, &lt;a href="http://thedatatank.com"&gt;The DataTank&lt;/a&gt; and &lt;a href="http://centraldedados.pt/"&gt;Data Central&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;On the technical side a talked about &lt;a href="http://data.okfn.org/standards"&gt;(Tabular) Data Packages&lt;/a&gt; and a little bit about &lt;a href="http://json-ld.org/"&gt;JSON-LD&lt;/a&gt;.
+Did you know, that &lt;a href="https://developers.google.com/gmail/actions/reference/formats/json-ld"&gt;GMail is already using it&lt;/a&gt;?.&lt;/p&gt;
+
+&lt;p&gt;Here are my slides (German only, sorry!):&lt;/p&gt;
+
+&lt;iframe src="//slides.com/odi/opendatatech/embed" width="576" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;In the discussions that followed we talked about why we need Open Data portals (&lt;strong&gt;conclusion: mainly for the PR&lt;/strong&gt;) and if
+we prefer to wait until a data provider &amp;quot;cleaned&amp;quot; it&amp;#39;s data or rather want it fast, so that the community can help to clean it up (&lt;strong&gt;consensus: quick and dirty&lt;/strong&gt;).&lt;/p&gt;
+
+&lt;p&gt;For me, today was a really fun conferences. I met lots of new people, could catch up with already familiar ones and listen to a lot of great talks.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Update:&lt;/strong&gt; Now the &lt;a href="https://www.youtube.com/playlist?list=PLofS3lNZcksf4GROXzrAzSdXv7T10nGhX"&gt;videos of the conference&lt;/a&gt; have been published.
+My session has not been recorded, but at the end I could quickly present our findings (again German only):&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="//www.youtube-nocookie.com/embed/-Tg22pvHTKQ?rel=0&amp;start=550" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+
+&lt;/div&gt;
+
+&lt;div style="margin-top: 40px"&gt;
+&lt;/div&gt;
 </description>
     </item>
     <item>

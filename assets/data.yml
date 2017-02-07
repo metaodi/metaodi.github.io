@@ -8,6 +8,7 @@ author :
   feedburner : feedname
 
 navigation :
+  - talks
   - tags
   - archive
   - about

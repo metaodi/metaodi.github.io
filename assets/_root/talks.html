@@ -1,0 +1,34 @@
+---
+title: Talks/Workshops
+---
+
+<p class="lead">
+I regularly speak at events and conferences or give workshops.
+I'm a coach for <a href="http://www.opentechschool.org/zurich/">OpenTechSchool in Zurich</a> (education organization providing tech workshops and open learning materials).
+In 2016 I started co-organizing <a href="https://jugendhackt.ch">"Jugend hackt" in Switzerland</a>, a hackathon for teenagers (<a href="http://www.srf.ch/news/panorama/jugend-hackt-zurueck-zu-den-wurzeln-der-hackathons">interview</a> & <a href="http://www.digitalbrainstorming.ch/de/multimedia/audio/jugendhackt">podcast</a> with me).
+</p>
+<p class="lead">
+Below you can find my posts about my talks. They are usualy about my main topic of interest: Open Data. I usually put all <a href="https://speakerdeck.com/metaodi">my slides on SpeackerDeck</a>.
+</p>
+
+<hr/>
+
+{{# posts.talk_filter }}
+
+<div class="posts">
+  <h2 class="title"><span class="date">{{ date }}</span><a href="{{url}}">{{title}}</a></h3>
+
+  <ul class="tag_box inline">
+  <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+  {{# tags }}
+    {{> tags_list }}
+  {{/ tags }}
+  </ul>
+
+  {{{ content }}}
+
+</div>
+{{/ posts.talk_filter }}
+
+<div style="margin-top: 40px">
+</div>
