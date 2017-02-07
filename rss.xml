@@ -322,7 +322,7 @@
     &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
+    &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;3&lt;/span&gt;&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;a href="/tags#Coding standards-ref"&gt;Coding standards &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
@@ -549,6 +549,7 @@
     &lt;li&gt;&lt;a href="/posts/2014/07/q-a-wall"&gt;Q&amp;amp;A Wall at the OKFestival in Berlin&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2014/09/open-data-workshop"&gt;Workshop about Open Data Technologies&lt;/a&gt;&lt;/li&gt;
   &lt;h3 class="anchor" id="Talk-ref"&gt;Talk&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2014/07/q-a-wall"&gt;Q&amp;amp;A Wall at the OKFestival in Berlin&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2014/09/open-data-workshop"&gt;Workshop about Open Data Technologies&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2015/12/open-data-mashup"&gt;Open Data MashUp @ Impact Hub&lt;/a&gt;&lt;/li&gt;
   &lt;h3 class="anchor" id="Coding standards-ref"&gt;Coding standards&lt;/h3&gt;
@@ -810,7 +811,7 @@ Below you can find my posts about my talks. They are usualy about my main topic 
       &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;6&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;3&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -841,7 +842,7 @@ Feel free to either fill the gaps yourself or contact me if you need more inform
       &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;3&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -866,6 +867,74 @@ we prefer to wait until a data provider &amp;quot;cleaned&amp;quot; it&amp;#39;s
 My session has not been recorded, but at the end I could quickly present our findings (again German only):&lt;/p&gt;
 
 &lt;iframe width="560" height="315" src="//www.youtube-nocookie.com/embed/-Tg22pvHTKQ?rel=0&amp;start=550" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+
+&lt;/div&gt;
+
+&lt;div class="posts"&gt;
+  &lt;h2 class="title"&gt;&lt;span class="date"&gt;08.07.2014&lt;/span&gt;&lt;a href="/posts/2014/07/q-a-wall"&gt;Q&amp;amp;A Wall at the OKFestival in Berlin&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;ul class="tag_box inline"&gt;
+  &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#OKFestival-ref"&gt;OKFestival &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;3&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;Some time ago the OKFestival asked for session proposals for this years conference in Berlin.
+I was at the conference last year in Geneva and enjoyed very much.
+It&amp;#39;s just a nice atmosphere to talk to people from divers backgrounds (I&amp;#39;ll get back to that in a minute).&lt;/p&gt;
+
+&lt;p&gt;Me and my colleagues from Liip thought about sessions for this years topic &amp;quot;Open Minds to Open Action&amp;quot;.
+The &lt;a href="http://2014.okfestival.org/programme/programme-faqs/"&gt;Programme FAQs&lt;/a&gt; gave us some hints, what it takes for a session to be selected:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Does the proposal advance the overall &lt;a href="http://2014.okfestival.org/programme/narrative-and-streams/"&gt;mission of the event&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Does the proposal offer participants a concrete, valuable outcome?&lt;/li&gt;
+&lt;li&gt;Does the proposal advance the conversation around its area of open?&lt;/li&gt;
+&lt;li&gt;Is the proposal interactive? &#x2013; &lt;em&gt;hint: slides and lectures strongly discouraged&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Does the proposal value or build on OKFestival&#x2019;s principles of inclusivity and diversity?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id="toc_0"&gt;Help newbies at the conference&lt;/h3&gt;
+
+&lt;p&gt;We asked ourselves, how we can help people to connect to each other?
+We pictured a person that is interesting in the &amp;quot;Open Knowledge&amp;quot; topic but doesn&amp;#39;t know any people at the conference.
+The first step is always the hardest.
+How do you find people that are interested in the same topics?
+Of course, one can attend sessions and try to talk to the people there.&lt;/p&gt;
+
+&lt;p&gt;But sometimes a little extra help is required.
+Some conference solve this problem by providing some kind of buddy system (e.g. the &lt;a href="http://events.ccc.de/2013/11/25/chaospatinnen/"&gt;Chaos Mentors at the 30C3&lt;/a&gt;).
+The buddies are volunteers that show newbies around, and show them the venue, introduce them to people and so on.
+This is great for large conferences but &lt;em&gt;might&lt;/em&gt; be an overkill for smaller ones.&lt;/p&gt;
+
+&lt;p&gt;As we were brainstorming about this we came up with the concept of a place, where everybody is encourages to write down his/her questions, so that others can pick that up and answer them right away or provide guidance.
+We first thought about doing this online using something like a twitter hashtag.
+But in the end, this is now why you went to a conference.
+You want to meet real people to talk face-to-face.&lt;/p&gt;
+
+&lt;h3 id="toc_1"&gt;Q&amp;amp;A Wall to the rescue&lt;/h3&gt;
+
+&lt;p&gt;So the challange is just, to find these people.
+To help making this asychronous, we developed the idea of a &lt;strong&gt;physical Q&amp;amp;A wall&lt;/strong&gt;.
+This wall will be at the venue and provides space to write down questions (think of sticky notes or whiteboards to directly write on).
+Like that, this wall provides a meeting point or to simply read and write questions.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;m very interested in how this wall is being used.
+Maybe Q&amp;amp;A is not the only thing that could be done with it.
+Everybody is invited to use that space.
+There are similar approaches to use such walls or boards to share news in local communities (&lt;a href="http://candychang.com/community-chalkboards/"&gt;&amp;quot;Community Chalkboards&amp;quot;&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Btw: the Q&amp;amp;A Wall is also listed as a &lt;a href="http://sched.co/1tx3TIy"&gt;session at the OKFestival&lt;/a&gt;!&lt;/p&gt;
 
 
 &lt;/div&gt;
@@ -1031,7 +1100,7 @@ It only means that we have to think about this other way as well. And that the c
       &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;6&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;3&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -1329,7 +1398,7 @@ After some iterations the current API gained some features:&lt;/p&gt;
       &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;3&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -1367,6 +1436,9 @@ My session has not been recorded, but at the end I could quickly present our fin
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;3&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
