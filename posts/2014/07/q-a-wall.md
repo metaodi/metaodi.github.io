@@ -1,6 +1,6 @@
 ---
 date: 08.07.2014
-tags: [OKFestival, Conferences]
+tags: [OKFestival, Conferences, Talk]
 title: Q&A Wall at the OKFestival in Berlin
 ---
 
