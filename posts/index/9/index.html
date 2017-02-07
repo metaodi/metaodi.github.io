@@ -77,6 +77,526 @@
         <div class="row-fluid">
   <div class="col-md-12">
       <div class="posts">
+        <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/find-old-files-and-their-size">Find old Files and their size</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Linux-ref">Linux <span>8</span></a>
+          </li>
+        </ul>
+
+        <p>The first part is clear, find the old files like that:</p>
+
+<pre><code>find . -type f -mtime +365 -print
+</code></pre>
+
+<p>This gets all Files (<code>-type f</code>, <code>-type d</code> for directories) in the
+current directory (<code>.</code>) older than a year (<code>-mtime +365</code>) and prints
+them on stdout (<code>-print</code>)</p>
+
+<p>to delet them, just use:</p>
+
+<pre><code>find . -type f -mtime +365 -exec rm {} \;
+</code></pre>
+
+<p>But if you want to use them further, a pipe will help you. For any
+reasons (I don’t know) this is not possible with the <code>-print</code> command.
+My Solution was the following:</p>
+
+<pre><code>find . -type f -mtime +365 -exec echo {} \;
+</code></pre>
+
+<p>Now, because there are possibly many many many files, it’s best to use
+xargs for the argument handling. I use <code>du -ch</code> to determine the
+file-size and the total:</p>
+
+<pre><code>find . -type f -mtime +365 -exec echo {} \; | xargs du -ch
+</code></pre>
+
+<p>This should help, Google helped me half-way out, the rest is a little
+command line magic.</p>
+
+<p>Note: In my case there where really too many files, so that the whole
+command ended with a broken pipe. I used <code>-type d</code> to reduce the amount
+of arguments, the disadvantage is that directories are not necessary the
+same age as the files within.</p>
+
+
+      </div>
+      <div class="posts">
+        <h2 class="title"><span class="date">21.10.2009</span><a href="/posts/2009/10/odbc-hell">ODBC Hell</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Oracle-ref">Oracle <span>6</span></a>
+          </li>
+          <li>
+            <a href="/tags#PHP-ref">PHP <span>3</span></a>
+          </li>
+          <li>
+            <a href="/tags#PL/SQL-ref">PL/SQL <span>2</span></a>
+          </li>
+          <li>
+            <a href="/tags#SQL-ref">SQL <span>6</span></a>
+          </li>
+          <li>
+            <a href="/tags#Programming-ref">Programming <span>20</span></a>
+          </li>
+        </ul>
+
+        <p>It is so easy: I have a testing environement where an OCI8-Driver is
+installed. Therefore I can use the OCI-Function if PHP to Bind
+Variables, get return values and everything is just fine.</p>
+
+<p>Then on the production I needed to switch to ODBC, and thought: Easy
+just write this stuff for ODBC and you’re done.</p>
+
+<p>Unfortunately the driver does simply not support return values of
+functions. The problem is, that there are updates in my function, so I
+can’t solve the problem using:</p>
+
+<pre><code>select function_name(param1,param2,param3,...) from dual
+</code></pre>
+
+<p>After giving up my return value, I wanted to run the function like that
+(in TOAD this is no problem):</p>
+
+<pre><code>begin :retval := function_name(?,?,?,?); end;
+</code></pre>
+
+<p>Afterwards you are giving an array of parameter to the PHP function
+odbc_execute, and this should work alright.</p>
+
+<p>I tried hundrets of possibilities to run my function. Finally I gave up,
+made a procdure (which has no return value and vor sure ODBC has no
+support for OUT or INOUT-Vars). I resigned to have a return value (which
+should only be the number of updated rows).</p>
+
+<p>I tried: begin procedure_name(?,?,?,?); end;</p>
+
+<p>There was no reaction. My last try:</p>
+
+<pre><code>call procedure_name(param1,param2,param3,..);
+</code></pre>
+
+<p>This woked! So I need to use “call” and not using the parameter-array of
+ODBC but giving it directly into the call. I’m happy to get it working,
+but this costs me one day.</p>
+
+<p>Is there any really working ODBC-Driver for PHP?</p>
+
+<p>I gave up.</p>
+
+<p>PS: Yes I know, there is a solution for my return value. In my procedure
+I could write the value into a temporary table. But I rather want to use
+a good driver (like the OCI8) than using such a temporary solution. I’m
+open to new ways of doing this.</p>
+
+
+      </div>
+      <div class="posts">
+        <h2 class="title"><span class="date">21.10.2009</span><a href="/posts/2009/10/brainfucked-logo">Brainfucked Logo</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Programming-ref">Programming <span>20</span></a>
+          </li>
+          <li>
+            <a href="/tags#Brainfuck-ref">Brainfuck <span>1</span></a>
+          </li>
+        </ul>
+
+        <blockquote>
+<p>++++++++++[&gt;++++++++++&lt;-]&gt;——-&lt;++++++++++[»+++++++++++++«-]\
+ »———«+++++[»&gt;++++++++++«&lt;-]»&gt;—-«&lt;++++++++++[»»+++««-]\
+ »»++&gt;+++++++++++++««&lt;++++[»»»++++++++++«««-]»»»++++«.»\
+ [««&lt;.»»&gt;-]&lt;.«&lt;.«++[»»»+++++«««-]»»»[«.»-][-]«««++\
+ [»»»++++«««-]»»»-[««&lt;.»»&gt;-][-]«««++[»»»++++++++++«««-]\
+ »»»-[«.»-]««&lt;….»&gt;….«.»&gt;.«&lt;.»…»[-]«««++++++++++\
+ [»»»++++++++++«««-]»»»—.[-]«««++++++++++[»»»++++++++++++«««-]\
+ »»»+.«….&lt;.&gt;…….&lt;.&lt;.»….&lt;.«—-.+++..»&gt;……..&lt;.&gt;….\
+ &lt;.&lt;.»..«.»&gt;.«&lt;.»..»[-]«««++++++++[»»»++++++++++«««-]»»»-.\
+ [-]«««++++++++++[»»»++++++++++«««-]»»».+++++.«…&lt;.«……»&gt;.\
+ &lt;.&gt;.«.»…&lt;.&gt;…&lt;.«—-.+++..»&gt;….&lt;.«…»&gt;.&lt;.&gt;.«.»..«.»&gt;.«&lt;.».»\
+ [-]«««+++++[»»»++++++++++«««-]»»».—..++++.«..«.»…….«.»..\
+ «.»..«.&lt;—-.+++..».&gt;…&lt;.«—-.+++»&gt;..«.»….«.»..«.»..«.»&gt;.«&lt;.\
+ »…….«.»…«&lt;.»&gt;…«.»..«.»..«.».«&lt;.»&gt;.«&lt;—-.+++..».&gt;.&lt;.&gt;..«.\
+ »….«.»..«.»..«.»&gt;.«&lt;.»…….«.»..«.».«.»..«.»..«.»..«.».\
+ «&lt;.&gt;.»…«&lt;—-.+++».&gt;…«.»….«.»..«.»..«.»&gt;.«&lt;.»…….«.»\
+ …….«.»..«.»..«.»….«&lt;..».&gt;….«.»….«.»..«.»..«.»&gt;.«&lt;.»\
+ …….«.»…….«.».&lt;.&gt;…«.».«&lt;..».&gt;…….«.»….«.».&lt;.&gt;…«.»&gt;.\
+ «&lt;.»…….«.&lt;…….&gt;.&gt;.&gt;….«.&gt;.&gt;……….«.&lt;….&gt;.&gt;.&gt;….«.»&gt;.«&lt;.»»\
+ [-]«««++++[»»»++++++++++«««-]»»»++++[««&lt;.»»&gt;-]««.</p>
+</blockquote>
+
+<p>Nice isn’t it?\
+\
+ Well, but you’re asking what this is all? I will give you the related
+links as soon as my link-system is working. For now this little
+explanation should help you, otherwise google for “Brainfuck tutorial”.\
+\
+ Brainfuck is a very small (esoteric) programming language. It was
+design by a Swiss guy with the aim to write the smallest possible
+compiler for a Turing-complete language (his size is about 240 bytes).\
+\
+ And sure Brainfuck is Turing-complete.\
+\
+ The context of the language is a large array with (depending on the
+compiler and/or interpreter) about 30’000 array cells (each cell will be
+initalized with 0).\
+\
+ The 8 instructions:\
+<strong>&gt;</strong> change the pointer to the next cell\
+<strong>&lt;</strong> change the pointer to the last cell\
+<strong>+</strong> increment the cell value\
+<strong>-</strong> decrement the cell value\
+<strong>[</strong> begin of loop\
+<strong>]</strong> end of loop (a loop stops is the value of the actual cell is 0)\
+<strong>,</strong> read a value (input) into the actual cell\
+<strong>.</strong> Print out the ascii sign belonging to the cell value\
+\
+ Depending on that I will print you my bf-code of above again, this time
+with comments and so on:</p>
+
+<blockquote>
+<pre><code> ____________________________________________|          ________                   ____   ||   by    /        /|    /\__        /    /| ||  Odi   /_______ / |   /   /\__    /___ / | || 2004  |         | |  |\__/   /\  |    |  | ||       |    _    | |  | _ \__/ /  |    |  | ||       |   | |   | |  | _|   \/   |    |  | ||       |         | |  |    __/    |    |  | ||       |         | /  | __/       |    | /  ||       |________ |/   |/          |____|/   |                      |____________________________________________|                                
+</code></pre>
+</blockquote>
+
+<p>Brainfuck Pendant (commentent):</p>
+
+<blockquote>
+<p>FIRST PLACE IS THE FILL IN COUNTER PLACE\
+\
+ ++++++++++[&gt;++++++++++&lt;-]&gt;——- = 95 in 2nd place (ASCII for “_”)
+(pos:2)\
+ &lt;++++++++++[»+++++++++++++«-]»——— = “|” (124) in 3th place (pos:3)\
+ «+++++[»&gt;++++++++++«&lt;-]»&gt;—- = “/” (47) in 4th place (pos:4)\
+ «&lt;++++++++++[»»+++««-]»»++ = SPACE (32) in 5th place (pos:5)\
+ &gt;+++++++++++++ = “New Line” (13) in 6th place (pos:6)\
+ ««&lt;++++[»»»++++++++++«««-]»»»++++ = 44 in 7th place (times to repeat
+“_”) Use as Counter place (pos:7)\
+\
+\
+ //START Line 1\
+ «. = Print SPACE at the beginning of line 1 (pos:5)\
+ » = Change Pointer to 7 (pos:7)\
+ [««&lt;.»»&gt;-] = Print 44 times “_” (pos:7)\
+ &lt;. = Change to 6th place and print NewLine (pos:6)\
+ //END Line 1\
+\
+ //START Line 2\
+ «&lt;. = Change to 3th place; print “|” (pos:3)\
+ «++[»»»+++++«««-]»»» = Fill Counter with 10 (pos:7)\
+ [«.»-] = print 10 SPACE (pos:7)\
+ [-] = Clean 7th place to 0 (pos:7)\
+ «««++[»»»++++«««-]»»»- = Set counter place to 7 (pos:7)\
+ [««&lt;.»»&gt;-] = Print 8 “_” (pos:7)\
+ [-] = Clean 7th place to 0 (pos:7)\
+ «««++[»»»++++++++++«««-]»»»- = Set counter place to 19 (pos:7)\
+ [«.»-] = Print 19 SPACE (pos:7) \
+ ««&lt;…. = Change to 2nd place; print 4 “_” (pos:2)\
+ »&gt;…. = Change to 5th place: print 4 SPACE (pos:5)\
+ «. = Change to 3rd place: print “|” (pos:3)\
+ »&gt;. = Change to 6th place: print NewLine (pos:6)\
+ //END Line 2\
+\
+\
+ //START Line 3\
+ «&lt;. = Change to 3rd place; print “|” (pos:3)\
+ »… = Change to 5th place; print 3 SPACE (pos:5)\
+ »[-] = Clean 7th place (pos:7)\
+ «««  = Change pointer to 1 (pos:1)\
+ ++++++++++[»»»++++++++++«««-]»»»—. = Set 7th position to 98 (stands
+for “b”) and print it (pos:7)\
+ [-] = Clean 7th place (pos:7)\
+ «««  = Change pointer to 1 (pos:1)\
+ ++++++++++[»»»++++++++++++«««-]»»»+. = Set 7th position to 121
+(stands for “y”) and print it (pos:7)\
+ «…. = Change to 5th place; print 4 SPACE (pos:5)\
+ &lt;. = Change to 4th place; print “/” (pos:4)\
+ &gt;……. = Print 8x SPACE (pos:5)\
+ &lt;. = Print “/” (pos:4)\
+ &lt;. = Print “|” (pos:3)\
+ »…. = Print 4 SPACE (pos:5)\
+ &lt;. = Print “/” (pos:4)\
+ «—-. = Print “&quot; (_{95} minus 3 = \{92}) (pos:2)\
+ +++.. = Print 2 “_” (pos:2)\
+ »&gt;…….. = Print 8x SPACE (pos:5)\
+ &lt;. = Print / (pos:4)\
+ &gt;…. = Print 3 times SPACE (pos:5)\
+ &lt;. = Print “/” (pos:4)\
+ &lt;. = Print “|” (pos:3)\
+ ».. = Print SPACE (pos:5)\
+ «. = Print “|” (pos:3)\
+ »&gt;. = Print NewLine (pos:6)\
+ //END Line 3\
+\
+ //START Line 4\
+ «&lt;. = Change to 3rd place; print “|” (pos:3)\
+ ».. = Change to 5th place; print 3 SPACE (pos:5)\
+ »[-] = Clean 7th place (pos:7)\
+ «««  = Change pointer to 1 (pos:1)\
+ ++++++++[»»»++++++++++«««-]»»»-. = Set 7th position to 79 (stands for
+“O”) and print it (pos:7)\
+ [-] = Clean 7th place (pos:7)\
+ «««  = Change pointer to 1 (pos:1)\
+ ++++++++++[»»»++++++++++«««-]»»». = Set 7th position to 100 (stands
+for “d”) and print it (pos:7)\
+ +++++. = Set 7th place to 105 (stands for “i) (pos:7)\
+ «… = Print 3 SPACE (pos:5)\
+ &lt;. = print “/” (pos:4)\
+ «…… = Print 5 “_” (pos:2)\
+ »&gt;. = Print a SPACE (pos:5)\
+ &lt;. = Print “/” (pos:4)\
+ &gt;. = Print SPACE (pos:5)\
+ «. = Print “|” (pos:3)\
+ »… = Print 3 SPACE (pos:5)\
+ &lt;. = Print “/” (pos:4)\
+ &gt;… = Print 3 SPACE (pos:5)\
+ &lt;. = Print “/” (pos:4)\
+ «—-.+++ = Print “&quot; (decrease “_” about 3 back to the orgin) (pos:2)\
+ .. = Print 2 “_” (pos:2)\
+ »&gt;…. = Print 4 SPACE (pos:5)\
+ &lt;. = Print a “/” (pos:4)\
+ «… = Print 2 “_” (pos:2)\
+ »&gt;. = Print a SPACE (pos:5)\
+ &lt;. = Print a “/” (pos:4)\
+ &gt;. = Print a SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ ».. = Print SPACE (pos:5)\
+ «. = Print “|” (pos:3)\
+ »&gt;. = Print NewLine (pos:6)\
+ //END Line 4\
+\
+ //START Line 5\
+ «&lt;. = Change to 3rd place; print “|” (pos:3)\
+ ». = Change to 5th place; print 3 SPACE (pos:5)\
+ »[-] = Clean 7th place (pos:7)\
+ «««  = change position to 1 (pos:1)\
+ +++++[»»»++++++++++«««-]»»». = Print “2” (50) (pos:7)\
+ —.. = Print 2x “0” (48) (pos:7)\
+ ++++. = Print “4” (52) (pos:7)\
+ «.. = Print 2 SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ »……. = Print 9x SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ ».. = Print a SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ ».. = Print 2x SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ &lt;—-.+++ = Print a “&quot; (pos:2)\
+ .. = Print 2x “_” (pos:2)\
+ ». = Print a “/” (pos:4)\
+ &gt;… = Print 3x SPACE (pos:5)\
+ &lt;. = Print a “/” (pos:4)\
+ «—-.+++ = Print a “&quot; (pos:2)\
+ »&gt;.. = Print 2x SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ »…. = Print 4x SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ ».. = Print 2x SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ ».. = Print 2x SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ »&gt;. = Print NewLine (pos:6)\
+ //END Line 5\
+\
+ //START Line 6\
+ «&lt;. = Change to 3rd place; print “|” (pos:3)\
+ »……. = Change to 5th place; print 7x SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ »… = Print 3x SPACE (pos:5)\
+ «&lt;. = Print a “_” (pos:2)\
+ »&gt;… = Print 3x SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ ».. = Print a SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ ».. = Print 2x SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ ». = Print a SPACE (pos:5)\
+ «&lt;. = Print a “_” (pos:2)\
+ »&gt;. = Print a SPACE (pos:5)\
+ «&lt;—-.+++ = Print a “&quot; (pos:2)\
+ .. = Print 2x “_” (pos:2)\
+ ». = Print a “/” (pos:4)\
+ &gt;. = Print a SPACE (pos:5)\
+ &lt;. = Print a “/” (pos:4)\
+ &gt;.. = Print 2x SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ »…. = Print 4x SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ ».. = Print 2x SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ ».. = Print 2x SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ »&gt;. = Print NewLine (pos:6)\
+ //END Line 6\
+\
+ //START Line 7\
+ «&lt;. = Change to 3rd place; print “|” (pos:3)\
+ »……. = Change to 5th place; print 7x SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ ».. = Print 2x SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ ». = Print a SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ ».. = Print 2x SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ ».. = Print a SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ ».. = Print 2x SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ ». = Print a SPACE (pos:5)\
+ «&lt;. = Print a “_” (pos:2)\
+ &gt;. = Print a “|” (pos:3)\
+ »… = Print 3x SPACE (pos:5)\
+ «&lt;—-.+++ = Print a “&quot; (pos:2)\
+ ». = Print a “/” (pos:4)\
+ &gt;… = Print 3x SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ »…. = Print 4x SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ ».. = Print 2x SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ ».. = Print 2x SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ »&gt;. = Print NewLine (pos:6)\
+ //END Line 7\
+\
+ //START Line 8\
+ «&lt;. = Change to 3rd place; print “|” (pos:3)\
+ »……. = Change to 5th place; print 7x SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ »……. = Print 7x SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ ».. = Print a SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ ».. = Print 2x SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ »…. = Print 4x SPACE (pos:5)\
+ «&lt;.. = Print 2x “_” (pos2)\
+ ». = Print a “/” (pos:4)\
+ &gt;…. = Print 4x SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ »…. = Print 4x SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ ».. = Print 2x SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ ».. = Print 2x SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ »&gt;. = Print NewLine (pos:6)\
+ //END Line 8\
+\
+ //START Line 9\
+ «&lt;. = Change to 3rd place; print “|” (pos:3)\
+ »……. = Change to 5th place; print 7x SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ »……. = Print 7x SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ ». = Print a SPACE (pos:5)\
+ &lt;. = Print a “/” (pos:4)\
+ &gt;… = Print 3x SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ ». = Print a SPACE (pos:5)\
+ «&lt;.. = Print 2x “_” (pos2)\
+ ». = Print a “/” (pos:4)\
+ &gt;……. = Print 7x SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ »…. = Print 4x SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ ». = Print a SPACE (pos:5)\
+ &lt;. = Print a “/” (pos:4)\
+ &gt;… = Print 3x SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ »&gt;. = Print NewLine (pos:6)\
+ //END Line 9\
+\
+ //START Line 10\
+ «&lt;. = Change to 3rd place; print “|” (pos:3)\
+ »……. = Change to 5th place; print 7x SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ &lt;……. = Print 7x “_” (pos:2)\
+ &gt;. = Print a “|” (pos:3)\
+ &gt;. = Print a “/” (pos:4)\
+ &gt;…. = Print 4x SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ &gt;. = Print a “/” (pos:4)\
+ &gt;………. = Print 10x SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ &lt;…. = Print 4x “_” (pos:2)\
+ &gt;. = Print a “|” (pos:3)\
+ &gt;. = Print a “/” (pos:4)\
+ &gt;…. = Print 4x SPACE (pos:5)\
+ «. = Print a “|” (pos:3)\
+ »&gt;. = Print NewLine (pos:6)\
+ //END Line 10\
+\
+ //START Line 11\
+ «&lt;. = Change to 3rd place; print “|” (pos:3)\
+ »»[-] = Clean 7th place (pos:7)\
+ «««++++[»»»++++++++++«««-]»»»++++ = 44 in 7th place (times to repeat
+“_”) Use as Counter place (pos:7)\
+ [««&lt;.»»&gt;-] = Print 44 times “_” (pos:7)\
+ ««. = Change to 3rd place and print “|” (pos:3)\
+ //END Line 11</p>
+</blockquote>
+
+<p>Brainfucked wishes</p>
+
+
+      </div>
+      <div class="posts">
+        <h2 class="title"><span class="date">08.10.2009</span><a href="/posts/2009/10/ein-tisch-ist-ein-tisch">Ein Tisch ist ein Tisch</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#German-ref">German <span>19</span></a>
+          </li>
+          <li>
+            <a href="/tags#Text-ref">Text <span>5</span></a>
+          </li>
+        </ul>
+
+        <p>Nach einem Text vom Peter Bichsel, im Stile von “Kunst aufräumen” ordne
+ich mal Bichsels Text neu.</p>
+
+<p><strong>Orginal Text:
+<a href="http://www.yolanthe.de/stories/bichsel01.htm"></a><a href="http://www.yolanthe.de/stories/bichsel01.htm">http://www.yolanthe.de/stories/bichsel01.htm</a></strong></p>
+
+<h3 id="toc_0">Nomen</h3>
+
+<pre><code>  Mann        Menschen
+  Bild        Bett
+  Wecker      Stuhl
+  Teppich     Tisch
+  Bett        Zeitung
+  Stuhl       Spiegel
+  Fotoalbum   Wecker
+  Zeitung     Schrank
+  Schrank     Teppich
+  Spiegel     Fotoalbum
+  Fuss        Mann
+  Morgen      Fuss
+  Mann        Morgen
+</code></pre>
+
+<h3 id="toc_1">Verben</h3>
+
+<pre><code>  stellen    läuten
+  schauen    frieren
+  läuten     liegen
+  frieren    stehen
+  blättern   stellen
+</code></pre>
+
+
+      </div>
+      <div class="posts">
         <h2 class="title"><span class="date">08.10.2009</span><a href="/posts/2009/10/papier-zum-tragen-kein-problem">Papier - Zum Tragen kein Problem</a> </h3>
 
         <ul class="tag_box">
@@ -440,132 +960,6 @@ directory I’ve created, means which path it’s pointing to:</p>
 
 <p>There simply is no user<em>directories, and with all</em>objects I didn’t get
 what I wanted.</p>
-
-
-      </div>
-      <div class="posts">
-        <h2 class="title"><span class="date">12.12.2006</span><a href="/posts/2006/12/sql-start-script-generator">SQL Start-Script generator</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#Python-ref">Python <span>3</span></a>
-          </li>
-          <li>
-            <a href="/tags#SQL-ref">SQL <span>6</span></a>
-          </li>
-          <li>
-            <a href="/tags#Programming-ref">Programming <span>20</span></a>
-          </li>
-        </ul>
-
-        <p>Sometimes it’s so simple:</p>
-
-<pre><code>import glob
-files = glob.glob(&#39;*.*&#39;);
-f=open(&#39;start_script.sql&#39;, &#39;w&#39;)
-f.write(&#39;PROMPT This is an automatic generated start script\n&#39;);
-f.write(&#39;PROMPT\n&#39;);
-f.write(&#39;SPOOL start_script.LOG\n\n&#39;);
-for filename in files:
-    if filename == &#39;start_script.sql&#39;:
-        continue
-    f.write(&#39;PROMPT Starting script &#39; + filename + &#39;\n&#39;);
-    f.write(&#39;@@&#39; + filename + &#39;\n&#39;);
-f.write(&#39;\nPROMPT\n&#39;);
-f.write(&#39;PROMPT Finished.\n&#39;);
-f.write(&#39;SPOOL OFF\n&#39;);
-f.close();
-exit();
-</code></pre>
-
-<h2 id="toc_0">Explanation:</h2>
-
-<p>First get a file list of the current directory (glob.glob(‘<em>.</em>’), this
-won’t return you directories since they don’t have an extension, if your
-files doesn’t have an extension, either: your fault). Then open a file
-called start_script.sql which will held our start-script (pretty
-self-explanatory). Then we generate a “@@” line for each file (this
-means if you have non-SQL-files in that directory you have to clean-up
-your script or edit it that it only takes .sql files (tip:
-glob.glob(‘*.sql’)). The start-script itself is excluded but the python
-script will be included (can easily be made excluded as well). After the
-loop the file gets closed and that’s it.</p>
-
-
-      </div>
-      <div class="posts">
-        <h2 class="title"><span class="date">07.11.2006</span><a href="/posts/2006/11/delete-duplicate-records-with-orcle">Delete duplicate records with Orcle</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#Oracle-ref">Oracle <span>6</span></a>
-          </li>
-          <li>
-            <a href="/tags#SQL-ref">SQL <span>6</span></a>
-          </li>
-        </ul>
-
-        <p>Don’t ask me why I needed to do that, but I had a lot (about 14 Mio.)
-duplicate records in a table.</p>
-
-<pre><code>DELETE FROM our_table
-WHERE rowid not in
-(SELECT MIN(rowid)
-FROM our_table
-GROUP BY column1, column2, column3... ;
-</code></pre>
-
-<p>helped me out. (thanks to <a href="http://www.devx.com"></a><a href="http://www.devx.com">www.devx.com</a>)</p>
-
-<p>Next time I write my queries to filter those out before inserting them…</p>
-
-
-      </div>
-      <div class="posts">
-        <h2 class="title"><span class="date">02.11.2006</span><a href="/posts/2006/11/pisa-test">PISA-Test</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#Fun-ref">Fun <span>4</span></a>
-          </li>
-          <li>
-            <a href="/tags#German-ref">German <span>19</span></a>
-          </li>
-        </ul>
-
-        <p>Danke Baba fürs schicken des Artikels ;)</p>
-
-<p>War so im <a href="http://www.tagesanzeiger.ch">Tagi</a> (weiss leider nicht genau von welchem Tag):
-<img src="http://media.tumblr.com/tumblr_krvch867I21qa2z4q.jpg" alt=""></p>
-
-
-      </div>
-      <div class="posts">
-        <h2 class="title"><span class="date">18.10.2006</span><a href="/posts/2006/10/need-to-generate-a-guid-with-oracle">Need to generate a GUID with Oracle?</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#Oracle-ref">Oracle <span>6</span></a>
-          </li>
-          <li>
-            <a href="/tags#SQL-ref">SQL <span>6</span></a>
-          </li>
-        </ul>
-
-        <p>I just searched the web for this simple task, and it was difficult to
-find.</p>
-
-<p>Maybe anyone working a bit with Oracle knows this, but it helped me,
-maybe I can help someone out there too, so here it is:</p>
-
-<pre><code>select sys_guid() from dual
-</code></pre>
-
-<p>This generates a 32 character GUID (fits best in a RAW(16) field).</p>
 
 
       </div>

@@ -77,6 +77,132 @@
         <div class="row-fluid">
   <div class="col-md-12">
       <div class="posts">
+        <h2 class="title"><span class="date">12.12.2006</span><a href="/posts/2006/12/sql-start-script-generator">SQL Start-Script generator</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Python-ref">Python <span>3</span></a>
+          </li>
+          <li>
+            <a href="/tags#SQL-ref">SQL <span>6</span></a>
+          </li>
+          <li>
+            <a href="/tags#Programming-ref">Programming <span>20</span></a>
+          </li>
+        </ul>
+
+        <p>Sometimes it’s so simple:</p>
+
+<pre><code>import glob
+files = glob.glob(&#39;*.*&#39;);
+f=open(&#39;start_script.sql&#39;, &#39;w&#39;)
+f.write(&#39;PROMPT This is an automatic generated start script\n&#39;);
+f.write(&#39;PROMPT\n&#39;);
+f.write(&#39;SPOOL start_script.LOG\n\n&#39;);
+for filename in files:
+    if filename == &#39;start_script.sql&#39;:
+        continue
+    f.write(&#39;PROMPT Starting script &#39; + filename + &#39;\n&#39;);
+    f.write(&#39;@@&#39; + filename + &#39;\n&#39;);
+f.write(&#39;\nPROMPT\n&#39;);
+f.write(&#39;PROMPT Finished.\n&#39;);
+f.write(&#39;SPOOL OFF\n&#39;);
+f.close();
+exit();
+</code></pre>
+
+<h2 id="toc_0">Explanation:</h2>
+
+<p>First get a file list of the current directory (glob.glob(‘<em>.</em>’), this
+won’t return you directories since they don’t have an extension, if your
+files doesn’t have an extension, either: your fault). Then open a file
+called start_script.sql which will held our start-script (pretty
+self-explanatory). Then we generate a “@@” line for each file (this
+means if you have non-SQL-files in that directory you have to clean-up
+your script or edit it that it only takes .sql files (tip:
+glob.glob(‘*.sql’)). The start-script itself is excluded but the python
+script will be included (can easily be made excluded as well). After the
+loop the file gets closed and that’s it.</p>
+
+
+      </div>
+      <div class="posts">
+        <h2 class="title"><span class="date">07.11.2006</span><a href="/posts/2006/11/delete-duplicate-records-with-orcle">Delete duplicate records with Orcle</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Oracle-ref">Oracle <span>6</span></a>
+          </li>
+          <li>
+            <a href="/tags#SQL-ref">SQL <span>6</span></a>
+          </li>
+        </ul>
+
+        <p>Don’t ask me why I needed to do that, but I had a lot (about 14 Mio.)
+duplicate records in a table.</p>
+
+<pre><code>DELETE FROM our_table
+WHERE rowid not in
+(SELECT MIN(rowid)
+FROM our_table
+GROUP BY column1, column2, column3... ;
+</code></pre>
+
+<p>helped me out. (thanks to <a href="http://www.devx.com"></a><a href="http://www.devx.com">www.devx.com</a>)</p>
+
+<p>Next time I write my queries to filter those out before inserting them…</p>
+
+
+      </div>
+      <div class="posts">
+        <h2 class="title"><span class="date">02.11.2006</span><a href="/posts/2006/11/pisa-test">PISA-Test</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Fun-ref">Fun <span>4</span></a>
+          </li>
+          <li>
+            <a href="/tags#German-ref">German <span>19</span></a>
+          </li>
+        </ul>
+
+        <p>Danke Baba fürs schicken des Artikels ;)</p>
+
+<p>War so im <a href="http://www.tagesanzeiger.ch">Tagi</a> (weiss leider nicht genau von welchem Tag):
+<img src="http://media.tumblr.com/tumblr_krvch867I21qa2z4q.jpg" alt=""></p>
+
+
+      </div>
+      <div class="posts">
+        <h2 class="title"><span class="date">18.10.2006</span><a href="/posts/2006/10/need-to-generate-a-guid-with-oracle">Need to generate a GUID with Oracle?</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Oracle-ref">Oracle <span>6</span></a>
+          </li>
+          <li>
+            <a href="/tags#SQL-ref">SQL <span>6</span></a>
+          </li>
+        </ul>
+
+        <p>I just searched the web for this simple task, and it was difficult to
+find.</p>
+
+<p>Maybe anyone working a bit with Oracle knows this, but it helped me,
+maybe I can help someone out there too, so here it is:</p>
+
+<pre><code>select sys_guid() from dual
+</code></pre>
+
+<p>This generates a 32 character GUID (fits best in a RAW(16) field).</p>
+
+
+      </div>
+      <div class="posts">
         <h2 class="title"><span class="date">24.01.2006</span><a href="/posts/2006/01/psychologie-vs-psychiatrie">Psychologie vs. Psychiatrie</a> </h3>
 
         <ul class="tag_box">

@@ -77,6 +77,397 @@
         <div class="row-fluid">
   <div class="col-md-12">
       <div class="posts">
+        <h2 class="title"><span class="date">08.03.2012</span><a href="/posts/2012/03/setup-javascript-unit-testing-using-qunit-phantomjs">Setup JavaScript unit testing using QUnit, PhantomJS and Jenkins on Amazon EC2</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#JavaScript-ref">JavaScript <span>6</span></a>
+          </li>
+          <li>
+            <a href="/tags#Unit Testing-ref">Unit Testing <span>4</span></a>
+          </li>
+          <li>
+            <a href="/tags#Programming-ref">Programming <span>20</span></a>
+          </li>
+          <li>
+            <a href="/tags#QUnit-ref">QUnit <span>1</span></a>
+          </li>
+          <li>
+            <a href="/tags#Jenkins-ref">Jenkins <span>1</span></a>
+          </li>
+          <li>
+            <a href="/tags#PhantomJS-ref">PhantomJS <span>1</span></a>
+          </li>
+          <li>
+            <a href="/tags#Amazon EC2-ref">Amazon EC2 <span>1</span></a>
+          </li>
+        </ul>
+
+        <p>Me and my friend are currently working on a term paper about <a href="https://developers.google.com/fusiontables/">Google
+Fusion Tables</a>. It’s about
+it’s possibilities and potential. Our goal is to create a cross-platform
+mobile application using <a href="http://www.sencha.com/products/touch">Sencha
+Touch</a>, therefore we need to write
+a lot of JavaScript code for the UI and to access the Google Fusion
+Tables. Fortunately Google provides an <a href="https://groups.google.com/forum/#!topic/fusion-tables-users-group/TGDzExKymoI/discussion">inofficial JSONP
+API</a>,
+so we get native JavaScript access without another server roundtrip
+(there is <a href="http://www.reddmetrics.com/2011/08/10/fusion-tables-javascript-query-maps.html">a good blog
+post</a>
+explaining the usage with jQuery).</p>
+
+<p>The next question is: if we write tons of code in JavaScript, how are we
+going to unit test this code. We already used
+<a href="http://docs.jquery.com/QUnit">QUnit</a> in a former project and it’s
+fairly easy to use, so we decided to use that. This all works very well,
+you get a <a href="http://gft.rdmr.ch/test/js">nice web page where all your tests
+run</a> in the browser and you get nice output,
+everything’s fine.</p>
+
+<p><img src="http://media.tumblr.com/tumblr_m0ivihw8Rb1qa2z4q.png" alt="Browser output of
+QUnit" title="Browser output of QUnit"></p>
+
+<p>But, wait! What about our build? We use <a href="http://jenkins-ci.org/">Jenkins
+CI</a>, which is configured to <a href="https://wiki.jenkins-ci.org/display/JENKINS/Github+Plugin">build our project
+every time we push new code to
+GitHub</a>.
+Wouldn’t it be nice if our tests run when we build, so we get immediate
+feedback and never ever forget to run them and fix our code?</p>
+
+<p>Yes, it definitely would be!</p>
+
+<p>Now we have several problems</p>
+
+<ul>
+<li>  How do I run JavaScript without a browser?</li>
+<li>  Does Jenkins “speak” JavaScript?</li>
+<li>  Is there a solution for ant? Do I need another tool? Another server?</li>
+<li>  How do I get my test results as XML, so Jenkins can handle them?</li>
+</ul>
+
+<p>I checked serveral solutions to my this problems: From
+<a href="http://nodejs.org/">node.js</a> to <a href="http://www.mozilla.org/rhino/">Rhino</a>
+(there is even an <a href="http://code.google.com/p/rhinounit/">ant based unit testing
+framework</a> using Rhino) to
+<a href="http://swarm.jquery.org/">TestSwarm</a>. They were all too limited or too
+bloated. I couldn’t believe this is such a big deal to run QUnit
+JavaScript code, get the results and publish them in Jenkins.</p>
+
+<p>This is when I found out about <a href="http://www.phantomjs.org/">PhantomJS</a>, a
+nice and handy headless WebKit browser, that runs JavaScript code.
+Exactly what I need. As we are using <a href="http://aws.amazon.com/ec2/">Amazon
+EC2</a> for this project, I tried to install
+PhantomJS on a basic Amazon AMI. I just couldn’t get it to work, when I
+asked in Twitter if someone succeeded to setup PhantomJS. <a href="https://twitter.com/#!/philippkueng/status/176606716492914688">Philipp Küng
+pointed
+out</a>
+(thanks again!) that it is much easier to setup with Ubuntu. Well then,
+launch a new Instance on EC2, choose the <a href="http://cloud.ubuntu.com/ami/">latest Ubuntu
+AMI</a>, and after some simple commands
+you’re good to go:</p>
+
+<pre><code>sudo add-apt-repository ppa:jerome-etienne/neoip
+sudo apt-get update
+sudo apt-get install phantomjs
+</code></pre>
+
+<p>After that I had to <a href="http://code.google.com/p/phantomjs/wiki/XvfbSetup">setup Xvfb (virutal
+framebuffer)</a>,
+because EC2 instances are headless. Generally see the <a href="http://code.google.com/p/phantomjs/wiki/PhantomJS">PhantomJS
+Wiki</a> for further
+information.</p>
+
+<p>Now I have a PhantomJS instance, the published QUnit tests and Jenkins.
+To be able to retrieve the data from PhantomJS I created a simple PHP
+script, which runs on the new instance and just executes a shell command
+(idea from <a href="http://cisight.com/run-latest-phantomjs-with-shell_exec-php-on-ubuntu-11-10-oneiric/">this blog
+post</a>).</p>
+
+<pre><code>&lt;?php
+/* Display 99 is configured on the server using Xvfb */
+$value = shell_exec(&quot;DISPLAY=:99 phantomjs run_qunit.js http://gft.rdmr.ch/test/js/index.html junit-xml&quot;);
+echo $value;
+?&gt;
+</code></pre>
+
+<p>With this URL I was able to create a simple ant target, which fetches
+the latest results from the tests:</p>
+
+<pre><code>&lt;target name=&quot;test-js&quot; depends=&quot;deploy&quot;&gt;
+    &lt;get src=&quot;${test.url}&quot; dest=&quot;${result.dir}/${result.js.file}&quot;/&gt;
+&lt;/target&gt;
+</code></pre>
+
+<p>Where <code>${test.url}</code> referes to my PHP script, and <code>${result.dir}</code> is
+configured as the location of JUnit reports in Jenkins (see screenshot):</p>
+
+<p><img src="http://media.tumblr.com/tumblr_m0jhgm87wz1qa2z4q.png" alt="Jenkins job configuration for JUnit XML
+reports" title="Jenkins job configuration for JUnit XML reports"></p>
+
+<p>Now the last missing piece is to get proper output for Jenkins. I
+adapted the <a href="https://github.com/ariya/phantomjs/blob/1.2/examples/run-qunit.js">QUnit test
+runner</a>
+from the PhantomJS examples accordingly (called <code>run_qunit.js</code>, see
+above, here is <a href="https://github.com/odi86/GFTPrototype/blob/master/test/js/run_qunit.js">my
+version</a>).
+I added a new command line parameter <code>type</code>, which determines the type
+of output the runner generates. With the value <code>junit-xml</code>, the output
+can directly be used by Jenkins, this is the reason for the junit-xml
+parameter in the PHP script above.</p>
+
+<p>The generated XML looks like that:</p>
+
+<pre><code>&lt;?xml version=&quot;1.0&quot;?&gt;
+---
+ Tests completed in 2294 milliseconds.
+36 tests of 36 passed, 0 failed. 
+---
+&lt;testsuite name=&quot;QUnit - JavaScript Tests&quot; timestamp=&quot;2012-03-08T00:11:27Z&quot; tests=&quot;36&quot; failures=&quot;0&quot; time=&quot;2.294&quot;&gt;
+&lt;testcase name=&quot;PaintSwitzerland&quot; classname=&quot;GoogleFusionTable&quot;&gt;
+&lt;/testcase&gt;
+&lt;testcase name=&quot;Construtor&quot; classname=&quot;GftLib&quot;&gt;
+&lt;/testcase&gt;
+&lt;testcase name=&quot;Constants&quot; classname=&quot;GftLib&quot;&gt;
+&lt;/testcase&gt;
+&lt;testcase name=&quot;doGet&quot; classname=&quot;GftLib&quot;&gt;
+&lt;/testcase&gt;
+&lt;testcase name=&quot;doPost&quot; classname=&quot;GftLib&quot;&gt;
+&lt;/testcase&gt;
+&lt;testcase name=&quot;doGetJSONP&quot; classname=&quot;GftLib&quot;&gt;
+&lt;/testcase&gt;
+&lt;testcase name=&quot;doPostJSONP&quot; classname=&quot;GftLib&quot;&gt;
+&lt;/testcase&gt;
+&lt;testcase name=&quot;ExecSelect&quot; classname=&quot;GftLib&quot;&gt;
+&lt;/testcase&gt;
+&lt;/testsuite&gt;
+</code></pre>
+
+<p>And in Jenkins like that: <img src="http://media.tumblr.com/tumblr_m0ji3zihxl1qa2z4q.png" alt="Test trend with failed/successful tests over
+time" title="Test trend with failed/successful tests over time"></p>
+
+<p>Overview of tests: <img src="http://media.tumblr.com/tumblr_m0ji5dTeGL1qa2z4q.png" alt="Overview of all performed
+tests" title="Overview of all performed tests"></p>
+
+<p>Failed test: <img src="http://media.tumblr.com/tumblr_m0jie0S4WY1qa2z4q.png" alt="Detail of a failed test incl.
+&#39;stacktrace&#39;" title="Detail of a failed test incl. &#39;stacktrace&#39;"></p>
+
+
+      </div>
+      <div class="posts">
+        <h2 class="title"><span class="date">06.10.2011</span><a href="/posts/2011/10/zff-2011-turn-me-on-goddammit">ZFF 2011: Turn Me On, Goddammit</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Cinema-ref">Cinema <span>26</span></a>
+          </li>
+          <li>
+            <a href="/tags#Zurich Film Festival-ref">Zurich Film Festival <span>25</span></a>
+          </li>
+        </ul>
+
+        <p><a href="http://www.zurichfilmfestival.org/de//filme/1896/turn-me-on-goddammit/"><img src="http://media.tumblr.com/tumblr_lsdq0air4I1qa2z4q.jpg" alt="Turn Me On,
+Goddammit" title="Turn Me On, Goddammit"></a></p>
+
+<p>In <strong>&quot;Turn Me On, Goddammit&quot;</strong> von Jannicke Systad Jacobsen spielt die
+bemerkenswerte Helene Bergsholm die 15jährige Alma, welche gerade dabei
+ist ihre Sexualität zu entdecken. Sie wohnt mit ihrer Mutter in einem
+Provinznest in Norwegen. An einer Party ereignet sich ein peinlich
+Vorfall mit ihrem Schwarm Artur, welchen sie brühwarm ihren Freundinnen
+erzählt (“He poked me with his penis!”). Niemand will ihr diese
+Geschichte glauben, fortan wird sie zur Aussenseiterin, die
+Lügengeschichten verbreitet.</p>
+
+<p>Auch der Zuschauer des Film wird geschickt darüber im Unklaren gelassen,
+ob dieses Ereignis tatsächlich stattgefunden hat oder nicht. Die Kamera
+schweift manchmal ins träumerische ab, indem der Fokus auf dem
+Vordergrund liegt und der Hintergrund stark verschwommen wird oder die
+Farbgebung ganz stark ist. Dieses Stilmittel setzt die Regisseur immer
+dann ein, wenn die Hauptdarstellerin in ihrer Fantasie ist, jedoch
+manchmal auch bei Ereignissen die tatsächlich stattfinden. Dadurch
+erscheint auch die ganze Welt des Dorfes mal romantisch, mal langweilig.</p>
+
+<p>Die Hauptdarstellerin ist eine Wucht, diese junge Frau weiss genau was
+sie will und bewegt sich sehr natürlich vor der Kamera, das Thema
+Sexualität ist einfach eine Facette ihres (pubertären) Charakters, der
+weder übertrieben wirkt noch ins Lächerliche gezogen wird.</p>
+
+<p><em>Leichte Erzählweise, kurzweilige, gute Unterhaltung.</em></p>
+
+
+      </div>
+      <div class="posts">
+        <h2 class="title"><span class="date">04.10.2011</span><a href="/posts/2011/10/zff-2011-kurzes-aus-der-t-rkei">ZFF 2011: Kurzes aus der Türkei</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Cinema-ref">Cinema <span>26</span></a>
+          </li>
+          <li>
+            <a href="/tags#Zurich Film Festival-ref">Zurich Film Festival <span>25</span></a>
+          </li>
+        </ul>
+
+        <p>Die <a href="http://www.kurzfilmtage.ch/">Internationlen Kurzfilmtage
+Winterthur</a> zeigten <a href="http://www.zurichfilmfestival.org/de//filme/3025/kurzes-aus-der-turkei/">Kurzfilme aus der
+Türkei</a>,
+dem diesjährigen Gastland des Zurich Film Festival. Die beiden Festivals
+haben schon die letzten Jahre eine Zusammenarbeit gepflegt.</p>
+
+<p>__</p>
+
+<h2 id="toc_0"><a href="http://www.imdb.com/title/tt0984004/">My Mother Learns Cinema</a></h2>
+
+<p><a href="http://www.imdb.com/title/tt0984004/"><img src="http://media.tumblr.com/tumblr_lsjev5EprV1qa2z4q.jpg" alt="My Mother Learns
+Cinema" title="My Mother Learns Cinema"></a>
+(Nesimi Yetik, 2007)</p>
+
+<p>Eine kleine Ode ans Kino, als ersten Schritt um das Kino kennen zu
+lernen, lehrt ein Sohn seiner Mutter die korrekte Aussprache einiger
+Regisseur.</p>
+
+<p>__</p>
+
+<h2 id="toc_1"><a href="http://vimeo.com/24874194">Biskilet/Bicycle</a></h2>
+
+<p><a href="http://vimeo.com/24874194"><img src="http://media.tumblr.com/tumblr_lsjgmehJbe1qa2z4q.jpg" alt="Biskilet/Bicycle" title="Biskilet/Bicycle"></a>
+(Serhat Karaaslan, 2010)</p>
+
+<p>Dieser Film, der ganz ohne gesprochene Sprache auskommt, erzählt von
+einem Jungen, der gerne ein Fahrrad hätte. Alles was ihm noch fehlt ist
+ein Hinterrad…</p>
+
+<p>__</p>
+
+<h2 id="toc_2"><a href="http://i-soldier-the-flag.blogspot.com/">I, Soldier</a></h2>
+
+<p><a href="http://i-soldier-the-flag.blogspot.com/"><img src="http://media.tumblr.com/tumblr_lsjg6dBuRs1qa2z4q.png" alt="I,
+Soldier" title="I, Soldier"></a>
+(Ergun Köken, 2007)</p>
+
+<p>Ein ganz spezieller Film, der zum Teil aus 2 Perspektiven gefilmt wurde,
+wobei beide nebeneinander gezeigt werden. Die Aufnahmen sind während den
+Feierlichkeiten zum Unabhängigkeitstag der Türkei entstanden.</p>
+
+<p>__</p>
+
+<h2 id="toc_3"><a href="https://www.facebook.com/pages/DEM-MOMENT/139449276104220?sk=info">Dem (Moment)</a></h2>
+
+<p><a href="https://www.facebook.com/pages/DEM-MOMENT/139449276104220?sk=info"><img src="http://media.tumblr.com/tumblr_lsjh5zqJdl1qa2z4q.png" alt="Dem
+(Moment)" title="Dem (Moment)"></a>
+(Aysegül Okul, 2010)</p>
+
+<p>Ein Mann ist auf dem Weg zu einem Bewerbungsgespräch, unterwegs holt er
+sich noch einen Kaffee und trifft dabei eine Frau, welche Minuten später
+von einem Auto überfahren wird, Kurz darauf durchlebt der Mann die Szene
+nochmals, wird er diesmal das Schlimmste verhindern können?</p>
+
+<p>__</p>
+
+<h2 id="toc_4"><a href="http://www.madebyozlemakin.com/2009/05/gemeinschaft.html">Gemeinschaft</a></h2>
+
+<p><a href="http://www.madebyozlemakin.com/2009/05/gemeinschaft.html"><img src="http://media.tumblr.com/tumblr_lsjig5oDS01qa2z4q.jpg" alt="Gemeinschaft" title="Gemeinschaft"></a>
+(Özlem Akin, 2008)</p>
+
+<p>In diesem kurzen Animationsfilm geht es darum als Gruppe eine unliebsame
+Person loszuwerden. Doch wie stellt man das an? Ein witziger
+Erklärungsversuch.</p>
+
+<p>__</p>
+
+<h2 id="toc_5"><a href="http://www.feritkarahan.com/en/#/filmography/movies">Xewna Yusiv / Yusiv’s Dream</a></h2>
+
+<p><a href="http://www.feritkarahan.com/en/#/filmography/movies"><img src="http://media.tumblr.com/tumblr_lsjjulojfy1qa2z4q.png" alt="Xewna Yusiv / Yusiv&#39;s
+Dream" title="Xewna Yusiv  / Yusiv&#39;s Dream"></a>
+(Ferit Karahan, 2011)</p>
+
+<p>Yusiv führt ein normales Leben bis seine Idylle gestört wird: er wird
+heimlicher Zeuge eines Mordes.</p>
+
+<p>__</p>
+
+<h2 id="toc_6"><a href="http://www.imdb.com/title/tt1515847/">KöY (Das Dorf)</a></h2>
+
+<p><a href="http://www.imdb.com/title/tt1515847/"><img src="http://media.tumblr.com/tumblr_lsjiaxZetH1qa2z4q.jpg" alt="KöY (Das
+Dorf)" title="KöY (Das Dorf)"></a>
+(Mustafa Dok, 2009)</p>
+
+<p>Der zu Beginn sehr lustig-fröhliche Film zeigt einen Mann, der es sich
+zur Aufgabe gemacht hat, auf einem Schild jeweils die genau Anzahl
+Personen die sich im Dorf befinden zu notieren. Dieser Spass wird aber
+jäh durchbrochen als das Militär auftaucht.</p>
+
+<p>__</p>
+
+<h2 id="toc_7"><a href="http://www.distantdreams.de/filme/bende-sira-ich-bin-dran">Bende Sira (Ich bin dran)</a></h2>
+
+<p><a href="http://www.distantdreams.de/filme/bende-sira-ich-bin-dran"><img src="http://media.tumblr.com/tumblr_lsjhzyzddN1qa2z4q.jpg" alt="Bende Sira (Ich bin
+dran)" title="Bende Sira (Ich bin dran)"></a>
+(Ismet Ergün, 2007)</p>
+
+<p>Zum Abschluss gab es noch ein wahres Highlight: eine Gruppe von Jungs
+liebt es ins Kino zu gehen. Da sie nicht genügend Geld haben, gemeinsam
+zu gehen, legen sie jeweils zusammen und bestimmen wer gehen darf. Nach
+dem Filmbesuch, muss derjenige dann natürlich ganz genau erzählen was
+passiert ist. Der Film kommt ganz ohne Untertitel aus, die Bilder
+sprechen für sich. Die Jungs können sehr bildgewaltig von ihren
+Kinoerlebnissen berichten. Ein Schmaus!</p>
+
+
+      </div>
+      <div class="posts">
+        <h2 class="title"><span class="date">30.09.2011</span><a href="/posts/2011/09/zff-2011-kriegerin">ZFF 2011: Kriegerin</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Cinema-ref">Cinema <span>26</span></a>
+          </li>
+          <li>
+            <a href="/tags#Zurich Film Festival-ref">Zurich Film Festival <span>25</span></a>
+          </li>
+        </ul>
+
+        <p><a href="http://www.zurichfilmfestival.org/de//filme/2059/kriegerin/"><img src="http://media.tumblr.com/tumblr_lscbfabgq11qa2z4q.jpg" alt="Kriegerin" title="Kriegerin"></a></p>
+
+<p><strong>&quot;Kriegerin&quot;</strong> von David Wnendt ist eine Geschichte einer jungen,
+rechtsextremen Frau irgendwo in einer tristen Kleinstadt in
+Ostdeutschland. Der Film bewegt sich auch erstaunlich neutralem Boden,
+auf eine Moralpredigt und billige Erklärungsversuche wird verzichtet.
+Gezeigt wird vielmehr wie sich diese Frau in ihrer Nazi-Clique
+durchschlägt, wie die Leute miteinander umgehen und wie gross ihr Hass
+auf alles Fremde ist. Sobald ein Ausländer aufkreuzt, gibt es Radau,
+Fäuste fliegen. Dabei hauen die Frauen ebenso drauf wie die Männer.</p>
+
+<p>Marisa (Alina Levshin) spürt jedoch, dass etwas nicht stimmt in ihrem
+Weltbild. Nach einem von ihr provozierten Unfall, macht sie eine
+Wandlung durch, davon darf aber natürlich niemand etwas mitbekommen.
+Diese innere Zerrissenheit sieht man Alina Levshin förmlich an,
+wunderbar gespielt, sehr beeindruckend. Einzig die Nebengeschichte von
+Svenja, einer 15jährigen, die neu zur Clique stösst, ist etwas gar
+überzeichnet. Die Verwandlung vom apolitischen Mädchen, zur “Heil
+Hitler” schreienden jungen Frau, geht mir etwas zu schnell.</p>
+
+<p>Ich bin sehr gespannt wie dieser Film in Deutschland aufgenommen wird,
+zum Teil sind die gezeigten Szenen sehr hart, die Sprache ebenso.
+Dadurch entsteht der Eindruck, einen wirklichen Einblick in diese Szene
+zu erhalten. Beim Interview mit dem Regisseur und der Hauptdarstellerin
+nach dem Film wird auch schnell klar warum: die Recherche für den Film
+war sehr intensiv, so hat sich David Wnendt mit mehreren Frauen aus der
+rechtsextremen Szene getroffen und sich deren Lebensgeschichte angehört.
+Diese vielen verschiedenen Geschichten sind in den Film eingeflossen.
+Speziell ist auch noch, dass für den Film alles neue Musik komponiert
+wurde, im Stile der “bekannten” Nazi-Lieder.</p>
+
+<p><em>Ein beeindruckendes Portrait einer Frau und deren Umgebung, die
+plötzlich beginnt ihre Gesinnung zu hinterfragen, ohne dies laut
+auszusprechen.</em></p>
+
+
+      </div>
+      <div class="posts">
         <h2 class="title"><span class="date">30.09.2011</span><a href="/posts/2011/09/zff-2011-majority-ogunluk">ZFF 2011: Majority (Çogunluk)</a> </h3>
 
         <ul class="tag_box">
@@ -365,221 +756,6 @@ speziellen Retro-Look zur Folge hat. Sieht klasse aus!</p>
 <p><em>Spannende, herzliche und tragisch-komische Liebesgeschichte über das
 Schicksal und die Chance auf die 2. Chance, garniert mit schönen Bildern
 aus Finnland.</em></p>
-
-
-      </div>
-      <div class="posts">
-        <h2 class="title"><span class="date">23.09.2011</span><a href="/posts/2011/09/zff-2011-take-shelter">ZFF 2011: Take Shelter</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#Cinema-ref">Cinema <span>26</span></a>
-          </li>
-          <li>
-            <a href="/tags#Zurich Film Festival-ref">Zurich Film Festival <span>25</span></a>
-          </li>
-        </ul>
-
-        <p><a href="http://www.zurichfilmfestival.org/de//filme/1471/take-shelter/"><img src="http://media.tumblr.com/tumblr_lryyy24HnR1qa2z4q.jpg" alt="Take
-Shelter" title="Take Shelter"></a></p>
-
-<p>Gestern habe ich zum Auftakt des <a href="http://www.zurichfilmfestival.org">7. Zurich Film
-Festivals</a> den Film <strong>&quot;Take
-Shelter&quot;</strong> im Kino <a href="http://www.arthouse.ch/kino/leparis">Arthouse Le
-Paris</a> gesehen. Dies war zugleich
-auch der erste gezeigte Film am Festival der öffentlich zugänglich war.</p>
-
-<p>Das Drama “Take Shelter” von Jeff Nichols lebt von der Atmosphäre.
-Manchmal herrscht drückende Stille. Dann wieder wird mit einem Sturm
-grosses Unheil angekündigt, dabei verschwimmen die Grenzen zwischen
-Realität und Wahn zunehmend. Ist dieser Sturm nun nur ein Sinnbild? Oder
-doch mehr?</p>
-
-<p>Michael Shannon spielt Curtis, einen 35jährigen der plötzlich von
-Albträumen geplagt wird. In seinen Träumen passiert Ungeheuerliches, und
-stets wird die Szene von einem Sturm eingeläutet. Curtis schweigt zu
-seinen Träumen, versucht sich selbst zu helfen und gerät dabei immer
-mehr an die Grenze seiner Psyche. Shannon spielt den allmählichen
-Zerfall sehr überzeugend, er ist Hauptverantwortlich, dass dieser ruhige
-Film einen derartigen Sog entwickeln kann. Curtis’ Frau Samantha
-(gespielt von Jessica Chastain) ist ein würdiger Gegenpart: sie merkt,
-dass mit mit ihrem Mann etwas nicht stimmt, kann es aber nicht genau
-verorten. Sie versucht ihm eine Stütze zu sein, versucht ihm den
-“Unsinn” seiner Angst/Schizophrenie vor Augen zu führen. Kein leichtes
-Unterfangen.</p>
-
-<p><em>Ruhig, stark, spannend und extrem atmosphärisch.</em></p>
-
-
-      </div>
-      <div class="posts">
-        <h2 class="title"><span class="date">19.09.2011</span><a href="/posts/2011/09/es-ist-wieder-so-weit-zurich-film-festival-2011">Es ist wieder so weit: Zurich Film Festival 2011</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#Cinema-ref">Cinema <span>26</span></a>
-          </li>
-          <li>
-            <a href="/tags#Zurich Film Festival-ref">Zurich Film Festival <span>25</span></a>
-          </li>
-        </ul>
-
-        <p><a href="http://www.zurichfilmfestival.org"><img src="http://media.tumblr.com/tumblr_lrqowg2CMF1qa2z4q.jpg" alt="Zurich Film Festival
-2011" title="Zurich Film Festival 2011"></a></p>
-
-<p>Auch dieses Jahr bin ich am <a href="http://www.zurichfilmfestival.org">Zurich Film
-Festival</a> wieder mit von der Partie.
-Es gibt einige Neuerungen im Vergleich zum Vorjahr:</p>
-
-<ul>
-<li>  Erstmals ist das <a href="http://www.arena.ch/">Kino Arena</a> (im Sihlcity)
-mit von der Partie</li>
-<li>  Neu gibt es keinen Festivalpass mehr für Leute die viele Filme sehen
-wollen, sondern es gibt die
-<a href="http://www.zurichfilmfestival.org/de/tickets-2011/zff-karte/">ZFF-Karte</a>,
-mit welcher man die Tickets für alle Vorstellungen für 13.- Fr.
-kaufen kann.</li>
-<li>  Dieses Jahr läuft das <a href="http://www.starticket.ch/zurichfilmfestival.asp">Tickerting über
-Starticket</a> und
-nicht mehr via Kitag. Man merkt dem System leider an, dass es für
-das Festival “zurechtgebogen” wurde, einige der angezeigte Texte
-etc. passen nicht, da Kinos nun mal keine Konzerte sind :-)</li>
-<li>  Es gibt einen neuen
-<a href="http://www.zurichfilmfestival.org/de/festival-info/programmreihen/wettbewerb/">Wettbewerb</a>:
-zum ersten Mal werden deutschsprachige Dokumentarfilme gezeigt</li>
-</ul>
-
-<p>Dieses Jahr ist die Türkei Gastland am Festival. Türkische Filme gibt es
-darum in der Programmreihe “Neue Welt Sicht” zu sehen. Zusätzlich werden
-auch wieder <a href="http://www.zurichfilmfestival.org/de//filme/3025/kurzes-aus-der-turkei/">Kurzfilme aus dem
-Gastland</a>
-gezeigt (kuratiert von den <a href="http://www.kurzfilmtage.ch/">Internationalen Kurzfilmtagen
-Winterthur</a>).</p>
-
-<p>Auf meinem Programm stehen dieses Jahr 11 Filme, ich bin gespannt:</p>
-
-<ol>
-<li> <a href="http://www.zurichfilmfestival.org/de//filme/1471/take-shelter/">Take
-Shelter</a></li>
-<li> <a href="http://www.zurichfilmfestival.org/de//filme/1844/fenster-zum-sommer/">Fenster zum
-Sommer</a></li>
-<li> <a href="http://www.zurichfilmfestival.org/de//filme/1796/restless/">Restless</a></li>
-<li> <a href="http://www.zurichfilmfestival.org/de//filme/1463/circumstance/">Circumstance</a></li>
-<li> <a href="http://www.zurichfilmfestival.org/de//filme/2914/jonas/">Jonas</a></li>
-<li> <a href="http://www.zurichfilmfestival.org/de//filme/1491/happy-happy/">Happy,
-Happy</a></li>
-<li> <a href="http://www.zurichfilmfestival.org/de//filme/2704/majority/">Majority</a></li>
-<li> <a href="http://www.zurichfilmfestival.org/de//filme/2059/combat-girls/">Kriegerin</a></li>
-<li> <a href="http://www.zurichfilmfestival.org/de//filme/3025/kurzes-aus-der-turkei/">Kurzes aus der Türkei
-(Kurzfilme)</a></li>
-<li><a href="http://www.zurichfilmfestival.org/de//filme/1896/turn-me-on-goddammit/">Turn me on,
-Goddammit</a></li>
-<li><a href="http://www.zurichfilmfestival.org/de//filme/2173/better-this-world/">Better This
-World</a></li>
-</ol>
-
-
-      </div>
-      <div class="posts">
-        <h2 class="title"><span class="date">14.09.2011</span><a href="/posts/2011/09/team-filter-f-r-hockeytoto-ch">Team-Filter für hockeytoto.ch</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#Userscript-ref">Userscript <span>1</span></a>
-          </li>
-          <li>
-            <a href="/tags#Programming-ref">Programming <span>20</span></a>
-          </li>
-          <li>
-            <a href="/tags#JavaScript-ref">JavaScript <span>6</span></a>
-          </li>
-        </ul>
-
-        <p>Da ich dieses Jahr bei <a href="http://www.hockeytoto.ch">hockeytoto.ch</a>
-mitmache und mich die etwas unübersichtliche Oberfläche gestört hat,
-habe ich mich heute hingesetzt und ein kleines <a href="http://userscripts.org/scripts/show/112988">Userscript für
-Greasemonkey</a> geschrieben.</p>
-
-<p><img src="http://media.tumblr.com/tumblr_lrj108j1Yq1qa2z4q.png" alt="Select-Box um nach einer Mannschaft zu
-filtern" title="Select-Box um nach einer Mannschaft zu filtern"></p>
-
-<p>Das Script blendet auf der Tipp-Seite eine Select-Box ein, in welcher
-eine Mannschaft gewählt werden kann. Nach dieser Mannschaft wird die
-Tabelle dann gefiltert, d.h. man sieht nur noch die Matches in denen
-diese Mannschaft Heim- oder Gastmannschaft ist.</p>
-
-<p>Gerade um später in der Saison Tipps abzugeben kann es sinnvoll sein die
-letzten Ergebnisse anzusehen. Aber auch sonst finde ich die Seite
-dadurch einfach übersichtlicher. Rvtl. bringt es ja irgendjemandem sonst
-auch noch etwas. Würde mich natürlich auch über Feedback freuen :-)</p>
-
-<p>Um das Script nutzen zu können muss zuerst die <a href="https://addons.mozilla.org/firefox/748/">Firefox-Erweitertung
-Greasemonkey</a> installiert
-werden.</p>
-
-<p><em>Links:</em></p>
-
-<ul>
-<li>  <a href="http://userscripts.org/scripts/show/112988">Userscript für
-Greasemonkey</a></li>
-<li>  <a href="https://addons.mozilla.org/firefox/748/">Greasemonkey für Firefox</a></li>
-<li>  <a href="http://wiki.greasespot.net">Wiki für Greasemonkey</a></li>
-</ul>
-
-
-      </div>
-      <div class="posts">
-        <h2 class="title"><span class="date">25.06.2011</span><a href="/posts/2011/06/zum-selektierten-wert-springen">Zum selektierten Wert springen (IE Bug)</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#HTML-ref">HTML <span>1</span></a>
-          </li>
-          <li>
-            <a href="/tags#JavaScript-ref">JavaScript <span>6</span></a>
-          </li>
-          <li>
-            <a href="/tags#Programming-ref">Programming <span>20</span></a>
-          </li>
-        </ul>
-
-        <p>Der Internet Explorer hat die Angewohnheit in einer <code>&lt;select&gt;</code>-Box den
-ausgewählten Wert nicht direkt anzuzeigen. Stattdessen werden immer nur
-die ersten Werte angezeigt. Der IE zeigt also folgendes:</p>
-
-<p><img src="http://media.tumblr.com/tumblr_lncuiemzXt1qa2z4q.png" alt="Der ausgewählte Wert ist nicht
-sichtbar" title="Der ausgewählte Wert ist nicht sichtbar"></p>
-
-<p>Wobei ich eigentlich folgendes erwarten würde:</p>
-
-<p><img src="http://media.tumblr.com/tumblr_lncujzRQP21qa2z4q.png" alt="Der ausgewählte Wert ist als solcher
-erkennbar" title="Der ausgewählte Wert ist als solcher erkennbar"></p>
-
-<p>Wenn der Benutzer scrollt, sieht er schon welcher Wert gewählt ist, die
-Liste springt jedoch nicht automatisch zum ersten ausgewählten Wert (wie
-das beispielsweise der Firefox macht).</p>
-
-<p>Mit einer kleinen JavaScript-Funktion kann dies aber einfach nachgebaut
-werden, die Funktion erwartet den Namen der <code>&lt;select&gt;</code>-Box als
-Parameter, eine analoge Funktion für die ID lässt sich sehr einfach
-bauen:</p>
-
-<p><a href="http://pastie.org/2121185">[Pastie-Link]</a></p>
-
-<p>Offenbar reagiert der IE auf dynamisch gesetzte Selektionen, warum er
-das nicht von sich aus macht, ist mir schleierhaft. Am einfachsten ist
-es wenn das Script beim laden der Seite aufgerufen wird:</p>
-
-<pre><code>&lt;body onload=&quot;jumpToSelectedOptions(pizzaList);&quot;&gt;
-</code></pre>
-
-<p>Evtl. ist das ja jemand anderem auch noch nützlich. Ich verwende die
-Funktion bei einer Auswahlliste die eine Mehrfachauswahl zulässt, dank
-dem “<code>break</code>&quot; springt die Funktion einfach zum ersten gewählten Wert.</p>
 
 
       </div>

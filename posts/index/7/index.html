@@ -77,6 +77,106 @@
         <div class="row-fluid">
   <div class="col-md-12">
       <div class="posts">
+        <h2 class="title"><span class="date">03.12.2009</span><a href="/posts/2009/12/charles-lewinsky-ussert-sich-in-einem-essay-ber-das">Charles Lewinsky äussert sich in einem Essay über das Minarettverbot, den ewigen Populismus und Roger Köppel</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Link-ref">Link <span>4</span></a>
+          </li>
+        </ul>
+
+        <p><a href="http://www.tagesanzeiger.ch/kultur/buecher/Jetzt-muessen-wir-sogar-Koeppels-triumphierende-Ironie-schlucken/story/10202730">http://www.tagesanzeiger.ch/kultur/buecher/Jetzt-muessen-wir-sogar-Koeppels-triumphierende-Ironie-schlucken/story/10202730</a></p>
+
+<blockquote>
+<p>Wir haben den Kampf gegen diesen eidenbenzischen Pseudodenk nie wirklich aufgenommen, weil wir uns nicht vorstellen konnten, dass eine Mehrheit solche logischen Bocksprünge mithüpfen würde.</p>
+</blockquote>
+
+
+      </div>
+      <div class="posts">
+        <h2 class="title"><span class="date">17.11.2009</span><a href="/posts/2009/11/wwfm-vi-in-z-rich-das-video-zum-event">WWFM VI in Zürich, das Video zum Event</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Geocaching-ref">Geocaching <span>2</span></a>
+          </li>
+        </ul>
+
+        <iframe width="420" height="315" src="//www.youtube.com/embed/9u-K_LFbGO8" frameborder="0" allowfullscreen></iframe>
+
+
+      </div>
+      <div class="posts">
+        <h2 class="title"><span class="date">11.11.2009</span><a href="/posts/2009/11/the-go-programming-language">The Go Programming Language</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Programming-ref">Programming <span>20</span></a>
+          </li>
+          <li>
+            <a href="/tags#Go-ref">Go <span>1</span></a>
+          </li>
+        </ul>
+
+        <p>Today I came across <a href="http://golang.org/">a new programming language called
+Go</a>, developed by Google</p>
+
+<p>It is meant to be fast, but still garbage collected and type safe. They
+use pointers, but no pointer arithmetic.</p>
+
+<p>The questions remains: Do we really need another C++-like language?</p>
+
+<p>See Yourself:</p>
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/wwoWei-GAPo" frameborder="0" allowfullscreen></iframe>
+
+
+      </div>
+      <div class="posts">
+        <h2 class="title"><span class="date">09.11.2009</span><a href="/posts/2009/11/extract-tar-gz-to-specific-directory">Extract .tar.gz to specific directory</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Linux-ref">Linux <span>8</span></a>
+          </li>
+        </ul>
+
+        <p>I want to extract all files form a “.tar.gz” file to a specific
+directory (not the current).</p>
+
+<p>When you ask Google you quickly come up with the elegant solution:</p>
+
+<pre><code>$ gzip -cd /some/dir/something.tar.gz | tar -xvf - -C /specific/directory
+</code></pre>
+
+<p>Somehow my development machine doesn’t accept this, as I keep getting
+the error:</p>
+
+<pre><code>File -C not present in the archive.
+File /specific/directory not present in the archive.
+</code></pre>
+
+<p>I couldn’t find the answer, but as usual many ways lead to Rome. I’m
+able to extract the files to the current directory using</p>
+
+<pre><code>$ gzip -cd /some/dir/something.tar.gz | tar -xvf -
+</code></pre>
+
+<p>Therefore I can simply change the current directory to my specific
+directory and after the extraction return to the prior directory (I need
+to unzip the file in a script, therefore I need a generic approach).
+When we put all that together the following finally works:</p>
+
+<pre><code>$ cd /specific/directory &amp;&amp; gzip -cd /some/dir/something.tar.gz | tar -xvf - &amp;&amp; cd -
+</code></pre>
+
+
+      </div>
+      <div class="posts">
         <h2 class="title"><span class="date">09.11.2009</span><a href="/posts/2009/11/wwfm-vi-in-z-rich">WWFM VI in Zürich</a> </h3>
 
         <ul class="tag_box">
@@ -361,150 +461,6 @@ und Autobahn… Fahrt anständig;-) Grüessli Admin Body: -no data-</p></li>
 dem schwarzen Audi A3 ohne Nummernschild! Bitte bei uns melden,
 Grüessli Admin Body: -no data-</p></li>
 </ol>
-
-
-      </div>
-      <div class="posts">
-        <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/ausreden-fuers-nicht-trinken">Ausreden fürs Nicht-Trinken</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#German-ref">German <span>19</span></a>
-          </li>
-        </ul>
-
-        <p>Es soll vorkommen. In der Abteilung in der ich zur Zeit arbeite, ist es
-der Donnerstag. In der Cafeteria trifft man sich. Es wird eine Flasche
-Wein geöffnet und reihum kriegt jeder sein Glas gefüllt.</p>
-
-<p>Wenn man das nicht will, steht man blöd da. Hier Tipps für die passende
-Ausrede:</p>
-
-<ul>
-<li>  Ich komme gerade von einem anderen Apéro</li>
-<li>  Ich habe einen 0,0 Promille-Grenze für die Autoversicherung</li>
-<li>  Ich trinke nur Bier (welches zufälligerweise gerade nicht zur Hand
-ist)</li>
-<li>  Ich habe nachher noch ein Meeting - mit meinem Chef</li>
-<li>  Ich geh gleich ins Fitness-Studio</li>
-</ul>
-
-<p>Weitere Ideen sind willkommen und werden gerne aufgenommen.</p>
-
-
-      </div>
-      <div class="posts">
-        <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/zusammengesetzte-w-rter">Zusammengesetzte Wörter</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#German-ref">German <span>19</span></a>
-          </li>
-          <li>
-            <a href="/tags#Text-ref">Text <span>5</span></a>
-          </li>
-        </ul>
-
-        <p>Zur Zeit ist wieder ein Deutsch-Groove in mir. Ich weiss nicht ob dies
-schubweise kommt - was am ehesten mit einer Krankheit zu vergleichen
-wäre - oder ob es gar ein Dauerzustand ist, der immer in mir schlummert
-und zu gegebenen Zeiten ausbricht. Dies wäre wohl eine … äähm …
-chronische Krankheit?</p>
-
-<p>Egal, jedenfalls fällt es mir wieder vermehrt auf, seitdem ich
-intensiver mit unseren Deutschen Kollegen zusammenarbeite. Ich finde es
-witzig mit welchen schweizerdeutschen Ausdrücken sie Mühe haben (z.B.
-dass eine Wähe ein Kuchen ist, klingt eklig, ist aber so. Und is(s)t
-dazu noch lecker :) ).</p>
-
-<p>Umgekehrt ist es so, dass mich unsere nördlichen Nachbarn immer wieder
-mit zusammengesetzten Wortgefechtsfetzen auszuschalten versuchen. Sei es
-ein “Wortspiel” (jemand beginnt mit einem Wort, an das ein Neues gehängt
-wird, welches als Grundlage für das nächste dient: Hausdach - Dachziegel
-- Ziegelstein - Steinschleuder - Schleudersitz - Sitzplatz - Platzregen
-[..] usw.). Welch ein Spass.</p>
-
-<p>Während sonst viele im Business mit Anglizsmen um sich werfen, um ihre
-Hippheit zu manifestieren, gelingt es den erwähnten Kollegen sich davon
-zu befreien und erfrischend unverfroren einen Koloss eines Wortes
-einzuwerfen. Entscheidet selbst, was klingt besser:</p>
-
-<ul>
-<li>  Kundenstellvertreterzuteilungsveränderung</li>
-</ul>
-
-<p>oder</p>
-
-<ul>
-<li>  Change beim Substitute Customer Responsible</li>
-</ul>
-
-<p>Feel free. Oder sollte ich sagen: Hier herrscht
-Selbstentscheidungsfreiheit.</p>
-
-
-      </div>
-      <div class="posts">
-        <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/snowboard-garage-vs-fischer-bettwaren">Snowboard Garage vs. Fischer Bettwaren</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#German-ref">German <span>19</span></a>
-          </li>
-          <li>
-            <a href="/tags#Video-ref">Video <span>1</span></a>
-          </li>
-        </ul>
-
-        <iframe width="420" height="315" src="//www.youtube.com/embed/3J1N7PwwbAI" frameborder="0" allowfullscreen></iframe>
-
-
-      </div>
-      <div class="posts">
-        <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/dvd-rip-and-gentoo">dvd::rip and gentoo</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#Linux-ref">Linux <span>8</span></a>
-          </li>
-        </ul>
-
-        <p><a href="http://exit1.org/dvdrip/">dvd::rip</a> (or dvdrip at the gentoo
-repository) is a very comfortable ripping software to bring your DVDs on
-your harddisk.</p>
-
-<p>When I emerged it and wanted to rip a dvd, I just got no result.</p>
-
-<ol>
-<li> the logfile showed no error</li>
-<li> in the status bar the text appeared Grab
-<code>preview - title #3 Duration: 00:01 [Error]</code></li>
-<li> dvd::rip did nothing.</li>
-</ol>
-
-<p>The chapter has been ripped and the file existed on the filesystem, but
-I was unable to transcode it or do anything else with dvd::rip.</p>
-
-<p>A lot of googling did not provide the solution, but finally I saw that
-dvd::rip prints the exact command that is executed in the logfile, so I
-tried to run it manually to eventually see an error.</p>
-
-<p>And then there was theerror:</p>
-
-<pre><code>convert: no decode delegate for this image format `/tmp/dvdrip24111.snap/snapshot001.png&#39;.
-</code></pre>
-
-<p>I quick search with that showed me, that the problem was imagemagick,
-which obviously did not have png support. I added the USE-flag “png” to
-imagemagick in /etc/portage/package.use and re-emerged imagemagick.</p>
-
-<p>Another problems was that transcode was missing the “mp3” USE-flag.</p>
-
-<p>Since then dvd::rip just works!</p>
 
 
       </div>
