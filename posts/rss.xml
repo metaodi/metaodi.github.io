@@ -4,7 +4,7 @@
     <title>metaodi</title>
     <description>metaodi</description>
     <link>http://metaodi.ch</link>
-    <pubDate>07.02.2017</pubDate>
+    <pubDate>03.03.2017</pubDate>
     <item>
       <title>Jugend hackt Schweiz: Github &amp; Git</title>
       <link>http://metaodi.ch/posts/2016/11/git-github-lightning-talk</link>
@@ -1619,12 +1619,10 @@ dazu?&lt;/p&gt;
       <title>Developers Shame Day: BB-Code selbstgemacht</title>
       <link>http://metaodi.ch/posts/2010/11/developers-shame-day-2010</link>
       <pubDate>03.11.2010</pubDate>
-      <description>&lt;p&gt;&lt;img src="http://media.tumblr.com/tumblr_lb5krblZFn1qa2z4q.png" alt="Developers Shame
-Day"&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src="http://media.tumblr.com/tumblr_lb5krblZFn1qa2z4q.png" alt="Developers Shame Day"&gt;&lt;/p&gt;
 
 &lt;p&gt;Via Twitter (weiss leider nicht mehr wer das geschrieben hat) bin ich
-&lt;a href="http://phphacker.net/2010/10/26/der-developers-shame-day/"&gt;auf einen Artikel vom php
-hacker&lt;/a&gt;
+&lt;a href="http://phphacker.net/2010/10/26/der-developers-shame-day/"&gt;auf einen Artikel vom php hacker&lt;/a&gt;
 gestossen, wo er dazu aufruft heute am &#x201C;Developers Shame Day&#x201D;
 mitzumachen und alte Codeschnippsel von sich zu posten: Beispiele von
 schlechtem Code f&#xFC;r die man sich heute sch&#xE4;men sollte.&lt;/p&gt;
@@ -1638,27 +1636,26 @@ k&#xF6;nnen. Da mach ich gerne mit.&lt;/p&gt;
 meiner alten Pages gelaufen ist. Jeder kennt ja die BB-Codes um Artikel
 oder Kommentare mit Formattierungsinformationen anzureichern. Ich habe
 meinen eigenen &#x201C;Parser&#x201D; daf&#xFC;r geschrieben, welcher die Codes in
-entsprechendes HTML umgewandelt hat.\
- Hier ein Auszug:\
-&lt;a href="http://pastie.org/1261848"&gt;[Pastie-Link]&lt;/a&gt;&lt;/p&gt;
+entsprechendes HTML umgewandelt hat.&lt;/p&gt;
+
+&lt;p&gt;Hier ein Auszug:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://pastie.org/1261848"&gt;Pastie-Link&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Die Idee dahinter war einfach, es gibt 2 Arten von Codes:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;  ohne Parameter wie z.B. Bold, also [b]fetter Text[/b]&lt;/li&gt;
-&lt;li&gt;  mit Parametern wie z.B. URL, also [url=&lt;a href="http://www.readmore.ch%5DMeine"&gt;http://www.readmore.ch]Meine&lt;/a&gt;
-Webpage[/url]&lt;/li&gt;
+&lt;li&gt;  ohne Parameter wie z.B. Bold, also &lt;code&gt;[b]fetter Text[/b]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;  mit Parametern wie z.B. URL, also &lt;code&gt;[url=http://www.readmore.ch]Meine Webpage[/url]&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Die parametrierbaren Codes erhielten im Anfangsarray den Text
-&#x201C;!!REPLACER!!&#x201D; welche dann anschliessend ersetzt wurde. Das mag ja alles
+&lt;code&gt;&#x201C;!!REPLACER!!&#x201D;&lt;/code&gt; welche dann anschliessend ersetzt wurde. Das mag ja alles
 noch gehen, wenn auch sich solche ein Parser mit Regular Expression um
 einiges sch&#xF6;ner schreiben liess.&lt;/p&gt;
 
-&lt;p&gt;Wirklich &lt;em&gt;stolz&lt;/em&gt; bin ich auf Zuweisungen &#xE0; la &#x201C;s&#x201D; =&amp;gt; &#x201C;&amp;lt;s&amp;gt;&#x201D;, &#x201C;h1&#x201D; =&amp;gt;
-&#x201C;&amp;lt;h1&amp;gt;&#x201D;, wo sich mir heute die Nackenhaare aufstellen. Typisch war auch
-die schlechte Namensgebung der Variablen (anz oder sub/newsub) sowie die
-auskommentierten Stellen (&#x201C;man weiss nie f&#xFC;r was das mal noch gut sein
+&lt;p&gt;Wirklich &lt;em&gt;stolz&lt;/em&gt; bin ich auf Zuweisungen &#xE0; la &lt;code&gt;&#x201C;s&#x201D; =\&amp;gt; &#x201C;\&amp;lt;s\&amp;gt;&#x201D;&lt;/code&gt;, &lt;code&gt;&#x201C;h1&#x201D; =\&amp;gt; &#x201C;\&amp;lt;h1\&amp;gt;&#x201D;&lt;/code&gt;, wo sich mir heute die Nackenhaare aufstellen. 
+Typisch war auch die schlechte Namensgebung der Variablen (anz oder sub/newsub) sowie die auskommentierten Stellen (&#x201C;man weiss nie f&#xFC;r was das mal noch gut sein
 kann&#x201D;).&lt;/p&gt;
 </description>
     </item>
