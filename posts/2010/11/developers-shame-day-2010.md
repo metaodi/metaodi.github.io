@@ -27,9 +27,7 @@ oder Kommentare mit Formattierungsinformationen anzureichern. Ich habe
 meinen eigenen “Parser” dafür geschrieben, welcher die Codes in
 entsprechendes HTML umgewandelt hat.
 
-Hier ein Auszug:
-
-[Pastie-Link](http://pastie.org/1261848)
+Hier ein Auszug: [Pastie-Link](http://pastie.org/1261848)
 
 Die Idee dahinter war einfach, es gibt 2 Arten von Codes:
 
