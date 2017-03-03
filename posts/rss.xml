@@ -1638,9 +1638,7 @@ oder Kommentare mit Formattierungsinformationen anzureichern. Ich habe
 meinen eigenen &#x201C;Parser&#x201D; daf&#xFC;r geschrieben, welcher die Codes in
 entsprechendes HTML umgewandelt hat.&lt;/p&gt;
 
-&lt;p&gt;Hier ein Auszug:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href="http://pastie.org/1261848"&gt;Pastie-Link&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Hier ein Auszug: &lt;a href="http://pastie.org/1261848"&gt;Pastie-Link&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Die Idee dahinter war einfach, es gibt 2 Arten von Codes:&lt;/p&gt;
 
