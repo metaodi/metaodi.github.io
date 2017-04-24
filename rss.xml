@@ -4,7 +4,7 @@
     <title>metaodi</title>
     <description>metaodi</description>
     <link>http://metaodi.ch</link>
-    <pubDate>03.03.2017</pubDate>
+    <pubDate>24.04.2017</pubDate>
     <item>
       <title>About me</title>
       <link>http://metaodi.ch/about</link>
@@ -25,6 +25,11 @@
       <title>Archive</title>
       <link>http://metaodi.ch/archive</link>
       <description>
+  &lt;h2&gt;2017&lt;/h2&gt;
+    &lt;h3&gt;April&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;24.04.2017&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2017/04/2nd-dark-night"&gt;2nd Dark Night in Zurich: Open Data Workshop&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
   &lt;h2&gt;2016&lt;/h2&gt;
     &lt;h3&gt;November&lt;/h3&gt;
     &lt;ul&gt;
@@ -300,6 +305,12 @@
       <description>
 &lt;ul class="tag_box inline"&gt;
   &lt;li&gt;
+    &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
     &lt;a href="/tags#MS Access-ref"&gt;MS Access &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
@@ -313,9 +324,6 @@
   &lt;/li&gt;
   &lt;li&gt;
     &lt;a href="/tags#MongoDB-ref"&gt;MongoDB &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;a href="/tags#OpenStreetMap-ref"&gt;OpenStreetMap &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
@@ -334,9 +342,6 @@
   &lt;/li&gt;
   &lt;li&gt;
     &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;9&lt;/span&gt;&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;a href="/tags#Coding standards-ref"&gt;Coding standards &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
@@ -514,6 +519,29 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
+  &lt;h3 class="anchor" id="Open Data-ref"&gt;Open Data&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2017/04/2nd-dark-night"&gt;2nd Dark Night in Zurich: Open Data Workshop&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2014/02/usage-of-mongodb-with-a-spatial--and-geojson"&gt;Usage of MongoDB with a spatial index and GeoJSON&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2014/01/stop-making-stupid-open-data-contests"&gt;Stop making stupid Open Data contests!&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2014/09/open-data-workshop"&gt;Workshop about Open Data Technologies&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2015/01/openerz"&gt;Why and how I created the OpenERZ API&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2015/12/open-data-mashup"&gt;Open Data MashUp @ Impact Hub&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2016/06/civic-hacking"&gt;Civic Hacking @ ImNeuland&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2016/06/opendata-swiss-what-is-it"&gt;opendata.swiss - What is it and how does it work?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2016/10/how-we-combined-wordpress-with-ckan"&gt;CKANCon 2016: How We Combined CKAN with WordPress&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2016/09/hacks-hackers-opendata-portals"&gt;Hacks/Hackers: Open Data Portals + Civic Hacking&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2016/09/push-notifications-for-waste-collection"&gt;Receive push notifications for waste collection in your area (OpenERZ)&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 class="anchor" id="Talk-ref"&gt;Talk&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2017/04/2nd-dark-night"&gt;2nd Dark Night in Zurich: Open Data Workshop&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2014/07/q-a-wall"&gt;Q&amp;amp;A Wall at the OKFestival in Berlin&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2014/09/open-data-workshop"&gt;Workshop about Open Data Technologies&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2015/12/open-data-mashup"&gt;Open Data MashUp @ Impact Hub&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2015/07/learn-to-code"&gt;Learn to code if you want to. I&amp;#39;m happy to help.&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2016/06/civic-hacking"&gt;Civic Hacking @ ImNeuland&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2016/06/opendata-swiss-what-is-it"&gt;opendata.swiss - What is it and how does it work?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2016/10/how-we-combined-wordpress-with-ckan"&gt;CKANCon 2016: How We Combined CKAN with WordPress&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2016/11/git-github-lightning-talk"&gt;Jugend hackt Schweiz: Github &amp;amp; Git&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2016/09/hacks-hackers-opendata-portals"&gt;Hacks/Hackers: Open Data Portals + Civic Hacking&lt;/a&gt;&lt;/li&gt;
   &lt;h3 class="anchor" id="MS Access-ref"&gt;MS Access&lt;/h3&gt;
     &lt;li&gt;&lt;a href="/posts/2007/06/ms-access-and-not-updatable-recordsets"&gt;MS Access and not updatable Recordsets&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2007/08/ms-access-let-lines-in-reports-grow-with-its-content"&gt;MS Access: Let lines in Reports grow with it&amp;#39;s content&lt;/a&gt;&lt;/li&gt;
@@ -547,17 +575,6 @@
   &lt;h3 class="anchor" id="MongoDB-ref"&gt;MongoDB&lt;/h3&gt;
     &lt;li&gt;&lt;a href="/posts/2014/02/usage-of-mongodb-with-a-spatial--and-geojson"&gt;Usage of MongoDB with a spatial index and GeoJSON&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2015/01/openerz"&gt;Why and how I created the OpenERZ API&lt;/a&gt;&lt;/li&gt;
-  &lt;h3 class="anchor" id="Open Data-ref"&gt;Open Data&lt;/h3&gt;
-    &lt;li&gt;&lt;a href="/posts/2014/02/usage-of-mongodb-with-a-spatial--and-geojson"&gt;Usage of MongoDB with a spatial index and GeoJSON&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="/posts/2014/01/stop-making-stupid-open-data-contests"&gt;Stop making stupid Open Data contests!&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="/posts/2014/09/open-data-workshop"&gt;Workshop about Open Data Technologies&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="/posts/2015/01/openerz"&gt;Why and how I created the OpenERZ API&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="/posts/2015/12/open-data-mashup"&gt;Open Data MashUp @ Impact Hub&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="/posts/2016/06/civic-hacking"&gt;Civic Hacking @ ImNeuland&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="/posts/2016/06/opendata-swiss-what-is-it"&gt;opendata.swiss - What is it and how does it work?&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="/posts/2016/10/how-we-combined-wordpress-with-ckan"&gt;CKANCon 2016: How We Combined CKAN with WordPress&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="/posts/2016/09/hacks-hackers-opendata-portals"&gt;Hacks/Hackers: Open Data Portals + Civic Hacking&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="/posts/2016/09/push-notifications-for-waste-collection"&gt;Receive push notifications for waste collection in your area (OpenERZ)&lt;/a&gt;&lt;/li&gt;
   &lt;h3 class="anchor" id="OpenStreetMap-ref"&gt;OpenStreetMap&lt;/h3&gt;
     &lt;li&gt;&lt;a href="/posts/2014/02/usage-of-mongodb-with-a-spatial--and-geojson"&gt;Usage of MongoDB with a spatial index and GeoJSON&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2012/10/insert-coin-to-play-can-gaming-concepts-help"&gt;Insert Coin To Play&lt;/a&gt;&lt;/li&gt;
@@ -575,16 +592,6 @@
     &lt;li&gt;&lt;a href="/posts/2016/06/civic-hacking"&gt;Civic Hacking @ ImNeuland&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2016/06/opendata-swiss-what-is-it"&gt;opendata.swiss - What is it and how does it work?&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2016/10/how-we-combined-wordpress-with-ckan"&gt;CKANCon 2016: How We Combined CKAN with WordPress&lt;/a&gt;&lt;/li&gt;
-  &lt;h3 class="anchor" id="Talk-ref"&gt;Talk&lt;/h3&gt;
-    &lt;li&gt;&lt;a href="/posts/2014/07/q-a-wall"&gt;Q&amp;amp;A Wall at the OKFestival in Berlin&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="/posts/2014/09/open-data-workshop"&gt;Workshop about Open Data Technologies&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="/posts/2015/12/open-data-mashup"&gt;Open Data MashUp @ Impact Hub&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="/posts/2015/07/learn-to-code"&gt;Learn to code if you want to. I&amp;#39;m happy to help.&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="/posts/2016/06/civic-hacking"&gt;Civic Hacking @ ImNeuland&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="/posts/2016/06/opendata-swiss-what-is-it"&gt;opendata.swiss - What is it and how does it work?&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="/posts/2016/10/how-we-combined-wordpress-with-ckan"&gt;CKANCon 2016: How We Combined CKAN with WordPress&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="/posts/2016/11/git-github-lightning-talk"&gt;Jugend hackt Schweiz: Github &amp;amp; Git&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="/posts/2016/09/hacks-hackers-opendata-portals"&gt;Hacks/Hackers: Open Data Portals + Civic Hacking&lt;/a&gt;&lt;/li&gt;
   &lt;h3 class="anchor" id="Coding standards-ref"&gt;Coding standards&lt;/h3&gt;
     &lt;li&gt;&lt;a href="/posts/drafts/why-coding-standards-matter"&gt;Why Coding Standard matter&lt;/a&gt;&lt;/li&gt;
   &lt;h3 class="anchor" id="Python-ref"&gt;Python&lt;/h3&gt;
@@ -840,12 +847,40 @@ Below you can find my posts about my talks. They are usually about my main topic
 
 
 &lt;div class="posts"&gt;
+  &lt;h2 class="title"&gt;&lt;span class="date"&gt;24.04.2017&lt;/span&gt;&lt;a href="/posts/2017/04/2nd-dark-night"&gt;2nd Dark Night in Zurich: Open Data Workshop&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;ul class="tag_box inline"&gt;
+  &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;Together with &lt;a href="http://www.karldergrosse.ch/"&gt;Zentrum Karl der Grosse&lt;/a&gt;, the &lt;a href="https://www.ccczh.ch/"&gt;Chaos Computer Club Zurich (CCCZH)&lt;/a&gt; and the &lt;a href="https://www.digitale-gesellschaft.ch/"&gt;Digitale Gessellschaft Schweiz&lt;/a&gt; organized the &lt;a href="http://www.karldergrosse.ch/veranstaltung/die-2-zuercher-dark-night/"&gt;2nd Dark Night in Zurich&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I was asked to give a workshop about Open Data.
+The audience was very broad, from young to old, from novice to tech-savvy, but they all had very little knowledge about Open Data.&lt;/p&gt;
+
+&lt;p&gt;It was a very good expierence to try to explain the field of my work and one of my biggest private interests from the ground up.&lt;/p&gt;
+
+&lt;p&gt;My approach was to break down this very complicated topic in 5 areas and I tried to encourage the participants to actually &amp;quot;get their hands dirty&amp;quot; by diving into an open data portal.
+In the end, 60min is a very short time, but I hope I made a lasting impression and the topic of open data is no longer an &amp;quot;unknown&amp;quot; in their heads.&lt;/p&gt;
+
+&lt;script async class="speakerdeck-embed" data-id="24f98c4563e241ff916c80bf6631aeb6" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"&gt;&lt;/script&gt;
+
+
+&lt;/div&gt;
+
+&lt;div class="posts"&gt;
   &lt;h2 class="title"&gt;&lt;span class="date"&gt;12.11.2016&lt;/span&gt;&lt;a href="/posts/2016/11/git-github-lightning-talk"&gt;Jugend hackt Schweiz: Github &amp;amp; Git&lt;/a&gt;&lt;/h3&gt;
 
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;9&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#Git-ref"&gt;Git &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
@@ -869,13 +904,13 @@ I held a talk about &amp;quot;Github &amp;amp; Git&amp;quot;, the slides are on 
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;9&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -898,13 +933,13 @@ As CKAN is the framework I&amp;#39;m using almost on a daily basis, and I know a
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#Meetup-ref"&gt;Meetup &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;9&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -926,13 +961,13 @@ It was a very interesting experience and there were a lot of questions in the Q&
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;9&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -949,13 +984,13 @@ It was a very interesting experience and there were a lot of questions in the Q&
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;9&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -975,10 +1010,10 @@ My talk was mainly about why I consider myself to be a civic hacker, why my curi
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;9&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -1009,7 +1044,7 @@ Feel free to either fill the gaps yourself or contact me if you need more inform
       &lt;a href="/tags#Learning-ref"&gt;Learning &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;9&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -1069,13 +1104,13 @@ It&amp;#39;s about &lt;strong&gt;understanding how a programmer tackles a proble
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;9&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -1116,7 +1151,7 @@ My session has not been recorded, but at the end I could quickly present our fin
       &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;9&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -1180,12 +1215,39 @@ There are similar approaches to use such walls or boards to share news in local 
       <title>metaodi</title>
       <link>http://metaodi.ch/</link>
       <description>&lt;div class="posts"&gt;
+  &lt;h2 class="title"&gt;&lt;span class="date"&gt;24.04.2017&lt;/span&gt;&lt;a href="/posts/2017/04/2nd-dark-night"&gt;2nd Dark Night in Zurich: Open Data Workshop&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;ul class="tag_box inline"&gt;
+  &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;Together with &lt;a href="http://www.karldergrosse.ch/"&gt;Zentrum Karl der Grosse&lt;/a&gt;, the &lt;a href="https://www.ccczh.ch/"&gt;Chaos Computer Club Zurich (CCCZH)&lt;/a&gt; and the &lt;a href="https://www.digitale-gesellschaft.ch/"&gt;Digitale Gessellschaft Schweiz&lt;/a&gt; organized the &lt;a href="http://www.karldergrosse.ch/veranstaltung/die-2-zuercher-dark-night/"&gt;2nd Dark Night in Zurich&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I was asked to give a workshop about Open Data.
+The audience was very broad, from young to old, from novice to tech-savvy, but they all had very little knowledge about Open Data.&lt;/p&gt;
+
+&lt;p&gt;It was a very good expierence to try to explain the field of my work and one of my biggest private interests from the ground up.&lt;/p&gt;
+
+&lt;p&gt;My approach was to break down this very complicated topic in 5 areas and I tried to encourage the participants to actually &amp;quot;get their hands dirty&amp;quot; by diving into an open data portal.
+In the end, 60min is a very short time, but I hope I made a lasting impression and the topic of open data is no longer an &amp;quot;unknown&amp;quot; in their heads.&lt;/p&gt;
+
+&lt;script async class="speakerdeck-embed" data-id="24f98c4563e241ff916c80bf6631aeb6" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"&gt;&lt;/script&gt;
+
+
+&lt;/div&gt;
+&lt;div class="posts"&gt;
   &lt;h2 class="title"&gt;&lt;span class="date"&gt;12.11.2016&lt;/span&gt;&lt;a href="/posts/2016/11/git-github-lightning-talk"&gt;Jugend hackt Schweiz: Github &amp;amp; Git&lt;/a&gt;&lt;/h3&gt;
 
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;9&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#Git-ref"&gt;Git &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
@@ -1208,13 +1270,13 @@ I held a talk about &amp;quot;Github &amp;amp; Git&amp;quot;, the slides are on 
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;9&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -1236,13 +1298,13 @@ As CKAN is the framework I&amp;#39;m using almost on a daily basis, and I know a
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#Meetup-ref"&gt;Meetup &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;9&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -1266,7 +1328,7 @@ It was a very interesting experience and there were a lot of questions in the Q&
       &lt;a href="/tags#Programming-ref"&gt;Programming &lt;span&gt;20&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#API-ref"&gt;API &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
@@ -1326,13 +1388,13 @@ So feel free to launch your own instance of erz-trigger, just make sure to confi
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;9&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -1348,13 +1410,13 @@ So feel free to launch your own instance of erz-trigger, just make sure to confi
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;9&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -1455,10 +1517,10 @@ It only means that we have to think about this other way as well. And that the c
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;9&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -1473,113 +1535,6 @@ Feel free to either fill the gaps yourself or contact me if you need more inform
 &lt;p&gt;Download the &lt;a href="/assets/media/OpenDataPublishing@ImpactHub.pdf"&gt;PDF of my slides&lt;/a&gt; or see them directly here:&lt;/p&gt;
 
 &lt;script async class="speakerdeck-embed" data-id="1648167b88c34555a131ea6849589891" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"&gt;&lt;/script&gt; 
-
-
-&lt;/div&gt;
-&lt;div class="posts"&gt;
-  &lt;h2 class="title"&gt;&lt;span class="date"&gt;17.09.2015&lt;/span&gt;&lt;a href="/posts/2015/09/why-i-am-against-e-voting"&gt;Why I&amp;#39;m against E-Voting&lt;/a&gt;&lt;/h3&gt;
-
-  &lt;ul class="tag_box inline"&gt;
-  &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="/tags#Politics-ref"&gt;Politics &lt;span&gt;3&lt;/span&gt;&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="/tags#E-Voting-ref"&gt;E-Voting &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;p&gt;In Switzerland we&amp;#39;ll have the national elections coming up on the 18th October 2015.
-It&amp;#39;s again that time where the voices are getting louder.
-Especially in those moments, but actually before every political vote in Switzerland (which happens several times a year), there seems to be a rising interest in the subject of E-Voting.&lt;/p&gt;
-
-&lt;p&gt;As I work in IT, people ofter assume I&amp;#39;m waiting for that moment, when it&amp;#39;s finally allowed to do that (actually there are two cantons that have the permission, but I don&amp;#39;t live in one of those).
-But actually it&amp;#39;s the opposite.
-And probably it&amp;#39;s because &lt;em&gt;I work in IT&lt;/em&gt;.
-I had this conversation already several times, so I though it&amp;#39;s time to write down my main arguments for the most common objections.&lt;/p&gt;
-
-&lt;p&gt;Feel free to correct me :)&lt;/p&gt;
-
-&lt;h3 id="toc_0"&gt;I can haz vote on my smartphone on my way to work?&lt;/h3&gt;
-
-&lt;p&gt;Democracy is hard. It&amp;#39;s not designed to be &lt;em&gt;easy&lt;/em&gt;, and &amp;quot;Voting&amp;quot; is the crucial core of democracy.
-Voting is a public act, that must be accountable, while remaining each persons voting secrecy.
-And to achieve that we already have a perfect system in place: you can either vote in person or send the ballot by mail.&lt;/p&gt;
-
-&lt;p&gt;It&amp;#39;s not that hard, but it takes some time.
-We&amp;#39;re not talking about a Facebook &amp;quot;Like&amp;quot; click or a Tinder &amp;quot;Hot or Not&amp;quot; swipe, we&amp;#39;re talking about our polical rights and our duty as citizens to not easily give up the power we have. &lt;/p&gt;
-
-&lt;h3 id="toc_1"&gt;E-Voting will increase the participation in the elections, especially the young will vote if there would be E-Voting&lt;/h3&gt;
-
-&lt;p&gt;Bullshit! If someone doesn&amp;#39;t care about voting, they will not start doing so if they get another channel.
-Even the &lt;a href="https://www.bk.admin.ch/themen/pore/evoting/07977/index.html?lang=en"&gt;Federal Chancellery&lt;/a&gt; had to admit that the participations didn&amp;#39;t increase in their tests (see also &lt;a href="http://www.bernerzeitung.ch/schweiz/standard/einheimische-sollen-per-evoting-waehlen-koennen/story/30409508"&gt;here&lt;/a&gt;, &lt;a href="http://www.blick.ch/news/politik/junge-bleiben-stimmfaul-keine-hoehere-wahlbeteiligung-mit-e-voting-id4007174.html"&gt;here&lt;/a&gt; and &lt;a href="http://www.inside-it.ch/articles/40863"&gt;here&lt;/a&gt;)&lt;/p&gt;
-
-&lt;h3 id="toc_2"&gt;E-Banking is secure, why should E-Voting be less secure?&lt;/h3&gt;
-
-&lt;p&gt;First of all: E-Banking is not secure. They try their best to make it so, but there are so many possibilities to overcome a system, it&amp;#39;s impossible to say one of these systems is secure.
-But the banks are willing to take the risk.
-This is up to them, and I myself am a happy E-Banking user.&lt;/p&gt;
-
-&lt;p&gt;I do this with the knowledge, that if something goes wrong, it can be fixed.
-Or if I lose money due to my own stupidity, so be it.
-I&amp;#39;m willing to take this risk as well.&lt;/p&gt;
-
-&lt;p&gt;But all this does not apply to a core element of democracy.
-There is no one that covers for a fraudulent election.
-The risks that are inherent to using computers are simply not acceptable.&lt;/p&gt;
-
-&lt;p&gt;Fraud is also possible in the classic voting system.
-You could count wrong.
-Or enter the wrong number when transfering it the next department.
-But E-Voting would make it possible to commit systematic fraud.&lt;/p&gt;
-
-&lt;p&gt;All you had to do, is to attack a single point.
-If you can change the software, you might be able to count differently.
-Or you could do a &lt;a href="https://de.wikipedia.org/wiki/Denial_of_Service"&gt;Denial-of-Service&lt;/a&gt; attack and prevent people from voting online.&lt;/p&gt;
-
-&lt;h3 id="toc_3"&gt;The software they use is security-audited and state-of-the-art&lt;/h3&gt;
-
-&lt;p&gt;Yes, I&amp;#39;m sure about that.
-But that doesn&amp;#39;t change a thing.
-This simply states, that it&amp;#39;s hard to do, but not impossible.
-Plus we can&amp;#39;t be sure that the auditors catch everything.
-Of course a good way to avoid or mitigate this kind of problem is to use open source software.
-I must be able to read it&amp;#39;s source code.
-So we can stop talking about all those closed-source solutions, where we&amp;#39;ll never be able to tell if it&amp;#39;s doing what it should be doing.
-The consequence of this would be, that only people that can code, can verify the E-Voting system, where the current (paper-based) system, is immediately clear for everybody.&lt;/p&gt;
-
-&lt;p&gt;There is a famous competition called &lt;a href="http://www.underhanded-c.org/"&gt;&amp;quot;Underhanded C&amp;quot;&lt;/a&gt;.
-The goal is to write innocent-looking code, that passes visual inspection, but has a harmful side-effect.
-So it&amp;#39;s definitely possible to do.
-It&amp;#39;s only a matter of time.&lt;/p&gt;
-
-&lt;p&gt;But let&amp;#39;s assume for a moment, that this perfect piece of software exists, and it has been audited and it works and does no evil.
-We still have a problem: there is no way of telling what code currently runs on a computer.
-So maybe the software has been replaced between the review and the runtime.
-Or it could have been changed at runtime.
-We simply cannot say.
-If we could, we would have solved the &lt;a href="https://en.wikipedia.org/wiki/Halting_problem"&gt;Halting problem&lt;/a&gt; (see also &lt;a href="http://www.wired.com/2014/02/halting-problem/"&gt;this excellent explanation&lt;/a&gt; about why this is the case).&lt;/p&gt;
-
-&lt;p&gt;We as a society have to decide if we&amp;#39;re willing to take the risk, that the E-Voting system might get hacked.
-That it might be broken.
-That it might have been compromised.
-The answer for me is clear: it&amp;#39;s broken by design, and it&amp;#39;s way too important to take chances here.&lt;/p&gt;
-
-&lt;h3 id="toc_4"&gt;Let&amp;#39;s keep the current system&lt;/h3&gt;
-
-&lt;p&gt;The current system is not broken.
-Why should be replace it with a broken one?
-The current system allows us to watch the voting process.
-We can see the ballots, we can count them.&lt;/p&gt;
-
-&lt;p&gt;By hiding that inside a computer, there is nothing we can watch.
-We can only trust in the system.
-It&amp;#39;s way to important to just leave it like that.&lt;/p&gt;
-
-&lt;p&gt;That said, I&amp;#39;m always open to discuss alternatives.
-Maybe there comes a time, where we discover something fundamental new, that it&amp;#39;ll be possible.
-But this new thing is not just a new algorithm.
-If it&amp;#39;s based on the same principles as I&amp;#39;ve written above, it is not accepable for a democracy.&lt;/p&gt;
 
 
 &lt;/div&gt;

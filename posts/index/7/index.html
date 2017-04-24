@@ -77,6 +77,24 @@
         <div class="row-fluid">
   <div class="col-md-12">
       <div class="posts">
+        <h2 class="title"><span class="date">22.12.2009</span><a href="/posts/2009/12/how-to-make-your-eye-feel-like-its-closed-when-its">How to make your eye feel like it&#39;s closed, when it&#39;s actually open</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Link-ref">Link <span>4</span></a>
+          </li>
+        </ul>
+
+        <p><a href="http://scienceblogs.com/cognitivedaily/2008/05/how_to_make_your_eye_feel_like.php">http://scienceblogs.com/cognitivedaily/2008/05/how_to_make_your_eye_feel_like.php</a></p>
+
+<blockquote>
+<p>In fact, my left eye felt as if it was closed. I made every effort to open the eye, but it seemed that some unstoppable force was keeping it closed. The only way to make my eye feel as if it was open was to cover it with my hand. I still couldn’t see anything with the eye, but at least I could convince myself it was open.</p>
+</blockquote>
+
+
+      </div>
+      <div class="posts">
         <h2 class="title"><span class="date">03.12.2009</span><a href="/posts/2009/12/mnmal-i-think-this-summarizes-everything">mnmal</a> </h3>
 
         <ul class="tag_box">
@@ -381,48 +399,6 @@ and therefore cannot exist twice at the same time.</p>
 the following command is only executed when the predecessor command
 finished successfully. Otherwise the whole command quits. In my case
 this means the logfile will be kept and not moved.</p>
-
-
-      </div>
-      <div class="posts">
-        <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/delete-all-symlink-of-a-directory">Delete all symlink of a directory</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#Linux-ref">Linux <span>8</span></a>
-          </li>
-        </ul>
-
-        <p>It seems like a simple task, and it really is. But I always have to
-google for such simple stuff, that’s why I start to post things here, so
-I don’t have to look up the same things over and over again.</p>
-
-<p>To list all files of a directory you can use (sort by date)</p>
-
-<pre><code> $ ls -lt
-total 35
-lrwxrwxrwx   1 oracle   dba           13 Jan 30 09:47 etc -&gt; /etc/
-drwxr-xr-x   2 oracle   dba         8192 Jan 29 11:40 data
-drwxr-xr-x   2 oracle   dba         8192 Jan 29 11:23 info
-drwxr-xr-x   2 oracle   dba         8192 Jan 20 15:27 main
--rwxr-xr-x   1 oracle   dba         2643 Dec 18 15:11 run.sh
-drwxr-xr-x   2 oracle   dba         8192 Nov 20 14:16 _old
-</code></pre>
-
-<p>As you can see the symlink is marked with the “l” at the beginning, you
-can use that to get only links in the output using grep:</p>
-
-<pre><code> $ ls -lt | grep &#39;^l&#39;
-lrwxrwxrwx   1 oracle   dba           13 Jan 30 09:47 etc -&gt; /etc/
-</code></pre>
-
-<p>To delete the files we are only interested in the filename this can be
-done using awk. Finally xarg is a tool that runs a given program on
-every element of it’s input, so the final task can be done by:</p>
-
-<pre><code> $ ls -lt | grep &#39;^l&#39; | awk &#39;{ print $9 }&#39; | xargs rm
-</code></pre>
 
 
       </div>
