@@ -77,6 +77,34 @@
         <div class="row-fluid">
   <div class="col-md-12">
       <div class="posts">
+        <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/ipa-client-backup-services">IPA - Client Backup Services</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#IPA-ref">IPA <span>1</span></a>
+          </li>
+          <li>
+            <a href="/tags#Trivadis-ref">Trivadis <span>1</span></a>
+          </li>
+          <li>
+            <a href="/tags#German-ref">German <span>19</span></a>
+          </li>
+        </ul>
+
+        <p>Da es mir zu mühsam ist, die Arbeit in HTML zu konvertieren (werde ich
+vielleicht noch nachholen), hier die Arbeit als PDF:
+<a href="/assets/media/ipa/backup_services.pdf">backup_services.pdf</a>
+[4MB]</p>
+
+<p>Viel Spass beim Lesen.</p>
+
+<p>PS: Ja ich weiss sie hat viele Rechtsschreibfehler, evtl. auch mal einen
+inhaltlichen, aber: Nobody’s perfect!</p>
+
+
+      </div>
+      <div class="posts">
         <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/im-bus">Im Bus</a> </h3>
 
         <ul class="tag_box">
@@ -191,7 +219,7 @@ same age as the files within.</p>
             <a href="/tags#SQL-ref">SQL <span>6</span></a>
           </li>
           <li>
-            <a href="/tags#Programming-ref">Programming <span>20</span></a>
+            <a href="/tags#Programming-ref">Programming <span>21</span></a>
           </li>
         </ul>
 
@@ -251,7 +279,7 @@ open to new ways of doing this.</p>
         <ul class="tag_box">
         <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
           <li>
-            <a href="/tags#Programming-ref">Programming <span>20</span></a>
+            <a href="/tags#Programming-ref">Programming <span>21</span></a>
           </li>
           <li>
             <a href="/tags#Brainfuck-ref">Brainfuck <span>1</span></a>
@@ -685,7 +713,7 @@ angenehm, dass die auch halten.</p>
             <a href="/tags#VBA-ref">VBA <span>2</span></a>
           </li>
           <li>
-            <a href="/tags#Programming-ref">Programming <span>20</span></a>
+            <a href="/tags#Programming-ref">Programming <span>21</span></a>
           </li>
         </ul>
 
@@ -748,7 +776,7 @@ End Sub;
             <a href="/tags#MS Access-ref">MS Access <span>2</span></a>
           </li>
           <li>
-            <a href="/tags#Programming-ref">Programming <span>20</span></a>
+            <a href="/tags#Programming-ref">Programming <span>21</span></a>
           </li>
         </ul>
 
@@ -785,152 +813,6 @@ the ControlSource and Requery and Repaint your form.</p>
 <p>When you want to Undo your changed, just don’t save your values in the
 DB and reassign the ControlSource and Refresh the form, the old value
 will appear.</p>
-
-
-      </div>
-      <div class="posts">
-        <h2 class="title"><span class="date">14.05.2007</span><a href="/posts/2007/05/convert-fixed-length-column-to-excel">Convert fixed length column to Excel</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#Excel-ref">Excel <span>2</span></a>
-          </li>
-          <li>
-            <a href="/tags#VBA-ref">VBA <span>2</span></a>
-          </li>
-          <li>
-            <a href="/tags#Programming-ref">Programming <span>20</span></a>
-          </li>
-        </ul>
-
-        <p>I had to convert the output from sqlplus to an excel sheet. The problem
-was, that I had no influence on the creation, so I could spool the file
-directly to excel.</p>
-
-<p>All I got were spool files like that:</p>
-
-<pre><code>      CLASS_ID SUPER_CLASS_ID   COUNT(*)
-============== ============== ==========
-       128           8765         18
-       128           8765        131
-       128           8765          7
-</code></pre>
-
-<p>My idea was to take the line used to seperate the column titles and the
-data as the data that gives me the length of each column (refered as the
-column line in my function below). Then just simply extract a block from
-start to end (as given) based on the gathered column length information.</p>
-
-<p>Maybe someone can use this piece of VBA code:</p>
-
-<pre><code>Public Sub convertFixed()
-    Dim sFile As String
-    Dim iCount As Long
-    Dim iSubCount As Long
-    Dim iLastCount As Long
-    Dim i As Integer
-    Dim Length() As Integer
-    Dim sValue As String
-
-    Dim iStart As Integer
-    Dim iEnd As Integer
-    Dim iColumn As Integer
-
-
-    &#39;&#39;clear previous data
-    Cells.ClearContents
-
-    &#39;&#39;choose the file with the windows file dialog
-    With Application.FileDialog(msoFileDialogFilePicker)
-    .AllowMultiSelect = False
-    .Title = &quot;Choose log file to convert&quot;
-    .InitialFileName = ThisWorkbook.Path
-    .InitialView = msoFileDialogViewDetails
-    .Filters.Clear
-
-    &#39;&#39;the filter is set to .log .spool and .txt files
-    .Filters.Add &quot;Log file&quot;, &quot;*.log, *.spool, *.txt&quot;
-
-    .ButtonName = &quot;Load&quot;
-    If .Show = -1 Then
-        sFile = .SelectedItems(1)
-    Else
-        &#39;&#39;stop execution if no file is selected
-        Exit Sub
-    End If
-    End With
-
-
-    &#39;&#39;we need the following informtion (gather with InputBoxes)
-    &#39;&#39;line to scan the column lengh (space delimiteted) -&gt; line number
-    &#39;&#39;begin of block (line number)
-    &#39;&#39;end of block (line number)
-    iStart = InputBox(&quot;Enter line number where block starts:&quot;, &quot;Line number of Start&quot;)
-    iEnd = InputBox(&quot;Enter line number where block ends:&quot;, &quot;Line number of End&quot;)
-    iColumn = InputBox(&quot;Enter line number of fixed length specification&quot;, &quot;Line number for fixed length&quot;)
-
-    &#39;&#39;the first loop is to get the correct column length
-    &#39;open the file
-    Open sFile For Input Access Read As #1
-    iCount = 1
-    &#39;&#39;loop until end of file (EOF) is reached
-    Do Until EOF(1)
-    Line Input #1, sLine
-    If (iCount = iColumn) Then
-        &#39;&#39;exit if the column line (to scan the length) is reached
-        Exit Do
-    End If
-    iCount = iCount + 1
-    Loop
-    &#39;&#39;close the file
-    Close #1
-
-    iCount = 0
-    iSubCount = 1
-    iLastCount = 0
-    &#39;&#39;sLine now contains a line that gives us the fixed length of the columns
-    sLine = RTrim(sLine)
-    Do Until iSubCount &gt; Len(sLine)
-    If (Mid(sLine, iSubCount, 1) = &quot; &quot; Or iSubCount = Len(sLine)) Then
-        &#39;&#39;the Length array stores the length of each column (needs to be ReDim&#39;ed with each new column)
-        ReDim Preserve Length(iCount)
-        Length(iCount) = iSubCount - iLastCount
-        iLastCount = iSubCount
-        iCount = iCount + 1
-    End If
-    iSubCount = iSubCount + 1
-    Loop
-
-    &#39;&#39;open the file to extract the block based on the column length stored in the Length-Array
-    Open sFile For Input Access Read As #1
-    iCount = 1
-    iSubCount = 1
-
-    &#39;&#39;loop until the end of the block is reached
-    Do Until iCount &gt; iEnd
-    Line Input #1, sLine
-    iLastCount = 1
-    If (iCount &gt;= iStart) Then
-        For i = 0 To UBound(Length)
-            sValue = Trim(Mid(sLine, iLastCount, Length(i)))
-            &#39;&#39;prevent application errors with adding of &quot;&#39;&quot; in front of special characters
-            If (Left(sValue, 1) = &quot;=&quot; Or Left(sValue, 1) = &quot;-&quot; Or Left(sValue, 1) = &quot;+&quot;) Then
-                sValue = &quot;&#39;&quot; &amp; sValue
-            End If
-            &#39;&#39;insert the data to the current Excel sheet
-            Cells(iSubCount, i + 1).Value = sValue
-            iLastCount = iLastCount + Length(i)
-        Next i
-        iSubCount = iSubCount + 1
-    End If
-    iCount = iCount + 1
-    Loop
-    &#39;&#39;close the file
-    Close #1
-
-End Sub
-</code></pre>
 
 
       </div>

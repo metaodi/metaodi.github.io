@@ -77,6 +77,54 @@
         <div class="row-fluid">
   <div class="col-md-12">
       <div class="posts">
+        <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/insert-text-at-top-of-a-file">Insert text at top of a file</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Linux-ref">Linux <span>8</span></a>
+          </li>
+        </ul>
+
+        <p>If you want to insert text at the end of a file (“append”) you can
+simply use:</p>
+
+<pre><code> $ echo &quot;test&quot; &gt;&gt; my_file.txt
+</code></pre>
+
+<p>which then adds “test” on a new line at the end of the “my_file.txt”.
+In my case I had to insert text at top of a file. If you start to google
+for that you discover quite fancy solution like using vi or some sed
+magic.</p>
+
+<p>For me this was all too much. I have a file with quite static text in
+it. At the end of a shell script I want to insert the content of this
+file at the beginning of a logfile created by the script.</p>
+
+<p>When using files it’s getting easier:</p>
+
+<pre><code> $ cat my_static_file.txt logfile.txt &gt; temp_logfile.txt 
+ $ mv temp_logfile.txt logfile.txt
+</code></pre>
+
+<p>But my script can run parallel and therefore this approach is very
+dangerous. I was looking for a quick solution and came up with this:</p>
+
+<pre><code> $ cat my_static_file.txt logfile.txt &gt; $$ &amp;&amp; mv $$ logfile.txt
+</code></pre>
+
+<p>This has the advantage of being on a single line and using “\$\$” as
+filename. \$\$ is the process ID (PID) of the current running script,
+and therefore cannot exist twice at the same time.</p>
+
+<p>Because of the usage of &amp;&amp; and calling everything on one line is, that
+the following command is only executed when the predecessor command
+finished successfully. Otherwise the whole command quits. In my case
+this means the logfile will be kept and not moved.</p>
+
+
+      </div>
+      <div class="posts">
         <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/delete-all-symlink-of-a-directory">Delete all symlink of a directory</a> </h3>
 
         <ul class="tag_box">
@@ -413,34 +461,6 @@ Gespräch etc. WICHTIG: immer etwas zu schreiben dabei haben.</li>
 <li>  Schluss beachten, es sollte möglichst jeder merken, dass die Rede
 fertig ist.</li>
 </ul>
-
-
-      </div>
-      <div class="posts">
-        <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/ipa-client-backup-services">IPA - Client Backup Services</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#IPA-ref">IPA <span>1</span></a>
-          </li>
-          <li>
-            <a href="/tags#Trivadis-ref">Trivadis <span>1</span></a>
-          </li>
-          <li>
-            <a href="/tags#German-ref">German <span>19</span></a>
-          </li>
-        </ul>
-
-        <p>Da es mir zu mühsam ist, die Arbeit in HTML zu konvertieren (werde ich
-vielleicht noch nachholen), hier die Arbeit als PDF:
-<a href="/assets/media/ipa/backup_services.pdf">backup_services.pdf</a>
-[4MB]</p>
-
-<p>Viel Spass beim Lesen.</p>
-
-<p>PS: Ja ich weiss sie hat viele Rechtsschreibfehler, evtl. auch mal einen
-inhaltlichen, aber: Nobody’s perfect!</p>
 
 
       </div>

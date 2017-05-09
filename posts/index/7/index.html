@@ -77,6 +77,24 @@
         <div class="row-fluid">
   <div class="col-md-12">
       <div class="posts">
+        <h2 class="title"><span class="date">23.12.2009</span><a href="/posts/2009/12/guardian-how-do-i-know-china-wrecked-the-copenhagen">Guardian: How do I know China wrecked the Copenhagen deal? I was in the room</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Link-ref">Link <span>4</span></a>
+          </li>
+        </ul>
+
+        <p><a href="http://www.guardian.co.uk/environment/2009/dec/22/copenhagen-climate-change-mark-lynas">http://www.guardian.co.uk/environment/2009/dec/22/copenhagen-climate-change-mark-lynas</a></p>
+
+<blockquote>
+<p>With the deal gutted, the heads of state session concluded with a final battle as the Chinese delegate insisted on removing the 1.5C target so beloved of the small island states and low-lying nations who have most to lose from rising seas. President Nasheed of the Maldives, supported by Brown, fought valiantly to save this crucial number. &quot;How can you ask my country to go extinct?&quot; demanded Nasheed. The Chinese delegate feigned great offence – and the number stayed, but surrounded by language which makes it all but meaningless. The deed was done.</p>
+</blockquote>
+
+
+      </div>
+      <div class="posts">
         <h2 class="title"><span class="date">22.12.2009</span><a href="/posts/2009/12/how-to-make-your-eye-feel-like-its-closed-when-its">How to make your eye feel like it&#39;s closed, when it&#39;s actually open</a> </h3>
 
         <ul class="tag_box">
@@ -148,7 +166,7 @@
         <ul class="tag_box">
         <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
           <li>
-            <a href="/tags#Programming-ref">Programming <span>20</span></a>
+            <a href="/tags#Programming-ref">Programming <span>21</span></a>
           </li>
           <li>
             <a href="/tags#Go-ref">Go <span>1</span></a>
@@ -351,54 +369,6 @@ registriert diesen online.</p>
 <p><strong><em>Beispiel:</em></strong> <em>ZAHLE CHF 50 AN 85-4887-4 Mittagessen, Gruss Stefan</em></p>
 
 <p>Echt praktisch!</p>
-
-
-      </div>
-      <div class="posts">
-        <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/insert-text-at-top-of-a-file">Insert text at top of a file</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#Linux-ref">Linux <span>8</span></a>
-          </li>
-        </ul>
-
-        <p>If you want to insert text at the end of a file (“append”) you can
-simply use:</p>
-
-<pre><code> $ echo &quot;test&quot; &gt;&gt; my_file.txt
-</code></pre>
-
-<p>which then adds “test” on a new line at the end of the “my_file.txt”.
-In my case I had to insert text at top of a file. If you start to google
-for that you discover quite fancy solution like using vi or some sed
-magic.</p>
-
-<p>For me this was all too much. I have a file with quite static text in
-it. At the end of a shell script I want to insert the content of this
-file at the beginning of a logfile created by the script.</p>
-
-<p>When using files it’s getting easier:</p>
-
-<pre><code> $ cat my_static_file.txt logfile.txt &gt; temp_logfile.txt 
- $ mv temp_logfile.txt logfile.txt
-</code></pre>
-
-<p>But my script can run parallel and therefore this approach is very
-dangerous. I was looking for a quick solution and came up with this:</p>
-
-<pre><code> $ cat my_static_file.txt logfile.txt &gt; $$ &amp;&amp; mv $$ logfile.txt
-</code></pre>
-
-<p>This has the advantage of being on a single line and using “\$\$” as
-filename. \$\$ is the process ID (PID) of the current running script,
-and therefore cannot exist twice at the same time.</p>
-
-<p>Because of the usage of &amp;&amp; and calling everything on one line is, that
-the following command is only executed when the predecessor command
-finished successfully. Otherwise the whole command quits. In my case
-this means the logfile will be kept and not moved.</p>
 
 
       </div>

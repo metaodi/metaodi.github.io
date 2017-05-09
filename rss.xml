@@ -4,7 +4,7 @@
     <title>metaodi</title>
     <description>metaodi</description>
     <link>http://metaodi.ch</link>
-    <pubDate>24.04.2017</pubDate>
+    <pubDate>09.05.2017</pubDate>
     <item>
       <title>About me</title>
       <link>http://metaodi.ch/about</link>
@@ -26,6 +26,10 @@
       <link>http://metaodi.ch/archive</link>
       <description>
   &lt;h2&gt;2017&lt;/h2&gt;
+    &lt;h3&gt;May&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;09.05.2017&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2017/05/open-education-day-2017"&gt;Open Education Day 2017: HTML/CSS Workshop&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
     &lt;h3&gt;April&lt;/h3&gt;
     &lt;ul&gt;
       &lt;li&gt;&lt;span&gt;24.04.2017&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2017/04/2nd-dark-night"&gt;2nd Dark Night in Zurich: Open Data Workshop&lt;/a&gt;&lt;/li&gt;
@@ -308,13 +312,19 @@
     &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
+    &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#Open Education-ref"&gt;Open Education &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#Programming-ref"&gt;Programming &lt;span&gt;21&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="/tags#OpenTechSchool-ref"&gt;OpenTechSchool &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;a href="/tags#MS Access-ref"&gt;MS Access &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;a href="/tags#Programming-ref"&gt;Programming &lt;span&gt;20&lt;/span&gt;&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;a href="/tags#VBA-ref"&gt;VBA &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
@@ -533,6 +543,7 @@
     &lt;li&gt;&lt;a href="/posts/2016/09/push-notifications-for-waste-collection"&gt;Receive push notifications for waste collection in your area (OpenERZ)&lt;/a&gt;&lt;/li&gt;
   &lt;h3 class="anchor" id="Talk-ref"&gt;Talk&lt;/h3&gt;
     &lt;li&gt;&lt;a href="/posts/2017/04/2nd-dark-night"&gt;2nd Dark Night in Zurich: Open Data Workshop&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2017/05/open-education-day-2017"&gt;Open Education Day 2017: HTML/CSS Workshop&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2014/07/q-a-wall"&gt;Q&amp;amp;A Wall at the OKFestival in Berlin&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2014/09/open-data-workshop"&gt;Workshop about Open Data Technologies&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2015/12/open-data-mashup"&gt;Open Data MashUp @ Impact Hub&lt;/a&gt;&lt;/li&gt;
@@ -542,10 +553,10 @@
     &lt;li&gt;&lt;a href="/posts/2016/10/how-we-combined-wordpress-with-ckan"&gt;CKANCon 2016: How We Combined CKAN with WordPress&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2016/11/git-github-lightning-talk"&gt;Jugend hackt Schweiz: Github &amp;amp; Git&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2016/09/hacks-hackers-opendata-portals"&gt;Hacks/Hackers: Open Data Portals + Civic Hacking&lt;/a&gt;&lt;/li&gt;
-  &lt;h3 class="anchor" id="MS Access-ref"&gt;MS Access&lt;/h3&gt;
-    &lt;li&gt;&lt;a href="/posts/2007/06/ms-access-and-not-updatable-recordsets"&gt;MS Access and not updatable Recordsets&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="/posts/2007/08/ms-access-let-lines-in-reports-grow-with-its-content"&gt;MS Access: Let lines in Reports grow with it&amp;#39;s content&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 class="anchor" id="Open Education-ref"&gt;Open Education&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2017/05/open-education-day-2017"&gt;Open Education Day 2017: HTML/CSS Workshop&lt;/a&gt;&lt;/li&gt;
   &lt;h3 class="anchor" id="Programming-ref"&gt;Programming&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2017/05/open-education-day-2017"&gt;Open Education Day 2017: HTML/CSS Workshop&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2007/06/ms-access-and-not-updatable-recordsets"&gt;MS Access and not updatable Recordsets&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2007/08/ms-access-let-lines-in-reports-grow-with-its-content"&gt;MS Access: Let lines in Reports grow with it&amp;#39;s content&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2007/05/convert-fixed-length-column-to-excel"&gt;Convert fixed length column to Excel&lt;/a&gt;&lt;/li&gt;
@@ -566,6 +577,11 @@
     &lt;li&gt;&lt;a href="/posts/2015/12/vagrant-system-status"&gt;Check the status of all vagrant boxes on your system&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2015/07/learn-to-code"&gt;Learn to code if you want to. I&amp;#39;m happy to help.&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2016/09/push-notifications-for-waste-collection"&gt;Receive push notifications for waste collection in your area (OpenERZ)&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 class="anchor" id="OpenTechSchool-ref"&gt;OpenTechSchool&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2017/05/open-education-day-2017"&gt;Open Education Day 2017: HTML/CSS Workshop&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 class="anchor" id="MS Access-ref"&gt;MS Access&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2007/06/ms-access-and-not-updatable-recordsets"&gt;MS Access and not updatable Recordsets&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2007/08/ms-access-let-lines-in-reports-grow-with-its-content"&gt;MS Access: Let lines in Reports grow with it&amp;#39;s content&lt;/a&gt;&lt;/li&gt;
   &lt;h3 class="anchor" id="VBA-ref"&gt;VBA&lt;/h3&gt;
     &lt;li&gt;&lt;a href="/posts/2007/08/ms-access-let-lines-in-reports-grow-with-its-content"&gt;MS Access: Let lines in Reports grow with it&amp;#39;s content&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2007/05/convert-fixed-length-column-to-excel"&gt;Convert fixed length column to Excel&lt;/a&gt;&lt;/li&gt;
@@ -847,6 +863,41 @@ Below you can find my posts about my talks. They are usually about my main topic
 
 
 &lt;div class="posts"&gt;
+  &lt;h2 class="title"&gt;&lt;span class="date"&gt;09.05.2017&lt;/span&gt;&lt;a href="/posts/2017/05/open-education-day-2017"&gt;Open Education Day 2017: HTML/CSS Workshop&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;ul class="tag_box inline"&gt;
+  &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Open Education-ref"&gt;Open Education &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Programming-ref"&gt;Programming &lt;span&gt;21&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#OpenTechSchool-ref"&gt;OpenTechSchool &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;The &lt;a href="https://www.ch-open.ch/"&gt;/ch/open&lt;/a&gt; association hosted the &lt;a href="http://www.open-education-day.ch/"&gt;Open Education Day 2017&lt;/a&gt; at the &lt;a href="http://www.fhnw.ch/campus-brugg-windisch"&gt;FHNW in Brugg/Windisch&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I wanted to provide a workshop that could possible be re-used in a classroom, as teachers were the main audience of this event.
+As a coach of &lt;a href="http://www.opentechschool.org/"&gt;OpenTechSchool&lt;/a&gt;, it was clear that I would use one of those courses and talk a little bit about OTS as well.&lt;/p&gt;
+
+&lt;p&gt;After some thought, I chose the &lt;a href="http://opentechschool.github.io/html-css-beginners/"&gt;HTML/CSS course&lt;/a&gt;.
+The course is designed to be &amp;quot;do it yourself, in your own tempo&amp;quot;.&lt;/p&gt;
+
+&lt;p&gt;It was a lot of fun and I think the participants could take away the important message, that websites are not magic.
+Thanks to the open learning material, they can finish the course on their own and also re-use it for their students.&lt;/p&gt;
+
+&lt;script async class="speakerdeck-embed" data-id="e2ca6e1fa59b41959b7a602a181c1990" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"&gt;&lt;/script&gt;
+
+
+&lt;/div&gt;
+
+&lt;div class="posts"&gt;
   &lt;h2 class="title"&gt;&lt;span class="date"&gt;24.04.2017&lt;/span&gt;&lt;a href="/posts/2017/04/2nd-dark-night"&gt;2nd Dark Night in Zurich: Open Data Workshop&lt;/a&gt;&lt;/h3&gt;
 
   &lt;ul class="tag_box inline"&gt;
@@ -855,7 +906,7 @@ Below you can find my posts about my talks. They are usually about my main topic
       &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -880,7 +931,7 @@ In the end, 60min is a very short time, but I hope I made a lasting impression a
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#Git-ref"&gt;Git &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
@@ -910,7 +961,7 @@ I held a talk about &amp;quot;Github &amp;amp; Git&amp;quot;, the slides are on 
       &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -939,7 +990,7 @@ As CKAN is the framework I&amp;#39;m using almost on a daily basis, and I know a
       &lt;a href="/tags#Meetup-ref"&gt;Meetup &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -967,7 +1018,7 @@ It was a very interesting experience and there were a lot of questions in the Q&
       &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -990,7 +1041,7 @@ It was a very interesting experience and there were a lot of questions in the Q&
       &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -1013,7 +1064,7 @@ My talk was mainly about why I consider myself to be a civic hacker, why my curi
       &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -1038,13 +1089,13 @@ Feel free to either fill the gaps yourself or contact me if you need more inform
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Programming-ref"&gt;Programming &lt;span&gt;20&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Programming-ref"&gt;Programming &lt;span&gt;21&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#Learning-ref"&gt;Learning &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -1110,7 +1161,7 @@ It&amp;#39;s about &lt;strong&gt;understanding how a programmer tackles a proble
       &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -1151,7 +1202,7 @@ My session has not been recorded, but at the end I could quickly present our fin
       &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -1215,6 +1266,40 @@ There are similar approaches to use such walls or boards to share news in local 
       <title>metaodi</title>
       <link>http://metaodi.ch/</link>
       <description>&lt;div class="posts"&gt;
+  &lt;h2 class="title"&gt;&lt;span class="date"&gt;09.05.2017&lt;/span&gt;&lt;a href="/posts/2017/05/open-education-day-2017"&gt;Open Education Day 2017: HTML/CSS Workshop&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;ul class="tag_box inline"&gt;
+  &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Open Education-ref"&gt;Open Education &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Programming-ref"&gt;Programming &lt;span&gt;21&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#OpenTechSchool-ref"&gt;OpenTechSchool &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;The &lt;a href="https://www.ch-open.ch/"&gt;/ch/open&lt;/a&gt; association hosted the &lt;a href="http://www.open-education-day.ch/"&gt;Open Education Day 2017&lt;/a&gt; at the &lt;a href="http://www.fhnw.ch/campus-brugg-windisch"&gt;FHNW in Brugg/Windisch&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I wanted to provide a workshop that could possible be re-used in a classroom, as teachers were the main audience of this event.
+As a coach of &lt;a href="http://www.opentechschool.org/"&gt;OpenTechSchool&lt;/a&gt;, it was clear that I would use one of those courses and talk a little bit about OTS as well.&lt;/p&gt;
+
+&lt;p&gt;After some thought, I chose the &lt;a href="http://opentechschool.github.io/html-css-beginners/"&gt;HTML/CSS course&lt;/a&gt;.
+The course is designed to be &amp;quot;do it yourself, in your own tempo&amp;quot;.&lt;/p&gt;
+
+&lt;p&gt;It was a lot of fun and I think the participants could take away the important message, that websites are not magic.
+Thanks to the open learning material, they can finish the course on their own and also re-use it for their students.&lt;/p&gt;
+
+&lt;script async class="speakerdeck-embed" data-id="e2ca6e1fa59b41959b7a602a181c1990" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"&gt;&lt;/script&gt;
+
+
+&lt;/div&gt;
+&lt;div class="posts"&gt;
   &lt;h2 class="title"&gt;&lt;span class="date"&gt;24.04.2017&lt;/span&gt;&lt;a href="/posts/2017/04/2nd-dark-night"&gt;2nd Dark Night in Zurich: Open Data Workshop&lt;/a&gt;&lt;/h3&gt;
 
   &lt;ul class="tag_box inline"&gt;
@@ -1223,7 +1308,7 @@ There are similar approaches to use such walls or boards to share news in local 
       &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -1247,7 +1332,7 @@ In the end, 60min is a very short time, but I hope I made a lasting impression a
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#Git-ref"&gt;Git &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
@@ -1276,7 +1361,7 @@ I held a talk about &amp;quot;Github &amp;amp; Git&amp;quot;, the slides are on 
       &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -1304,7 +1389,7 @@ As CKAN is the framework I&amp;#39;m using almost on a daily basis, and I know a
       &lt;a href="/tags#Meetup-ref"&gt;Meetup &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -1325,7 +1410,7 @@ It was a very interesting experience and there were a lot of questions in the Q&
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Programming-ref"&gt;Programming &lt;span&gt;20&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Programming-ref"&gt;Programming &lt;span&gt;21&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
@@ -1394,7 +1479,7 @@ So feel free to launch your own instance of erz-trigger, just make sure to confi
       &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -1416,7 +1501,7 @@ So feel free to launch your own instance of erz-trigger, just make sure to confi
       &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -1435,7 +1520,7 @@ My talk was mainly about why I consider myself to be a civic hacker, why my curi
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Programming-ref"&gt;Programming &lt;span&gt;20&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Programming-ref"&gt;Programming &lt;span&gt;21&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -1508,33 +1593,6 @@ Or when they get hacked for the first time.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: Someone mentioned to me, that we have the option to vote by snail mail and that my critic is invalid, as this way of voting is just as bad, but already accepted.
 For the record: just because there is another way of casting my vote, that is equally bad and hard to control/verify, does not mean that the critic is invalid.
 It only means that we have to think about this other way as well. And that the critics may apply as well.&lt;/p&gt;
-
-
-&lt;/div&gt;
-&lt;div class="posts"&gt;
-  &lt;h2 class="title"&gt;&lt;span class="date"&gt;01.12.2015&lt;/span&gt;&lt;a href="/posts/2015/12/open-data-mashup"&gt;Open Data MashUp @ Impact Hub&lt;/a&gt;&lt;/h3&gt;
-
-  &lt;ul class="tag_box inline"&gt;
-  &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;10&lt;/span&gt;&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;p&gt;Last week I had the opportunity to talk at the &lt;a href="https://zurich.impacthub.ch/event/mash-up/"&gt;Impact Hub in Zurich about Open Data&lt;/a&gt;.
-This event was part of a group of events in different locations of Impact Hub, called MashUp.&lt;/p&gt;
-
-&lt;p&gt;The talk was held in the &lt;a href="http://www.pechakucha.org/faq"&gt;Pecha Kucha format&lt;/a&gt;, which means you have 20 slides and 20 seconds for each slide.
-Because of this &lt;em&gt;condensed&lt;/em&gt; form of giving a talk, there is not much space for text on the slides, rather images, graphics etc.
-This is just a warning, as the slides without my talk might not be very useful.
-Feel free to either fill the gaps yourself or contact me if you need more information or if you want to hear the talk again.&lt;/p&gt;
-
-&lt;p&gt;Download the &lt;a href="/assets/media/OpenDataPublishing@ImpactHub.pdf"&gt;PDF of my slides&lt;/a&gt; or see them directly here:&lt;/p&gt;
-
-&lt;script async class="speakerdeck-embed" data-id="1648167b88c34555a131ea6849589891" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"&gt;&lt;/script&gt; 
 
 
 &lt;/div&gt;

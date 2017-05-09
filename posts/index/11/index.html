@@ -77,6 +77,84 @@
         <div class="row-fluid">
   <div class="col-md-12">
       <div class="posts">
+        <h2 class="title"><span class="date">11.04.2005</span><a href="/posts/2005/04/release-hostages">Release Hostages</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Programming-ref">Programming <span>21</span></a>
+          </li>
+          <li>
+            <a href="/tags#C-ref">C <span>1</span></a>
+          </li>
+        </ul>
+
+        <h1 id="toc_0">Problem</h1>
+
+<p>There are 7 (this could be optional maybe) hostages. They will be jailed
+into 7 rooms and they cannot communicate during this time. They can
+discuss 1 hour before they get jailed. They know that the will be
+choosen randomly every day to go into an 8th room, where the can turn on
+and off a light.</p>
+
+<p>When someone can say surly that every hostage was a least once in this
+room, they are all released.</p>
+
+<p>At the beginning the light is turned off.</p>
+
+<h1 id="toc_1">Idea</h1>
+
+<p>Every hostage has a week, so there are anz_host weeks as a minimum to
+free the hostages. If a hostages get’s into the anz_host++ room, he/she
+turn’s on the light.</p>
+
+<p>Everybody who comes in this week after the turn up of the light happens
+in the room, knows that the hostage week_num has been in the room.
+Maybe it get’s more evective if I use a larger window than a week,
+because then, the chance that more other hostages sees who’s got in the
+room is larger, but the time will grew up a lot.</p>
+
+<p>Well let’s give it a try.</p>
+
+<p>btw: You have to watch carfully which hostage knows what…</p>
+
+<h1 id="toc_2">Code</h1>
+
+<p><a href="http://pastie.org/663166">See pastie</a> for the complete code</p>
+
+<h1 id="toc_3">Result</h1>
+
+<p>I tried my program on Windows and Linux (just to get better results,
+because of the random number implemention and the time function, be
+careful if you want to port the code, the obove should work well with
+windows)</p>
+
+<p>My solution seems to be ok, an average of 90 days with the basic set.
+But as you can see there are a lot of option to change the basic set and
+then my solution still works well.</p>
+
+<p>Use the option -H or /? to get help with the options.</p>
+
+<p>PS: I’m not yet good at the effective programming and I’m sure there is
+an easier way to do things I did in my code. Feel free to tell me what
+you think (via mail until my comment system works)</p>
+
+<p>PPS: Special thanks to my brother Dani
+(<a href="http://www.swissbytes.de"></a><a href="http://www.swissbytes.de">www.swissbytes.de</a>),
+who gave me the idea to this problem and wrote a perl script to simulate
+his solution (well he wasn’t that successful, because his average is
+about 500 days I think and surly his script ran much slower than my fast
+C application ;) )</p>
+
+<p><img src="http://creativecommons.org/images/public/somerights20.gif" alt="Creative
+Commons"></p>
+
+<p>This work is licensed under a <a href="http://creativecommons.org/licenses/by-sa/2.0/">Creative Commons
+License.</a></p>
+
+
+      </div>
+      <div class="posts">
         <h2 class="title"><span class="date">26.03.2005</span><a href="/posts/2005/03/nie-mehr-st-moritz">Nie mehr St. Moritz</a> </h3>
 
         <ul class="tag_box">
