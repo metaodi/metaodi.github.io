@@ -94,12 +94,4 @@
       </dcat:Dataset>
     </dcat:dataset>
   </dcat:Catalog>
-  <hydra:PagedCollection>
-    <hydra:totalItems rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
-    >1</hydra:totalItems>
-    <hydra:itemsPerPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
-    >100</hydra:itemsPerPage>
-    <hydra:last>test.bfs.ergon.ch/hub/api/ogd/harvest?skip=0&amp;limit=100</hydra:last>
-    <hydra:first>test.bfs.ergon.ch/hub/api/ogd/harvest?skip=0&amp;limit=100</hydra:first>
-  </hydra:PagedCollection>
 </rdf:RDF>
