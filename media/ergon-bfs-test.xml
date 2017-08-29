@@ -12,12 +12,12 @@
   <dcat:Catalog>
     <dct:description>BFS - OGD Collection</dct:description>
     <dct:title>BFS - OGD Collection</dct:title>
-    <dct:publisher rdf:parseType="Collection">
+    <dct:publisher>
       <rdf:Description>
         <rdfs:label>BFS/OFS</rdfs:label>
       </rdf:Description>
     </dct:publisher>
-    <dcat:dataset rdf:parseType="Collection">
+    <dcat:dataset>
       <dcat:Dataset rdf:about="http://bundesamt-fur-statistik-bfs/935">
         <dcat:keyword xml:lang="it">Rilevazione campionaria</dcat:keyword>
         <dct:spatial>Schweiz</dct:spatial>
@@ -50,7 +50,7 @@
         <dct:title xml:lang="fr">Statistique des chiffres d'affaires du commerce de détail - séries mensuelles</dct:title>
         <dct:identifier>935@bundesamt-fur-statistik-bfs</dct:identifier>
         <dct:title xml:lang="de">Detailhandelsumsatzstatistik - monatliche Zeitreihen</dct:title>
-        <dcat:distribution rdf:parseType="Collection">
+        <dcat:distribution>
           <dcat:Distribution rdf:about="http://bundesamt-fur-statistik-bfs/px-x-0603020000_101">
             <dct:title xml:lang="it">Statistica delle cifre d'affari del commercio al dettaglio - serie mensile</dct:title>
             <dcat:mediaType>pc-axis file</dcat:mediaType>
@@ -71,7 +71,7 @@
           </dcat:Distribution>
         </dcat:distribution>
         <dct:language>it</dct:language>
-        <dct:temporal rdf:parseType="Collection">
+        <dct:temporal>
           <dct:PeriodOfTime>
             <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
             >2016-02-29</schema:endDate>
@@ -85,7 +85,7 @@
           </rdf:Description>
         </dct:relation>
         <dcat:keyword xml:lang="de">Detailhandelsumsatzstatistik</dcat:keyword>
-        <dct:publisher rdf:parseType="Collection">
+        <dct:publisher>
           <rdf:Description>
             <rdfs:label>BFS/OFS</rdfs:label>
           </rdf:Description>
