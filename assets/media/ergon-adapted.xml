@@ -12,12 +12,12 @@
   <dcat:Catalog>
     <dct:description>BFS - OGD Collection</dct:description>
     <dct:title>BFS - OGD Collection</dct:title>
-    <dct:publisher rdf:parseType="Collection">
+    <dct:publisher>
       <rdf:Description>
         <rdfs:label>BFS/OFS</rdfs:label>
       </rdf:Description>
     </dct:publisher>
-    <dcat:dataset rdf:parseType="Collection">
+    <dcat:dataset>
       <dcat:Dataset rdf:about="http://bundesamt-fur-statistik-bfs/935">
         <dcat:keyword xml:lang="it">Rilevazione campionaria</dcat:keyword>
         <dct:spatial>Schweiz</dct:spatial>
@@ -71,7 +71,7 @@
           </dcat:Distribution>
         </dcat:distribution>
         <dct:language>it</dct:language>
-        <dct:temporal rdf:parseType="Collection">
+        <dct:temporal>
           <dct:PeriodOfTime>
             <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
             >2016-02-29</schema:endDate>
@@ -85,7 +85,7 @@
           </rdf:Description>
         </dct:relation>
         <dcat:keyword xml:lang="de">Detailhandelsumsatzstatistik</dcat:keyword>
-        <dct:publisher rdf:parseType="Collection">
+        <dct:publisher>
           <rdf:Description>
             <rdfs:label>BFS/OFS</rdfs:label>
           </rdf:Description>
