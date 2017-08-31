@@ -18,7 +18,7 @@
       </rdf:Description>
     </dct:publisher>
     <dcat:dataset>
-      <dcat:Dataset rdf:about="http://bundesamt-fur-statistik-bfs/935">
+      <dcat:Dataset rdf:about="http://bundesamt-fur-statistik-bfs/935-test">
         <dcat:keyword xml:lang="it">Rilevazione campionaria</dcat:keyword>
         <dct:spatial>Schweiz</dct:spatial>
         <dcat:keyword xml:lang="fr">Enquête  par sondage</dcat:keyword>
@@ -48,8 +48,8 @@
         <dcat:keyword xml:lang="de">Industrie und Dienstleistungen</dcat:keyword>
         <dcat:keyword xml:lang="it">Statistica delle cifre d’affari del commercio al dettaglio</dcat:keyword>
         <dct:title xml:lang="fr">Statistique des chiffres d'affaires du commerce de détail - séries mensuelles</dct:title>
-        <dct:identifier>935@bundesamt-fur-statistik-bfs</dct:identifier>
-        <dct:title xml:lang="de">Detailhandelsumsatzstatistik - monatliche Zeitreihen</dct:title>
+        <dct:identifier>935-test@bundesamt-fur-statistik-bfs</dct:identifier>
+        <dct:title xml:lang="de">Detailhandelsumsatzstatistik - monatliche Zeitreihen Test</dct:title>
         <dcat:distribution> 
           <dcat:Distribution rdf:about="http://bundesamt-fur-statistik-bfs/px-x-0603020000_101">
             <dct:title xml:lang="it">Statistica delle cifre d'affari del commercio al dettaglio - serie mensile</dct:title>
