@@ -1,6 +1,6 @@
 ---
 date: 04.10.2016
-tags: [Open Data, Conferences, Talk]
+tags: [Open Data, CKAN, Conferences, Talk]
 title: "CKANCon 2016: How We Combined CKAN with WordPress"
 ---
 
