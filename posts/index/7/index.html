@@ -77,6 +77,85 @@
         <div class="row-fluid">
   <div class="col-md-12">
       <div class="posts">
+        <h2 class="title"><span class="date">30.05.2010</span><a href="/posts/2010/05/erroneous-copyfrom-method-in-jcifs-vfs">Erroneous copyFrom() method in JCIFS/VFS</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Java-ref">Java <span>1</span></a>
+          </li>
+          <li>
+            <a href="/tags#JCIFS-ref">JCIFS <span>1</span></a>
+          </li>
+          <li>
+            <a href="/tags#VFS-ref">VFS <span>1</span></a>
+          </li>
+        </ul>
+
+        <p>At the <a href="http://www.hsr.ch">HSR (University of Applied Science
+Rapperswil)</a> we are currently developing a software
+to synchronize files from the central fileserver to the students
+computers. This should help the students to get the latest slides for
+their lectures.</p>
+
+<p>The software is based on <a href="http://commons.apache.org/vfs/">VFS (Virtual
+Filesystem)</a> from the <a href="http://commons.apache.org/">Apache Commons
+project</a>. The file server is a classic Samba
+server that uses the CIFS protocol, and with the use of VFS we ensured a
+common access the the filesystem, no matter if it’s the remote
+filesystem of the file server or the local filesystem on the student’s
+computers.</p>
+
+<p>At a point we got a very strange error: we could copy files from the
+remote system, but when we delete the files while the application is
+running, and try to copy the files again, the copy fails:</p>
+
+<pre><code>FileSystemException &quot;could not copy [source-path] to [target-path]&quot;.
+</code></pre>
+
+<p>We figured out, that the problem were the folders that don’t exist yet.
+But according the the <a href="http://commons.apache.org/vfs/apidocs/org/apache/commons/vfs/FileObject.html#copyFrom%28org.apache.commons.vfs.FileObject,%20org.apache.commons.vfs.FileSelector%29">documentation of the the copyFrom
+method</a>
+the parent folder should be created if it does not exist. This is also
+the case when we do the first-time-copy, which works like a charm.</p>
+
+<p>After serveral tries with refresh() etc. to bring the FileObjects and
+the actual filesystem to sync, we finally implemented this workaround,
+maybe somebody else can use it:</p>
+
+<pre><code>protected void copyFile(FileObject targetFile, FileObject sourceFile) {
+    try {
+        FileObject parentFile = targetFile.getParent();
+        parentFile.refresh();
+        log.debug(&quot;Parent exists?: &quot; + parentFile.exists());
+
+        if (!parentFile.exists()) {
+            parentFile.createFolder();
+            log.debug(&quot; =&gt; Folder created&quot;);
+        }
+        targetFile.copyFrom(sourceFile),new AllFileSelector());
+    } catch (FileSystemException e) {
+        log.warn(&quot;Could not copy file, FileSystemException: &quot;
+                + e.getMessage());
+    }
+}
+</code></pre>
+
+<p>(the above code is a little bit simplified, and the use of an extra
+FileObject for the parent is not absolutely necessary, but it clarifies
+the code)</p>
+
+<p>In my opinion the copyFrom implementation of
+<a href="http://jcifs.samba.org/">JCFIS</a> (which is the Samba part of VFS) does
+not work, i.e. this is a bug. But I’m not sure, maybe we overlook an
+obvious thing on our side. Fact is, the above solution works for us. The
+JCIFS is part of the VFS sandbox, this means the library is still in
+development. Maybe I’ll file a bug, if I can clearly reproduce this
+behavior.</p>
+
+
+      </div>
+      <div class="posts">
         <h2 class="title"><span class="date">23.12.2009</span><a href="/posts/2009/12/guardian-how-do-i-know-china-wrecked-the-copenhagen">Guardian: How do I know China wrecked the Copenhagen deal? I was in the room</a> </h3>
 
         <ul class="tag_box">
@@ -315,60 +394,6 @@ Flickr.</a></p>
 
 <p>PS: I don’t want to miss to mention Joel our Swedish guy, who made this
 BarCamp truly international ;-)</p>
-
-
-      </div>
-      <div class="posts">
-        <h2 class="title"><span class="date">23.10.2009</span><a href="/posts/2009/10/postfinance-sms-service">PostFinance SMS Service</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#German-ref">German <span>19</span></a>
-          </li>
-          <li>
-            <a href="/tags#PostFinance-ref">PostFinance <span>1</span></a>
-          </li>
-          <li>
-            <a href="/tags#SMS-ref">SMS <span>1</span></a>
-          </li>
-        </ul>
-
-        <p>Vor einigen Tagen bekam ich Post von
-<a href="http://www.postfinance.ch/">PostFinance</a>, meinem Kontoverwalter der
-Wahl.</p>
-
-<p>Darin wurde ihr <a href="http://www.postfinance.ch/pf/content/de/seg/about/media/press/medienmitteilungen/press090421.html">neuer SMS
-Service</a>
-angepriesen (mit einem etwas arg <em>lustigen</em> Comic)</p>
-
-<h2 id="toc_0">Die Idee an sich gefällt mir:</h2>
-
-<ol>
-<li> Ich kann jederzeit von unterwegs Zahlungen tätigen, vor allem
-spannend wenn ich kein Bargeld da habe, und ich welches von einem
-Freund bekomme (“Gib mir doch 100.-, ich überweise es dir aufs
-Konto”)</li>
-<li> Jederzeit kann mit einem SMS der aktuelle Konto-Stand geprüft werden
-(ohne E-Banking und Anstehen am Postomat)</li>
-<li> Wurde XY schon bezahlt? Man kann sich die letzten 5 Bewegungen auf
-dem Konto per SMS schicken lassen.</li>
-</ol>
-
-<h2 id="toc_1">So funktionierts</h2>
-
-<p>Über das E-Banking kann man sich bequem für den Service anmelden (unter
-Service -&gt; SMS), dann bekommt man einen Prüfcode aufs Handy, und
-registriert diesen online.</p>
-
-<p>Dann können einfach Keywords an die Nummer <strong>474</strong> geschickt werden:
-<strong>SALDO</strong> = aktueller Saldo (=1 SMS)\
-<strong>BEWEGUNGEN</strong> = letzte 5 Bewegungen <strong>ZAHLE CHF</strong> “Betrag” <strong>AN</strong>
-“Kontonummer” “Text” = Überweisung</p>
-
-<p><strong><em>Beispiel:</em></strong> <em>ZAHLE CHF 50 AN 85-4887-4 Mittagessen, Gruss Stefan</em></p>
-
-<p>Echt praktisch!</p>
 
 
       </div>

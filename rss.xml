@@ -4,7 +4,7 @@
     <title>metaodi</title>
     <description>metaodi</description>
     <link>http://metaodi.ch</link>
-    <pubDate>31.08.2017</pubDate>
+    <pubDate>13.02.2019</pubDate>
     <item>
       <title>About me</title>
       <link>http://metaodi.ch/about</link>
@@ -25,6 +25,11 @@
       <title>Archive</title>
       <link>http://metaodi.ch/archive</link>
       <description>
+  &lt;h2&gt;2019&lt;/h2&gt;
+    &lt;h3&gt;February&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;13.02.2019&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2019/02/export-ckan-datasets"&gt;Export datasets from CKAN on the command line&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
   &lt;h2&gt;2017&lt;/h2&gt;
     &lt;h3&gt;May&lt;/h3&gt;
     &lt;ul&gt;
@@ -309,7 +314,7 @@
       <description>
 &lt;ul class="tag_box inline"&gt;
   &lt;li&gt;
-    &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
+    &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;12&lt;/span&gt;&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
@@ -522,6 +527,9 @@
     &lt;a href="/tags#Learning-ref"&gt;Learning &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
+    &lt;a href="/tags#CKAN-ref"&gt;CKAN &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
     &lt;a href="/tags#Git-ref"&gt;Git &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
@@ -536,6 +544,7 @@
     &lt;li&gt;&lt;a href="/posts/2014/09/open-data-workshop"&gt;Workshop about Open Data Technologies&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2015/01/openerz"&gt;Why and how I created the OpenERZ API&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2015/12/open-data-mashup"&gt;Open Data MashUp @ Impact Hub&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2019/02/export-ckan-datasets"&gt;Export datasets from CKAN on the command line&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2016/06/civic-hacking"&gt;Civic Hacking @ ImNeuland&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2016/06/opendata-swiss-what-is-it"&gt;opendata.swiss - What is it and how does it work?&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2016/10/how-we-combined-wordpress-with-ckan"&gt;CKANCon 2016: How We Combined CKAN with WordPress&lt;/a&gt;&lt;/li&gt;
@@ -840,6 +849,9 @@
     &lt;li&gt;&lt;a href="/posts/2015/09/why-i-am-against-e-voting"&gt;Why I&amp;#39;m against E-Voting&lt;/a&gt;&lt;/li&gt;
   &lt;h3 class="anchor" id="Learning-ref"&gt;Learning&lt;/h3&gt;
     &lt;li&gt;&lt;a href="/posts/2015/07/learn-to-code"&gt;Learn to code if you want to. I&amp;#39;m happy to help.&lt;/a&gt;&lt;/li&gt;
+  &lt;h3 class="anchor" id="CKAN-ref"&gt;CKAN&lt;/h3&gt;
+    &lt;li&gt;&lt;a href="/posts/2019/02/export-ckan-datasets"&gt;Export datasets from CKAN on the command line&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2016/10/how-we-combined-wordpress-with-ckan"&gt;CKANCon 2016: How We Combined CKAN with WordPress&lt;/a&gt;&lt;/li&gt;
   &lt;h3 class="anchor" id="Git-ref"&gt;Git&lt;/h3&gt;
     &lt;li&gt;&lt;a href="/posts/2016/11/git-github-lightning-talk"&gt;Jugend hackt Schweiz: Github &amp;amp; Git&lt;/a&gt;&lt;/li&gt;
   &lt;h3 class="anchor" id="Meetup-ref"&gt;Meetup&lt;/h3&gt;
@@ -903,7 +915,7 @@ Thanks to the open learning material, they can finish the course on their own an
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;12&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
@@ -955,7 +967,10 @@ I held a talk about &amp;quot;Github &amp;amp; Git&amp;quot;, the slides are on 
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;12&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#CKAN-ref"&gt;CKAN &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
@@ -984,7 +999,7 @@ As CKAN is the framework I&amp;#39;m using almost on a daily basis, and I know a
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;12&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#Meetup-ref"&gt;Meetup &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
@@ -1012,7 +1027,7 @@ It was a very interesting experience and there were a lot of questions in the Q&
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;12&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
@@ -1035,7 +1050,7 @@ It was a very interesting experience and there were a lot of questions in the Q&
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;12&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
@@ -1061,7 +1076,7 @@ My talk was mainly about why I consider myself to be a civic hacker, why my curi
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;12&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
@@ -1155,7 +1170,7 @@ It&amp;#39;s about &lt;strong&gt;understanding how a programmer tackles a proble
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;12&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
@@ -1266,6 +1281,61 @@ There are similar approaches to use such walls or boards to share news in local 
       <title>metaodi</title>
       <link>http://metaodi.ch/</link>
       <description>&lt;div class="posts"&gt;
+  &lt;h2 class="title"&gt;&lt;span class="date"&gt;13.02.2019&lt;/span&gt;&lt;a href="/posts/2019/02/export-ckan-datasets"&gt;Export datasets from CKAN on the command line&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;ul class="tag_box inline"&gt;
+  &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;12&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#CKAN-ref"&gt;CKAN &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;Today I got an interesting request, about how datasets could be exported from CKAN based on a search query.&lt;/p&gt;
+
+&lt;p&gt;Our Canadian friends created &lt;a href="https://github.com/ckan/ckanapi"&gt;ckanapi&lt;/a&gt;, a CLI application (that can be used in python scripts as well!) to talk to the CKAN API.
+This is basically all we need to fulfill the request.&lt;/p&gt;
+
+&lt;p&gt;In this example I&amp;#39;m using the &lt;a href="https://data.stadt-zuerich.ch/"&gt;CKAN portal of the City of Zurich&lt;/a&gt;, and we try to download all &lt;a href="https://data.stadt-zuerich.ch/dataset?q=Fahrzeiten"&gt;&amp;quot;Fahrzeiten&amp;quot; datasets from the VBZ&lt;/a&gt;. 
+These datasets are super interesting, as they contain a target/actual comparison of the public transport timetable of Zurich (i.e. delays of buses and trams).&lt;/p&gt;
+
+&lt;p&gt;With &lt;code&gt;ckanapi&lt;/code&gt;, it&amp;#39;s quite easy to get the metadata of all these datasets:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="bash"&gt;ckanapi action package_search &amp;#39;q=title:Fahrzeiten&amp;#39; -r https://data.stadt-zuerich.ch
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This returns a JSON (since that is what the API returns) with all the datasets and their metadata.&lt;/p&gt;
+
+&lt;p&gt;But actually we want to download the files as well.
+Luckily, &lt;code&gt;ckanapi&lt;/code&gt; has a feature to &lt;em&gt;dump&lt;/em&gt; a dataset as a &lt;a href="https://frictionlessdata.io/data-packages/"&gt;Data Package&lt;/a&gt;.
+A Data Package is essentially a directory containing the metadata in the root and the actual files in a &lt;code&gt;data&lt;/code&gt; folder.
+So this is exactly what we want.&lt;/p&gt;
+
+&lt;p&gt;Now let&amp;#39;s use some CLI magic to turn our result from above into Data Packages.&lt;/p&gt;
+
+&lt;p&gt;First of all, the &lt;code&gt;ckanapi dataset dump&lt;/code&gt; command takes a list of dataset names as a parameter, so let&amp;#39;s generate such a list:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="bash"&gt;jq &amp;quot;.results|.[]|.name&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href="https://stedolan.github.io/jq/"&gt;jq&lt;/a&gt; is a tool to manipulate JSON on the command line (like &lt;code&gt;sed&lt;/code&gt;, &lt;code&gt;awk&lt;/code&gt; and &lt;code&gt;grep&lt;/code&gt; for text).
+In this example we simply extract the &lt;code&gt;name&lt;/code&gt; attribute all all elements in the &lt;code&gt;results&lt;/code&gt; key.&lt;/p&gt;
+
+&lt;p&gt;Now all we have to do is use this list in &lt;code&gt;ckanapi dataset dump&lt;/code&gt;.
+Let&amp;#39;s put everything together:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="bash"&gt;ckanapi action package_search &amp;#39;q=title:Fahrzeiten&amp;#39; -r https://data.stadt-zuerich.ch | jq &amp;quot;.results|.[]|.name&amp;quot; |  xargs -I % ckanapi dump datasets % -r https://data.stadt-zuerich.ch --datapackages=./dump_directory/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Remember, using &lt;code&gt;|&lt;/code&gt; let&amp;#39;s you reuse the output of one command as the input for the next one.&lt;/p&gt;
+
+&lt;p&gt;Voil&#xE0;, we&amp;#39;re done and all the datasets containing &amp;quot;Fahrzeiten&amp;quot; in their title will be downloaded to the &lt;code&gt;dump_directory&lt;/code&gt;.&lt;/p&gt;
+
+
+&lt;/div&gt;
+&lt;div class="posts"&gt;
   &lt;h2 class="title"&gt;&lt;span class="date"&gt;09.05.2017&lt;/span&gt;&lt;a href="/posts/2017/05/open-education-day-2017"&gt;Open Education Day 2017: HTML/CSS Workshop&lt;/a&gt;&lt;/h3&gt;
 
   &lt;ul class="tag_box inline"&gt;
@@ -1305,7 +1375,7 @@ Thanks to the open learning material, they can finish the course on their own an
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;12&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
@@ -1355,7 +1425,10 @@ I held a talk about &amp;quot;Github &amp;amp; Git&amp;quot;, the slides are on 
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;12&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#CKAN-ref"&gt;CKAN &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
@@ -1383,7 +1456,7 @@ As CKAN is the framework I&amp;#39;m using almost on a daily basis, and I know a
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;12&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#Meetup-ref"&gt;Meetup &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
@@ -1413,7 +1486,7 @@ It was a very interesting experience and there were a lot of questions in the Q&
       &lt;a href="/tags#Programming-ref"&gt;Programming &lt;span&gt;21&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;12&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#API-ref"&gt;API &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
@@ -1473,7 +1546,7 @@ So feel free to launch your own instance of erz-trigger, just make sure to confi
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;12&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
@@ -1495,7 +1568,7 @@ So feel free to launch your own instance of erz-trigger, just make sure to confi
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;12&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
@@ -1556,43 +1629,6 @@ I run it every 15min as a cronjob, to keep the cache up-to-date.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;vagrant-cache&lt;/code&gt; simply displays the result of the last run of &lt;code&gt;vagrant-status&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;You can find the &lt;a href="https://github.com/metaodi/vagrant-system-status"&gt;scripts on GitHub&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;/div&gt;
-&lt;div class="posts"&gt;
-  &lt;h2 class="title"&gt;&lt;span class="date"&gt;02.12.2015&lt;/span&gt;&lt;a href="/posts/2015/12/e-voting-ii"&gt;E-Voting II&lt;/a&gt;&lt;/h3&gt;
-
-  &lt;ul class="tag_box inline"&gt;
-  &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="/tags#Politics-ref"&gt;Politics &lt;span&gt;3&lt;/span&gt;&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="/tags#E-Voting-ref"&gt;E-Voting &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;p&gt;As I already &lt;a href="http://metaodi.ch/posts/2015/09/why-i-am-against-e-voting/"&gt;mentioned before&lt;/a&gt;, I&amp;#39;m not a big fan of E-Voting.&lt;/p&gt;
-
-&lt;p&gt;Last Monday, &lt;a href="http://www.digitale-nachhaltigkeit.ch/"&gt;Parldigi&lt;/a&gt; &lt;a href="http://www.netzwoche.ch/de-CH/News/2015/12/01/E-Voting-in-der-Schweiz---ein-Erfolg.aspx"&gt;invited to an event about E-Voting&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Gr&#xFC;nenfelder warnte davor, dass Unterbrechungen die Verbreitung und Akzeptanz von E-Voting mehr gef&#xE4;hrden als drohende Sicherheitsrisiken. Es sei darum notwendig, dass Bund, Kantone und die Bundeskanzlei das E-Voting und die Digitalisierung der Politik weiter vorantreiben. &amp;quot;Die Erfolgsgeschichte wird weitergehen&amp;quot;, sagte Gr&#xFC;nenfelder. &amp;quot;Allen Unkenrufen zum Trotz.&amp;quot;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;As long as we don&amp;#39;t have an open source solution, that is accessible to everyone and which makes it possible for everyone to verify that their vote has been casted, we can stop all further discussions.&lt;/p&gt;
-
-&lt;p&gt;My fear is, that E-Voting will just be an accepted reality, without any discussions about it.
-I&amp;#39;m not against technology, by no means.
-But we need to have a discussion as a society what this means for us.
-And if we are okay with the consequences.
-Now is the time to discuss this.
-Not when all systems are in place and everybody already uses them.
-Or when they get hacked for the first time.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: Someone mentioned to me, that we have the option to vote by snail mail and that my critic is invalid, as this way of voting is just as bad, but already accepted.
-For the record: just because there is another way of casting my vote, that is equally bad and hard to control/verify, does not mean that the critic is invalid.
-It only means that we have to think about this other way as well. And that the critics may apply as well.&lt;/p&gt;
 
 
 &lt;/div&gt;

@@ -4,7 +4,52 @@
     <title>metaodi</title>
     <description>metaodi</description>
     <link>http://metaodi.ch</link>
-    <pubDate>31.08.2017</pubDate>
+    <pubDate>13.02.2019</pubDate>
+    <item>
+      <title>Export datasets from CKAN on the command line</title>
+      <link>http://metaodi.ch/posts/2019/02/export-ckan-datasets</link>
+      <pubDate>13.02.2019</pubDate>
+      <description>&lt;p&gt;Today I got an interesting request, about how datasets could be exported from CKAN based on a search query.&lt;/p&gt;
+
+&lt;p&gt;Our Canadian friends created &lt;a href="https://github.com/ckan/ckanapi"&gt;ckanapi&lt;/a&gt;, a CLI application (that can be used in python scripts as well!) to talk to the CKAN API.
+This is basically all we need to fulfill the request.&lt;/p&gt;
+
+&lt;p&gt;In this example I&amp;#39;m using the &lt;a href="https://data.stadt-zuerich.ch/"&gt;CKAN portal of the City of Zurich&lt;/a&gt;, and we try to download all &lt;a href="https://data.stadt-zuerich.ch/dataset?q=Fahrzeiten"&gt;&amp;quot;Fahrzeiten&amp;quot; datasets from the VBZ&lt;/a&gt;. 
+These datasets are super interesting, as they contain a target/actual comparison of the public transport timetable of Zurich (i.e. delays of buses and trams).&lt;/p&gt;
+
+&lt;p&gt;With &lt;code&gt;ckanapi&lt;/code&gt;, it&amp;#39;s quite easy to get the metadata of all these datasets:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="bash"&gt;ckanapi action package_search &amp;#39;q=title:Fahrzeiten&amp;#39; -r https://data.stadt-zuerich.ch
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This returns a JSON (since that is what the API returns) with all the datasets and their metadata.&lt;/p&gt;
+
+&lt;p&gt;But actually we want to download the files as well.
+Luckily, &lt;code&gt;ckanapi&lt;/code&gt; has a feature to &lt;em&gt;dump&lt;/em&gt; a dataset as a &lt;a href="https://frictionlessdata.io/data-packages/"&gt;Data Package&lt;/a&gt;.
+A Data Package is essentially a directory containing the metadata in the root and the actual files in a &lt;code&gt;data&lt;/code&gt; folder.
+So this is exactly what we want.&lt;/p&gt;
+
+&lt;p&gt;Now let&amp;#39;s use some CLI magic to turn our result from above into Data Packages.&lt;/p&gt;
+
+&lt;p&gt;First of all, the &lt;code&gt;ckanapi dataset dump&lt;/code&gt; command takes a list of dataset names as a parameter, so let&amp;#39;s generate such a list:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="bash"&gt;jq &amp;quot;.results|.[]|.name&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href="https://stedolan.github.io/jq/"&gt;jq&lt;/a&gt; is a tool to manipulate JSON on the command line (like &lt;code&gt;sed&lt;/code&gt;, &lt;code&gt;awk&lt;/code&gt; and &lt;code&gt;grep&lt;/code&gt; for text).
+In this example we simply extract the &lt;code&gt;name&lt;/code&gt; attribute all all elements in the &lt;code&gt;results&lt;/code&gt; key.&lt;/p&gt;
+
+&lt;p&gt;Now all we have to do is use this list in &lt;code&gt;ckanapi dataset dump&lt;/code&gt;.
+Let&amp;#39;s put everything together:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="bash"&gt;ckanapi action package_search &amp;#39;q=title:Fahrzeiten&amp;#39; -r https://data.stadt-zuerich.ch | jq &amp;quot;.results|.[]|.name&amp;quot; |  xargs -I % ckanapi dump datasets % -r https://data.stadt-zuerich.ch --datapackages=./dump_directory/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Remember, using &lt;code&gt;|&lt;/code&gt; let&amp;#39;s you reuse the output of one command as the input for the next one.&lt;/p&gt;
+
+&lt;p&gt;Voil&#xE0;, we&amp;#39;re done and all the datasets containing &amp;quot;Fahrzeiten&amp;quot; in their title will be downloaded to the &lt;code&gt;dump_directory&lt;/code&gt;.&lt;/p&gt;
+</description>
+    </item>
     <item>
       <title>Open Education Day 2017: HTML/CSS Workshop</title>
       <link>http://metaodi.ch/posts/2017/05/open-education-day-2017</link>

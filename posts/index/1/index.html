@@ -77,6 +77,61 @@
         <div class="row-fluid">
   <div class="col-md-12">
       <div class="posts">
+        <h2 class="title"><span class="date">13.02.2019</span><a href="/posts/2019/02/export-ckan-datasets">Export datasets from CKAN on the command line</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Open Data-ref">Open Data <span>12</span></a>
+          </li>
+          <li>
+            <a href="/tags#CKAN-ref">CKAN <span>2</span></a>
+          </li>
+        </ul>
+
+        <p>Today I got an interesting request, about how datasets could be exported from CKAN based on a search query.</p>
+
+<p>Our Canadian friends created <a href="https://github.com/ckan/ckanapi">ckanapi</a>, a CLI application (that can be used in python scripts as well!) to talk to the CKAN API.
+This is basically all we need to fulfill the request.</p>
+
+<p>In this example I&#39;m using the <a href="https://data.stadt-zuerich.ch/">CKAN portal of the City of Zurich</a>, and we try to download all <a href="https://data.stadt-zuerich.ch/dataset?q=Fahrzeiten">&quot;Fahrzeiten&quot; datasets from the VBZ</a>. 
+These datasets are super interesting, as they contain a target/actual comparison of the public transport timetable of Zurich (i.e. delays of buses and trams).</p>
+
+<p>With <code>ckanapi</code>, it&#39;s quite easy to get the metadata of all these datasets:</p>
+
+<pre><code class="bash">ckanapi action package_search &#39;q=title:Fahrzeiten&#39; -r https://data.stadt-zuerich.ch
+</code></pre>
+
+<p>This returns a JSON (since that is what the API returns) with all the datasets and their metadata.</p>
+
+<p>But actually we want to download the files as well.
+Luckily, <code>ckanapi</code> has a feature to <em>dump</em> a dataset as a <a href="https://frictionlessdata.io/data-packages/">Data Package</a>.
+A Data Package is essentially a directory containing the metadata in the root and the actual files in a <code>data</code> folder.
+So this is exactly what we want.</p>
+
+<p>Now let&#39;s use some CLI magic to turn our result from above into Data Packages.</p>
+
+<p>First of all, the <code>ckanapi dataset dump</code> command takes a list of dataset names as a parameter, so let&#39;s generate such a list:</p>
+
+<pre><code class="bash">jq &quot;.results|.[]|.name&quot;
+</code></pre>
+
+<p><a href="https://stedolan.github.io/jq/">jq</a> is a tool to manipulate JSON on the command line (like <code>sed</code>, <code>awk</code> and <code>grep</code> for text).
+In this example we simply extract the <code>name</code> attribute all all elements in the <code>results</code> key.</p>
+
+<p>Now all we have to do is use this list in <code>ckanapi dataset dump</code>.
+Let&#39;s put everything together:</p>
+
+<pre><code class="bash">ckanapi action package_search &#39;q=title:Fahrzeiten&#39; -r https://data.stadt-zuerich.ch | jq &quot;.results|.[]|.name&quot; |  xargs -I % ckanapi dump datasets % -r https://data.stadt-zuerich.ch --datapackages=./dump_directory/
+</code></pre>
+
+<p>Remember, using <code>|</code> let&#39;s you reuse the output of one command as the input for the next one.</p>
+
+<p>Voilà, we&#39;re done and all the datasets containing &quot;Fahrzeiten&quot; in their title will be downloaded to the <code>dump_directory</code>.</p>
+
+
+      </div>
+      <div class="posts">
         <h2 class="title"><span class="date">09.05.2017</span><a href="/posts/2017/05/open-education-day-2017">Open Education Day 2017: HTML/CSS Workshop</a> </h3>
 
         <ul class="tag_box">
@@ -116,7 +171,7 @@ Thanks to the open learning material, they can finish the course on their own an
         <ul class="tag_box">
         <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
           <li>
-            <a href="/tags#Open Data-ref">Open Data <span>11</span></a>
+            <a href="/tags#Open Data-ref">Open Data <span>12</span></a>
           </li>
           <li>
             <a href="/tags#Talk-ref">Talk <span>11</span></a>
@@ -166,7 +221,10 @@ I held a talk about &quot;Github &amp; Git&quot;, the slides are on <a href="htt
         <ul class="tag_box">
         <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
           <li>
-            <a href="/tags#Open Data-ref">Open Data <span>11</span></a>
+            <a href="/tags#Open Data-ref">Open Data <span>12</span></a>
+          </li>
+          <li>
+            <a href="/tags#CKAN-ref">CKAN <span>2</span></a>
           </li>
           <li>
             <a href="/tags#Conferences-ref">Conferences <span>5</span></a>
@@ -194,7 +252,7 @@ As CKAN is the framework I&#39;m using almost on a daily basis, and I know a lot
         <ul class="tag_box">
         <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
           <li>
-            <a href="/tags#Open Data-ref">Open Data <span>11</span></a>
+            <a href="/tags#Open Data-ref">Open Data <span>12</span></a>
           </li>
           <li>
             <a href="/tags#Meetup-ref">Meetup <span>1</span></a>
@@ -224,7 +282,7 @@ It was a very interesting experience and there were a lot of questions in the Q&
             <a href="/tags#Programming-ref">Programming <span>21</span></a>
           </li>
           <li>
-            <a href="/tags#Open Data-ref">Open Data <span>11</span></a>
+            <a href="/tags#Open Data-ref">Open Data <span>12</span></a>
           </li>
           <li>
             <a href="/tags#API-ref">API <span>2</span></a>
@@ -284,7 +342,7 @@ So feel free to launch your own instance of erz-trigger, just make sure to confi
         <ul class="tag_box">
         <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
           <li>
-            <a href="/tags#Open Data-ref">Open Data <span>11</span></a>
+            <a href="/tags#Open Data-ref">Open Data <span>12</span></a>
           </li>
           <li>
             <a href="/tags#Conferences-ref">Conferences <span>5</span></a>
@@ -306,7 +364,7 @@ So feel free to launch your own instance of erz-trigger, just make sure to confi
         <ul class="tag_box">
         <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
           <li>
-            <a href="/tags#Open Data-ref">Open Data <span>11</span></a>
+            <a href="/tags#Open Data-ref">Open Data <span>12</span></a>
           </li>
           <li>
             <a href="/tags#Conferences-ref">Conferences <span>5</span></a>
@@ -367,43 +425,6 @@ I run it every 15min as a cronjob, to keep the cache up-to-date.</p>
 <p><code>vagrant-cache</code> simply displays the result of the last run of <code>vagrant-status</code>.</p>
 
 <p>You can find the <a href="https://github.com/metaodi/vagrant-system-status">scripts on GitHub</a>.</p>
-
-
-      </div>
-      <div class="posts">
-        <h2 class="title"><span class="date">02.12.2015</span><a href="/posts/2015/12/e-voting-ii">E-Voting II</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#Politics-ref">Politics <span>3</span></a>
-          </li>
-          <li>
-            <a href="/tags#E-Voting-ref">E-Voting <span>2</span></a>
-          </li>
-        </ul>
-
-        <p>As I already <a href="http://metaodi.ch/posts/2015/09/why-i-am-against-e-voting/">mentioned before</a>, I&#39;m not a big fan of E-Voting.</p>
-
-<p>Last Monday, <a href="http://www.digitale-nachhaltigkeit.ch/">Parldigi</a> <a href="http://www.netzwoche.ch/de-CH/News/2015/12/01/E-Voting-in-der-Schweiz---ein-Erfolg.aspx">invited to an event about E-Voting</a>:</p>
-
-<blockquote>
-<p>Grünenfelder warnte davor, dass Unterbrechungen die Verbreitung und Akzeptanz von E-Voting mehr gefährden als drohende Sicherheitsrisiken. Es sei darum notwendig, dass Bund, Kantone und die Bundeskanzlei das E-Voting und die Digitalisierung der Politik weiter vorantreiben. &quot;Die Erfolgsgeschichte wird weitergehen&quot;, sagte Grünenfelder. &quot;Allen Unkenrufen zum Trotz.&quot;</p>
-</blockquote>
-
-<p>As long as we don&#39;t have an open source solution, that is accessible to everyone and which makes it possible for everyone to verify that their vote has been casted, we can stop all further discussions.</p>
-
-<p>My fear is, that E-Voting will just be an accepted reality, without any discussions about it.
-I&#39;m not against technology, by no means.
-But we need to have a discussion as a society what this means for us.
-And if we are okay with the consequences.
-Now is the time to discuss this.
-Not when all systems are in place and everybody already uses them.
-Or when they get hacked for the first time.</p>
-
-<p><strong>Update</strong>: Someone mentioned to me, that we have the option to vote by snail mail and that my critic is invalid, as this way of voting is just as bad, but already accepted.
-For the record: just because there is another way of casting my vote, that is equally bad and hard to control/verify, does not mean that the critic is invalid.
-It only means that we have to think about this other way as well. And that the critics may apply as well.</p>
 
 
       </div>
