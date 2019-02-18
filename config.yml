@@ -18,6 +18,7 @@ posts:
 
 widgets:
     syntax:
+        use: prettify
         linenums : false
         cdn:
             enable: true
