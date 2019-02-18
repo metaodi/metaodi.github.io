@@ -3,11 +3,11 @@
   <channel>
     <title>metaodi</title>
     <description>metaodi</description>
-    <link>http://metaodi.ch</link>
+    <link>https://metaodi.ch</link>
     <pubDate>18.02.2019</pubDate>
     <item>
       <title>About me</title>
-      <link>http://metaodi.ch/about</link>
+      <link>https://metaodi.ch/about</link>
       <description>&lt;p&gt;My name is Stefan Oderbolz (&amp;quot;Odi&amp;quot;) and I live in Zurich.&lt;/p&gt;
 
 &lt;p&gt;I work for &lt;a href="http://www.liip.ch/"&gt;Liip&lt;/a&gt; as a web developer. I am one of the creators of &lt;a href="http://www.kort.ch/"&gt;Kort&lt;/a&gt;, an OpenStreetMap game.&lt;/p&gt;
@@ -23,7 +23,7 @@
     </item>
     <item>
       <title>Archive</title>
-      <link>http://metaodi.ch/archive</link>
+      <link>https://metaodi.ch/archive</link>
       <description>
   &lt;h2&gt;2019&lt;/h2&gt;
     &lt;h3&gt;February&lt;/h3&gt;
@@ -277,7 +277,7 @@
     </item>
     <item>
       <title>Categories</title>
-      <link>http://metaodi.ch/categories</link>
+      <link>https://metaodi.ch/categories</link>
       <description>
 &lt;ul class="tag_box inline"&gt;
 &lt;/ul&gt;
@@ -286,7 +286,7 @@
     </item>
     <item>
       <title>Pages</title>
-      <link>http://metaodi.ch/pages</link>
+      <link>https://metaodi.ch/pages</link>
       <description>
 &lt;ul&gt;
   
@@ -315,7 +315,7 @@
     </item>
     <item>
       <title>Tags</title>
-      <link>http://metaodi.ch/tags</link>
+      <link>https://metaodi.ch/tags</link>
       <description>
 &lt;ul class="tag_box inline"&gt;
   &lt;li&gt;
@@ -873,7 +873,7 @@
     </item>
     <item>
       <title>Talks/Workshops</title>
-      <link>http://metaodi.ch/talks</link>
+      <link>https://metaodi.ch/talks</link>
       <description>&lt;p class="lead"&gt;
 I regularly speak at events and conferences or give workshops.
 I'm a coach for &lt;a href="http://www.opentechschool.org/zurich/"&gt;OpenTechSchool in Zurich&lt;/a&gt; (education organization providing tech workshops and open learning materials).
@@ -1291,7 +1291,7 @@ There are similar approaches to use such walls or boards to share news in local 
     </item>
     <item>
       <title>metaodi</title>
-      <link>http://metaodi.ch/</link>
+      <link>https://metaodi.ch/</link>
       <description>&lt;div class="posts"&gt;
   &lt;h2 class="title"&gt;&lt;span class="date"&gt;13.02.2019&lt;/span&gt;&lt;a href="/posts/2019/02/export-ckan-datasets"&gt;Export datasets from CKAN on the command line&lt;/a&gt;&lt;/h3&gt;
 

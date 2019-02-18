@@ -3,11 +3,11 @@
   <channel>
     <title>metaodi</title>
     <description>metaodi</description>
-    <link>http://metaodi.ch</link>
+    <link>https://metaodi.ch</link>
     <pubDate>18.02.2019</pubDate>
     <item>
       <title>Export datasets from CKAN on the command line</title>
-      <link>http://metaodi.ch/posts/2019/02/export-ckan-datasets</link>
+      <link>https://metaodi.ch/posts/2019/02/export-ckan-datasets</link>
       <pubDate>13.02.2019</pubDate>
       <description>&lt;p&gt;Today I got an interesting request, about how datasets could be exported from CKAN based on a search query.&lt;/p&gt;
 
@@ -52,7 +52,7 @@ Let&amp;#39;s put everything together:&lt;/p&gt;
     </item>
     <item>
       <title>Make open data discoverable for search engines</title>
-      <link>http://metaodi.ch/posts/2018/04/make-open-data-discoverable-for-search-engines</link>
+      <link>https://metaodi.ch/posts/2018/04/make-open-data-discoverable-for-search-engines</link>
       <pubDate>24.04.2018</pubDate>
       <description>&lt;p&gt;&lt;em&gt;Note: this blogpost was first published on the &lt;a href="https://www.liip.ch/en/blog/make-open-data-discoverable-for-search-engines"&gt;Liip Blog&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
@@ -220,7 +220,7 @@ So if you have enabled this feature, every time a search engine visits your port
     </item>
     <item>
       <title>Open Education Day 2017: HTML/CSS Workshop</title>
-      <link>http://metaodi.ch/posts/2017/05/open-education-day-2017</link>
+      <link>https://metaodi.ch/posts/2017/05/open-education-day-2017</link>
       <pubDate>09.05.2017</pubDate>
       <description>&lt;p&gt;The &lt;a href="https://www.ch-open.ch/"&gt;/ch/open&lt;/a&gt; association hosted the &lt;a href="http://www.open-education-day.ch/"&gt;Open Education Day 2017&lt;/a&gt; at the &lt;a href="http://www.fhnw.ch/campus-brugg-windisch"&gt;FHNW in Brugg/Windisch&lt;/a&gt;.&lt;/p&gt;
 
@@ -238,7 +238,7 @@ Thanks to the open learning material, they can finish the course on their own an
     </item>
     <item>
       <title>2nd Dark Night in Zurich: Open Data Workshop</title>
-      <link>http://metaodi.ch/posts/2017/04/2nd-dark-night</link>
+      <link>https://metaodi.ch/posts/2017/04/2nd-dark-night</link>
       <pubDate>24.04.2017</pubDate>
       <description>&lt;p&gt;Together with &lt;a href="http://www.karldergrosse.ch/"&gt;Zentrum Karl der Grosse&lt;/a&gt;, the &lt;a href="https://www.ccczh.ch/"&gt;Chaos Computer Club Zurich (CCCZH)&lt;/a&gt; and the &lt;a href="https://www.digitale-gesellschaft.ch/"&gt;Digitale Gessellschaft Schweiz&lt;/a&gt; organized the &lt;a href="http://www.karldergrosse.ch/veranstaltung/die-2-zuercher-dark-night/"&gt;2nd Dark Night in Zurich&lt;/a&gt;.&lt;/p&gt;
 
@@ -255,7 +255,7 @@ In the end, 60min is a very short time, but I hope I made a lasting impression a
     </item>
     <item>
       <title>Jugend hackt Schweiz: Github &amp; Git</title>
-      <link>http://metaodi.ch/posts/2016/11/git-github-lightning-talk</link>
+      <link>https://metaodi.ch/posts/2016/11/git-github-lightning-talk</link>
       <pubDate>12.11.2016</pubDate>
       <description>&lt;p&gt;I was co-organizing &amp;quot;Jugend hackt&amp;quot; in Switzerland this year.
 If you want more information about the event, read the &lt;a href="https://jugendhackt.org/jugend-hackt-goes-international-ein-rueckblick/"&gt;excellent blog post&lt;/a&gt; about it, watch the &lt;a href="https://www.youtube.com/watch?v=_2lsOBaIm0U&amp;amp;list=PLQsLR7zBwcw1Tbzd0igtaC6HhMA_Lrmhq&amp;amp;index=11"&gt;video of the final presentations&lt;/a&gt; or read the &lt;a href="http://www.srf.ch/news/panorama/jugend-hackt-zurueck-zu-den-wurzeln-der-hackathons"&gt;article by SRF&lt;/a&gt; (including an audio interview with me :) ).&lt;/p&gt;
@@ -268,7 +268,7 @@ I held a talk about &amp;quot;Github &amp;amp; Git&amp;quot;, the slides are on 
     </item>
     <item>
       <title>CKANCon 2016: How We Combined CKAN with WordPress</title>
-      <link>http://metaodi.ch/posts/2016/10/how-we-combined-wordpress-with-ckan</link>
+      <link>https://metaodi.ch/posts/2016/10/how-we-combined-wordpress-with-ckan</link>
       <pubDate>04.10.2016</pubDate>
       <description>&lt;p&gt;This year the &lt;a href="https://ckan.org/ckancon-2016/"&gt;CKANCon was in Madrid&lt;/a&gt;, prior to the &lt;a href="http://opendatacon.org/"&gt;International Open Data Conference&lt;/a&gt;.
 It was a one day, rather tech-focused, conference.
@@ -283,7 +283,7 @@ As CKAN is the framework I&amp;#39;m using almost on a daily basis, and I know a
     </item>
     <item>
       <title>Hacks/Hackers: Open Data Portals + Civic Hacking</title>
-      <link>http://metaodi.ch/posts/2016/09/hacks-hackers-opendata-portals</link>
+      <link>https://metaodi.ch/posts/2016/09/hacks-hackers-opendata-portals</link>
       <pubDate>29.09.2016</pubDate>
       <description>&lt;p&gt;I was invited by the Hacks/Hackers meetup to give a talk about my passion &amp;quot;open data&amp;quot;, so I decided to mashup my previous talks and talk about my work (building open data portals) and my private interest (being an open data activist and a civic hacker).
 It was a very interesting experience and there were a lot of questions in the Q&amp;amp;A after my talk and even after then when we had some drinks at the venue.&lt;/p&gt;
@@ -297,7 +297,7 @@ It was a very interesting experience and there were a lot of questions in the Q&
     </item>
     <item>
       <title>Receive push notifications for waste collection in your area (OpenERZ)</title>
-      <link>http://metaodi.ch/posts/2016/09/push-notifications-for-waste-collection</link>
+      <link>https://metaodi.ch/posts/2016/09/push-notifications-for-waste-collection</link>
       <pubDate>21.09.2016</pubDate>
       <description>&lt;p&gt;Some time ago, I built the &lt;a href="http://openerz.herokuapp.com/"&gt;OpenERZ API&lt;/a&gt; (and &lt;a href="http://metaodi.ch/posts/2015/01/openerz/"&gt;wrote about it on this blog&lt;/a&gt;).
 The API provides a nice and easy way to the waste collection data of the City of Zurich, provided by &lt;a href="https://www.stadt-zuerich.ch/ted/de/index/entsorgung_recycling.html"&gt;Entsorgung + Recycling Z&#xFC;rich (ERZ)&lt;/a&gt; via the &lt;a href="https://data.stadt-zuerich.ch/dataset?tags=entsorgung"&gt;Open Data Portal of the City of Zurich&lt;/a&gt;.&lt;/p&gt;
@@ -341,7 +341,7 @@ So feel free to launch your own instance of erz-trigger, just make sure to confi
     </item>
     <item>
       <title>opendata.swiss - What is it and how does it work?</title>
-      <link>http://metaodi.ch/posts/2016/06/opendata-swiss-what-is-it</link>
+      <link>https://metaodi.ch/posts/2016/06/opendata-swiss-what-is-it</link>
       <pubDate>14.06.2016</pubDate>
       <description>&lt;p&gt;At this years &lt;a href="https://opendata.ch/projects/conference-2016/"&gt;OpenData.ch conference in Lausanne&lt;/a&gt; I could present the current state of the &lt;a href="https://opendata.swiss/"&gt;Swiss federal open data portal opendata.swiss&lt;/a&gt; and give some technical insights on how we built certain components.&lt;/p&gt;
 
@@ -350,7 +350,7 @@ So feel free to launch your own instance of erz-trigger, just make sure to confi
     </item>
     <item>
       <title>Civic Hacking @ ImNeuland</title>
-      <link>http://metaodi.ch/posts/2016/06/civic-hacking</link>
+      <link>https://metaodi.ch/posts/2016/06/civic-hacking</link>
       <pubDate>04.06.2016</pubDate>
       <description>&lt;p&gt;At the &lt;a href="https://informatiktage.ch/"&gt;&amp;quot;Informatiktage 2016&amp;quot;&lt;/a&gt; there were several events and I spoke at the &lt;a href="http://imneuland.ch/"&gt;ImNeuland&lt;/a&gt; conference about &lt;em&gt;civic hacking&lt;/em&gt;.
 My talk was mainly about why I consider myself to be a civic hacker, why my curiosity drives me to explore things and how data can help us to explain the world.&lt;/p&gt;
@@ -362,7 +362,7 @@ My talk was mainly about why I consider myself to be a civic hacker, why my curi
     </item>
     <item>
       <title>Check the status of all vagrant boxes on your system</title>
-      <link>http://metaodi.ch/posts/2015/12/vagrant-system-status</link>
+      <link>https://metaodi.ch/posts/2015/12/vagrant-system-status</link>
       <pubDate>15.12.2015</pubDate>
       <description>&lt;p&gt;If you are like me, chances are you have a &lt;a href="https://www.vagrantup.com/"&gt;vagrant&lt;/a&gt; setup for each project your working on.
 It&amp;#39;s a great way of sharing a specific system configuration, especially if you work in a team of developers.
@@ -400,7 +400,7 @@ I run it every 15min as a cronjob, to keep the cache up-to-date.&lt;/p&gt;
     </item>
     <item>
       <title>E-Voting II</title>
-      <link>http://metaodi.ch/posts/2015/12/e-voting-ii</link>
+      <link>https://metaodi.ch/posts/2015/12/e-voting-ii</link>
       <pubDate>02.12.2015</pubDate>
       <description>&lt;p&gt;As I already &lt;a href="http://metaodi.ch/posts/2015/09/why-i-am-against-e-voting/"&gt;mentioned before&lt;/a&gt;, I&amp;#39;m not a big fan of E-Voting.&lt;/p&gt;
 
@@ -427,7 +427,7 @@ It only means that we have to think about this other way as well. And that the c
     </item>
     <item>
       <title>Open Data MashUp @ Impact Hub</title>
-      <link>http://metaodi.ch/posts/2015/12/open-data-mashup</link>
+      <link>https://metaodi.ch/posts/2015/12/open-data-mashup</link>
       <pubDate>01.12.2015</pubDate>
       <description>&lt;p&gt;Last week I had the opportunity to talk at the &lt;a href="https://zurich.impacthub.ch/event/mash-up/"&gt;Impact Hub in Zurich about Open Data&lt;/a&gt;.
 This event was part of a group of events in different locations of Impact Hub, called MashUp.&lt;/p&gt;
@@ -444,7 +444,7 @@ Feel free to either fill the gaps yourself or contact me if you need more inform
     </item>
     <item>
       <title>Why I'm against E-Voting</title>
-      <link>http://metaodi.ch/posts/2015/09/why-i-am-against-e-voting</link>
+      <link>https://metaodi.ch/posts/2015/09/why-i-am-against-e-voting</link>
       <pubDate>17.09.2015</pubDate>
       <description>&lt;p&gt;In Switzerland we&amp;#39;ll have the national elections coming up on the 18th October 2015.
 It&amp;#39;s again that time where the voices are getting louder.
@@ -541,7 +541,7 @@ If it&amp;#39;s based on the same principles as I&amp;#39;ve written above, it i
     </item>
     <item>
       <title>Learn to code if you want to. I'm happy to help.</title>
-      <link>http://metaodi.ch/posts/2015/07/learn-to-code</link>
+      <link>https://metaodi.ch/posts/2015/07/learn-to-code</link>
       <pubDate>20.07.2015</pubDate>
       <description>&lt;p&gt;Even though I&amp;#39;m not an education expert, and I don&amp;#39;t really have a professional background in didactics, I have some experience when I comes to teach people how to code, especially if they never wrote a single line of code before.&lt;/p&gt;
 
@@ -593,7 +593,7 @@ It&amp;#39;s about &lt;strong&gt;understanding how a programmer tackles a proble
     </item>
     <item>
       <title>Why and how I created the OpenERZ API</title>
-      <link>http://metaodi.ch/posts/2015/01/openerz</link>
+      <link>https://metaodi.ch/posts/2015/01/openerz</link>
       <pubDate>01.01.2015</pubDate>
       <description>&lt;p&gt;The holidays season is always a good point in time to reflect and sort ideas/thoughts etc.
 A number of reasons lead me to create the &lt;a href="http://openerz.herokuapp.com"&gt;OpenERZ API&lt;/a&gt;.&lt;/p&gt;
@@ -670,7 +670,7 @@ After some iterations the current API gained some features:&lt;/p&gt;
     </item>
     <item>
       <title>Workshop about Open Data Technologies</title>
-      <link>http://metaodi.ch/posts/2014/09/open-data-workshop</link>
+      <link>https://metaodi.ch/posts/2014/09/open-data-workshop</link>
       <pubDate>18.09.2014</pubDate>
       <description>&lt;p&gt;At todays &lt;a href="http://opendata.ch/2014"&gt;Opendata.ch Conference 2014&lt;/a&gt; I had the opportunity to talk about technologies around the topic of open data.
 I gave a quick overview over different approaches that are being used including &lt;a href="http://ckan.org/"&gt;CKAN&lt;/a&gt;, &lt;a href="http://thedatatank.com"&gt;The DataTank&lt;/a&gt; and &lt;a href="http://centraldedados.pt/"&gt;Data Central&lt;/a&gt;.&lt;/p&gt;
@@ -697,7 +697,7 @@ My session has not been recorded, but at the end I could quickly present our fin
     </item>
     <item>
       <title>Q&amp;A Wall at the OKFestival in Berlin</title>
-      <link>http://metaodi.ch/posts/2014/07/q-a-wall</link>
+      <link>https://metaodi.ch/posts/2014/07/q-a-wall</link>
       <pubDate>08.07.2014</pubDate>
       <description>&lt;p&gt;Some time ago the OKFestival asked for session proposals for this years conference in Berlin.
 I was at the conference last year in Geneva and enjoyed very much.
@@ -751,7 +751,7 @@ There are similar approaches to use such walls or boards to share news in local 
     </item>
     <item>
       <title>Usage of MongoDB with a spatial index and GeoJSON</title>
-      <link>http://metaodi.ch/posts/2014/02/usage-of-mongodb-with-a-spatial--and-geojson</link>
+      <link>https://metaodi.ch/posts/2014/02/usage-of-mongodb-with-a-spatial--and-geojson</link>
       <pubDate>11.02.2014</pubDate>
       <description>&lt;p&gt;During the &lt;a href="http://opendata.ch/projects/open-data-zuerich-hacknights/"&gt;Zurich Hacknights 2013&lt;/a&gt; I was part of the team, that wanted to build a &lt;a href="http://make.opendata.ch/wiki/project:denkmalfuehrer"&gt;guide for monuments in Zurich&lt;/a&gt;.
 We were a large group of people with lots of ideas.
@@ -851,7 +851,7 @@ The next step would be to connect DenkMap to &lt;a href="http://wikidata.org"&gt
     </item>
     <item>
       <title>Stop making stupid Open Data contests!</title>
-      <link>http://metaodi.ch/posts/2014/01/stop-making-stupid-open-data-contests</link>
+      <link>https://metaodi.ch/posts/2014/01/stop-making-stupid-open-data-contests</link>
       <pubDate>31.01.2014</pubDate>
       <description>&lt;p&gt;&lt;em&gt;Disclaimer:
 I work for &lt;a href="http://www.liip.ch"&gt;Liip&lt;/a&gt;, the company that build the &lt;a href="http://opendata.admin.ch"&gt;Open Data pilot portal for Switzerland&lt;/a&gt;.
@@ -919,7 +919,7 @@ But that doesn&amp;#39;t mean it was not worth to open it.&lt;/p&gt;
     </item>
     <item>
       <title>All new in 2014</title>
-      <link>http://metaodi.ch/posts/2014/01/all-new-in-2014</link>
+      <link>https://metaodi.ch/posts/2014/01/all-new-in-2014</link>
       <pubDate>30.01.2014</pubDate>
       <description>&lt;p&gt;Some time ago I started to fiddle with &lt;a href="http://ruhoh.com"&gt;ruhoh&lt;/a&gt;, a static blog generator.
 I thought the idea of having static files as &lt;em&gt;the interface&lt;/em&gt; to your website was intriguing.&lt;/p&gt;
@@ -945,7 +945,7 @@ Btw: I use &lt;a href="http://pages.github.com/"&gt;GitHub Pages&lt;/a&gt; for t
     </item>
     <item>
       <title>On Citizenship in Open-source software development &#x2014; Products I Wish Existed</title>
-      <link>http://metaodi.ch/posts/2013/05/on-citizenship-in-open-source-software-development</link>
+      <link>https://metaodi.ch/posts/2013/05/on-citizenship-in-open-source-software-development</link>
       <pubDate>23.05.2013</pubDate>
       <description>&lt;p&gt;&lt;a href="https://medium.com/products-i-wish-existed/ddd1f7be1415"&gt;https://medium.com/products-i-wish-existed/ddd1f7be1415&lt;/a&gt;&lt;/p&gt;
 
@@ -957,14 +957,14 @@ a repository, GitHub would solve the problem of zombie-projects with &#x2026;&lt
     </item>
     <item>
       <title>Remember: Without unit tests, you're not refactoring. You're just changing shit</title>
-      <link>http://metaodi.ch/posts/2012/10/remember-without-unit-tests-youre-not</link>
+      <link>https://metaodi.ch/posts/2012/10/remember-without-unit-tests-youre-not</link>
       <pubDate>22.10.2012</pubDate>
       <description>&lt;iframe width="560" height="315" src="//www.youtube.com/embed/JWm68Ghc1vA" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 </description>
     </item>
     <item>
       <title>Insert Coin To Play</title>
-      <link>http://metaodi.ch/posts/2012/10/insert-coin-to-play-can-gaming-concepts-help</link>
+      <link>https://metaodi.ch/posts/2012/10/insert-coin-to-play-can-gaming-concepts-help</link>
       <pubDate>11.10.2012</pubDate>
       <description>&lt;p&gt;Can gaming concepts help make OpenStreetMap better?&lt;/p&gt;
 
@@ -973,7 +973,7 @@ a repository, GitHub would solve the problem of zombie-projects with &#x2026;&lt
     </item>
     <item>
       <title>Fiddle around (code)</title>
-      <link>http://metaodi.ch/posts/2012/05/fiddle-around-code</link>
+      <link>https://metaodi.ch/posts/2012/05/fiddle-around-code</link>
       <pubDate>29.05.2012</pubDate>
       <description>&lt;p&gt;Since I&#x2019;m using JavaScript more heavily, and beeing active on
 &lt;a href="http://stackoverflow.com/users/549755/odi"&gt;StackOverflow&lt;/a&gt;, I&#x2019;m using a
@@ -1038,7 +1038,7 @@ Suter&lt;/a&gt;)&lt;/p&gt;
     </item>
     <item>
       <title>Setup JavaScript unit testing using QUnit, PhantomJS and Jenkins on Amazon EC2</title>
-      <link>http://metaodi.ch/posts/2012/03/setup-javascript-unit-testing-using-qunit-phantomjs</link>
+      <link>https://metaodi.ch/posts/2012/03/setup-javascript-unit-testing-using-qunit-phantomjs</link>
       <pubDate>08.03.2012</pubDate>
       <description>&lt;p&gt;Me and my friend are currently working on a term paper about &lt;a href="https://developers.google.com/fusiontables/"&gt;Google
 Fusion Tables&lt;/a&gt;. It&#x2019;s about
@@ -1191,7 +1191,7 @@ tests" title="Overview of all performed tests"&gt;&lt;/p&gt;
     </item>
     <item>
       <title>ZFF 2011: Turn Me On, Goddammit</title>
-      <link>http://metaodi.ch/posts/2011/10/zff-2011-turn-me-on-goddammit</link>
+      <link>https://metaodi.ch/posts/2011/10/zff-2011-turn-me-on-goddammit</link>
       <pubDate>06.10.2011</pubDate>
       <description>&lt;p&gt;&lt;a href="http://www.zurichfilmfestival.org/de//filme/1896/turn-me-on-goddammit/"&gt;&lt;img src="http://media.tumblr.com/tumblr_lsdq0air4I1qa2z4q.jpg" alt="Turn Me On,
 Goddammit" title="Turn Me On, Goddammit"&gt;&lt;/a&gt;&lt;/p&gt;
@@ -1224,7 +1224,7 @@ weder &#xFC;bertrieben wirkt noch ins L&#xE4;cherliche gezogen wird.&lt;/p&gt;
     </item>
     <item>
       <title>ZFF 2011: Kurzes aus der T&#xFC;rkei</title>
-      <link>http://metaodi.ch/posts/2011/10/zff-2011-kurzes-aus-der-t-rkei</link>
+      <link>https://metaodi.ch/posts/2011/10/zff-2011-kurzes-aus-der-t-rkei</link>
       <pubDate>04.10.2011</pubDate>
       <description>&lt;p&gt;Die &lt;a href="http://www.kurzfilmtage.ch/"&gt;Internationlen Kurzfilmtage
 Winterthur&lt;/a&gt; zeigten &lt;a href="http://www.zurichfilmfestival.org/de//filme/3025/kurzes-aus-der-turkei/"&gt;Kurzfilme aus der
@@ -1334,7 +1334,7 @@ Kinoerlebnissen berichten. Ein Schmaus!&lt;/p&gt;
     </item>
     <item>
       <title>ZFF 2011: Kriegerin</title>
-      <link>http://metaodi.ch/posts/2011/09/zff-2011-kriegerin</link>
+      <link>https://metaodi.ch/posts/2011/09/zff-2011-kriegerin</link>
       <pubDate>30.09.2011</pubDate>
       <description>&lt;p&gt;&lt;a href="http://www.zurichfilmfestival.org/de//filme/2059/kriegerin/"&gt;&lt;img src="http://media.tumblr.com/tumblr_lscbfabgq11qa2z4q.jpg" alt="Kriegerin" title="Kriegerin"&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -1374,7 +1374,7 @@ auszusprechen.&lt;/em&gt;&lt;/p&gt;
     </item>
     <item>
       <title>ZFF 2011: Majority (&#xC7;ogunluk)</title>
-      <link>http://metaodi.ch/posts/2011/09/zff-2011-majority-ogunluk</link>
+      <link>https://metaodi.ch/posts/2011/09/zff-2011-majority-ogunluk</link>
       <pubDate>30.09.2011</pubDate>
       <description>&lt;p&gt;&lt;a href="http://www.zurichfilmfestival.org/de//filme/2704/majority/"&gt;&lt;img src="http://media.tumblr.com/tumblr_lsca0llnJ51qa2z4q.jpg" alt="Majority
 (&#xC7;ogunluk)" title="Majority (&#xC7;ogunluk)"&gt;&lt;/a&gt;&lt;/p&gt;
@@ -1417,7 +1417,7 @@ erz&#xE4;hlt, die einem nicht einfach so losl&#xE4;sst.&lt;/em&gt;&lt;/p&gt;
     </item>
     <item>
       <title>ZFF 2011: Happy, Happy (Sykt Lykkelig)</title>
-      <link>http://metaodi.ch/posts/2011/09/zff-2011-happy-happy-sykt-lykkelig</link>
+      <link>https://metaodi.ch/posts/2011/09/zff-2011-happy-happy-sykt-lykkelig</link>
       <pubDate>27.09.2011</pubDate>
       <description>&lt;p&gt;&lt;a href="http://www.zurichfilmfestival.org/de//filme/1491/happy-happy/"&gt;&lt;img src="http://media.tumblr.com/tumblr_ls6a10DuOD1qa2z4q.jpg" alt="Happy, Happy (Sykt
 Lykkelig)" title="Happy, Happy (Sykt Lykkelig)"&gt;&lt;/a&gt;&lt;/p&gt;
@@ -1454,7 +1454,7 @@ haben, bietet aber 90min Unterhaltung&lt;/em&gt;&lt;/p&gt;
     </item>
     <item>
       <title>ZFF 2011: Jonas</title>
-      <link>http://metaodi.ch/posts/2011/09/zff-2011-jonas</link>
+      <link>https://metaodi.ch/posts/2011/09/zff-2011-jonas</link>
       <pubDate>25.09.2011</pubDate>
       <description>&lt;p&gt;&lt;a href="http://www.zurichfilmfestival.org/de//filme/2914/jonas/"&gt;&lt;img src="http://media.tumblr.com/tumblr_ls1w3l2C7g1qa2z4q.jpg" alt="Jonas" title="Jonas"&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -1494,7 +1494,7 @@ Schule zu gehen.&lt;/em&gt;&lt;/p&gt;
     </item>
     <item>
       <title>ZFF 2011: Circumstance</title>
-      <link>http://metaodi.ch/posts/2011/09/zff-2011-circumstance</link>
+      <link>https://metaodi.ch/posts/2011/09/zff-2011-circumstance</link>
       <pubDate>25.09.2011</pubDate>
       <description>&lt;p&gt;&lt;a href="http://www.zurichfilmfestival.org/de//filme/1463/circumstance/"&gt;&lt;img src="http://media.tumblr.com/tumblr_ls1uat2Ofe1qa2z4q.jpg" alt="Circumstance" title="Circumstance"&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -1532,7 +1532,7 @@ ein Gef&#xFC;hl oder eine Regung auszudr&#xFC;cken.&lt;/p&gt;
     </item>
     <item>
       <title>ZFF 2011: Restless</title>
-      <link>http://metaodi.ch/posts/2011/09/zff-2011-restless</link>
+      <link>https://metaodi.ch/posts/2011/09/zff-2011-restless</link>
       <pubDate>24.09.2011</pubDate>
       <description>&lt;p&gt;&lt;a href="http://www.zurichfilmfestival.org/de//filme/1796/restless/"&gt;&lt;img src="http://media.tumblr.com/tumblr_ls0xusJKAA1qa2z4q.jpg" alt="Restless" title="Restless"&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -1560,7 +1560,7 @@ guten und in schlechten Zeiten&lt;/em&gt;&lt;/p&gt;
     </item>
     <item>
       <title>ZFF 2011: Fenster zum Sommer</title>
-      <link>http://metaodi.ch/posts/2011/09/zff-2011-fenster-zum-sommer</link>
+      <link>https://metaodi.ch/posts/2011/09/zff-2011-fenster-zum-sommer</link>
       <pubDate>24.09.2011</pubDate>
       <description>&lt;p&gt;&lt;a href="http://www.zurichfilmfestival.org/de//filme/1844/fenster-zum-sommer/"&gt;&lt;img src="http://media.tumblr.com/tumblr_ls0w3cMKgs1qa2z4q.jpg" alt="Fenster zum
 Sommer" title="Fenster zum Sommer"&gt;&lt;/a&gt;&lt;/p&gt;
@@ -1606,7 +1606,7 @@ aus Finnland.&lt;/em&gt;&lt;/p&gt;
     </item>
     <item>
       <title>ZFF 2011: Take Shelter</title>
-      <link>http://metaodi.ch/posts/2011/09/zff-2011-take-shelter</link>
+      <link>https://metaodi.ch/posts/2011/09/zff-2011-take-shelter</link>
       <pubDate>23.09.2011</pubDate>
       <description>&lt;p&gt;&lt;a href="http://www.zurichfilmfestival.org/de//filme/1471/take-shelter/"&gt;&lt;img src="http://media.tumblr.com/tumblr_lryyy24HnR1qa2z4q.jpg" alt="Take
 Shelter" title="Take Shelter"&gt;&lt;/a&gt;&lt;/p&gt;
@@ -1641,7 +1641,7 @@ Unterfangen.&lt;/p&gt;
     </item>
     <item>
       <title>Es ist wieder so weit: Zurich Film Festival 2011</title>
-      <link>http://metaodi.ch/posts/2011/09/es-ist-wieder-so-weit-zurich-film-festival-2011</link>
+      <link>https://metaodi.ch/posts/2011/09/es-ist-wieder-so-weit-zurich-film-festival-2011</link>
       <pubDate>19.09.2011</pubDate>
       <description>&lt;p&gt;&lt;a href="http://www.zurichfilmfestival.org"&gt;&lt;img src="http://media.tumblr.com/tumblr_lrqowg2CMF1qa2z4q.jpg" alt="Zurich Film Festival
 2011" title="Zurich Film Festival 2011"&gt;&lt;/a&gt;&lt;/p&gt;
@@ -1700,7 +1700,7 @@ World&lt;/a&gt;&lt;/li&gt;
     </item>
     <item>
       <title>Team-Filter f&#xFC;r hockeytoto.ch</title>
-      <link>http://metaodi.ch/posts/2011/09/team-filter-f-r-hockeytoto-ch</link>
+      <link>https://metaodi.ch/posts/2011/09/team-filter-f-r-hockeytoto-ch</link>
       <pubDate>14.09.2011</pubDate>
       <description>&lt;p&gt;Da ich dieses Jahr bei &lt;a href="http://www.hockeytoto.ch"&gt;hockeytoto.ch&lt;/a&gt;
 mitmache und mich die etwas un&#xFC;bersichtliche Oberfl&#xE4;che gest&#xF6;rt hat,
@@ -1736,7 +1736,7 @@ Greasemonkey&lt;/a&gt;&lt;/li&gt;
     </item>
     <item>
       <title>Zum selektierten Wert springen (IE Bug)</title>
-      <link>http://metaodi.ch/posts/2011/06/zum-selektierten-wert-springen</link>
+      <link>https://metaodi.ch/posts/2011/06/zum-selektierten-wert-springen</link>
       <pubDate>25.06.2011</pubDate>
       <description>&lt;p&gt;Der Internet Explorer hat die Angewohnheit in einer &lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt;-Box den
 ausgew&#xE4;hlten Wert nicht direkt anzuzeigen. Stattdessen werden immer nur
@@ -1775,7 +1775,7 @@ dem &#x201C;&lt;code&gt;break&lt;/code&gt;&amp;quot; springt die Funktion einfac
     </item>
     <item>
       <title>PHP Unit Testing mit SimpleTest</title>
-      <link>http://metaodi.ch/posts/2011/06/php-unit-testing-mit-simpletest</link>
+      <link>https://metaodi.ch/posts/2011/06/php-unit-testing-mit-simpletest</link>
       <pubDate>21.06.2011</pubDate>
       <description>&lt;p&gt;&lt;img src="http://media.tumblr.com/tumblr_ln5d7sf2901qa2z4q.png" alt="SimpleTest in action"&gt;&lt;/p&gt;
 
@@ -1816,7 +1816,7 @@ anspreche:&lt;/p&gt;
     </item>
     <item>
       <title>Eigener URL shortener (rdmr.ch)</title>
-      <link>http://metaodi.ch/posts/2011/06/rdmr-ch</link>
+      <link>https://metaodi.ch/posts/2011/06/rdmr-ch</link>
       <pubDate>06.06.2011</pubDate>
       <description>&lt;p&gt;Ich wollte schon immer einen eigenen &lt;a href="http://de.wikipedia.org/wiki/Kurz-URL-Dienst"&gt;URL
 shortener&lt;/a&gt; und das hat
@@ -1845,7 +1845,7 @@ Applikationen einbauen.&lt;/p&gt;
     </item>
     <item>
       <title>Steganografie in der Schweiz verboten?</title>
-      <link>http://metaodi.ch/posts/2011/05/steganografie-in-der-schweiz-verboten</link>
+      <link>https://metaodi.ch/posts/2011/05/steganografie-in-der-schweiz-verboten</link>
       <pubDate>25.05.2011</pubDate>
       <description>&lt;p&gt;In einer Informations- und Codierungstheorie Vorlesung im letzten
 Semester haben wir kurz das Thema
@@ -1865,7 +1865,7 @@ dazu?&lt;/p&gt;
     </item>
     <item>
       <title>Developers Shame Day: BB-Code selbstgemacht</title>
-      <link>http://metaodi.ch/posts/2010/11/developers-shame-day-2010</link>
+      <link>https://metaodi.ch/posts/2010/11/developers-shame-day-2010</link>
       <pubDate>03.11.2010</pubDate>
       <description>&lt;p&gt;&lt;img src="http://media.tumblr.com/tumblr_lb5krblZFn1qa2z4q.png" alt="Developers Shame Day"&gt;&lt;/p&gt;
 
@@ -1907,7 +1907,7 @@ kann&#x201D;).&lt;/p&gt;
     </item>
     <item>
       <title>Kino: L&#xE4;nger Leben</title>
-      <link>http://metaodi.ch/posts/2010/11/kino-langer-leben</link>
+      <link>https://metaodi.ch/posts/2010/11/kino-langer-leben</link>
       <pubDate>03.11.2010</pubDate>
       <description>&lt;p&gt;&lt;a href="http://www.laengerleben.ch/"&gt;&lt;img src="http://media.tumblr.com/tumblr_lba6wtX7QI1qa2z4q.jpg" alt="L&#xE4;nger
 Leben" title="L&#xE4;nger Leben"&gt;&lt;/a&gt;&lt;/p&gt;
@@ -1946,7 +1946,7 @@ Low-Budget wurde ein qualitativ hochstehender Film gedreht. Anschauen!&lt;/p&gt;
     </item>
     <item>
       <title>Linux Install-Event vom alt.comp.hsr</title>
-      <link>http://metaodi.ch/posts/2010/10/linux-install-event-vom-alt-comp-hsr</link>
+      <link>https://metaodi.ch/posts/2010/10/linux-install-event-vom-alt-comp-hsr</link>
       <pubDate>05.10.2010</pubDate>
       <description>&lt;p&gt;&lt;img src="http://media.tumblr.com/tumblr_l9t4re8ZS01qa2z4q.png" alt="Linux
 Install-Event"&gt;&lt;/p&gt;
@@ -1973,7 +1973,7 @@ einem Ort, an dem man einfach Fragen stellen kann.&lt;/p&gt;
     </item>
     <item>
       <title>Fazit des Zurich Film Festivals 2010</title>
-      <link>http://metaodi.ch/posts/2010/10/fazit-des-zurich-film-festivals-2010</link>
+      <link>https://metaodi.ch/posts/2010/10/fazit-des-zurich-film-festivals-2010</link>
       <pubDate>04.10.2010</pubDate>
       <description>&lt;p&gt;&lt;a href="http://www.zurichfilmfestival.org/de/programm-2010/alle-filme-a-bis-z/"&gt;&lt;img src="http://media.tumblr.com/tumblr_l9oojkOByQ1qa2z4q.jpg" alt="Zurich Film Festival" title="Zurich Film Festival"&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -2015,7 +2015,7 @@ Filmschaffende etc.).&lt;/p&gt;
     </item>
     <item>
       <title>ZFF 2010: Blue Valentine</title>
-      <link>http://metaodi.ch/posts/2010/10/blue-valentine</link>
+      <link>https://metaodi.ch/posts/2010/10/blue-valentine</link>
       <pubDate>04.10.2010</pubDate>
       <description>&lt;p&gt;&lt;a href="http://www.zurichfilmfestival.org/de/programm-2010/filme/531/blue-valentine/"&gt;&lt;img src="http://media.tumblr.com/tumblr_l9ooggc9Vo1qa2z4q.jpg" alt="Blue Valentine" title="Blue Valentine"&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -2039,7 +2039,7 @@ eigentlich, der Film h&#xE4;tte auch so genug zu bieten gehabt.&lt;/p&gt;
     </item>
     <item>
       <title>ZFF 2010: Monogamy</title>
-      <link>http://metaodi.ch/posts/2010/10/monogamy</link>
+      <link>https://metaodi.ch/posts/2010/10/monogamy</link>
       <pubDate>03.10.2010</pubDate>
       <description>&lt;p&gt;&lt;a href="http://www.zurichfilmfestival.org/de/programm-2010/filme/243/monogamy/"&gt;&lt;img src="http://media.tumblr.com/tumblr_l9oo4mUOb11qa2z4q.jpg" alt="Monogamy" title="Monogamy"&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -2068,7 +2068,7 @@ nicht los.&lt;/p&gt;
     </item>
     <item>
       <title>ZFF 2010: Machete</title>
-      <link>http://metaodi.ch/posts/2010/10/machete</link>
+      <link>https://metaodi.ch/posts/2010/10/machete</link>
       <pubDate>02.10.2010</pubDate>
       <description>&lt;p&gt;&lt;a href="http://www.zurichfilmfestival.org/de/programm-2010/filme/1194/machete/"&gt;&lt;img src="http://media.tumblr.com/tumblr_l9novndScU1qa2z4q.jpg" alt="Machete" title="Machete"&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -2102,7 +2102,7 @@ einem &#x201C;Ave Maria&#x201D; begleitet eine Kirche zerst&#xF6;rt.&lt;/p&gt;
     </item>
     <item>
       <title>ZFF 2010: Catfish</title>
-      <link>http://metaodi.ch/posts/2010/10/catfish</link>
+      <link>https://metaodi.ch/posts/2010/10/catfish</link>
       <pubDate>02.10.2010</pubDate>
       <description>&lt;p&gt;&lt;a href="http://www.zurichfilmfestival.org/de/programm-2010/filme/525/catfish/"&gt;&lt;img src="http://media.tumblr.com/tumblr_l9not5VLJR1qa2z4q.jpg" alt="Catfish" title="Catfish"&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -2133,7 +2133,7 @@ charismatischen Personen aufwartet. Sehr zu empfehlen!&lt;/p&gt;
     </item>
     <item>
       <title>ZFF 2010: Van Diemen's Land</title>
-      <link>http://metaodi.ch/posts/2010/09/van-diemens-land</link>
+      <link>https://metaodi.ch/posts/2010/09/van-diemens-land</link>
       <pubDate>29.09.2010</pubDate>
       <description>&lt;p&gt;&lt;a href="http://www.zurichfilmfestival.org/de/programm-2010/filme/720/van-diemens-land/"&gt;&lt;img src="http://media.tumblr.com/tumblr_l9g7vtX6kC1qa2z4q.jpg" alt="Van Diemen&amp;#39;s
 Land" title="Van Diemen&amp;#39;s Land"&gt;&lt;/a&gt;&lt;/p&gt;
@@ -2159,7 +2159,7 @@ Menschen in Extremsituationen beobachten wollen.&lt;/p&gt;
     </item>
     <item>
       <title>ZFF 2010: R</title>
-      <link>http://metaodi.ch/posts/2010/09/r</link>
+      <link>https://metaodi.ch/posts/2010/09/r</link>
       <pubDate>29.09.2010</pubDate>
       <description>&lt;p&gt;&lt;a href="http://www.zurichfilmfestival.org/de/programm-2010/filme/876/r/"&gt;&lt;img src="http://media.tumblr.com/tumblr_l9g7tg4ho01qa2z4q.jpg" alt="R" title="R"&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -2189,7 +2189,7 @@ erscheinen l&#xE4;sst.&lt;/p&gt;
     </item>
     <item>
       <title>ZFF 2010: Tamara Drewe</title>
-      <link>http://metaodi.ch/posts/2010/09/tamara-drewe</link>
+      <link>https://metaodi.ch/posts/2010/09/tamara-drewe</link>
       <pubDate>28.09.2010</pubDate>
       <description>&lt;p&gt;&lt;a href="http://www.zurichfilmfestival.org/de/programm-2010/filme/1224/tamara-drewe/"&gt;&lt;img src="http://media.tumblr.com/tumblr_l9ff3cavTO1qa2z4q.jpg" alt="Tamara Drewe"&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -2213,7 +2213,7 @@ und eine wirklich lustige Geschichte.&lt;/p&gt;
     </item>
     <item>
       <title>ZFF 2010: Shorts from Down Under</title>
-      <link>http://metaodi.ch/posts/2010/09/shorts-from-down-under</link>
+      <link>https://metaodi.ch/posts/2010/09/shorts-from-down-under</link>
       <pubDate>27.09.2010</pubDate>
       <description>&lt;p&gt;Kurzfilme aus Australien werden am Zurich Film Festival im Rahmen der
 Rubrik &#x201C;Neue Welt Sicht&#x201D; gezeigt als &lt;a href="http://www.zurichfilmfestival.org/de/programm-2010/filme/1399/shorts-from-down-under/"&gt;&amp;quot;Shorts from Down
@@ -2272,7 +2272,7 @@ schauspielerischer Glanzleistung. Mein absoluter Favorit&lt;/p&gt;
     </item>
     <item>
       <title>ZFF 2010: Hugh Hefner: Playboy, Activist and Rebel</title>
-      <link>http://metaodi.ch/posts/2010/09/hugh-hefner-playboy-activist-and-rebel</link>
+      <link>https://metaodi.ch/posts/2010/09/hugh-hefner-playboy-activist-and-rebel</link>
       <pubDate>27.09.2010</pubDate>
       <description>&lt;p&gt;&lt;a href="http://www.zurichfilmfestival.org/de/programm-2010/filme/726/hugh-hefner-playboy-activist-and-rebel/"&gt;&lt;img src="http://media.tumblr.com/tumblr_l9cpkuT9ia1qa2z4q.jpg" alt="Hugh Hefner: Playboy, Activist and Rebel"&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -2303,7 +2303,7 @@ wurde.&lt;/p&gt;
     </item>
     <item>
       <title>ZFF 2010: Der letzte sch&#xF6;ne Herbsttag</title>
-      <link>http://metaodi.ch/posts/2010/09/der-letzte-schoene-herbsttag</link>
+      <link>https://metaodi.ch/posts/2010/09/der-letzte-schoene-herbsttag</link>
       <pubDate>25.09.2010</pubDate>
       <description>&lt;p&gt;&lt;a href="http://www.zurichfilmfestival.org/de/programm-2010/filme/513/der-letzte-schone-herbsttag/"&gt;&lt;img src="http://media.tumblr.com/tumblr_l9b8lzAZFC1qa2z4q.jpg" alt="Der letzte sch&#xF6;ne Herbsttag"&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -2333,7 +2333,7 @@ eben braucht. Top!&lt;/p&gt;
     </item>
     <item>
       <title>ZFF 2010: The Joneses</title>
-      <link>http://metaodi.ch/posts/2010/09/the-joneses</link>
+      <link>https://metaodi.ch/posts/2010/09/the-joneses</link>
       <pubDate>25.09.2010</pubDate>
       <description>&lt;p&gt;&lt;a href="http://www.zurichfilmfestival.org/de/programm-2010/filme/1386/the-joneses/"&gt;&lt;img src="http://media.tumblr.com/tumblr_l9g5t2nLwt1qa2z4q.png" alt=""&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -2373,7 +2373,7 @@ spannend war es trotzdem.&lt;/p&gt;
     </item>
     <item>
       <title>ZFF 2010: Pieds nus sur les limaces</title>
-      <link>http://metaodi.ch/posts/2010/09/pieds-nus-sur-les-limaces</link>
+      <link>https://metaodi.ch/posts/2010/09/pieds-nus-sur-les-limaces</link>
       <pubDate>24.09.2010</pubDate>
       <description>&lt;p&gt;&lt;a href="http://www.zurichfilmfestival.org/de/programm-2010/filme/541/lily-sometimes/"&gt;&lt;img src="http://media.tumblr.com/tumblr_l97zevIIqp1qa2z4q.jpg" alt="Pieds nus sur les limaces (Lily Sometimes)"&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -2411,7 +2411,7 @@ aufgetauchte Frage beantworten k&#xF6;nnen.&lt;/p&gt;
     </item>
     <item>
       <title>Zurich Film Festival 2010 beginnt</title>
-      <link>http://metaodi.ch/posts/2010/09/zurich-film-festival-2010-beginnt</link>
+      <link>https://metaodi.ch/posts/2010/09/zurich-film-festival-2010-beginnt</link>
       <pubDate>23.09.2010</pubDate>
       <description>&lt;p&gt;&lt;a href="http://www.zurichfilmfestival.org"&gt;&lt;img src="http://media.tumblr.com/tumblr_l97dvwzU7B1qa2z4q.jpg" alt="6. Zurich Film
 Festival"&gt;&lt;/a&gt;&lt;/p&gt;
@@ -2448,7 +2448,7 @@ Sometimes)&lt;/a&gt;.&lt;/p&gt;
     </item>
     <item>
       <title>Ciao @odi86, Hello @odi</title>
-      <link>http://metaodi.ch/posts/2010/08/ciao-odi86-hello-odi</link>
+      <link>https://metaodi.ch/posts/2010/08/ciao-odi86-hello-odi</link>
       <pubDate>17.08.2010</pubDate>
       <description>&lt;p&gt;Endlich bin ich nun auch bei Twitter mit &#x201C;meinem&#x201D; Nick
 &lt;a href="http://twitter.com/odi"&gt;@odi&lt;/a&gt; anzutreffen. Der alte &#x201C;odi&#x201D; war schon
@@ -2468,7 +2468,7 @@ offiziell: Ciao @odi86, Hello @odi!&lt;/p&gt;
     </item>
     <item>
       <title>Using utPLSQL with multiple schemas</title>
-      <link>http://metaodi.ch/posts/2010/07/using-utplsql-with-multiple-schemas</link>
+      <link>https://metaodi.ch/posts/2010/07/using-utplsql-with-multiple-schemas</link>
       <pubDate>12.07.2010</pubDate>
       <description>&lt;p&gt;I really like unit testing, and nowadays there is an helping framework
 for almost every environment and/or programming language. For PL/SQL
@@ -2537,7 +2537,7 @@ different schemas.&lt;/p&gt;
     </item>
     <item>
       <title>Erroneous copyFrom() method in JCIFS/VFS</title>
-      <link>http://metaodi.ch/posts/2010/05/erroneous-copyfrom-method-in-jcifs-vfs</link>
+      <link>https://metaodi.ch/posts/2010/05/erroneous-copyfrom-method-in-jcifs-vfs</link>
       <pubDate>30.05.2010</pubDate>
       <description>&lt;p&gt;At the &lt;a href="http://www.hsr.ch"&gt;HSR (University of Applied Science
 Rapperswil)&lt;/a&gt; we are currently developing a software
@@ -2603,7 +2603,7 @@ behavior.&lt;/p&gt;
     </item>
     <item>
       <title>Guardian: How do I know China wrecked the Copenhagen deal? I was in the room</title>
-      <link>http://metaodi.ch/posts/2009/12/guardian-how-do-i-know-china-wrecked-the-copenhagen</link>
+      <link>https://metaodi.ch/posts/2009/12/guardian-how-do-i-know-china-wrecked-the-copenhagen</link>
       <pubDate>23.12.2009</pubDate>
       <description>&lt;p&gt;&lt;a href="http://www.guardian.co.uk/environment/2009/dec/22/copenhagen-climate-change-mark-lynas"&gt;http://www.guardian.co.uk/environment/2009/dec/22/copenhagen-climate-change-mark-lynas&lt;/a&gt;&lt;/p&gt;
 
@@ -2614,7 +2614,7 @@ behavior.&lt;/p&gt;
     </item>
     <item>
       <title>How to make your eye feel like it's closed, when it's actually open</title>
-      <link>http://metaodi.ch/posts/2009/12/how-to-make-your-eye-feel-like-its-closed-when-its</link>
+      <link>https://metaodi.ch/posts/2009/12/how-to-make-your-eye-feel-like-its-closed-when-its</link>
       <pubDate>22.12.2009</pubDate>
       <description>&lt;p&gt;&lt;a href="http://scienceblogs.com/cognitivedaily/2008/05/how_to_make_your_eye_feel_like.php"&gt;http://scienceblogs.com/cognitivedaily/2008/05/how_to_make_your_eye_feel_like.php&lt;/a&gt;&lt;/p&gt;
 
@@ -2625,7 +2625,7 @@ behavior.&lt;/p&gt;
     </item>
     <item>
       <title>mnmal</title>
-      <link>http://metaodi.ch/posts/2009/12/mnmal-i-think-this-summarizes-everything</link>
+      <link>https://metaodi.ch/posts/2009/12/mnmal-i-think-this-summarizes-everything</link>
       <pubDate>03.12.2009</pubDate>
       <description>&lt;p&gt;I think this summarizes everything.&lt;/p&gt;
 
@@ -2634,7 +2634,7 @@ behavior.&lt;/p&gt;
     </item>
     <item>
       <title>Charles Lewinsky &#xE4;ussert sich in einem Essay &#xFC;ber das Minarettverbot, den ewigen Populismus und Roger K&#xF6;ppel</title>
-      <link>http://metaodi.ch/posts/2009/12/charles-lewinsky-ussert-sich-in-einem-essay-ber-das</link>
+      <link>https://metaodi.ch/posts/2009/12/charles-lewinsky-ussert-sich-in-einem-essay-ber-das</link>
       <pubDate>03.12.2009</pubDate>
       <description>&lt;p&gt;&lt;a href="http://www.tagesanzeiger.ch/kultur/buecher/Jetzt-muessen-wir-sogar-Koeppels-triumphierende-Ironie-schlucken/story/10202730"&gt;http://www.tagesanzeiger.ch/kultur/buecher/Jetzt-muessen-wir-sogar-Koeppels-triumphierende-Ironie-schlucken/story/10202730&lt;/a&gt;&lt;/p&gt;
 
@@ -2645,14 +2645,14 @@ behavior.&lt;/p&gt;
     </item>
     <item>
       <title>WWFM VI in Z&#xFC;rich, das Video zum Event</title>
-      <link>http://metaodi.ch/posts/2009/11/wwfm-vi-in-z-rich-das-video-zum-event</link>
+      <link>https://metaodi.ch/posts/2009/11/wwfm-vi-in-z-rich-das-video-zum-event</link>
       <pubDate>17.11.2009</pubDate>
       <description>&lt;iframe width="420" height="315" src="//www.youtube.com/embed/9u-K_LFbGO8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 </description>
     </item>
     <item>
       <title>The Go Programming Language</title>
-      <link>http://metaodi.ch/posts/2009/11/the-go-programming-language</link>
+      <link>https://metaodi.ch/posts/2009/11/the-go-programming-language</link>
       <pubDate>11.11.2009</pubDate>
       <description>&lt;p&gt;Today I came across &lt;a href="http://golang.org/"&gt;a new programming language called
 Go&lt;/a&gt;, developed by Google&lt;/p&gt;
@@ -2669,7 +2669,7 @@ use pointers, but no pointer arithmetic.&lt;/p&gt;
     </item>
     <item>
       <title>Extract .tar.gz to specific directory</title>
-      <link>http://metaodi.ch/posts/2009/11/extract-tar-gz-to-specific-directory</link>
+      <link>https://metaodi.ch/posts/2009/11/extract-tar-gz-to-specific-directory</link>
       <pubDate>09.11.2009</pubDate>
       <description>&lt;p&gt;I want to extract all files form a &#x201C;.tar.gz&#x201D; file to a specific
 directory (not the current).&lt;/p&gt;
@@ -2703,7 +2703,7 @@ When we put all that together the following finally works:&lt;/p&gt;
     </item>
     <item>
       <title>WWFM VI in Z&#xFC;rich</title>
-      <link>http://metaodi.ch/posts/2009/11/wwfm-vi-in-z-rich</link>
+      <link>https://metaodi.ch/posts/2009/11/wwfm-vi-in-z-rich</link>
       <pubDate>09.11.2009</pubDate>
       <description>&lt;p&gt;Am n&#xE4;chsten Wochenende (14. November 2009) ist wieder mal ein
 &lt;a href="http://www.geocaching.com/seek/cache_details.aspx?guid=12520097-066c-4a68-a6de-4aff62664db6"&gt;World-Wide-Flash-Mob
@@ -2730,7 +2730,7 @@ in eurer N&#xE4;he!&lt;/p&gt;
     </item>
     <item>
       <title>BarCamp Rapperswil</title>
-      <link>http://metaodi.ch/posts/2009/10/barcamp-rapperswil</link>
+      <link>https://metaodi.ch/posts/2009/10/barcamp-rapperswil</link>
       <pubDate>25.10.2009</pubDate>
       <description>&lt;p&gt;Das gestrige &lt;a href="http://barcamp.ch/BarCampRapperswil"&gt;BarCamp in
 Rapperswil&lt;/a&gt; hat riesigen Spass
@@ -2773,7 +2773,7 @@ BarCamp truly international ;-)&lt;/p&gt;
     </item>
     <item>
       <title>PostFinance SMS Service</title>
-      <link>http://metaodi.ch/posts/2009/10/postfinance-sms-service</link>
+      <link>https://metaodi.ch/posts/2009/10/postfinance-sms-service</link>
       <pubDate>23.10.2009</pubDate>
       <description>&lt;p&gt;Vor einigen Tagen bekam ich Post von
 &lt;a href="http://www.postfinance.ch/"&gt;PostFinance&lt;/a&gt;, meinem Kontoverwalter der
@@ -2814,7 +2814,7 @@ registriert diesen online.&lt;/p&gt;
     </item>
     <item>
       <title>Insert text at top of a file</title>
-      <link>http://metaodi.ch/posts/2009/10/insert-text-at-top-of-a-file</link>
+      <link>https://metaodi.ch/posts/2009/10/insert-text-at-top-of-a-file</link>
       <pubDate>23.10.2009</pubDate>
       <description>&lt;p&gt;If you want to insert text at the end of a file (&#x201C;append&#x201D;) you can
 simply use:&lt;/p&gt;
@@ -2855,7 +2855,7 @@ this means the logfile will be kept and not moved.&lt;/p&gt;
     </item>
     <item>
       <title>Delete all symlink of a directory</title>
-      <link>http://metaodi.ch/posts/2009/10/delete-all-symlink-of-a-directory</link>
+      <link>https://metaodi.ch/posts/2009/10/delete-all-symlink-of-a-directory</link>
       <pubDate>23.10.2009</pubDate>
       <description>&lt;p&gt;It seems like a simple task, and it really is. But I always have to
 google for such simple stuff, that&#x2019;s why I start to post things here, so
@@ -2890,7 +2890,7 @@ every element of it&#x2019;s input, so the final task can be done by:&lt;/p&gt;
     </item>
     <item>
       <title>Sie haben Post: Ihre Admin.</title>
-      <link>http://metaodi.ch/posts/2009/10/sie-haben-post-ihre-admin</link>
+      <link>https://metaodi.ch/posts/2009/10/sie-haben-post-ihre-admin</link>
       <pubDate>23.10.2009</pubDate>
       <description>&lt;p&gt;Erstmal: Mit &#x201C;Admin&#x201D; meine ich die Administration einer Firma, also
 meist das Team rund um den &#x201C;Empfang&#x201D;. Bekanntlich sind dies die
@@ -2931,7 +2931,7 @@ Gr&#xFC;essli Admin Body: -no data-&lt;/p&gt;&lt;/li&gt;
     </item>
     <item>
       <title>Ausreden f&#xFC;rs Nicht-Trinken</title>
-      <link>http://metaodi.ch/posts/2009/10/ausreden-fuers-nicht-trinken</link>
+      <link>https://metaodi.ch/posts/2009/10/ausreden-fuers-nicht-trinken</link>
       <pubDate>23.10.2009</pubDate>
       <description>&lt;p&gt;Es soll vorkommen. In der Abteilung in der ich zur Zeit arbeite, ist es
 der Donnerstag. In der Cafeteria trifft man sich. Es wird eine Flasche
@@ -2954,7 +2954,7 @@ ist)&lt;/li&gt;
     </item>
     <item>
       <title>Zusammengesetzte W&#xF6;rter</title>
-      <link>http://metaodi.ch/posts/2009/10/zusammengesetzte-w-rter</link>
+      <link>https://metaodi.ch/posts/2009/10/zusammengesetzte-w-rter</link>
       <pubDate>23.10.2009</pubDate>
       <description>&lt;p&gt;Zur Zeit ist wieder ein Deutsch-Groove in mir. Ich weiss nicht ob dies
 schubweise kommt - was am ehesten mit einer Krankheit zu vergleichen
@@ -2996,14 +2996,14 @@ Selbstentscheidungsfreiheit.&lt;/p&gt;
     </item>
     <item>
       <title>Snowboard Garage vs. Fischer Bettwaren</title>
-      <link>http://metaodi.ch/posts/2009/10/snowboard-garage-vs-fischer-bettwaren</link>
+      <link>https://metaodi.ch/posts/2009/10/snowboard-garage-vs-fischer-bettwaren</link>
       <pubDate>23.10.2009</pubDate>
       <description>&lt;iframe width="420" height="315" src="//www.youtube.com/embed/3J1N7PwwbAI" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 </description>
     </item>
     <item>
       <title>dvd::rip and gentoo</title>
-      <link>http://metaodi.ch/posts/2009/10/dvd-rip-and-gentoo</link>
+      <link>https://metaodi.ch/posts/2009/10/dvd-rip-and-gentoo</link>
       <pubDate>23.10.2009</pubDate>
       <description>&lt;p&gt;&lt;a href="http://exit1.org/dvdrip/"&gt;dvd::rip&lt;/a&gt; (or dvdrip at the gentoo
 repository) is a very comfortable ripping software to bring your DVDs on
@@ -3041,7 +3041,7 @@ imagemagick in /etc/portage/package.use and re-emerged imagemagick.&lt;/p&gt;
     </item>
     <item>
       <title>Generate n rows from dual</title>
-      <link>http://metaodi.ch/posts/2009/10/generate-n-rows-from-dual</link>
+      <link>https://metaodi.ch/posts/2009/10/generate-n-rows-from-dual</link>
       <pubDate>23.10.2009</pubDate>
       <description>&lt;p&gt;I needed to generate exactly n rows and then this is very handy.&lt;/p&gt;
 
@@ -3058,7 +3058,7 @@ connect by level &amp;lt;= N
     </item>
     <item>
       <title>Using Pidgin with msn-pecan</title>
-      <link>http://metaodi.ch/posts/2009/10/using-pidgin-with-msn-pecan</link>
+      <link>https://metaodi.ch/posts/2009/10/using-pidgin-with-msn-pecan</link>
       <pubDate>23.10.2009</pubDate>
       <description>&lt;p&gt;Today when I was starting pidgin I could connect to ICQ, but when trying
 to connect to MSN Pidgin comes up with:&lt;/p&gt;
@@ -3092,7 +3092,7 @@ protocol. Save and reconnect your MSN account. Works like a charm!&lt;/p&gt;
     </item>
     <item>
       <title>Wie schreibt man eine Rede</title>
-      <link>http://metaodi.ch/posts/2009/10/wie-schreibt-man-eine-rede</link>
+      <link>https://metaodi.ch/posts/2009/10/wie-schreibt-man-eine-rede</link>
       <pubDate>23.10.2009</pubDate>
       <description>&lt;p&gt;Die letzten 2 Wochen habe ich mich intensiv mit einer Rede die ich an
 einer Geburtstagsfeier halten musste/durfte. :D&lt;/p&gt;
@@ -3114,7 +3114,7 @@ fertig ist.&lt;/li&gt;
     </item>
     <item>
       <title>IPA - Client Backup Services</title>
-      <link>http://metaodi.ch/posts/2009/10/ipa-client-backup-services</link>
+      <link>https://metaodi.ch/posts/2009/10/ipa-client-backup-services</link>
       <pubDate>23.10.2009</pubDate>
       <description>&lt;p&gt;Da es mir zu m&#xFC;hsam ist, die Arbeit in HTML zu konvertieren (werde ich
 vielleicht noch nachholen), hier die Arbeit als PDF:
@@ -3129,7 +3129,7 @@ inhaltlichen, aber: Nobody&#x2019;s perfect!&lt;/p&gt;
     </item>
     <item>
       <title>Im Bus</title>
-      <link>http://metaodi.ch/posts/2009/10/im-bus</link>
+      <link>https://metaodi.ch/posts/2009/10/im-bus</link>
       <pubDate>23.10.2009</pubDate>
       <description>&lt;p&gt;Frau: lacht.&lt;/p&gt;
 
@@ -3141,7 +3141,7 @@ inhaltlichen, aber: Nobody&#x2019;s perfect!&lt;/p&gt;
     </item>
     <item>
       <title>Doom for Sysadmins</title>
-      <link>http://metaodi.ch/posts/2009/10/doom-for-sysadmins</link>
+      <link>https://metaodi.ch/posts/2009/10/doom-for-sysadmins</link>
       <pubDate>23.10.2009</pubDate>
       <description>&lt;p&gt;Das Projekt &lt;a href="http://www.cs.unm.edu/%7Edlchao/flake/doom/"&gt;Doom for
 Sysadmins&lt;/a&gt; l&#xE4;sst Kindertr&#xE4;ume
@@ -3155,7 +3155,7 @@ Monster &#xFC;berpr&#xFC;fen. Sobalds zu viele sind: losballern!&lt;/p&gt;
     </item>
     <item>
       <title>Find old Files and their size</title>
-      <link>http://metaodi.ch/posts/2009/10/find-old-files-and-their-size</link>
+      <link>https://metaodi.ch/posts/2009/10/find-old-files-and-their-size</link>
       <pubDate>23.10.2009</pubDate>
       <description>&lt;p&gt;The first part is clear, find the old files like that:&lt;/p&gt;
 
@@ -3196,7 +3196,7 @@ same age as the files within.&lt;/p&gt;
     </item>
     <item>
       <title>ODBC Hell</title>
-      <link>http://metaodi.ch/posts/2009/10/odbc-hell</link>
+      <link>https://metaodi.ch/posts/2009/10/odbc-hell</link>
       <pubDate>21.10.2009</pubDate>
       <description>&lt;p&gt;It is so easy: I have a testing environement where an OCI8-Driver is
 installed. Therefore I can use the OCI-Function if PHP to Bind
@@ -3249,7 +3249,7 @@ open to new ways of doing this.&lt;/p&gt;
     </item>
     <item>
       <title>Brainfucked Logo</title>
-      <link>http://metaodi.ch/posts/2009/10/brainfucked-logo</link>
+      <link>https://metaodi.ch/posts/2009/10/brainfucked-logo</link>
       <pubDate>21.10.2009</pubDate>
       <description>&lt;blockquote&gt;
 &lt;p&gt;++++++++++[&amp;gt;++++++++++&amp;lt;-]&amp;gt;&#x2014;&#x2014;-&amp;lt;++++++++++[&#xBB;+++++++++++++&#xAB;-]\
@@ -3592,7 +3592,7 @@ for &#x201C;d&#x201D;) and print it (pos:7)\
     </item>
     <item>
       <title>Ein Tisch ist ein Tisch</title>
-      <link>http://metaodi.ch/posts/2009/10/ein-tisch-ist-ein-tisch</link>
+      <link>https://metaodi.ch/posts/2009/10/ein-tisch-ist-ein-tisch</link>
       <pubDate>08.10.2009</pubDate>
       <description>&lt;p&gt;Nach einem Text vom Peter Bichsel, im Stile von &#x201C;Kunst aufr&#xE4;umen&#x201D; ordne
 ich mal Bichsels Text neu.&lt;/p&gt;
@@ -3629,7 +3629,7 @@ ich mal Bichsels Text neu.&lt;/p&gt;
     </item>
     <item>
       <title>Papier - Zum Tragen kein Problem</title>
-      <link>http://metaodi.ch/posts/2009/10/papier-zum-tragen-kein-problem</link>
+      <link>https://metaodi.ch/posts/2009/10/papier-zum-tragen-kein-problem</link>
       <pubDate>08.10.2009</pubDate>
       <description>&lt;p&gt;Wenn ich eine T&#xFC;te f&#xFC;r mein Br&#xF6;tchen bekomme finde ich es immer
 angenehm, dass die auch halten.&lt;/p&gt;
@@ -3647,7 +3647,7 @@ angenehm, dass die auch halten.&lt;/p&gt;
     </item>
     <item>
       <title>MS Access: Let lines in Reports grow with it's content</title>
-      <link>http://metaodi.ch/posts/2007/08/ms-access-let-lines-in-reports-grow-with-its-content</link>
+      <link>https://metaodi.ch/posts/2007/08/ms-access-let-lines-in-reports-grow-with-its-content</link>
       <pubDate>24.08.2007</pubDate>
       <description>&lt;p&gt;The problem is the following: You create a report with MS Access with a
 text field. To display the whole text, you have to set the &#x201C;CanGrow&#x201D;
@@ -3700,7 +3700,7 @@ End Sub;
     </item>
     <item>
       <title>MS Access and not updatable Recordsets</title>
-      <link>http://metaodi.ch/posts/2007/06/ms-access-and-not-updatable-recordsets</link>
+      <link>https://metaodi.ch/posts/2007/06/ms-access-and-not-updatable-recordsets</link>
       <pubDate>30.06.2007</pubDate>
       <description>&lt;p&gt;The whole thing is just plain stupid: Someone in the department I work
 in has created an MS Access Database to track our customers. Above this
@@ -3739,7 +3739,7 @@ will appear.&lt;/p&gt;
     </item>
     <item>
       <title>Convert fixed length column to Excel</title>
-      <link>http://metaodi.ch/posts/2007/05/convert-fixed-length-column-to-excel</link>
+      <link>https://metaodi.ch/posts/2007/05/convert-fixed-length-column-to-excel</link>
       <pubDate>14.05.2007</pubDate>
       <description>&lt;p&gt;I had to convert the output from sqlplus to an excel sheet. The problem
 was, that I had no influence on the creation, so I could spool the file
@@ -3872,7 +3872,7 @@ End Sub
     </item>
     <item>
       <title>Excel to CSV with Python</title>
-      <link>http://metaodi.ch/posts/2006/12/excel-to-csv-with-python</link>
+      <link>https://metaodi.ch/posts/2006/12/excel-to-csv-with-python</link>
       <pubDate>27.12.2006</pubDate>
       <description>&lt;p&gt;I wanted to handle a simple task: convert a bunch of XSLs to CSVs. Well
 I wrote a small Script in VBScript and it worked. Then I needed to
@@ -3913,7 +3913,7 @@ del xlApp
     </item>
     <item>
       <title>Information about Oracle Directories</title>
-      <link>http://metaodi.ch/posts/2006/12/information-about-oracle-directories</link>
+      <link>https://metaodi.ch/posts/2006/12/information-about-oracle-directories</link>
       <pubDate>27.12.2006</pubDate>
       <description>&lt;p&gt;I know what I write is quite newbieish, but I needed information about a
 directory I&#x2019;ve created, means which path it&#x2019;s pointing to:&lt;/p&gt;
@@ -3927,7 +3927,7 @@ what I wanted.&lt;/p&gt;
     </item>
     <item>
       <title>SQL Start-Script generator</title>
-      <link>http://metaodi.ch/posts/2006/12/sql-start-script-generator</link>
+      <link>https://metaodi.ch/posts/2006/12/sql-start-script-generator</link>
       <pubDate>12.12.2006</pubDate>
       <description>&lt;p&gt;Sometimes it&#x2019;s so simple:&lt;/p&gt;
 
@@ -3965,7 +3965,7 @@ loop the file gets closed and that&#x2019;s it.&lt;/p&gt;
     </item>
     <item>
       <title>Delete duplicate records with Orcle</title>
-      <link>http://metaodi.ch/posts/2006/11/delete-duplicate-records-with-orcle</link>
+      <link>https://metaodi.ch/posts/2006/11/delete-duplicate-records-with-orcle</link>
       <pubDate>07.11.2006</pubDate>
       <description>&lt;p&gt;Don&#x2019;t ask me why I needed to do that, but I had a lot (about 14 Mio.)
 duplicate records in a table.&lt;/p&gt;
@@ -3984,7 +3984,7 @@ GROUP BY column1, column2, column3... ;
     </item>
     <item>
       <title>PISA-Test</title>
-      <link>http://metaodi.ch/posts/2006/11/pisa-test</link>
+      <link>https://metaodi.ch/posts/2006/11/pisa-test</link>
       <pubDate>02.11.2006</pubDate>
       <description>&lt;p&gt;Danke Baba f&#xFC;rs schicken des Artikels ;)&lt;/p&gt;
 
@@ -3994,7 +3994,7 @@ GROUP BY column1, column2, column3... ;
     </item>
     <item>
       <title>Need to generate a GUID with Oracle?</title>
-      <link>http://metaodi.ch/posts/2006/10/need-to-generate-a-guid-with-oracle</link>
+      <link>https://metaodi.ch/posts/2006/10/need-to-generate-a-guid-with-oracle</link>
       <pubDate>18.10.2006</pubDate>
       <description>&lt;p&gt;I just searched the web for this simple task, and it was difficult to
 find.&lt;/p&gt;
@@ -4010,7 +4010,7 @@ maybe I can help someone out there too, so here it is:&lt;/p&gt;
     </item>
     <item>
       <title>Psychologie vs. Psychiatrie</title>
-      <link>http://metaodi.ch/posts/2006/01/psychologie-vs-psychiatrie</link>
+      <link>https://metaodi.ch/posts/2006/01/psychologie-vs-psychiatrie</link>
       <pubDate>24.01.2006</pubDate>
       <description>&lt;p&gt;Wie das so ist, wenn man gem&#xFC;tlich zusammen sitzt, vorzugsweise mit
 gutem Essen, spricht man &#xFC;ber Gott und die Welt und pl&#xF6;tzlich:&lt;/p&gt;
@@ -4049,7 +4049,7 @@ der sich spezialisiert hat.&lt;/p&gt;
     </item>
     <item>
       <title>CSV seperator character</title>
-      <link>http://metaodi.ch/posts/2005/10/csv-seperator-character</link>
+      <link>https://metaodi.ch/posts/2005/10/csv-seperator-character</link>
       <pubDate>25.10.2005</pubDate>
       <description>&lt;p&gt;In my particular case I got an excel sheet from the customer to import
 in a DB. The idea is to use a CSV as the base for an Oracle external
@@ -4078,7 +4078,7 @@ multiple characters. Now, I use &#x201C;#&#x201D; and everything works fine.&lt;
     </item>
     <item>
       <title>Schengen Propaganda</title>
-      <link>http://metaodi.ch/posts/2005/04/schengen-propaganda</link>
+      <link>https://metaodi.ch/posts/2005/04/schengen-propaganda</link>
       <pubDate>19.04.2005</pubDate>
       <description>&lt;p&gt;Tats&#xE4;chlich, wir sind an einem Punkt angekommen, der beweist, dass
 Menschen schnell vergessen, der beweist, das alte Methoden trotz
@@ -4121,7 +4121,7 @@ erw&#xFC;nscht.&lt;/p&gt;
     </item>
     <item>
       <title>Release Hostages</title>
-      <link>http://metaodi.ch/posts/2005/04/release-hostages</link>
+      <link>https://metaodi.ch/posts/2005/04/release-hostages</link>
       <pubDate>11.04.2005</pubDate>
       <description>&lt;h1 id="toc_0"&gt;Problem&lt;/h1&gt;
 
@@ -4189,7 +4189,7 @@ License.&lt;/a&gt;&lt;/p&gt;
     </item>
     <item>
       <title>Nie mehr St. Moritz</title>
-      <link>http://metaodi.ch/posts/2005/03/nie-mehr-st-moritz</link>
+      <link>https://metaodi.ch/posts/2005/03/nie-mehr-st-moritz</link>
       <pubDate>26.03.2005</pubDate>
       <description>&lt;p&gt;Ich gebe zu, ich schreibe das hier aus einer gewissen Laune heraus,
 einige w&#xFC;rden das als &#x201C;Wut&#x201D;, &#x201C;Zorn&#x201D; oder &#x201C;&#xC4;rger&#x201D; umschreiben, ich selbst
@@ -4280,7 +4280,7 @@ assen beide Schnitzel-Pommes-Frites und die Welt war wieder in Ordnung.&lt;/p&gt
     </item>
     <item>
       <title>Kelloggs musste selbst noch nachschauen wie das denn nun heisst, und hat prompt einen Kompromiss gefunden.</title>
-      <link>http://metaodi.ch/posts/2005/03/kelloggs-musste-selbst-noch-nachschauen-wie-das</link>
+      <link>https://metaodi.ch/posts/2005/03/kelloggs-musste-selbst-noch-nachschauen-wie-das</link>
       <pubDate>24.03.2005</pubDate>
       <description>&lt;p&gt;Mich wundert der Re-Launch nicht&amp;#8230;&lt;/p&gt;
 
