@@ -20,7 +20,7 @@
     <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- Le styles -->
-<link href='/assets/stylesheets/style.css' type='text/css' rel='stylesheet' media='all'>
+<link href='/assets/stylesheets/style-a039e10a7d2de8b24d250376ec3148ed.css' type='text/css' rel='stylesheet' media='all'>
 <link href='/assets/stylesheets/google_prettify/sons-of-obsidian-afb0925bfa2d994f17dab93e13fbf999.css' type='text/css' rel='stylesheet' media='all'>    
     <!-- Le scripts -->
 
@@ -77,6 +77,51 @@
         <div class="row-fluid">
   <div class="col-md-12">
       <div class="posts">
+        <h2 class="title"><span class="date">15.12.2015</span><a href="/posts/2015/12/vagrant-system-status">Check the status of all vagrant boxes on your system</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Programming-ref">Programming <span>21</span></a>
+          </li>
+        </ul>
+
+        <p>If you are like me, chances are you have a <a href="https://www.vagrantup.com/">vagrant</a> setup for each project your working on.
+It&#39;s a great way of sharing a specific system configuration, especially if you work in a team of developers.
+In my team, we have people running their systems with different operating systems and settings in general.
+So vagrant is a real life-saver when it comes to developing together and agreeing on a setup for a specific project.</p>
+
+<p>But there are some pain points.
+If you turn off your machine, but forget you have a vagrant box running, the shutdown gets stuck, because it waits for the virtual network interface to be freed, which never happens
+To solve this issue, it&#39;s important to know, what instances are still running.
+If you only have one or two setups, this might be easy.
+But it soons gets a tedious task to keep track by yourself.</p>
+
+<p>Luckily vagrant provides us with a nice command to show all boxes on a machine called <code>global-status</code>:</p>
+
+<pre><code class="bash">vagrant global-status
+</code></pre>
+
+<p>This shows all instances, that are known to vagrant.
+The results are cached and updated from time to time.
+In my case, it didn&#39;t recognize all of my instances.
+Unfortunately, the only way to change that is the rebuild the box.</p>
+
+<p>What I did instead is create a little script, that collects it&#39;s own data (based on the existance of <code>.vagrant</code> directories).
+This gives a more fine-grained view of the system and I have better control over when the data is updated.</p>
+
+<p><img src="/assets/media/vagrant-cache.png" alt="vagrant-cache in action"></p>
+
+<p><code>vagrant-status</code> collects the data and updates the cache (slow operation).
+I run it every 15min as a cronjob, to keep the cache up-to-date.</p>
+
+<p><code>vagrant-cache</code> simply displays the result of the last run of <code>vagrant-status</code>.</p>
+
+<p>You can find the <a href="https://github.com/metaodi/vagrant-system-status">scripts on GitHub</a>.</p>
+
+
+      </div>
+      <div class="posts">
         <h2 class="title"><span class="date">02.12.2015</span><a href="/posts/2015/12/e-voting-ii">E-Voting II</a> </h3>
 
         <ul class="tag_box">
@@ -119,7 +164,7 @@ It only means that we have to think about this other way as well. And that the c
         <ul class="tag_box">
         <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
           <li>
-            <a href="/tags#Open Data-ref">Open Data <span>12</span></a>
+            <a href="/tags#Open Data-ref">Open Data <span>13</span></a>
           </li>
           <li>
             <a href="/tags#Talk-ref">Talk <span>11</span></a>
@@ -318,7 +363,7 @@ It&#39;s about <strong>understanding how a programmer tackles a problem, learn n
         <ul class="tag_box">
         <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
           <li>
-            <a href="/tags#Open Data-ref">Open Data <span>12</span></a>
+            <a href="/tags#Open Data-ref">Open Data <span>13</span></a>
           </li>
           <li>
             <a href="/tags#ERZ-ref">ERZ <span>2</span></a>
@@ -417,7 +462,7 @@ After some iterations the current API gained some features:</p>
         <ul class="tag_box">
         <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
           <li>
-            <a href="/tags#Open Data-ref">Open Data <span>12</span></a>
+            <a href="/tags#Open Data-ref">Open Data <span>13</span></a>
           </li>
           <li>
             <a href="/tags#Conferences-ref">Conferences <span>5</span></a>
@@ -527,7 +572,7 @@ There are similar approaches to use such walls or boards to share news in local 
             <a href="/tags#MongoDB-ref">MongoDB <span>2</span></a>
           </li>
           <li>
-            <a href="/tags#Open Data-ref">Open Data <span>12</span></a>
+            <a href="/tags#Open Data-ref">Open Data <span>13</span></a>
           </li>
           <li>
             <a href="/tags#OpenStreetMap-ref">OpenStreetMap <span>2</span></a>
@@ -640,7 +685,7 @@ The next step would be to connect DenkMap to <a href="http://wikidata.org">WikiD
         <ul class="tag_box">
         <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
           <li>
-            <a href="/tags#Open Data-ref">Open Data <span>12</span></a>
+            <a href="/tags#Open Data-ref">Open Data <span>13</span></a>
           </li>
           <li>
             <a href="/tags#OGD-ref">OGD <span>1</span></a>
@@ -709,39 +754,6 @@ But that doesn&#39;t mean it was not worth to open it.</p>
 <li>If you have a budget for Open Data, don&#39;t spend it for someone to create an app with your data. Use it to organize events, invite people, do whatever you are best at!</li>
 <li><strong>Seriously: No more contests, no more fucking prizes.</strong> </li>
 </ul>
-
-
-      </div>
-      <div class="posts">
-        <h2 class="title"><span class="date">30.01.2014</span><a href="/posts/2014/01/all-new-in-2014">All new in 2014</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#ruhoh-ref">ruhoh <span>1</span></a>
-          </li>
-        </ul>
-
-        <p>Some time ago I started to fiddle with <a href="http://ruhoh.com">ruhoh</a>, a static blog generator.
-I thought the idea of having static files as <em>the interface</em> to your website was intriguing.</p>
-
-<p>When I started ruhoh was still beta (I don&#39;t remember the exact version number, but you can <a href="https://github.com/metaodi/odi86.ruhoh.com">see for yourself</a> if you want).
-The nice thing about ruhoh is, that it&#39;s still in development, and not all things just work. But the creator of ruhoh is available on <a href="https://twitter.com/ruhohBlog">Twitter</a> or <a href="https://github.com/ruhoh/ruhoh.rb">GitHub</a>, so you can just ask, if something does not work.</p>
-
-<p>Anyway, my early attempts to move from Tumblr to ruhoh never really made it past this fiddle phase.
-But when Tumblr announced a big DNS change and I found out that the DNS service I was using (<a href="http://xname.org">XName</a>) is really bad when I comes to changes, I <em>lost</em> my blog.</p>
-
-<p>I used to blog under the domain <code>readmore.ch</code>. But this doesn&#39;t feel right anymore. I use my nickname &#39;odi&#39; resp. &#39;metaodi&#39; all over the interwebs. So why not use it for my blog?
-Therefore I was once more looking into ruhoh, which in the meantime grew to a pretty good stable product (with still some fiddling if you want). So finally I created a new blog using ruhoh 2.6, imported my old Tumblr content here as markdown files and start all over again.</p>
-
-<p>The fun part was to upgrade the <a href="https://github.com/ruhoh/theme-bootstrap-2">ruhoh standard template</a> to <a href="http://getbootstrap.com/">Bootstrap 3</a>.
-Now I got an up to date blog, which is even responsive.
-<a href="https://github.com/metaodi/metaodi.github.io">The complete source can be found on GitHub</a>.
-Btw: I use <a href="http://pages.github.com/">GitHub Pages</a> for the hosting and switched to <a href="https://dnsimple.com">DNSimple</a> to provide my DNS service for <code>metaodi.ch</code>.</p>
-
-<p>My plan for this blog is, that it should contain my opinion on various topics. It should not be too technical (I will write such content on other blogs, like the one of my company). It&#39;ll be mainly in English, but every once in a while I will write in German if needed (look out for the corresponding tag).</p>
-
-<p>Happy reading and welcome to my new home!</p>
 
 
       </div>

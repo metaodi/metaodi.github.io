@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <title>
+                Make open data discoverable for search engines | metaodi
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Stefan Oderbolz (&quot;Odi&quot;)">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- load static files from bower -->
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Le styles -->
+<link href='/assets/stylesheets/style-a039e10a7d2de8b24d250376ec3148ed.css' type='text/css' rel='stylesheet' media='all'>
+<link href='/assets/stylesheets/google_prettify/sons-of-obsidian-afb0925bfa2d994f17dab93e13fbf999.css' type='text/css' rel='stylesheet' media='all'>    
+    <!-- Le scripts -->
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/posts/rss.xml" />
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+  -->
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">metaodi</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            
+              <li><a href="/talks">Talks/Workshops</a></li>
+            
+            
+              <li><a href="/tags">Tags</a></li>
+            
+            
+              <li><a href="/archive">Archive</a></li>
+            
+            
+              <li><a href="/about">About me</a></li>
+            
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>Make open data discoverable for search engines </h1>
+</div>
+
+<div class="row-fluid post-full">
+  <div class="col-md-12">
+    <div class="date">
+      <span>24.04.2018</strong>
+    </div>
+    <div class="content">
+      <p><em>Note: this blogpost was first published on the <a href="https://www.liip.ch/en/blog/make-open-data-discoverable-for-search-engines">Liip Blog</a>.</em></p>
+
+<p>Open data portals are a great way to discover datasets and present them to the public.
+But they lack interoperability and it’s thus even harder to search across them.
+Imagine if you’re looking for a dataset it’s just a simple &quot;google search&quot; away.
+Historically there are <a href="http://rs.tdwg.org/dwc/index.htm">lots</a> <a href="http://www.dcc.ac.uk/resources/metadata-standards/ddi-data-documentation-initiative">and</a> <a href="https://www.w3.org/TR/vocab-data-cube/">lots</a> <a href="https://frictionlessdata.io/specs/data-packages/">of</a> <a href="https://www.iso.org/standard/26020.html">metadata</a> <a href="https://www.loc.gov/marc/">standards</a>.
+CKAN as the de-facto standard uses a model that is close to <a href="http://dublincore.org/specifications/">Dublin Core</a>.
+It consists of 15 basic fields to describe a dataset and its related resources.</p>
+
+<p>In the area of Open Government Data (OGD) the metadata standard that is widely used is <a href="https://www.w3.org/TR/vocab-dcat/">DCAT</a>.
+Especially the application profiles (&quot;DCAT-AP&quot;), which are a specialization of the DCAT standard for certain topic areas or countries.
+For CKAN the <a href="https://github.com/ckan/ckanext-dcat">ckanext-dcat</a> extension provides plugins to expose and consume DCAT-compatible data using an RDF graph.
+We use this extension on <a href="https://opendata.swiss/">opendata.swiss</a> and <a href="https://data.stadt-zuerich.ch">data.stadt-zuerich.ch</a>, as it provides handy interfaces to extend it to our custom data model.
+I&#39;m a maintainer and code contributor to this extension.</p>
+
+<p>When Dan Brickley working for  Google, <a href="https://github.com/ckan/ckanext-dcat/issues/75">opened an issue on the DCAT extension</a> about implementing <a href="http://schema.org/Dataset">schema.org/Dataset</a> for CKAN, I was very excited.
+I only learned about it in December 2017 and thought it would be a fun feature to implement over the holidays.
+But what exactly was Dan suggesting?</p>
+
+<p>With ckanext-dcat we already have the bridge from our relational (&quot;database&quot;) model to a graph (&quot;linked data&quot;).
+This is a huge step enables new uses of our data. Remember the 5 star model of Sir Tim Berners-Lee?</p>
+
+<p><img src="/assets/media/5-star-steps.jpg" alt="5 star model describing the quality of the data">
+Source: <a href="http://5stardata.info/en/">http://5stardata.info/en/</a>, CC-Zero</p>
+
+<p>So with our RDF, we already reached 4 stars!
+Now imagine a search engine takes all those RDFs, and is able to search in them and eventually is even able to connect them together.
+This is where schema.org/Dataset comes in.
+Based on the request from Dan I built a <a href="https://github.com/ckan/ckanext-dcat/pull/108">feature in ckanext-dcat</a> to map the DCAT dataset to a schema.org/Dataset.
+By default it is returning the data as <a href="https://json-ld.org/">JSON-LD</a>. </p>
+
+<p>Even if you&#39;ve never heard of JSON-LD, chances are, that you’ve used it.
+Google is promoting it with the keyword <a href="https://developers.google.com/search/docs/guides/intro-structured-data">Structured Data</a>.
+At its core, JSON-LD is a JSON representation of an RDF graph.
+But Google is pushing this standard forward to enable all kinds of “semantic web” applications.
+The goal is to let a computer understand the content of a website or any other content that has JSON-LD embedded.
+And in the future, Google wants to have a better understanding of the concept of a <a href="https://developers.google.com/search/docs/data-types/dataset">&quot;dataset&quot;</a>, or to put it in the words of Dan Brickley:</p>
+
+<blockquote>
+<p>It&#39;s unusual for Google to talk much about search feature plans in advance, but in this case I can say with confidence &quot;we are still figuring out the details!&quot;, and  that the shape of actual real-world data will be a critical part of that. That is why we put up the documentation as early as possible. If all goes according to plan, we will indeed make it substantially easier for people to find datasets via Google; whether that is via the main UI or a dedicated interface (or both) is yet to be determined. Dataset search has various special challenges which is why we need to be non-comital on the details at the stage, and why we hope publishers will engage with the effort even if it&#39;s in its early stages...</p>
+</blockquote>
+
+<p>This feature is deployed on the CKAN demo instance, so let’s look at an example.
+I can use the API to get a dataset as JSON-LD.
+So for the dataset <a href="https://demo.ckan.org/dataset/energy-in-malaga">Energy in Málaga</a>, I could build the URL like that:</p>
+
+<ul>
+<li>Append “.jsonld”</li>
+<li>Specify “schemaorg” as the profile (i.e. the format of the mapping)</li>
+</ul>
+
+<p>Et voilà: <a href="https://demo.ckan.org/dataset/energy-in-malaga.jsonld?profiles=schemaorg">https://demo.ckan.org/dataset/energy-in-malaga.jsonld?profiles=schemaorg</a></p>
+
+<p>This is the result as JSON-LD:</p>
+
+<pre><code class="json">
+{
+  &quot;@context&quot;: {
+    &quot;adms&quot;: &quot;http://www.w3.org/ns/adms#&quot;,
+    &quot;dcat&quot;: &quot;http://www.w3.org/ns/dcat#&quot;,
+    &quot;dct&quot;: &quot;http://purl.org/dc/terms/&quot;,
+    &quot;foaf&quot;: &quot;http://xmlns.com/foaf/0.1/&quot;,
+    &quot;gsp&quot;: &quot;http://www.opengis.net/ont/geosparql#&quot;,
+    &quot;locn&quot;: &quot;http://www.w3.org/ns/locn#&quot;,
+    &quot;owl&quot;: &quot;http://www.w3.org/2002/07/owl#&quot;,
+    &quot;rdf&quot;: &quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot;,
+    &quot;rdfs&quot;: &quot;http://www.w3.org/2000/01/rdf-schema#&quot;,
+    &quot;schema&quot;: &quot;http://schema.org/&quot;,
+    &quot;skos&quot;: &quot;http://www.w3.org/2004/02/skos/core#&quot;,
+    &quot;time&quot;: &quot;http://www.w3.org/2006/time&quot;,
+    &quot;vcard&quot;: &quot;http://www.w3.org/2006/vcard/ns#&quot;,
+    &quot;xsd&quot;: &quot;http://www.w3.org/2001/XMLSchema#&quot;
+  },
+  &quot;@graph&quot;: [
+    {
+      &quot;@id&quot;: &quot;https://demo.ckan.org/dataset/c8689e49-4fb2-43dd-85dd-ee243104a2a9&quot;,
+      &quot;@type&quot;: &quot;dcat:Dataset&quot;,
+      &quot;dcat:contactPoint&quot;: {
+        &quot;@id&quot;: &quot;_:N71006d3e0205458db0cc7ced676f91e0&quot;
+      },
+      &quot;dcat:distribution&quot;: [
+        {
+          &quot;@id&quot;: &quot;https://demo.ckan.org/dataset/c8689e49-4fb2-43dd-85dd-ee243104a2a9/resource/c3c5b857-24e7-4df7-ae1e-8fbe29db93f3&quot;
+        },
+        {
+          &quot;@id&quot;: &quot;https://demo.ckan.org/dataset/c8689e49-4fb2-43dd-85dd-ee243104a2a9/resource/5ecbfa6c-9ea0-4f5f-9fbe-eb39964c0f7f&quot;
+        },
+        {
+          &quot;@id&quot;: &quot;https://demo.ckan.org/dataset/c8689e49-4fb2-43dd-85dd-ee243104a2a9/resource/b74584c7-9a9a-4528-9c73-dc23b29c084d&quot;
+        }
+      ],
+      &quot;dcat:keyword&quot;: [
+        &quot;energy&quot;,
+        &quot;málaga&quot;
+      ],
+      &quot;dct:description&quot;: &quot;Some energy related sources from the city of Málaga&quot;,
+      &quot;dct:identifier&quot;: &quot;c8689e49-4fb2-43dd-85dd-ee243104a2a9&quot;,
+      &quot;dct:issued&quot;: {
+        &quot;@type&quot;: &quot;xsd:dateTime&quot;,
+        &quot;@value&quot;: &quot;2017-06-25T17:02:11.406471&quot;
+      },
+      &quot;dct:modified&quot;: {
+        &quot;@type&quot;: &quot;xsd:dateTime&quot;,
+        &quot;@value&quot;: &quot;2017-06-25T17:05:24.777086&quot;
+      },
+      &quot;dct:publisher&quot;: {
+        &quot;@id&quot;: &quot;https://demo.ckan.org/organization/f0656b3a-9802-46cf-bb19-024573be43ec&quot;
+      },
+      &quot;dct:title&quot;: &quot;Energy in Málaga&quot;
+    },
+    {
+      &quot;@id&quot;: &quot;https://demo.ckan.org/organization/f0656b3a-9802-46cf-bb19-024573be43ec&quot;,
+      &quot;@type&quot;: &quot;foaf:Organization&quot;,
+      &quot;foaf:name&quot;: &quot;BigMasterUMA1617&quot;
+    },
+    {
+      &quot;@id&quot;: &quot;https://demo.ckan.org/dataset/c8689e49-4fb2-43dd-85dd-ee243104a2a9/resource/b74584c7-9a9a-4528-9c73-dc23b29c084d&quot;,
+      &quot;@type&quot;: &quot;dcat:Distribution&quot;,
+      &quot;dcat:accessURL&quot;: {
+        &quot;@id&quot;: &quot;http://datosabiertos.malaga.eu/recursos/energia/ecopuntos/ecoPuntos-23030.csv&quot;
+      },
+      &quot;dct:description&quot;: &quot;Ecopuntos de la ciudad de málaga&quot;,
+      &quot;dct:format&quot;: &quot;CSV&quot;,
+      &quot;dct:title&quot;: &quot;Ecopuntos&quot;
+    },
+    {
+      &quot;@id&quot;: &quot;https://demo.ckan.org/dataset/c8689e49-4fb2-43dd-85dd-ee243104a2a9/resource/c3c5b857-24e7-4df7-ae1e-8fbe29db93f3&quot;,
+      &quot;@type&quot;: &quot;dcat:Distribution&quot;,
+      &quot;dcat:accessURL&quot;: {
+        &quot;@id&quot;: &quot;http://datosabiertos.malaga.eu/recursos/ambiente/telec/201706.csv&quot;
+      },
+      &quot;dct:description&quot;: &quot;Los datos se corresponden a la información que se ha decidido historizar de los sensores instalados en cuadros eléctricos de distintas zonas de Málaga.&quot;,
+      &quot;dct:format&quot;: &quot;CSV&quot;,
+      &quot;dct:title&quot;: &quot;Lecturas cuadros eléctricos Junio 2017&quot;
+    },
+    {
+      &quot;@id&quot;: &quot;https://demo.ckan.org/dataset/c8689e49-4fb2-43dd-85dd-ee243104a2a9/resource/5ecbfa6c-9ea0-4f5f-9fbe-eb39964c0f7f&quot;,
+      &quot;@type&quot;: &quot;dcat:Distribution&quot;,
+      &quot;dcat:accessURL&quot;: {
+        &quot;@id&quot;: &quot;http://datosabiertos.malaga.eu/recursos/ambiente/telec/nodos.csv&quot;
+      },
+      &quot;dct:description&quot;: &quot;Destalle de los cuadros eléctricos con sensores instalados para su gestión remota.&quot;,
+      &quot;dct:format&quot;: &quot;CSV&quot;,
+      &quot;dct:title&quot;: &quot;Cuadros eléctricos&quot;
+    },
+    {
+      &quot;@id&quot;: &quot;_:N71006d3e0205458db0cc7ced676f91e0&quot;,
+      &quot;@type&quot;: &quot;vcard:Organization&quot;,
+      &quot;vcard:fn&quot;: &quot;Gabriel Requena&quot;,
+      &quot;vcard:hasEmail&quot;: &quot;gabi@email.com&quot;
+    }
+  ]
+}
+</code></pre>
+
+<p>Google even provides a <a href="https://search.google.com/structured-data/testing-tool#url=https%3A%2F%2Fdemo.ckan.org%2Fdataset%2Fenergy-in-malaga.jsonld%3Fprofiles%3Dschemaorg">Structured Data Testing Tool</a> where you can submit a URL and it will tell you if the data is valid.</p>
+
+<p>Of course knowing the CKAN API is good if you&#39;re a developer, but not really the way to go if you want a search engine to find you datasets.
+So the JSON-LD that you can see above, is already embedded on the <a href="https://demo.ckan.org/dataset/energy-in-malaga">dataset page</a> (check out the <a href="https://search.google.com/structured-data/testing-tool#url=https%3A%2F%2Fdemo.ckan.org%2Fdataset%2Fenergy-in-malaga">testing tool with just the dataset URL</a>).
+So if you have enabled this feature, every time a search engine visits your portal, it&#39;ll get structured information about the dataset it crawls instead of simply the HTML of the page.</p>
+
+<p><a href="https://github.com/ckan/ckanext-dcat#structured-data">Check the documentation</a> for more information, but most importantly: if you&#39;re running CKAN, give it a try! </p>
+
+    </div>
+    <ul class="tag_box inline">
+      <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+      <li>
+        <a href="/tags#Open Data-ref">Open Data <span>13</span></a>
+      </li>
+      <li>
+        <a href="/tags#CKAN-ref">CKAN <span>3</span></a>
+      </li>
+      <li>
+        <a href="/tags#Linked Data-ref">Linked Data <span>1</span></a>
+      </li>
+    </ul>
+    <hr>
+    <ul class="pagination">
+        <li class="prev"><a href="/posts/2017/05/open-education-day-2017" title="Open Education Day 2017: HTML/CSS Workshop">&larr; Previous</a></li>
+
+        <li><a href="/archive">Archive</a></li>
+
+        <li class="next"><a href="/posts/2019/02/export-ckan-datasets" title="Export datasets from CKAN on the command line">Next &rarr;</a></li>
+    </ul>
+    <hr>
+    <div id="disqus_thread"></div>
+<script>
+    var disqus_developer = 1;
+    var disqus_shortname = 'metaodi'; // required: replace example with your forum shortname
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+  </div>
+</div>
+
+
+      </div>
+
+      <hr>
+      <div class="footer">
+        <p>&copy; Stefan Oderbolz (&quot;Odi&quot;) 2019
+          with <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a>
+          and <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>
+        </p>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- Google Prettify -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.js"></script>
+<script>
+  var pres = document.getElementsByTagName("pre");
+  for (var i=0; i < pres.length; ++i) {
+    pres[i].className = "prettyprint linenums";
+  }
+  prettyPrint();
+</script>
+<!-- end Google Prettify -->
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-47578431-1']);
+  _gaq.push(['_trackPageview']);
+  
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+    
+  </body>
+</html>

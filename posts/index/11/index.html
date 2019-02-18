@@ -20,7 +20,7 @@
     <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- Le styles -->
-<link href='/assets/stylesheets/style.css' type='text/css' rel='stylesheet' media='all'>
+<link href='/assets/stylesheets/style-a039e10a7d2de8b24d250376ec3148ed.css' type='text/css' rel='stylesheet' media='all'>
 <link href='/assets/stylesheets/google_prettify/sons-of-obsidian-afb0925bfa2d994f17dab93e13fbf999.css' type='text/css' rel='stylesheet' media='all'>    
     <!-- Le scripts -->
 
@@ -76,6 +76,42 @@
       <div class="content">
         <div class="row-fluid">
   <div class="col-md-12">
+      <div class="posts">
+        <h2 class="title"><span class="date">25.10.2005</span><a href="/posts/2005/10/csv-seperator-character">CSV seperator character</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#CSV-ref">CSV <span>3</span></a>
+          </li>
+        </ul>
+
+        <p>In my particular case I got an excel sheet from the customer to import
+in a DB. The idea is to use a CSV as the base for an Oracle external
+table and then import the data in the real table with a “insert into
+select”.</p>
+
+<p>When I loaded the excel sheet and saved it as a CSV, the semicolon (“;”)
+was used as a seperator. I therefore created my external table and
+worked with the data. Then i realized that the order of the fields get
+messed up, because there were free text fields that contained “;” as
+data.</p>
+
+<p>I didn’t find an option in excel to change the seperator character, but
+as usually <a href="http://www.google.com/search?q=excel+csv+separator+character">Google is your
+friend</a>.</p>
+
+<p>This character is saved directly in your system in the “Region and
+Language Options” in the “Control Panel” (yes, I’m talking about MS
+Windows). You can selected there the “Customize” button and change the
+“List separator” to the value you want.</p>
+
+<p>First I tried to set this to “###”, but this didn’t work, excel then
+used a single space as separator. It seems it’s not allowed to use
+multiple characters. Now, I use “#” and everything works fine.</p>
+
+
+      </div>
       <div class="posts">
         <h2 class="title"><span class="date">19.04.2005</span><a href="/posts/2005/04/schengen-propaganda">Schengen Propaganda</a> </h3>
 
