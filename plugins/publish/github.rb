@@ -35,6 +35,7 @@ class Ruhoh
       %w(
       CNAME
       README.md
+      bower.json
       ).each do |static_file|
         FileUtils.cp(File.join('.', static_file), ruhoh.config['compiled_path'])
       end
