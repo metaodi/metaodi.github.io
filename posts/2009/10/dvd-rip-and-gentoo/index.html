@@ -163,7 +163,30 @@ imagemagick in /etc/portage/package.use and re-emerged imagemagick.</p>
 
     </div> <!-- /container -->
 
-    
+    <!-- Google Prettify -->
+enabled:<script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.js"></script>
+
+<script>
+  var pres = document.getElementsByTagName("pre");
+  var is_gist_present = document.getElementsByClassName("gist"); is_gist_present = is_gist_present.length > 0;
+
+  for (var i=0; i < pres.length; ++i) {
+    var is_valid;
+    if(is_gist_present) {
+      is_valid = pres[i].getElementsByTagName("code"); 
+      is_valid = (is_valid.length > 0);
+    } else {
+      is_valid = true;
+    }
+
+    if(is_valid) {
+      pres[i].className = "prettyprint ";
+    }
+  }
+  prettyPrint();
+</script>
+<!-- end Google Prettify -->
+
     <script type="text/javascript">
 
   var _gaq = _gaq || [];
