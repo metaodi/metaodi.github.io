@@ -10,4 +10,4 @@ If you want more information about the event, read the [excellent blog post](htt
 During the event there was also a series of lightning talks about a variety of topics.
 I held a talk about "Github & Git", the slides are on [my github account](https://github.com/metaodi/git-talk) or [available online](http://metaodi.ch/git-talk) and they are actually a [fork of a similar talk](https://github.com/0x530302/git-talk/network) at a previous "Jugend hackt" event.
 
-<iframe src="http://metaodi.ch/git-talk" width="576" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://metaodi.ch/git-talk" width="576" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
