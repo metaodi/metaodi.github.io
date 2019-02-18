@@ -23,15 +23,12 @@ class Ruhoh
         plain "    Source: '#{ _source_branch }' branch."
         plain "  Compiled: '#{ _deploy_branch }' branch."
       }
-
+      
       if deploy_branch?
         puts "Currently in deploy branch: '#{ deploy_branch }'; switching to source branch: '#{ source_branch }'..."
         `git checkout #{ source_branch }`
       end
-
-      # compile css
-      system('lessc', 'theme-metaodi/stylesheets/style.less', 'theme-metaodi/stylesheets/style.css')
-
+      
       ruhoh = compile
 
       # Copy static files to compilation
@@ -41,6 +38,11 @@ class Ruhoh
       ).each do |static_file|
         FileUtils.cp(File.join('.', static_file), ruhoh.config['compiled_path'])
       end
+      
+      # compile css + copy to compilation
+      system('lessc', 'theme-metaodi/stylesheets/style.less', 'theme-metaodi/stylesheets/style.css')
+      FileUtils.cp('theme-metaodi/stylesheets/style.css', File.join(ruhoh.config['compiled_path'], 'assets'))
+
 
       # Add to deploy_branch
       return false unless checkout_deploy_branch
