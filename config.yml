@@ -4,7 +4,7 @@ theme-metaodi:
 bower_components:
     use: "static"
 
-production_url: 'http://metaodi.ch'
+production_url: 'https://metaodi.ch'
 
 date_format: '%d.%m.%Y'
 
