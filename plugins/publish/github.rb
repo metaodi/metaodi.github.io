@@ -42,7 +42,7 @@ class Ruhoh
       
       # compile css + copy to compilation
       system('lessc', 'theme-metaodi/stylesheets/style.less', 'theme-metaodi/stylesheets/style.css')
-      FileUtils.cp('theme-metaodi/stylesheets/style.css', File.join(ruhoh.config['compiled_path'], 'assets'))
+      FileUtils.cp('theme-metaodi/stylesheets/style.css', File.join(ruhoh.config['compiled_path'], 'assets', 'stylesheets'))
 
 
       # Add to deploy_branch
