@@ -17,6 +17,11 @@ posts:
         per_page: 10
 
 widgets:
+    syntax:
+        linenums : false
+        cdn:
+            enable: true
+            path: "https://cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.js"
     analytics:
         use: google
         tracking_id : 'UA-47578431-1'
