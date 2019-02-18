@@ -44,6 +44,10 @@ class Ruhoh
       system('lessc', 'theme-metaodi/stylesheets/style.less', 'theme-metaodi/stylesheets/style.css')
       FileUtils.cp('theme-metaodi/stylesheets/style.css', File.join(ruhoh.config['compiled_path'], 'assets', 'stylesheets'))
 
+      # compile bower + copy to compilation
+      system('bower', 'install')
+      FileUtils.cp_r('bower_components', ruhoh.config['compiled_path'])
+
 
       # Add to deploy_branch
       return false unless checkout_deploy_branch
@@ -52,7 +56,6 @@ class Ruhoh
       `git add .` # system() doesn't work for some reason =/
 
       # Commit and push
-      system('bower', 'install')
       system("git", "commit", "-m", "#{ source_branch }: #{ last_commit_message(source_branch) }")
       system("git", "push", "origin", deploy_branch)
       system('git', 'checkout', source_branch)
