@@ -35,8 +35,9 @@
     <!-- Le styles -->
     {{# stylesheets.load }}
       style.css
-      google_prettify/sons-of-obsidian.css
     {{/ stylesheets.load }}
+
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=sons-of-obsidian"></script>
     
     <!-- Le scripts -->
     {{# javascripts.load }}
@@ -96,7 +97,6 @@
 
     </div> <!-- /container -->
 
-    {{{ widgets.google_prettify }}}
     {{{ widgets.analytics }}}
     
   </body>
