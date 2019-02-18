@@ -29,6 +29,9 @@ class Ruhoh
         `git checkout #{ source_branch }`
       end
 
+      # compile css
+      system('lessc', 'theme-metaodi/stylesheets/style.less', 'theme-metaodi/stylesheets/style.css')
+
       ruhoh = compile
 
       # Copy static files to compilation
@@ -47,7 +50,6 @@ class Ruhoh
 
       # Commit and push
       system('bower', 'install')
-      system('lessc', 'theme-metaodi/stylesheets/style.less', 'theme-metaodi/stylesheets/style.css')
       system("git", "commit", "-m", "#{ source_branch }: #{ last_commit_message(source_branch) }")
       system("git", "push", "origin", deploy_branch)
       system('git', 'checkout', source_branch)
