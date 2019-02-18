@@ -17,3 +17,13 @@ Use the dashboard for an overview http://localhost:9292/dash
 ```bash
 bundle exec ruhoh publish github
 ```
+
+
+## Install
+
+This project uses bower to install dependencies
+
+```
+sudo npm install -g bower
+bower install
+```
