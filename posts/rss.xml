@@ -4,7 +4,27 @@
     <title>metaodi</title>
     <description>metaodi</description>
     <link>https://metaodi.ch</link>
-    <pubDate>18.02.2019</pubDate>
+    <pubDate>13.05.2019</pubDate>
+    <item>
+      <title>HSR Fachvortrag: Wie das Open Data Portal der Stadt Z&#xFC;rich seine Daten erntet</title>
+      <link>https://metaodi.ch/posts/2019/04/fachvotrag-hsr</link>
+      <pubDate>30.04.2019</pubDate>
+      <description>&lt;p&gt;As a &lt;a href="https://www.hsr.ch/"&gt;HSR allumnus&lt;/a&gt; I was proud to be invited to talk at the &amp;quot;HSR Fachvortrag&amp;quot; series about &lt;a href="https://www.stadt-zuerich.ch/opendata"&gt;my new employer&lt;/a&gt; and how we harvest data for the &lt;a href="https://data.stadt-zuerich.ch"&gt;Open Data Portal of Zurich&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here are my slides:&lt;/p&gt;
+
+&lt;script async class="speakerdeck-embed" data-id="f87eef9973b144d1a679e3b6891cb30b" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"&gt;&lt;/script&gt;
+</description>
+    </item>
+    <item>
+      <title>Open Data Beer: Open Data and search engines</title>
+      <link>https://metaodi.ch/posts/2019/04/open-data-beer-search-engine</link>
+      <pubDate>02.04.2019</pubDate>
+      <description>&lt;p&gt;I could present &lt;a href="/posts/2018/04/make-open-data-discoverable-for-search-engines/"&gt;my contribution to CKAN for the Google Dataset Search&lt;/a&gt; at the &lt;a href="https://opendatabeer.ch/"&gt;Open Data Beer&lt;/a&gt; event at Liip on the 2 April 2019.&lt;/p&gt;
+
+&lt;script async class="speakerdeck-embed" data-id="b5251923bbd14663bfb7df0154c9cc93" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"&gt;&lt;/script&gt;
+</description>
+    </item>
     <item>
       <title>Export datasets from CKAN on the command line</title>
       <link>https://metaodi.ch/posts/2019/02/export-ckan-datasets</link>
@@ -216,6 +236,16 @@ So the JSON-LD that you can see above, is already embedded on the &lt;a href="ht
 So if you have enabled this feature, every time a search engine visits your portal, it&amp;#39;ll get structured information about the dataset it crawls instead of simply the HTML of the page.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href="https://github.com/ckan/ckanext-dcat#structured-data"&gt;Check the documentation&lt;/a&gt; for more information, but most importantly: if you&amp;#39;re running CKAN, give it a try! &lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Digital Real Estate Summit 2018: Open Data in der Immobilienbranche</title>
+      <link>https://metaodi.ch/posts/2018/03/opendata-in-der-immobilienbranche</link>
+      <pubDate>06.03.2018</pubDate>
+      <description>&lt;p&gt;Ich war eingeladen am Digital Real Estate Summit 2018 &#xFC;ber &amp;quot;Open Data in der Immobilienbranche zu sprechen&amp;quot;.
+Der Talk war ein kurzer Abriss zum Thema Open Data und v.a. ein Workshop-Teil f&#xFC;r die Teilnehmer um sich mit dem Thema auseinander zu setzen.&lt;/p&gt;
+
+&lt;script async class="speakerdeck-embed" data-id="34ca6721337848748982601f7b1ee57d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"&gt;&lt;/script&gt;
 </description>
     </item>
     <item>

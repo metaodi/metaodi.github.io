@@ -76,6 +76,267 @@
         <div class="row-fluid">
   <div class="col-md-12">
       <div class="posts">
+        <h2 class="title"><span class="date">08.07.2014</span><a href="/posts/2014/07/q-a-wall">Q&amp;A Wall at the OKFestival in Berlin</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#OKFestival-ref">OKFestival <span>1</span></a>
+          </li>
+          <li>
+            <a href="/tags#Conferences-ref">Conferences <span>5</span></a>
+          </li>
+          <li>
+            <a href="/tags#Talk-ref">Talk <span>14</span></a>
+          </li>
+        </ul>
+
+        <p>Some time ago the OKFestival asked for session proposals for this years conference in Berlin.
+I was at the conference last year in Geneva and enjoyed very much.
+It&#39;s just a nice atmosphere to talk to people from divers backgrounds (I&#39;ll get back to that in a minute).</p>
+
+<p>Me and my colleagues from Liip thought about sessions for this years topic &quot;Open Minds to Open Action&quot;.
+The <a href="http://2014.okfestival.org/programme/programme-faqs/">Programme FAQs</a> gave us some hints, what it takes for a session to be selected:</p>
+
+<blockquote>
+<ul>
+<li>Does the proposal advance the overall <a href="http://2014.okfestival.org/programme/narrative-and-streams/">mission of the event</a></li>
+<li>Does the proposal offer participants a concrete, valuable outcome?</li>
+<li>Does the proposal advance the conversation around its area of open?</li>
+<li>Is the proposal interactive? – <em>hint: slides and lectures strongly discouraged</em></li>
+<li>Does the proposal value or build on OKFestival’s principles of inclusivity and diversity?</li>
+</ul>
+</blockquote>
+
+<h3 id="toc_0">Help newbies at the conference</h3>
+
+<p>We asked ourselves, how we can help people to connect to each other?
+We pictured a person that is interesting in the &quot;Open Knowledge&quot; topic but doesn&#39;t know any people at the conference.
+The first step is always the hardest.
+How do you find people that are interested in the same topics?
+Of course, one can attend sessions and try to talk to the people there.</p>
+
+<p>But sometimes a little extra help is required.
+Some conference solve this problem by providing some kind of buddy system (e.g. the <a href="http://events.ccc.de/2013/11/25/chaospatinnen/">Chaos Mentors at the 30C3</a>).
+The buddies are volunteers that show newbies around, and show them the venue, introduce them to people and so on.
+This is great for large conferences but <em>might</em> be an overkill for smaller ones.</p>
+
+<p>As we were brainstorming about this we came up with the concept of a place, where everybody is encourages to write down his/her questions, so that others can pick that up and answer them right away or provide guidance.
+We first thought about doing this online using something like a twitter hashtag.
+But in the end, this is now why you went to a conference.
+You want to meet real people to talk face-to-face.</p>
+
+<h3 id="toc_1">Q&amp;A Wall to the rescue</h3>
+
+<p>So the challange is just, to find these people.
+To help making this asychronous, we developed the idea of a <strong>physical Q&amp;A wall</strong>.
+This wall will be at the venue and provides space to write down questions (think of sticky notes or whiteboards to directly write on).
+Like that, this wall provides a meeting point or to simply read and write questions.</p>
+
+<p>I&#39;m very interested in how this wall is being used.
+Maybe Q&amp;A is not the only thing that could be done with it.
+Everybody is invited to use that space.
+There are similar approaches to use such walls or boards to share news in local communities (<a href="http://candychang.com/community-chalkboards/">&quot;Community Chalkboards&quot;</a>).</p>
+
+<p>Btw: the Q&amp;A Wall is also listed as a <a href="http://sched.co/1tx3TIy">session at the OKFestival</a>!</p>
+
+
+      </div>
+      <div class="posts">
+        <h2 class="title"><span class="date">11.02.2014</span><a href="/posts/2014/02/usage-of-mongodb-with-a-spatial--and-geojson">Usage of MongoDB with a spatial index and GeoJSON</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#MongoDB-ref">MongoDB <span>2</span></a>
+          </li>
+          <li>
+            <a href="/tags#Open Data-ref">Open Data <span>16</span></a>
+          </li>
+          <li>
+            <a href="/tags#OpenStreetMap-ref">OpenStreetMap <span>2</span></a>
+          </li>
+          <li>
+            <a href="/tags#GIS-ref">GIS <span>1</span></a>
+          </li>
+        </ul>
+
+        <p>During the <a href="http://opendata.ch/projects/open-data-zuerich-hacknights/">Zurich Hacknights 2013</a> I was part of the team, that wanted to build a <a href="http://make.opendata.ch/wiki/project:denkmalfuehrer">guide for monuments in Zurich</a>.
+We were a large group of people with lots of ideas.
+Unfortunately I was the only web developer at that time, so I did my best to create a <a href="https://github.com/denkmap/denkmap">prototype of the guide called <em>Denkmap</em></a>.</p>
+
+<p>There is a <a href="http://www.geolion.zh.ch/geodatenservice/show?nbid=691">webservice (WFS) of the GIS-ZH containing all monuments of the Canton</a>.
+I converted the source to <a href="http://geojson.org/">GeoJSON</a> using <a href="http://www.gdal.org/ogr2ogr.html">ogr2ogr</a>:</p>
+
+<pre><code class="bash">wget -O DenkmalschutzWFS.gml http://maps.zh.ch/wfs/DenkmalschutzWFS?service=wfs&amp;version=1.1.0&amp;request=GetFeature&amp;typeName=denkmalschutzobjekte
+ogr2ogr -f geoJSON -s_srs EPSG:21781 -t_srs EPSG:4326 denkmal.geojson DenkmalschutzWFS.gml
+</code></pre>
+
+<p>I added the result as a layer to the map.
+This worked, but unfortunately the GeoJSON file is about <strong>7MB</strong>.
+And each client has to download it.
+This takes time, especially on mobile devices not connected to a WLAN.</p>
+
+<p><strong>For a prototype this was okay, but how can we solve this for the future?</strong></p>
+
+<p>At this point it was clear that I need some part running on a server.
+This part must be able to divide all my data in reasonable chunks, that the client is able to download in a short time.
+Because I&#39;m  already dealing with GeoJSON and I didn&#39;t yet use <a href="http://www.mongodb.org/">MongoDB</a>, I wanted to give it a try.
+I read that there is a <a href="http://docs.mongodb.org/manual/applications/geospatial-indexes/">spatial index</a> and the possibility to run <a href="http://docs.mongodb.org/manual/reference/operator/query-geospatial/">spatial queries</a>.
+Hence, I had my perfect candidate.
+The other obvious solution would have been <a href="http://postgis.net/">PostgreSQL with PostGIS</a>.
+This would have worked too, but I wanted to try something new. </p>
+
+<h3 id="toc_0">Import GeoJSON in MongoDB</h3>
+
+<p>This is quite easy if you respect the rules set by the <a href="http://docs.mongodb.org/manual/reference/program/mongoimport/"><code>mongoimport</code> command</a>:</p>
+
+<ol>
+<li>There used to be a <code>FeatureCollection</code>, which basically is a big array. I removed it to get a list of objects.</li>
+<li>Only use the MongoDB-supported subset of GeoJSON (i.e. Point, LineString and Polygon)</li>
+<li>The file must contain exactly one object per line, remove extra lines to make the importer happy</li>
+</ol>
+
+<p>Once this is done, you can run the following to import your GeoJSON in a database called <code>denkmap</code> and a collection called <code>wfsktzh</code>:</p>
+
+<pre><code class="bash">mongoimport --db denkmap --collection wfsktzh &lt; denkmal.geojson
+mongo denkmap --eval &quot;db.wfsktzh.ensureIndex({geometry: &#39;2dsphere&#39;})&quot;
+</code></pre>
+
+<h3 id="toc_1">Create RESTful interface to consume the data</h3>
+
+<p>Once the data is save and sound in MongoDB, all you need is a script to expose exactly the data you need.</p>
+
+<p>The <a href="https://www.npmjs.org/package/express">Sinatra-like <code>express</code> framework</a> helps to create the structure:</p>
+
+<pre><code class="javascript">var express = require(&#39;express&#39;),
+    geodata = require(&#39;./geodata.js&#39;),
+    app = express(),
+    port = 3000;
+
+app.get(&#39;/nearby/:lat/:lon&#39;, function(req, res) {
+    console.log(req.method + &#39; request: &#39; + req.url);
+    var lat = parseFloat(req.params.lat),
+        lon = parseFloat(req.params.lon);
+    geodata.nearby(lat, lon, function(docs) {
+        res.send(docs);
+    });
+});
+
+app.listen(port);
+console.log(&#39;Listening on port &#39; + port + &#39;...&#39;);
+</code></pre>
+
+<p>This allows us to query MongoDB using URLs like this: <a href="http://localhost:3000/nearby/47.3456/8.5432">http://localhost:3000/nearby/47.3456/8.5432</a></p>
+
+<p>The <code>geodata.js</code> contains the spatial query using <code>$near</code>. It returns all results in 1000m distance from the given coordinates (lat/lon). <a href="https://www.npmjs.org/package/mongojs"><code>mongojs</code> is a Node.js library for MongoDB</a>:</p>
+
+<pre><code class="javascript">var dbUrl = &quot;denkmap&quot;,
+    coll = [&quot;wfsktzh&quot;],
+    db = require(&quot;mongojs&quot;).connect(dbUrl, coll);
+
+exports.nearby = function(lat, lon, callbackFn) {
+    db.wfsktzh.find({
+        geometry: {
+            $near: { 
+                $geometry : {
+                    type: &quot;Point&quot;,
+                    coordinates: [lon, lat]
+                },
+                $maxDistance: 1000
+            }
+        }
+    },
+    function(err, res) {
+        callbackFn(res);
+    });
+}
+</code></pre>
+
+<p>By the way: the project is still active and we are still looking for people to participate.
+The next step would be to connect DenkMap to <a href="http://wikidata.org">WikiData</a> and display some extra information, link to the corresponding Wikipedia page, and/or display images of the monument in the app.</p>
+
+
+      </div>
+      <div class="posts">
+        <h2 class="title"><span class="date">31.01.2014</span><a href="/posts/2014/01/stop-making-stupid-open-data-contests">Stop making stupid Open Data contests!</a> </h3>
+
+        <ul class="tag_box">
+        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
+          <li>
+            <a href="/tags#Open Data-ref">Open Data <span>16</span></a>
+          </li>
+          <li>
+            <a href="/tags#OGD-ref">OGD <span>1</span></a>
+          </li>
+        </ul>
+
+        <p><em>Disclaimer:
+I work for <a href="http://www.liip.ch">Liip</a>, the company that build the <a href="http://opendata.admin.ch">Open Data pilot portal for Switzerland</a>.
+I&#39;m one of the developers of the portal.
+On the other hand, I&#39;m a member of the <a href="http://opendata.ch">opendata.ch</a> association.</em></p>
+
+<p>Although I&#39;m a relatively new member of the Open Data community, I use and work with Open Data in different forms for many years now.
+I&#39;m a keen enthusiast of the underlying idea of openness, collaboration and knowledge sharing.
+But the whole idea of Open Government Data (OGD) in Switzerland is currently broken.
+There are numerous problems and it probably all boils down to false expectations.</p>
+
+<p>To make new data known to the public, often the first idea is to make an app contest.
+At first this sounds like a good idea: People working with your data and creating an app.
+It sounds like a win-win situation.
+Some may even think it&#39;s cheap way to get a lot of apps.
+The problem is, that contests have winners. And when there are winners, there must be losers.
+<strong>Your data is much too valuable, and every contribution is too important to waste time to choose a <em>winner</em>.</strong></p>
+
+<ul>
+<li>You limit the interest in the data (<em>why should I continue my project if I just lost a contest?</em>).</li>
+<li>You limit the collaboration between the different groups that take part in the contest (<em>why should I help somebody else to create a better app, if that decreases my chances to win this contest myself?</em>).</li>
+</ul>
+
+<p>The goal of an OGD data owner should be, that a lot of people know and use your data.
+This makes it worth to create this data in the first place.
+It doesn&#39;t matter if it is used by a special interest group or by an app used by millions of people.</p>
+
+<p>On the other side, hackathons provide a good environment to play around, talk with different people and hack along.
+This is the kind of thing we need.
+Please understand that after such an event there are tons of ideas around. Prototypes, unfinished apps, visualizations etc. This is all very valuable. Don&#39;t expect a bunch of polished, ready-to-use apps as a result.</p>
+
+<p>Most data owners consider it a failure if nothing happens after they release data.
+This is just plain wrong. The whole point of Open Data is to open your data. It&#39;s done. It&#39;s out there.
+Anyone that is interested can use this data. You never know when this is. Eventually someone creates a mashup, where you dataset is the missing piece.</p>
+
+<p>What if this does not happen? It doesn&#39;t matter. Maybe the time was not right. Maybe this dataset is just not interesting enough.
+But that doesn&#39;t mean it was not worth to open it.</p>
+
+<p>But of course there some things that you <em>can</em> and <em>should</em> do. Here is my little list of <strong>DOs</strong> and <strong>DON&#39;Ts</strong>:</p>
+
+<h4 id="toc_0"><strong>DO</strong></h4>
+
+<ul>
+<li>Talk about your data (speeches, blog posts)</li>
+<li>Make events to explain your data</li>
+<li>Bring cool swag to hackathons (for everyone!) :)</li>
+<li>Invite people to visit you, connect your experts with the community</li>
+<li>Provide help to process your data</li>
+<li>Open Source the tools you use internally to make them available for everybody</li>
+<li>Make sure to involve the media (yes, if you release your data or make an event, invite them)</li>
+<li>Coordinate with the community, ask questions, don&#39;t make assumptions</li>
+</ul>
+
+<h4 id="toc_1"><strong>DON&#39;T</strong></h4>
+
+<ul>
+<li>Measure the success of your Open Data by the <em>amount</em> of apps/visualization build with it. Actually, don&#39;t measure the success at all. Concentrate on releasing new and interesting data.</li>
+<li>Expect people to do your work</li>
+<li>Assume everybody was just waiting for your data and must be grateful for it. Give people time to discover your data</li>
+<li>Think that a press release is all it takes to get attention from the media</li>
+<li>If you have a budget for Open Data, don&#39;t spend it for someone to create an app with your data. Use it to organize events, invite people, do whatever you are best at!</li>
+<li><strong>Seriously: No more contests, no more fucking prizes.</strong> </li>
+</ul>
+
+
+      </div>
+      <div class="posts">
         <h2 class="title"><span class="date">30.01.2014</span><a href="/posts/2014/01/all-new-in-2014">All new in 2014</a> </h3>
 
         <ul class="tag_box">
@@ -465,229 +726,6 @@ Sexualität ist einfach eine Facette ihres (pubertären) Charakters, der
 weder übertrieben wirkt noch ins Lächerliche gezogen wird.</p>
 
 <p><em>Leichte Erzählweise, kurzweilige, gute Unterhaltung.</em></p>
-
-
-      </div>
-      <div class="posts">
-        <h2 class="title"><span class="date">04.10.2011</span><a href="/posts/2011/10/zff-2011-kurzes-aus-der-t-rkei">ZFF 2011: Kurzes aus der Türkei</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#Cinema-ref">Cinema <span>26</span></a>
-          </li>
-          <li>
-            <a href="/tags#Zurich Film Festival-ref">Zurich Film Festival <span>25</span></a>
-          </li>
-        </ul>
-
-        <p>Die <a href="http://www.kurzfilmtage.ch/">Internationlen Kurzfilmtage
-Winterthur</a> zeigten <a href="http://www.zurichfilmfestival.org/de//filme/3025/kurzes-aus-der-turkei/">Kurzfilme aus der
-Türkei</a>,
-dem diesjährigen Gastland des Zurich Film Festival. Die beiden Festivals
-haben schon die letzten Jahre eine Zusammenarbeit gepflegt.</p>
-
-<p>__</p>
-
-<h2 id="toc_0"><a href="http://www.imdb.com/title/tt0984004/">My Mother Learns Cinema</a></h2>
-
-<p><a href="http://www.imdb.com/title/tt0984004/"><img src="http://media.tumblr.com/tumblr_lsjev5EprV1qa2z4q.jpg" alt="My Mother Learns
-Cinema" title="My Mother Learns Cinema"></a>
-(Nesimi Yetik, 2007)</p>
-
-<p>Eine kleine Ode ans Kino, als ersten Schritt um das Kino kennen zu
-lernen, lehrt ein Sohn seiner Mutter die korrekte Aussprache einiger
-Regisseur.</p>
-
-<p>__</p>
-
-<h2 id="toc_1"><a href="http://vimeo.com/24874194">Biskilet/Bicycle</a></h2>
-
-<p><a href="http://vimeo.com/24874194"><img src="http://media.tumblr.com/tumblr_lsjgmehJbe1qa2z4q.jpg" alt="Biskilet/Bicycle" title="Biskilet/Bicycle"></a>
-(Serhat Karaaslan, 2010)</p>
-
-<p>Dieser Film, der ganz ohne gesprochene Sprache auskommt, erzählt von
-einem Jungen, der gerne ein Fahrrad hätte. Alles was ihm noch fehlt ist
-ein Hinterrad…</p>
-
-<p>__</p>
-
-<h2 id="toc_2"><a href="http://i-soldier-the-flag.blogspot.com/">I, Soldier</a></h2>
-
-<p><a href="http://i-soldier-the-flag.blogspot.com/"><img src="http://media.tumblr.com/tumblr_lsjg6dBuRs1qa2z4q.png" alt="I,
-Soldier" title="I, Soldier"></a>
-(Ergun Köken, 2007)</p>
-
-<p>Ein ganz spezieller Film, der zum Teil aus 2 Perspektiven gefilmt wurde,
-wobei beide nebeneinander gezeigt werden. Die Aufnahmen sind während den
-Feierlichkeiten zum Unabhängigkeitstag der Türkei entstanden.</p>
-
-<p>__</p>
-
-<h2 id="toc_3"><a href="https://www.facebook.com/pages/DEM-MOMENT/139449276104220?sk=info">Dem (Moment)</a></h2>
-
-<p><a href="https://www.facebook.com/pages/DEM-MOMENT/139449276104220?sk=info"><img src="http://media.tumblr.com/tumblr_lsjh5zqJdl1qa2z4q.png" alt="Dem
-(Moment)" title="Dem (Moment)"></a>
-(Aysegül Okul, 2010)</p>
-
-<p>Ein Mann ist auf dem Weg zu einem Bewerbungsgespräch, unterwegs holt er
-sich noch einen Kaffee und trifft dabei eine Frau, welche Minuten später
-von einem Auto überfahren wird, Kurz darauf durchlebt der Mann die Szene
-nochmals, wird er diesmal das Schlimmste verhindern können?</p>
-
-<p>__</p>
-
-<h2 id="toc_4"><a href="http://www.madebyozlemakin.com/2009/05/gemeinschaft.html">Gemeinschaft</a></h2>
-
-<p><a href="http://www.madebyozlemakin.com/2009/05/gemeinschaft.html"><img src="http://media.tumblr.com/tumblr_lsjig5oDS01qa2z4q.jpg" alt="Gemeinschaft" title="Gemeinschaft"></a>
-(Özlem Akin, 2008)</p>
-
-<p>In diesem kurzen Animationsfilm geht es darum als Gruppe eine unliebsame
-Person loszuwerden. Doch wie stellt man das an? Ein witziger
-Erklärungsversuch.</p>
-
-<p>__</p>
-
-<h2 id="toc_5"><a href="http://www.feritkarahan.com/en/#/filmography/movies">Xewna Yusiv / Yusiv’s Dream</a></h2>
-
-<p><a href="http://www.feritkarahan.com/en/#/filmography/movies"><img src="http://media.tumblr.com/tumblr_lsjjulojfy1qa2z4q.png" alt="Xewna Yusiv / Yusiv&#39;s
-Dream" title="Xewna Yusiv  / Yusiv&#39;s Dream"></a>
-(Ferit Karahan, 2011)</p>
-
-<p>Yusiv führt ein normales Leben bis seine Idylle gestört wird: er wird
-heimlicher Zeuge eines Mordes.</p>
-
-<p>__</p>
-
-<h2 id="toc_6"><a href="http://www.imdb.com/title/tt1515847/">KöY (Das Dorf)</a></h2>
-
-<p><a href="http://www.imdb.com/title/tt1515847/"><img src="http://media.tumblr.com/tumblr_lsjiaxZetH1qa2z4q.jpg" alt="KöY (Das
-Dorf)" title="KöY (Das Dorf)"></a>
-(Mustafa Dok, 2009)</p>
-
-<p>Der zu Beginn sehr lustig-fröhliche Film zeigt einen Mann, der es sich
-zur Aufgabe gemacht hat, auf einem Schild jeweils die genau Anzahl
-Personen die sich im Dorf befinden zu notieren. Dieser Spass wird aber
-jäh durchbrochen als das Militär auftaucht.</p>
-
-<p>__</p>
-
-<h2 id="toc_7"><a href="http://www.distantdreams.de/filme/bende-sira-ich-bin-dran">Bende Sira (Ich bin dran)</a></h2>
-
-<p><a href="http://www.distantdreams.de/filme/bende-sira-ich-bin-dran"><img src="http://media.tumblr.com/tumblr_lsjhzyzddN1qa2z4q.jpg" alt="Bende Sira (Ich bin
-dran)" title="Bende Sira (Ich bin dran)"></a>
-(Ismet Ergün, 2007)</p>
-
-<p>Zum Abschluss gab es noch ein wahres Highlight: eine Gruppe von Jungs
-liebt es ins Kino zu gehen. Da sie nicht genügend Geld haben, gemeinsam
-zu gehen, legen sie jeweils zusammen und bestimmen wer gehen darf. Nach
-dem Filmbesuch, muss derjenige dann natürlich ganz genau erzählen was
-passiert ist. Der Film kommt ganz ohne Untertitel aus, die Bilder
-sprechen für sich. Die Jungs können sehr bildgewaltig von ihren
-Kinoerlebnissen berichten. Ein Schmaus!</p>
-
-
-      </div>
-      <div class="posts">
-        <h2 class="title"><span class="date">30.09.2011</span><a href="/posts/2011/09/zff-2011-kriegerin">ZFF 2011: Kriegerin</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#Cinema-ref">Cinema <span>26</span></a>
-          </li>
-          <li>
-            <a href="/tags#Zurich Film Festival-ref">Zurich Film Festival <span>25</span></a>
-          </li>
-        </ul>
-
-        <p><a href="http://www.zurichfilmfestival.org/de//filme/2059/kriegerin/"><img src="http://media.tumblr.com/tumblr_lscbfabgq11qa2z4q.jpg" alt="Kriegerin" title="Kriegerin"></a></p>
-
-<p><strong>&quot;Kriegerin&quot;</strong> von David Wnendt ist eine Geschichte einer jungen,
-rechtsextremen Frau irgendwo in einer tristen Kleinstadt in
-Ostdeutschland. Der Film bewegt sich auch erstaunlich neutralem Boden,
-auf eine Moralpredigt und billige Erklärungsversuche wird verzichtet.
-Gezeigt wird vielmehr wie sich diese Frau in ihrer Nazi-Clique
-durchschlägt, wie die Leute miteinander umgehen und wie gross ihr Hass
-auf alles Fremde ist. Sobald ein Ausländer aufkreuzt, gibt es Radau,
-Fäuste fliegen. Dabei hauen die Frauen ebenso drauf wie die Männer.</p>
-
-<p>Marisa (Alina Levshin) spürt jedoch, dass etwas nicht stimmt in ihrem
-Weltbild. Nach einem von ihr provozierten Unfall, macht sie eine
-Wandlung durch, davon darf aber natürlich niemand etwas mitbekommen.
-Diese innere Zerrissenheit sieht man Alina Levshin förmlich an,
-wunderbar gespielt, sehr beeindruckend. Einzig die Nebengeschichte von
-Svenja, einer 15jährigen, die neu zur Clique stösst, ist etwas gar
-überzeichnet. Die Verwandlung vom apolitischen Mädchen, zur “Heil
-Hitler” schreienden jungen Frau, geht mir etwas zu schnell.</p>
-
-<p>Ich bin sehr gespannt wie dieser Film in Deutschland aufgenommen wird,
-zum Teil sind die gezeigten Szenen sehr hart, die Sprache ebenso.
-Dadurch entsteht der Eindruck, einen wirklichen Einblick in diese Szene
-zu erhalten. Beim Interview mit dem Regisseur und der Hauptdarstellerin
-nach dem Film wird auch schnell klar warum: die Recherche für den Film
-war sehr intensiv, so hat sich David Wnendt mit mehreren Frauen aus der
-rechtsextremen Szene getroffen und sich deren Lebensgeschichte angehört.
-Diese vielen verschiedenen Geschichten sind in den Film eingeflossen.
-Speziell ist auch noch, dass für den Film alles neue Musik komponiert
-wurde, im Stile der “bekannten” Nazi-Lieder.</p>
-
-<p><em>Ein beeindruckendes Portrait einer Frau und deren Umgebung, die
-plötzlich beginnt ihre Gesinnung zu hinterfragen, ohne dies laut
-auszusprechen.</em></p>
-
-
-      </div>
-      <div class="posts">
-        <h2 class="title"><span class="date">30.09.2011</span><a href="/posts/2011/09/zff-2011-majority-ogunluk">ZFF 2011: Majority (Çogunluk)</a> </h3>
-
-        <ul class="tag_box">
-        <li class="icon"><i class="glyphicon glyphicon-tags"></i></li>
-          <li>
-            <a href="/tags#Cinema-ref">Cinema <span>26</span></a>
-          </li>
-          <li>
-            <a href="/tags#Zurich Film Festival-ref">Zurich Film Festival <span>25</span></a>
-          </li>
-        </ul>
-
-        <p><a href="http://www.zurichfilmfestival.org/de//filme/2704/majority/"><img src="http://media.tumblr.com/tumblr_lsca0llnJ51qa2z4q.jpg" alt="Majority
-(Çogunluk)" title="Majority (Çogunluk)"></a></p>
-
-<p>Der Debütfilm <strong>&quot;Majority&quot;</strong> von Seren Yüce war für mich eine grosse
-Überraschung. Ich bin gar nicht vertraut mit dem türkischen
-Filmschaffen, dieser Film hat mich auf alle Fälle schwer beeindruckt.
-Die Machart unterscheidet sich grundsätzlich von den anderen Filmen die
-ich am Festival gesehen habe. Erzählt wird eine Geschichte mitten aus
-dem Alltag. Somit hat die Geschichte auch keinen klaren Anfang und kein
-Ende.</p>
-
-<p>Der Film handelt von Mertkan (Bartu Küçükçaglayan), der noch zu Hause
-bei seinen Eltern wohnt und bei seinem Vater in einer Baufirma einen
-Bürojob hat. In seiner Freizeit trifft er sich mit seinen Freunden um
-Tee zu trinken oder mit dem dicken Auto seinen Vaters durch Istanbul zu
-fahren. Eines Tages trifft er auf Gül (Esme Madra) und verliebt sich in
-sie. Das Problem an der Sache ist nur, dass Gül eine Kurdin ist und
-Mertkans Vater auf keinen Fall will, dass sich sein Sohn mit “solchen
-Leuten” trifft.</p>
-
-<p>Der Film könnte ebenso gut ein Theaterstück sein: Ziemliche wenige
-Schauplätze, geballte Emotionen ohne viele Worte. Der Film schafft es
-stets, die gerade herrschende Stimmung einzufangen, geprägt von einer
-gewissen Schwere und der Autorität des Vaters. Das Ende ist brillant
-gemacht, die vermeintlich im Mittelpunkt stehende Liebesgeschichte
-verkommt zur Nebenhandlung. Ein Film bei dem man auch nach dem Abspann
-noch einige Minuten auf dem Sitz verharrt.</p>
-
-<p>Sehr auffallend ist auch die Kameraführung. Bei den zum Teil sehr langen
-Szenen wird die Kamera bewusst an einem Ort belassen, obwohl sich die
-Protagonisten aus dem Bild bewegen. Dann kommen auch immer wieder
-gleiche Motive vor wie das Ausziehen der Schuhe und Jacke beim betreten
-der Wohnung: diese Handlung wird ca. zehnmal gezeigt, immer von einer
-Perspektive.</p>
-
-<p><em>Ein stimmungsvolles Kammerspiel, welches eine eindrückliche Geschichte
-erzählt, die einem nicht einfach so loslässt.</em></p>
 
 
       </div>

@@ -4,19 +4,19 @@
     <title>metaodi</title>
     <description>metaodi</description>
     <link>https://metaodi.ch</link>
-    <pubDate>18.02.2019</pubDate>
+    <pubDate>13.05.2019</pubDate>
     <item>
       <title>About me</title>
       <link>https://metaodi.ch/about</link>
-      <description>&lt;p&gt;My name is Stefan Oderbolz (&amp;quot;Odi&amp;quot;) and I live in Zurich.&lt;/p&gt;
+      <description>&lt;p&gt;My name is Stefan Oderbolz (&amp;quot;Odi&amp;quot;).&lt;/p&gt;
 
-&lt;p&gt;I work for &lt;a href="http://www.liip.ch/"&gt;Liip&lt;/a&gt; as a web developer. I am one of the creators of &lt;a href="http://www.kort.ch/"&gt;Kort&lt;/a&gt;, an OpenStreetMap game.&lt;/p&gt;
+&lt;p&gt;I work for &lt;a href="http://stadt-zuerich.ch/opendata"&gt;Open Data Zurich&lt;/a&gt; as an Open Data Specialst and developer. &lt;/p&gt;
 
 &lt;p&gt;I&amp;#39;m interested in &lt;a href="http://github.com/metaodi"&gt;Open Source software&lt;/a&gt; and the &lt;a href="http://www.opendata.ch/"&gt;Open Data movement&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;You can find me at &lt;a href="https://make.opendata.ch/"&gt;Open Data related Hackathons&lt;/a&gt; or as a mentor at events like &lt;a href="http://www.opentechschool.org/"&gt;OpenTechSchool&lt;/a&gt; or &lt;a href="https://jugendhackt.ch"&gt;Jugend hackt&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;In my spare time, I play badminton and all kinds of tabletop games. I&amp;#39;m a film and TV series junkie, but I&amp;#39;m a keen reader, too.&lt;/p&gt;
+&lt;p&gt;I&amp;#39;m a film and TV series junkie, but I&amp;#39;m a keen reader, too.&lt;/p&gt;
 
 &lt;p&gt;Follow me on &lt;a href="http://twitter.com/odi"&gt;Twitter&lt;/a&gt; or reach me via &lt;a href="mailto:odi%20AT%20metaodi%20DOT%20ch"&gt;e-mail&lt;/a&gt;.&lt;/p&gt;
 </description>
@@ -26,6 +26,11 @@
       <link>https://metaodi.ch/archive</link>
       <description>
   &lt;h2&gt;2019&lt;/h2&gt;
+    &lt;h3&gt;April&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;30.04.2019&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2019/04/fachvotrag-hsr"&gt;HSR Fachvortrag: Wie das Open Data Portal der Stadt Z&#xFC;rich seine Daten erntet&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span&gt;02.04.2019&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2019/04/open-data-beer-search-engine"&gt;Open Data Beer: Open Data and search engines&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
     &lt;h3&gt;February&lt;/h3&gt;
     &lt;ul&gt;
       &lt;li&gt;&lt;span&gt;13.02.2019&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2019/02/export-ckan-datasets"&gt;Export datasets from CKAN on the command line&lt;/a&gt;&lt;/li&gt;
@@ -34,6 +39,10 @@
     &lt;h3&gt;April&lt;/h3&gt;
     &lt;ul&gt;
       &lt;li&gt;&lt;span&gt;24.04.2018&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2018/04/make-open-data-discoverable-for-search-engines"&gt;Make open data discoverable for search engines&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h3&gt;March&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;06.03.2018&lt;/span&gt; &amp;raquo; &lt;a href="/posts/2018/03/opendata-in-der-immobilienbranche"&gt;Digital Real Estate Summit 2018: Open Data in der Immobilienbranche&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;h2&gt;2017&lt;/h2&gt;
     &lt;h3&gt;May&lt;/h3&gt;
@@ -319,10 +328,10 @@
       <description>
 &lt;ul class="tag_box inline"&gt;
   &lt;li&gt;
-    &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;13&lt;/span&gt;&lt;/a&gt;
+    &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;16&lt;/span&gt;&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
+    &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;14&lt;/span&gt;&lt;/a&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;a href="/tags#Open Education-ref"&gt;Open Education &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
@@ -551,9 +560,12 @@
     &lt;li&gt;&lt;a href="/posts/2014/01/stop-making-stupid-open-data-contests"&gt;Stop making stupid Open Data contests!&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2014/09/open-data-workshop"&gt;Workshop about Open Data Technologies&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2018/04/make-open-data-discoverable-for-search-engines"&gt;Make open data discoverable for search engines&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2018/03/opendata-in-der-immobilienbranche"&gt;Digital Real Estate Summit 2018: Open Data in der Immobilienbranche&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2015/01/openerz"&gt;Why and how I created the OpenERZ API&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2015/12/open-data-mashup"&gt;Open Data MashUp @ Impact Hub&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2019/02/export-ckan-datasets"&gt;Export datasets from CKAN on the command line&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2019/04/open-data-beer-search-engine"&gt;Open Data Beer: Open Data and search engines&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2019/04/fachvotrag-hsr"&gt;HSR Fachvortrag: Wie das Open Data Portal der Stadt Z&#xFC;rich seine Daten erntet&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2016/06/civic-hacking"&gt;Civic Hacking @ ImNeuland&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2016/06/opendata-swiss-what-is-it"&gt;opendata.swiss - What is it and how does it work?&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2016/10/how-we-combined-wordpress-with-ckan"&gt;CKANCon 2016: How We Combined CKAN with WordPress&lt;/a&gt;&lt;/li&gt;
@@ -564,8 +576,11 @@
     &lt;li&gt;&lt;a href="/posts/2017/05/open-education-day-2017"&gt;Open Education Day 2017: HTML/CSS Workshop&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2014/07/q-a-wall"&gt;Q&amp;amp;A Wall at the OKFestival in Berlin&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2014/09/open-data-workshop"&gt;Workshop about Open Data Technologies&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2018/03/opendata-in-der-immobilienbranche"&gt;Digital Real Estate Summit 2018: Open Data in der Immobilienbranche&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2015/12/open-data-mashup"&gt;Open Data MashUp @ Impact Hub&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2015/07/learn-to-code"&gt;Learn to code if you want to. I&amp;#39;m happy to help.&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2019/04/open-data-beer-search-engine"&gt;Open Data Beer: Open Data and search engines&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/posts/2019/04/fachvotrag-hsr"&gt;HSR Fachvortrag: Wie das Open Data Portal der Stadt Z&#xFC;rich seine Daten erntet&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2016/06/civic-hacking"&gt;Civic Hacking @ ImNeuland&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2016/06/opendata-swiss-what-is-it"&gt;opendata.swiss - What is it and how does it work?&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/posts/2016/10/how-we-combined-wordpress-with-ckan"&gt;CKANCon 2016: How We Combined CKAN with WordPress&lt;/a&gt;&lt;/li&gt;
@@ -887,6 +902,69 @@ Below you can find my posts about my talks. They are usually about my main topic
 
 
 &lt;div class="posts"&gt;
+  &lt;h2 class="title"&gt;&lt;span class="date"&gt;30.04.2019&lt;/span&gt;&lt;a href="/posts/2019/04/fachvotrag-hsr"&gt;HSR Fachvortrag: Wie das Open Data Portal der Stadt Z&#xFC;rich seine Daten erntet&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;ul class="tag_box inline"&gt;
+  &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;16&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;14&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;As a &lt;a href="https://www.hsr.ch/"&gt;HSR allumnus&lt;/a&gt; I was proud to be invited to talk at the &amp;quot;HSR Fachvortrag&amp;quot; series about &lt;a href="https://www.stadt-zuerich.ch/opendata"&gt;my new employer&lt;/a&gt; and how we harvest data for the &lt;a href="https://data.stadt-zuerich.ch"&gt;Open Data Portal of Zurich&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here are my slides:&lt;/p&gt;
+
+&lt;script async class="speakerdeck-embed" data-id="f87eef9973b144d1a679e3b6891cb30b" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"&gt;&lt;/script&gt;
+
+
+&lt;/div&gt;
+
+&lt;div class="posts"&gt;
+  &lt;h2 class="title"&gt;&lt;span class="date"&gt;02.04.2019&lt;/span&gt;&lt;a href="/posts/2019/04/open-data-beer-search-engine"&gt;Open Data Beer: Open Data and search engines&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;ul class="tag_box inline"&gt;
+  &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;16&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;14&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;I could present &lt;a href="/posts/2018/04/make-open-data-discoverable-for-search-engines/"&gt;my contribution to CKAN for the Google Dataset Search&lt;/a&gt; at the &lt;a href="https://opendatabeer.ch/"&gt;Open Data Beer&lt;/a&gt; event at Liip on the 2 April 2019.&lt;/p&gt;
+
+&lt;script async class="speakerdeck-embed" data-id="b5251923bbd14663bfb7df0154c9cc93" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"&gt;&lt;/script&gt;
+
+
+&lt;/div&gt;
+
+&lt;div class="posts"&gt;
+  &lt;h2 class="title"&gt;&lt;span class="date"&gt;06.03.2018&lt;/span&gt;&lt;a href="/posts/2018/03/opendata-in-der-immobilienbranche"&gt;Digital Real Estate Summit 2018: Open Data in der Immobilienbranche&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;ul class="tag_box inline"&gt;
+  &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;16&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;14&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;Ich war eingeladen am Digital Real Estate Summit 2018 &#xFC;ber &amp;quot;Open Data in der Immobilienbranche zu sprechen&amp;quot;.
+Der Talk war ein kurzer Abriss zum Thema Open Data und v.a. ein Workshop-Teil f&#xFC;r die Teilnehmer um sich mit dem Thema auseinander zu setzen.&lt;/p&gt;
+
+&lt;script async class="speakerdeck-embed" data-id="34ca6721337848748982601f7b1ee57d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"&gt;&lt;/script&gt;
+
+
+&lt;/div&gt;
+
+&lt;div class="posts"&gt;
   &lt;h2 class="title"&gt;&lt;span class="date"&gt;09.05.2017&lt;/span&gt;&lt;a href="/posts/2017/05/open-education-day-2017"&gt;Open Education Day 2017: HTML/CSS Workshop&lt;/a&gt;&lt;/h3&gt;
 
   &lt;ul class="tag_box inline"&gt;
@@ -901,7 +979,7 @@ Below you can find my posts about my talks. They are usually about my main topic
       &lt;a href="/tags#OpenTechSchool-ref"&gt;OpenTechSchool &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;14&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -927,10 +1005,10 @@ Thanks to the open learning material, they can finish the course on their own an
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;13&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;16&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;14&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -955,7 +1033,7 @@ In the end, 60min is a very short time, but I hope I made a lasting impression a
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;14&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#Git-ref"&gt;Git &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
@@ -979,7 +1057,7 @@ I held a talk about &amp;quot;Github &amp;amp; Git&amp;quot;, the slides are on 
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;13&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;16&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#CKAN-ref"&gt;CKAN &lt;span&gt;3&lt;/span&gt;&lt;/a&gt;
@@ -988,7 +1066,7 @@ I held a talk about &amp;quot;Github &amp;amp; Git&amp;quot;, the slides are on 
       &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;14&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -1011,13 +1089,13 @@ As CKAN is the framework I&amp;#39;m using almost on a daily basis, and I know a
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;13&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;16&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#Meetup-ref"&gt;Meetup &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;14&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -1039,13 +1117,13 @@ It was a very interesting experience and there were a lot of questions in the Q&
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;13&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;16&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;14&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -1062,13 +1140,13 @@ It was a very interesting experience and there were a lot of questions in the Q&
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;13&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;16&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;14&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -1088,10 +1166,10 @@ My talk was mainly about why I consider myself to be a civic hacker, why my curi
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;13&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;16&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;14&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -1122,7 +1200,7 @@ Feel free to either fill the gaps yourself or contact me if you need more inform
       &lt;a href="/tags#Learning-ref"&gt;Learning &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;14&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -1182,13 +1260,13 @@ It&amp;#39;s about &lt;strong&gt;understanding how a programmer tackles a proble
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;13&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;16&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;14&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -1229,7 +1307,7 @@ My session has not been recorded, but at the end I could quickly present our fin
       &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;14&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -1293,12 +1371,52 @@ There are similar approaches to use such walls or boards to share news in local 
       <title>metaodi</title>
       <link>https://metaodi.ch/</link>
       <description>&lt;div class="posts"&gt;
+  &lt;h2 class="title"&gt;&lt;span class="date"&gt;30.04.2019&lt;/span&gt;&lt;a href="/posts/2019/04/fachvotrag-hsr"&gt;HSR Fachvortrag: Wie das Open Data Portal der Stadt Z&#xFC;rich seine Daten erntet&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;ul class="tag_box inline"&gt;
+  &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;16&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;14&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;As a &lt;a href="https://www.hsr.ch/"&gt;HSR allumnus&lt;/a&gt; I was proud to be invited to talk at the &amp;quot;HSR Fachvortrag&amp;quot; series about &lt;a href="https://www.stadt-zuerich.ch/opendata"&gt;my new employer&lt;/a&gt; and how we harvest data for the &lt;a href="https://data.stadt-zuerich.ch"&gt;Open Data Portal of Zurich&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here are my slides:&lt;/p&gt;
+
+&lt;script async class="speakerdeck-embed" data-id="f87eef9973b144d1a679e3b6891cb30b" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"&gt;&lt;/script&gt;
+
+
+&lt;/div&gt;
+&lt;div class="posts"&gt;
+  &lt;h2 class="title"&gt;&lt;span class="date"&gt;02.04.2019&lt;/span&gt;&lt;a href="/posts/2019/04/open-data-beer-search-engine"&gt;Open Data Beer: Open Data and search engines&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;ul class="tag_box inline"&gt;
+  &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;16&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;14&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;I could present &lt;a href="/posts/2018/04/make-open-data-discoverable-for-search-engines/"&gt;my contribution to CKAN for the Google Dataset Search&lt;/a&gt; at the &lt;a href="https://opendatabeer.ch/"&gt;Open Data Beer&lt;/a&gt; event at Liip on the 2 April 2019.&lt;/p&gt;
+
+&lt;script async class="speakerdeck-embed" data-id="b5251923bbd14663bfb7df0154c9cc93" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"&gt;&lt;/script&gt;
+
+
+&lt;/div&gt;
+&lt;div class="posts"&gt;
   &lt;h2 class="title"&gt;&lt;span class="date"&gt;13.02.2019&lt;/span&gt;&lt;a href="/posts/2019/02/export-ckan-datasets"&gt;Export datasets from CKAN on the command line&lt;/a&gt;&lt;/h3&gt;
 
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;13&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;16&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#CKAN-ref"&gt;CKAN &lt;span&gt;3&lt;/span&gt;&lt;/a&gt;
@@ -1353,7 +1471,7 @@ Let&amp;#39;s put everything together:&lt;/p&gt;
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;13&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;16&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#CKAN-ref"&gt;CKAN &lt;span&gt;3&lt;/span&gt;&lt;/a&gt;
@@ -1529,6 +1647,26 @@ So if you have enabled this feature, every time a search engine visits your port
 
 &lt;/div&gt;
 &lt;div class="posts"&gt;
+  &lt;h2 class="title"&gt;&lt;span class="date"&gt;06.03.2018&lt;/span&gt;&lt;a href="/posts/2018/03/opendata-in-der-immobilienbranche"&gt;Digital Real Estate Summit 2018: Open Data in der Immobilienbranche&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;ul class="tag_box inline"&gt;
+  &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;16&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;14&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;Ich war eingeladen am Digital Real Estate Summit 2018 &#xFC;ber &amp;quot;Open Data in der Immobilienbranche zu sprechen&amp;quot;.
+Der Talk war ein kurzer Abriss zum Thema Open Data und v.a. ein Workshop-Teil f&#xFC;r die Teilnehmer um sich mit dem Thema auseinander zu setzen.&lt;/p&gt;
+
+&lt;script async class="speakerdeck-embed" data-id="34ca6721337848748982601f7b1ee57d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"&gt;&lt;/script&gt;
+
+
+&lt;/div&gt;
+&lt;div class="posts"&gt;
   &lt;h2 class="title"&gt;&lt;span class="date"&gt;09.05.2017&lt;/span&gt;&lt;a href="/posts/2017/05/open-education-day-2017"&gt;Open Education Day 2017: HTML/CSS Workshop&lt;/a&gt;&lt;/h3&gt;
 
   &lt;ul class="tag_box inline"&gt;
@@ -1543,7 +1681,7 @@ So if you have enabled this feature, every time a search engine visits your port
       &lt;a href="/tags#OpenTechSchool-ref"&gt;OpenTechSchool &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;14&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -1568,10 +1706,10 @@ Thanks to the open learning material, they can finish the course on their own an
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;13&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;16&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;14&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -1595,7 +1733,7 @@ In the end, 60min is a very short time, but I hope I made a lasting impression a
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;14&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#Git-ref"&gt;Git &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
@@ -1618,7 +1756,7 @@ I held a talk about &amp;quot;Github &amp;amp; Git&amp;quot;, the slides are on 
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;13&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;16&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#CKAN-ref"&gt;CKAN &lt;span&gt;3&lt;/span&gt;&lt;/a&gt;
@@ -1627,7 +1765,7 @@ I held a talk about &amp;quot;Github &amp;amp; Git&amp;quot;, the slides are on 
       &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;14&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -1649,13 +1787,13 @@ As CKAN is the framework I&amp;#39;m using almost on a daily basis, and I know a
   &lt;ul class="tag_box inline"&gt;
   &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;13&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;16&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a href="/tags#Meetup-ref"&gt;Meetup &lt;span&gt;1&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;14&lt;/span&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
@@ -1667,116 +1805,6 @@ It was a very interesting experience and there were a lot of questions in the Q&
 &lt;p&gt;As always, here are my slides:&lt;/p&gt;
 
 &lt;script async class="speakerdeck-embed" data-id="d5eb9af5dba94d6c8e5887c5c0f28a29" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"&gt;&lt;/script&gt;
-
-
-&lt;/div&gt;
-&lt;div class="posts"&gt;
-  &lt;h2 class="title"&gt;&lt;span class="date"&gt;21.09.2016&lt;/span&gt;&lt;a href="/posts/2016/09/push-notifications-for-waste-collection"&gt;Receive push notifications for waste collection in your area (OpenERZ)&lt;/a&gt;&lt;/h3&gt;
-
-  &lt;ul class="tag_box inline"&gt;
-  &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="/tags#Programming-ref"&gt;Programming &lt;span&gt;21&lt;/span&gt;&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;13&lt;/span&gt;&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="/tags#API-ref"&gt;API &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="/tags#ERZ-ref"&gt;ERZ &lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="/tags#JavaScript-ref"&gt;JavaScript &lt;span&gt;6&lt;/span&gt;&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;p&gt;Some time ago, I built the &lt;a href="http://openerz.herokuapp.com/"&gt;OpenERZ API&lt;/a&gt; (and &lt;a href="http://metaodi.ch/posts/2015/01/openerz/"&gt;wrote about it on this blog&lt;/a&gt;).
-The API provides a nice and easy way to the waste collection data of the City of Zurich, provided by &lt;a href="https://www.stadt-zuerich.ch/ted/de/index/entsorgung_recycling.html"&gt;Entsorgung + Recycling Z&#xFC;rich (ERZ)&lt;/a&gt; via the &lt;a href="https://data.stadt-zuerich.ch/dataset?tags=entsorgung"&gt;Open Data Portal of the City of Zurich&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;OpenERZ provides iCal calendars, so that you can create a custom calender for the types of waste and the the ZIP code your interested in and put that in your digital calendar.&lt;/p&gt;
-
-&lt;p&gt;But for me the killer feature is the get push notifications.
-There used to be a free SMS service from ERZ to remind you of the waste collection (e.g. to put your cardboard in front of your house, so that it gets collected the next day).
-Unfortunately they shut down this sevice and launched their own app.&lt;/p&gt;
-
-&lt;p&gt;So here I am, with an API that has all the data and the need for push notifications.
-Instead of building everything from scratch, I decided to look into existing solutions.
-The first thing, that came to my mind was &lt;a href="https://ifttt.com"&gt;IFTTT&lt;/a&gt;, the universal recipe tool to connect different services.&lt;/p&gt;
-
-&lt;p&gt;It has almost everything I need:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;A time based trigger, to run something every day (think &lt;em&gt;cron&lt;/em&gt;)&lt;/li&gt;
-&lt;li&gt;A so called channel to make and receive web requests (it&amp;#39;s called &lt;a href="https://ifttt.com/maker"&gt;&amp;quot;Maker&amp;quot; on IFTTT&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;A channel for Pushover, a service to receive push notifications on your phone (there are other options to do this, but this is my current choice)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;To glue these together, only a little script is needed, that makes API requests to OpenERZ and &lt;em&gt;transforms&lt;/em&gt; these into single messages that can be received as a push notification.
-For this purpose I created the &lt;a href="https://github.com/metaodi/erz-trigger"&gt;erz-trigger project&lt;/a&gt;.
-It&amp;#39;s a small node application that I deployed to Heroku.&lt;/p&gt;
-
-&lt;p&gt;If you make a GET request to the application, it calls the OpenERZ API for waste collections of the following day with the given zip code.
-It then makes a call to the Maker channel web hook for each waste collection returned by the API.
-IFTTT takes care that I get a push notification, if the web hook is called.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="/assets/media/push_notification.png" alt="Push notification"&gt;&lt;/p&gt;
-
-&lt;p&gt;In the end, I have the heroku instance running and setup two recipes on IFTTT:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="/assets/media/webhook_recipe.png" alt="Recipe for webhook -&amp;gt; push"&gt;
-&lt;img src="/assets/media/cron_recipe.png" alt="Recipe for time -&amp;gt; web request (cron)"&gt;&lt;/p&gt;
-
-&lt;p&gt;To make it a little more secure, the application is protected by an API token.
-So feel free to launch your own instance of erz-trigger, just make sure to configure your own token and to provide your API key of IFTTT.&lt;/p&gt;
-
-
-&lt;/div&gt;
-&lt;div class="posts"&gt;
-  &lt;h2 class="title"&gt;&lt;span class="date"&gt;14.06.2016&lt;/span&gt;&lt;a href="/posts/2016/06/opendata-swiss-what-is-it"&gt;opendata.swiss - What is it and how does it work?&lt;/a&gt;&lt;/h3&gt;
-
-  &lt;ul class="tag_box inline"&gt;
-  &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;13&lt;/span&gt;&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;p&gt;At this years &lt;a href="https://opendata.ch/projects/conference-2016/"&gt;OpenData.ch conference in Lausanne&lt;/a&gt; I could present the current state of the &lt;a href="https://opendata.swiss/"&gt;Swiss federal open data portal opendata.swiss&lt;/a&gt; and give some technical insights on how we built certain components.&lt;/p&gt;
-
-&lt;script async class="speakerdeck-embed" data-id="bb1cf2d978484a6ba19d7a7d829ca830" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"&gt;&lt;/script&gt;
-
-
-&lt;/div&gt;
-&lt;div class="posts"&gt;
-  &lt;h2 class="title"&gt;&lt;span class="date"&gt;04.06.2016&lt;/span&gt;&lt;a href="/posts/2016/06/civic-hacking"&gt;Civic Hacking @ ImNeuland&lt;/a&gt;&lt;/h3&gt;
-
-  &lt;ul class="tag_box inline"&gt;
-  &lt;li class="icon"&gt;&lt;i class="glyphicon glyphicon-tags"&gt;&lt;/i&gt;&lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="/tags#Open Data-ref"&gt;Open Data &lt;span&gt;13&lt;/span&gt;&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="/tags#Conferences-ref"&gt;Conferences &lt;span&gt;5&lt;/span&gt;&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="/tags#Talk-ref"&gt;Talk &lt;span&gt;11&lt;/span&gt;&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;p&gt;At the &lt;a href="https://informatiktage.ch/"&gt;&amp;quot;Informatiktage 2016&amp;quot;&lt;/a&gt; there were several events and I spoke at the &lt;a href="http://imneuland.ch/"&gt;ImNeuland&lt;/a&gt; conference about &lt;em&gt;civic hacking&lt;/em&gt;.
-My talk was mainly about why I consider myself to be a civic hacker, why my curiosity drives me to explore things and how data can help us to explain the world.&lt;/p&gt;
-
-&lt;p&gt;Here are my slides:&lt;/p&gt;
-
-&lt;script async class="speakerdeck-embed" data-id="12f9ae309acb4438a656f0951662ce31" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"&gt;&lt;/script&gt;
 
 
 &lt;/div&gt;
