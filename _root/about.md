@@ -14,3 +14,5 @@ You can find me at [Open Data related Hackathons](https://make.opendata.ch/) or 
 I'm a film and TV series junkie, but I'm a keen reader, too.
 
 Follow me on [Twitter](http://twitter.com/odi) or reach me via [e-mail](mailto:odi AT metaodi DOT ch).
+
+I'm a member of the [Green Party Thalwil](https://gruene-zh.ch/gr%C3%BCne-thalwil) and currently [running for a seat in the «Gesellschaftskommission» in Thalwil](https://stefanoderbolz.ch).
