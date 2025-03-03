@@ -5,7 +5,7 @@ layout: about
 
 My name is Stefan Oderbolz.
 
-I work for [EBP]([http://stadt-zuerich.ch/opendata](https://www.ebp.global/ch-de)) as an Data Engineer. 
+I work for [EBP](https://www.ebp.global/ch-de) as an Data Engineer. 
 
 I'm interested in [Open Source software](http://github.com/metaodi) and the [Open Data movement](http://www.opendata.ch/).
 
