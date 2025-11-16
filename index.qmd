@@ -1,0 +1,19 @@
+---
+title: ""
+listing:
+  contents: posts
+  page-size: 10
+  sort: "date desc"
+  type: default
+  feed: 
+    type: partial
+    language: en
+  categories: numbered
+  sort-ui: false
+  filter-ui: true
+  image-placeholder: assets/titlecard.png
+  max-description-length: 450
+  date-format: "DD.MM.YYYY"
+page-layout: full
+title-block-banner: false
+---

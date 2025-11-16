@@ -1,0 +1,27 @@
+project:
+  type: website
+
+website:
+  title: "Metaodi"
+  site-url: https://metaodi.ch
+  description: "Personal website of Stefan Oderbolz"
+  favicon: assets/favicon.png
+  image: assets/titlecard.png
+  twitter-card: true
+  open-graph: true
+  navbar:
+    right: 
+      - text: About
+        href: about.qmd
+
+  search:
+    location: navbar
+    type: overlay
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+
+execute:
+  freeze: auto
