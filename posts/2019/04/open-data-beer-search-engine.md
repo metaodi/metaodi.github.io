@@ -1,5 +1,5 @@
 ---
-date: 02.04.2019
+date: 2019-04-02
 categories: [Open Data, Talk]
 title: "Open Data Beer: Open Data and search engines"
 ---

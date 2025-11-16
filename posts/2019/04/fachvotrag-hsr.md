@@ -1,5 +1,5 @@
 ---
-date: 30.04.2019
+date: 2019-04-30
 categories: [Open Data, Talk]
 title: "HSR Fachvortrag: Wie das Open Data Portal der Stadt Zürich seine Daten erntet"
 ---

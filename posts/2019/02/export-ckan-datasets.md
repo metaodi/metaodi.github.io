@@ -1,5 +1,5 @@
 ---
-date: 13.02.2019
+date: 2019-02-13
 categories: [Open Data, CKAN]
 title: "Export datasets from CKAN on the command line"
 ---
