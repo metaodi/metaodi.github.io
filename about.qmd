@@ -1,9 +1,9 @@
 ---
 title: About me
-layout: about
+fig-cap-location: bottom
 ---
 
-My name is Stefan Oderbolz.
+![Hi, I'm Stefan Oderbolz, some people call me Odi.](/media/odi.png)
 
 I work for [EBP](https://www.ebp.global/ch-de) as a Data Engineer. 
 
@@ -12,3 +12,5 @@ I'm interested in [Open Source software](http://github.com/metaodi) and the [Ope
 I'm a film and TV series junkie, but I'm a keen reader, too.
 
 Follow me on [Bluesky]([http://twitter.com/odi](https://bsky.app/profile/metaodi.ch)) or reach me via [e-mail](mailto:odi AT metaodi DOT ch).
+
+

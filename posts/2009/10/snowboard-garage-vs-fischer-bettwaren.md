@@ -1,6 +1,7 @@
 ---
 date: Fri Oct 23 2009 12:44:11 GMT+0200 (CEST)
-tags: [German, Video]
+categories: [Fun]
+lang: de
 title: Snowboard Garage vs. Fischer Bettwaren
 ---
 

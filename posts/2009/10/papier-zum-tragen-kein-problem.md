@@ -1,6 +1,7 @@
 ---
 date: Thu Oct 08 2009 22:19:00 GMT+0200 (CEST)
-tags: [German, Fun]
+categories: [Fun]
+lang: de
 title: Papier - Zum Tragen kein Problem
 ---
 

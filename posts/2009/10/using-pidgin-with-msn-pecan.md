@@ -1,6 +1,6 @@
 ---
 date: Fri Oct 23 2009 12:44:00 GMT+0200 (CEST)
-tags: [MSN, Linux]
+categories: [MSN, Linux]
 title: Using Pidgin with msn-pecan
 ---
 

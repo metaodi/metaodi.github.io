@@ -1,6 +1,6 @@
 ---
 date: Mon Nov 09 2009 15:22:00 GMT+0100 (CET)
-tags: Linux
+categories: [Linux]
 title: Extract .tar.gz to specific directory
 ---
 

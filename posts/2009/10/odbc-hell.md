@@ -1,6 +1,6 @@
 ---
 date: Wed Oct 21 2009 16:27:00 GMT+0200 (CEST)
-tags: [Oracle, PHP, PL/SQL, SQL, Programming]
+categories: [Oracle, PHP, PL/SQL, SQL, Programming]
 title: ODBC Hell
 ---
 

@@ -1,6 +1,6 @@
 ---
 date: Wed Nov 11 2009 11:06:00 GMT+0100 (CET)
-tags: [Programming, Go]
+categories: [Programming, Go]
 title: The Go Programming Language
 ---
 

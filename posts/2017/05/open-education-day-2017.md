@@ -1,6 +1,6 @@
 ---
 date: 09.05.2017
-tags: [Open Education, Programming, OpenTechSchool, Talk]
+categories: [Open Education, Programming, OpenTechSchool, Talk]
 title: "Open Education Day 2017: HTML/CSS Workshop"
 ---
 

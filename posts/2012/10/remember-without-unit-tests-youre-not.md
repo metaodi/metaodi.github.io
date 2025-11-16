@@ -1,6 +1,6 @@
 ---
 date: Mon Oct 22 2012 20:55:11 GMT+0200 (CEST)
-tags: 
+categories: 
     - Sencha Touch
     - Siesta
     - Unit Testing

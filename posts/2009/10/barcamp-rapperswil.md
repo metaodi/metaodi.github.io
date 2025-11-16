@@ -1,6 +1,6 @@
 ---
 date: Sun Oct 25 2009 15:32:00 GMT+0100 (CET)
-tags: 
+categories: 
     - Barcamp
     - HSR
     - bcrappi

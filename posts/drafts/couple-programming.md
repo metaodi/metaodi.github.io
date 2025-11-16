@@ -1,7 +1,7 @@
 ---
 date: 21.07.2015
 title: Couple Programming
-tags: [Programming, Python]
+categories: [Programming, Python]
 ---
 
 A few weeks ago, my wife asked me to help her to refresh her programming skills.

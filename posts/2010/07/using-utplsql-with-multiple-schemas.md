@@ -1,6 +1,6 @@
 ---
 date: Mon Jul 12 2010 13:57:00 GMT+0200 (CEST)
-tags: [utPLSQL, Oracle, Unit Testing, PL/SQL]
+categories: [utPLSQL, Oracle, Unit Testing, PL/SQL]
 title: Using utPLSQL with multiple schemas
 ---
 

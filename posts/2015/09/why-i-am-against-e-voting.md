@@ -1,6 +1,6 @@
 ---
 date: 17.09.2015
-tags: [Politics, E-Voting]
+categories: [Politics, E-Voting]
 title: Why I'm against E-Voting
 ---
 

@@ -1,6 +1,6 @@
 ---
 date: 06.03.2018
-tags: [Open Data, Talk]
+categories: [Open Data, Talk]
 title: "Digital Real Estate Summit 2018: Open Data in der Immobilienbranche"
 ---
 

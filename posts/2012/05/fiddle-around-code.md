@@ -1,6 +1,6 @@
 ---
 date: Tue May 29 2012 17:18:00 GMT+0200 (CEST)
-tags: [Programming, JavaScript, SQL, Sencha Touch]
+categories: [Programming, JavaScript, SQL, Sencha Touch]
 title: Fiddle around (code)
 ---
 

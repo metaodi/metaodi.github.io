@@ -3,7 +3,7 @@ date: Wed Sep 29 2010 08:31:00 GMT+0200 (CEST)
 tags:
     - Zurich Film Festival
     - Cinema
-    - German
+lang: de
 title: "ZFF 2010: R"
 ---
 

@@ -1,6 +1,6 @@
 ---
 date: 20.07.2015
-tags: [Programming, Learning, Talk]
+categories: [Programming, Learning, Talk]
 title: Learn to code if you want to. I'm happy to help.
 ---
 
@@ -18,7 +18,7 @@ All these experiences led me to believe that:
 - It takes time, effort and patience for both the teacher and the student
 - Curiosity is the key
 
-![Workshop at Jugendmedientage 2014]({{urls.media}}/workshop.jpg)
+![Workshop at Jugendmedientage 2014](/media/workshop.jpg)
 
 I'm writing about this topic, because not long ago we were discussing this topic at work.
 One of our project managers said, she wants to learn at least a bit of programming, in order to understand what her team is doing.

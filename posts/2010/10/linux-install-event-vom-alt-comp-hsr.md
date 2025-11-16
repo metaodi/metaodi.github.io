@@ -1,6 +1,6 @@
 ---
 date: Tue Oct 05 2010 10:00:43 GMT+0200 (CEST)
-tags: [HSR, Linux]
+categories: [HSR, Linux]
 title: Linux Install-Event vom alt.comp.hsr
 ---
 

@@ -1,6 +1,6 @@
 ---
 date: Fri Sep 23 2011 16:36:20 GMT+0200 (CEST)
-tags: 
+categories: 
     - Cinema
     - Zurich Film Festival
 title: "ZFF 2011: Take Shelter"

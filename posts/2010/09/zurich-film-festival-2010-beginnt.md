@@ -1,6 +1,6 @@
 ---
 date: Thu Sep 23 2010 16:51:00 GMT+0200 (CEST)
-tags: [Zurich Film Festival, Cinema]
+categories: [Zurich Film Festival, Cinema]
 title: Zurich Film Festival 2010 beginnt
 ---
 

@@ -1,6 +1,6 @@
 ---
 date: Tue Nov 07 2006 00:00:00 GMT+0100 (CET)
-tags: 
+categories: 
     - Oracle
     - SQL
 title: Delete duplicate records with Orcle

@@ -4,7 +4,7 @@ link: http://odi.tumblr.com/post/220906263/insert-text-at-top-of-a-file
 slug: insert-text-at-top-of-a-file
 date: Fri Oct 23 2009 15:20:00 GMT+0200 (CEST)
 publish: 2009-10-023
-tags: Linux
+categories: [Linux]
 title: Insert text at top of a file
 ---
 

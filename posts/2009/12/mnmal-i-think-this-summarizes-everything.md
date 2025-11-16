@@ -1,6 +1,6 @@
 ---
 date: Thu Dec 03 2009 19:06:22 GMT+0100 (CET)
-tags: [Image]
+categories: [Image]
 title: mnmal
 ---
 

@@ -1,6 +1,6 @@
 ---
 date: 29.09.2016
-tags: [Open Data, Meetup, Talk]
+categories: [Open Data, Meetup, Talk]
 title: "Hacks/Hackers: Open Data Portals + Civic Hacking"
 ---
 

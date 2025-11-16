@@ -1,6 +1,6 @@
 ---
 date: Sat Jun 30 2007 01:49:00 GMT+0200 (CEST)
-tags: 
+categories: 
     - MS Access
     - Programming
 title: MS Access and not updatable Recordsets
