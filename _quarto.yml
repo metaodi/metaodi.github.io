@@ -10,7 +10,7 @@ website:
   twitter-card: true
   open-graph: true
   navbar:
-    right: 
+    left: 
       - text: About
         href: about.qmd
 
@@ -20,8 +20,8 @@ website:
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme: [default, custom.scss]
+    mainfont: Merriweather
 
 execute:
   freeze: auto
