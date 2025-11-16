@@ -1,5 +1,5 @@
 ---
-date: Mon Jun 06 2011 14:59:00 GMT+0200 (CEST)
+date: 2011-06-06
 tags:
     - URL shortener
     - YOURLS

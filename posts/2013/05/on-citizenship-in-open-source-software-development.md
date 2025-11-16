@@ -1,5 +1,5 @@
 ---
-date: '23.05.2013 18:07'
+date: 2013-05-23
 categories: [Link]
 title: On Citizenship in Open-source software development — Products I Wish Existed
 ---

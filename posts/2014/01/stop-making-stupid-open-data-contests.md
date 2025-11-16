@@ -1,5 +1,5 @@
 ---
-date: 31.01.2014
+date: 2014-01-31
 categories: [Open Data, OGD]
 title: "Stop making stupid Open Data contests!"
 ---

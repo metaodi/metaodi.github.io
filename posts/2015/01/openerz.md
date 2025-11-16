@@ -1,5 +1,5 @@
 ---
-date: 01.01.2015
+date: 2015-01-01
 categories: [Open Data, ERZ, API, CSV, JavaScript, MongoDB]
 title: Why and how I created the OpenERZ API
 ---

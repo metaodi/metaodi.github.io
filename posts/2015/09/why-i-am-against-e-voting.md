@@ -1,5 +1,5 @@
 ---
-date: 17.09.2015
+date: 2015-09-17
 categories: [Politics, E-Voting]
 title: Why I'm against E-Voting
 ---

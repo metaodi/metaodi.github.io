@@ -1,8 +1,6 @@
 ---
-date: Mon Oct 22 2012 20:55:11 GMT+0200 (CEST)
+date: 2012-10-22
 categories: 
-    - Sencha Touch
-    - Siesta
     - Unit Testing
 title: "Remember: Without unit tests, you're not refactoring. You're just changing shit"
 ---

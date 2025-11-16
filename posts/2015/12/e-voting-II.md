@@ -1,5 +1,5 @@
 ---
-date: 02.12.2015
+date: 2015-12-02
 categories: [Politics, E-Voting]
 title: E-Voting II
 ---

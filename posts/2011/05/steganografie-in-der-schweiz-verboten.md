@@ -1,5 +1,5 @@
 ---
-date: Wed May 25 2011 17:42:00 GMT+0200 (CEST)
+date: 2011-05-25
 categories: [HSR, Security]
 title: Steganografie in der Schweiz verboten?
 ---

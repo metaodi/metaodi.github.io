@@ -1,5 +1,5 @@
 ---
-date: Tue Oct 04 2011 14:26:44 GMT+0200 (CEST)
+date: 2011-10-04
 categorie: Film
 categories: 
     - Cinema

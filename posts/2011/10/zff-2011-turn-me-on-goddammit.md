@@ -1,5 +1,5 @@
 ---
-date: Thu Oct 06 2011 11:29:43 GMT+0200 (CEST)
+date: 2011-10-06
 categories: [Cinema, Zurich Film Festival]
 title: "ZFF 2011: Turn Me On, Goddammit"
 ---

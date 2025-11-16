@@ -1,5 +1,5 @@
 ---
-date: 30.01.2014
+date: 2014-01-30
 categories: [ruhoh]
 title: All new in 2014
 ---

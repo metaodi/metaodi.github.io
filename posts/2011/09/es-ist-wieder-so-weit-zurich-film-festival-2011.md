@@ -1,5 +1,5 @@
 ---
-date: Mon Sep 19 2011 08:11:15 GMT+0200 (CEST)
+date: 2011-09-19
 tags:
     - Cinema
     - Zurich Film Festival

@@ -1,5 +1,5 @@
 ---
-date: Thu Mar 08 2012 08:24:00 GMT+0100 (CET)
+date: 2012-03-08
 categories: [JavaScript, Unit Testing, Programming, Cloud]
 title: Setup JavaScript unit testing using QUnit, PhantomJS and Jenkins on Amazon EC2
 ---

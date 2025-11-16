@@ -1,5 +1,5 @@
 ---
-date: 25.06.2011
+date: 2011-06-25
 categories: 
     - HTML
     - JavaScript

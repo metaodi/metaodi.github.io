@@ -1,5 +1,5 @@
 ---
-date: 20.07.2015
+date: 2015-07-20
 categories: [Programming, Learning, Talk]
 title: Learn to code if you want to. I'm happy to help.
 ---

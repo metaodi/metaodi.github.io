@@ -1,5 +1,5 @@
 ---
-date: 15.12.2015
+date: 2015-12-15
 categories: [Programming]
 title: Check the status of all vagrant boxes on your system
 ---

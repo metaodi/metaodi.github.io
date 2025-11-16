@@ -1,5 +1,5 @@
 ---
-date: 18.09.2014
+date: 2014-09-18
 categories: [Open Data, Conferences, Talk]
 title: Workshop about Open Data Technologies
 ---

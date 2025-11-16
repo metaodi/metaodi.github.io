@@ -1,5 +1,5 @@
 ---
-date: 11.02.2014
+date: 2014-02-11
 categories: [MongoDB, Open Data, OpenStreetMap, GIS]
 title: Usage of MongoDB with a spatial index and GeoJSON
 ---

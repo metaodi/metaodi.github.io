@@ -1,5 +1,5 @@
 ---
-date: 01.12.2015
+date: 2015-12-01
 categories: [Open Data, Talk]
 title: Open Data MashUp @ Impact Hub
 ---

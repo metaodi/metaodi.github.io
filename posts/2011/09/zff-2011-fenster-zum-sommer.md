@@ -1,5 +1,5 @@
 ---
-date: Sat Sep 24 2011 13:08:06 GMT+0200 (CEST)
+date: 2011-09-24
 tags:
     - Cinema
     - Zurich Film Festival
@@ -7,8 +7,7 @@ title: "ZFF 2011: Fenster zum Sommer"
 ---
 
 
-[![Fenster zum
-Sommer](http://media.tumblr.com/tumblr_ls0w3cMKgs1qa2z4q.jpg "Fenster zum Sommer")](http://www.zurichfilmfestival.org/de//filme/1844/fenster-zum-sommer/)
+[![Fenster zum Sommer](http://media.tumblr.com/tumblr_ls0w3cMKgs1qa2z4q.jpg "Fenster zum Sommer")](http://www.zurichfilmfestival.org/de//filme/1844/fenster-zum-sommer/)
 
 Der deutsch-finnische Film **"Fenster zum Sommer"** erzählt eine alte
 Idee wieder neu: Was wäre wenn ich in der Zeit zurück gehen könnte um

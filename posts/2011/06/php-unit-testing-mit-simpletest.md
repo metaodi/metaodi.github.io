@@ -1,5 +1,5 @@
 ---
-date: '2011-06-21'
+date: 2011-06-21
 tags:
     - PHP
     - Unit Testing

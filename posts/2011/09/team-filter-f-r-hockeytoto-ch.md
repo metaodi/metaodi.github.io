@@ -1,5 +1,5 @@
 ---
-date: Wed Sep 14 2011 21:15:42 GMT+0200 (CEST)
+date: 2011-09-14
 categories: [Userscript, Programming, JavaScript]
 title: Team-Filter für hockeytoto.ch
 ---
