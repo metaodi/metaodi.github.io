@@ -1,8 +1,7 @@
 ---
 date: Tue Apr 19 2005 00:00:00 GMT+0200 (CEST)
-tags:
-    - German
-    - Politics 
+tags: [Politics]
+lang: de
 title: Schengen Propaganda
 ---
 

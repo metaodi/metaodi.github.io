@@ -1,6 +1,6 @@
 ---
 date: 01.01.2015
-tags: [Open Data, ERZ, API, CSV, JavaScript, MongoDB]
+categories: [Open Data, ERZ, API, CSV, JavaScript, MongoDB]
 title: Why and how I created the OpenERZ API
 ---
 
@@ -51,7 +51,7 @@ The JSON from the app are not very clear and self-explanatory (they were not des
 So I decided to use the CSVs from the Open Data portal as a basis instead.
 It was made clear by SR Filippo Leutenegger, that ERZ wants to continue to provide this data, so I think its a safe choice to build the API on top of that.
 
-[![Screenshot of the OpenERZ swagger UI]({{urls.media}}/openerz.png)](http://openerz.herokuapp.com)
+[![Screenshot of the OpenERZ swagger UI](/media/openerz.png)](http://openerz.herokuapp.com)
 
 The OpenERZ API is a [node application](http://nodejs.org/) that runs on [Heroku](https://www.heroku.com/).
 The process is quite simple: the CSVs are converted to JSON and transformed to be in a clear format.

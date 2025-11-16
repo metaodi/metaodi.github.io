@@ -1,6 +1,6 @@
 ---
 date: 31.01.2014
-tags: [Open Data, OGD]
+categories: [Open Data, OGD]
 title: "Stop making stupid Open Data contests!"
 ---
 

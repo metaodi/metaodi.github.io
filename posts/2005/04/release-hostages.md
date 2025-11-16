@@ -1,6 +1,6 @@
 ---
 date: Mon Apr 11 2005 00:00:00 GMT+0200 (CEST)
-tags: 
+categories: 
     - Programming
     - C
 title: Release Hostages

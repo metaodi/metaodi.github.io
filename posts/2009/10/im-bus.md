@@ -1,6 +1,7 @@
 ---
 date: Fri Oct 23 2009 10:40:05 GMT+0200 (CEST)
-tags: [German, Text]
+categories: [Text]
+lang: de
 title: Im Bus
 ---
 

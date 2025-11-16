@@ -1,6 +1,7 @@
 ---
 date: Fri Oct 23 2009 12:44:42 GMT+0200 (CEST)
-tags: [German, Text]
+categories: [Text]
+lang: de
 title: Zusammengesetzte Wörter
 ---
 

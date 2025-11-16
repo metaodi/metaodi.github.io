@@ -1,6 +1,7 @@
 ---
 date: Fri Oct 23 2009 15:11:54 GMT+0200 (CEST)
-tags: German
+categories: [Text]
+lang: de
 title: Ausreden fürs Nicht-Trinken
 ---
 

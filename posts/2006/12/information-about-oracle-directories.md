@@ -1,6 +1,6 @@
 ---
 date: Wed Dec 27 2006 00:00:00 GMT+0100 (CET)
-tags: Oracle
+categories: [Oracle]
 title: Information about Oracle Directories
 ---
 

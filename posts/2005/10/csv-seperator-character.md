@@ -1,6 +1,6 @@
 ---
 date: Tue Oct 25 2005 00:00:00 GMT+0200 (CEST)
-tags: CSV
+categories: [CSV]
 title: CSV seperator character
 ---
 

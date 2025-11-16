@@ -1,6 +1,6 @@
 ---
 date: Wed Dec 23 2009 15:32:00 GMT+0100 (CET)
-tags: [Link]
+categories: [Link]
 title: "Guardian: How do I know China wrecked the Copenhagen deal? I was in the room"
 ---
 

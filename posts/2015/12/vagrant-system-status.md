@@ -1,6 +1,6 @@
 ---
 date: 15.12.2015
-tags: [Programming]
+categories: [Programming]
 title: Check the status of all vagrant boxes on your system
 ---
 
@@ -29,7 +29,7 @@ Unfortunately, the only way to change that is the rebuild the box.
 What I did instead is create a little script, that collects it's own data (based on the existance of `.vagrant` directories).
 This gives a more fine-grained view of the system and I have better control over when the data is updated.
 
-![vagrant-cache in action]({{urls.media}}/vagrant-cache.png)
+![vagrant-cache in action](/media/vagrant-cache.png)
 
 `vagrant-status` collects the data and updates the cache (slow operation).
 I run it every 15min as a cronjob, to keep the cache up-to-date.

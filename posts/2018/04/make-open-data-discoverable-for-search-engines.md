@@ -1,6 +1,6 @@
 ---
 date: 24.04.2018
-tags: [Open Data, CKAN, Linked Data]
+categories: [Open Data, CKAN, Linked Data]
 title: "Make open data discoverable for search engines"
 ---
 
@@ -26,7 +26,7 @@ But what exactly was Dan suggesting?
 With ckanext-dcat we already have the bridge from our relational ("database") model to a graph ("linked data").
 This is a huge step enables new uses of our data. Remember the 5 star model of Sir Tim Berners-Lee?
 
-![5 star model describing the quality of the data]({{urls.media}}/5-star-steps.jpg)
+![5 star model describing the quality of the data](/media/5-star-steps.jpg)
 Source: http://5stardata.info/en/, CC-Zero
 
 So with our RDF, we already reached 4 stars!

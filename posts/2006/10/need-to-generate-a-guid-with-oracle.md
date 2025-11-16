@@ -1,6 +1,6 @@
 ---
 date: '2006-10-18'
-tags: 
+categories: 
     - Oracle
     - SQL
 title: Need to generate a GUID with Oracle?

@@ -1,6 +1,6 @@
 ---
 date: 12.11.2016
-tags: [Talk, Git]
+categories: [Talk, Git]
 title: "Jugend hackt Schweiz: Github & Git"
 ---
 

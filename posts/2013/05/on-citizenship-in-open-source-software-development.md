@@ -1,6 +1,6 @@
 ---
 date: '23.05.2013 18:07'
-tags: [Link]
+categories: [Link]
 title: On Citizenship in Open-source software development — Products I Wish Existed
 ---
 

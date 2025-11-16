@@ -1,6 +1,6 @@
 ---
 date: Fri Oct 23 2009 12:44:00 GMT+0200 (CEST)
-tags: [SQL, Oracle]
+categories: [SQL, Oracle]
 title: Generate n rows from dual
 ---
 

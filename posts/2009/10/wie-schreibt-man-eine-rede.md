@@ -1,6 +1,7 @@
 ---
 date: Fri Oct 23 2009 12:34:00 GMT+0200 (CEST)
-tags: German
+categories: [Text]
+lang: de
 title: Wie schreibt man eine Rede
 ---
 

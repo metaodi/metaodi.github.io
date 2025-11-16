@@ -1,6 +1,6 @@
 ---
 date: Thu Dec 03 2009 15:38:41 GMT+0100 (CET)
-tags: [Link]
+categories: [Link]
 title: Charles Lewinsky äussert sich in einem Essay über das Minarettverbot, den ewigen Populismus und Roger Köppel
 ---
 

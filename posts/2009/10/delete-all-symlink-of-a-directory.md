@@ -1,6 +1,6 @@
 ---
 date: Fri Oct 23 2009 15:19:00 GMT+0200 (CEST)
-tags: Linux
+categories: [Linux]
 title: Delete all symlink of a directory
 ---
 

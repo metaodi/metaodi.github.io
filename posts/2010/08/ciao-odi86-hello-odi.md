@@ -4,7 +4,7 @@ link: http://odi.tumblr.com/post/966262991/ciao-odi86-hello-odi
 slug: ciao-odi86-hello-odi
 date: Tue Aug 17 2010 08:55:00 GMT+0200 (CEST)
 publish: 2010-08-017
-tags: Twitter
+categories: [Twitter]
 title: Ciao @odi86, Hello @odi
 ---
 

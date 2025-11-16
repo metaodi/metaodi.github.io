@@ -1,6 +1,7 @@
 ---
 date: Thu Oct 08 2009 22:30:00 GMT+0200 (CEST)
-tags: [German, Text]
+categories: [Text]
+lang: de
 title: Ein Tisch ist ein Tisch
 ---
 

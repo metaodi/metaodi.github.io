@@ -4,7 +4,7 @@ link: http://odi.tumblr.com/post/220769565/find-old-files-and-their-size
 slug: find-old-files-and-their-size
 date: Fri Oct 23 2009 10:25:06 GMT+0200 (CEST)
 publish: 2009-10-023
-tags: Linux
+categories: [Linux]
 title: Find old Files and their size
 ---
 

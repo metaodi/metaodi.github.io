@@ -1,6 +1,6 @@
 ---
 date: 02.12.2015
-tags: [Politics, E-Voting]
+categories: [Politics, E-Voting]
 title: E-Voting II
 ---
 

@@ -1,6 +1,6 @@
 ---
 date: Mon Nov 09 2009 13:34:34 GMT+0100 (CET)
-tags: Geocaching
+categories: [Geocaching]
 title: WWFM VI in Zürich
 ---
 

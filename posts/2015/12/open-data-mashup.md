@@ -1,6 +1,6 @@
 ---
 date: 01.12.2015
-tags: [Open Data, Talk]
+categories: [Open Data, Talk]
 title: Open Data MashUp @ Impact Hub
 ---
 
@@ -12,6 +12,6 @@ Because of this _condensed_ form of giving a talk, there is not much space for t
 This is just a warning, as the slides without my talk might not be very useful.
 Feel free to either fill the gaps yourself or contact me if you need more information or if you want to hear the talk again.
 
-Download the [PDF of my slides]({{urls.media}}/OpenDataPublishing@ImpactHub.pdf) or see them directly here:
+Download the [PDF of my slides](/media/OpenDataPublishing@ImpactHub.pdf) or see them directly here:
 
 <script async class="speakerdeck-embed" data-id="1648167b88c34555a131ea6849589891" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script> 

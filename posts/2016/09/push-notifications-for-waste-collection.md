@@ -1,6 +1,6 @@
 ---
 date: 21.09.2016
-tags: [Programming, Open Data, API, ERZ, JavaScript]
+categories: [Programming, Open Data, API, ERZ, JavaScript]
 title: Receive push notifications for waste collection in your area (OpenERZ)
 ---
 
@@ -31,12 +31,12 @@ If you make a GET request to the application, it calls the OpenERZ API for waste
 It then makes a call to the Maker channel web hook for each waste collection returned by the API.
 IFTTT takes care that I get a push notification, if the web hook is called.
 
-![Push notification]({{urls.media}}/push_notification.png)
+![Push notification](/media/push_notification.png)
 
 In the end, I have the heroku instance running and setup two recipes on IFTTT:
 
-![Recipe for webhook -> push]({{urls.media}}/webhook_recipe.png)
-![Recipe for time -> web request (cron)]({{urls.media}}/cron_recipe.png)
+![Recipe for webhook -> push](/media/webhook_recipe.png)
+![Recipe for time -> web request (cron)](/media/cron_recipe.png)
 
 To make it a little more secure, the application is protected by an API token.
 So feel free to launch your own instance of erz-trigger, just make sure to configure your own token and to provide your API key of IFTTT.

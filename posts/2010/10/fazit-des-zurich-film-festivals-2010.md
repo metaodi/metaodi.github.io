@@ -1,6 +1,6 @@
 ---
 date: Mon Oct 04 2010 11:41:00 GMT+0200 (CEST)
-tags: [Cinema, Zurich Film Festival, Twitter]
+categories: [Cinema, Zurich Film Festival, Twitter]
 title: Fazit des Zurich Film Festivals 2010
 ---
 

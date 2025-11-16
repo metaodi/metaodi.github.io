@@ -1,6 +1,6 @@
 ---
 date: 30.01.2014
-tags: [ruhoh]
+categories: [ruhoh]
 title: All new in 2014
 ---
 

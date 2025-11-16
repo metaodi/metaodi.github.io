@@ -1,6 +1,6 @@
 ---
 date: Sun May 30 2010 18:04:00 GMT+0200 (CEST)
-tags: [Java, JCIFS, VFS]
+categories: [Java, JCIFS, VFS]
 title: Erroneous copyFrom() method in JCIFS/VFS
 ---
 

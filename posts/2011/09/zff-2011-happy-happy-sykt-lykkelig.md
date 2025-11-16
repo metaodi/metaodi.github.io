@@ -1,6 +1,6 @@
 ---
 date: Tue Sep 27 2011 17:01:52 GMT+0200 (CEST)
-tags: 
+categories: 
     - Cinema
     - Zurich Film Festival
 title: "ZFF 2011: Happy, Happy (Sykt Lykkelig)"

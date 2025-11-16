@@ -1,6 +1,6 @@
 ---
 date: 25.06.2011
-tags: 
+categories: 
     - HTML
     - JavaScript
     - Programming
