@@ -1,5 +1,5 @@
 ---
-date: 14.06.2016
+date: 2016-06-14
 categories: [Open Data, Conferences, Talk]
 title: opendata.swiss - What is it and how does it work?
 ---

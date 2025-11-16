@@ -1,5 +1,5 @@
 ---
-date: 12.11.2016
+date: 2016-11-12
 categories: [Talk, Git]
 title: "Jugend hackt Schweiz: Github & Git"
 ---

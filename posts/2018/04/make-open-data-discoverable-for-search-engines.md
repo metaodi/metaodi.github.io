@@ -1,5 +1,5 @@
 ---
-date: 24.04.2018
+date: 2018-04-24
 categories: [Open Data, CKAN, Linked Data]
 title: "Make open data discoverable for search engines"
 ---

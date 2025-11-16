@@ -1,5 +1,5 @@
 ---
-date: 04.06.2016
+date: 2016-06-04
 categories: [Open Data, Conferences, Talk]
 title: Civic Hacking @ ImNeuland
 ---

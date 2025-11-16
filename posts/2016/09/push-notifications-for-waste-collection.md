@@ -1,5 +1,5 @@
 ---
-date: 21.09.2016
+date: 2016-09-21
 categories: [Programming, Open Data, API, ERZ, JavaScript]
 title: Receive push notifications for waste collection in your area (OpenERZ)
 ---

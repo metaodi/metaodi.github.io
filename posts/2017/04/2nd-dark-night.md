@@ -1,5 +1,5 @@
 ---
-date: 24.04.2017
+date: 2017-04-24
 categories: [Open Data, Talk]
 title: "2nd Dark Night in Zurich: Open Data Workshop"
 ---
