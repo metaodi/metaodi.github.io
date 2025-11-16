@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Metaodi</title>
+<link>https://metaodi.ch/</link>
+<atom:link href="https://metaodi.ch/index.xml" rel="self" type="application/rss+xml"/>
+<description>Personal website of Stefan Oderbolz</description>
+<language>en</language>
+<image>
+<url>https://metaodi.ch/assets/titlecard.png</url>
+<title>Metaodi</title>
+<link>https://metaodi.ch/</link>
+<height>108</height>
+<width>144</width>
+</image>
+<generator>quarto-1.8.26</generator>
+<lastBuildDate>Invalid Date</lastBuildDate>
+<item>
+  <title>opendata.swiss - What is it and how does it work?</title>
+  <link>https://metaodi.ch/posts/2016/06/opendata-swiss-what-is-it.html</link>
+  <description><![CDATA[ At this years <a href="https://opendata.ch/projects/conference-2016/">OpenData.ch conference in Lausanne</a> I could present the current state of the <a href="https://opendata.swiss/">Swiss federal open data portal opendata.swiss</a> and give some technical insights on how we built certain components. ]]></description>
+  <category>Open Data</category>
+  <category>Conferences</category>
+  <category>Talk</category>
+  <guid>https://metaodi.ch/posts/2016/06/opendata-swiss-what-is-it.html</guid>
+  <pubDate>Invalid Date</pubDate>
+</item>
+<item>
+  <title>Jugend hackt Schweiz: Github &amp; Git</title>
+  <link>https://metaodi.ch/posts/2016/11/git-github-lightning-talk.html</link>
+  <description><![CDATA[ I was co-organizing “Jugend hackt” in Switzerland this year. If you want more information about the event, read the <a href="https://jugendhackt.org/jugend-hackt-goes-international-ein-rueckblick/">excellent blog post</a> about it, watch the <a href="https://www.youtube.com/watch?v=_2lsOBaIm0U&amp;list=PLQsLR7zBwcw1Tbzd0igtaC6HhMA_Lrmhq&amp;index=11">video of the final presentations</a> or read the <a href="http://www.srf.ch/news/panorama/jugend-hackt-zurueck-zu-den-wurzeln-der-hackathons">article by SRF</a> (including an audio interview with me :) ). ]]></description>
+  <category>Talk</category>
+  <category>Git</category>
+  <guid>https://metaodi.ch/posts/2016/11/git-github-lightning-talk.html</guid>
+  <pubDate>Sun, 11 Dec 2016 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>CKANCon 2016: How We Combined CKAN with WordPress</title>
+  <link>https://metaodi.ch/posts/2016/10/how-we-combined-wordpress-with-ckan.html</link>
+  <description><![CDATA[ This year the <a href="https://ckan.org/ckancon-2016/">CKANCon was in Madrid</a>, prior to the <a href="http://opendatacon.org/">International Open Data Conference</a>. It was a one day, rather tech-focused, conference. As CKAN is the framework I’m using almost on a daily basis, and I know a lot of people from the mailing list, it’s good to meet them from time to time in person. ]]></description>
+  <category>Open Data</category>
+  <category>CKAN</category>
+  <category>Conferences</category>
+  <category>Talk</category>
+  <guid>https://metaodi.ch/posts/2016/10/how-we-combined-wordpress-with-ckan.html</guid>
+  <pubDate>Sun, 10 Apr 2016 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Civic Hacking @ ImNeuland</title>
+  <link>https://metaodi.ch/posts/2016/06/civic-hacking.html</link>
+  <description><![CDATA[ At the <a href="https://informatiktage.ch/">“Informatiktage 2016”</a> there were several events and I spoke at the <a href="http://imneuland.ch/">ImNeuland</a> conference about <em>civic hacking</em>. My talk was mainly about why I consider myself to be a civic hacker, why my curiosity drives me to explore things and how data can help us to explain the world. ]]></description>
+  <category>Open Data</category>
+  <category>Conferences</category>
+  <category>Talk</category>
+  <guid>https://metaodi.ch/posts/2016/06/civic-hacking.html</guid>
+  <pubDate>Wed, 06 Apr 2016 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Receive push notifications for waste collection in your area (OpenERZ)</title>
+  <link>https://metaodi.ch/posts/2016/09/push-notifications-for-waste-collection.html</link>
+  <description><![CDATA[ Some time ago, I built the <a href="http://openerz.herokuapp.com/">OpenERZ API</a> (and <a href="http://metaodi.ch/posts/2015/01/openerz/">wrote about it on this blog</a>). The API provides a nice and easy way to the waste collection data of the City of Zurich, provided by <a href="https://www.stadt-zuerich.ch/ted/de/index/entsorgung_recycling.html">Entsorgung + Recycling Zürich (ERZ)</a> via the <a href="https://data.stadt-zuerich.ch/dataset?tags=entsorgung">Open Data Portal of the City of Zurich</a>. ]]></description>
+  <category>Programming</category>
+  <category>Open Data</category>
+  <category>API</category>
+  <category>ERZ</category>
+  <category>JavaScript</category>
+  <guid>https://metaodi.ch/posts/2016/09/push-notifications-for-waste-collection.html</guid>
+  <pubDate>Invalid Date</pubDate>
+</item>
+<item>
+  <title>Hacks/Hackers: Open Data Portals + Civic Hacking</title>
+  <link>https://metaodi.ch/posts/2016/09/hacks-hackers-opendata-portals.html</link>
+  <description><![CDATA[ I was invited by the Hacks/Hackers meetup to give a talk about my passion “open data”, so I decided to mashup my previous talks and talk about my work (building open data portals) and my private interest (being an open data activist and a civic hacker). It was a very interesting experience and there were a lot of questions in the Q&amp;A after my talk and even after then when we had some drinks at the venue. ]]></description>
+  <category>Open Data</category>
+  <category>Meetup</category>
+  <category>Talk</category>
+  <guid>https://metaodi.ch/posts/2016/09/hacks-hackers-opendata-portals.html</guid>
+  <pubDate>Invalid Date</pubDate>
+</item>
+<item>
+  <title>Open Data Beer: Open Data and search engines</title>
+  <link>https://metaodi.ch/posts/2019/04/open-data-beer-search-engine.html</link>
+  <description><![CDATA[ I could present <a href="../../../posts/2018/04/make-open-data-discoverable-for-search-engines/">my contribution to CKAN for the Google Dataset Search</a> at the <a href="https://opendatabeer.ch/">Open Data Beer</a> event at Liip on the 2 April 2019. ]]></description>
+  <category>Open Data</category>
+  <category>Talk</category>
+  <guid>https://metaodi.ch/posts/2019/04/open-data-beer-search-engine.html</guid>
+  <pubDate>Mon, 04 Feb 2019 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Open Education Day 2017: HTML/CSS Workshop</title>
+  <link>https://metaodi.ch/posts/2017/05/open-education-day-2017.html</link>
+  <description><![CDATA[ The <a href="https://www.ch-open.ch/">/ch/open</a> association hosted the <a href="http://www.open-education-day.ch/">Open Education Day 2017</a> at the <a href="http://www.fhnw.ch/campus-brugg-windisch">FHNW in Brugg/Windisch</a>. ]]></description>
+  <category>Open Education</category>
+  <category>Programming</category>
+  <category>OpenTechSchool</category>
+  <category>Talk</category>
+  <guid>https://metaodi.ch/posts/2017/05/open-education-day-2017.html</guid>
+  <pubDate>Tue, 05 Sep 2017 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>E-Voting II</title>
+  <link>https://metaodi.ch/posts/2015/12/e-voting-II.html</link>
+  <description><![CDATA[ As I already <a href="http://metaodi.ch/posts/2015/09/why-i-am-against-e-voting/">mentioned before</a>, I’m not a big fan of E-Voting. ]]></description>
+  <category>Politics</category>
+  <category>E-Voting</category>
+  <guid>https://metaodi.ch/posts/2015/12/e-voting-II.html</guid>
+  <pubDate>Thu, 12 Feb 2015 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Open Data MashUp @ Impact Hub</title>
+  <link>https://metaodi.ch/posts/2015/12/open-data-mashup.html</link>
+  <description><![CDATA[ Last week I had the opportunity to talk at the <a href="https://zurich.impacthub.ch/event/mash-up/">Impact Hub in Zurich about Open Data</a>. This event was part of a group of events in different locations of Impact Hub, called MashUp. ]]></description>
+  <category>Open Data</category>
+  <category>Talk</category>
+  <guid>https://metaodi.ch/posts/2015/12/open-data-mashup.html</guid>
+  <pubDate>Mon, 12 Jan 2015 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Why and how I created the OpenERZ API</title>
+  <link>https://metaodi.ch/posts/2015/01/openerz.html</link>
+  <description><![CDATA[ The holidays season is always a good point in time to reflect and sort ideas/thoughts etc. A number of reasons lead me to create the <a href="http://openerz.herokuapp.com">OpenERZ API</a>. ]]></description>
+  <category>Open Data</category>
+  <category>ERZ</category>
+  <category>API</category>
+  <category>CSV</category>
+  <category>JavaScript</category>
+  <category>MongoDB</category>
+  <guid>https://metaodi.ch/posts/2015/01/openerz.html</guid>
+  <pubDate>Thu, 01 Jan 2015 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Remember: Without unit tests, you’re not refactoring. You’re just changing shit</title>
+  <link>https://metaodi.ch/posts/2012/10/remember-without-unit-tests-youre-not.html</link>
+  <description><![CDATA[ 
+ ]]></description>
+  <category>Sencha Touch</category>
+  <category>Siesta</category>
+  <category>Unit Testing</category>
+  <guid>https://metaodi.ch/posts/2012/10/remember-without-unit-tests-youre-not.html</guid>
+  <pubDate>Mon, 22 Oct 2012 18:55:11 GMT</pubDate>
+</item>
+<item>
+  <title>Insert Coin To Play</title>
+  <link>https://metaodi.ch/posts/2012/10/insert-coin-to-play-can-gaming-concepts-help.html</link>
+  <description><![CDATA[ Can gaming concepts help make OpenStreetMap better? ]]></description>
+  <category>OpenStreetMap</category>
+  <category>Gamification</category>
+  <guid>https://metaodi.ch/posts/2012/10/insert-coin-to-play-can-gaming-concepts-help.html</guid>
+  <pubDate>Thu, 11 Oct 2012 16:39:00 GMT</pubDate>
+</item>
+<item>
+  <title>Fiddle around (code)</title>
+  <link>https://metaodi.ch/posts/2012/05/fiddle-around-code.html</link>
+  <description><![CDATA[ Since I’m using JavaScript more heavily, and beeing active on <a href="http://stackoverflow.com/users/549755/odi">StackOverflow</a>, I’m using a service called <a href="http://jsfiddle.net/">jsFiddle</a>. It’s a great tool with a simple idea (I can see a pattern here: great tools are always based on simple ideas): Make it easy to write demo code. Either to help someone or to point out a problem. ]]></description>
+  <category>Programming</category>
+  <category>JavaScript</category>
+  <category>SQL</category>
+  <category>Sencha Touch</category>
+  <guid>https://metaodi.ch/posts/2012/05/fiddle-around-code.html</guid>
+  <pubDate>Tue, 29 May 2012 15:18:00 GMT</pubDate>
+</item>
+<item>
+  <title>Setup JavaScript unit testing using QUnit, PhantomJS and Jenkins on Amazon EC2</title>
+  <link>https://metaodi.ch/posts/2012/03/setup-javascript-unit-testing-using-qunit-phantomjs.html</link>
+  <description><![CDATA[ Me and my friend are currently working on a term paper about <a href="https://developers.google.com/fusiontables/">Google Fusion Tables</a>. It’s about it’s possibilities and potential. Our goal is to create a cross-platform mobile application using <a href="http://www.sencha.com/products/touch">Sencha Touch</a>, therefore we need to write a lot of JavaScript code for the UI and to access the Google Fusion Tables. Fortunately Google provides an <a href="https://groups.google.com/forum/#!topic/fusion-tables-users-group/TGDzExKymoI/discussion">inofficial JSONP API</a>, so we get native JavaScript access without another server roundtrip (there is <a href="http://www.reddmetrics.com/2011/08/10/fusion-tables-javascript-query-maps.html">a good blog post</a> explaining the usage with jQuery). ]]></description>
+  <category>JavaScript</category>
+  <category>Unit Testing</category>
+  <category>Programming</category>
+  <category>Cloud</category>
+  <guid>https://metaodi.ch/posts/2012/03/setup-javascript-unit-testing-using-qunit-phantomjs.html</guid>
+  <pubDate>Thu, 08 Mar 2012 07:24:00 GMT</pubDate>
+</item>
+<item>
+  <title>Guardian: How do I know China wrecked the Copenhagen deal? I was in the room</title>
+  <link>https://metaodi.ch/posts/2009/12/guardian-how-do-i-know-china-wrecked-the-copenhagen.html</link>
+  <description><![CDATA[ <a href="http://www.guardian.co.uk/environment/2009/dec/22/copenhagen-climate-change-mark-lynas">http://www.guardian.co.uk/environment/2009/dec/22/copenhagen-climate-change-mark-lynas</a> &gt; With the deal gutted, the heads of state session concluded with a final battle as the Chinese delegate insisted on removing the 1.5C target so beloved of the small island states and low-lying nations who have most to lose from rising seas. President Nasheed of the Maldives, supported by Brown, fought valiantly to save this crucial number. “How can you ask my country to go extinct?” demanded Nasheed. The Chinese delegate feigned great offence – and the number stayed, but surrounded by language which makes it all but meaningless. The deed was done. ]]></description>
+  <category>Link</category>
+  <guid>https://metaodi.ch/posts/2009/12/guardian-how-do-i-know-china-wrecked-the-copenhagen.html</guid>
+  <pubDate>Wed, 23 Dec 2009 14:32:00 GMT</pubDate>
+</item>
+<item>
+  <title>How to make your eye feel like it’s closed, when it’s actually open</title>
+  <link>https://metaodi.ch/posts/2009/12/how-to-make-your-eye-feel-like-its-closed-when-its.html</link>
+  <description><![CDATA[ <a href="http://scienceblogs.com/cognitivedaily/2008/05/how_to_make_your_eye_feel_like.php">http://scienceblogs.com/cognitivedaily/2008/05/how_to_make_your_eye_feel_like.php</a> ]]></description>
+  <category>Link</category>
+  <guid>https://metaodi.ch/posts/2009/12/how-to-make-your-eye-feel-like-its-closed-when-its.html</guid>
+  <pubDate>Tue, 22 Dec 2009 09:38:54 GMT</pubDate>
+</item>
+<item>
+  <title>mnmal</title>
+  <link>https://metaodi.ch/posts/2009/12/mnmal-i-think-this-summarizes-everything.html</link>
+  <description><![CDATA[ I think this summarizes everything. ]]></description>
+  <category>Image</category>
+  <guid>https://metaodi.ch/posts/2009/12/mnmal-i-think-this-summarizes-everything.html</guid>
+  <pubDate>Thu, 03 Dec 2009 18:06:22 GMT</pubDate>
+</item>
+<item>
+  <title>Charles Lewinsky äussert sich in einem Essay über das Minarettverbot, den ewigen Populismus und Roger Köppel</title>
+  <link>https://metaodi.ch/posts/2009/12/charles-lewinsky-ussert-sich-in-einem-essay-ber-das.html</link>
+  <description><![CDATA[ <a href="http://www.tagesanzeiger.ch/kultur/buecher/Jetzt-muessen-wir-sogar-Koeppels-triumphierende-Ironie-schlucken/story/10202730">http://www.tagesanzeiger.ch/kultur/buecher/Jetzt-muessen-wir-sogar-Koeppels-triumphierende-Ironie-schlucken/story/10202730</a> ]]></description>
+  <category>Link</category>
+  <guid>https://metaodi.ch/posts/2009/12/charles-lewinsky-ussert-sich-in-einem-essay-ber-das.html</guid>
+  <pubDate>Thu, 03 Dec 2009 14:38:41 GMT</pubDate>
+</item>
+<item>
+  <title>WWFM VI in Zürich, das Video zum Event</title>
+  <link>https://metaodi.ch/posts/2009/11/wwfm-vi-in-z-rich-das-video-zum-event.html</link>
+  <description><![CDATA[ 
+ ]]></description>
+  <category>Geocaching</category>
+  <guid>https://metaodi.ch/posts/2009/11/wwfm-vi-in-z-rich-das-video-zum-event.html</guid>
+  <pubDate>Tue, 17 Nov 2009 21:32:13 GMT</pubDate>
+</item>
+</channel>
+</rss>
