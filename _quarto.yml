@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "Metaodi"
+  title: "metaodi"
   site-url: https://metaodi.ch
   description: "Personal website of Stefan Oderbolz"
   favicon: assets/favicon.png
