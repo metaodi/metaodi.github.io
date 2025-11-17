@@ -2,6 +2,7 @@
 date: 2018-03-06
 categories: [Open Data, Talk]
 title: "Digital Real Estate Summit 2018: Open Data in der Immobilienbranche"
+image: immo_lego.png
 ---
 
 Ich war eingeladen am Digital Real Estate Summit 2018 über "Open Data in der Immobilienbranche zu sprechen".
