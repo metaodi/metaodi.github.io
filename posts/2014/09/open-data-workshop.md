@@ -2,6 +2,7 @@
 date: 2014-09-18
 categories: [Open Data, Conferences, Talk]
 title: Workshop about Open Data Technologies
+image: json-ld.png
 ---
 
 At todays [Opendata.ch Conference 2014](http://opendata.ch/2014) I had the opportunity to talk about technologies around the topic of open data.
