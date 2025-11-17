@@ -3,7 +3,7 @@ on:
   push:
     branches: main
 
-name: Quarto Render + Deploy to GitHub Pages
+name: Render + Deploy
 
 jobs:
   build:
