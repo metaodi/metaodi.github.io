@@ -11,7 +11,7 @@ website:
   open-graph: true
   draft-mode: unlinked
   repo-url: https://github.com/metaodi/metaodi.github.io
-  repo-actions: [edit, source, issue]
+  repo-actions: [edit, issue]
   navbar:
     left: 
       - text: About
