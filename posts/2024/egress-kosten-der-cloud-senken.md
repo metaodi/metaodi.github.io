@@ -8,7 +8,7 @@ image: clouds.webp
 
 ![](clouds.webp)
 
-**Neben den Hosting-Kosten sind beim Bereitstellen von Dateien in der Cloud die sogenannten Egress-Kosten ein wichtiger Aspekt. Um was für Kosten es sich dabei handelt und wie man diese potenziell senken kann, das möchte ich gerne in diesem Blogpost aufzeigen.**
+Neben den Hosting-Kosten sind beim Bereitstellen von Dateien in der Cloud die sogenannten Egress-Kosten ein wichtiger Aspekt. Um was für Kosten es sich dabei handelt und wie man diese potenziell senken kann, das möchte ich gerne in diesem Blogpost aufzeigen.
 
 Ich traf kürzlich in einem Projekt auf die Fragestellung, ob das vorgesehene Budget für die Nutzung von [Amazon S3](https://aws.amazon.com/de/s3/) für die Bereitstellung umfangreicher Dateien ausreicht. Diese Problemstellung war eng verbunden mit der Frage, wie man Nutzende dazu bekommen könnte, möglichst keine unnötigen Downloads zu tätigen.
 
@@ -59,3 +59,4 @@ Neben einem gut gestalteten User Interface und der angenehmen User Experience gi
 _Hinweis: dieser Blogpost wurde zuerst auf dem EBP-Blog [digital.ebp.ch](https://digital.ebp.ch/2024/02/19/egress-kosten-der-cloud-senken/) publiziert._
 
 Headerbild: [CC-BY](https://creativecommons.org/licenses/by/2.0/) J. Triepke (via Flickr)
+
