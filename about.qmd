@@ -28,17 +28,23 @@ BSc in Computer Science | 2008 - 2013
 
 ## Experience
 
-EBP | Data Engineer | Sept 2023 - present
+EBP 
+: Data Engineer | Sept 2023 - present
 
-Statistik Stadt Zürich | Open Data Specialist | Apr 2019 - Jul 2023
+Statistik Stadt Zürich 
+: Open Data Specialist | Apr 2019 - Jul 2023
 
-Liip | Web Developer | Jan 2013 - Feb 2019
+Liip 
+: Web Developer | Jan 2013 - Feb 2019
 
-Avaloq | Software Engineer | Mar 2010 - Dec 2012
+Avaloq 
+: Software Engineer | Mar 2010 - Dec 2012
 
-Trivadis | IT Consultant | Aug 2006 - Feb 2010
+Trivadis 
+: IT Consultant | Aug 2006 - Feb 2010
 
-Trivadis | Apprentice | Aug 2002 - Jul 2006
+Trivadis 
+: Apprentice | Aug 2002 - Jul 2006
 
 
 :::
