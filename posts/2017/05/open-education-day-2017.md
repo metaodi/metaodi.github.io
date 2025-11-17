@@ -2,6 +2,7 @@
 date: 2017-05-09
 categories: [Open Education, Programming, OpenTechSchool, Talk]
 title: "Open Education Day 2017: HTML/CSS Workshop"
+image: webseiten_workshop.png
 ---
 
 The [/ch/open](https://www.ch-open.ch/) association hosted the [Open Education Day 2017](http://www.open-education-day.ch/) at the [FHNW in Brugg/Windisch](http://www.fhnw.ch/campus-brugg-windisch).
