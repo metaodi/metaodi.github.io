@@ -2,6 +2,7 @@
 date: 2016-06-04
 categories: [Open Data, Conferences, Talk]
 title: Civic Hacking @ ImNeuland
+image: ../09/civic_hacker.png
 ---
 
 At the ["Informatiktage 2016"](https://informatiktage.ch/) there were several events and I spoke at the [ImNeuland](http://imneuland.ch/) conference about _civic hacking_.
