@@ -2,6 +2,7 @@
 date: 2019-04-30
 categories: [Open Data, Talk]
 title: "HSR Fachvortrag: Wie das Open Data Portal der Stadt Zürich seine Daten erntet"
+image: harvesting_screenshot.png
 ---
 
 As a [HSR allumnus](https://www.hsr.ch/) I was proud to be invited to talk at the "HSR Fachvortrag" series about [my new employer](https://www.stadt-zuerich.ch/opendata) and how we harvest data for the [Open Data Portal of Zurich](https://data.stadt-zuerich.ch).
