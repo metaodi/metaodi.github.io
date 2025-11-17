@@ -15,10 +15,34 @@ about:
       href: mailto:odi AT metaodi DOT ch
 ---
 
-Hi, I'm Stefan Oderbolz, some people call me Odi.
+### This content appears above the formatted about page content.
 
-I work for [EBP](https://www.ebp.global/ch-de) as a Data Engineer. 
+:::{#hero-heading}
 
+Hi, I'm Stefan Oderbolz, some people call me Odi. I work for [EBP](https://www.ebp.global/ch-de) as a Data Engineer. 
 I'm interested in [Open Source software](http://github.com/metaodi) and the [Open Data movement](http://www.opendata.ch/).
-
 I'm a film and TV series junkie, but I'm a keen reader, too.
+
+## Education
+
+Hochschule für Technik HSR (renamed OST) | Rapperswil
+BSc in Computer Science | 2008 - 2013
+
+## Experience
+
+EBP | Data Engineer | Sept 2023 - present
+
+Statistik Stadt Zürich | Open Data Specialist | Apr 2019 - Jul 2023
+
+Liip | Web Developer | Jan 2013 - Feb 2019
+
+Avaloq | Software Engineer | Mar 2010 - Dec 2012
+
+Trivadis | IT Consultant | Aug 2006 - Feb 2010
+
+Trivadis | Apprentice | Aug 2002 - Jul 2006
+
+
+:::
+
+
