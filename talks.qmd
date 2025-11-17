@@ -2,7 +2,7 @@
 title: "Talks/Workshops"
 listing:
   contents: posts
-  page-size: 10
+  page-size: 9
   sort: "date desc"
   fields: [date, title, description, image]
   type: grid
@@ -11,7 +11,7 @@ listing:
   categories: false
   sort-ui: false
   filter-ui: true
-  max-description-length: 600
+  max-description-length: 200
   date-format: "DD.MM.YYYY"
 page-layout: full
 title-block-banner: false
