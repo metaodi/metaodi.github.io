@@ -3,6 +3,7 @@ date: Tue Jan 24 2006 00:00:00 GMT+0100 (CET)
 categories: [TIL]
 lang: de
 title: Psychologie vs. Psychiatrie
+image: /media/til.png
 ---
 
 
