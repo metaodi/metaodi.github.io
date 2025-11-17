@@ -10,6 +10,8 @@ website:
   twitter-card: true
   open-graph: true
   draft-mode: unlinked
+  repo-url: https://github.com/metaodi/metaodi.github.io
+  repo-actions: [edit, source, issue]
   navbar:
     left: 
       - text: About
