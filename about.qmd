@@ -1,7 +1,7 @@
 ---
 title: "Stefan Oderbolz"
 about:
-  template: jolla
+  template: broadside
   image: /media/odi.png
   links:
     - icon: bluesky
@@ -10,7 +10,7 @@ about:
     - icon: github
       text: Github
       href: https://github.com/metaodi
-    - icon: mail
+    - icon: envelope
       text: Mail
       href: mailto:odi AT metaodi DOT ch
 ---
