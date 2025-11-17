@@ -10,13 +10,12 @@ about:
     - icon: github
       text: Github
       href: https://github.com/metaodi
-    - icon: email
-      text: Email
+    - icon: mail
+      text: Mail
       href: mailto:odi AT metaodi DOT ch
 ---
----
 
-![Hi, I'm Stefan Oderbolz, some people call me Odi.](/media/odi.png)
+Hi, I'm Stefan Oderbolz, some people call me Odi.
 
 I work for [EBP](https://www.ebp.global/ch-de) as a Data Engineer. 
 
