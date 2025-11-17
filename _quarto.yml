@@ -22,7 +22,7 @@ format:
   html:
     theme: [default, custom.scss]
     mainfont: Merriweather
-     include-in-header:
+    include-in-header:
       - file: font.html
 
 execute:
