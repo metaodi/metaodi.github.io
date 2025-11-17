@@ -2,6 +2,7 @@
 date: 2018-04-24
 categories: [Open Data, CKAN, Linked Data]
 title: "Make open data discoverable for search engines"
+image: /media/5-star-steps.jpg
 ---
 
 _Note: this blogpost was first published on the [Liip Blog](https://www.liip.ch/en/blog/make-open-data-discoverable-for-search-engines)._
