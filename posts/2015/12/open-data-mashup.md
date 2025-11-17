@@ -2,6 +2,7 @@
 date: 2015-12-01
 categories: [Open Data, Talk]
 title: Open Data MashUp @ Impact Hub
+image: one_million_portals.png
 ---
 
 Last week I had the opportunity to talk at the [Impact Hub in Zurich about Open Data](https://zurich.impacthub.ch/event/mash-up/).
