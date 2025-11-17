@@ -15,7 +15,6 @@ Türkei](http://www.zurichfilmfestival.org/de//filme/3025/kurzes-aus-der-turkei/
 dem diesjährigen Gastland des Zurich Film Festival. Die beiden Festivals
 haben schon die letzten Jahre eine Zusammenarbeit gepflegt.
 
-\_\_
 
 [My Mother Learns Cinema](http://www.imdb.com/title/tt0984004/)
 ---------------------------------------------------------------
@@ -27,7 +26,7 @@ Eine kleine Ode ans Kino, als ersten Schritt um das Kino kennen zu
 lernen, lehrt ein Sohn seiner Mutter die korrekte Aussprache einiger
 Regisseur.
 
-\_\_
+
 
 [Biskilet/Bicycle](http://vimeo.com/24874194)
 ---------------------------------------------
@@ -39,7 +38,7 @@ Dieser Film, der ganz ohne gesprochene Sprache auskommt, erzählt von
 einem Jungen, der gerne ein Fahrrad hätte. Alles was ihm noch fehlt ist
 ein Hinterrad…
 
-\_\_
+
 
 [I, Soldier](http://i-soldier-the-flag.blogspot.com/)
 -----------------------------------------------------
@@ -51,7 +50,6 @@ Ein ganz spezieller Film, der zum Teil aus 2 Perspektiven gefilmt wurde,
 wobei beide nebeneinander gezeigt werden. Die Aufnahmen sind während den
 Feierlichkeiten zum Unabhängigkeitstag der Türkei entstanden.
 
-\_\_
 
 [Dem (Moment)](https://www.facebook.com/pages/DEM-MOMENT/139449276104220?sk=info)
 ---------------------------------------------------------------------------------
@@ -64,7 +62,6 @@ sich noch einen Kaffee und trifft dabei eine Frau, welche Minuten später
 von einem Auto überfahren wird, Kurz darauf durchlebt der Mann die Szene
 nochmals, wird er diesmal das Schlimmste verhindern können?
 
-\_\_
 
 [Gemeinschaft](http://www.madebyozlemakin.com/2009/05/gemeinschaft.html)
 ------------------------------------------------------------------------
@@ -76,7 +73,6 @@ In diesem kurzen Animationsfilm geht es darum als Gruppe eine unliebsame
 Person loszuwerden. Doch wie stellt man das an? Ein witziger
 Erklärungsversuch.
 
-\_\_
 
 [Xewna Yusiv / Yusiv’s Dream](http://www.feritkarahan.com/en/#/filmography/movies)
 ----------------------------------------------------------------------------------
@@ -87,7 +83,6 @@ Erklärungsversuch.
 Yusiv führt ein normales Leben bis seine Idylle gestört wird: er wird
 heimlicher Zeuge eines Mordes.
 
-\_\_
 
 [KöY (Das Dorf)](http://www.imdb.com/title/tt1515847/)
 ------------------------------------------------------
@@ -100,7 +95,6 @@ zur Aufgabe gemacht hat, auf einem Schild jeweils die genau Anzahl
 Personen die sich im Dorf befinden zu notieren. Dieser Spass wird aber
 jäh durchbrochen als das Militär auftaucht.
 
-\_\_
 
 [Bende Sira (Ich bin dran)](http://www.distantdreams.de/filme/bende-sira-ich-bin-dran)
 --------------------------------------------------------------------------------------
