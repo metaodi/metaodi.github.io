@@ -1,7 +1,7 @@
 ---
 title: "Stefan Oderbolz"
 about:
-  template: broadside
+  template: trestles
   image: /media/odi.png
   links:
     - icon: bluesky
