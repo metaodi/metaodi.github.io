@@ -2,6 +2,7 @@
 date: 2017-04-24
 categories: [Open Data, Talk]
 title: "2nd Dark Night in Zurich: Open Data Workshop"
+image: threads.png
 ---
 
 Together with [Zentrum Karl der Grosse](http://www.karldergrosse.ch/), the [Chaos Computer Club Zurich (CCCZH)](https://www.ccczh.ch/) and the [Digitale Gessellschaft Schweiz](https://www.digitale-gesellschaft.ch/) organized the [2nd Dark Night in Zurich](http://www.karldergrosse.ch/veranstaltung/die-2-zuercher-dark-night/).
