@@ -9,6 +9,7 @@ website:
   image: assets/titlecard.png
   twitter-card: true
   open-graph: true
+  draft-mode: unlinked
   navbar:
     left: 
       - text: About
