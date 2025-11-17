@@ -6,7 +6,7 @@ title: "Egress-Kosten der Cloud senken"
 image: clouds.webp
 ---
 
-_Hinweis: dieser Blogpost wurde zuerst auf dem EBP-Blog [digital.ebp.ch](https://digital.ebp.ch/2024/02/19/egress-kosten-der-cloud-senken/) publiziert._
+![](clouds.webp)
 
 **Neben den Hosting-Kosten sind beim Bereitstellen von Dateien in der Cloud die sogenannten Egress-Kosten ein wichtiger Aspekt. Um was für Kosten es sich dabei handelt und wie man diese potenziell senken kann, das möchte ich gerne in diesem Blogpost aufzeigen.**
 
@@ -55,5 +55,7 @@ Neben einem gut gestalteten User Interface und der angenehmen User Experience gi
 * **Monitoring**: Um die eigenen Kosten im Griff zu haben, ist es wichtig, ein geeignetes Monitoring aufzusetzen. So kann man frühzeitig Nutzungsmuster erkennen und bei Bedarf (zum Beispiel bei Serien-Downloads) geeignete Massnahmen ergreifen.
 * **Einschränkung des Zugriffs**: Wenn Nutzende die Infrastruktur übermässig beanspruchen, dann ist die Ultima Ratio, den Zugriff zu sperren oder Downloads zumindest zu drosseln (d.h. die Geschwindigkeit von Downloads künstlich zu verringern). Der «Nutzende» kann in diesem Fall beispielsweise ein Skript sein, das zu oft Daten herunterlädt. Zu diesem Zweck ist es hilfreich, entsprechende Bestimmungen in den eigenen Nutzungsbestimmungen zu haben, zum Beispiel eine sogenannte [Fair-Use-Klausel, wie sie beispielsweise das Bundesamt für Landestopografie swisstopo](https://www.swisstopo.admin.ch/de/kostenlose-geodaten-ogd) kennt.
 
+
+_Hinweis: dieser Blogpost wurde zuerst auf dem EBP-Blog [digital.ebp.ch](https://digital.ebp.ch/2024/02/19/egress-kosten-der-cloud-senken/) publiziert._
 
 Headerbild: [CC-BY](https://creativecommons.org/licenses/by/2.0/) J. Triepke (via Flickr)
