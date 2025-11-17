@@ -26,7 +26,7 @@ Wenn man Dateien in der Cloud speichert, berechnen sich die Kosten üblicherweis
 * **Ingress**: Prozess, in dem Daten ins System kommen (meist kostenlos): z.B. ein Upload einer Datei in die Cloud
 * **Egress**: Prozess, in dem aus dem System fliessen (meist kostenpflichtig): z.B. ein Download einer Datei aus der Cloud
 
-![Mögliche Kosten der Cloud-Nutzung: Von Ingress über Hosting zu Egress](egress-ingress-1.webp)
+![Mögliche Kosten der Cloud-Nutzung: Von Ingress über Hosting zu Egress](egress_ingress-1.webp)
 
 Cloud-Anbieter verrechnen Egress-Kosten unter anderem häufig, weil ihnen selbst durch Egress effektiv Kosten entstehen: Sie müssen die nötige Bandbreite für Downloads zur Verfügung stellen und entsprechende Verbindungen mit Internet-Service-Providern (ISPs) bereithalten. Die Verrechnung von Egress-Kosten dient auch dazu, die Nutzung der Dienste der Cloud-Anbieter zu steuern und zum Beispiel nicht regelmässig grosse Datenmengen über das öffentliche Internet zu verschieben.
 
@@ -59,4 +59,5 @@ Neben einem gut gestalteten User Interface und der angenehmen User Experience gi
 _Hinweis: dieser Blogpost wurde zuerst auf dem EBP-Blog [digital.ebp.ch](https://digital.ebp.ch/2024/02/19/egress-kosten-der-cloud-senken/) publiziert._
 
 Headerbild: [CC-BY](https://creativecommons.org/licenses/by/2.0/) J. Triepke (via Flickr)
+
 
