@@ -1,6 +1,19 @@
 ---
-title: About me
-fig-cap-location: bottom
+title: "Stefan Oderbolz"
+about:
+  template: jolla
+  image: /media/odi.png
+  links:
+    - icon: bluesky
+      text: Bluesky
+      href: https://bsky.app/profile/metaodi.ch
+    - icon: github
+      text: Github
+      href: https://github.com/metaodi
+    - icon: email
+      text: Email
+      href: mailto:odi AT metaodi DOT ch
+---
 ---
 
 ![Hi, I'm Stefan Oderbolz, some people call me Odi.](/media/odi.png)
@@ -10,7 +23,3 @@ I work for [EBP](https://www.ebp.global/ch-de) as a Data Engineer.
 I'm interested in [Open Source software](http://github.com/metaodi) and the [Open Data movement](http://www.opendata.ch/).
 
 I'm a film and TV series junkie, but I'm a keen reader, too.
-
-Follow me on [Bluesky]([http://twitter.com/odi](https://bsky.app/profile/metaodi.ch)) or reach me via [e-mail](mailto:odi AT metaodi DOT ch).
-
-
