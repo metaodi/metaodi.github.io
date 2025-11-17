@@ -16,3 +16,5 @@ listing:
 page-layout: full
 title-block-banner: false
 ---
+
+I regularly speak at events and conferences or give workshops.  Below you can find my posts about my talks. They are usually about my main topic of interest: Open Data. I put most of my slides on [SpeakerDeck](https://speakerdeck.com/metaodi).
