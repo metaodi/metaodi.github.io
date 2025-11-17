@@ -7,7 +7,7 @@ listing:
   fields: [date, title, description, image]
   type: default
   feed: 
-    type: partial
+    type: full
     language: en
   categories: false
   sort-ui: false
