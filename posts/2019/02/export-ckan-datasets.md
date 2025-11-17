@@ -1,7 +1,8 @@
 ---
 date: 2019-02-13
-categories: [Open Data, CKAN]
+categories: [Open Data, CKAN, CLI]
 title: "Export datasets from CKAN on the command line"
+image: /media/cli.png
 ---
 
 Today I got an interesting request, about how datasets could be exported from CKAN based on a search query.
