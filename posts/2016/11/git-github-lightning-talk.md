@@ -2,6 +2,7 @@
 date: 2016-11-12
 categories: [Talk, Git]
 title: "Jugend hackt Schweiz: Github & Git"
+image: jh_github.png
 ---
 
 I was co-organizing "Jugend hackt" in Switzerland this year.
