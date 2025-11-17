@@ -2,6 +2,7 @@
 date: 2016-10-04
 categories: [Open Data, CKAN, Conferences, Talk]
 title: "CKANCon 2016: How We Combined CKAN with WordPress"
+image: wp_opendataswiss.png
 ---
 
 This year the [CKANCon was in Madrid](https://ckan.org/ckancon-2016/), prior to the [International Open Data Conference](http://opendatacon.org/).
