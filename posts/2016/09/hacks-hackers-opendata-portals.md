@@ -2,6 +2,7 @@
 date: 2016-09-29
 categories: [Open Data, Meetup, Talk]
 title: "Hacks/Hackers: Open Data Portals + Civic Hacking"
+image: civic_hacker.png
 ---
 
 I was invited by the Hacks/Hackers meetup to give a talk about my passion "open data", so I decided to mashup my previous talks and talk about my work (building open data portals) and my private interest (being an open data activist and a civic hacker).
