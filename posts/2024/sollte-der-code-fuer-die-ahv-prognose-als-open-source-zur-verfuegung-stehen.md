@@ -3,10 +3,10 @@ date: 2024-08-19
 categories: [EMBAG, Code, Open Source]
 lang: de
 title: "Sollte der Code für die AHV Prognose als Open Source zur Verfügung stehen?"
-image: code-schloss.webp
+image: code_schloss.webp
 ---
 
-![](code-schloss.webp)
+![](code_schloss.webp)
 
 Das Raunen war gross als das Bundesamt für Sozialversicherung (BSV) an einer Medienkonferenz am 6. August 2024 bekannt geben musste, dass es bei der [Berechnung der Prognose der AHV](https://www.srf.ch/news/schweiz/sechs-prozent-weniger-bis-2033-der-bund-hat-sich-bei-den-ahv-ausgaben-verrechnet) einen Fehler gab. Wie konnte das passieren? Und wie kann so etwas in Zukunft verhindert werden?
 
@@ -42,4 +42,5 @@ Unter [https://embag-check.ch](https://embag-check.ch/) haben wir eine Checklist
 ❔ Welche Software muss als Open Source veröffentlicht werden?  
 ❔ Welche Lizenzen eignen sich für Open Source?  
 ❔ Welche digitalen Standards müssen genutzt werden?  
+
 ❔ Was bedeutet Open-by-Default?
