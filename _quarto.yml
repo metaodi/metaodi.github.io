@@ -14,6 +14,8 @@ website:
   repo-actions: [edit, issue]
   navbar:
     left: 
+      - text: Talks/Workshops
+        href: talks.qmd
       - text: About
         href: about.qmd
 
