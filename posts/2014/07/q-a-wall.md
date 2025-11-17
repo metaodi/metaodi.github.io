@@ -2,6 +2,7 @@
 date: 2014-07-08
 categories: [OKFestival, Conferences, Talk]
 title: Q&A Wall at the OKFestival in Berlin
+image: okfestival_venue.jpg
 ---
 
 Some time ago the OKFestival asked for session proposals for this years conference in Berlin.
