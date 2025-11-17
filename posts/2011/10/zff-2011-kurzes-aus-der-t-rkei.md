@@ -5,6 +5,7 @@ categories:
     - Cinema
     - Zurich Film Festival
 title: "ZFF 2011: Kurzes aus der Türkei"
+image: mother.jpg
 ---
 
 
@@ -19,8 +20,7 @@ haben schon die letzten Jahre eine Zusammenarbeit gepflegt.
 [My Mother Learns Cinema](http://www.imdb.com/title/tt0984004/)
 ---------------------------------------------------------------
 
-[![My Mother Learns
-Cinema](http://media.tumblr.com/tumblr_lsjev5EprV1qa2z4q.jpg "My Mother Learns Cinema")](http://www.imdb.com/title/tt0984004/)
+[![My Mother Learns Cinema](mother.jpg "My Mother Learns Cinema")](http://www.imdb.com/title/tt0984004/)
 (Nesimi Yetik, 2007)
 
 Eine kleine Ode ans Kino, als ersten Schritt um das Kino kennen zu
@@ -32,7 +32,7 @@ Regisseur.
 [Biskilet/Bicycle](http://vimeo.com/24874194)
 ---------------------------------------------
 
-[![Biskilet/Bicycle](http://media.tumblr.com/tumblr_lsjgmehJbe1qa2z4q.jpg "Biskilet/Bicycle")](http://vimeo.com/24874194)
+[![Biskilet/Bicycle](biskilet.jpg "Biskilet/Bicycle")](http://vimeo.com/24874194)
 (Serhat Karaaslan, 2010)
 
 Dieser Film, der ganz ohne gesprochene Sprache auskommt, erzählt von
@@ -44,8 +44,7 @@ ein Hinterrad…
 [I, Soldier](http://i-soldier-the-flag.blogspot.com/)
 -----------------------------------------------------
 
-[![I,
-Soldier](http://media.tumblr.com/tumblr_lsjg6dBuRs1qa2z4q.png "I, Soldier")](http://i-soldier-the-flag.blogspot.com/)
+[![I, Soldier](soldier.png "I, Soldier")](http://i-soldier-the-flag.blogspot.com/)
 (Ergun Köken, 2007)
 
 Ein ganz spezieller Film, der zum Teil aus 2 Perspektiven gefilmt wurde,
@@ -57,8 +56,7 @@ Feierlichkeiten zum Unabhängigkeitstag der Türkei entstanden.
 [Dem (Moment)](https://www.facebook.com/pages/DEM-MOMENT/139449276104220?sk=info)
 ---------------------------------------------------------------------------------
 
-[![Dem
-(Moment)](http://media.tumblr.com/tumblr_lsjh5zqJdl1qa2z4q.png "Dem (Moment)")](https://www.facebook.com/pages/DEM-MOMENT/139449276104220?sk=info)
+[![Dem (Moment)](moment.png "Dem (Moment)")](https://www.facebook.com/pages/DEM-MOMENT/139449276104220?sk=info)
 (Aysegül Okul, 2010)
 
 Ein Mann ist auf dem Weg zu einem Bewerbungsgespräch, unterwegs holt er
@@ -71,7 +69,7 @@ nochmals, wird er diesmal das Schlimmste verhindern können?
 [Gemeinschaft](http://www.madebyozlemakin.com/2009/05/gemeinschaft.html)
 ------------------------------------------------------------------------
 
-[![Gemeinschaft](http://media.tumblr.com/tumblr_lsjig5oDS01qa2z4q.jpg "Gemeinschaft")](http://www.madebyozlemakin.com/2009/05/gemeinschaft.html)
+[![Gemeinschaft](gemeinschaft.jpg "Gemeinschaft")](http://www.madebyozlemakin.com/2009/05/gemeinschaft.html)
 (Özlem Akin, 2008)
 
 In diesem kurzen Animationsfilm geht es darum als Gruppe eine unliebsame
@@ -83,8 +81,7 @@ Erklärungsversuch.
 [Xewna Yusiv / Yusiv’s Dream](http://www.feritkarahan.com/en/#/filmography/movies)
 ----------------------------------------------------------------------------------
 
-[![Xewna Yusiv / Yusiv's
-Dream](http://media.tumblr.com/tumblr_lsjjulojfy1qa2z4q.png "Xewna Yusiv  / Yusiv's Dream")](http://www.feritkarahan.com/en/#/filmography/movies)
+[![Xewna Yusiv / Yusiv's Dream](xewna-yusiv.png "Xewna Yusiv  / Yusiv's Dream")](http://www.feritkarahan.com/en/#/filmography/movies)
 (Ferit Karahan, 2011)
 
 Yusiv führt ein normales Leben bis seine Idylle gestört wird: er wird
@@ -95,8 +92,7 @@ heimlicher Zeuge eines Mordes.
 [KöY (Das Dorf)](http://www.imdb.com/title/tt1515847/)
 ------------------------------------------------------
 
-[![KöY (Das
-Dorf)](http://media.tumblr.com/tumblr_lsjiaxZetH1qa2z4q.jpg "KöY (Das Dorf)")](http://www.imdb.com/title/tt1515847/)
+[![KöY (Das Dorf)](koey.jpg "KöY (Das Dorf)")](http://www.imdb.com/title/tt1515847/)
 (Mustafa Dok, 2009)
 
 Der zu Beginn sehr lustig-fröhliche Film zeigt einen Mann, der es sich
@@ -109,8 +105,7 @@ jäh durchbrochen als das Militär auftaucht.
 [Bende Sira (Ich bin dran)](http://www.distantdreams.de/filme/bende-sira-ich-bin-dran)
 --------------------------------------------------------------------------------------
 
-[![Bende Sira (Ich bin
-dran)](http://media.tumblr.com/tumblr_lsjhzyzddN1qa2z4q.jpg "Bende Sira (Ich bin dran)")](http://www.distantdreams.de/filme/bende-sira-ich-bin-dran)
+[![Bende Sira (Ich bin dran)](bende-sira.jpg "Bende Sira (Ich bin dran)")](http://www.distantdreams.de/filme/bende-sira-ich-bin-dran)
 (Ismet Ergün, 2007)
 
 Zum Abschluss gab es noch ein wahres Highlight: eine Gruppe von Jungs
