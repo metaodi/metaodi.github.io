@@ -111,16 +111,16 @@ plt.ylabel('Wochentag')
 plt.show()
 ```
 
-![Am Montag- und Dienstagabend hat es am meisten Personen](heatmap_alle.webp){group="heatmap1"}
+![_Am Montag- und Dienstagabend hat es am meisten Personen_](heatmap_alle.webp){group="heatmap1"}
 
 ::: {layout-nrow=2}
-![Luzern National: Viel gleichmässiger verteilt über den Tag](heatmap_national.webp){group="heatmap1"}
+![_Luzern National: Viel gleichmässiger verteilt über den Tag_](heatmap_national.webp){group="heatmap1"}
 
-![Baden Trafo: Unter der Woche am Vormittag fast leer](heatmap_trafo.webp){group="heatmap1"}
+![_Baden Trafo: Unter der Woche am Vormittag fast leer_](heatmap_trafo.webp){group="heatmap1"}
 
-![Zürich Stadelhofen: Muster sehr ähnlich zum Gesamtbild](heatmap_stadelhofen.webp){group="heatmap1"}
+![_Zürich Stadelhofen: Muster sehr ähnlich zum Gesamtbild_](heatmap_stadelhofen.webp){group="heatmap1"}
 
-![Zürich Stockerhof: Der «Mittags-Rush» ist deutlich sichtbar](heatmap_stockenhof-1.webp){group="heatmap1"}
+![_Zürich Stockerhof: Der «Mittags-Rush» ist deutlich sichtbar_](heatmap_stockenhof-1.webp){group="heatmap1"}
 :::
 
 Die Heatmap bestätigt das Bauchgefühl: Montag bis Mittwoch von 18 bis 20 Uhr sind über alle Fitnesscenter hinweg die Hotspots.
