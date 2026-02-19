@@ -149,8 +149,19 @@ plt.ylabel('Wochentag')
 plt.show()
 ```
 
-
 Und wenn wir jetzt diese Skala bei allen Fitnesscentern anwenden, dann kann man die relativ «vollen» deutlich von den relativ «leeren» Fitnesscentern unterscheiden:
+
+![Belegungsdichte: Anzahl Personen pro 100m²](heatmap_density_alle.webp){group="heatmap2"}
+
+::: {layout-nrow=2}
+![In Zug hat es vergleichsweise viel Platz](heatmap_zug_density.webp){group="heatmap2"}
+
+![In Zürich Stadelhofen sind die Abende sehr voll](heatmap_stadelhofen_density.webp){group="heatmap2"}
+
+![Der Stockerhof ist mittags und abends gut besucht und am Sonntag den ganzen Tag über](heatmap_stockerhof_density.webp){group="heatmap2"}
+
+![In Regensdorf zeigt sich ein ähnliches Bild: Gut besucht (fast) während des ganzen Tages](heatmap_regensdorf_density.webp){group="heatmap2"}
+:::
 
 ## Trend, Saisonalität und Ausreisser
 
