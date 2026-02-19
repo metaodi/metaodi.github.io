@@ -21,16 +21,15 @@ Statt auf mein Bauchgefühl zu vertrauen, habe ich als Data Engineer Daten gesam
 
 Ein schneller Blick auf die Webseite des Fitnesscenters zeigte, dass dort immer die aktuellen Belegungszahlen publiziert werden. Ich vermute, dass diese Zahl direkt vom Einlass-System stammen, da jeder Gym-Besucher und jede Gym-Besucherin sich beim Drehkreuz am Eingang mit einem Badge anmelden und zum Hinausgehen wieder abmelden muss.
 
-![](screenshot_besuchen_gym-1-e1768319374350.webp)
-_Screenshot Fitnesspark-Webseite mit der Anzahl Besucherinnen und Besucher_
+![_Screenshot Fitnesspark-Webseite mit der Anzahl Besucherinnen und Besucher_](screenshot_besuchen_gym-1-e1768319374350.webp)
 
 Damit war die Basis für ein Scraping, also das automatisierte Auslesen, der Daten gelegt.
 Ich nutze Python und den Ansatz _Git Scraping_ (vgl. den [Blogpost von Simon Willison](https://simonwillison.net/2020/Oct/9/git-scraping/)).
 Dabei handelt es sich um eine Methode, bei der Daten regelmässig aus einer Webseite ausgelesen und in einem Git-Repository (in der Git-History) gespeichert werden.
 So entsteht automatisch eine Zeitreihe, die sich anschliessend leicht analysieren lässt.
 
-![](occupancy_csv.webp)
-_occupancy.csv zeigt die gesammelten Belegungsdaten_
+![_occupancy.csv zeigt die gesammelten Belegungsdaten_](occupancy_csv.webp)
+
 
 Ich selbst besuche den [Fitnesspark Zürich Stadelhofen](https://www.fitnesspark.ch/fitnessparks/zuerich-stadelhofen/ueber-den-park/).
 Es gibt aktuell 16 Fitnessparks in der Schweiz.
@@ -50,8 +49,7 @@ fig, ax = plt.subplots(figsize=(20,10))
 df_stadi.plot(kind='line', y='occupancy', x="timestamp_utc")
 ```
 
-![](plot_raw_data.webp)
-_Erster Plot der rohen Daten aus dem Scraping vom Fitnesspark Zürich Stadelhofen_
+![_Erster Plot der rohen Daten aus dem Scraping vom Fitnesspark Zürich Stadelhofen_](plot_raw_data.webp)
 
 Schon der erste Plot zeigt: Im August klafft eine Lücke, die Zahlen sinken zum Jahresende und steigen im Januar sprunghaft an. Ein klarer Hinweis auf Neujahrsvorsätze.
 
@@ -151,16 +149,16 @@ plt.show()
 
 Und wenn wir jetzt diese Skala bei allen Fitnesscentern anwenden, dann kann man die relativ «vollen» deutlich von den relativ «leeren» Fitnesscentern unterscheiden:
 
-![Belegungsdichte: Anzahl Personen pro 100m²](heatmap_density_alle.webp){group="heatmap2"}
+![_Belegungsdichte: Anzahl Personen pro 100m²_](heatmap_density_alle.webp){group="heatmap2"}
 
 ::: {layout-nrow=2}
-![In Zug hat es vergleichsweise viel Platz](heatmap_zug_density.webp){group="heatmap2"}
+![_In Zug hat es vergleichsweise viel Platz_](heatmap_zug_density.webp){group="heatmap2"}
 
-![In Zürich Stadelhofen sind die Abende sehr voll](heatmap_stadelhofen_density.webp){group="heatmap2"}
+![_In Zürich Stadelhofen sind die Abende sehr voll_](heatmap_stadelhofen_density.webp){group="heatmap2"}
 
-![Der Stockerhof ist mittags und abends gut besucht und am Sonntag den ganzen Tag über](heatmap_stockerhof_density.webp){group="heatmap2"}
+![_Der Stockerhof ist mittags und abends gut besucht und am Sonntag den ganzen Tag über_](heatmap_stockerhof_density.webp){group="heatmap2"}
 
-![In Regensdorf zeigt sich ein ähnliches Bild: Gut besucht (fast) während des ganzen Tages](heatmap_regensdorf_density.webp){group="heatmap2"}
+![_In Regensdorf zeigt sich ein ähnliches Bild: Gut besucht (fast) während des ganzen Tages_](heatmap_regensdorf_density.webp){group="heatmap2"}
 :::
 
 ## Trend, Saisonalität und Ausreisser
@@ -196,16 +194,13 @@ trend, seasonal, resid = result.trend, result.seasonal, result.resid
 ```
 
 
-![](stl_output_stocker-1.webp)
-_STL-Dekomposition der Zeitreihe mit Wocheneinteilung_
+![_STL-Dekomposition der Zeitreihe mit Wocheneinteilung_](stl_output_stocker-1.webp)
 
 Wir können sehen, dass der Trend von Mai bis Juli klar abnimmt, dann gibt es einen starken Peak im Sommer (aber Achtung: die Y-Achse beginnt nicht bei 0), der dann erst wieder etwas abflacht, und im Herbst nochmals zunimmt. Im Dezember gehen die Zahlen zurück und im Januar lassen sich die umgesetzten Neujahrsvorsätze anhand dem steilen Anstieg gut ablesen. Bei der Saisonalität ist ein klarer Wochengang erkennbar mit Spitzen am Montag und Senken gegen Ende der Woche.
 
 Die Rest-Komponente eröffnet uns die Möglichkeit, Anomalien oder Ausreisser zu erkennen. Wenn wir die Saisonalität und den Trend zusammennehmen, bildet dies die geschätzten Werte unserer Zeitreihe _ohne_ Ausreisser ab. Wenn wir diese Kurve mit jener der tatsächlichen Zeitreihe vergleichen, können wir visuell die (grossen) Unterschiede sehr klar erkennen.
 
-![](estimated_real-3.webp)
-
-_Vergleich zwischen geschätzten (Trend + Saisonalität, ohne Anomalien; in orange) und tatsächlichen Werten (in blau)_
+![_Vergleich zwischen geschätzten (Trend + Saisonalität, ohne Anomalien; in orange) und tatsächlichen Werten (in blau)_](estimated_real-3.webp)
 
 Um Ausreisser (in normalverteilten Daten) zu erkennen, wird in der Statistik häufig auch auf die Standardabweichung (_standard deviation_, abgekürzt _stddev_ oder _std_) abgestützt.
 Diese beschreibt für eine Verteilung, wie stark die einzelnen Werte um den Durchschnittswert (_mean_) streuen.
@@ -222,9 +217,7 @@ plt.plot(resid, label='Rest', color='blue')
 plt.fill_between([daily.index.min(), daily.index.max()], lower, upper, color="g", alpha=0.25, linestyle="dashed")
 ```
 
-
-![](resid_std-3.webp)
-_Die «Rest»-Komponente (blau) mit der dreifachen (±) Standardabweichung (grün)_ _um den Mittelwert_
+![_Die «Rest»-Komponente (blau) mit der dreifachen (±) Standardabweichung (grün)_ _um den Mittelwert_](resid_std-3.webp)
 
 Überall dort, wo die blaue Linie den grünen Bereich verlässt, haben wir mit dieser Operationalisierung einen Ausreisser.
 Wir sehen deutliche Ausreisser Ende Juli, dann noch einen Anfang August und Ende Dezember.
@@ -237,8 +230,7 @@ plt.plot(daily, label='Tagesmittelwerte', color='blue')
 plt.scatter(anomalies.index, anomalies.values, color="r", marker="D", label="Ausreisser")
 ```
 
-![](outliers_timeseries-4.webp)
-_Tagesmittelwerte der Zeitreihe mit den markierten Ausreissern_
+![_Tagesmittelwerte der Zeitreihe mit den markierten Ausreissern_](outliers_timeseries-4.webp)
 
 Die Ausreisser sind vom 28. bis 31. Juli und am 9. August.
 Der erste lässt sich sehr einfach erklären: Der Fitnesspark Stockerhof war vom 28. Juli bis 3. August 2025 wegen Revision geschlossen.
