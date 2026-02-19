@@ -177,7 +177,7 @@ Mit STL zerlege ich die Zeitreihe in Trend, Saisonalität und Rest.
 
 Schauen wir uns diese drei Komponenten für den Fitnesspark Zürich Stockerhof an:
 
-```
+```python
 from statsmodels.tsa.seasonal import STL
 
 # Aggregation auf Tagesmittelwerte (für klare Saisonalität)
