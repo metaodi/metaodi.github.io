@@ -12,7 +12,7 @@ Ich freue mich sehr, Version 5.0.0 von [osmapi](https://github.com/metaodi/osmap
 * Modernere Codebasis: Das einst grosse OsmApi-Modul wurde auf mehrere Module aufgeteilt für die bessere Wartbarkeit
 * Type Hints & mypy: Neu gibt es Type Hints und mypy-Checks für besseren Editor-Support, stärkere Typ-Sicherheit und allgemein mehr Entwicklerfreundlichkeit.
 
-Code mit der neuen Library sieht z.B. so aus:
+Code mit der neuen Version von `osmapi` sieht z.B. so aus. Beachte z.B. `with api.changeset()` und `api.node_create` oder `api.way_create()`):
 
 ```python
 from oauthcli import OpenStreetMapDevAuth
@@ -50,4 +50,4 @@ with api.changeset({"comment": "My first test"}) as changeset_id:
     print(way)
 ```
 
-👉 Zum vollständigen Changelog: https://github.com/metaodi/osmapi/releases/tag/v5.0.0
+👉 Zum vollständigen Changelog: [https://github.com/metaodi/osmapi/releases/tag/v5.0.0](https://github.com/metaodi/osmapi/releases/tag/v5.0.0)
