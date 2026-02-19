@@ -4,6 +4,7 @@ categories: [Git Scraping, Data Science, Data Engineering]
 lang: de
 title: "Von Neujahrsvorsätzen bis Abend-Peak: Was 10 Monate Fitnessdaten verraten"
 image: title_heat-1.webp
+lightbox: true
 ---
 
 ![](title_heat-1.webp)
