@@ -113,6 +113,12 @@ plt.ylabel('Wochentag')
 plt.show()
 ```
 
+![Am Montag- und Dienstagabend hat es am meisten Personen](mv-1.jpg){group="heatmap1"}
+
+![Another Lovely Image](mv-2.jpg){group="heatmap1"}
+
+![The Last Lovely Image](mv-3.jpg){group="heatmap1"}
+
 Die Heatmap bestätigt das Bauchgefühl: Montag bis Mittwoch von 18 bis 20 Uhr sind über alle Fitnesscenter hinweg die Hotspots.
 Überraschend: Kein Mittagspeak – und sonntags ist mehr los als samstags.
 
