@@ -3,7 +3,7 @@ date: 2026-02-19
 categories: [OpenStreetMap, Code, Open Source]
 lang: de
 title: "osmapi 5.0.0 Release"
-image: osmapi_5.png
+image: osmapi_5.jpg
 ---
 
 Ich freue mich sehr, Version 5.0.0 von [osmapi](https://github.com/metaodi/osmapi) offiziell freizugeben. Ein echter Major-Release und ein grosser Schritt in Richtung einer moderner und «pythonic» Library.
