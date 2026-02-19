@@ -1,6 +1,6 @@
 ---
-date: 2024-02-19
-categories: [Cloud]
+date: 2026-02-19
+categories: [OpenStreetMap, Code, Open Source]
 lang: de
 title: "osmapi 5.0.0 Release"
 image: osmapi_5.png
