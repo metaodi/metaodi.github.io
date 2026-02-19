@@ -21,7 +21,7 @@ Statt auf mein Bauchgefühl zu vertrauen, habe ich als Data Engineer Daten gesam
 
 Ein schneller Blick auf die Webseite des Fitnesscenters zeigte, dass dort immer die aktuellen Belegungszahlen publiziert werden. Ich vermute, dass diese Zahl direkt vom Einlass-System stammen, da jeder Gym-Besucher und jede Gym-Besucherin sich beim Drehkreuz am Eingang mit einem Badge anmelden und zum Hinausgehen wieder abmelden muss.
 
-![](screenshot_besuchen_gym-1-e1768319374350.png)
+![](screenshot_besuchen_gym-1-e1768319374350.webp)
 _Screenshot Fitnesspark-Webseite mit der Anzahl Besucherinnen und Besucher_
 
 Damit war die Basis für ein Scraping, also das automatisierte Auslesen, der Daten gelegt.
